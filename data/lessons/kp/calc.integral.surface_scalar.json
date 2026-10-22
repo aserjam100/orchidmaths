@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The surface element",
+    "section": "The surface element",
+    "subgoals": [
+      "Weight each value by surface area",
+      "Magnify by the two partial derivatives",
+      "Use the cross product for a parametrisation"
+    ]
+  },
+  {
+    "label": "Working in spherical coordinates",
+    "section": "Working in spherical coordinates",
+    "subgoals": [
+      "Set the radius constant on the sphere",
+      "Factor out the full angular turn",
+      "Match the power of the radius"
+    ]
+  },
+  {
+    "label": "Physical readings",
+    "section": "Physical readings",
+    "subgoals": [
+      "Integrate a density for the total",
+      "Divide by the area for the average",
+      "Add a normal for the flux"
+    ]
+  }
+]

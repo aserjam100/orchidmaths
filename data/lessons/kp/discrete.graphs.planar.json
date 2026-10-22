@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Euler's formula",
+    "section": "Euler's formula",
+    "subgoals": [
+      "Count the outer face",
+      "Use V - E + F = 2",
+      "Solve for the unknown quantity"
+    ]
+  },
+  {
+    "label": "The edge bound",
+    "section": "The edge bound",
+    "subgoals": [
+      "Count face-edge incidences",
+      "Substitute Euler's formula",
+      "Apply E <= 3V - 6"
+    ]
+  },
+  {
+    "label": "When planarity fails",
+    "section": "When planarity fails",
+    "subgoals": [
+      "Test a dense graph by the bound",
+      "Test K(3,3) by the four-edge bound",
+      "Name the forbidden subdivisions"
+    ]
+  }
+]

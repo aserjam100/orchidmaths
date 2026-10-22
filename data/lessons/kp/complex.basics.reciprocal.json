@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiplying by the conjugate",
+    "section": "Multiplying by the conjugate",
+    "subgoals": [
+      "Multiply above and below",
+      "Simplify the denominator to a^2+b^2",
+      "Keep the numerator complex"
+    ]
+  },
+  {
+    "label": "The formula",
+    "section": "The formula",
+    "subgoals": [
+      "Divide the conjugate's parts by the modulus squared",
+      "Flip the imaginary sign",
+      "Note the one number with no reciprocal"
+    ]
+  },
+  {
+    "label": "What the answer looks like",
+    "section": "What the answer looks like",
+    "subgoals": [
+      "Write rational coefficients",
+      "Accept an equivalent decimal",
+      "Check by multiplying back"
+    ]
+  }
+]

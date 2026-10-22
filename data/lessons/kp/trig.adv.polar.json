@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The two coordinate systems",
+    "section": "The two coordinate systems",
+    "subgoals": [
+      "Measure the distance from the origin",
+      "Measure the angle from the positive axis",
+      "Accept many names for one point"
+    ]
+  },
+  {
+    "label": "Converting to Cartesian",
+    "section": "Converting to Cartesian",
+    "subgoals": [
+      "Multiply the radius by the cosine",
+      "Multiply the radius by the sine",
+      "Recover the angle with the quadrant"
+    ]
+  },
+  {
+    "label": "Exact values",
+    "section": "Exact values",
+    "subgoals": [
+      "Use the exact cosine and sine",
+      "Multiply by the radius",
+      "Choose radii that clear the denominator"
+    ]
+  }
+]

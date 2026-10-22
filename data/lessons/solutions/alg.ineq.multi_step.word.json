@@ -1,0 +1,19 @@
+{
+  "concept": "alg.ineq.multi_step.word",
+  "setup": "A [[service]] charges $[[base]] plus $[[per]] per [[unit]], and the limit is $[[budget]].",
+  "steps": [
+    {
+      "fact": "room",
+      "say": "Take the flat $[[base]] off the limit: $[[budget]] - $[[base]] = $[[room]] left for the [[unit]]s."
+    },
+    {
+      "fact": "quotient",
+      "say": "Each [[unit]] costs $[[per]], and $[[room]] / $[[per]] is [[quotient]] with something left over."
+    },
+    {
+      "fact": "next_cost",
+      "say": "[[next]] [[unit]]s would cost $[[next_cost]], which is over the limit, so the greatest whole number is [[count]]."
+    }
+  ],
+  "answer": "The greatest whole number is [[count]] [[unit]]s."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The first-order expansion",
+    "section": "The first-order expansion",
+    "subgoals": [
+      "Expand the transformation to first order",
+      "Keep the linear term",
+      "Scale the variance by the squared derivative"
+    ]
+  },
+  {
+    "label": "Worked: the square",
+    "section": "Worked: the square",
+    "subgoals": [
+      "Differentiate the square",
+      "Evaluate the derivative at the mean",
+      "Square it and multiply by the variance"
+    ]
+  },
+  {
+    "label": "When it applies",
+    "section": "When it applies",
+    "subgoals": [
+      "Require differentiability at the mean",
+      "Require a nonzero derivative",
+      "Recognise that a vanishing derivative needs a higher-order argument"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Integrating along a path",
+    "section": "Integrating along a path",
+    "subgoals": [
+      "Write a line integral as a t-integral",
+      "Substitute the parametrisation",
+      "Notice that direction changes the sign"
+    ]
+  },
+  {
+    "label": "Gradient fields",
+    "section": "Gradient fields",
+    "subgoals": [
+      "Recognise a gradient field",
+      "Integrate by evaluating the potential",
+      "Value a path from the origin"
+    ]
+  },
+  {
+    "label": "Path independence",
+    "section": "Path independence",
+    "subgoals": [
+      "Apply the cross-partial test",
+      "State what happens on a closed loop",
+      "Connect the failure to curl"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "One color below greedy",
+    "section": "One color below greedy",
+    "subgoals": [
+      "Compare chi with Delta",
+      "Recall the greedy Delta+1 bound",
+      "Remove the extra color off the exceptions"
+    ]
+  },
+  {
+    "label": "Worked: the exceptions",
+    "section": "Worked: the exceptions",
+    "subgoals": [
+      "See K_4 needs 4",
+      "See C_5 needs 3",
+      "Color a non-exceptional graph with Delta colors"
+    ]
+  },
+  {
+    "label": "Why complete graphs and odd cycles",
+    "section": "Why complete graphs and odd cycles",
+    "subgoals": [
+      "Saturate every vertex",
+      "Close the two-color alternation",
+      "Use Kempe chains for the proof"
+    ]
+  }
+]

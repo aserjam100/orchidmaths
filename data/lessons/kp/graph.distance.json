@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Shortest paths between vertices",
+    "section": "Shortest paths between vertices",
+    "subgoals": [
+      "Run breadth-first search",
+      "Count edges not weights",
+      "Define eccentricity"
+    ]
+  },
+  {
+    "label": "Worked: paths, cycles and grids",
+    "section": "Worked: paths, cycles and grids",
+    "subgoals": [
+      "Read 4 for P_5",
+      "Read 3 for C_6",
+      "Add (r-1)+(c-1) for a grid"
+    ]
+  },
+  {
+    "label": "Diameter and radius",
+    "section": "Diameter and radius",
+    "subgoals": [
+      "Take the largest eccentricity",
+      "Bound radius by diameter",
+      "Bound diameter by twice the radius"
+    ]
+  }
+]

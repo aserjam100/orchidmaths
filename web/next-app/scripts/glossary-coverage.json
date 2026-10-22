@@ -1,0 +1,1134 @@
+{
+  "version": 1,
+  "note": "Coverage ledger for the comprehensive glossary. Each area lists established entry ids, inventoried gaps, and a status. Statuses: not_audited (inventory only), in_progress (gaps being closed), gaps_remaining (known work left), verified_complete (area audited against its inventory), excluded_with_reason. No area is marked complete on entry count alone.",
+  "areas": [
+    {
+      "id": "arithmetic-number-systems",
+      "label": "Arithmetic and number systems",
+      "msc": [
+        "00",
+        "11"
+      ],
+      "subfields": [
+        "operations",
+        "divisibility",
+        "fractions/decimals/ratios/percentages",
+        "exponents/roots",
+        "numerical representations",
+        "number sets"
+      ],
+      "entries": [
+        "plus",
+        "minus",
+        "multiply",
+        "divide",
+        "plus-minus",
+        "minus-plus",
+        "equals",
+        "not-equals",
+        "approx",
+        "identical-to",
+        "less-than",
+        "greater-than",
+        "less-equal",
+        "greater-equal",
+        "fraction",
+        "decimal-point",
+        "percent",
+        "ratio",
+        "proportion",
+        "power",
+        "square-root",
+        "nth-root",
+        "absolute-value",
+        "factorial",
+        "divides",
+        "grouping",
+        "interval",
+        "overline-repeat",
+        "scientific-notation",
+        "mixed-number",
+        "asymptotic",
+        "natural-numbers",
+        "integers",
+        "rationals",
+        "real-numbers",
+        "complex-numbers",
+        "irrational-numbers",
+        "continued-fraction"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "OpenStax Prealgebra 2e"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "elementary-algebra",
+      "label": "Elementary and intermediate algebra",
+      "msc": [
+        "00",
+        "12"
+      ],
+      "subfields": [
+        "expressions/equations/inequalities",
+        "polynomials/factorization",
+        "functions",
+        "logarithms",
+        "sequences/series",
+        "systems of equations"
+      ],
+      "entries": [
+        "function-notation",
+        "inverse-function",
+        "composition",
+        "mapping-arrow",
+        "exponential-exp",
+        "logarithm",
+        "natural-log",
+        "sequence-term",
+        "summation-sigma",
+        "product-notation",
+        "binomial-coefficient",
+        "proportional-to",
+        "delta-difference",
+        "ellipsis",
+        "slope-intercept",
+        "quadratic-formula",
+        "partial-fractions",
+        "remainder-factor-theorem",
+        "domain-range",
+        "piecewise-definition"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "quadratic formula"
+      ],
+      "sources": [
+        "OpenStax Elementary/Intermediate/College Algebra 2e"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "geometry",
+      "label": "Geometry (Euclidean, coordinate, analytic and beyond)",
+      "msc": [
+        "51",
+        "52"
+      ],
+      "subfields": [
+        "angles/triangles/polygons",
+        "congruence/similarity",
+        "coordinates/distance",
+        "circles",
+        "conic sections",
+        "tangents",
+        "non-Euclidean (terms only)"
+      ],
+      "entries": [
+        "angle",
+        "degree",
+        "radian",
+        "triangle",
+        "congruent",
+        "similar",
+        "parallel",
+        "perpendicular",
+        "line-segment-ray",
+        "arc-notation",
+        "distance-formula",
+        "midpoint-formula",
+        "slope",
+        "pi-constant",
+        "circle-equation",
+        "pythagorean-theorem",
+        "law-of-sines",
+        "law-of-cosines",
+        "parabola",
+        "ellipse",
+        "hyperbola",
+        "tangent-line"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "Pythagorean theorem"
+      ],
+      "sources": [
+        "OpenStax Algebra and Trigonometry 2e"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "trigonometry",
+      "label": "Trigonometry",
+      "msc": [
+        "33",
+        "00"
+      ],
+      "subfields": [
+        "functions",
+        "identities",
+        "inverse functions",
+        "angular measurement",
+        "trigonometric equations",
+        "hyperbolic functions"
+      ],
+      "entries": [
+        "sine",
+        "cosine",
+        "tangent",
+        "reciprocal-trig",
+        "inverse-trig",
+        "theta",
+        "radian",
+        "degree",
+        "hyperbolic-functions",
+        "trigonometric-identities"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "OpenStax Algebra and Trigonometry 2e",
+        "DLMF ch.4"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "linear-algebra",
+      "label": "Linear algebra",
+      "msc": [
+        "15"
+      ],
+      "subfields": [
+        "vectors/spaces/subspaces",
+        "basis/dimension",
+        "linear maps",
+        "matrices/determinants",
+        "eigenvalues/vectors",
+        "inner products",
+        "canonical forms (terms)"
+      ],
+      "entries": [
+        "vector-notation",
+        "vector-arrow",
+        "matrix-notation",
+        "transpose",
+        "inverse-matrix",
+        "determinant",
+        "trace",
+        "rank",
+        "eigenvalue",
+        "eigenvector",
+        "inner-product",
+        "dot-product-note",
+        "cross-product",
+        "kronecker-delta",
+        "identity-matrix",
+        "linear-span",
+        "null-space-kernel",
+        "orthogonal-matrix",
+        "basis-dimension",
+        "linear-independence",
+        "diagonalization"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "Wikibooks Subject:Mathematics"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "calculus",
+      "label": "Calculus (single and multivariable, vector calculus)",
+      "msc": [
+        "26",
+        "58"
+      ],
+      "subfields": [
+        "limits/continuity",
+        "differentiation",
+        "integration",
+        "multivariable",
+        "vector calculus",
+        "named theorems/rules"
+      ],
+      "entries": [
+        "limit",
+        "derivative-lagrange",
+        "derivative-leibniz",
+        "partial-derivative",
+        "differential",
+        "integral",
+        "double-integral",
+        "triple-integral",
+        "line-integral",
+        "contour-integral",
+        "nabla-gradient",
+        "divergence",
+        "curl",
+        "laplacian",
+        "epsilon-delta",
+        "infinity",
+        "supremum",
+        "infimum",
+        "euler-number",
+        "riemann-sum",
+        "continuity-note",
+        "lhopital-rule",
+        "chain-rule",
+        "integration-by-parts",
+        "taylor-series",
+        "fundamental-theorem-calculus",
+        "mean-value-theorem",
+        "improper-integral"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "L'H\u00f4pital's rule",
+        "Taylor series"
+      ],
+      "sources": [
+        "OpenStax Calculus Volumes 1-3"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "real-complex-analysis",
+      "label": "Real and complex analysis",
+      "msc": [
+        "26",
+        "30",
+        "40"
+      ],
+      "subfields": [
+        "convergence",
+        "metric spaces",
+        "holomorphic/analytic functions",
+        "contour integration",
+        "uniform vs pointwise"
+      ],
+      "entries": [
+        "supremum",
+        "infimum",
+        "limit",
+        "continuity-note",
+        "contour-integral",
+        "euler-identity",
+        "complex-numbers",
+        "modulus-complex",
+        "conjugate",
+        "metric-space",
+        "cauchy-sequence",
+        "holomorphic-function",
+        "imaginary-unit",
+        "real-imag-parts"
+      ],
+      "missing": [],
+      "synonyms": {
+        "analytic": "holomorphic (with qualification)"
+      },
+      "named": [
+        "Euler's identity"
+      ],
+      "sources": [
+        "Wikibooks Subject:Mathematics",
+        "standard analysis texts (consulted, original wording)"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "differential-equations",
+      "label": "Differential equations and dynamical systems",
+      "msc": [
+        "34",
+        "35",
+        "37"
+      ],
+      "subfields": [
+        "ODE/PDE",
+        "order/linearity",
+        "initial/boundary conditions",
+        "equilibrium/stability",
+        "phase language"
+      ],
+      "entries": [
+        "derivative-leibniz",
+        "laplace-transform",
+        "partial-derivative",
+        "ordinary-differential-equation",
+        "partial-differential-equation",
+        "initial-value-problem",
+        "equilibrium-stability"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "OpenStax Calculus",
+        "standard ODE texts (consulted, original wording)"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "discrete-combinatorics",
+      "label": "Discrete mathematics and combinatorics",
+      "msc": [
+        "05",
+        "06"
+      ],
+      "subfields": [
+        "counting",
+        "permutations/combinations",
+        "recurrence",
+        "generating functions",
+        "graphs/trees",
+        "extremal principles"
+      ],
+      "entries": [
+        "factorial",
+        "permutation",
+        "combination",
+        "binomial-coefficient",
+        "graph-notation",
+        "mod-arithmetic",
+        "floor-ceiling",
+        "sequence-term",
+        "divides",
+        "generating-function",
+        "pigeonhole-principle",
+        "binomial-theorem"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "Wikibooks Subject:Mathematics",
+        "DLMF ch.26"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "logic-foundations",
+      "label": "Logic and foundations",
+      "msc": [
+        "03"
+      ],
+      "subfields": [
+        "propositional/predicate logic",
+        "quantifiers",
+        "sets/relations/functions",
+        "cardinality/ordinals",
+        "proof methods",
+        "axioms"
+      ],
+      "entries": [
+        "element-of",
+        "not-element",
+        "subset",
+        "subset-equal",
+        "superset",
+        "superset-equal",
+        "union",
+        "intersection",
+        "set-difference",
+        "complement",
+        "empty-set",
+        "power-set",
+        "set-builder",
+        "forall",
+        "exists",
+        "negation",
+        "conjunction",
+        "disjunction",
+        "implies",
+        "equivalent-iff",
+        "therefore",
+        "because",
+        "cardinality",
+        "qed",
+        "predicate-relation",
+        "aleph-null",
+        "indexed-union",
+        "cartesian-product",
+        "symmetric-difference",
+        "mathematical-induction",
+        "converse-contrapositive",
+        "tautology-contradiction",
+        "wlog",
+        "proof-by-contradiction"
+      ],
+      "missing": [],
+      "synonyms": {
+        "iff": "if and only if"
+      },
+      "named": [],
+      "sources": [
+        "Wikibooks Subject:Mathematics",
+        "Britannica (aleph-null)"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "number-theory",
+      "label": "Number theory",
+      "msc": [
+        "11"
+      ],
+      "subfields": [
+        "primes",
+        "congruences",
+        "Diophantine equations",
+        "arithmetic functions",
+        "analytic number theory"
+      ],
+      "entries": [
+        "divides",
+        "congruence-mod",
+        "gcd",
+        "lcm",
+        "totient",
+        "prime-counting",
+        "mobius-function",
+        "identical-to",
+        "mod-arithmetic",
+        "factorial",
+        "prime-number",
+        "diophantine-equation"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "prime number theorem (in prime-counting)",
+        "Euler's theorem (in totient)"
+      ],
+      "sources": [
+        "DLMF ch.27",
+        "Wikibooks Subject:Mathematics"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "abstract-algebra",
+      "label": "Abstract algebra",
+      "msc": [
+        "12",
+        "13",
+        "16",
+        "20"
+      ],
+      "subfields": [
+        "groups",
+        "rings/fields",
+        "homomorphisms",
+        "ideals/quotients",
+        "Galois (terms only)"
+      ],
+      "entries": [
+        "group-notation",
+        "isomorphism",
+        "tensor-product",
+        "direct-sum-xor",
+        "ring",
+        "field-algebra",
+        "homomorphism"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "Wikibooks Subject:Mathematics"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "topology",
+      "label": "Topology",
+      "msc": [
+        "54",
+        "55",
+        "57"
+      ],
+      "subfields": [
+        "topological spaces",
+        "compactness/connectedness",
+        "continuity",
+        "homeomorphism",
+        "manifolds",
+        "homotopy/homology (terms)"
+      ],
+      "entries": [
+        "continuity-note",
+        "interval",
+        "topological-space",
+        "compact-set",
+        "connected-set",
+        "homeomorphism",
+        "manifold"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "standard point-set topology texts (consulted, original wording)"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "probability-statistics",
+      "label": "Probability and statistics",
+      "msc": [
+        "60",
+        "62"
+      ],
+      "subfields": [
+        "events/probability",
+        "distributions",
+        "expectation/variance",
+        "estimation/inference",
+        "regression",
+        "hypothesis testing",
+        "Bayesian statistics",
+        "limit theorems",
+        "stochastic processes (terms)"
+      ],
+      "entries": [
+        "probability-of-event",
+        "conditional-probability",
+        "random-variable",
+        "expectation",
+        "population-mean",
+        "variance",
+        "standard-deviation",
+        "covariance",
+        "correlation",
+        "normal-distribution",
+        "discrete-distributions",
+        "z-score",
+        "sample-mean",
+        "proportion-phat",
+        "estimator-hat",
+        "hypothesis-h0",
+        "p-value",
+        "regression-note",
+        "bayes-theorem",
+        "independence-events",
+        "standard-error",
+        "confidence-interval",
+        "central-limit-theorem",
+        "law-of-large-numbers"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "Bayes' theorem"
+      ],
+      "sources": [
+        "OpenStax Introductory Statistics"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "numerical-analysis",
+      "label": "Numerical analysis and scientific computing",
+      "msc": [
+        "65"
+      ],
+      "subfields": [
+        "error analysis",
+        "interpolation",
+        "numerical integration/differentiation",
+        "iterative methods",
+        "conditioning/stability"
+      ],
+      "entries": [
+        "scientific-notation",
+        "approx",
+        "absolute-relative-error",
+        "trapezoid-rule"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "standard numerical analysis texts (consulted, original wording)"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "optimization",
+      "label": "Optimization and operations research",
+      "msc": [
+        "49",
+        "90"
+      ],
+      "subfields": [
+        "convexity",
+        "constrained optimization",
+        "linear programming (terms)",
+        "optimality conditions"
+      ],
+      "entries": [
+        "argmin-argmax",
+        "supremum",
+        "infimum",
+        "lagrange-multipliers",
+        "convex-function"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "OpenStax Calculus",
+        "standard optimization texts (consulted, original wording)"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "applied-physics",
+      "label": "Applied mathematics and mathematical physics",
+      "msc": [
+        "70",
+        "81",
+        "53"
+      ],
+      "subfields": [
+        "tensors",
+        "vector calculus in physics",
+        "units/dimensions (terms)"
+      ],
+      "entries": [
+        "tensor-product",
+        "nabla-gradient",
+        "divergence",
+        "curl",
+        "wavelength-note",
+        "vector-arrow",
+        "cross-product"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "OpenStax Calculus Volume 3",
+        "Wikibooks Subject:Mathematics"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "information-computation",
+      "label": "Information theory and mathematical computation",
+      "msc": [
+        "68",
+        "94",
+        "03"
+      ],
+      "subfields": [
+        "entropy/information",
+        "complexity classes (terms)",
+        "automata/computability (terms)",
+        "algorithms/asymptotics"
+      ],
+      "entries": [
+        "big-o-notation",
+        "big-theta",
+        "big-omega",
+        "asymptotic",
+        "factorial",
+        "permutation",
+        "shannon-entropy",
+        "turing-machine"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "P vs NP (referenced, not a separate entry)"
+      ],
+      "sources": [
+        "NIST DADS",
+        "standard computation texts (consulted, original wording)"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "advanced-specialist",
+      "label": "Advanced and specialist mathematics",
+      "msc": [
+        "28",
+        "46",
+        "47",
+        "18",
+        "14",
+        "32"
+      ],
+      "subfields": [
+        "measure theory",
+        "functional analysis",
+        "operator theory (terms)",
+        "category theory",
+        "special functions",
+        "transforms"
+      ],
+      "entries": [
+        "gamma-function",
+        "beta-function",
+        "zeta-function",
+        "error-function",
+        "bessel-function",
+        "fourier-transform",
+        "laplace-transform",
+        "euler-mascheroni",
+        "sigma-algebra",
+        "hilbert-space"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "DLMF ch.5/7/10/18/25"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "language-notation",
+      "label": "Mathematical language, notation, and conventions",
+      "msc": [
+        "00"
+      ],
+      "subfields": [
+        "Greek letters",
+        "operators",
+        "proof vocabulary",
+        "named objects",
+        "reading conventions",
+        "disambiguation"
+      ],
+      "entries": [
+        "alpha",
+        "beta",
+        "gamma-letter",
+        "delta-letter",
+        "epsilon",
+        "zeta",
+        "eta",
+        "theta",
+        "iota",
+        "kappa",
+        "lambda",
+        "mu",
+        "nu",
+        "xi",
+        "omicron",
+        "pi-letter",
+        "rho",
+        "sigma-letter",
+        "tau",
+        "upsilon",
+        "phi",
+        "chi",
+        "psi",
+        "omega",
+        "therefore",
+        "because",
+        "qed",
+        "ellipsis",
+        "grouping",
+        "interval",
+        "mapping-arrow",
+        "overline-repeat",
+        "predicate-relation",
+        "set-builder",
+        "floor-ceiling",
+        "kronecker-delta",
+        "infinity",
+        "similar",
+        "identical-to",
+        "equivalent-iff",
+        "direct-sum-xor"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "Unicode charts",
+        "Wikibooks Subject:Mathematics"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "history-named",
+      "label": "Mathematical history and named concepts",
+      "msc": [
+        "01"
+      ],
+      "subfields": [
+        "named theorems",
+        "conjectures",
+        "constants",
+        "constructions"
+      ],
+      "entries": [
+        "euler-identity",
+        "quadratic-formula",
+        "pythagorean-theorem",
+        "prime-counting",
+        "totient",
+        "euler-number",
+        "pi-constant",
+        "phi",
+        "tau",
+        "fundamental-theorem-algebra",
+        "fermats-last-theorem",
+        "riemann-hypothesis"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "Euler's identity",
+        "prime number theorem"
+      ],
+      "sources": [
+        "DLMF",
+        "MacTutor/standard references (consulted, original wording)"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "category-theory",
+      "label": "Category theory",
+      "msc": [
+        "18"
+      ],
+      "subfields": [
+        "categories/morphisms",
+        "functors/natural transformations",
+        "equivalence",
+        "universal properties",
+        "limits/colimits",
+        "adjunctions"
+      ],
+      "entries": [
+        "category",
+        "morphism",
+        "functor",
+        "natural-transformation",
+        "equivalence-of-categories",
+        "universal-property",
+        "limit-colimit",
+        "adjoint-functors"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "SEP Category Theory"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "operator-theory",
+      "label": "Operator theory",
+      "msc": [
+        "47"
+      ],
+      "subfields": [
+        "linear operators",
+        "bounded/unbounded",
+        "norms",
+        "adjoints",
+        "self-adjoint/normal/unitary",
+        "projections",
+        "compact operators",
+        "spectra",
+        "spectral theorem"
+      ],
+      "entries": [
+        "linear-operator",
+        "operator-norm",
+        "bounded-operator",
+        "adjoint-operator",
+        "self-adjoint-operator",
+        "normal-operator",
+        "projection-operator",
+        "compact-operator",
+        "spectrum-operator",
+        "spectral-theorem"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "Spectral theorem"
+      ],
+      "sources": [
+        "Wikipedia Self-adjoint operator",
+        "Wikipedia Spectral theorem"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "homological-algebra",
+      "label": "Homological algebra",
+      "msc": [
+        "18",
+        "13",
+        "16"
+      ],
+      "subfields": [
+        "chain complexes",
+        "homology/cohomology",
+        "chain maps/homotopies",
+        "exact sequences",
+        "kernels/cokernels",
+        "resolutions",
+        "derived functors",
+        "Tor/Ext"
+      ],
+      "entries": [
+        "chain-complex",
+        "homology-groups",
+        "cohomology",
+        "chain-map",
+        "exact-sequence",
+        "cokernel",
+        "projective-resolution",
+        "derived-functor",
+        "tor-ext",
+        "chain-homotopy"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "Wikipedia Chain complex",
+        "UT Austin homological-algebra notes excerpts"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "algebraic-geometry",
+      "label": "Algebraic geometry",
+      "msc": [
+        "14"
+      ],
+      "subfields": [
+        "affine/projective varieties",
+        "ideals/coordinate rings",
+        "Zariski topology",
+        "regular/rational functions",
+        "dimension",
+        "singularities",
+        "schemes",
+        "sheaves",
+        "local rings"
+      ],
+      "entries": [
+        "affine-variety",
+        "projective-variety",
+        "coordinate-ring",
+        "zariski-topology",
+        "regular-function",
+        "variety-dimension",
+        "singular-point",
+        "scheme",
+        "sheaf",
+        "local-ring"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [],
+      "sources": [
+        "Wikipedia Algebraic variety",
+        "Wikipedia Sheaf (mathematics)"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "representation-theory",
+      "label": "Representation theory",
+      "msc": [
+        "20"
+      ],
+      "subfields": [
+        "group representations",
+        "invariant subspaces",
+        "irreducibles",
+        "characters",
+        "intertwining maps",
+        "group algebras",
+        "induction/restriction",
+        "Lie algebra representations"
+      ],
+      "entries": [
+        "group-representation",
+        "invariant-subspace",
+        "irreducible-representation",
+        "character-representation",
+        "schurs-lemma",
+        "group-algebra",
+        "induced-representation",
+        "lie-algebra-representation"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "Schur's lemma"
+      ],
+      "sources": [
+        "Wikipedia Group representation",
+        "Wikipedia Schur's lemma"
+      ],
+      "status": "verified_complete"
+    },
+    {
+      "id": "differential-geometry",
+      "label": "Differential geometry",
+      "msc": [
+        "53",
+        "58"
+      ],
+      "subfields": [
+        "smooth manifolds/charts",
+        "tangent/cotangent structures",
+        "vector fields",
+        "forms",
+        "metrics",
+        "geodesics",
+        "connections/curvature",
+        "exterior calculus",
+        "tensors"
+      ],
+      "entries": [
+        "smooth-manifold",
+        "chart-atlas",
+        "tangent-space",
+        "vector-field",
+        "differential-form",
+        "riemannian-metric",
+        "geodesic",
+        "connection",
+        "curvature",
+        "exterior-derivative",
+        "stokes-theorem",
+        "tensor-field",
+        "pushforward-pullback",
+        "lie-derivative"
+      ],
+      "missing": [],
+      "synonyms": {},
+      "named": [
+        "Stokes' theorem"
+      ],
+      "sources": [
+        "Wikipedia Differentiable manifold"
+      ],
+      "status": "verified_complete"
+    }
+  ]
+}

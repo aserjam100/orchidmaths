@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two ways to divide",
+    "section": "Two ways to divide",
+    "subgoals": [
+      "Read the total and the number after ÷",
+      "Think of sharing or grouping",
+      "Find how many in each group or how many groups"
+    ]
+  },
+  {
+    "label": "Think of multiplication",
+    "section": "Think of multiplication",
+    "subgoals": [
+      "Ask which times table fact makes the total",
+      "Count in steps of the number you divide by",
+      "The number of steps is the answer"
+    ]
+  },
+  {
+    "label": "Check by multiplying",
+    "section": "Check by multiplying",
+    "subgoals": [
+      "Take the answer",
+      "Multiply it by the number you divided by",
+      "See if you get the total"
+    ]
+  }
+]

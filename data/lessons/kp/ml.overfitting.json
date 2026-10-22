@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: three polynomial fits",
+    "section": "Worked: three polynomial fits",
+    "subgoals": [
+      "Fit too stiff and read both errors",
+      "Fit too flexible and read the gap",
+      "Pick the degree where both stay low"
+    ]
+  },
+  {
+    "label": "Worked: reading the capacity curve",
+    "section": "Worked: reading the capacity curve",
+    "subgoals": [
+      "Identify underfit on the falling arm",
+      "Mark the test-error minimum",
+      "Name overfit on the rising arm"
+    ]
+  },
+  {
+    "label": "When more data fixes it",
+    "section": "When more data fixes it",
+    "subgoals": [
+      "Match the gap to data scarcity",
+      "Grow the dataset to close the gap",
+      "Shrink the model when data cannot grow"
+    ]
+  }
+]

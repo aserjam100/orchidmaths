@@ -1,0 +1,23 @@
+{
+  "concept": "complex.basics.equations",
+  "setup": "The equation is \\(([[lhs]])z = [[rhs]]\\).",
+  "steps": [
+    {
+      "fact": "lhs",
+      "say": "Divide both sides by the coefficient \\([[lhs]]\\), which means multiplying by its conjugate over its squared modulus."
+    },
+    {
+      "fact": "rhs",
+      "say": "With \\(a = [[a]]\\), \\(b = [[b]]\\), \\(c = [[c]]\\) and \\(d = [[d]]\\), the solution is \\(z = (c+di)(a-bi)/(a^2+b^2)\\)."
+    },
+    {
+      "fact": "re",
+      "say": "The real part comes out as [[re]] and the imaginary part as [[im]]."
+    },
+    {
+      "fact": "value",
+      "say": "So \\(z = [[value]]\\), and substituting it back reproduces [[rhs]]."
+    }
+  ],
+  "answer": "So \\(z = [[value]]\\)."
+}

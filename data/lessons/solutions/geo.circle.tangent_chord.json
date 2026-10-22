@@ -1,0 +1,15 @@
+{
+  "concept": "geo.circle.tangent_chord",
+  "setup": "A tangent touches the circle at a point, a chord is drawn from that point, and the intercepted arc measures \\([[arc]]\\) degrees.",
+  "steps": [
+    {
+      "fact": "arc",
+      "say": "The angle between a tangent and a chord is measured at the point of contact and looks at the arc the chord cuts off, which is \\([[arc]]\\) degrees here."
+    },
+    {
+      "fact": "angle",
+      "say": "That angle is half the intercepted arc, exactly as an inscribed angle is, so it is \\([[arc]] / 2 = [[angle]]\\) degrees."
+    }
+  ],
+  "answer": "So the angle between the tangent and the chord is \\([[angle]]\\) degrees."
+}

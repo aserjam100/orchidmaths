@@ -1,0 +1,15 @@
+{
+  "concept": "trig.ident.cofunction",
+  "setup": "You are told $\\sin([[theta]]^{\\circ}) = \\cos(\\varphi)$ and asked for $\\varphi$ in the first quadrant.",
+  "steps": [
+    {
+      "fact": "theta",
+      "say": "The cofunction identity pairs a function with the cofunction of the complementary angle: $\\sin\\theta = \\cos(90^{\\circ} - \\theta)$. It holds because the two acute angles of a right triangle add to $90^{\\circ}$, so each is the other's complement."
+    },
+    {
+      "fact": "value",
+      "say": "So $\\varphi = 90^{\\circ} - [[theta]]^{\\circ} = [[value]]^{\\circ}$."
+    }
+  ],
+  "answer": "So $\\varphi = [[value]]^{\\circ}$."
+}

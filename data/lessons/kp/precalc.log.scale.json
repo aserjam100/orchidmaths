@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Equal steps, multiplicative changes",
+    "section": "Equal steps, multiplicative changes",
+    "subgoals": [
+      "Take log10 of the ratio",
+      "Treat one unit as a factor of 10",
+      "Multiply by 10 for decibels"
+    ]
+  },
+  {
+    "label": "Worked: pH, Richter and decibels",
+    "section": "Worked: pH, Richter and decibels",
+    "subgoals": [
+      "Compute pH 3 from 10^-3",
+      "Compute magnitude 4 from 10^4",
+      "Compute 60 dB from 10^6"
+    ]
+  },
+  {
+    "label": "Reading a scale backwards",
+    "section": "Reading a scale backwards",
+    "subgoals": [
+      "Invert with 10^(-pH)",
+      "Recover the amplitude ratio",
+      "Recover the intensity ratio"
+    ]
+  }
+]

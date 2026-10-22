@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The statement",
+    "section": "The statement",
+    "subgoals": [
+      "Shrink all distances by a factor below one",
+      "Show the iterates are Cauchy",
+      "Use completeness and uniqueness"
+    ]
+  },
+  {
+    "label": "Error and rate",
+    "section": "Error and rate",
+    "subgoals": [
+      "Bound the error geometrically",
+      "Read the fixed rate per step",
+      "Use it as a numerical method"
+    ]
+  },
+  {
+    "label": "Worked: an affine contraction",
+    "section": "Worked: an affine contraction",
+    "subgoals": [
+      "Write the fixed-point equation",
+      "Solve for the fixed point",
+      "Check the fraction is below one"
+    ]
+  }
+]

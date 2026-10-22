@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Geometric representation",
+    "section": "",
+    "subgoals": [
+      "Draw the directed segment from tail to head",
+      "Measure its length for magnitude",
+      "Read its arrowhead for direction"
+    ]
+  },
+  {
+    "label": "Components and coordinate representation",
+    "section": "",
+    "subgoals": [
+      "Drop perpendiculars to read x/y/z components",
+      "Compute length via sqrt(x^2 + y^2 + z^2)",
+      "Normalize by length to get the unit direction"
+    ]
+  },
+  {
+    "label": "Vector operations",
+    "section": "",
+    "subgoals": [
+      "Add vectors tip to tail",
+      "Scale by stretching along the same line",
+      "Distinguish free vectors from anchored segments"
+    ]
+  }
+]

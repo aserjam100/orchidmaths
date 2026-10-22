@@ -1,0 +1,15 @@
+{
+  "concept": "alg.radical.operations",
+  "setup": "The two terms are [[a]]√[[c]] and [[b]]√[[c]].",
+  "steps": [
+    {
+      "fact": "c",
+      "say": "Both terms carry the same radical √[[c]], so they are like terms."
+    },
+    {
+      "fact": "a",
+      "say": "Adding the coefficients [[a]] and [[b]] keeps the radical unchanged."
+    }
+  ],
+  "answer": "So the sum is [[answer]]√[[c]]."
+}

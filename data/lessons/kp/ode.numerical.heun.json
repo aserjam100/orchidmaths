@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Predict, then correct",
+    "section": "Predict, then correct",
+    "subgoals": [
+      "Take an Euler predictor step",
+      "Evaluate the slope at the predictor",
+      "Average the two slopes"
+    ]
+  },
+  {
+    "label": "Worked: y' = y",
+    "section": "Worked: y' = y",
+    "subgoals": [
+      "Set y0 = 1 and h = 0.1",
+      "Predict 1.1",
+      "Correct to 1.105"
+    ]
+  },
+  {
+    "label": "Error and stability",
+    "section": "Error and stability",
+    "subgoals": [
+      "Compare order h^3 per step",
+      "Halve the global error with h/2",
+      "Respect the explicit stability limit"
+    ]
+  }
+]

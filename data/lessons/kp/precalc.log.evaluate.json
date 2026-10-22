@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The definition",
+    "section": "The definition",
+    "subgoals": [
+      "Read a logarithm as an exponent",
+      "Evaluate from the definition",
+      "Explain why it is the inverse"
+    ]
+  },
+  {
+    "label": "The rules",
+    "section": "The rules",
+    "subgoals": [
+      "State the product rule",
+      "State the quotient rule",
+      "Pull an exponent out"
+    ]
+  },
+  {
+    "label": "Common values",
+    "section": "Common values",
+    "subgoals": [
+      "Use the log of 1 and of the base",
+      "Handle a power of the base",
+      "State the domain limit"
+    ]
+  }
+]

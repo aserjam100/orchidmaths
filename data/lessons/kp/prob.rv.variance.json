@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Spread about the mean",
+    "section": "Spread about the mean",
+    "subgoals": [
+      "Subtract the mean from each value",
+      "Square and average",
+      "Expand to the second-moment form"
+    ]
+  },
+  {
+    "label": "Worked: a three-point pmf",
+    "section": "Worked: a three-point pmf",
+    "subgoals": [
+      "Compute the mean",
+      "Compute the second moment",
+      "Subtract the mean squared"
+    ]
+  },
+  {
+    "label": "Scaling and units",
+    "section": "Scaling and units",
+    "subgoals": [
+      "Take the square root for units",
+      "Shift without changing variance",
+      "Scale the variance by the square"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Accelerating Through Terrain",
+    "section": "Accelerating Through Terrain",
+    "subgoals": [
+      "Accumulate velocity through flat spots",
+      "Damp oscillations across valley walls",
+      "Read the horizon from beta"
+    ]
+  },
+  {
+    "label": "Momentum's Memory",
+    "section": "Momentum's Memory",
+    "subgoals": [
+      "Weight past gradients by beta",
+      "Carry direction through noise",
+      "Tune memory against overshoot"
+    ]
+  },
+  {
+    "label": "Adam's Adaptation",
+    "section": "Adam's Adaptation",
+    "subgoals": [
+      "Scale each weight by its variance",
+      "Correct the early-step bias",
+      "Converge without manual scheduling"
+    ]
+  }
+]

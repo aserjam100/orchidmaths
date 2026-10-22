@@ -1,0 +1,1109 @@
+[
+  {
+    "id": "angle",
+    "symbol": "∠",
+    "latex": "\\angle",
+    "name": "Angle",
+    "aliases": [
+      "angle",
+      "angle ABC",
+      "vertex angle"
+    ],
+    "category": "geometry-trig",
+    "definition": "Denotes the angle at a vertex, named by three points with the vertex in the middle: ∠ABC has its vertex at B.",
+    "reading": "“angle A B C”.",
+    "examples": [
+      {
+        "tex": "\\angle ABC = 90^\\circ",
+        "explanation": "The angle at B is a right angle."
+      }
+    ],
+    "relatedSymbols": [
+      "degree",
+      "radian",
+      "theta",
+      "triangle"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "degree",
+    "symbol": "°",
+    "latex": "^\\circ",
+    "name": "Degree",
+    "aliases": [
+      "degree",
+      "degrees",
+      "degree symbol"
+    ],
+    "category": "geometry-trig",
+    "definition": "Measures angles with 360 degrees in a full turn. A right angle is 90°.",
+    "reading": "“degrees”.",
+    "examples": [
+      {
+        "tex": "180^\\circ = \\pi \\text{ radians}",
+        "explanation": "A half turn in both units."
+      }
+    ],
+    "relatedSymbols": [
+      "angle",
+      "radian",
+      "pi-constant"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "radian",
+    "symbol": "rad",
+    "latex": "\\text{rad}",
+    "name": "Radian",
+    "aliases": [
+      "radian",
+      "rad",
+      "natural angle unit"
+    ],
+    "category": "geometry-trig",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Measures angles by arc length on the unit circle: a full turn is 2π radians. Calculus uses radians because derivative formulas for sine and cosine hold only in radians.",
+    "reading": "“radians” (often left unsaid).",
+    "examples": [
+      {
+        "tex": "\\pi \\text{ rad} = 180^\\circ",
+        "explanation": "Half a turn in radians and degrees."
+      }
+    ],
+    "relatedSymbols": [
+      "degree",
+      "pi-constant",
+      "sine"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "triangle",
+    "symbol": "△",
+    "latex": "\\triangle",
+    "name": "Triangle",
+    "aliases": [
+      "triangle",
+      "delta triangle"
+    ],
+    "category": "geometry-trig",
+    "definition": "Names a triangle by its three vertices. △ABC is the triangle with corners A, B and C.",
+    "reading": "“triangle A B C”.",
+    "examples": [
+      {
+        "tex": "\\triangle ABC \\cong \\triangle DEF",
+        "explanation": "Two triangles with matching sides and angles."
+      }
+    ],
+    "relatedSymbols": [
+      "angle",
+      "congruent",
+      "similar",
+      "delta-letter"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "congruent",
+    "symbol": "≅",
+    "latex": "\\cong",
+    "name": "Congruent",
+    "aliases": [
+      "congruent",
+      "congruence geometry",
+      "same shape size"
+    ],
+    "category": "geometry-trig",
+    "definition": "States that two figures have exactly the same shape and size: one can be moved onto the other. Differs from similarity, which allows different sizes.",
+    "reading": "“is congruent to”.",
+    "examples": [
+      {
+        "tex": "\\triangle ABC \\cong \\triangle DEF",
+        "explanation": "Matching sides and matching angles."
+      }
+    ],
+    "relatedSymbols": [
+      "similar",
+      "identical-to",
+      "triangle"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "similar",
+    "symbol": "∼",
+    "latex": "\\sim",
+    "name": "Similar (geometry)",
+    "aliases": [
+      "similar",
+      "similarity",
+      "same shape",
+      "tilde similarity"
+    ],
+    "category": "geometry-trig",
+    "definition": "States that two figures have the same shape but possibly different sizes: matching angles with proportional sides. The tilde has other uses (asymptotic, distributions) read from context.",
+    "reading": "“is similar to”.",
+    "examples": [
+      {
+        "tex": "\\triangle ABC \\sim \\triangle DEF",
+        "explanation": "Same angles; one triangle is a scaled copy of the other."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Geometry",
+        "meaning": "Same shape, possibly different size."
+      },
+      {
+        "context": "Probability",
+        "meaning": "X ~ N(0,1) means X follows that distribution."
+      },
+      {
+        "context": "Asymptotics",
+        "meaning": "f ~ g means their ratio tends to 1."
+      }
+    ],
+    "relatedSymbols": [
+      "congruent",
+      "asymptotic",
+      "normal-distribution"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "parallel",
+    "symbol": "∥",
+    "latex": "\\parallel",
+    "name": "Parallel",
+    "aliases": [
+      "parallel",
+      "parallel lines",
+      "double bar"
+    ],
+    "category": "geometry-trig",
+    "definition": "States that two lines never meet: they keep a constant distance and share a direction. Tick marks on diagrams show which lines are parallel.",
+    "reading": "“is parallel to”.",
+    "examples": [
+      {
+        "tex": "l \\parallel m",
+        "explanation": "Lines l and m never intersect."
+      }
+    ],
+    "relatedSymbols": [
+      "perpendicular",
+      "line-segment-ray",
+      "slope"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "perpendicular",
+    "symbol": "⊥",
+    "latex": "\\perp",
+    "name": "Perpendicular",
+    "aliases": [
+      "perpendicular",
+      "right angle lines",
+      "orthogonal",
+      "perp",
+      "normal lines"
+    ],
+    "category": "geometry-trig",
+    "definition": "States that two lines meet at a right angle. In vector work the same sign means orthogonal: the inner product is zero.",
+    "reading": "“is perpendicular to”.",
+    "examples": [
+      {
+        "tex": "l \\perp m",
+        "explanation": "Lines l and m meet at 90 degrees."
+      }
+    ],
+    "relatedSymbols": [
+      "parallel",
+      "inner-product",
+      "angle"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "line-segment-ray",
+    "symbol": "AB̄ AB⃗",
+    "latex": "\\overline{AB}, \\overrightarrow{AB}",
+    "name": "Segment, ray and line notation",
+    "aliases": [
+      "line segment",
+      "ray",
+      "line notation",
+      "overbar segment",
+      "arrow ray"
+    ],
+    "category": "geometry-trig",
+    "definition": "A bar over two points names the segment joining them; an arrow names the ray starting at the first point through the second. A double-headed arrow names the whole line.",
+    "reading": "“segment A B” or “ray A B”.",
+    "examples": [
+      {
+        "tex": "\\overline{AB} = 5",
+        "explanation": "The segment from A to B is 5 units long."
+      }
+    ],
+    "relatedSymbols": [
+      "vector-arrow",
+      "distance-formula",
+      "parallel"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "arc-notation",
+    "symbol": "arc AB",
+    "latex": "\\overset{\\frown}{AB}",
+    "name": "Arc notation",
+    "aliases": [
+      "arc",
+      "minor arc",
+      "major arc",
+      "arc AB",
+      "circle arc"
+    ],
+    "category": "geometry-trig",
+    "definition": "Names the arc of a circle between two points. The minor arc is the shorter way round; naming three points disambiguates the major arc.",
+    "reading": "“arc A B”.",
+    "examples": [
+      {
+        "tex": "m\\overset{\\frown}{AB} = 60^\\circ",
+        "explanation": "The arc from A to B subtends 60 degrees."
+      }
+    ],
+    "relatedSymbols": [
+      "angle",
+      "radian",
+      "circle-equation"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "distance-formula",
+    "symbol": "d = √((x₂−x₁)² + (y₂−y₁)²)",
+    "latex": "d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}",
+    "name": "Distance formula",
+    "aliases": [
+      "distance formula",
+      "euclidean distance",
+      "distance between points"
+    ],
+    "category": "geometry-trig",
+    "definition": "Gives the straight-line distance between two points from their coordinates. It applies Pythagoras to the horizontal and vertical separations.",
+    "reading": "“d equals root of (x-two minus x-one squared plus y-two minus y-one squared)”.",
+    "examples": [
+      {
+        "tex": "d = \\sqrt{(4-1)^2 + (6-2)^2} = 5",
+        "explanation": "Points (1,2) and (4,6) form a 3-4-5 triangle."
+      }
+    ],
+    "relatedSymbols": [
+      "midpoint-formula",
+      "square-root",
+      "slope"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "midpoint-formula",
+    "symbol": "M = ((x₁+x₂)/2, (y₁+y₂)/2)",
+    "latex": "M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)",
+    "name": "Midpoint formula",
+    "aliases": [
+      "midpoint",
+      "midpoint formula",
+      "bisect segment",
+      "average coordinates"
+    ],
+    "category": "geometry-trig",
+    "definition": "Gives the point halfway between two points by averaging each coordinate separately.",
+    "reading": "“the midpoint averages the coordinates”.",
+    "examples": [
+      {
+        "tex": "M = \\left(\\frac{0+4}{2}, \\frac{0+6}{2}\\right) = (2, 3)",
+        "explanation": "Halfway from (0,0) to (4,6)."
+      }
+    ],
+    "relatedSymbols": [
+      "distance-formula",
+      "line-segment-ray",
+      "fraction"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "slope",
+    "symbol": "m",
+    "latex": "m",
+    "name": "Slope",
+    "aliases": [
+      "slope",
+      "gradient line",
+      "rise over run",
+      "m slope",
+      "rate of change line"
+    ],
+    "category": "geometry-trig",
+    "relatedCategories": [
+      "algebra",
+      "calculus"
+    ],
+    "definition": "Measures a line's steepness as rise over run: vertical change divided by horizontal change. Positive slopes climb; negative slopes fall; zero is flat; undefined means vertical.",
+    "reading": "“slope”.",
+    "examples": [
+      {
+        "tex": "m = \\frac{6 - 2}{4 - 1} = \\frac{4}{3}",
+        "explanation": "Up 4 for every 3 across."
+      }
+    ],
+    "relatedSymbols": [
+      "slope-intercept",
+      "derivative-leibniz",
+      "parallel",
+      "perpendicular"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Elementary Algebra 2e",
+        "url": "https://openstax.org/details/books/elementary-algebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "pi-constant",
+    "symbol": "π",
+    "latex": "\\pi",
+    "name": "Pi (circle constant)",
+    "aliases": [
+      "pi",
+      "circle constant",
+      "3.14159",
+      "circumference diameter"
+    ],
+    "category": "geometry-trig",
+    "definition": "The ratio of a circle's circumference to its diameter, about 3.14159. It is irrational: its decimals never repeat or terminate.",
+    "reading": "“pie”.",
+    "examples": [
+      {
+        "tex": "C = 2\\pi r",
+        "explanation": "Circumference from radius r."
+      },
+      {
+        "tex": "A = \\pi r^2",
+        "explanation": "Area from radius r."
+      }
+    ],
+    "relatedSymbols": [
+      "pi-letter",
+      "radian",
+      "tau"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "sine",
+    "symbol": "sin",
+    "latex": "\\sin",
+    "name": "Sine",
+    "aliases": [
+      "sine",
+      "sin",
+      "opposite hypotenuse",
+      "sine wave"
+    ],
+    "category": "geometry-trig",
+    "definition": "In a right triangle, the ratio of the side opposite an angle to the hypotenuse. Extended to all angles, it gives the y-coordinate on the unit circle.",
+    "reading": "“sine”.",
+    "examples": [
+      {
+        "tex": "\\sin 30^\\circ = \\frac{1}{2}",
+        "explanation": "The opposite side is half the hypotenuse."
+      }
+    ],
+    "relatedSymbols": [
+      "cosine",
+      "tangent",
+      "theta",
+      "radian"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 4",
+        "url": "https://dlmf.nist.gov/4",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "cosine",
+    "symbol": "cos",
+    "latex": "\\cos",
+    "name": "Cosine",
+    "aliases": [
+      "cosine",
+      "cos",
+      "adjacent hypotenuse"
+    ],
+    "category": "geometry-trig",
+    "definition": "In a right triangle, the ratio of the side adjacent to an angle to the hypotenuse. On the unit circle it gives the x-coordinate.",
+    "reading": "“cosine”.",
+    "examples": [
+      {
+        "tex": "\\cos 60^\\circ = \\frac{1}{2}",
+        "explanation": "The adjacent side is half the hypotenuse."
+      }
+    ],
+    "relatedSymbols": [
+      "sine",
+      "tangent",
+      "theta",
+      "radian"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 4",
+        "url": "https://dlmf.nist.gov/4",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "tangent",
+    "symbol": "tan",
+    "latex": "\\tan",
+    "name": "Tangent",
+    "aliases": [
+      "tangent",
+      "tan",
+      "opposite adjacent",
+      "slope angle"
+    ],
+    "category": "geometry-trig",
+    "definition": "In a right triangle, the ratio of the opposite side to the adjacent side; equivalently sine over cosine. It equals the slope of a line at that angle.",
+    "reading": "“tangent”.",
+    "examples": [
+      {
+        "tex": "\\tan 45^\\circ = 1",
+        "explanation": "Opposite equals adjacent at 45 degrees."
+      }
+    ],
+    "relatedSymbols": [
+      "sine",
+      "cosine",
+      "reciprocal-trig",
+      "slope"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 4",
+        "url": "https://dlmf.nist.gov/4",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "reciprocal-trig",
+    "symbol": "csc sec cot",
+    "latex": "\\csc, \\sec, \\cot",
+    "name": "Reciprocal trigonometric functions",
+    "aliases": [
+      "cosecant",
+      "secant",
+      "cotangent",
+      "csc",
+      "sec",
+      "cot",
+      "reciprocal trig"
+    ],
+    "category": "geometry-trig",
+    "definition": "The reciprocals of sine, cosine and tangent: cosecant is 1/sin, secant is 1/cos, cotangent is 1/tan. Secant here is a function, not a line cutting a curve.",
+    "reading": "“cosecant”, “secant”, “cotangent”.",
+    "examples": [
+      {
+        "tex": "\\sec x = \\frac{1}{\\cos x}",
+        "explanation": "Secant is the reciprocal of cosine."
+      }
+    ],
+    "relatedSymbols": [
+      "sine",
+      "cosine",
+      "tangent",
+      "inverse-trig"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "inverse-trig",
+    "symbol": "arcsin",
+    "latex": "\\arcsin",
+    "name": "Inverse trigonometric functions",
+    "aliases": [
+      "arcsin",
+      "arccos",
+      "arctan",
+      "inverse sine",
+      "inverse trig",
+      "sin inverse"
+    ],
+    "category": "geometry-trig",
+    "definition": "Reverse sine, cosine and tangent: arcsin(y) is the angle whose sine is y. Results are restricted to a principal range so each input gives one angle.",
+    "reading": "“ark sine” (never “one over sine”).",
+    "examples": [
+      {
+        "tex": "\\arcsin\\left(\\frac{1}{2}\\right) = 30^\\circ",
+        "explanation": "The angle with sine one half."
+      }
+    ],
+    "commonMistakes": [
+      "Reading sin⁻¹ as 1/sin; the −1 denotes inversion, not a reciprocal."
+    ],
+    "relatedSymbols": [
+      "sine",
+      "inverse-function",
+      "radian"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "vector-arrow",
+    "symbol": "v⃗",
+    "latex": "\\vec{v}",
+    "name": "Vector notation",
+    "aliases": [
+      "vector",
+      "arrow vector",
+      "vec",
+      "bold vector",
+      "displacement vector"
+    ],
+    "category": "geometry-trig",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "An arrow over a letter (or bold type) marks a quantity with direction as well as size. Vectors add tip-to-tail and scale by stretching.",
+    "reading": "“vector v”.",
+    "examples": [
+      {
+        "tex": "\\vec{v} = (3, 4)",
+        "explanation": "Three units across, four up; length 5."
+      }
+    ],
+    "relatedSymbols": [
+      "vector-notation",
+      "line-segment-ray",
+      "inner-product"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "circle-equation",
+    "symbol": "(x−h)² + (y−k)² = r²",
+    "latex": "(x-h)^2 + (y-k)^2 = r^2",
+    "name": "Circle equation",
+    "aliases": [
+      "circle equation",
+      "standard form circle",
+      "center radius form"
+    ],
+    "category": "geometry-trig",
+    "definition": "Describes a circle with center (h, k) and radius r: every point exactly r units from the center. It is the distance formula set equal to r.",
+    "reading": "“the circle centered at h k with radius r”.",
+    "examples": [
+      {
+        "tex": "(x - 1)^2 + (y + 2)^2 = 9",
+        "explanation": "Center (1, −2), radius 3."
+      }
+    ],
+    "relatedSymbols": [
+      "distance-formula",
+      "pi-constant",
+      "square-root"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "pythagorean-theorem",
+    "symbol": "a² + b² = c²",
+    "latex": "a^2 + b^2 = c^2",
+    "name": "Pythagorean theorem",
+    "aliases": [
+      "pythagoras",
+      "pythagorean theorem",
+      "a squared plus b squared",
+      "hypotenuse",
+      "3-4-5 triangle"
+    ],
+    "category": "geometry-trig",
+    "definition": "In a right triangle, the squares on the two legs sum to the square on the hypotenuse: a² + b² = c², with c opposite the right angle. It is the distance formula with the root unsquared.",
+    "reading": "“a squared plus b squared equals c squared”.",
+    "examples": [
+      {
+        "tex": "3^2 + 4^2 = 9 + 16 = 25 = 5^2",
+        "explanation": "Legs 3 and 4 give hypotenuse 5."
+      }
+    ],
+    "relatedSymbols": [
+      "distance-formula",
+      "square-root",
+      "triangle",
+      "angle"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "law-of-sines",
+    "symbol": "a/sin A = b/sin B",
+    "latex": "\\frac{a}{\\sin A} = \\frac{b}{\\sin B}",
+    "name": "Law of sines",
+    "aliases": [
+      "law of sines",
+      "sine rule",
+      "ASA triangle",
+      "AAS triangle",
+      "ambiguous case"
+    ],
+    "category": "geometry-trig",
+    "definition": "In any triangle, each side over the sine of its opposite angle gives the same ratio (twice the circumradius). It solves triangles given two angles, or two sides with a non-included angle.",
+    "reading": "“a over sine A equals b over sine B”.",
+    "examples": [
+      {
+        "tex": "\\frac{5}{\\sin 30^\\circ} = \\frac{b}{\\sin 45^\\circ} \\Rightarrow b = 5\\sqrt{2}",
+        "explanation": "With A = 30°, a = 5 and B = 45°: b = 5·(√2/2)/(1/2) = 5√2, about 7.07."
+      }
+    ],
+    "relatedSymbols": [
+      "sine",
+      "triangle",
+      "proportion",
+      "law-of-cosines"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "law-of-cosines",
+    "symbol": "c² = a² + b² − 2ab cos C",
+    "latex": "c^2 = a^2 + b^2 - 2ab\\cos C",
+    "name": "Law of cosines",
+    "aliases": [
+      "law of cosines",
+      "cosine rule",
+      "SSS triangle",
+      "SAS triangle",
+      "generalized pythagoras"
+    ],
+    "category": "geometry-trig",
+    "definition": "Generalizes Pythagoras to any triangle: c² = a² + b² − 2ab·cos C. When C is a right angle the correction term vanishes and Pythagoras returns.",
+    "reading": "“c squared equals a squared plus b squared minus 2 a b cosine C”.",
+    "examples": [
+      {
+        "tex": "c^2 = 25 + 49 - 2(5)(7)\\left(\\frac{1}{2}\\right) = 39",
+        "explanation": "With a = 5, b = 7 and included angle 60°: c = √39, about 6.24."
+      }
+    ],
+    "relatedSymbols": [
+      "cosine",
+      "triangle",
+      "pythagorean-theorem",
+      "law-of-sines"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "parabola",
+    "symbol": "y = ax² + bx + c",
+    "latex": "y = ax^2 + bx + c",
+    "name": "Parabola",
+    "aliases": [
+      "parabola",
+      "quadratic curve",
+      "focus directrix",
+      "vertex form",
+      "u-shaped curve"
+    ],
+    "category": "geometry-trig",
+    "definition": "The set of points equally distant from a focus point and a directrix line. Its standard equation y = ax² + bx + c opens upward for a > 0; every ray parallel to its axis reflects through the focus.",
+    "reading": "“parabola”.",
+    "examples": [
+      {
+        "tex": "y = x^2",
+        "explanation": "Focus (0, 1/4), directrix y = −1/4: each point is equally distant from both."
+      }
+    ],
+    "relatedSymbols": [
+      "quadratic-formula",
+      "function-notation",
+      "distance-formula",
+      "ellipse",
+      "hyperbola"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "ellipse",
+    "symbol": "x²/a² + y²/b² = 1",
+    "latex": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1",
+    "name": "Ellipse",
+    "aliases": [
+      "ellipse",
+      "oval",
+      "foci ellipse",
+      "major minor axis",
+      "eccentricity"
+    ],
+    "category": "geometry-trig",
+    "definition": "The set of points whose distances to two foci sum to a constant 2a. A circle is the special case of coincident foci; the shape's elongation is its eccentricity, between 0 and 1.",
+    "reading": "“ellipse”.",
+    "examples": [
+      {
+        "tex": "\\frac{x^2}{25} + \\frac{y^2}{9} = 1",
+        "explanation": "Semi-axes 5 and 3; c² = 25 − 9 gives foci at (±4, 0)."
+      }
+    ],
+    "relatedSymbols": [
+      "circle-equation",
+      "distance-formula",
+      "parabola",
+      "hyperbola",
+      "pi-constant"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "hyperbola",
+    "symbol": "x²/a² − y²/b² = 1",
+    "latex": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1",
+    "name": "Hyperbola",
+    "aliases": [
+      "hyperbola",
+      "two branches",
+      "asymptotes",
+      "foci hyperbola",
+      "rectangular hyperbola"
+    ],
+    "category": "geometry-trig",
+    "definition": "The set of points whose distances to two foci differ by a constant 2a, forming two branches. Far out, each branch approaches its asymptotes; the sign pattern in the equation decides the opening direction.",
+    "reading": "“hyperbola”.",
+    "examples": [
+      {
+        "tex": "\\frac{x^2}{9} - \\frac{y^2}{16} = 1",
+        "explanation": "Opens left-right with foci at (±5, 0) and asymptotes y = ±(4/3)x."
+      }
+    ],
+    "relatedSymbols": [
+      "parabola",
+      "ellipse",
+      "distance-formula",
+      "asymptotic"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "tangent-line",
+    "symbol": "y − f(a) = f′(a)(x − a)",
+    "latex": "y - f(a) = f'(a)(x - a)",
+    "name": "Tangent line",
+    "aliases": [
+      "tangent line",
+      "tangent to a curve",
+      "linear approximation",
+      "touching line",
+      "point-slope tangent"
+    ],
+    "category": "geometry-trig",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "The line through (a, f(a)) with the curve's slope f′(a): the best straight-line fit at that point. It touches the graph there and heads in its instantaneous direction.",
+    "reading": "“the tangent line at a”.",
+    "examples": [
+      {
+        "tex": "y - 1 = 2(x - 1)",
+        "explanation": "Tangent to y = x² at (1, 1): slope 2 gives y = 2x − 1."
+      }
+    ],
+    "relatedSymbols": [
+      "slope",
+      "derivative-lagrange",
+      "slope-intercept",
+      "perpendicular"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "hyperbolic-functions",
+    "symbol": "sinh cosh tanh",
+    "latex": "\\sinh, \\cosh, \\tanh",
+    "name": "Hyperbolic functions",
+    "aliases": [
+      "hyperbolic sine",
+      "hyperbolic cosine",
+      "sinh",
+      "cosh",
+      "tanh",
+      "hyperbola parametrization"
+    ],
+    "category": "geometry-trig",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Exponential twins of the circular functions: sinh x = (eˣ − e⁻ˣ)/2 and cosh x = (eˣ + e⁻ˣ)/2. They parametrize the hyperbola x² − y² = 1 as (cosh t, sinh t) and satisfy cosh² − sinh² = 1.",
+    "reading": "“sinch”, “cosh”, “tanch”.",
+    "examples": [
+      {
+        "tex": "\\cosh^2 x - \\sinh^2 x = 1",
+        "explanation": "The fundamental identity, with a minus where cosine has a plus."
+      }
+    ],
+    "relatedSymbols": [
+      "sine",
+      "cosine",
+      "tangent",
+      "exponential-exp",
+      "hyperbola"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 4",
+        "url": "https://dlmf.nist.gov/4",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "trigonometric-identities",
+    "symbol": "sin² + cos² = 1",
+    "latex": "\\sin^2 + \\cos^2 = 1",
+    "name": "Trigonometric identities",
+    "aliases": [
+      "trig identities",
+      "pythagorean identity",
+      "angle sum",
+      "double angle",
+      "sin squared plus cos squared"
+    ],
+    "category": "geometry-trig",
+    "definition": "Equations relating trig functions that hold for every angle: the Pythagorean identity sin² + cos² = 1, angle-sum formulas, and double-angle forms. They simplify expressions and solve equations.",
+    "reading": "“sine squared plus cosine squared equals one”.",
+    "examples": [
+      {
+        "tex": "\\sin 2x = 2\\sin x\\cos x",
+        "explanation": "Double-angle: at x = 30°, both sides equal √3/2."
+      }
+    ],
+    "relatedSymbols": [
+      "sine",
+      "cosine",
+      "tangent",
+      "reciprocal-trig",
+      "pythagorean-theorem"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  }
+]

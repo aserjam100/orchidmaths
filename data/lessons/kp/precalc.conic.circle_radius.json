@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Completing the square",
+    "section": "Completing the square",
+    "subgoals": [
+      "Complete the square in x",
+      "Complete the square in y",
+      "Read the centre from the coefficients"
+    ]
+  },
+  {
+    "label": "Reading the radius",
+    "section": "Reading the radius",
+    "subgoals": [
+      "Use the radius formula",
+      "Compute a radius",
+      "Explain the sign condition"
+    ]
+  },
+  {
+    "label": "From the general form to the standard one",
+    "section": "From the general form to the standard one",
+    "subgoals": [
+      "Recognise the conic from its coefficients",
+      "Normalise before completing the square",
+      "State what distinguishes a circle"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Coefficients from the recurrence",
+    "section": "Coefficients from the recurrence",
+    "subgoals": [
+      "Expand y as sum a_n x^n",
+      "Match coefficients by power",
+      "Read a_2 from the recurrence"
+    ]
+  },
+  {
+    "label": "Worked: exponential and cosine",
+    "section": "Worked: exponential and cosine",
+    "subgoals": [
+      "Expand e^(2x) for a_2 = 2",
+      "Expand cos x for a_2 = -0.5",
+      "Expand cosh x for a_2 = 0.5"
+    ]
+  },
+  {
+    "label": "Radius and singular points",
+    "section": "Radius and singular points",
+    "subgoals": [
+      "Locate where the leading coefficient vanishes",
+      "Use Frobenius at a regular singular point",
+      "Bound the radius by the nearest singularity"
+    ]
+  }
+]

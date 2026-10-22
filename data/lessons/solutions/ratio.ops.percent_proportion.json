@@ -1,0 +1,15 @@
+{
+  "concept": "ratio.ops.percent_proportion",
+  "setup": "The part is [[part]] and the percent is [[percent]]%.",
+  "steps": [
+    {
+      "fact": "part",
+      "say": "Write the proportion with the unknown whole: [[part]] / w = [[percent]] / 100."
+    },
+    {
+      "fact": "percent",
+      "say": "Cross-multiply: 100 x [[part]] = [[percent]] x w."
+    }
+  ],
+  "answer": "Divide both sides by [[percent]]: w = [[whole]]."
+}

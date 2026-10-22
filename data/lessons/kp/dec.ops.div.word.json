@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Divide the decimals",
+    "section": "",
+    "subgoals": [
+      "Move the decimal point in the divisor",
+      "Divide as with whole numbers",
+      "Place the decimal point in the quotient"
+    ]
+  },
+  {
+    "label": "Split the total",
+    "section": "",
+    "subgoals": [
+      "Read the total cost",
+      "Read how many items it covers",
+      "Divide the total by the count"
+    ]
+  },
+  {
+    "label": "Answer in dollars",
+    "section": "",
+    "subgoals": [
+      "Divide in cents",
+      "Give the answer to two decimal places",
+      "Label the answer in dollars"
+    ]
+  }
+]

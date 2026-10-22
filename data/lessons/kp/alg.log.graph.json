@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The reflection of the exponential",
+    "section": "The reflection of the exponential",
+    "subgoals": [
+      "Reflect the exponential across the diagonal",
+      "Turn the horizontal asymptote into a vertical one",
+      "Note the domain is the positive numbers"
+    ]
+  },
+  {
+    "label": "Growth without bound",
+    "section": "Growth without bound",
+    "subgoals": [
+      "Increase without bound for a base above one",
+      "Reverse to decreasing for a base below one",
+      "Mark the points at input one and at the base"
+    ]
+  },
+  {
+    "label": "Building the graph",
+    "section": "Building the graph",
+    "subgoals": [
+      "Report the exponent that reaches each input",
+      "Plot from an exact table of powers",
+      "Sketch from the asymptote and the fixed points"
+    ]
+  }
+]

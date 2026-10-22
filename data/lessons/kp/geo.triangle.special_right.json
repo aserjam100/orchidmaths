@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The ratio",
+    "section": "The ratio",
+    "subgoals": [
+      "State the 30-60-90 ratio",
+      "Double the short leg for the hypotenuse",
+      "Note which side carries the root"
+    ]
+  },
+  {
+    "label": "From the hypotenuse back",
+    "section": "From the hypotenuse back",
+    "subgoals": [
+      "Halve the hypotenuse",
+      "Require an even hypotenuse",
+      "Choose the side that stays whole"
+    ]
+  },
+  {
+    "label": "Where the ratio comes from",
+    "section": "Where the ratio comes from",
+    "subgoals": [
+      "Cut an equilateral triangle in half",
+      "Derive the 1 : 2 part",
+      "Get the root three from Pythagoras"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The statement",
+    "section": "The statement",
+    "subgoals": [
+      "Require continuity on the closed interval",
+      "Require differentiability inside",
+      "Equate the derivative with the average slope"
+    ]
+  },
+  {
+    "label": "Proof from Rolle's theorem",
+    "section": "Proof from Rolle's theorem",
+    "subgoals": [
+      "Subtract the secant line",
+      "Apply Rolle's theorem to the difference",
+      "Add back the average slope"
+    ]
+  },
+  {
+    "label": "Consequences",
+    "section": "Consequences",
+    "subgoals": [
+      "Set the derivative to zero",
+      "Read monotonicity from the sign",
+      "Bound a change by the largest derivative"
+    ]
+  }
+]

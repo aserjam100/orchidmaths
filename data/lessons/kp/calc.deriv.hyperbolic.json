@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Defined from exponentials",
+    "section": "Defined from exponentials",
+    "subgoals": [
+      "Differentiate sinh from its exponential",
+      "Differentiate cosh from its exponential",
+      "Use cosh^2 - sinh^2 = 1"
+    ]
+  },
+  {
+    "label": "Worked: the three basic derivatives",
+    "section": "Worked: the three basic derivatives",
+    "subgoals": [
+      "Write (sinh)' = cosh",
+      "Write (cosh)' = sinh",
+      "Write (tanh)' = 1/cosh^2"
+    ]
+  },
+  {
+    "label": "Chain rule with hyperbolic functions",
+    "section": "Chain rule with hyperbolic functions",
+    "subgoals": [
+      "Differentiate sinh(3x)",
+      "Differentiate cosh(x^2)",
+      "Differentiate tanh(x/2)"
+    ]
+  }
+]

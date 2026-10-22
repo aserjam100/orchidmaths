@@ -1,0 +1,88 @@
+# Orchid SM-2 Algorithm & Mastery State Machine
+
+direction: right
+
+# Mastery States. Advancement is decided by evidence, not by a streak:
+# internal/mastery/machine.go advances one rung when HighestRung(evidence) >= requiredRung.
+States: Mastery States {
+  UNSEEN: UNSEEN\nInitial State
+
+  LEARNING: LEARNING\nfirst correct answer
+
+  PRACTICING: PRACTICING\nconsistent across attempts
+
+  MASTERED: MASTERED\nevidence >= 0.6 over 6+ attempts
+
+  DECAYING: DECAYING\n14+ days no review
+    style.stroke-dash: 3
+
+  style: {
+    border-radius: 8
+  }
+}
+
+Transitions: Transitions {
+  T1: evidence reaches the next rung
+  T2: 14+ days idle to decay from MASTERED
+  T3: review correct to restore to MASTERED
+  T4: a miss lowers evidence but never un-learns
+
+  style: {
+    font-size: 10
+  }
+}
+
+UNSEEN -> LEARNING: T1
+LEARNING -> PRACTICING: T1
+PRACTICING -> MASTERED: T1
+MASTERED -> DECAYING: T2
+DECAYING -> MASTERED: T3
+UNSEEN -> UNSEEN: T4
+LEARNING -> LEARNING: T4
+PRACTICING -> PRACTICING: T4
+
+# SM-2 Algorithm
+SM2: SM-2 Spaced Repetition {
+  Input: Quality score (0-5)
+
+  "quality >= 3": rep++, ef adjust, interval grows
+  "quality  < 3": rep=0, interval=1, ef unchanged
+
+  Interval: 1 day, then 6 days, then prev x ef
+  Scaled: every interval x per-topic learning speed (0.5-2.0)
+  Schedule: next_review = now + interval days
+}
+
+# Quality mapping
+Quality: Quality Mapping {
+  "Q5": streakMet AND ratio <= 0.5 to 5
+  "Q4": streakMet AND ratio <= 1.0 to 4
+  "Q3": streakMet AND ratio  > 1.0 to 3
+  "Q0": streak NOT met to 0
+}
+
+# Scoring formula. Speed and streak are not rewarded; see internal/xp/policy.go.
+Scoring: XP Scoring {
+  "Base XP": EffortBase(threshold), clamped 1-5
+  "Multiplier": 1.1 inside time threshold, 1.0 outside
+  "XP": int(base x multiplier); no time or streak multiplier
+}
+
+# Links
+Quality -> SM2: quality to SM2
+SM2 -> States: schedule to mastery
+Quality -> Scoring: metrics to XP
+
+nodes: {
+  style: {
+    border-radius: 6
+    font-size: 12
+  }
+}
+
+edges: {
+  style: {
+    stroke: "#6b6a64"
+    font-size: 10
+  }
+}

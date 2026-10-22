@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one discriminator update",
+    "section": "Worked: one discriminator update",
+    "subgoals": [
+      "Score the real sample term",
+      "Score the fake sample term",
+      "Push gradients back into the generator"
+    ]
+  },
+  {
+    "label": "Worked: equilibrium",
+    "section": "Worked: equilibrium",
+    "subgoals": [
+      "Match the generator to the data",
+      "Read the discriminator at chance",
+      "Name the Nash equilibrium"
+    ]
+  },
+  {
+    "label": "When the generator collapses",
+    "section": "When the generator collapses",
+    "subgoals": [
+      "Count covered versus missing modes",
+      "Diagnose diversity collapse",
+      "Stabilize with Wasserstein distance"
+    ]
+  }
+]

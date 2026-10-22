@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The inscribed-angle theorem",
+    "section": "The inscribed-angle theorem",
+    "subgoals": [
+      "Define an inscribed angle",
+      "Halve the central angle",
+      "Compute an inscribed angle"
+    ]
+  },
+  {
+    "label": "The semicircle case",
+    "section": "The semicircle case",
+    "subgoals": [
+      "Apply the theorem to 180 degrees",
+      "Conclude the angle is a right angle",
+      "Use the converse to construct one"
+    ]
+  },
+  {
+    "label": "Angles on the same arc",
+    "section": "Angles on the same arc",
+    "subgoals": [
+      "Show two angles on one arc are equal",
+      "Describe what a chord is seen at",
+      "Explain the cyclic quadrilateral sum"
+    ]
+  }
+]

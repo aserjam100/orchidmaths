@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Conic sections intro",
+    "section": "",
+    "subgoals": [
+      "Recognize the parabola as a conic section",
+      "Identify the focus and directrix",
+      "Locate the vertex"
+    ]
+  },
+  {
+    "label": "Coefficient geometry",
+    "section": "",
+    "subgoals": [
+      "Read the vertex from the equation",
+      "Read the opening direction",
+      "Read the stretch factor"
+    ]
+  },
+  {
+    "label": "The parabola",
+    "section": "",
+    "subgoals": [
+      "Write the standard form",
+      "Find vertex, focus, directrix",
+      "Sketch the graph"
+    ]
+  }
+]

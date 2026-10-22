@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A sum of products",
+    "section": "A sum of products",
+    "subgoals": [
+      "Write Vandermonde's identity",
+      "Explain why the terms are disjoint",
+      "Split a choice between two groups"
+    ]
+  },
+  {
+    "label": "Evaluating the sum",
+    "section": "Evaluating the sum",
+    "subgoals": [
+      "Evaluate a small convolution",
+      "Treat out-of-range coefficients as zero",
+      "Compare it with direct addition"
+    ]
+  },
+  {
+    "label": "Where it appears",
+    "section": "Where it appears",
+    "subgoals": [
+      "Relate it to Pascal's triangle",
+      "See it as a generating-function product",
+      "Recognise a binomial convolution"
+    ]
+  }
+]

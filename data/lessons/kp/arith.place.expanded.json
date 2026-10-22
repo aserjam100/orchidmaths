@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Break the number into place values",
+    "section": "Break the number into place values",
+    "subgoals": [
+      "Name the thousands, hundreds, tens and ones",
+      "Multiply each digit by its place value",
+      "Skip digits that are zero"
+    ]
+  },
+  {
+    "label": "Write the sum",
+    "section": "Write the sum",
+    "subgoals": [
+      "List the nonzero values largest first",
+      "Join them with plus signs",
+      "Keep the values in place order"
+    ]
+  },
+  {
+    "label": "Check the total",
+    "section": "Check the total",
+    "subgoals": [
+      "Add the parts",
+      "Compare the total with the original number",
+      "Reassign a part if the total differs"
+    ]
+  }
+]

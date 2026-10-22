@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Finding the smallest common multiple",
+    "section": "Finding the smallest common multiple",
+    "subgoals": [
+      "Define the least common denominator",
+      "Compute one",
+      "See why the smallest is easier"
+    ]
+  },
+  {
+    "label": "Multiplying is not the same as least",
+    "section": "Multiplying is not the same as least",
+    "subgoals": [
+      "Multiply the denominators",
+      "Compare with the least",
+      "Say why using the product is wasteful but not wrong"
+    ]
+  },
+  {
+    "label": "Why it matters for adding",
+    "section": "Why it matters for adding",
+    "subgoals": [
+      "Connect it to fraction addition",
+      "Use a dividing denominator",
+      "Avoid unnecessary factoring"
+    ]
+  }
+]

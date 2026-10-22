@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Read hundreds, tens and ones",
+    "section": "Read hundreds, tens and ones",
+    "subgoals": [
+      "Find the hundreds digit on the left",
+      "Find the tens and ones digits",
+      "Write the number as hundreds plus tens plus ones"
+    ]
+  },
+  {
+    "label": "The value of the hundreds digit",
+    "section": "The value of the hundreds digit",
+    "subgoals": [
+      "Find the digit in the hundreds place",
+      "Count that many hundreds",
+      "Write the value with 00 at the end"
+    ]
+  },
+  {
+    "label": "Numbers with no hundreds",
+    "section": "Numbers with no hundreds",
+    "subgoals": [
+      "Notice the number has fewer than three digits",
+      "Read it as 0 hundreds",
+      "Give the hundreds value as 0"
+    ]
+  }
+]

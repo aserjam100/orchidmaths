@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Homomorphisms preserve structure",
+    "section": "",
+    "subgoals": [
+      "Check phi(a*b) against phi(a)*phi(b)",
+      "Derive identity and inverse preservation",
+      "Add the unity condition for unital rings"
+    ]
+  },
+  {
+    "label": "Kernel detects injectivity",
+    "section": "",
+    "subgoals": [
+      "Compute ker(phi) as the identity preimage",
+      "Test triviality for injectivity",
+      "Build SL(n,F) as a determinant kernel"
+    ]
+  },
+  {
+    "label": "Sign of a permutation",
+    "section": "",
+    "subgoals": [
+      "Take determinants of permutation matrices",
+      "Read parity from (-1)^r",
+      "Land even permutations in A_n"
+    ]
+  }
+]

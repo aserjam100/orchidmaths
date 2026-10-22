@@ -1,0 +1,15 @@
+{
+  "concept": "alg.func.variation",
+  "setup": "\\(y\\) varies [[kind]] as \\(x\\), and \\(y = [[y1]]\\) when \\(x = [[x1]]\\).",
+  "steps": [
+    {
+      "fact": "constant",
+      "say": "The constant of variation is [[constant]]."
+    },
+    {
+      "fact": "value",
+      "say": "At \\(x = [[x2]]\\), the value is \\(y = [[value]]\\)."
+    }
+  ],
+  "answer": "So \\(y = [[value]]\\) when \\(x = [[x2]]\\)."
+}

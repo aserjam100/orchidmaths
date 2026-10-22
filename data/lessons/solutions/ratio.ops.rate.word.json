@@ -1,0 +1,19 @@
+{
+  "concept": "ratio.ops.rate.word",
+  "setup": "A [[subject]] [[verb]] [[total]] [[unit]] in [[time]] [[per]]s.",
+  "steps": [
+    {
+      "fact": "per",
+      "say": "The rate is what happens in one [[per]], so divide the amount by [[time]]."
+    },
+    {
+      "fact": "total",
+      "say": "The amount to share out is [[total]] [[unit]]."
+    },
+    {
+      "fact": "rate",
+      "say": "[[total]] / [[time]] = [[rate]], so the rate is [[rate]] [[unit]] per [[per]]."
+    }
+  ],
+  "answer": "The rate is [[rate]] [[unit]] per [[per]]."
+}

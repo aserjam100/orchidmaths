@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Vertices minus edges plus faces",
+    "section": "Vertices minus edges plus faces",
+    "subgoals": [
+      "Compute V - E + F",
+      "Subdivide without changing the sum",
+      "Use chi = 2 - 2g for a surface"
+    ]
+  },
+  {
+    "label": "Worked: the tetrahedron and the torus",
+    "section": "Worked: the tetrahedron and the torus",
+    "subgoals": [
+      "Evaluate 4 - 6 + 4",
+      "Evaluate 9 - 27 + 18",
+      "Evaluate 6 - 15 + 10"
+    ]
+  },
+  {
+    "label": "Why it is a topological invariant",
+    "section": "Why it is a topological invariant",
+    "subgoals": [
+      "Write chi as the alternating Betti sum",
+      "Compare sphere and torus",
+      "Note the torus and Klein bottle share chi"
+    ]
+  }
+]

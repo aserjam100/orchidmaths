@@ -1,0 +1,565 @@
+[
+  {
+    "id": "graph.isomorphism",
+    "label": "Graph isomorphism",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.basics",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "discrete.graphs.basics"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "graph.complement",
+    "label": "The complement of a graph",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.basics"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "graph.subgraph",
+    "label": "Subgraphs and induced subgraphs",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.basics",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "discrete.graphs.basics"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "graph.homomorphism",
+    "label": "Graph homomorphisms",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.basics",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "graph.isomorphism"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.product",
+    "label": "Graph products",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.subgraph"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.distance",
+    "label": "Distance and diameter",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.connectivity",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.paths"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "graph.cut_vertex",
+    "label": "Cut vertices",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.connectivity",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.paths"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "graph.bridge",
+    "label": "Bridges",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.connectivity",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.cut_vertex"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "graph.connectivity",
+    "label": "Vertex and edge connectivity",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.connectivity",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.cut_vertex"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.menger",
+    "label": "Menger's theorem",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.connectivity",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "graph.connectivity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.matching",
+    "label": "Matchings",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.matching",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.bipartite"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "graph.perfect_matching",
+    "label": "Perfect matchings",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.matching",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "graph.matching"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "graph.tutte",
+    "label": "Tutte's theorem",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.matching",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "graph.perfect_matching"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.vertex_cover",
+    "label": "Vertex covers",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.matching",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.bipartite"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "graph.independent_set",
+    "label": "Independent sets",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.matching",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.vertex_cover"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "graph.chromatic_polynomial",
+    "label": "The chromatic polynomial",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.coloring",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.coloring"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.brooks",
+    "label": "Brooks' theorem",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.coloring",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "discrete.graphs.coloring"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.edge_coloring",
+    "label": "Edge coloring",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.coloring",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.coloring"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "graph.perfect_graph",
+    "label": "Perfect graphs",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.coloring",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "graph.chromatic_polynomial"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.list_coloring",
+    "label": "List coloring",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.coloring",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.coloring"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.kuratowski",
+    "label": "Kuratowski's theorem",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.planarity",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "discrete.graphs.planar"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.minor",
+    "label": "Graph minors",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.planarity",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "graph.kuratowski"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.treewidth",
+    "label": "Treewidth",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.planarity",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.minor"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "graph.genus",
+    "label": "Graph genus",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.planarity",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.planar"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.outerplanar",
+    "label": "Outerplanar graphs",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.planarity",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.planar"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.adjacency",
+    "label": "Adjacency matrix",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.spectral",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "linalg.matrix.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.laplacian",
+    "label": "Laplacian matrix",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.spectral",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.adjacency"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.matrix_tree",
+    "label": "Matrix-tree theorem",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.spectral",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.laplacian",
+      "linalg.det.2x2"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "graph.spectral_radius",
+    "label": "Spectral radius",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.spectral",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.adjacency",
+      "linalg.eigen.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.spectral_gap",
+    "label": "Algebraic connectivity",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.spectral",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.laplacian",
+      "linalg.eigen.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.mantel",
+    "label": "Mantel's theorem",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.extremal",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.basics"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.turan",
+    "label": "Turán's theorem",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.extremal",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.mantel"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.ramsey",
+    "label": "Ramsey numbers",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.extremal",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "discrete.graphs.coloring"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "graph.random_threshold",
+    "label": "Random graph thresholds",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.extremal",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "graph.connectivity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "graph.moore_bound",
+    "label": "Moore bound",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.extremal",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.distance"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.max_flow",
+    "label": "Max-flow min-cut",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.flows",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.menger"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "graph.tournament",
+    "label": "Tournaments",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.flows",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.distance"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.strong_connectivity",
+    "label": "Strong connectivity",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.flows",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "graph.connectivity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.topological_sort",
+    "label": "Topological sort",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.flows",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "graph.strong_connectivity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "graph.dag_paths",
+    "label": "Counting paths in a DAG",
+    "domain": "graph_theory",
+    "subdomain": "graph_theory.flows",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "graph.topological_sort"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  }
+]

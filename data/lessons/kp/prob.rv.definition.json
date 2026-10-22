@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A function, not a number",
+    "section": "A function, not a number",
+    "subgoals": [
+      "Read X as a function on outcomes",
+      "Send each outcome to a real number",
+      "Require the level sets to be events"
+    ]
+  },
+  {
+    "label": "Worked: the indicator variable",
+    "section": "Worked: the indicator variable",
+    "subgoals": [
+      "Define the indicator of an event",
+      "Compute its expectation",
+      "Read it as a set statement in arithmetic"
+    ]
+  },
+  {
+    "label": "Discrete and continuous",
+    "section": "Discrete and continuous",
+    "subgoals": [
+      "List the values of a discrete variable",
+      "Use a density in the continuous case",
+      "Use the distribution function for both"
+    ]
+  }
+]

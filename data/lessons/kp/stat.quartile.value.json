@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Quartiles as medians of halves",
+    "section": "Quartiles as medians of halves",
+    "subgoals": [
+      "Define each quartile",
+      "Find two medians",
+      "Say which one is the median"
+    ]
+  },
+  {
+    "label": "Five-number summaries",
+    "section": "Five-number summaries",
+    "subgoals": [
+      "List the five numbers",
+      "Draw a box plot from them",
+      "Say what the summary describes"
+    ]
+  },
+  {
+    "label": "Reading them from a sorted list",
+    "section": "Reading them from a sorted list",
+    "subgoals": [
+      "Sort first",
+      "Split at the median",
+      "Check by counting from the ends"
+    ]
+  }
+]

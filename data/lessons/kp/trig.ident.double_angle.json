@@ -1,0 +1,29 @@
+[
+  {
+    "label": "One angle, written twice",
+    "section": "Two angles that are the same",
+    "subgoals": [
+      "Read 2 theta as twice a known angle",
+      "Say that no new angle is introduced",
+      "Take a single-angle ratio as the input"
+    ]
+  },
+  {
+    "label": "The two formulas",
+    "section": "Sine and cosine of twice an angle",
+    "subgoals": [
+      "State sin 2 theta as 2 sin theta cos theta",
+      "State cos 2 theta as cos squared minus sin squared",
+      "Supply the missing side from the Pythagorean theorem"
+    ]
+  },
+  {
+    "label": "Signs after doubling",
+    "section": "Signs after doubling",
+    "subgoals": [
+      "Recognise that doubling can pass 90 degrees",
+      "Let cos 2 theta take a negative value",
+      "Trust the formula over the triangle's acute angle"
+    ]
+  }
+]

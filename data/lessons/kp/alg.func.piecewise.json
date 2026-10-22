@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Choosing the branch",
+    "section": "Choosing the branch",
+    "subgoals": [
+      "Decide which part of the domain the input lies in",
+      "Use only the formula for that part",
+      "Watch whether the boundary is included"
+    ]
+  },
+  {
+    "label": "Evaluating a two-piece rule",
+    "section": "Evaluating a two-piece rule",
+    "subgoals": [
+      "Test the input against each condition in order",
+      "Substitute into the matching expression",
+      "Keep the value at the boundary on the correct side"
+    ]
+  },
+  {
+    "label": "Where piecewise functions appear",
+    "section": "Where piecewise functions appear",
+    "subgoals": [
+      "Recognise a change of rule at a threshold",
+      "Translate a rate schedule into branches",
+      "Read the definition of absolute value as piecewise"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Nowhere dense and meagre",
+    "section": "Nowhere dense and meagre",
+    "subgoals": [
+      "Define nowhere dense and meagre",
+      "Forbid a meagre cover",
+      "Turn the denial into existence"
+    ]
+  },
+  {
+    "label": "The nested-ball proof",
+    "section": "The nested-ball proof",
+    "subgoals": [
+      "Assume a meagre cover",
+      "Choose shrinking balls avoiding each set",
+      "Find a point in no set of the cover"
+    ]
+  },
+  {
+    "label": "Consequences",
+    "section": "Consequences",
+    "subgoals": [
+      "Apply it to the real line",
+      "Show generic functions are nowhere continuous",
+      "Prove a dense set of well-behaved points exists"
+    ]
+  }
+]

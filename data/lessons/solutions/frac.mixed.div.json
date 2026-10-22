@@ -1,0 +1,15 @@
+{
+  "concept": "frac.mixed.div",
+  "setup": "You are dividing a mixed number by a fraction.",
+  "steps": [
+    {
+      "fact": "improper_num",
+      "say": "The first step is always to turn the mixed number into an improper fraction: the whole number times the denominator plus the numerator, over the denominator, giving \\(\\frac{[[improper_num]]}{[[improper_den]]}\\)."
+    },
+    {
+      "fact": "out_num",
+      "say": "Then dividing by a fraction means multiplying by its reciprocal, and the result is \\(\\frac{[[out_num]]}{[[out_den]]}\\). Doing the conversion first is what makes the division a multiplication."
+    }
+  ],
+  "answer": "So the quotient is \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

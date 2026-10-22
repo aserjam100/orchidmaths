@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Geometric representation",
+    "section": "",
+    "subgoals": [
+      "Multiply |a||b|cos(theta)",
+      "Read theta as the angle between tails",
+      "Return zero exactly when orthogonal"
+    ]
+  },
+  {
+    "label": "Components and coordinate representation",
+    "section": "",
+    "subgoals": [
+      "Multiply matching components ai*bi",
+      "Sum the pairwise products",
+      "Divide by both norms to get cos(theta)"
+    ]
+  },
+  {
+    "label": "Vector operations",
+    "section": "",
+    "subgoals": [
+      "Add dot products term by term",
+      "Pull scalars out front",
+      "Test orthogonality by a zero dot product"
+    ]
+  }
+]

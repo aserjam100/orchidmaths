@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Model integers as pairs (a, b) encoding a - b",
+      "Read (2, 5) as -3 via net difference",
+      "Test class equality via a + d = b + c"
+    ]
+  },
+  {
+    "label": "The Integers as an algebraic ring",
+    "section": "",
+    "subgoals": [
+      "Close Z under addition and multiplication",
+      "Anchor neutrals a + 0 = a and a*1 = a",
+      "Distribute a(b + c) = ab + ac with commuting factors"
+    ]
+  },
+  {
+    "label": "Fundamental properties of the integers",
+    "section": "",
+    "subgoals": [
+      "Preserve equality adding c or multiplying by c",
+      "Carry neutrals 0 and 1 through expressions",
+      "Note only +/-1 invert inside Z, unlike Q"
+    ]
+  }
+]

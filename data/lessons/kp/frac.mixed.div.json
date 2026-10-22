@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Converting first",
+    "section": "Converting first",
+    "subgoals": [
+      "Turn a mixed number into an improper fraction",
+      "Say why the conversion is needed",
+      "Note the usual error"
+    ]
+  },
+  {
+    "label": "Multiplying by the reciprocal",
+    "section": "Multiplying by the reciprocal",
+    "subgoals": [
+      "Invert the divisor",
+      "Do the two steps in either order",
+      "Convert back only if needed"
+    ]
+  },
+  {
+    "label": "Checking the size",
+    "section": "Checking the size",
+    "subgoals": [
+      "Predict the answer grows",
+      "Explain via the reciprocal",
+      "Catch a missing inversion"
+    ]
+  }
+]

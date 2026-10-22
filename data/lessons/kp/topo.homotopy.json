@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: winding number on the circle",
+    "section": "Worked: winding number on the circle",
+    "subgoals": [
+      "Lift the loop to the real line",
+      "Read the endpoint integer",
+      "Match homotopic loops to equal endpoints"
+    ]
+  },
+  {
+    "label": "Worked: the sphere is simply connected",
+    "section": "Worked: the sphere is simply connected",
+    "subgoals": [
+      "Perturb the loop off a point",
+      "Contract it in the punctured sphere",
+      "Conclude every loop is null-homotopic"
+    ]
+  },
+  {
+    "label": "Worked: maps into Euclidean space",
+    "section": "Worked: maps into Euclidean space",
+    "subgoals": [
+      "Write the straight-line homotopy",
+      "Check it stays in Euclidean space",
+      "Conclude all maps are homotopic"
+    ]
+  }
+]

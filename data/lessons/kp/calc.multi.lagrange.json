@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Gradients in line",
+    "section": "Gradients in line",
+    "subgoals": [
+      "State the parallel condition",
+      "Explain what lambda measures",
+      "Show why non-parallel fails"
+    ]
+  },
+  {
+    "label": "The method",
+    "section": "The method",
+    "subgoals": [
+      "Write the multiplier equations",
+      "Carry the constraint along",
+      "Solve a three-equation system"
+    ]
+  },
+  {
+    "label": "Why the tangency condition",
+    "section": "Why the tangency condition",
+    "subgoals": [
+      "Relate tangents to gradients",
+      "Describe tangency between level sets",
+      "Name the cases the method misses"
+    ]
+  }
+]

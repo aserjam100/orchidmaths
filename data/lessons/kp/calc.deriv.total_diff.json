@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Total differential formula",
+    "section": "",
+    "subgoals": [
+      "Write dz = fx dx + fy dy",
+      "Link each term to a partial",
+      "Check z = x^2 y term by term"
+    ]
+  },
+  {
+    "label": "Worked total differentials",
+    "section": "",
+    "subgoals": [
+      "Assemble dz = y dx + x dy for z = xy",
+      "Confirm each coefficient matches a partial",
+      "Evaluate dz at (1,2)"
+    ]
+  },
+  {
+    "label": "Partial derivatives refresher",
+    "section": "",
+    "subgoals": [
+      "Hold y constant to read fx",
+      "Compute first-order partials",
+      "Feed them into dz"
+    ]
+  }
+]

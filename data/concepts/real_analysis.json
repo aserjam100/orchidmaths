@@ -1,0 +1,708 @@
+[
+  {
+    "id": "ra.order.supremum",
+    "label": "Supremum and infimum",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.order",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.limit.supremum"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.order.completeness",
+    "label": "The completeness axiom",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.order",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.order.supremum"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.order.archimedean",
+    "label": "The Archimedean property",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.order",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ra.order.completeness"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.order.nested_intervals",
+    "label": "Nested intervals",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.order",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.order.completeness"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.order.density",
+    "label": "Density of the rationals",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.order",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.order.archimedean"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.order.countable",
+    "label": "Countable sets",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.order",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.order.density"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.order.uncountable",
+    "label": "The uncountability of the reals",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.order",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.order.countable"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.order.extended",
+    "label": "The extended real line",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.order",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.order.supremum"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.seq.convergence",
+    "label": "Convergence of sequences",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.seq.convergence"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.seq.monotone",
+    "label": "Monotone convergence",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ra.seq.convergence",
+      "calc.seq.monotone"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.seq.subsequence",
+    "label": "Subsequences",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.seq.convergence"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.seq.bolzano_weierstrass",
+    "label": "The Bolzano-Weierstrass theorem",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.seq.subsequence",
+      "calc.seq.bounded"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 34.0
+    }
+  },
+  {
+    "id": "ra.seq.cauchy",
+    "label": "Cauchy sequences",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "calc.seq.cauchy",
+      "ra.seq.convergence"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.seq.series",
+    "label": "Series and partial sums",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.series.geometric"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.seq.tests",
+    "label": "Comparison and ratio tests",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "calc.series.ratio_test",
+      "calc.series.direct_compare"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.seq.absolute",
+    "label": "Absolute and conditional convergence",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "calc.series.absolute"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.seq.rearrangement",
+    "label": "Rearrangement of series",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.seq.absolute"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 34.0
+    }
+  },
+  {
+    "id": "ra.seq.cauchy_criterion",
+    "label": "The Cauchy criterion for series",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "calc.series.cauchy_criterion"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.limit.function",
+    "label": "The limit of a function",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.limit.epsilon_delta"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.limit.sequential",
+    "label": "The sequential criterion",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.limit.function",
+      "ra.seq.convergence"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.limit.continuity",
+    "label": "Continuity and its algebra",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "calc.limit.continuity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.limit.ivt",
+    "label": "The intermediate value theorem",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.limit.continuity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.limit.evt",
+    "label": "The extreme value theorem",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.limit.continuity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 32.0
+    }
+  },
+  {
+    "id": "ra.limit.uniform",
+    "label": "Uniform continuity",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "calc.limit.uniform_continuity",
+      "ra.limit.continuity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 34.0
+    }
+  },
+  {
+    "id": "ra.limit.compact",
+    "label": "Compactness and Heine-Borel",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.limit.evt"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 34.0
+    }
+  },
+  {
+    "id": "ra.limit.connected",
+    "label": "Connected sets",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "calc.limit.continuity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.limit.discontinuity",
+    "label": "Classification of discontinuities",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "calc.limit.discontinuity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.limit.monotone_fn",
+    "label": "Monotone functions",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.limit",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.seq.monotone"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.deriv.mvt",
+    "label": "The mean value theorem",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.deriv.mvt"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.deriv.chain",
+    "label": "The chain rule",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.deriv.chain_rule"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.deriv.taylor",
+    "label": "Taylor's theorem",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.series.taylor"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.deriv.lhopital",
+    "label": "L'Hopital's rule",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.limit.lhopital"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.deriv.riemann",
+    "label": "The Riemann integral",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.integral.riemann_criteria"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.deriv.darboux",
+    "label": "Darboux's theorem",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.deriv.mvt"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.deriv.ftc",
+    "label": "The fundamental theorem of calculus",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.integral.ftc"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.deriv.parts",
+    "label": "Integration by parts",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.integral.parts"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.deriv.improper",
+    "label": "Improper integrals",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.integral.improper"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.deriv.uniform_conv",
+    "label": "Uniform convergence",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.limit.uniform"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.deriv.power_series",
+    "label": "Power series",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.seq",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.series.power"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.deriv.interchange",
+    "label": "Interchange of limits",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.deriv",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.deriv.uniform_conv"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.metric.spaces",
+    "label": "Metric spaces",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.seq.cauchy"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.metric.open_closed",
+    "label": "Open and closed sets",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.metric.spaces"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.metric.closure",
+    "label": "Closure and interior",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.metric.open_closed"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.metric.convergence",
+    "label": "Convergence in metric spaces",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.metric.spaces"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.metric.complete",
+    "label": "Completeness",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.seq.cauchy"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.metric.compact",
+    "label": "Compactness",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.limit.compact"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.metric.continuity",
+    "label": "Continuity in metric spaces",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.limit.continuity"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.metric.contraction",
+    "label": "The contraction mapping principle",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ra.metric.complete"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ra.metric.baire",
+    "label": "Baire's category theorem",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.metric.complete"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  },
+  {
+    "id": "ra.metric.equivalent",
+    "label": "Equivalent metrics",
+    "domain": "real_analysis",
+    "subdomain": "real_analysis.metric",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ra.metric.open_closed"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 33.0
+    }
+  }
+]

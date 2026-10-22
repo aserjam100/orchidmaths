@@ -1,0 +1,19 @@
+{
+  "concept": "alg.quad.word_problem",
+  "setup": "Let \\(w\\) be the width in meters.",
+  "steps": [
+    {
+      "fact": "length_expr",
+      "say": "The length is \\([[length_expr]]\\), so the area equation is \\(w([[length_expr]]) = [[area]]\\)."
+    },
+    {
+      "fact": "quadratic",
+      "say": "Expanding and moving the area gives \\([[quadratic]] = 0\\)."
+    },
+    {
+      "fact": "w",
+      "say": "The positive root is \\(w = [[w]]\\); the other root is negative and cannot be a width."
+    }
+  ],
+  "answer": "So the width is \\([[w]]\\) meters."
+}

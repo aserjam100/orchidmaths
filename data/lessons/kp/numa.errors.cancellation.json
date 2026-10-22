@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Subtracting close numbers",
+    "section": "Subtracting close numbers",
+    "subgoals": [
+      "Subtract two nearly equal numbers",
+      "Watch the leading digits cancel",
+      "Compare the result's relative error to the inputs'"
+    ]
+  },
+  {
+    "label": "Worked: a close difference",
+    "section": "Worked: a close difference",
+    "subgoals": [
+      "Form the difference",
+      "Compute the amplification factor",
+      "Apply it to the input error"
+    ]
+  },
+  {
+    "label": "Avoiding cancellation",
+    "section": "Avoiding cancellation",
+    "subgoals": [
+      "Spot the close subtraction",
+      "Rewrite the formula algebraically",
+      "Compute the stable rearrangement instead"
+    ]
+  }
+]

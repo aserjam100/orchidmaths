@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: orbits partition {1, 2, 3} under S_3",
+    "section": "Worked: orbits partition {1, 2, 3} under S_3",
+    "subgoals": [
+      "Send 1 to 2 and 3 by permutations",
+      "Recognize one transitive orbit",
+      "Check orbit-stabilizer: 3 times 2 is 6"
+    ]
+  },
+  {
+    "label": "Worked: |D_4| from orbit-stabilizer",
+    "section": "Worked: |D_4| from orbit-stabilizer",
+    "subgoals": [
+      "Count one orbit of size 4",
+      "Count the vertex stabilizer as 2",
+      "Multiply to get 8"
+    ]
+  },
+  {
+    "label": "Orbit sizes vary",
+    "section": "Orbit sizes vary",
+    "subgoals": [
+      "Spot fixed points as size-1 orbits",
+      "Note sizes divide |G|",
+      "Keep only the partition guarantee"
+    ]
+  }
+]

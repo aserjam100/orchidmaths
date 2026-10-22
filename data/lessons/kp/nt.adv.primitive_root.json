@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: 2 is primitive mod 5",
+    "section": "Worked: 2 is primitive mod 5",
+    "subgoals": [
+      "List the powers 1, 2, 4, 3",
+      "Cover all four nonzero residues",
+      "Conclude the order is p-1"
+    ]
+  },
+  {
+    "label": "Worked: 2 is not primitive mod 7",
+    "section": "Worked: 2 is not primitive mod 7",
+    "subgoals": [
+      "Cycle the powers 2, 4, 1",
+      "Count only 3 distinct residues",
+      "Reject primitivity against p-1"
+    ]
+  },
+  {
+    "label": "Worked: counting them mod 7",
+    "section": "Worked: counting them mod 7",
+    "subgoals": [
+      "Verify order 6 for bases 3 and 5",
+      "Compute phi(6) as the predicted count",
+      "Match the prediction to the pair"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "concept": "topo.dimension",
+  "setup": "You are finding the Lebesgue covering dimension of \\([[space]]\\).",
+  "steps": [
+    {
+      "fact": "rule",
+      "say": "The covering dimension is the least \\(n\\) for which every open cover has an open refinement in which no point lies in more than \\(n + 1\\) sets. Here, [[rule]]."
+    },
+    {
+      "fact": "space",
+      "say": "Covering dimension is a topological invariant, so \\([[space]]\\) and any space homeomorphic to it share the same value. That value is a single number, not a comparison, so answer with the number."
+    }
+  ],
+  "answer": "So the Lebesgue covering dimension of \\([[space]]\\) is [[dim]]."
+}

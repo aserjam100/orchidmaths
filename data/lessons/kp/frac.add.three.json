@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The same rule twice",
+    "section": "The same rule twice",
+    "subgoals": [
+      "Apply the rule pairwise",
+      "Find a common denominator for three",
+      "Keep the denominators aligned"
+    ]
+  },
+  {
+    "label": "Keeping the denominator in view",
+    "section": "Keeping the denominator in view",
+    "subgoals": [
+      "Write the common denominator once",
+      "Spot the error of adding tops only",
+      "Say why the wrong answer is too small"
+    ]
+  },
+  {
+    "label": "Reducing at the end",
+    "section": "Reducing at the end",
+    "subgoals": [
+      "Reduce after adding",
+      "Say why a common denominator is rarely least",
+      "Estimate to check"
+    ]
+  }
+]

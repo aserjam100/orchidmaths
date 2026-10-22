@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Signs between the roots",
+    "section": "Signs between the roots",
+    "subgoals": [
+      "Find the roots",
+      "Test one value in each interval",
+      "Watch repeated roots"
+    ]
+  },
+  {
+    "label": "Worked: a quadratic inequality",
+    "section": "Worked: a quadratic inequality",
+    "subgoals": [
+      "Solve (x-1)(x-3) < 0",
+      "Test x = 2",
+      "Take the interval (1,3)"
+    ]
+  },
+  {
+    "label": "Rational inequalities and excluded values",
+    "section": "Rational inequalities and excluded values",
+    "subgoals": [
+      "Add the denominator zeros",
+      "Exclude them from the solution",
+      "Read the sign intervals"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The largest eigenvalue",
+    "section": "The largest eigenvalue",
+    "subgoals": [
+      "Bound rho by average and maximum degree",
+      "Take the Perron eigenvector positive",
+      "Read walk growth from rho to the k"
+    ]
+  },
+  {
+    "label": "Worked: regular graphs",
+    "section": "Worked: regular graphs",
+    "subgoals": [
+      "Use the all-ones eigenvector",
+      "Read the degree as rho",
+      "Apply it to K_n and C_n"
+    ]
+  },
+  {
+    "label": "Perron-Frobenius and bounds",
+    "section": "Perron-Frobenius and bounds",
+    "subgoals": [
+      "Identify when average degree is rho",
+      "Identify when maximum degree is rho",
+      "Link the gap to expansion"
+    ]
+  }
+]

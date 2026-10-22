@@ -1,0 +1,15 @@
+{
+  "concept": "prealg.expr.translate",
+  "setup": "Translate the phrase into an algebraic expression.",
+  "steps": [
+    {
+      "fact": "phrase",
+      "say": "The phrase is \"[[phrase]]\"."
+    },
+    {
+      "fact": "reason",
+      "say": "[[reason]]"
+    }
+  ],
+  "answer": "The expression is \\([[answer]]\\)."
+}

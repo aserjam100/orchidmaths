@@ -1,0 +1,29 @@
+[
+  {
+    "label": "No memory of the past",
+    "section": "No memory of the past",
+    "subgoals": [
+      "Condition on the past survival",
+      "Compare with the fresh lifetime",
+      "State that age carries no information"
+    ]
+  },
+  {
+    "label": "Worked: the geometric distribution",
+    "section": "Worked: the geometric distribution",
+    "subgoals": [
+      "Write the geometric survival probability",
+      "Divide the two survival probabilities",
+      "Recognise the remaining-time probability"
+    ]
+  },
+  {
+    "label": "Why only two distributions",
+    "section": "Why only two distributions",
+    "subgoals": [
+      "Turn memorylessness into an equation",
+      "Solve S(s+t) equals S(s)S(t)",
+      "Conclude geometric and exponential only"
+    ]
+  }
+]

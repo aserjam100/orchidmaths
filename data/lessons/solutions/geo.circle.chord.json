@@ -1,0 +1,15 @@
+{
+  "concept": "geo.circle.chord",
+  "setup": "A chord of a circle of radius \\([[radius]]\\) lies \\([[distance]]\\) from the centre.",
+  "steps": [
+    {
+      "fact": "distance",
+      "say": "The perpendicular from the centre to the chord bisects it, so half the chord, the distance \\([[distance]]\\) and the radius \\([[radius]]\\) form a right triangle."
+    },
+    {
+      "fact": "chord",
+      "say": "Pythagoras gives half the chord, and the answer is twice that: \\([[chord]]\\). Doubling is the step that is easiest to forget, so check it before finishing."
+    }
+  ],
+  "answer": "So the chord is \\([[chord]]\\) units long."
+}

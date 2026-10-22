@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Closed under the set operations",
+    "section": "Closed under the set operations",
+    "subgoals": [
+      "Show the empty set is an event",
+      "Use De Morgan for intersections",
+      "Derive differences of events"
+    ]
+  },
+  {
+    "label": "Worked: the smallest and largest",
+    "section": "Worked: the smallest and largest",
+    "subgoals": [
+      "Check the trivial sigma-algebra",
+      "Check the power set",
+      "Choose a sigma-algebra for a finite space"
+    ]
+  },
+  {
+    "label": "Why measurability matters",
+    "section": "Why measurability matters",
+    "subgoals": [
+      "Generate the Borel sets from intervals",
+      "See that the power set is too large",
+      "Require measurability before a probability"
+    ]
+  }
+]

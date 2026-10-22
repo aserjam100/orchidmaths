@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Quantifier order",
+    "section": "Quantifier order",
+    "subgoals": [
+      "Read quantifiers left to right",
+      "Say which variable may depend on which",
+      "State the one-directional implication"
+    ]
+  },
+  {
+    "label": "Negating a quantified statement",
+    "section": "Negating a quantified statement",
+    "subgoals": [
+      "Flip each quantifier",
+      "Negate the inner relation",
+      "Keep the order of the variables"
+    ]
+  },
+  {
+    "label": "What the order costs",
+    "section": "What the order costs",
+    "subgoals": [
+      "See why a witness may depend on x",
+      "See why a uniform witness needs a proof",
+      "Use the order to test a claim"
+    ]
+  }
+]

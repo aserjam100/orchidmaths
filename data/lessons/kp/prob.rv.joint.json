@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Masses on pairs",
+    "section": "Masses on pairs",
+    "subgoals": [
+      "List the pairs with positive mass",
+      "Check that the masses sum to one",
+      "Read the table along a row and a column"
+    ]
+  },
+  {
+    "label": "Worked: normalising a table",
+    "section": "Worked: normalising a table",
+    "subgoals": [
+      "Add the weights",
+      "Divide each weight by the total",
+      "Read the mass of a named pair"
+    ]
+  },
+  {
+    "label": "Marginals and independence",
+    "section": "Marginals and independence",
+    "subgoals": [
+      "Sum a row for the marginal of X",
+      "Sum a column for the marginal of Y",
+      "Test the product rule at a pair"
+    ]
+  }
+]

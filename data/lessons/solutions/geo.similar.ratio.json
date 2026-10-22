@@ -1,0 +1,15 @@
+{
+  "concept": "geo.similar.ratio",
+  "setup": "Two similar triangles have corresponding sides in the ratio \\([[factor]]\\) to 1.",
+  "steps": [
+    {
+      "fact": "factor",
+      "say": "Similar figures have every pair of corresponding sides in the same ratio, so the one ratio applies to all three pairs rather than to some of them."
+    },
+    {
+      "fact": "side",
+      "say": "Corresponding sides are the ones between the same two angles, which is what makes the multiplier \\([[factor]]\\) the right one to use here."
+    }
+  ],
+  "answer": "So the corresponding side of the larger triangle is \\([[side]]\\)."
+}

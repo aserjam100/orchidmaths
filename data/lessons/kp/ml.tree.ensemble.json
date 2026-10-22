@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Many trees, averaged",
+    "section": "Many trees, averaged",
+    "subgoals": [
+      "Draw bootstrap samples",
+      "Fit one tree per sample",
+      "Average their predictions"
+    ]
+  },
+  {
+    "label": "Worked: variance cancellation",
+    "section": "Worked: variance cancellation",
+    "subgoals": [
+      "Write rho*v + (1-rho)*v/B",
+      "Send B to infinity",
+      "See the correlated part remain"
+    ]
+  },
+  {
+    "label": "Random forests and boosting",
+    "section": "Random forests and boosting",
+    "subgoals": [
+      "Subsample features at each split",
+      "Train trees in parallel for bagging",
+      "Fit residuals sequentially for boosting"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "concept": "complex.adv.cross_ratio",
+  "setup": "The points are \\(z_1 = [[z1]]\\), \\(z_2 = [[z2]]\\), \\(z_3 = [[z3]]\\) and \\(z_4 = [[z4]]\\).",
+  "steps": [
+    {
+      "fact": "numerator",
+      "say": "The numerator is \\((z_3 - z_1)(z_4 - z_2) = [[numerator]]\\)."
+    },
+    {
+      "fact": "denominator",
+      "say": "The denominator is \\((z_3 - z_2)(z_4 - z_1) = [[denominator]]\\)."
+    },
+    {
+      "fact": "value",
+      "say": "So the cross-ratio is \\([[numerator]]/[[denominator]] = [[value]]\\), and it is real because the four points are collinear."
+    }
+  ],
+  "answer": "So the cross-ratio is \\([[value]]\\)."
+}

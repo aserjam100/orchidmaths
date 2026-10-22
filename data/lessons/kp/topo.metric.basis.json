@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Generating a topology from smaller pieces",
+    "section": "Generating a topology from smaller pieces",
+    "subgoals": [
+      "Check every open is a union of basis elements",
+      "Check the intersection condition",
+      "Use balls as the metric basis"
+    ]
+  },
+  {
+    "label": "Worked: open intervals generate the line",
+    "section": "Worked: open intervals generate the line",
+    "subgoals": [
+      "Cover an open set by intervals",
+      "Intersect two intervals",
+      "Keep an interval inside the intersection"
+    ]
+  },
+  {
+    "label": "Basis versus subbasis",
+    "section": "Basis versus subbasis",
+    "subgoals": [
+      "Intersect subbasis elements finitely",
+      "Union basis elements",
+      "Compare the two generating steps"
+    ]
+  }
+]

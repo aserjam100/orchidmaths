@@ -1,0 +1,15 @@
+{
+  "concept": "alg.seq.sigma",
+  "setup": "The sum runs from i = 1 to [[n]] over the term [[a]]i + [[b]].",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "The sum splits into [[a]] times the sum of i, plus [[b]] added [[n]] times."
+    },
+    {
+      "fact": "n",
+      "say": "The integers from 1 to [[n]] add up to [[n]]([[n]]+1)/2, and there are [[n]] copies of [[b]]."
+    }
+  ],
+  "answer": "So the total is [[answer]]."
+}

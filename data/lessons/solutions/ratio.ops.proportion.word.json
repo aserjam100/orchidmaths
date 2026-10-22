@@ -1,0 +1,19 @@
+{
+  "concept": "ratio.ops.proportion.word",
+  "setup": "[[qty1]] [[item]] cost $[[cost1]]. The question asks for the price of [[qty2]] [[item]] at the same rate.",
+  "steps": [
+    {
+      "fact": "cost1",
+      "say": "Write the first ratio as $[[cost1]] to [[qty1]] [[item]]."
+    },
+    {
+      "fact": "qty2",
+      "say": "Write the second ratio the same way round, with [[qty2]] [[item]] underneath its unknown price."
+    },
+    {
+      "fact": "unit",
+      "say": "$[[cost1]] for [[qty1]] [[item]] is $[[unit]] each, so [[qty2]] [[item]] cost $[[cost2]]."
+    }
+  ],
+  "answer": "[[qty2]] [[item]] cost $[[cost2]]."
+}

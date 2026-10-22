@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Square i to get -1",
+      "Solve x^2 + 1 = 0 with +-i",
+      "Split z into a + bi"
+    ]
+  },
+  {
+    "label": "Construction of the complex numbers",
+    "section": "",
+    "subgoals": [
+      "Pair reals as (a,b)",
+      "Add pairs component-wise",
+      "Multiply via (a+bi)(c+di) with i^2 = -1"
+    ]
+  },
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Read Re(z) = a off the real axis",
+      "Read Im(z) = b off the imaginary axis",
+      "Identify real a with a + 0i"
+    ]
+  }
+]

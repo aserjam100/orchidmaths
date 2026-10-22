@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Read tens and ones",
+    "section": "Read tens and ones",
+    "subgoals": [
+      "Find the tens digit on the left",
+      "Find the ones digit on the right",
+      "Write the number as tens plus ones"
+    ]
+  },
+  {
+    "label": "The value of a digit",
+    "section": "The value of a digit",
+    "subgoals": [
+      "Find the digit in the tens place",
+      "Count that many tens",
+      "Write the value with a 0 at the end"
+    ]
+  },
+  {
+    "label": "Numbers with no tens",
+    "section": "Numbers with no tens",
+    "subgoals": [
+      "Notice the number has one digit",
+      "Read it as 0 tens",
+      "Give the tens value as 0"
+    ]
+  }
+]

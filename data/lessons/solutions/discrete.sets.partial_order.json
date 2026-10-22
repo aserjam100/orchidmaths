@@ -1,0 +1,19 @@
+{
+  "concept": "discrete.sets.partial_order",
+  "setup": "The set is the divisors of \\([[N]]\\), ordered by divisibility: \\([[set]]\\).",
+  "steps": [
+    {
+      "fact": "N",
+      "say": "A pair counts when the smaller element divides the larger, so the relation is read from the factorisation rather than by checking every pair blindly."
+    },
+    {
+      "fact": "set",
+      "say": "The elements are \\([[set]]\\)."
+    },
+    {
+      "fact": "value",
+      "say": "Enumerating each element against its multiples that are also divisors of \\([[N]]\\) gives [[value]] comparable pairs with a strict inequality."
+    }
+  ],
+  "answer": "So there are [[value]] such pairs."
+}

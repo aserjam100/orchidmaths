@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Finite storage, infinite numbers",
+    "section": "Finite storage, infinite numbers",
+    "subgoals": [
+      "Represent a number as sign, significand and exponent",
+      "Round to the nearest representable value",
+      "Bound the relative error by half epsilon"
+    ]
+  },
+  {
+    "label": "Worked: a number that will not terminate",
+    "section": "Worked: a number that will not terminate",
+    "subgoals": [
+      "Write the value in binary",
+      "Round it to the nearest double",
+      "Observe the small mismatch in a sum"
+    ]
+  },
+  {
+    "label": "Rounding is not associative",
+    "section": "Rounding is not associative",
+    "subgoals": [
+      "Round each partial result",
+      "Regroup a sum and compare",
+      "See a small term disappear beside a large one"
+    ]
+  }
+]

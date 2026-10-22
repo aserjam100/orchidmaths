@@ -1,0 +1,19 @@
+{
+  "concept": "alg.rational.add_sub",
+  "setup": "You are [[operation]] \\([[left]]\\) and \\([[right]]\\).",
+  "steps": [
+    {
+      "fact": "denominator",
+      "say": "The common denominator is \\([[denominator]]\\)."
+    },
+    {
+      "fact": "numerator",
+      "say": "Over it the numerators are \\([[expanded_left]]\\) and \\([[expanded_right]]\\), so the combined numerator is [[numerator]]."
+    },
+    {
+      "fact": "valid_for",
+      "say": "The original denominators require \\([[valid_for]]\\)."
+    }
+  ],
+  "answer": "The simplified expression is \\([[result]]\\), valid for \\([[valid_for]]\\)."
+}

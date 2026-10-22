@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The inverse of cubing",
+    "section": "The inverse of cubing",
+    "subgoals": [
+      "Write the cube of the root",
+      "Identify the index as 3",
+      "Recover the root from the cube"
+    ]
+  },
+  {
+    "label": "Perfect cubes",
+    "section": "Perfect cubes",
+    "subgoals": [
+      "List the cubes of whole numbers",
+      "Match the radicand to a cube",
+      "Report the whole-number root"
+    ]
+  },
+  {
+    "label": "Negative radicands",
+    "section": "Negative radicands",
+    "subgoals": [
+      "Cube a negative number",
+      "Keep the negative sign under an odd index",
+      "Check by cubing the answer"
+    ]
+  }
+]

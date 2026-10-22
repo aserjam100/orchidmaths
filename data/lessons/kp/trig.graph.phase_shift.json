@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What the constant moves",
+    "section": "Moving a wave sideways",
+    "subgoals": [
+      "Separate the coefficient's job from the constant's",
+      "Name the phase shift",
+      "Keep the shift in the units of the axis"
+    ]
+  },
+  {
+    "label": "Dividing by the coefficient",
+    "section": "Why the shift is C over B",
+    "subgoals": [
+      "Set the argument of the sine to zero",
+      "Solve for the axis value",
+      "See why a large coefficient compresses the shift"
+    ]
+  },
+  {
+    "label": "The sign of the shift",
+    "section": "Reading the sign",
+    "subgoals": [
+      "Read a minus sign as a shift to the right",
+      "Read a plus sign as a shift to the left",
+      "Solve the argument to settle the sign"
+    ]
+  }
+]

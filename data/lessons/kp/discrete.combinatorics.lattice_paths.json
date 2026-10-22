@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Shortest paths on a grid",
+    "section": "Shortest paths on a grid",
+    "subgoals": [
+      "Count the steps of a shortest path",
+      "Choose the positions of the right steps",
+      "Compute a small grid"
+    ]
+  },
+  {
+    "label": "Words and paths",
+    "section": "Words and paths",
+    "subgoals": [
+      "Map a path to a word",
+      "Recognise the multinomial case",
+      "Count words with two letters"
+    ]
+  },
+  {
+    "label": "Paths that stay on one side",
+    "section": "Paths that stay on one side",
+    "subgoals": [
+      "State the diagonal restriction",
+      "Recall the Catalan count",
+      "Connect it to balanced strings"
+    ]
+  }
+]

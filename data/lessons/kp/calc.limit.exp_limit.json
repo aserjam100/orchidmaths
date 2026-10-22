@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Exponential fundamental limit",
+    "section": "",
+    "subgoals": [
+      "State (e^x-1)/x → 1",
+      "Define e via (1+1/n)^n",
+      "Pair with ln(1+x)/x → 1"
+    ]
+  },
+  {
+    "label": "Exponential-defining limits",
+    "section": "",
+    "subgoals": [
+      "Take (1+1/n)^n to e",
+      "Extend to continuous compounding",
+      "Check sequence-to-function transfer"
+    ]
+  },
+  {
+    "label": "Logarithmic companion",
+    "section": "",
+    "subgoals": [
+      "State ln(1+x)/x → 1",
+      "Derive from the exponential limit",
+      "Use in log-rate problems"
+    ]
+  }
+]

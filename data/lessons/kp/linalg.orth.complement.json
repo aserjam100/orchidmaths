@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Vectors orthogonal to a whole subspace",
+    "section": "Vectors orthogonal to a whole subspace",
+    "subgoals": [
+      "Test orthogonality on a spanning set",
+      "Write the homogeneous system",
+      "Recognise the complement as a subspace"
+    ]
+  },
+  {
+    "label": "Worked: complements in R^3",
+    "section": "Worked: complements in R^3",
+    "subgoals": [
+      "Complement the x-axis with the yz-plane",
+      "Complement a plane with its normal line",
+      "Count dimensions in each case"
+    ]
+  },
+  {
+    "label": "Dimension and direct sums",
+    "section": "Dimension and direct sums",
+    "subgoals": [
+      "Split v as u plus u-perp",
+      "Add dimensions to n",
+      "Apply the double complement"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "One solution buys the second",
+    "section": "One solution buys the second",
+    "subgoals": [
+      "Set y = y1 v",
+      "Cancel the y1 terms",
+      "Solve the first-order equation for v'"
+    ]
+  },
+  {
+    "label": "Worked: y'' - y = 0",
+    "section": "Worked: y'' - y = 0",
+    "subgoals": [
+      "Take y1 = e^x",
+      "Reduce to v'' + 2v' = 0",
+      "Recover e^{-x}"
+    ]
+  },
+  {
+    "label": "The reduced equation for v",
+    "section": "The reduced equation for v",
+    "subgoals": [
+      "Write the coefficient of v'",
+      "Use the Wronskian identity",
+      "Require y1 nonzero"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: decay in x' = -2x",
+    "section": "Worked: decay in x' = -2x",
+    "subgoals": [
+      "Solve to x(t) = x0 e^{-2t}",
+      "Compute the ratio e^{-2} at t = 1",
+      "Conclude asymptotic stability"
+    ]
+  },
+  {
+    "label": "Worked: counting equilibria of x' = 4 - x^2",
+    "section": "Worked: counting equilibria of x' = 4 - x^2",
+    "subgoals": [
+      "Solve 4 - x^2 = 0 for +-2",
+      "Read flow signs inside vs outside",
+      "Classify both as half-stable"
+    ]
+  },
+  {
+    "label": "Linearization decides hyperbolic cases",
+    "section": "Linearization decides hyperbolic cases",
+    "subgoals": [
+      "Test eigenvalue real parts for Ax",
+      "Linearize via the Jacobian",
+      "Flag centres as the non-hyperbolic edge"
+    ]
+  }
+]

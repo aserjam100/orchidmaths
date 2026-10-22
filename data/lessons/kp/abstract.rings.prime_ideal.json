@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Quotients that are domains or fields",
+    "section": "Quotients that are domains or fields",
+    "subgoals": [
+      "Compute (a + P)(b + P)",
+      "Read primality as no zero divisors in R/P",
+      "Read maximality as invertible classes in R/M"
+    ]
+  },
+  {
+    "label": "Worked: prime and maximal ideals of Z",
+    "section": "Worked: prime and maximal ideals of Z",
+    "subgoals": [
+      "Identify Z/(n) with Z_n",
+      "Keep the prime values of n",
+      "Separate (0) prime from (0) maximal"
+    ]
+  },
+  {
+    "label": "Prime does not always mean maximal",
+    "section": "Prime does not always mean maximal",
+    "subgoals": [
+      "Derive maximal implies prime",
+      "Find a prime that is not maximal",
+      "Check (x) in Z[x] against the field test"
+    ]
+  }
+]

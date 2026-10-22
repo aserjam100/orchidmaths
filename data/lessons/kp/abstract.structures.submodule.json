@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Closed under addition and scaling",
+    "section": "Closed under addition and scaling",
+    "subgoals": [
+      "Check the additive subgroup axioms",
+      "Check rn stays in N",
+      "Specialize to vector spaces and abelian groups"
+    ]
+  },
+  {
+    "label": "Worked: submodules of Z_6",
+    "section": "Worked: submodules of Z_6",
+    "subgoals": [
+      "List the subgroups by order",
+      "Verify closure under integers",
+      "Include the trivial and full submodules"
+    ]
+  },
+  {
+    "label": "Quotients of modules",
+    "section": "Quotients of modules",
+    "subgoals": [
+      "Form the cosets m + N",
+      "Check the operations are well defined",
+      "Identify the kernel as N"
+    ]
+  }
+]

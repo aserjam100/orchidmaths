@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Keep the denominator",
+    "section": "Keep the denominator",
+    "subgoals": [
+      "Check the denominators are the same",
+      "Keep that denominator",
+      "Do not subtract the denominators"
+    ]
+  },
+  {
+    "label": "Subtract the numerators",
+    "section": "Subtract the numerators",
+    "subgoals": [
+      "Subtract the top numbers",
+      "Write the answer over the same denominator",
+      "Read the answer aloud"
+    ]
+  },
+  {
+    "label": "Check by adding",
+    "section": "Check by adding",
+    "subgoals": [
+      "Take the answer",
+      "Add the fraction you took away",
+      "See if you get the first fraction"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction to the gamma distribution",
+    "section": "",
+    "subgoals": [
+      "Extend factorials via the Gamma integral over x^(a-1)e^-x",
+      "Write G(x;a,b) with shape a and scale b",
+      "Confine the support to x > 0"
+    ]
+  },
+  {
+    "label": "Key features",
+    "section": "",
+    "subgoals": [
+      "Write f(x) with Gamma(a)*b^a in the denominator",
+      "Multiply mu = a*b out of shape times scale",
+      "Compute sigma^2 = a*b^2 and sigma = b*sqrt(a)"
+    ]
+  },
+  {
+    "label": "Expected value of the gamma distribution",
+    "section": "",
+    "subgoals": [
+      "Substitute x = b*t with dx = b*dt",
+      "Recognize the leftover integral as Gamma(a+1)",
+      "Cancel into E(X) = a*b"
+    ]
+  }
+]

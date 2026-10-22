@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Covering every vertex",
+    "section": "Covering every vertex",
+    "subgoals": [
+      "Pair all vertices",
+      "Require an even count",
+      "Check regularity for a sufficient condition"
+    ]
+  },
+  {
+    "label": "Worked: even versus odd",
+    "section": "Worked: even versus odd",
+    "subgoals": [
+      "Match P_4 on two edges",
+      "Fail on P_5",
+      "Alternate around C_6"
+    ]
+  },
+  {
+    "label": "Hall and regular bipartite graphs",
+    "section": "Hall and regular bipartite graphs",
+    "subgoals": [
+      "Check Hall's neighbour condition",
+      "Use regularity for Hall",
+      "Invoke Tutte for general graphs"
+    ]
+  }
+]

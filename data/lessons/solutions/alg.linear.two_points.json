@@ -1,0 +1,19 @@
+{
+  "concept": "alg.linear.two_points",
+  "setup": "The line passes through \\(([[x1]], [[y1]])\\) and \\(([[x2]], [[y2]])\\).",
+  "steps": [
+    {
+      "fact": "m",
+      "say": "The slope is \\(\\frac{[[y2]]-[[y1]]}{[[x2]]-[[x1]]} = \\frac{[[dy]]}{[[dx]]} = [[m]]\\)."
+    },
+    {
+      "fact": "b",
+      "say": "Substituting \\(([[x1]], [[y1]])\\) into \\(y=mx+b\\) gives \\(b = [[y1]] - ([[m]])([[x1]]) = [[b]]\\)."
+    },
+    {
+      "fact": "rhs",
+      "say": "So \\(y = [[rhs]]\\), and the required right-hand side is \\([[rhs]]\\)."
+    }
+  ],
+  "answer": "So \\(y = [[rhs]]\\)."
+}

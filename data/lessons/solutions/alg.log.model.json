@@ -1,0 +1,15 @@
+{
+  "concept": "alg.log.model",
+  "setup": "The equation says log base [[b]] of x equals [[k]].",
+  "steps": [
+    {
+      "fact": "k",
+      "say": "A logarithm reports the exponent, so the equation means the base [[b]] raised to the power [[k]] equals x."
+    },
+    {
+      "fact": "answer",
+      "say": "Evaluating that power gives [[answer]]."
+    }
+  ],
+  "answer": "So x = [[answer]]."
+}

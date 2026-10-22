@@ -1,0 +1,19 @@
+{
+  "concept": "alg.func.irrational",
+  "setup": "The expression is the [[root]] root of \\([[radicand]]\\).",
+  "steps": [
+    {
+      "fact": "radicand",
+      "say": "\\([[radicand]]\\) is a perfect [[root]], which is why its [[root]] root is a whole number."
+    },
+    {
+      "fact": "root",
+      "say": "The [[root]] root asks which number, raised to that power, gives the radicand."
+    },
+    {
+      "fact": "answer",
+      "say": "Raising \\([[answer]]\\) to that power returns \\([[radicand]]\\), so the root is exact."
+    }
+  ],
+  "answer": "So the value is \\([[answer]]\\)."
+}

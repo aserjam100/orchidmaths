@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Same shape, different size",
+    "section": "Same shape, different size",
+    "subgoals": [
+      "Define similar figures",
+      "State what the scale factor compares",
+      "Read a ratio from two corresponding sides"
+    ]
+  },
+  {
+    "label": "The ratio is constant",
+    "section": "The ratio is constant",
+    "subgoals": [
+      "Apply one ratio to every pair",
+      "Match corresponding sides",
+      "Compute a side from the ratio"
+    ]
+  },
+  {
+    "label": "What similarity preserves",
+    "section": "What similarity preserves",
+    "subgoals": [
+      "Name what is preserved",
+      "Scale an area by the square",
+      "Scale a volume by the cube"
+    ]
+  }
+]

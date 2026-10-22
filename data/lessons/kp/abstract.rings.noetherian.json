@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the failing chain in k[x_1, x_2, ...]",
+    "section": "Worked: the failing chain in k[x_1, x_2, ...]",
+    "subgoals": [
+      "Add one fresh variable per step",
+      "Check each inclusion is strict",
+      "Conclude non-Noetherian"
+    ]
+  },
+  {
+    "label": "Worked: (6, 10) = (2) in Z",
+    "section": "Worked: (6, 10) = (2) in Z",
+    "subgoals": [
+      "Compute gcd(6, 10) as 2",
+      "Show 2 lies in the ideal",
+      "Collapse to one generator"
+    ]
+  },
+  {
+    "label": "Hilbert basis",
+    "section": "Hilbert basis",
+    "subgoals": [
+      "Adjoin one variable safely",
+      "Induct to finitely many",
+      "Blame infinitely many variables"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Standardising the sum",
+    "section": "Standardising the sum",
+    "subgoals": [
+      "Centre the sum at its mean",
+      "Scale by the standard deviation",
+      "Recognise mean zero and variance one"
+    ]
+  },
+  {
+    "label": "Worked: standardising a value",
+    "section": "Worked: standardising a value",
+    "subgoals": [
+      "Compute the sum's mean",
+      "Compute the sum's standard deviation",
+      "Form the z-score"
+    ]
+  },
+  {
+    "label": "What it does and does not say",
+    "section": "What it does and does not say",
+    "subgoals": [
+      "Limit the claim to the standardised sum",
+      "Require a finite variance",
+      "Separate the limit from the rate"
+    ]
+  }
+]

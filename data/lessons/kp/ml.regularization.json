@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the penalty gradient",
+    "section": "Worked: the penalty gradient",
+    "subgoals": [
+      "Differentiate the squared penalty",
+      "Subtract the inward pull",
+      "Scale shrinkage by weight size"
+    ]
+  },
+  {
+    "label": "Worked: tuning the strength",
+    "section": "Worked: tuning the strength",
+    "subgoals": [
+      "Fit unregularized and note overfit",
+      "Raise lambda until test error falls",
+      "Stop before weights collapse"
+    ]
+  },
+  {
+    "label": "When penalties hurt",
+    "section": "When penalties hurt",
+    "subgoals": [
+      "Recognize abundant clean data",
+      "Weigh bias added versus variance cut",
+      "Drop the penalty where data suffices"
+    ]
+  }
+]

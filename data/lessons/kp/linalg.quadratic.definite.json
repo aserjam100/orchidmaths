@@ -1,0 +1,29 @@
+[
+  {
+    "label": "From a symmetric matrix to a quadratic form",
+    "section": "From a symmetric matrix to a quadratic form",
+    "subgoals": [
+      "Build x^T A x",
+      "Drop the skew part",
+      "Read the eigenvalues in an orthonormal basis"
+    ]
+  },
+  {
+    "label": "Worked: classifying 2x2 forms",
+    "section": "Worked: classifying 2x2 forms",
+    "subgoals": [
+      "Classify x^2 + y^2 as positive definite",
+      "Classify x^2 - y^2 as indefinite",
+      "Read eigenvalues 3 and 1"
+    ]
+  },
+  {
+    "label": "Sylvester's criterion",
+    "section": "Sylvester's criterion",
+    "subgoals": [
+      "Check the leading entry is positive",
+      "Check ac - b^2 is positive",
+      "Reject a positive determinant with a negative leading entry"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiplication first",
+    "section": "Multiplication first",
+    "subgoals": [
+      "State the order",
+      "Do the product before the sum",
+      "Say why the order matters"
+    ]
+  },
+  {
+    "label": "Then a common denominator",
+    "section": "Then a common denominator",
+    "subgoals": [
+      "Find the common denominator",
+      "Add and reduce",
+      "Keep the two steps separate"
+    ]
+  },
+  {
+    "label": "What happens if you add first",
+    "section": "What happens if you add first",
+    "subgoals": [
+      "Show the wrong answer",
+      "Use small numbers",
+      "Note the parallel with brackets"
+    ]
+  }
+]

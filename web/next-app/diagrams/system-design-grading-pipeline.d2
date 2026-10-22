@@ -1,0 +1,60 @@
+# Orchid Grading Pipeline  --  Strategy Dispatch
+
+direction: right
+
+Generator: Problem Generator\nproduces expected + type
+
+Router: Grading Router\nswitch grading_type
+
+Numeric: Numeric Grader\nint | float | fraction | mixed
+
+Choice: Choice Grader\ncase-insensitive | letter
+
+Comp: Comparison Grader\n> < = >= <= !=
+
+Order: Ordering Grader\nwhitespace | comma split
+
+Tuple: Tuple Grader\nparentheses comma-separated
+
+Complex: Complex Grader\na + bi forms, pure Go
+
+SymPyService: SymPy Python Subprocess\nsymbolic | polynomial | expression
+
+Result: Grade Result\ncorrect + score + feedback
+
+# Dispatch flow. Six types are pure Go; three route to the SymPy subprocess.
+# There is no pure-Go symbolic fallback: router.go sends these straight to Python,
+# and the production image installs it and fails the build if it is missing.
+Generator -> Router: grading_type determines path
+
+Router -> Numeric: numeric
+Router -> Choice: multiple_choice
+Router -> Comp: comparison
+Router -> Order: ordering
+Router -> Tuple: tuple
+Router -> Complex: complex
+Router -> SymPyService: symbolic / polynomial / expression
+
+# All converge
+Numeric -> Result
+Choice -> Result
+Comp -> Result
+Order -> Result
+Tuple -> Result
+Complex -> Result
+SymPyService -> Result
+
+# Styling
+nodes: {
+  style: {
+    font-size: 12
+    border-radius: 6
+  }
+}
+
+edges: {
+  style: {
+    stroke: "#6b6a64"
+    font-size: 10
+  }
+}

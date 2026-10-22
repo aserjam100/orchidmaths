@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Pressure grows with depth",
+    "section": "Pressure grows with depth",
+    "subgoals": [
+      "Write pressure rho g y",
+      "Form the strip force rho g y w dy",
+      "Integrate over the depth"
+    ]
+  },
+  {
+    "label": "Worked: a rectangular plate",
+    "section": "Worked: a rectangular plate",
+    "subgoals": [
+      "Integrate y from 0 to 3",
+      "Multiply by width 2 and rho g 10",
+      "Shift the depth interval for 80"
+    ]
+  },
+  {
+    "label": "Why the integral appears",
+    "section": "Why the integral appears",
+    "subgoals": [
+      "Reject a single average pressure",
+      "Weight each strip by depth",
+      "Vary the width for other shapes"
+    ]
+  }
+]

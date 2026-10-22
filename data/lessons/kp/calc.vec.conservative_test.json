@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The cross-partial test",
+    "section": "The cross-partial test",
+    "subgoals": [
+      "State the test",
+      "Apply it to a linear field",
+      "Conclude when no potential exists"
+    ]
+  },
+  {
+    "label": "Finding the potential",
+    "section": "Finding the potential",
+    "subgoals": [
+      "Integrate one component",
+      "Match the other to find the unknown function",
+      "Add the constant"
+    ]
+  },
+  {
+    "label": "When the test is not enough",
+    "section": "When the test is not enough",
+    "subgoals": [
+      "Name the region the test needs",
+      "Use the punctured-plane field",
+      "Explain where the failure lives"
+    ]
+  }
+]

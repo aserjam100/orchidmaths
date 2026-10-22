@@ -1,0 +1,11 @@
+{
+  "concept": "arith.div.zero",
+  "setup": "You are deciding which statement about division by zero is true.",
+  "steps": [
+    {
+      "fact": "reason",
+      "say": "[[reason]]"
+    }
+  ],
+  "answer": "[[answer]]"
+}

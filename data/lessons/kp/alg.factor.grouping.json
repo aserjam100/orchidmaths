@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Split into two pairs",
+    "section": "Split into two pairs",
+    "subgoals": [
+      "Group the first two terms and the last two",
+      "Look for a common monomial in each pair",
+      "Reorder terms if the pairs do not match"
+    ]
+  },
+  {
+    "label": "Factor each pair",
+    "section": "Factor each pair",
+    "subgoals": [
+      "Pull out the greatest common factor of each pair",
+      "Check that both parentheses are identical",
+      "Repair the pairing if they differ"
+    ]
+  },
+  {
+    "label": "Take out the shared binomial",
+    "section": "Take out the shared binomial",
+    "subgoals": [
+      "Write the shared binomial once",
+      "Combine the two outside factors",
+      "Answer with the factor the question names"
+    ]
+  }
+]

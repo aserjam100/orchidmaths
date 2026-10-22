@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The determinant",
+    "section": "The determinant",
+    "subgoals": [
+      "Build the matrix of a linear map",
+      "Take its determinant",
+      "Compute it for a given transformation"
+    ]
+  },
+  {
+    "label": "Area scaling",
+    "section": "Area scaling",
+    "subgoals": [
+      "Relate the determinant to an area",
+      "Write the changing-area element",
+      "Recognise a singular transformation"
+    ]
+  },
+  {
+    "label": "Composition",
+    "section": "Composition",
+    "subgoals": [
+      "Multiply Jacobians of a composition",
+      "Split a change into two",
+      "Use a translation then polar coordinates"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Section 0.2 Mathematical Statements",
+    "section": "Section 0.2 Mathematical Statements",
+    "subgoals": [
+      "Sort claims into true/false/non-statements",
+      "Flag questions and commands as non-statements",
+      "Spot the open sentence 3+x = 12"
+    ]
+  },
+  {
+    "label": "Subsection  Atomic and Molecular Statements",
+    "section": "Subsection  Atomic and Molecular Statements",
+    "subgoals": [
+      "Glue atoms with AND, OR, IMPLIES",
+      "Evaluate 3+7 = 12 as false",
+      "Test each row of the truth conditions"
+    ]
+  },
+  {
+    "label": "Logical Connectives.",
+    "section": "Logical Connectives.",
+    "subgoals": [
+      "Negate FORALL into EXISTS with flipped predicate",
+      "Negate EXISTS into FORALL with flipped predicate",
+      "Translate 'if and only if' into two implications"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Keeping vertices or edges",
+    "section": "Keeping vertices or edges",
+    "subgoals": [
+      "Delete vertices with incident edges",
+      "Delete edges only for spanning",
+      "Keep all edges inside S for induced"
+    ]
+  },
+  {
+    "label": "Worked: induced versus spanning",
+    "section": "Worked: induced versus spanning",
+    "subgoals": [
+      "Start from C_4",
+      "Keep two opposite edges for spanning",
+      "Induce on three vertices for P_3"
+    ]
+  },
+  {
+    "label": "Deletion and containment",
+    "section": "Deletion and containment",
+    "subgoals": [
+      "Write G - v and G - e",
+      "Define a proper subgraph",
+      "Connect deletion to cuts"
+    ]
+  }
+]

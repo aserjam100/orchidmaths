@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The determinant of partials",
+    "section": "The determinant of partials",
+    "subgoals": [
+      "Build the matrix of partials",
+      "Take its determinant",
+      "Relate it to an area element"
+    ]
+  },
+  {
+    "label": "Polar coordinates",
+    "section": "Polar coordinates",
+    "subgoals": [
+      "Compute the polar partials",
+      "Show the determinant equals r",
+      "Evaluate it at a radius"
+    ]
+  },
+  {
+    "label": "Why the factor appears",
+    "section": "Why the factor appears",
+    "subgoals": [
+      "Draw a small polar rectangle",
+      "Explain why the arc grows with r",
+      "State the general rule"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The simple-interest formula",
+    "section": "The simple-interest formula",
+    "subgoals": [
+      "Name the principal",
+      "Name the annual rate",
+      "Name the time in years"
+    ]
+  },
+  {
+    "label": "Convert the rate and keep time in years",
+    "section": "Convert the rate and keep time in years",
+    "subgoals": [
+      "Write the percent as a decimal",
+      "Convert months to years",
+      "Multiply principal, rate, and time"
+    ]
+  },
+  {
+    "label": "Interest is not the balance",
+    "section": "Interest is not the balance",
+    "subgoals": [
+      "Keep interest separate from principal",
+      "Add interest to principal for the total",
+      "Do not compound the interest"
+    ]
+  }
+]

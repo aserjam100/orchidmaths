@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Jacobian definition",
+    "section": "",
+    "subgoals": [
+      "Stack all first-order partials",
+      "Read row i, column j as dT_i/dx_j",
+      "Compute [[1,1],[1,-1]] for (x+y, x-y)"
+    ]
+  },
+  {
+    "label": "Computing Jacobians",
+    "section": "",
+    "subgoals": [
+      "Differentiate each component function",
+      "Arrange partials row by row",
+      "Check (x^2, y^2) diagonal form"
+    ]
+  },
+  {
+    "label": "Worked Jacobian examples",
+    "section": "",
+    "subgoals": [
+      "Differentiate each component of the worked map",
+      "Arrange partials row by row",
+      "Confirm the layout convention"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Global maximum and minimum points",
+    "section": "",
+    "subgoals": [
+      "Translate the story into maximize f(x)",
+      "Solve f'(x) = 0 plus endpoints",
+      "Evaluate f at each candidate to pick max"
+    ]
+  },
+  {
+    "label": "Local maximum and minimum points",
+    "section": "",
+    "subgoals": [
+      "Solve f'(x) = 0 for local candidates",
+      "Classify each via sign change",
+      "Test x^3-3x to get max at -1, min at 1"
+    ]
+  },
+  {
+    "label": "Upward and downward concavity",
+    "section": "",
+    "subgoals": [
+      "Compute f'' to read cup-up vs cup-down",
+      "Confirm maxima sit in cup-down zones",
+      "Check x^2 vs -x^2"
+    ]
+  }
+]

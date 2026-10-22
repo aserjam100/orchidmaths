@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Local triviality and sections",
+    "section": "Local Triviality and Sections",
+    "subgoals": [
+      "State the local product condition over U",
+      "Define a section as a right inverse of the projection",
+      "Test the cylinder for a global section"
+    ]
+  },
+  {
+    "label": "Vector bundles and twisting",
+    "section": "Vector Bundles and Twisting",
+    "subgoals": [
+      "Define a vector bundle via linear transitions",
+      "Explain the half-twist in the Mobius strip",
+      "Argue the Mobius strip has no nowhere-zero section"
+    ]
+  },
+  {
+    "label": "Clutching and the Hopf fibration",
+    "section": "Clutching and the Hopf Fibration",
+    "subgoals": [
+      "Glue hemisphere bundles via an equator transition map",
+      "Write the Hopf map from S-3 to S-2",
+      "Conclude S-3 is not the product S-2 cross S-1"
+    ]
+  }
+]

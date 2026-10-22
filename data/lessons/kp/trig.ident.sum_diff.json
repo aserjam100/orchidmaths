@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why the ratios do not add",
+    "section": "Two angles at once",
+    "subgoals": [
+      "Recognise that the sine of a sum is not the sum of the sines",
+      "Compare the two quantities for a concrete pair of angles",
+      "See that a product of the two angles' ratios is what enters"
+    ]
+  },
+  {
+    "label": "The four expansions",
+    "section": "The four formulas",
+    "subgoals": [
+      "Write the sine of a sum and of a difference",
+      "Write the cosine of a sum and of a difference",
+      "Remember that the cosine's difference expands with two plus signs"
+    ]
+  },
+  {
+    "label": "Two triangles give a value",
+    "section": "Combining two triangles",
+    "subgoals": [
+      "Recover the missing ratio from each right triangle",
+      "Multiply a numerator by a numerator",
+      "Add over the product of the two hypotenuses"
+    ]
+  }
+]

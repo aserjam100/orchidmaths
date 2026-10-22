@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The polynomial and the remainder",
+    "section": "The polynomial and the remainder",
+    "subgoals": [
+      "Match the derivatives at the point",
+      "Add the remainder term",
+      "Read the error from the next derivative"
+    ]
+  },
+  {
+    "label": "Taylor series and its convergence",
+    "section": "Taylor series and its convergence",
+    "subgoals": [
+      "Send the degree to infinity",
+      "Check the remainder tends to zero",
+      "Distinguish the series from the function"
+    ]
+  },
+  {
+    "label": "Worked: a coefficient",
+    "section": "Worked: a coefficient",
+    "subgoals": [
+      "Differentiate n times at the point",
+      "Divide by n factorial",
+      "Evaluate the coefficient asked for"
+    ]
+  }
+]

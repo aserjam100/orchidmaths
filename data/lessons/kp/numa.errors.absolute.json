@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two measures of error",
+    "section": "Two measures of error",
+    "subgoals": [
+      "Subtract to form the absolute error",
+      "Divide by the size of the true value",
+      "Compare errors of different scales"
+    ]
+  },
+  {
+    "label": "Worked: a rounded measurement",
+    "section": "Worked: a rounded measurement",
+    "subgoals": [
+      "Form the absolute error",
+      "Divide by the true value",
+      "Compare two relative errors"
+    ]
+  },
+  {
+    "label": "Why relative error is the default",
+    "section": "Why relative error is the default",
+    "subgoals": [
+      "Bound the relative error under rounding",
+      "Let the absolute error scale with the value",
+      "Judge accuracy relative to the data"
+    ]
+  }
+]

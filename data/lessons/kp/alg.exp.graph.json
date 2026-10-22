@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Shape of the curve",
+    "section": "Shape of the curve",
+    "subgoals": [
+      "Rise steeply to the right for a base above one",
+      "Flatten toward zero to the left",
+      "Mark the height at input zero as the coefficient"
+    ]
+  },
+  {
+    "label": "The constant factor",
+    "section": "The constant factor",
+    "subgoals": [
+      "Multiply by the base over each unit step",
+      "Read a base above one as growth",
+      "Read a base below one as decay"
+    ]
+  },
+  {
+    "label": "Why it grows faster than any power",
+    "section": "Why it grows faster than any power",
+    "subgoals": [
+      "Compare compounding with a fixed number of factors",
+      "Connect the model to a rate proportional to the amount",
+      "Recognise the exponential in growth and decay data"
+    ]
+  }
+]

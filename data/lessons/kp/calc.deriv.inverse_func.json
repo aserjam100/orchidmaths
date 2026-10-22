@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Inverse function rule",
+    "section": "",
+    "subgoals": [
+      "State (f^-1)'(y) = 1/f'(x)",
+      "Require f'(x) nonzero",
+      "Match y = f(x) pairs"
+    ]
+  },
+  {
+    "label": "Worked inverse examples",
+    "section": "",
+    "subgoals": [
+      "Evaluate f'(2) = 12 for x^3 at the preimage",
+      "Pair y = 8 with x = 2",
+      "Take the reciprocal to 1/12"
+    ]
+  },
+  {
+    "label": "Fundamental derivative table",
+    "section": "",
+    "subgoals": [
+      "Differentiate x^3 to 3x^2 for the outer map",
+      "Read f'(1) = 4 off the power rule",
+      "Invert to (f^-1)'(f(1)) = 1/4"
+    ]
+  }
+]

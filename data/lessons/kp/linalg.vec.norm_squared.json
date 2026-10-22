@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The squared length",
+    "section": "The squared length",
+    "subgoals": [
+      "Define the norm",
+      "Compute a squared length",
+      "Take the root at the end"
+    ]
+  },
+  {
+    "label": "Why squared",
+    "section": "Why squared",
+    "subgoals": [
+      "Name bilinearity",
+      "Say why comparisons need no root",
+      "Connect it to the distance formula"
+    ]
+  },
+  {
+    "label": "In any dimension",
+    "section": "In any dimension",
+    "subgoals": [
+      "Extend the sum",
+      "Note it needs no new formula",
+      "See the inner-product axioms"
+    ]
+  }
+]

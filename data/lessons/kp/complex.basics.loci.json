@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A fixed distance from a point",
+    "section": "A fixed distance from a point",
+    "subgoals": [
+      "Read a modulus as a distance",
+      "Identify the centre and radius",
+      "Exclude the interior"
+    ]
+  },
+  {
+    "label": "Equal distances to two points",
+    "section": "Equal distances to two points",
+    "subgoals": [
+      "Set the two moduli equal",
+      "Recognise the perpendicular bisector",
+      "Write the line in terms of Re z"
+    ]
+  },
+  {
+    "label": "Reading a description back",
+    "section": "Reading a description back",
+    "subgoals": [
+      "Turn a described circle into an equation",
+      "Turn a bisector into an equation",
+      "Separate the k=1 case from k not 1"
+    ]
+  }
+]

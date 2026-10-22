@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The exponent of the unit group",
+    "section": "The exponent of the unit group",
+    "subgoals": [
+      "Minimise k with a^k = 1",
+      "Divide Euler phi",
+      "Read the exponent as a group invariant"
+    ]
+  },
+  {
+    "label": "Worked: prime powers and products",
+    "section": "Worked: prime powers and products",
+    "subgoals": [
+      "Compute lambda(8) = 2",
+      "Compute lambda(9) = 6",
+      "Take lcm(1,4) for lambda(10)"
+    ]
+  },
+  {
+    "label": "Carmichael versus Euler",
+    "section": "Carmichael versus Euler",
+    "subgoals": [
+      "Compare lambda(8) with phi(8)",
+      "See every odd square is 1 mod 8",
+      "Use lambda in RSA key construction"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Switches and spikes",
+    "section": "Switches and spikes",
+    "subgoals": [
+      "Model a switch with H(t-a)",
+      "Model a strike with the delta",
+      "Note the delta is a distribution"
+    ]
+  },
+  {
+    "label": "Worked: transforms of the step and delta",
+    "section": "Worked: transforms of the step and delta",
+    "subgoals": [
+      "Transform H(t-a) to e^(-as)/s",
+      "Transform the delta to e^(-as)",
+      "Set a = 0 for the unit versions"
+    ]
+  },
+  {
+    "label": "Why distributions are needed",
+    "section": "Why distributions are needed",
+    "subgoals": [
+      "See the delta as a narrow pulse limit",
+      "Convolve with a delta",
+      "Identify the impulse response with the transfer function"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "concept": "frac.as_division",
+  "setup": "A length of \\([[length]]\\) is cut into \\([[pieces]]\\) equal pieces.",
+  "steps": [
+    {
+      "fact": "pieces",
+      "say": "Sharing equally is a division: \\([[length]]\\) divided by \\([[pieces]]\\). The fraction bar is that division sign, which is why the two notations are interchangeable."
+    },
+    {
+      "fact": "out_num",
+      "say": "Writing the division as a fraction and reducing gives \\(\\frac{[[out_num]]}{[[out_den]]}\\). The answer is a fraction of a unit, not a count, because each piece is part of one length."
+    }
+  ],
+  "answer": "So each piece is \\(\\frac{[[out_num]]}{[[out_den]]}\\) of the original length."
+}

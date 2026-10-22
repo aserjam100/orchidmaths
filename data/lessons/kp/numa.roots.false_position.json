@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Interpolating inside a bracket",
+    "section": "Interpolating inside a bracket",
+    "subgoals": [
+      "Begin with a sign change",
+      "Interpolate to a trial point",
+      "Keep the half that still brackets the root"
+    ]
+  },
+  {
+    "label": "Worked: why it can be slow",
+    "section": "Worked: why it can be slow",
+    "subgoals": [
+      "Interpolate with a curved function",
+      "Observe one endpoint staying fixed",
+      "Note the slow side"
+    ]
+  },
+  {
+    "label": "Compared with its cousins",
+    "section": "Compared with its cousins",
+    "subgoals": [
+      "Place the methods on a speed scale",
+      "Place them on a guarantee scale",
+      "Choose according to what is available"
+    ]
+  }
+]

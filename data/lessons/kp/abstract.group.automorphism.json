@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Structure-preserving bijections",
+    "section": "Structure-preserving bijections",
+    "subgoals": [
+      "Check bijectivity and the product rule",
+      "Send each element to one of the same order",
+      "Fix the identity"
+    ]
+  },
+  {
+    "label": "Worked: Aut(Z_5) has four elements",
+    "section": "Worked: Aut(Z_5) has four elements",
+    "subgoals": [
+      "Fix the image of the generator 1",
+      "Keep images that generate Z_5",
+      "Count the four units mod 5"
+    ]
+  },
+  {
+    "label": "Inner automorphisms",
+    "section": "Inner automorphisms",
+    "subgoals": [
+      "Conjugate x by g",
+      "Identify the kernel as Z(G)",
+      "Quotient G by Z(G)"
+    ]
+  }
+]

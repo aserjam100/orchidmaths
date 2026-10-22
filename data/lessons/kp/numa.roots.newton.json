@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Following the tangent",
+    "section": "Following the tangent",
+    "subgoals": [
+      "Draw the tangent at the current guess",
+      "Find its intercept with the axis",
+      "Take that intercept as the next guess"
+    ]
+  },
+  {
+    "label": "Worked: one step for a square root",
+    "section": "Worked: one step for a square root",
+    "subgoals": [
+      "Substitute into the Newton formula",
+      "Simplify for the square function",
+      "Take one step and note the improvement"
+    ]
+  },
+  {
+    "label": "Quadratic convergence and its price",
+    "section": "Quadratic convergence and its price",
+    "subgoals": [
+      "State the quadratic rate",
+      "Note the need for the derivative",
+      "See how a bad guess breaks it"
+    ]
+  }
+]

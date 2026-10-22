@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: splitting into two ODEs",
+    "section": "Worked: splitting into two ODEs",
+    "subgoals": [
+      "Insert u = X(x)T(t) and divide by kXT",
+      "Split into T' = -klT and X'' + lX = 0",
+      "Solve the time decay T = Ce^{-klt}"
+    ]
+  },
+  {
+    "label": "Worked: modes on a unit rod",
+    "section": "Worked: modes on a unit rod",
+    "subgoals": [
+      "Pin X(0) = X(pi) = 0 to get l_n = n^2",
+      "Pair each mode with e^{-kn^2 t}",
+      "Evolve sin x to e^{-kt} sin x"
+    ]
+  },
+  {
+    "label": "Smoothing and the maximum principle",
+    "section": "Smoothing and the maximum principle",
+    "subgoals": [
+      "Locate maxima on the space-time boundary",
+      "Argue instant smoothing for t > 0",
+      "Contrast diffusion with wave transport"
+    ]
+  }
+]

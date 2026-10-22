@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Find what you know",
+    "section": "Find what you know",
+    "subgoals": [
+      "Read the whole story",
+      "Find the whole and the part",
+      "Find what the question asks"
+    ]
+  },
+  {
+    "label": "Decide to subtract",
+    "section": "Decide to subtract",
+    "subgoals": [
+      "Look for words like left or give away",
+      "Draw the whole and the known part",
+      "Subtract to find the other part"
+    ]
+  },
+  {
+    "label": "Write the number sentence",
+    "section": "Write the number sentence",
+    "subgoals": [
+      "Write the number sentence",
+      "Check by adding back",
+      "Answer the question in words"
+    ]
+  }
+]

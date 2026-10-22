@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The rate follows the temperature gap",
+    "section": "The rate follows the temperature gap",
+    "subgoals": [
+      "Write T - T_env",
+      "Set the rate proportional to the gap",
+      "Solve the exponential decay"
+    ]
+  },
+  {
+    "label": "Worked: a cooling body",
+    "section": "Worked: a cooling body",
+    "subgoals": [
+      "Read the ambient 20 C",
+      "Read the excess coefficient 70",
+      "Evaluate the excess at t = 10"
+    ]
+  },
+  {
+    "label": "The ambient limit",
+    "section": "The ambient limit",
+    "subgoals": [
+      "Send t to infinity",
+      "Identify the constant term",
+      "Check the initial temperature"
+    ]
+  }
+]

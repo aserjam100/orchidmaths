@@ -1,0 +1,15 @@
+<!-- Orchid mark: five petals and a lip, drawn for Orchid (MIT). Rendered to PNG with `make art`. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0c0d0f"/>
+  <g transform="translate(256,246)">
+    <g fill="#d98cbc">
+      <ellipse cx="0" cy="-92" rx="42" ry="92"/>
+      <ellipse cx="0" cy="-92" rx="42" ry="92" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-92" rx="42" ry="92" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-92" rx="42" ry="92" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-92" rx="42" ry="92" transform="rotate(288)"/>
+    </g>
+    <path d="M-46,14 C-62,96 62,96 46,14 Z" fill="#9d4c88"/>
+    <circle r="22" fill="#f6e27a"/>
+  </g>
+</svg>

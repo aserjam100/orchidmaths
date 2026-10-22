@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Isolate the function",
+    "section": "Isolate the function",
+    "subgoals": [
+      "Collect the terms in the function",
+      "Divide by the coefficient",
+      "State the function value"
+    ]
+  },
+  {
+    "label": "Read the angles",
+    "section": "Read the angles",
+    "subgoals": [
+      "Check the value against the range",
+      "Find the reference angle",
+      "Place it in the quadrants of the sign"
+    ]
+  },
+  {
+    "label": "Worked reading",
+    "section": "Worked reading",
+    "subgoals": [
+      "Divide by the coefficient",
+      "Match the sign to the quadrants",
+      "Report the smallest nonnegative angle"
+    ]
+  }
+]

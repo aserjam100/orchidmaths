@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A product that is a number",
+    "section": "Multiplying two vectors to get a number",
+    "subgoals": [
+      "Multiply the matching components",
+      "Add the two products",
+      "Keep the result a single number"
+    ]
+  },
+  {
+    "label": "What the sign reports",
+    "section": "What the sign says",
+    "subgoals": [
+      "Read a positive product as broadly aligned",
+      "Read a negative product as broadly opposed",
+      "Recognise a zero product as a right angle"
+    ]
+  },
+  {
+    "label": "The angle it measures",
+    "section": "The angle behind the number",
+    "subgoals": [
+      "Write the dot product with the magnitudes and the angle",
+      "Solve it for the cosine",
+      "See the right angle case fall out of it"
+    ]
+  }
+]

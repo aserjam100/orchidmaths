@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The two squares",
+    "section": "The two squares",
+    "subgoals": [
+      "Start from the cosine of the double angle",
+      "Solve for the square",
+      "Divide for the tangent square"
+    ]
+  },
+  {
+    "label": "Higher powers",
+    "section": "Higher powers",
+    "subgoals": [
+      "Square the reduced form again",
+      "Collect the multiple-angle terms",
+      "Leave one factor for odd powers"
+    ]
+  },
+  {
+    "label": "Worked reading",
+    "section": "Worked reading",
+    "subgoals": [
+      "Subtract the given cosine from one",
+      "Divide by two",
+      "Take the root with the quadrant sign"
+    ]
+  }
+]

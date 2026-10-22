@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Pointwise vs uniform convergence",
+    "section": "",
+    "subgoals": [
+      "Test convergence at a fixed x first",
+      "Explain why the x-n example jumps at 1",
+      "State the continuity preservation for uniform limits"
+    ]
+  },
+  {
+    "label": "The Weierstrass M-test",
+    "section": "",
+    "subgoals": [
+      "Bound each term by a convergent constant series",
+      "Certify sine-over-n-squared uniform on R",
+      "Conclude continuity of the sum without computing it"
+    ]
+  },
+  {
+    "label": "Calculus of uniform limits",
+    "section": "",
+    "subgoals": [
+      "Integrate a uniformly convergent series term by term",
+      "State the extra hypothesis for differentiation",
+      "Explain the Fourier failure at the jump"
+    ]
+  }
+]

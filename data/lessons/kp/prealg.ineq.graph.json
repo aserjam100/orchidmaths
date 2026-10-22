@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Draw the boundary",
+    "section": "Draw the boundary",
+    "subgoals": [
+      "Locate the boundary number",
+      "Use an open circle for strict inequalities",
+      "Use a closed circle for non-strict inequalities"
+    ]
+  },
+  {
+    "label": "Shade the solution side",
+    "section": "Shade the solution side",
+    "subgoals": [
+      "Shade right for greater than",
+      "Shade left for less than",
+      "Keep the circle and direction separate"
+    ]
+  },
+  {
+    "label": "Check a test point",
+    "section": "Check a test point",
+    "subgoals": [
+      "Pick a point in the shaded region",
+      "Substitute it into the inequality",
+      "Confirm the unshaded side fails"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Differentiating under the expectation",
+    "section": "Differentiating under the expectation",
+    "subgoals": [
+      "Differentiate the transform",
+      "Insert the factor of iX",
+      "Evaluate at zero for the moment"
+    ]
+  },
+  {
+    "label": "Worked: the Bernoulli variance",
+    "section": "Worked: the Bernoulli variance",
+    "subgoals": [
+      "Differentiate twice",
+      "Form the second moment",
+      "Subtract the square of the mean"
+    ]
+  },
+  {
+    "label": "Second moment and variance",
+    "section": "Second moment and variance",
+    "subgoals": [
+      "Read the second moment",
+      "Square the first moment",
+      "Subtract for the variance"
+    ]
+  }
+]

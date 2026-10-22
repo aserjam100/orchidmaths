@@ -1,0 +1,15 @@
+{
+  "concept": "arith.sqrt.estimate",
+  "setup": "You are placing the square root of [[radicand]] between two consecutive whole numbers.",
+  "steps": [
+    {
+      "fact": "lower_square",
+      "say": "The square of [[lower]] is [[lower_square]], which is below [[radicand]]."
+    },
+    {
+      "fact": "upper_square",
+      "say": "The square of [[upper]] is [[upper_square]], which is above [[radicand]]."
+    }
+  ],
+  "answer": "So the square root lies between [[lower]] and [[upper]]."
+}

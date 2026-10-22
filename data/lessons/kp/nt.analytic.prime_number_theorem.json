@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: estimating pi of 100",
+    "section": "Worked: estimating pi of 100",
+    "subgoals": [
+      "Divide 100 by log 100",
+      "Compare against the true count 25",
+      "Note the shrinking relative error"
+    ]
+  },
+  {
+    "label": "Worked: density near a million",
+    "section": "Worked: density near a million",
+    "subgoals": [
+      "Evaluate 1/log x at a million",
+      "Convert the density to 1 in 14",
+      "Scale to a block of 140 integers"
+    ]
+  },
+  {
+    "label": "Worked: the nth prime heuristic",
+    "section": "Worked: the nth prime heuristic",
+    "subgoals": [
+      "Multiply 1000 by log 1000",
+      "Compare the guess against 7919",
+      "Read the law backwards from counts to sizes"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The formula and its parts",
+    "section": "The formula and its parts",
+    "subgoals": [
+      "Identify the principal', 'the rate and the period count",
+      "Write the rate as a fraction per period",
+      "Raise the growth factor to the number of periods"
+    ]
+  },
+  {
+    "label": "Compounding more often",
+    "section": "Compounding more often",
+    "subgoals": [
+      "Divide the annual rate by the periods per year",
+      "Multiply the exponent by the periods per year",
+      "See the limit as continuous compounding"
+    ]
+  },
+  {
+    "label": "Working an example",
+    "section": "Working an example",
+    "subgoals": [
+      "Apply the growth factor once per period",
+      "Round the money value to cents",
+      "Compare with simple interest to see the extra"
+    ]
+  }
+]

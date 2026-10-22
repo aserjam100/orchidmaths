@@ -1,0 +1,15 @@
+{
+  "concept": "trig.basics.sector_area",
+  "setup": "A circle has radius [[r]] and a sector whose central angle is $[[frac]]$.",
+  "steps": [
+    {
+      "fact": "frac",
+      "say": "A sector is a slice of the circle, so its area is the same fraction of the whole that its angle is of a full turn: $A = \\tfrac{1}{2} r^{2} \\theta$ when $\\theta$ is in radians. The $\\tfrac{1}{2}$ is the same factor that makes a triangle half its bounding rectangle."
+    },
+    {
+      "fact": "value",
+      "say": "Here $A = \\tfrac{1}{2} ([[r]])^{2} \\times [[frac]] = [[value]]\\pi$, so the multiplier written in front of $\\pi$ is [[value]]. A full turn of $2\\pi$ returns the whole circle, $\\pi r^{2}$."
+    }
+  ],
+  "answer": "So the sector's area is $[[value]]\\pi$."
+}

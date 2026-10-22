@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The determinant condition",
+    "section": "The determinant condition",
+    "subgoals": [
+      "Form the Jacobian matrix",
+      "Compute its determinant",
+      "Read nonzero as invertible near the point"
+    ]
+  },
+  {
+    "label": "The inverse and its derivative",
+    "section": "The inverse and its derivative",
+    "subgoals": [
+      "Invert the Jacobian matrix",
+      "Divide by the determinant",
+      "Recover the one-variable reciprocal rule"
+    ]
+  },
+  {
+    "label": "The polar map and friends",
+    "section": "The polar map and friends",
+    "subgoals": [
+      "Check the polar map determinant",
+      "Recover the polar area element",
+      "Apply it to change of variables"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Open Sets",
+    "section": "Open Sets",
+    "subgoals": [
+      "Surround every x in U by an epsilon-ball inside U",
+      "Confirm (0, 1) stays inside under small nudges",
+      "Reject [0, 1] at endpoint 0 hitting negatives"
+    ]
+  },
+  {
+    "label": "Closed Sets",
+    "section": "Closed Sets",
+    "subgoals": [
+      "Complement F against X and test openness",
+      "Trap all limit points inside F",
+      "Check [0, 1] sequences converge within [0, 1]"
+    ]
+  },
+  {
+    "label": "Properties",
+    "section": "Properties",
+    "subgoals": [
+      "Allow sets both open and closed, or neither",
+      "Union arbitrary opens into an open",
+      "Intersect finitely many closed into a closed"
+    ]
+  }
+]

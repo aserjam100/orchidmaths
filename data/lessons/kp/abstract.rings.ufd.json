@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: 12 has three prime factors in Z",
+    "section": "Worked: 12 has three prime factors in Z",
+    "subgoals": [
+      "Split 12 into 2, 2, 3",
+      "Check irreducibility",
+      "Count three with multiplicity"
+    ]
+  },
+  {
+    "label": "Worked: 6 breaks in Z[√-5]",
+    "section": "Worked: 6 breaks in Z[√-5]",
+    "subgoals": [
+      "Factor as 2 times 3",
+      "Factor as (1+√-5)(1-√-5)",
+      "Certify difference via norms"
+    ]
+  },
+  {
+    "label": "PID implies UFD",
+    "section": "PID implies UFD",
+    "subgoals": [
+      "Pass through Bézout",
+      "Promote irreducibles to primes",
+      "Apply to Z and F[x]"
+    ]
+  }
+]

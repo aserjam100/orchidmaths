@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Increasing sequences",
+    "section": "Increasing sequences",
+    "subgoals": [
+      "Write the union as disjoint increments",
+      "Sum the increments with additivity",
+      "Recognise the partial sums as P(A_n)"
+    ]
+  },
+  {
+    "label": "Worked: a geometric union",
+    "section": "Worked: a geometric union",
+    "subgoals": [
+      "Identify the nested events",
+      "Take the limit of the probabilities",
+      "Read the union probability"
+    ]
+  },
+  {
+    "label": "Continuity from above",
+    "section": "Continuity from above",
+    "subgoals": [
+      "Complement a decreasing sequence",
+      "Require the first probability to be finite",
+      "Take the limit of the intersections"
+    ]
+  }
+]

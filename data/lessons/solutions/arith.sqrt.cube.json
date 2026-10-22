@@ -1,0 +1,15 @@
+{
+  "concept": "arith.sqrt.cube",
+  "setup": "You are finding the cube root of [[radicand]].",
+  "steps": [
+    {
+      "fact": "cube",
+      "say": "Cubing [[root]] gives [[cube]]."
+    },
+    {
+      "fact": "radicand",
+      "say": "Since [[root]] cubed is [[radicand]], the cube root is [[root]]."
+    }
+  ],
+  "answer": "The cube root is [[root]]."
+}

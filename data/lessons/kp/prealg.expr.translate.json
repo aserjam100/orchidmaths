@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Identify the operations",
+    "section": "Identify the operations",
+    "subgoals": [
+      "Match words to operations",
+      "Use a variable for the unknown",
+      "Keep the numbers with their operations"
+    ]
+  },
+  {
+    "label": "Keep the order of subtraction and division",
+    "section": "Keep the order of subtraction and division",
+    "subgoals": [
+      "Read 'less than' as a reversal",
+      "Put the first-named number first in a quotient",
+      "Do not swap the terms"
+    ]
+  },
+  {
+    "label": "Use grouping for a difference or sum",
+    "section": "Use grouping for a difference or sum",
+    "subgoals": [
+      "Parenthesize the difference or sum",
+      "Apply the multiplier to the whole group",
+      "Test the expression with a value"
+    ]
+  }
+]

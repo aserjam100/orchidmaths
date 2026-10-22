@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Extending Legendre to composite moduli",
+    "section": "Extending Legendre to composite moduli",
+    "subgoals": [
+      "Factor n into odd primes",
+      "Multiply the Legendre symbols",
+      "Use reciprocity for each factor"
+    ]
+  },
+  {
+    "label": "Worked: two factorisations",
+    "section": "Worked: two factorisations",
+    "subgoals": [
+      "Compute (2/15) as 1",
+      "Compute (7/15) as -1",
+      "Compute (6/35) as -1"
+    ]
+  },
+  {
+    "label": "What Jacobi does and does not tell you",
+    "section": "What Jacobi does and does not tell you",
+    "subgoals": [
+      "Read -1 as proof of a nonresidue",
+      "Reject 1 as proof of a residue",
+      "Note the cancellation on composite n"
+    ]
+  }
+]

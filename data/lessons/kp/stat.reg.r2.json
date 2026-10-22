@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The share of variation explained",
+    "section": "The share of variation explained",
+    "subgoals": [
+      "Write SSE and SST",
+      "Divide SSE by SST",
+      "Subtract from one"
+    ]
+  },
+  {
+    "label": "Worked: R-squared from sums of squares",
+    "section": "Worked: R-squared from sums of squares",
+    "subgoals": [
+      "Take SST = 100 and SSE = 25",
+      "Compute the unexplained share 0.25",
+      "Subtract for 0.75"
+    ]
+  },
+  {
+    "label": "What R-squared misses",
+    "section": "What R-squared misses",
+    "subgoals": [
+      "Reject a causal reading",
+      "Note that adding predictors raises R-squared",
+      "Read residual plots alongside"
+    ]
+  }
+]

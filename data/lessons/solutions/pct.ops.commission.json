@@ -1,0 +1,15 @@
+{
+  "concept": "pct.ops.commission",
+  "setup": "The sales amount is $[[sales]] and the commission rate is [[rate]]%.",
+  "steps": [
+    {
+      "fact": "sales",
+      "say": "Start with the sales amount, $[[sales]]."
+    },
+    {
+      "fact": "rate",
+      "say": "Write the rate as [[rate]]/100 and multiply it by the sales."
+    }
+  ],
+  "answer": "The commission is $[[commission]]."
+}

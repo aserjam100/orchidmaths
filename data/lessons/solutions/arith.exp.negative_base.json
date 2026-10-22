@@ -1,0 +1,15 @@
+{
+  "concept": "arith.exp.negative_base",
+  "setup": "You are evaluating a power with base magnitude [[base]] and exponent [[power]].",
+  "steps": [
+    {
+      "fact": "shape",
+      "say": "The expression is [[shape]], which decides whether the negative sign is inside the base."
+    },
+    {
+      "fact": "rule",
+      "say": "[[rule]]"
+    }
+  ],
+  "answer": "The value is [[value]]."
+}

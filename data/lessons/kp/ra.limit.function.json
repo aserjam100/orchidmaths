@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The epsilon-delta definition",
+    "section": "The epsilon-delta definition",
+    "subgoals": [
+      "Fix epsilon",
+      "Choose delta depending on it",
+      "Exclude the point c itself"
+    ]
+  },
+  {
+    "label": "Worked: a linear function",
+    "section": "Worked: a linear function",
+    "subgoals": [
+      "Compute the output difference",
+      "Factor out the slope",
+      "Solve for delta"
+    ]
+  },
+  {
+    "label": "Uniqueness and locality",
+    "section": "Uniqueness and locality",
+    "subgoals": [
+      "Separate two candidate limits",
+      "Change the function away from the point",
+      "Compare the one-sided limits"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two rates for one motion",
+    "section": "Two rates for one motion",
+    "subgoals": [
+      "Separate the angle rate from the distance rate",
+      "Measure a revolution as a full turn",
+      "Relate the arc to the circumference"
+    ]
+  },
+  {
+    "label": "Converting between them",
+    "section": "Converting between them",
+    "subgoals": [
+      "Count revolutions per second",
+      "Multiply by 360 for degrees",
+      "Multiply by the radius for linear speed"
+    ]
+  },
+  {
+    "label": "Why the distinction matters",
+    "section": "Why the distinction matters",
+    "subgoals": [
+      "Give both points the same angle rate",
+      "Give the outer point the greater speed",
+      "Transfer speed through a mesh by radius"
+    ]
+  }
+]

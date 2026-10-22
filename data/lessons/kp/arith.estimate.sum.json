@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Round first",
+    "section": "Round first",
+    "subgoals": [
+      "Choose the rounding place",
+      "Look at the digit to its right",
+      "Round up at 5 or more"
+    ]
+  },
+  {
+    "label": "Add or subtract the estimates",
+    "section": "Add or subtract the estimates",
+    "subgoals": [
+      "Keep the original operation",
+      "Use the rounded values",
+      "Compute mentally"
+    ]
+  },
+  {
+    "label": "Judge the result",
+    "section": "Judge the result",
+    "subgoals": [
+      "Compare the estimate with the exact answer",
+      "Look for a missing place value",
+      "Treat the estimate as a check, not the answer"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Half the square of the radius",
+    "section": "Half the square of the radius",
+    "subgoals": [
+      "State the area integral",
+      "Explain the half",
+      "Compute a swept area"
+    ]
+  },
+  {
+    "label": "Why the half",
+    "section": "Why the half",
+    "subgoals": [
+      "Write the area element",
+      "Sum the wedges",
+      "Cover the circle case"
+    ]
+  },
+  {
+    "label": "Sweeping a region",
+    "section": "Sweeping a region",
+    "subgoals": [
+      "Name which regions fit",
+      "Give one that does not",
+      "Catch integrating the radius instead of its square"
+    ]
+  }
+]

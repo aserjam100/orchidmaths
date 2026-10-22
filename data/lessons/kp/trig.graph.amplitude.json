@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The size of the swing",
+    "section": "How far a wave swings",
+    "subgoals": [
+      "Name the midline the wave oscillates about",
+      "Measure the peak above the midline",
+      "Give the amplitude as that distance"
+    ]
+  },
+  {
+    "label": "Amplitude is a distance",
+    "section": "Amplitude is a distance",
+    "subgoals": [
+      "Read the amplitude as the absolute value of the coefficient",
+      "Take a negative coefficient's absolute value",
+      "Read the sign as a reflection over the axis"
+    ]
+  },
+  {
+    "label": "What amplitude is not",
+    "section": "What amplitude is not",
+    "subgoals": [
+      "Separate the coefficient from the multiplier on x",
+      "Say that the coefficient leaves the period alone",
+      "Keep vertical size and horizontal spacing distinct"
+    ]
+  }
+]

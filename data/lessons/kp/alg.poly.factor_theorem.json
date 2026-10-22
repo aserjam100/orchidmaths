@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Roots and factors",
+    "section": "Roots and factors",
+    "subgoals": [
+      "Divide by the linear expression",
+      "Read the remainder as the value at the point",
+      "Call it a factor exactly when the remainder is zero"
+    ]
+  },
+  {
+    "label": "Finding factors",
+    "section": "Finding factors",
+    "subgoals": [
+      "Test a candidate by substitution",
+      "Divide out any factor that checks",
+      "Continue on the lower-degree quotient"
+    ]
+  },
+  {
+    "label": "Consequences for graphs",
+    "section": "Consequences for graphs",
+    "subgoals": [
+      "Read each root as an axis crossing",
+      "Distinguish a repeated root as a touch",
+      "Count roots with multiplicity against the degree"
+    ]
+  }
+]

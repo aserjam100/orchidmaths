@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Write the two ratios",
+    "section": "",
+    "subgoals": [
+      "Match like quantities in the two ratios",
+      "Keep the units in the same order in both",
+      "Write the two ratios as an equality"
+    ]
+  },
+  {
+    "label": "Solve for the unknown",
+    "section": "",
+    "subgoals": [
+      "Cross-multiply",
+      "Divide by the coefficient of the unknown",
+      "Keep the unknown's unit"
+    ]
+  },
+  {
+    "label": "Answer the question",
+    "section": "",
+    "subgoals": [
+      "Return to the words of the problem",
+      "Give the answer with its unit",
+      "Check the answer is the right size next to the known bundle"
+    ]
+  }
+]

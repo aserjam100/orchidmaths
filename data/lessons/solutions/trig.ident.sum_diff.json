@@ -1,0 +1,31 @@
+{
+  "concept": "trig.ident.sum_diff",
+  "setup": "You are given $\\sin\\alpha = [[sin_a_num]]/[[sin_a_den]]$ with $\\alpha$ acute, and $\\cos\\beta = [[cos_b_num]]/[[cos_b_den]]$ with $\\beta$ acute, and asked for $[[fn]]([[expr]])$.",
+  "steps": [
+    {
+      "fact": "sin_a_num",
+      "say": "Each stated ratio comes from a right triangle, and the third side of each is what the expansion needs beyond the two stated ratios. The first triangle gives $\\cos\\alpha$; the second, whose adjacent side is $[[cos_b_num]]$ and hypotenuse $[[cos_b_den]]$, gives $\\sin\\beta$."
+    },
+    {
+      "fact": "term1",
+      "say": "The formula expands a combined angle into two products of a numerator with a numerator. The first is [[term1]]."
+    },
+    {
+      "fact": "term2",
+      "say": "and the second is [[term2]]."
+    },
+    {
+      "fact": "raw_den",
+      "say": "Both products sit over the product of the two hypotenuses, [[raw_den]]."
+    },
+    {
+      "fact": "sum",
+      "say": "The numerator is their sum, [[sum]]."
+    },
+    {
+      "fact": "num",
+      "say": "Reduced by the factor the two share, the value is $[[num]]/[[den]]$."
+    }
+  ],
+  "answer": "So $[[fn]]([[expr]]) = [[num]]/[[den]]$."
+}

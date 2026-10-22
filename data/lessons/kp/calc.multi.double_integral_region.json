@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Describing the region",
+    "section": "Describing the region",
+    "subgoals": [
+      "Define a type I region",
+      "Write its limits as functions",
+      "Identify a region that is not type I"
+    ]
+  },
+  {
+    "label": "Setting the limits",
+    "section": "Setting the limits",
+    "subgoals": [
+      "Integrate a triangle",
+      "Keep the variable order straight",
+      "Avoid a constant where a function belongs"
+    ]
+  },
+  {
+    "label": "Choosing an order that fits",
+    "section": "Choosing an order that fits",
+    "subgoals": [
+      "Swap the order of integration",
+      "Explain why the value does not change",
+      "Pick the order with simpler limits"
+    ]
+  }
+]

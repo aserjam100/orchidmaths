@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Beyond the data",
+    "section": "Beyond the data",
+    "subgoals": [
+      "Place the query outside the data",
+      "Note the unconstrained shape",
+      "Read the growing node product"
+    ]
+  },
+  {
+    "label": "Worked: the growing error bound",
+    "section": "Worked: the growing error bound",
+    "subgoals": [
+      "Fit inside the interval",
+      "Extend the query point",
+      "Watch the error bound grow"
+    ]
+  },
+  {
+    "label": "The careful exceptions",
+    "section": "The careful exceptions",
+    "subgoals": [
+      "Distinguish sequence extrapolation",
+      "Require a constraining model",
+      "Widen the reported uncertainty"
+    ]
+  }
+]

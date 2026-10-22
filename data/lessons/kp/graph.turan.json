@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The Turán graph",
+    "section": "The Turán graph",
+    "subgoals": [
+      "Split n vertices into r near-equal parts",
+      "Join only across parts",
+      "Count floor of 1 - 1/r times n squared over two"
+    ]
+  },
+  {
+    "label": "Worked: K_4-free on six vertices",
+    "section": "Worked: K_4-free on six vertices",
+    "subgoals": [
+      "Choose three parts of size two",
+      "Count 3 times 4 cross edges",
+      "Check four vertices exceed three parts"
+    ]
+  },
+  {
+    "label": "The general bound and beyond",
+    "section": "The general bound and beyond",
+    "subgoals": [
+      "Apply the quadratic formula",
+      "Compare Turán with Mantel at r equal to two",
+      "Contrast a bipartite forbidden graph"
+    ]
+  }
+]

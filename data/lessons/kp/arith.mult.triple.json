@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Use multiplication notation",
+    "section": "",
+    "subgoals": [
+      "Identify the factors",
+      "Estimate the product",
+      "Prepare the vertical form"
+    ]
+  },
+  {
+    "label": "Model multiplication",
+    "section": "",
+    "subgoals": [
+      "Model three-digit by one-digit",
+      "Multiply by the ones first",
+      "Regroup across columns"
+    ]
+  },
+  {
+    "label": "Multiply whole numbers",
+    "section": "",
+    "subgoals": [
+      "Multiply ones, then tens, then hundreds",
+      "Carry between columns",
+      "Check with estimation"
+    ]
+  }
+]

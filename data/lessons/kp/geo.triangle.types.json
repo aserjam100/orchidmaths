@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Classifying by Sides",
+    "section": "Classifying by Sides",
+    "subgoals": [
+      "Count equal sides: 0 scalene, 2 isosceles, 3 equilateral",
+      "Read tick marks for the equal sides",
+      "File 5, 5, 8 by sides as isosceles"
+    ]
+  },
+  {
+    "label": "Classifying by Angles",
+    "section": "Classifying by Angles",
+    "subgoals": [
+      "Cap right and obtuse at one angle each",
+      "Blame the 180-degree total for the cap",
+      "Name the longest side of a right triangle the hypotenuse"
+    ]
+  },
+  {
+    "label": "Drill: the 5-5-8 triangle and the 2-2-2 test",
+    "section": "",
+    "subgoals": [
+      "Pair equal sides with acute angles for acute isosceles",
+      "Total three 90s to 270 to reject a right equilateral",
+      "Hand each triangle one side-name plus one angle-name"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Induction over a definition",
+    "section": "Induction over a definition",
+    "subgoals": [
+      "Read the recursive definition",
+      "Match one case per rule",
+      "Assume the property for sub-objects"
+    ]
+  },
+  {
+    "label": "The two cases",
+    "section": "The two cases",
+    "subgoals": [
+      "Prove the base case",
+      "Prove the step for the constructor",
+      "Use the hypothesis on every part"
+    ]
+  },
+  {
+    "label": "Choosing the principle",
+    "section": "Choosing the principle",
+    "subgoals": [
+      "Tell structural from strong induction",
+      "See why vertex count fails as the index",
+      "Follow the definition's recursion"
+    ]
+  }
+]

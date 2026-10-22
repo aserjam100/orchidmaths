@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Statement",
+    "section": "Statement",
+    "subgoals": [
+      "State a-p-minus-1 for prime p and a coprime to p",
+      "Check the 2-to-4 mod 5 example",
+      "Convert between the two equivalent forms"
+    ]
+  },
+  {
+    "label": "Proof sketch",
+    "section": "Proof Sketch",
+    "subgoals": [
+      "Argue multiplication by a permutes residues",
+      "Equate the two products of permuted classes",
+      "Cancel the factorial using coprimality"
+    ]
+  },
+  {
+    "label": "Applications",
+    "section": "Applications",
+    "subgoals": [
+      "Reduce 3-to-100 mod 7 via exponent division",
+      "Name primality testing as a use case",
+      "Connect to RSA via Euler generalization"
+    ]
+  }
+]

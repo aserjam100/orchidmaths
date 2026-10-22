@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Comparing growth",
+    "section": "Comparing growth",
+    "subgoals": [
+      "Define f slower than g by a ratio",
+      "Ignore constant factors",
+      "Order the standard families"
+    ]
+  },
+  {
+    "label": "Logs, powers and factorials",
+    "section": "Logs, powers and factorials",
+    "subgoals": [
+      "Place log, powers, exponentials, factorial",
+      "See 2^n overtake n^3",
+      "Use the factorial lower bound"
+    ]
+  },
+  {
+    "label": "Limits that decide",
+    "section": "Limits that decide",
+    "subgoals": [
+      "Write the ratio",
+      "Take the limit",
+      "Read the comparison from the limit"
+    ]
+  }
+]

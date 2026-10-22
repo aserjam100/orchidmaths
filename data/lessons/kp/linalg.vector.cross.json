@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A vector perpendicular to both factors",
+    "section": "A vector perpendicular to both factors",
+    "subgoals": [
+      "Evaluate the determinant formula",
+      "Use anticommutativity",
+      "Note u cross u is zero"
+    ]
+  },
+  {
+    "label": "Worked: computing a cross product",
+    "section": "Worked: computing a cross product",
+    "subgoals": [
+      "Compute (1,2,3) cross (0,1,0)",
+      "Check the dot products vanish",
+      "Compute (1,0,1) cross (0,1,1)"
+    ]
+  },
+  {
+    "label": "Length, area and orientation",
+    "section": "Length, area and orientation",
+    "subgoals": [
+      "Use the sine formula for the length",
+      "Read the parallelogram area",
+      "Apply the right-hand rule"
+    ]
+  }
+]

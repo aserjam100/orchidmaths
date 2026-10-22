@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Repeated multiplication",
+    "section": "Repeated multiplication",
+    "subgoals": [
+      "Write the exponential model",
+      "Compute a value after t periods",
+      "Explain the growth rate"
+    ]
+  },
+  {
+    "label": "What the base means",
+    "section": "What the base means",
+    "subgoals": [
+      "Distinguish growth from decay",
+      "Convert a percentage to a base",
+      "Read the base as the surviving fraction"
+    ]
+  },
+  {
+    "label": "Doubling time and half-life",
+    "section": "Doubling time and half-life",
+    "subgoals": [
+      "Solve for the doubling time",
+      "Relate the half-life to the base",
+      "Explain independence from the start"
+    ]
+  }
+]

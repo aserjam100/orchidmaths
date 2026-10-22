@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Find the equal groups",
+    "section": "Find the equal groups",
+    "subgoals": [
+      "Check that every group has the same number",
+      "Find the number of groups",
+      "Find how many are in each group"
+    ]
+  },
+  {
+    "label": "Draw a model",
+    "section": "Draw a model",
+    "subgoals": [
+      "Draw one equal bar for each group",
+      "Write the group size in each bar",
+      "Mark the total as unknown"
+    ]
+  },
+  {
+    "label": "Write the number sentence",
+    "section": "Write the number sentence",
+    "subgoals": [
+      "Write groups × group size",
+      "Work out the answer",
+      "Answer the question in words"
+    ]
+  }
+]

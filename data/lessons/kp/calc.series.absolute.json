@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Absolute convergence",
+    "section": "",
+    "subgoals": [
+      "Test sum |a(n)| first",
+      "Conclude sum a(n) converges",
+      "Check (-1)^n/n^2 via 1/n^2"
+    ]
+  },
+  {
+    "label": "Conditional convergence",
+    "section": "",
+    "subgoals": [
+      "Converge without absolute convergence",
+      "Identify (-1)^n/n as conditional",
+      "Separate the two strengths"
+    ]
+  },
+  {
+    "label": "Worked absolute check",
+    "section": "",
+    "subgoals": [
+      "Strip signs then test sum 1/n^2",
+      "Conclude absolute convergence",
+      "Classify the original series"
+    ]
+  }
+]

@@ -1,0 +1,715 @@
+{
+  "/diagrams/algebrica/completing-square.svg": {
+    "concepts": [
+      "alg.quad.complete_square"
+    ],
+    "title": "Completing the square",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/complex-plane.svg": {
+    "concepts": [
+      "complex.adv.polar",
+      "complex.basics.concept"
+    ],
+    "title": "Imaginary unit i and complex numbers",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/hyperbolic-functions.svg": {
+    "concepts": [
+      "trig.hyperbolic.sinh_cosh",
+      "trig.hyperbolic.tanh_coth"
+    ],
+    "title": "Hyperbolic sine and cosine functions",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/inverse-trig-graphs.svg": {
+    "concepts": [
+      "trig.adv.arctan",
+      "trig.adv.inverse"
+    ],
+    "title": "Inverse trig functions",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/law-of-cosines.svg": {
+    "concepts": [
+      "trig.adv.law_cosines"
+    ],
+    "title": "Law of cosines",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/law-of-sines.svg": {
+    "concepts": [
+      "trig.adv.law_sines"
+    ],
+    "title": "Law of sines",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/linear-equation-graph.svg": {
+    "concepts": [
+      "alg.linear.graph",
+      "alg.linear.slope",
+      "alg.linear.slope_intercept"
+    ],
+    "title": "Graph a linear equation",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/number-line-absolute-value.svg": {
+    "concepts": [
+      "alg.ineq.absolute_value",
+      "arith.neg.abs_value"
+    ],
+    "title": "Absolute value",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/number-line-intervals.svg": {
+    "concepts": [
+      "alg.ineq.interval"
+    ],
+    "title": "Interval notation",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/number-line-real.svg": {
+    "concepts": [
+      "prealg.real.concept"
+    ],
+    "title": "Real numbers and the number line",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/number-types-venn.svg": {
+    "concepts": [
+      "prealg.types"
+    ],
+    "title": "Types of numbers",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/pascals-triangle.svg": {
+    "concepts": [
+      "discrete.combinatorics.binomial_theorem",
+      "discrete.combinatorics.pascal",
+      "precalc.binomial_theorem"
+    ],
+    "title": "Pascal's triangle and binomial theorem",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/polynomial-roots-graph.svg": {
+    "concepts": [
+      "alg.poly.roots"
+    ],
+    "title": "Roots of a polynomial",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/pythagorean-theorem.svg": {
+    "concepts": [
+      "geo.triangle.pythagorean",
+      "trig.ident.pythagorean"
+    ],
+    "title": "Pythagorean theorem",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/reference-angles.svg": {
+    "concepts": [
+      "trig.basics.reference_angle"
+    ],
+    "title": "Reference angles and quadrants",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/right-triangle-trig.svg": {
+    "concepts": [
+      "trig.basics.right_triangle"
+    ],
+    "title": "Right triangle trigonometry",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/right-triangle-unit-circle.svg": {
+    "concepts": [
+      "trig.basics.sin_cos_def"
+    ],
+    "title": "Sine and cosine definitions in right triangles",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/sec-csc-cot-graphs.svg": {
+    "concepts": [
+      "trig.basics.reciprocal"
+    ],
+    "title": "Reciprocal trig functions: csc, sec, cot",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/sine-cosine-graph.svg": {
+    "concepts": [
+      "trig.graph.cos",
+      "trig.graph.period",
+      "trig.graph.sin"
+    ],
+    "title": "Graph of sine function",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/unit-circle-labeled.svg": {
+    "concepts": [
+      "trig.basics.special_angles",
+      "trig.basics.unit_circle"
+    ],
+    "title": "Unit circle: sine and cosine of standard angles",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/unit-circle-sine-cosine.svg": {
+    "concepts": [
+      "trig.basics.radians"
+    ],
+    "title": "Radians and degrees conversion",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/unit-circle-tangent.svg": {
+    "concepts": [
+      "trig.basics.tan_def"
+    ],
+    "title": "Tangent definition and ratio identity",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/vector-addition.svg": {
+    "concepts": [
+      "linalg.vector.add",
+      "linalg.vector.dot"
+    ],
+    "title": "Vector addition and scalar multiplication",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/algebrica/vector-arrow.svg": {
+    "concepts": [
+      "linalg.vector.concept"
+    ],
+    "title": "Vectors: magnitude and direction",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/add-carry.svg": {
+    "concepts": [
+      "arith.add.carry"
+    ],
+    "title": "Addition with carrying",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/add-double.svg": {
+    "concepts": [
+      "arith.add.double"
+    ],
+    "title": "Two-digit addition",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/add-single.svg": {
+    "concepts": [
+      "arith.add.single"
+    ],
+    "title": "Single-digit addition",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/add-triple.svg": {
+    "concepts": [
+      "arith.add.triple"
+    ],
+    "title": "Three-digit addition",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/add-word.svg": {
+    "concepts": [
+      "arith.add.word"
+    ],
+    "title": "Addition word problems",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/dec-intro.svg": {
+    "concepts": [
+      "arith.dec.intro"
+    ],
+    "title": "Read and write decimals to hundredths",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/div-basic.svg": {
+    "concepts": [
+      "arith.div.basic"
+    ],
+    "title": "Basic division without remainder",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/div-concept.svg": {
+    "concepts": [
+      "arith.div.concept"
+    ],
+    "title": "Division as equal sharing",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/div-long.svg": {
+    "concepts": [
+      "arith.div.long"
+    ],
+    "title": "Long division",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/div-remainder.svg": {
+    "concepts": [
+      "arith.div.remainder"
+    ],
+    "title": "Division with remainders",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/div-word.svg": {
+    "concepts": [
+      "arith.div.word"
+    ],
+    "title": "Division word problems",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/exp-concept.svg": {
+    "concepts": [
+      "arith.exp.concept"
+    ],
+    "title": "Exponents: base and power",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/exp-evaluate.svg": {
+    "concepts": [
+      "arith.exp.evaluate"
+    ],
+    "title": "Evaluate simple exponents",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/exp-power-rule.svg": {
+    "concepts": [
+      "arith.exp.power_rule"
+    ],
+    "title": "Power of a power rule: (x^a)^b",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/exp-product-rule.svg": {
+    "concepts": [
+      "arith.exp.product_rule"
+    ],
+    "title": "Exponent product rule: x^a times x^b",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/exp-quotient-rule.svg": {
+    "concepts": [
+      "arith.exp.quotient_rule"
+    ],
+    "title": "Exponent quotient rule: x^a divided by x^b",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/factor-composite.svg": {
+    "concepts": [
+      "arith.factor.composite"
+    ],
+    "title": "Identify composite numbers",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/factor-find.svg": {
+    "concepts": [
+      "arith.factor.find"
+    ],
+    "title": "Find factors of a number",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/factor-gcf.svg": {
+    "concepts": [
+      "arith.factor.gcf"
+    ],
+    "title": "Greatest common factor",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/factor-lcm.svg": {
+    "concepts": [
+      "arith.factor.lcm"
+    ],
+    "title": "Least common multiple",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/factor-prime-fact.svg": {
+    "concepts": [
+      "arith.factor.prime_fact"
+    ],
+    "title": "Prime factorization",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/factor-prime.svg": {
+    "concepts": [
+      "arith.factor.prime"
+    ],
+    "title": "Identify prime numbers",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/mult-2-5-10.svg": {
+    "concepts": [
+      "arith.mult.2_5_10"
+    ],
+    "title": "Times tables 2, 5 and 10",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/mult-concept.svg": {
+    "concepts": [
+      "arith.mult.concept"
+    ],
+    "title": "Multiplication as repeated addition",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/mult-double.svg": {
+    "concepts": [
+      "arith.mult.double"
+    ],
+    "title": "Multiply two-digit numbers",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/mult-tables.svg": {
+    "concepts": [
+      "arith.mult.tables"
+    ],
+    "title": "Times tables 1 to 12",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/mult-triple.svg": {
+    "concepts": [
+      "arith.mult.triple"
+    ],
+    "title": "Multiply three-digit by one-digit",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/mult-word.svg": {
+    "concepts": [
+      "arith.mult.word"
+    ],
+    "title": "Multiplication word problems",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/neg-add-sub.svg": {
+    "concepts": [
+      "arith.neg.add_sub"
+    ],
+    "title": "Add and subtract negative numbers",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/neg-mult-div.svg": {
+    "concepts": [
+      "arith.neg.mult_div"
+    ],
+    "title": "Multiply and divide with negatives",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/neg-number-line.svg": {
+    "concepts": [
+      "arith.neg.number_line"
+    ],
+    "title": "Negative numbers on number line",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/order-basic.svg": {
+    "concepts": [
+      "arith.order_ops.basic"
+    ],
+    "title": "Order of operations without exponents",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/order-full.svg": {
+    "concepts": [
+      "arith.order_ops.full"
+    ],
+    "title": "BODMAS with exponents",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/order-nested.svg": {
+    "concepts": [
+      "arith.order_ops.nested"
+    ],
+    "title": "Nested parentheses in order of operations",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/place-hundreds.svg": {
+    "concepts": [
+      "arith.place.hundreds"
+    ],
+    "title": "Hundreds place value",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/place-tens.svg": {
+    "concepts": [
+      "arith.place.tens"
+    ],
+    "title": "Tens and units place value",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/place-thousands.svg": {
+    "concepts": [
+      "arith.place.thousands"
+    ],
+    "title": "Thousands place value",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/round-hundreds.svg": {
+    "concepts": [
+      "arith.round.hundreds"
+    ],
+    "title": "Round to nearest 100",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/round-tens.svg": {
+    "concepts": [
+      "arith.round.tens"
+    ],
+    "title": "Round to nearest 10",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/round-thousands.svg": {
+    "concepts": [
+      "arith.round.thousands"
+    ],
+    "title": "Round to nearest 1000",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/sqrt-perfect.svg": {
+    "concepts": [
+      "arith.sqrt.perfect"
+    ],
+    "title": "Square roots of perfect squares",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/sqrt-simplify.svg": {
+    "concepts": [
+      "arith.sqrt.simplify"
+    ],
+    "title": "Simplify square roots",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/sub-borrow.svg": {
+    "concepts": [
+      "arith.sub.borrow"
+    ],
+    "title": "Subtraction with borrowing",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/sub-double.svg": {
+    "concepts": [
+      "arith.sub.double"
+    ],
+    "title": "Two-digit subtraction",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/sub-single.svg": {
+    "concepts": [
+      "arith.sub.single"
+    ],
+    "title": "Single-digit subtraction",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  },
+  "/diagrams/arithmetic/sub-word.svg": {
+    "concepts": [
+      "arith.sub.word"
+    ],
+    "title": "Subtraction word problems",
+    "description": "",
+    "source": "local",
+    "upstream": null,
+    "license": "Orchid (own work)"
+  }
+}

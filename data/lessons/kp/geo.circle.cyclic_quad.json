@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Opposite angles are supplementary",
+    "section": "Opposite angles are supplementary",
+    "subgoals": [
+      "State the property",
+      "Find the opposite angle",
+      "State the converse"
+    ]
+  },
+  {
+    "label": "Why it holds",
+    "section": "Why it holds",
+    "subgoals": [
+      "Halve each arc",
+      "Add the two arcs",
+      "Conclude the sum"
+    ]
+  },
+  {
+    "label": "Special cases",
+    "section": "Special cases",
+    "subgoals": [
+      "Show a rectangle is cyclic",
+      "Name another cyclic quadrilateral",
+      "Say which parallelograms are not"
+    ]
+  }
+]

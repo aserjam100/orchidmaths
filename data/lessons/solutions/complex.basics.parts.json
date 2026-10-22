@@ -1,0 +1,23 @@
+{
+  "concept": "complex.basics.parts",
+  "setup": "The equality is \\([[statement]]\\), and the question asks for \\(x + y\\).",
+  "steps": [
+    {
+      "fact": "statement",
+      "say": "Two complex numbers are equal exactly when their real parts agree and their imaginary parts agree, so \\([[statement]]\\) is two equations, not one."
+    },
+    {
+      "fact": "x",
+      "say": "The real parts give \\(x = [[x]]\\)."
+    },
+    {
+      "fact": "y",
+      "say": "The imaginary parts give \\(y = [[y]]\\)."
+    },
+    {
+      "fact": "value",
+      "say": "Adding them, \\(x + y = [[value]]\\)."
+    }
+  ],
+  "answer": "So \\(x + y = [[value]]\\)."
+}

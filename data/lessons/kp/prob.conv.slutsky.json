@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Mixing the two modes",
+    "section": "Mixing the two modes",
+    "subgoals": [
+      "Let one factor converge weakly",
+      "Let the other converge to a constant",
+      "Combine them in the limit"
+    ]
+  },
+  {
+    "label": "Replacing a random scale",
+    "section": "Replacing a random scale",
+    "subgoals": [
+      "Estimate the scale consistently",
+      "Replace it by its limit",
+      "Keep the distributional limit of the ratio"
+    ]
+  },
+  {
+    "label": "From continuous mapping",
+    "section": "From continuous mapping",
+    "subgoals": [
+      "Apply the continuous mapping theorem",
+      "Insert the constant limit",
+      "Use tightness for the product"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "From straight segments to curved arcs",
+    "section": "",
+    "subgoals": [
+      "Approximate the curve by polygonal segments",
+      "Sum sqrt(dx^2+dy^2) over segments",
+      "Pass to integral of sqrt(1+(y')^2) dx"
+    ]
+  },
+  {
+    "label": "Polygonal approximation and the differential element",
+    "section": "",
+    "subgoals": [
+      "Slice [a,b] and sum hypotenuse pieces",
+      "Factor dx out of each segment",
+      "Read ds = sqrt(1+(y')^2) dx"
+    ]
+  },
+  {
+    "label": "Arc length in Cartesian form",
+    "section": "",
+    "subgoals": [
+      "Set up integral of sqrt(1+(y')^2) over [a,b]",
+      "Compute y' and square it",
+      "Evaluate for y = x^2 on [0,1]"
+    ]
+  }
+]

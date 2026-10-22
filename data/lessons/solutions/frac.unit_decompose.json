@@ -1,0 +1,15 @@
+{
+  "concept": "frac.unit_decompose",
+  "setup": "The fraction \\(\\frac{[[target_num]]}{[[target_den]]}\\) is written as \\(\\frac{1}{2} + \\frac{1}{k}\\), and you are asked for \\(k\\).",
+  "steps": [
+    {
+      "fact": "target_den",
+      "say": "Write the sum over a common denominator: \\(\\frac{1}{2} + \\frac{1}{k} = \\frac{k + 2}{2k}\\). That is the form the given fraction must match."
+    },
+    {
+      "fact": "k",
+      "say": "Matching denominators gives \\(2k = [[target_den]]\\), so \\(k = [[k]]\\), and the numerators then agree as well. A unit fraction has 1 as its numerator, which is why the decomposition is written in halves and singles."
+    }
+  ],
+  "answer": "So the missing denominator is \\(k = [[k]]\\)."
+}

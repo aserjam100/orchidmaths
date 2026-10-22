@@ -1,0 +1,19 @@
+{
+  "concept": "alg.func.graph_analysis",
+  "setup": "The line is \\(f(x) = [[slope]]x + [[intercept]]\\).",
+  "steps": [
+    {
+      "fact": "slope",
+      "say": "The line has slope \\([[slope]]\\) and vertical intercept \\([[intercept]]\\)."
+    },
+    {
+      "fact": "intercept",
+      "say": "It crosses the horizontal axis where \\(f(x) = 0\\), that is where \\([[slope]]x + [[intercept]] = 0\\)."
+    },
+    {
+      "fact": "answer",
+      "say": "Solving that equation gives \\(x = [[answer]]\\)."
+    }
+  ],
+  "answer": "So the line crosses the horizontal axis at \\(x = [[answer]]\\)."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The definition",
+    "section": "The definition",
+    "subgoals": [
+      "Centre the two variables",
+      "Average their product",
+      "Expand to the shortcut form"
+    ]
+  },
+  {
+    "label": "Worked: a joint table",
+    "section": "Worked: a joint table",
+    "subgoals": [
+      "Compute the product expectation",
+      "Compute the two means",
+      "Subtract the product of the means"
+    ]
+  },
+  {
+    "label": "Properties",
+    "section": "Properties",
+    "subgoals": [
+      "Use symmetry and bilinearity",
+      "Recover the variance on the diagonal",
+      "Note that independence gives zero"
+    ]
+  }
+]

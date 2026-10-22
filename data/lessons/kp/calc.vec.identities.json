@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The two vanishing composites",
+    "section": "The two vanishing composites",
+    "subgoals": [
+      "Diffuse the curl and the gradient",
+      "Cancel mixed partials",
+      "Separate irrotational from solenoidal"
+    ]
+  },
+  {
+    "label": "Reading the language",
+    "section": "Reading the language",
+    "subgoals": [
+      "Equate curl zero with a potential",
+      "Equate divergence zero with a stream function",
+      "Link them through Stokes and the divergence theorem"
+    ]
+  },
+  {
+    "label": "A capstone to the domain",
+    "section": "A capstone to the domain",
+    "subgoals": [
+      "Track the scalar and vector operators",
+      "Produce the Laplacian from the compositions",
+      "Integrate by parts between the theorems"
+    ]
+  }
+]

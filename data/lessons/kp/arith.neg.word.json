@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Choose the sign of the change",
+    "section": "Choose the sign of the change",
+    "subgoals": [
+      "Treat a rise or gain as positive",
+      "Treat a fall or loss as negative",
+      "Write the starting value with its sign"
+    ]
+  },
+  {
+    "label": "Add the signed change",
+    "section": "Add the signed change",
+    "subgoals": [
+      "Add the change to the starting value",
+      "Move right for a positive change",
+      "Move left for a negative change"
+    ]
+  },
+  {
+    "label": "Check the direction",
+    "section": "Check the direction",
+    "subgoals": [
+      "Compare the result with the starting value",
+      "Check the result against the stated direction",
+      "Reverse the sign if the movement is opposite"
+    ]
+  }
+]

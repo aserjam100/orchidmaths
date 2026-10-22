@@ -1,0 +1,15 @@
+{
+  "concept": "geo.triangle.midsegment",
+  "setup": "The third side of the triangle is \\([[third_side]]\\) units long, and the midsegment joins the midpoints of the other two sides.",
+  "steps": [
+    {
+      "fact": "third_side",
+      "say": "The triangle above the midsegment is similar to the whole triangle with a ratio of one half, because both of its sides are half the corresponding sides and the included angle is shared."
+    },
+    {
+      "fact": "midsegment",
+      "say": "Similarity then gives the midsegment as half of \\([[third_side]]\\), which is \\([[midsegment]]\\). The midsegment is also parallel to the third side, and that parallelism is the other half of the theorem."
+    }
+  ],
+  "answer": "So the midsegment is \\([[midsegment]]\\) units long."
+}

@@ -1,0 +1,15 @@
+{
+  "concept": "arith.exp.power_quotient",
+  "setup": "You are raising the quotient x/[[denominator]] to the power [[power]].",
+  "steps": [
+    {
+      "fact": "power",
+      "say": "Raise the numerator x to the power [[power]]."
+    },
+    {
+      "fact": "denominator",
+      "say": "Raise the denominator [[denominator]] to the power [[power]] to get [[denominator_power]]."
+    }
+  ],
+  "answer": "The simplified expression is \\([[answer]]\\)."
+}

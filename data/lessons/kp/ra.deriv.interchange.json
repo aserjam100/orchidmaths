@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Which interchanges need care",
+    "section": "Which interchanges need care",
+    "subgoals": [
+      "Identify the two operations",
+      "Ask whether they commute",
+      "Demand more than pointwise convergence"
+    ]
+  },
+  {
+    "label": "Interchanging the integral",
+    "section": "Interchanging the integral",
+    "subgoals": [
+      "Bound the error uniformly",
+      "Integrate the constant bound",
+      "Send the bound to zero"
+    ]
+  },
+  {
+    "label": "Differentiating a series",
+    "section": "Differentiating a series",
+    "subgoals": [
+      "Form the series of derivatives",
+      "Require its uniform convergence",
+      "Apply the mean value theorem to pass the derivative through"
+    ]
+  }
+]

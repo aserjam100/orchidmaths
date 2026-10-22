@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Replacing sigma with s",
+    "section": "Replacing sigma with s",
+    "subgoals": [
+      "Estimate the standard error with s",
+      "Widen the reference distribution",
+      "Compare with the normal for large n"
+    ]
+  },
+  {
+    "label": "Worked: computing t",
+    "section": "Worked: computing t",
+    "subgoals": [
+      "Take xbar = 54 and mu = 50",
+      "Compute 6/sqrt(9)",
+      "Divide 4 by 2"
+    ]
+  },
+  {
+    "label": "Degrees of freedom and heavier tails",
+    "section": "Degrees of freedom and heavier tails",
+    "subgoals": [
+      "Count n - 1 degrees of freedom",
+      "Use the t table for small samples",
+      "Approach the normal as n grows"
+    ]
+  }
+]

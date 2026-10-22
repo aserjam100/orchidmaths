@@ -1,0 +1,15 @@
+{
+  "concept": "geo.triangle.isosceles",
+  "setup": "The isosceles triangle has a vertex angle of \\([[vertex_angle]]\\) degrees, and you are asked for a base angle.",
+  "steps": [
+    {
+      "fact": "vertex_angle",
+      "say": "By definition an isosceles triangle has two equal sides, and the angles opposite them are equal too: the two base angles are the ones that match."
+    },
+    {
+      "fact": "base_angle",
+      "say": "The three angles sum to 180, so the two equal base angles share \\(180 - [[vertex_angle]]\\) between them and each is \\([[base_angle]]\\) degrees."
+    }
+  ],
+  "answer": "So each base angle is \\([[base_angle]]\\) degrees."
+}

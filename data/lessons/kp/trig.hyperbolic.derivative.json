@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The two basic derivatives",
+    "section": "The two basic derivatives",
+    "subgoals": [
+      "Differentiate the exponential definition",
+      "Get the cosine from the sine",
+      "Get the sine from the cosine"
+    ]
+  },
+  {
+    "label": "The quotient derivatives",
+    "section": "The quotient derivatives",
+    "subgoals": [
+      "Apply the quotient rule to the tangent",
+      "Use the basic identity for the squared form",
+      "Carry the minus signs for the reciprocals"
+    ]
+  },
+  {
+    "label": "Chain rule and uses",
+    "section": "Chain rule and uses",
+    "subgoals": [
+      "Multiply by the inner derivative",
+      "Integrate without a sign correction",
+      "Recognise the growing solutions"
+    ]
+  }
+]

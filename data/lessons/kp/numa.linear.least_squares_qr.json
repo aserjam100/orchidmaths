@@ -1,0 +1,29 @@
+[
+  {
+    "label": "An orthogonal route to the fit",
+    "section": "An orthogonal route to the fit",
+    "subgoals": [
+      "Factor the design matrix",
+      "Drop the orthogonal factor",
+      "Solve the triangular system"
+    ]
+  },
+  {
+    "label": "Worked: the triangular system",
+    "section": "Worked: the triangular system",
+    "subgoals": [
+      "Reduce to a triangular system",
+      "Back-substitute for the coefficients",
+      "Read the residual"
+    ]
+  },
+  {
+    "label": "Why it is preferred",
+    "section": "Why it is preferred",
+    "subgoals": [
+      "Compare the condition numbers",
+      "Note the Householder reflections",
+      "Add pivoting for rank deficiency"
+    ]
+  }
+]

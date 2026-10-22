@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Adding the third dimension",
+    "section": "Adding the third dimension",
+    "subgoals": [
+      "Write the three-dimensional formula",
+      "Explain it as Pythagoras twice",
+      "Compute a distance"
+    ]
+  },
+  {
+    "label": "A Pythagorean quadruple",
+    "section": "A Pythagorean quadruple",
+    "subgoals": [
+      "Recognise a quadruple",
+      "Keep an exact square root",
+      "Avoid rounding"
+    ]
+  },
+  {
+    "label": "The same formula everywhere",
+    "section": "The same formula everywhere",
+    "subgoals": [
+      "Extend it to any dimension",
+      "Read a vector's length",
+      "See why it is a definition"
+    ]
+  }
+]

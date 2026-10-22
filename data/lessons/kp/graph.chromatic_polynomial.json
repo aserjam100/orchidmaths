@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Counting colorings as a polynomial",
+    "section": "Counting colorings as a polynomial",
+    "subgoals": [
+      "Order the vertices",
+      "Multiply the available colors",
+      "Read the chromatic number as the first nonzero value"
+    ]
+  },
+  {
+    "label": "Worked: paths, cycles and complete graphs",
+    "section": "Worked: paths, cycles and complete graphs",
+    "subgoals": [
+      "Compute k(k-1)^(n-1) for a path",
+      "Compute (k-1)^n + (-1)^n(k-1) for a cycle",
+      "Compute the falling factorial for K_n"
+    ]
+  },
+  {
+    "label": "Evaluating and factoring",
+    "section": "Evaluating and factoring",
+    "subgoals": [
+      "Evaluate at k",
+      "Use deletion-contraction",
+      "Factor over blocks"
+    ]
+  }
+]

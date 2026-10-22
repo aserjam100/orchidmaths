@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cantor's diagonal argument",
+    "section": "Cantor's diagonal argument",
+    "subgoals": [
+      "Assume a complete list exists",
+      "Change the nth digit of the nth entry",
+      "Avoid the ambiguous expansions"
+    ]
+  },
+  {
+    "label": "Consequences",
+    "section": "Consequences",
+    "subgoals": [
+      "Show every interval is uncountable",
+      "Remove the countable algebraic numbers",
+      "Conclude the remainder is uncountable"
+    ]
+  },
+  {
+    "label": "A contrast with measure",
+    "section": "A contrast with measure",
+    "subgoals": [
+      "Cover a countable set by small intervals",
+      "Compare its measure with the interval",
+      "Keep the two notions apart"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Substituting into the model",
+    "section": "Substituting into the model",
+    "subgoals": [
+      "Evaluate a fitted line",
+      "Check the arithmetic first",
+      "Report the prediction"
+    ]
+  },
+  {
+    "label": "What a prediction is not",
+    "section": "What a prediction is not",
+    "subgoals": [
+      "Describe it as an average outcome",
+      "Name the spread it omits",
+      "Say why over-trust is common"
+    ]
+  },
+  {
+    "label": "Extrapolation",
+    "section": "Extrapolation",
+    "subgoals": [
+      "Compare the input with the training range",
+      "Say why the line keeps going",
+      "Report an outside-range prediction"
+    ]
+  }
+]

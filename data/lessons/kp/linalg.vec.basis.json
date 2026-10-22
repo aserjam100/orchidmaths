@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Test independence via c1v1 + ... + ckvk = 0",
+      "Check the set spans the whole space",
+      "Count the vectors to read the dimension"
+    ]
+  },
+  {
+    "label": "Coordinate representation",
+    "section": "",
+    "subgoals": [
+      "Express v as a unique combination of basis vectors",
+      "Read the scalars as the coordinate tuple",
+      "Stack the coordinates into a column"
+    ]
+  },
+  {
+    "label": "Matrix–Vector interpretation",
+    "section": "",
+    "subgoals": [
+      "Pack basis vectors as columns of A",
+      "Solve Ax = b for the coordinates",
+      "Read solvability off the column space"
+    ]
+  }
+]

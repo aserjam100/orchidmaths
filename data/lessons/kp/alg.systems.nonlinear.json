@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Substitution",
+    "section": "Substitution",
+    "subgoals": [
+      "Solve one equation for a variable",
+      "Substitute into the other equation",
+      "Solve the resulting single-variable equation"
+    ]
+  },
+  {
+    "label": "Several solutions",
+    "section": "Several solutions",
+    "subgoals": [
+      "Expect as many solutions as the substituted equation has roots",
+      "Pair each root with the other variable",
+      "Check each pair in both original equations"
+    ]
+  },
+  {
+    "label": "Choosing the easier variable",
+    "section": "Choosing the easier variable",
+    "subgoals": [
+      "Use an already-solved equation first",
+      "Subtract equations to remove a shared square",
+      "Reduce to a single solvable equation"
+    ]
+  }
+]

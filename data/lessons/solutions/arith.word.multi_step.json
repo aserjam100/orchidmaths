@@ -1,0 +1,19 @@
+{
+  "concept": "arith.word.multi_step",
+  "setup": "You are finding how many [[item]] remain after a two-step change.",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "There are [[a]] [[container]] with [[b]] [[item]] each, so the first quantity is [[a]] times [[b]]."
+    },
+    {
+      "fact": "c",
+      "say": "The problem removes [[c]] [[item]] from that quantity."
+    },
+    {
+      "fact": "result",
+      "say": "Subtracting gives [[result]]."
+    }
+  ],
+  "answer": "[[result]] [[item]] remain."
+}

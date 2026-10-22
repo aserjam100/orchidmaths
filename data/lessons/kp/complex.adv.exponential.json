@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Compute r = sqrt(a^2 + b^2)",
+      "Read th = arg(z) off the plane",
+      "Write z = r e^{i th}"
+    ]
+  },
+  {
+    "label": "Properties of the exponential form",
+    "section": "",
+    "subgoals": [
+      "Multiply moduli r1.r2",
+      "Add arguments th1 + th2",
+      "Divide by subtracting arguments"
+    ]
+  },
+  {
+    "label": "Roots in exponential form",
+    "section": "",
+    "subgoals": [
+      "Take the nth root of r",
+      "Split 2pi k/n around the circle",
+      "List k = 0..n-1 for all roots"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Same structure, different labels",
+    "section": "Same structure, different labels",
+    "subgoals": [
+      "Compare degree multisets",
+      "Check components and cycles",
+      "Exhibit a bijection or an invariant"
+    ]
+  },
+  {
+    "label": "Worked: degree sequences",
+    "section": "Worked: degree sequences",
+    "subgoals": [
+      "Write (1,1,2,2) for P_4",
+      "Write (2,2,2,2) for C_4",
+      "Separate the graphs by the invariant"
+    ]
+  },
+  {
+    "label": "Invariants and non-invariants",
+    "section": "Invariants and non-invariants",
+    "subgoals": [
+      "List vertex and edge counts",
+      "Name the drawing as non-invariant",
+      "Use one invariant to refute isomorphism"
+    ]
+  }
+]

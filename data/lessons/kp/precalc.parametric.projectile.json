@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Separate horizontal and vertical motion",
+    "section": "Separate horizontal and vertical motion",
+    "subgoals": [
+      "Write x(t) and y(t)",
+      "Keep vx constant",
+      "Apply gravity to vy"
+    ]
+  },
+  {
+    "label": "Worked: maximum height",
+    "section": "Worked: maximum height",
+    "subgoals": [
+      "Take v = 20 and g = 10",
+      "Find the vertex time 2",
+      "Evaluate y(2) = 20"
+    ]
+  },
+  {
+    "label": "Range and time of flight",
+    "section": "Range and time of flight",
+    "subgoals": [
+      "Use 2 vy / g",
+      "Multiply by vx for range",
+      "Maximise at 45 degrees"
+    ]
+  }
+]

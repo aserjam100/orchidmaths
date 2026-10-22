@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What are rational equations",
+    "section": "",
+    "subgoals": [
+      "Identify a rational equation",
+      "Find the common denominator",
+      "Clear the denominators"
+    ]
+  },
+  {
+    "label": "Rational vs irrational",
+    "section": "",
+    "subgoals": [
+      "Classify the equation type",
+      "Apply the right strategy",
+      "Keep the domain in mind"
+    ]
+  },
+  {
+    "label": "Solve rational equations",
+    "section": "",
+    "subgoals": [
+      "Cross-multiply or use LCD",
+      "Solve the polynomial result",
+      "Check the domain"
+    ]
+  }
+]

@@ -1,0 +1,2036 @@
+export const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
+
+import { getAuthHeaders, authedFetch } from './auth'
+import { z } from 'zod'
+
+// Dev-only heads-up: an unset NEXT_PUBLIC_API_URL falls back to relative
+// /api/*, which breaks under static hosting (output: export). Production
+// stays silent — the deployment is assumed intentional.
+if (typeof window !== 'undefined' && !process.env.NEXT_PUBLIC_API_URL && process.env.NODE_ENV !== 'production') {
+  // eslint-disable-next-line no-console
+  console.warn('[orchid] NEXT_PUBLIC_API_URL is unset — API calls use relative /api/*, which breaks static hosting. Set it to your API origin.')
+}
+
+export const PrereqInfoSchema = z.object({
+  id: z.string(),
+  label: z.string(),
+  status: z.string(),
+  mastery_pct: z.number(),
+})
+
+const AuthResSchema = z.object({
+  token: z.string(),
+  student_id: z.string(),
+  name: z.string(),
+  diagnostic_completed: z.boolean(),
+})
+
+const ScoresSchema = z.object({
+  lifetime_points: z.number(),
+  weekly_score: z.number(),
+  speed_bonus: z.number(),
+  concepts_mastered: z.number(),
+  current_streak: z.number(),
+  level: z.string(),
+  xp_total: z.number(),
+  xp_today: z.number(),
+  daily_xp_goal: z.number(),
+  spaced_reps: z.record(z.string(), z.number()).optional(),
+  avg_learning_speed: z.number().optional(),
+  xp_since_quiz: z.number().optional(),
+  quiz_due: z.boolean().optional(),
+  // Server policy, not a client constant. The profile bar divided by a literal 50 that did
+  // not reference xp.QuizGateXP, so ADR-020 could move the gate and leave the bar lying.
+  quiz_gate_xp: z.number().optional(),
+})
+
+// oxlint-disable-next-line anti-slop/no-unknown-parameters -- zod parse boundary: input is untrusted by design
+function validateResponse<T>(schema: z.ZodType<T>, data: unknown, name: string): T {
+  const result = schema.safeParse(data)
+  if (!result.success) {
+    console.error(`API validation error (${name}):`, result.error.issues)
+    throw new Error(`API response validation failed for ${name}`)
+  }
+  return result.data as T
+}
+
+const GraphNodeSchema = z.object({
+  id: z.string(),
+  label: z.string(),
+  domain: z.string(),
+  prerequisites: z.array(z.string()),
+  grading_type: z.string().optional(),
+})
+
+const GraphResSchema = z.object({
+  nodes: z.array(GraphNodeSchema),
+  count: z.number().optional(),
+})
+
+export const ConceptProgressSchema = z.object({
+  concept_id: z.string().optional(),
+  status: z.string(),
+  streak: z.number(),
+  best_streak: z.number().optional(),
+  avg_response_time: z.number().optional(),
+  attempts: z.number().optional(),
+  completed: z.boolean().optional(),
+  /**
+   * Attainment, 0..1, derived server-side from the status tier and progress within it.
+   *
+   * The graph used to recompute this as `streak / mastery_threshold.streak`, from a
+   * *bundled* copy of the corpus. That was wrong twice over: the streak resets on every
+   * tier advance, so the bar fell from 100% to ~10% three times on the way up, and a
+   * bundled threshold silently disagrees with the server's whenever the corpus is
+   * rebuilt. Optional so a payload predating the field still parses.
+   */
+  mastery_pct: z.number().optional(),
+})
+
+const ProgressMapSchema = z.record(z.string(), ConceptProgressSchema)
+
+const WeaknessEntrySchema = z.object({
+  id: z.string(),
+  label: z.string(),
+  weakness: z.number().optional(),
+})
+
+const WeaknessResSchema = z.object({
+  by_domain: z.record(z.string(), z.array(WeaknessEntrySchema)),
+})
+
+const LessonInfoSchema = z.object({
+  title: z.string(),
+  body: z.string().optional(),
+  concepts: z.array(z.string()),
+  progress: z.record(z.string(), ConceptProgressSchema).optional(),
+  prerequisites: z.array(PrereqInfoSchema).optional(),
+  dependents: z.array(PrereqInfoSchema).optional(),
+})
+
+const LessonsResSchema = z.object({
+  lessons: z.record(z.string(), z.array(LessonInfoSchema)),
+})
+
+export interface StartSessionRes {
+  student_id: string
+  session_id: string
+  question: Question | null
+}
+
+export interface Question {
+  concept_id: string
+  concept_name: string
+  question: string
+  is_review: boolean
+  attempt_id?: string
+  lesson?: {
+    Title: string
+    Body: string
+    Concepts: string[]
+  }
+  diagram?: string
+  grading_type?: string
+}
+
+export interface AnswerRes {
+  result: AnswerResult | null
+  next_question: Question | null
+  done: boolean
+}
+
+export interface AnswerResult {
+  correct: boolean
+  feedback: string
+  new_status: string
+  /** Authoritative mastery evidence score 0..1, from internal/mastery.BuildEvidence. */
+  evidence_score: number
+  /** The same score in plain language. Presentational; claims nothing about retention. */
+  evidence_band: string
+  explanation: string
+  streak: number
+  required_streak: number
+  xp: number
+  expected_answer: string
+  ungraded?: boolean
+  /** One sentence naming the mistake, when it is certain. Empty otherwise. */
+  diagnosis?: string
+}
+
+export interface GraphRes {
+  nodes: {
+    id: string
+    label: string
+    domain: string
+    prerequisites: string[]
+    grading_type: string
+  }[]
+  count: number
+}
+
+export interface LeaderboardEntry {
+  rank: number
+  student_id: string
+  name: string
+  username?: string
+  avatar_url?: string
+  avatar_dicebear?: { style: string; seed: string } | null
+  avatar_custom?: boolean
+  avatar_version?: number
+  mastered: number
+  streak: number
+  level: string
+  score: number
+}
+
+export interface Scores {
+  lifetime_points: number
+  weekly_score: number
+  speed_bonus: number
+  concepts_mastered: number
+  current_streak: number
+  level: string
+  xp_total: number
+  xp_today: number
+  daily_xp_goal: number
+  spaced_reps?: Record<string, number>
+  avg_learning_speed?: number
+  paused_until?: string
+  // Quiz 50 XP gate signal (backend); absent on old mocks.
+  xp_since_quiz?: number
+  quiz_due?: boolean
+  quiz_gate_xp?: number
+}
+
+export interface ConceptProgress {
+  concept_id?: string
+  status: string
+  streak: number
+  best_streak?: number
+  avg_response_time?: number
+  attempts?: number
+  // Set by the lesson-completion endpoint (PR1, server-owned). Optional so
+  // pre-PR1 payloads keep validating; unlock rules treat absent as false.
+  completed?: boolean
+}
+
+// oxlint-disable-next-line anti-slop/no-unknown-parameters -- catch value: unknown is the correct error contract
+export function isConflictError(err: unknown): boolean {
+  return err instanceof Error && (err as { status?: number }).status === 409
+}
+
+// oxlint-disable-next-line anti-slop/no-unknown-parameters -- catch value: unknown is the correct error contract
+export function isTooQuickError(err: unknown): boolean {
+  return err instanceof Error && (err as { status?: number }).status === 400
+}
+
+// oxlint-disable-next-line anti-slop/no-unknown-parameters -- catch value: unknown is the correct error contract
+export function isNotFoundError(err: unknown): boolean {
+  return err instanceof Error && (err as { status?: number }).status === 404
+}
+
+// oxlint-disable-next-line anti-slop/no-unknown-parameters -- catch value: unknown is the correct error contract
+export function getErrorStatus(err: unknown): number | undefined {
+  if (err instanceof Error) {
+    const s = (err as { status?: number }).status
+    if (typeof s === 'number') return s
+  }
+  return undefined
+}
+
+// oxlint-disable-next-line anti-slop/no-unknown-parameters -- catch value: unknown is the correct error contract
+export function getErrorMessage(err: unknown): string {
+  if (err instanceof Error) {
+    const e = err as { serverMessage?: string }
+    if (typeof e.serverMessage === 'string' && e.serverMessage) return e.serverMessage
+    return err.message
+  }
+  return String(err)
+}
+
+async function throwWithResponse(res: Response, fallbackMsg: string): Promise<never> {
+  let serverMessage = ''
+  try {
+    const data = await res.json() as { error?: string }
+    if (data && typeof data.error === 'string') serverMessage = data.error
+  } catch { /* ignore json parse */ }
+  const msg = serverMessage ? `${fallbackMsg}: ${serverMessage}` : fallbackMsg
+  throw Object.assign(new Error(msg), { status: res.status, serverMessage })
+}
+
+export async function getProgress(studentID: string): Promise<Record<string, ConceptProgress>> {
+  const headers = { ...getAuthHeaders() } satisfies Record<string, string>
+  const res = await authedFetch(`${API_BASE}/api/progress/${studentID}`, { headers })
+  if (!res.ok) return {}
+  return validateResponse(ProgressMapSchema, await res.json(), 'getProgress') as Record<string, ConceptProgress>
+}
+
+export async function getScores(studentID: string): Promise<Scores> {
+  const headers = { ...getAuthHeaders() } satisfies Record<string, string>
+  const res = await authedFetch(`${API_BASE}/api/scores/${studentID}`, { headers })
+  if (!res.ok) throw new Error(`Scores fetch failed: ${res.status}`)
+  return validateResponse(ScoresSchema, await res.json(), 'getScores') as Scores
+}
+
+export async function getGraph(): Promise<GraphRes> {
+  const res = await authedFetch(`${API_BASE}/api/graph`)
+  if (!res.ok) throw new Error(`Graph fetch failed: ${res.status}`)
+  return validateResponse(GraphResSchema, await res.json(), 'getGraph') as GraphRes
+}
+
+export interface DomainSummary {
+  id: string
+  conceptCount: number
+  masteredCount: number
+  unlockedCount: number
+  inProgressCount: number
+}
+
+export interface TopicSummary {
+  conceptId: string
+  title: string
+  state: string
+  depth: number
+}
+
+export interface DomainDetail {
+  domain: { id: string }
+  topics: TopicSummary[]
+}
+
+/**
+ * The curriculum browser's data. The server decides each domain's counts and
+ * each topic's state; the client only renders them (ADR-042). Fails soft to an
+ * empty list so a network blip degrades to the empty state, never to a crash.
+ */
+export async function getCurriculumDomains(): Promise<DomainSummary[]> {
+  const res = await authedFetch(`${API_BASE}/api/curriculum/domains`, { cache: 'no-store' })
+  if (!res.ok) return []
+  const data = (await res.json()) as { domains?: DomainSummary[] }
+  return data.domains ?? []
+}
+
+export async function getCurriculumDomain(domainId: string): Promise<DomainDetail | null> {
+  const res = await authedFetch(`${API_BASE}/api/curriculum/domains/${encodeURIComponent(domainId)}`, { cache: 'no-store' })
+  if (!res.ok) return null
+  return res.json() as Promise<DomainDetail>
+}
+
+export async function getLeaderboard(): Promise<LeaderboardEntry[]> {
+  const res = await authedFetch(`${API_BASE}/api/leaderboard`)
+  if (!res.ok) return []
+  return res.json()
+}
+
+export interface LeagueMember {
+  student_id: string
+  name: string
+  username?: string
+  avatar_url?: string
+  avatar_dicebear?: { style: string; seed: string } | null
+  avatar_custom?: boolean
+  avatar_version?: number
+  tier: string
+  total_mastered: number
+  weekly_mastered: number
+  moved: number
+}
+
+export interface League {
+  tier: string
+  members: LeagueMember[]
+}
+
+export interface LeagueBoard {
+  week: string
+  leagues: League[]
+}
+
+export async function getLeagues(): Promise<LeagueBoard> {
+  const res = await authedFetch(`${API_BASE}/api/leagues`, { headers: { ...getAuthHeaders() } })
+  if (!res.ok) return { week: '', leagues: [] }
+  return res.json()
+}
+
+export interface ShareReport {
+  student_id: string
+  name: string
+  scores: Scores
+  activity: DailyActivity[]
+  progress: Record<string, ConceptProgress>
+  weakness: Record<string, number>
+  attempts?: AttemptRecord[]
+}
+
+export interface AttemptRecord {
+  session_id: string
+  student_id: string
+  concept_id: string
+  concept_name?: string
+  answer: string
+  expected: string
+  correct: boolean
+  elapsed_seconds: number
+  timestamp: string
+  question: string
+  source: string
+  explanation: string
+}
+
+export interface AttemptsRes {
+  attempts: AttemptRecord[]
+  total: number
+}
+
+export async function getAttempts(params?: {
+  source?: string
+  concept_id?: string
+  incorrect_only?: boolean
+  limit?: number
+  offset?: number
+}): Promise<AttemptsRes> {
+  const q = new URLSearchParams()
+  if (params?.source) q.set('source', params.source)
+  if (params?.concept_id) q.set('concept_id', params.concept_id)
+  if (params?.incorrect_only) q.set('incorrect_only', '1')
+  if (params?.limit != null) q.set('limit', String(params.limit))
+  if (params?.offset) q.set('offset', String(params.offset))
+  const qs = q.toString()
+  const res = await authedFetch(`${API_BASE}/api/attempts${qs ? `?${qs}` : ''}`, {
+    headers: { ...getAuthHeaders() },
+    cache: 'no-store',
+  })
+  if (!res.ok) throw new Error(`Attempts fetch failed: ${res.status}`)
+  return res.json()
+}
+
+export async function enableShare(): Promise<{ enabled: boolean; token: string }> {
+  const res = await authedFetch(`${API_BASE}/api/share`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+    body: JSON.stringify({ enabled: true }),
+  })
+  if (!res.ok) throw new Error(`Enable share failed: ${res.status}`)
+  return res.json()
+}
+
+export async function disableShare(): Promise<void> {
+  await authedFetch(`${API_BASE}/api/share`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+    body: JSON.stringify({ enabled: false }),
+  })
+}
+
+export async function getShareReport(token: string): Promise<ShareReport | null> {
+  const res = await authedFetch(`${API_BASE}/api/share/${encodeURIComponent(token)}`, { cache: 'no-store' })
+  if (!res.ok) return null
+  return res.json()
+}
+
+export interface CourseProgress {
+  total: number
+  mastered: number
+  pct: number
+  days_remaining: number
+}
+
+export interface CourseStatus {
+  id: string
+  name: string
+  grade: string
+  description: string
+  targets: string[]
+  progress?: CourseProgress
+}
+
+export async function getTranscript(): Promise<CourseStatus[]> {
+  const res = await authedFetch(`${API_BASE}/api/transcript`, { headers: { ...getAuthHeaders() }, cache: 'no-store' })
+  if (!res.ok) return []
+  const data = await res.json()
+  return data.courses ?? []
+}
+
+export interface EfficacyReport {
+  concepts_touched: number
+  first_pass_rate: number
+  second_pass_rate: number
+  avg_attempts_per_concept: number
+  total_attempts: number
+}
+
+export async function getEfficacy(): Promise<EfficacyReport | null> {
+  const res = await authedFetch(`${API_BASE}/api/efficacy`, { headers: { ...getAuthHeaders() } })
+  if (!res.ok) return null
+  return res.json()
+}
+
+export interface EfficacyWeek {
+  week_start: string
+  attempts: number
+  concepts_touched: number
+  first_pass_rate: number
+  second_pass_rate: number
+  active_students: number
+}
+
+export interface EfficacyTrend {
+  weeks: EfficacyWeek[]
+  total_students: number
+  returning_students: number
+  retention_rate: number
+  first_pass_trend: number
+}
+
+// Product-wide longitudinal efficacy (weekly first-pass rate + retention).
+export async function getEfficacyTrend(): Promise<EfficacyTrend | null> {
+  const res = await authedFetch(`${API_BASE}/api/efficacy/trend`, { headers: { ...getAuthHeaders() } })
+  if (!res.ok) return null
+  return res.json()
+}
+
+export interface ConfigRes {
+	auth_enabled: boolean
+	google_client_id?: string
+	providers?: string[]
+	/**
+	 * Whether optional AI augmentation is configured on the server. A boolean
+	 * only: the provider chain, model ids and per-identity quota are operational
+	 * detail the client has no use for. When this is false the AI calls below
+	 * are not attempted and the deterministic paths stand alone.
+	 */
+	ai_enabled?: boolean
+}
+
+export async function getConfig(): Promise<ConfigRes | null> {
+	const res = await authedFetch(`${API_BASE}/api/config`)
+	if (!res.ok) return null
+	return res.json()
+}
+
+export async function googleOneTap(idToken: string): Promise<AuthRes> {
+	const res = await authedFetch(`${API_BASE}/api/auth/google`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id_token: idToken }) })
+	if (!res.ok) throw new Error('Google sign-in failed')
+	return validateResponse(AuthResSchema, await res.json(), 'googleOneTap') as AuthRes
+}
+
+export async function healthCheck(): Promise<boolean> {
+  try {
+    const res = await authedFetch(`${API_BASE}/api/health`)
+    return res.ok
+  } catch {
+    return false
+  }
+}
+
+export interface AuthRes {
+  token: string
+  student_id: string
+  name: string
+  diagnostic_completed: boolean
+}
+
+export async function signup(name: string, username: string, password: string, email?: string): Promise<AuthRes> {
+	const res = await authedFetch(`${API_BASE}/api/auth/signup`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ name, username, password, email: email ?? '' }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Signup failed`)
+	return validateResponse(AuthResSchema, await res.json(), 'signup') as AuthRes
+}
+
+export async function login(username: string, password: string): Promise<AuthRes> {
+	const res = await authedFetch(`${API_BASE}/api/auth/login`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ username, password }),
+	})
+	if (res.status === 429) throw new Error('Too many attempts — try again shortly')
+	if (!res.ok) throw new Error('Invalid credentials')
+	return validateResponse(AuthResSchema, await res.json(), 'login') as AuthRes
+}
+
+// Goal-based diagnostic API
+
+export interface GoalPathRes {
+	concepts: { id: string; label: string; domain: string; prerequisites: string[] }[]
+	count: number
+}
+
+export interface DiagnosticProgress {
+  answered: number
+  estimated_total: number
+  min_total: number
+  max_total: number
+  cover_done: number
+  cover_size: number
+  done: boolean
+}
+
+export interface GoalDiagStartRes {
+  session_id: string
+  student_id?: string
+  concept_id?: string
+  concept_name?: string
+  question?: string
+  grading_type?: string
+  answer_hint?: string
+  answer_input_mode?: 'numeric' | 'text'
+  done?: boolean
+  progress?: DiagnosticProgress
+}
+
+export interface GoalDiagAnswerRes {
+  done: boolean
+  correct?: boolean
+  feedback?: string
+  concept_id?: string
+  concept_name?: string
+  question?: string
+  grading_type?: string
+  answer_hint?: string
+  answer_input_mode?: 'numeric' | 'text'
+  retry_available?: boolean
+  progress?: DiagnosticProgress
+}
+
+export interface GoalPlanRes {
+  readiness: number
+  total_tested: number
+  correct_count: number
+  weak_areas: Record<string, { id: string; label: string }[]>
+  strong_areas: Record<string, string[]>
+  frontier_label?: string
+  frontier_idx?: number
+  frontier_conditional?: boolean
+  conditionally_completed?: string[]
+  placement_course_id?: string
+  completion_estimates?: Record<string, string>
+}
+
+export interface WeaknessRes {
+	by_domain: Record<string, { id: string; label: string; weakness: number }[]>
+}
+
+export async function getGoalPath(conceptIds: string[]): Promise<GoalPathRes> {
+	const res = await authedFetch(`${API_BASE}/api/goal`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify({ concept_ids: conceptIds }),
+	})
+	if (!res.ok) throw new Error(`Goal path fetch failed: ${res.status}`)
+	return res.json()
+}
+
+export async function startGoalDiagnostic(conceptIds: string[]): Promise<GoalDiagStartRes> {
+	const res = await authedFetch(`${API_BASE}/api/goal/diagnostic`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify({ concept_ids: conceptIds }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Goal diagnostic start failed: ${res.status}`)
+	return res.json()
+}
+
+export async function startGoalDiagnosticName(name: string, conceptIds: string[]): Promise<GoalDiagStartRes> {
+	const res = await authedFetch(`${API_BASE}/api/goal/diagnostic`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ name, concept_ids: conceptIds }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Goal diagnostic start failed: ${res.status}`)
+	return res.json()
+}
+
+export async function submitGoalAnswer(
+	sessionId: string,
+	conceptId: string,
+	answer: string,
+	elapsed: number,
+	dontKnow?: boolean,
+): Promise<GoalDiagAnswerRes> {
+	const res = await authedFetch(`${API_BASE}/api/goal/diagnostic/answer`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify({ session_id: sessionId, concept_id: conceptId, answer, elapsed, dont_know: dontKnow ?? false }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Goal answer failed: ${res.status}`)
+	return res.json()
+}
+
+export async function resumeGoalDiagnostic(sessionId: string): Promise<GoalDiagAnswerRes & { session_id: string }> {
+	const res = await authedFetch(`${API_BASE}/api/goal/diagnostic/resume?session_id=${encodeURIComponent(sessionId)}`, {
+		headers: { ...getAuthHeaders() },
+	})
+	if (!res.ok) await throwWithResponse(res, `Goal resume failed: ${res.status}`)
+	return res.json()
+}
+
+// Skip the pending diagnostic question: settles the concept with no evidence
+// recorded and serves the next question. Escape hatch for unanswerable items.
+export async function skipGoalQuestion(sessionId: string): Promise<GoalDiagAnswerRes> {
+	const res = await authedFetch(`${API_BASE}/api/goal/diagnostic/skip`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify({ session_id: sessionId }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Goal skip failed: ${res.status}`)
+	return res.json()
+}
+
+// Void the superseded question's miss and restore it ("silly mistake"
+// retry). The concept_id names the question being retried and must match
+// the voidable attempt — a stale client that already moved on gets a 400
+// instead of voiding the wrong answer.
+export async function retryGoalQuestion(sessionId: string, conceptId: string): Promise<GoalDiagAnswerRes> {
+	const res = await authedFetch(`${API_BASE}/api/goal/diagnostic/retry`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify({ session_id: sessionId, concept_id: conceptId }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Goal retry failed: ${res.status}`)
+	return res.json()
+}
+
+export async function getGoalPlan(sessionId: string): Promise<GoalPlanRes> {
+	const res = await authedFetch(`${API_BASE}/api/goal/plan`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify({ session_id: sessionId }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Goal plan failed: ${res.status}`)
+	return res.json()
+}
+
+export async function setDailyXPGoal(goal: number): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/goals/xp`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify({ goal }),
+	})
+	if (!res.ok) throw new Error(`Set goal failed: ${res.status}`)
+}
+
+// ── Destinations & study plans ──
+
+export interface DestinationStatus {
+	id: string
+	name: string
+	description: string
+	total: number
+	mastered: number
+	pct: number
+}
+
+export async function getDestinations(): Promise<DestinationStatus[]> {
+	const res = await authedFetch(`${API_BASE}/api/destinations`, { headers: { ...getAuthHeaders() } })
+	if (!res.ok) throw new Error(`Destinations fetch failed: ${res.status}`)
+	const data = await res.json()
+	return data.destinations ?? []
+}
+
+export interface WorkloadEstimate {
+	total: number
+	mastered: number
+	remaining: string[]
+	xp_remaining: number
+	time_min_remaining: number
+	reviews_due: number
+	quizzes_ahead: number
+	assessment_min: number
+	diagnostic_min: number
+	days: number
+	finish_date: string
+	required_per_day: number
+	feasible: boolean
+	lines: { learning: number; assessment: number; diagnostic: number }
+}
+
+export interface EstimateRes {
+	destination: string
+	estimate: WorkloadEstimate
+	pace: { rate: number; source: 'measured' | 'goal'; adherence: number; active_days: number; trailing_days: number }
+	probes: string[]
+	plan_delta_days?: number
+	fresh_start?: boolean
+}
+
+export interface EstimateParams {
+	daily_goal?: number
+	deadline_days?: number
+	rest_days?: number
+	diagnostic_min?: number
+}
+
+export async function getEstimate(destId: string, params: EstimateParams = {}): Promise<EstimateRes> {
+	const q = new URLSearchParams()
+	if (params.daily_goal) q.set('daily_goal', String(params.daily_goal))
+	if (params.deadline_days) q.set('deadline_days', String(params.deadline_days))
+	if (params.rest_days !== undefined) q.set('rest_days', String(params.rest_days))
+	if (params.diagnostic_min) q.set('diagnostic_min', String(params.diagnostic_min))
+	const res = await authedFetch(`${API_BASE}/api/destinations/${encodeURIComponent(destId)}/estimate?${q.toString()}`, {
+		headers: { ...getAuthHeaders() },
+	})
+	if (!res.ok) throw new Error(`Estimate fetch failed: ${res.status}`)
+	return res.json()
+}
+
+export interface StudyPlan {
+	destination: string
+	daily_goal: number
+	deadline_days: number
+	rest_days: number
+	xp_remaining: number
+	created: string
+}
+
+export async function savePlan(body: { destination: string; daily_goal: number; deadline_days: number; rest_days: number }): Promise<StudyPlan> {
+	const res = await authedFetch(`${API_BASE}/api/plans`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify(body),
+	})
+	if (!res.ok) throw new Error(`Save plan failed: ${res.status}`)
+	return res.json()
+}
+
+export async function getCurrentPlan(): Promise<{ plan: StudyPlan | null; delta_days?: number; xp_remaining?: number }> {
+	const res = await authedFetch(`${API_BASE}/api/plans/current`, { headers: { ...getAuthHeaders() } })
+	if (!res.ok) return { plan: null }
+	return res.json()
+}
+
+export async function resetAccount(phrase: string): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/account/reset`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify({ phrase }),
+	})
+	// Read the {error} envelope rather than res.text(): throwing the raw body
+	// put a literal `{"error":"…"}` in the danger zone, which reads as a
+	// broken app instead of an explanation.
+	if (!res.ok) await throwWithResponse(res, 'Reset failed')
+}
+
+// The server's own account payload. `role` was missing here and zod strips unknown keys, so the
+// field was being silently discarded on the way in: `/api/auth/me` sent it, `getMe()` dropped
+// it, and the Admin navigation entry could never appear. A schema is a filter, so a field the
+// type does not name is a field the application does not have — which is the second half of
+// ADR-043's duplicate-schema lesson, arriving from the other direction.
+const MeSchema = z.object({
+	student_id: z.string(),
+	name: z.string(),
+	has_password: z.boolean().optional(),
+	role: z.enum(['student', 'moderator', 'admin', 'owner']).optional(),
+	/**
+	 * The server's own record that placement happened. The client must read it
+	 * here rather than trusting `orchid_user` or inferring it from having shown
+	 * the last diagnostic question: local storage can be stale on another device,
+	 * and "the final question was displayed" is not a completion.
+	 */
+	diagnostic_completed: z.boolean().optional(),
+	diagnostic_completed_at: z.string().optional(),
+})
+
+export type MeInfo = z.infer<typeof MeSchema>
+
+export async function getMe(): Promise<MeInfo> {
+	const res = await authedFetch(`${API_BASE}/api/auth/me`, { headers: { ...getAuthHeaders() } })
+	if (!res.ok) throw new Error(`Me fetch failed: ${res.status}`)
+	return validateResponse(MeSchema, await res.json(), 'getMe')
+}
+
+export async function deleteAccount(body: { phrase: string; password?: string }): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/account`, {
+		method: 'DELETE',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify(body),
+	})
+	// Same reason as resetAccount: never surface the raw JSON envelope.
+	if (!res.ok) await throwWithResponse(res, 'Delete failed')
+}
+
+export async function getWeaknesses(): Promise<WeaknessRes> {
+  const res = await authedFetch(`${API_BASE}/api/weaknesses`, {
+    headers: { ...getAuthHeaders() },
+  })
+  if (!res.ok) return { by_domain: {} }
+  return validateResponse(WeaknessResSchema, await res.json(), 'getWeaknesses') as WeaknessRes
+}
+
+export interface UserSettings {
+	show_timer?: boolean
+	pause_until?: string | null
+	avatar_preset?: number | null
+	avatar_dicebear?: { style: string; seed: string } | null
+	avatar_custom?: boolean
+	avatar_version?: number | null
+}
+
+export async function getSettings(): Promise<UserSettings> {
+	const res = await authedFetch(`${API_BASE}/api/settings`, {
+		headers: { ...getAuthHeaders() },
+	})
+	if (!res.ok) return {}
+	return res.json()
+}
+
+export async function updateSettings(settings: UserSettings): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/settings`, {
+		method: 'PUT',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify(settings),
+	})
+	if (!res.ok) throw new Error(`Update settings failed: ${res.status}`)
+}
+
+export interface ProfileUpdateRes {
+	student_id: string
+	name: string
+	email?: string
+}
+
+export async function updateProfileName(name: string, email?: string): Promise<ProfileUpdateRes> {
+	const res = await authedFetch(`${API_BASE}/api/profile`, {
+		method: 'PUT',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify(email === undefined ? { name } : { name, email }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Update profile failed: ${res.status}`)
+	return res.json()
+}
+
+export async function requestPasswordReset(identifier: string): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/auth/reset/request`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ identifier }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Reset request failed: ${res.status}`)
+}
+
+export async function completePasswordReset(token: string, password: string): Promise<AuthRes> {
+	const res = await authedFetch(`${API_BASE}/api/auth/reset/complete`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ token, password }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Reset failed: ${res.status}`)
+	return validateResponse(AuthResSchema, await res.json(), 'resetComplete') as AuthRes
+}
+
+export async function changePassword(currentPassword: string, newPassword: string): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/auth/password`, {
+		method: 'PUT',
+		headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+		body: JSON.stringify({ current_password: currentPassword, new_password: newPassword }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Change password failed: ${res.status}`)
+}
+
+export const OAUTH_PROVIDERS = ['google', 'github', 'facebook', 'microsoft', 'apple'] as const
+export type OAuthProvider = (typeof OAUTH_PROVIDERS)[number]
+
+export const OAUTH_LABELS: Record<OAuthProvider, string> = {
+	google: 'Google',
+	github: 'GitHub',
+	facebook: 'Facebook',
+	microsoft: 'Microsoft',
+	apple: 'Apple',
+}
+
+// startOAuthLogin begins a redirect OAuth flow. intent=link binds the dance
+// to the current account (needs a link token); otherwise it's a login.
+export function startOAuthLogin(provider: string, opts: { intent?: 'login' | 'link'; linkToken?: string; ret?: string } = {}) {
+	const q = new URLSearchParams()
+	if (opts.intent === 'link') q.set('intent', 'link')
+	if (opts.linkToken) q.set('link_token', opts.linkToken)
+	q.set('return', opts.ret || '/profile')
+	window.location.href = `${API_BASE}/api/auth/${provider}/login?${q.toString()}`
+}
+
+export interface IdentityInfo {
+	provider: string
+	email: string
+}
+
+export async function getIdentities(): Promise<IdentityInfo[]> {
+	const res = await authedFetch(`${API_BASE}/api/auth/identities`, {
+		headers: { ...getAuthHeaders() },
+	})
+	if (!res.ok) return []
+	return res.json()
+}
+
+export async function deleteIdentity(provider: string): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/auth/identities/${encodeURIComponent(provider)}`, {
+		method: 'DELETE',
+		headers: { ...getAuthHeaders() },
+	})
+	if (!res.ok) await throwWithResponse(res, `Disconnect failed: ${res.status}`)
+}
+
+export async function createLinkToken(): Promise<string> {
+	const res = await authedFetch(`${API_BASE}/api/auth/link-token`, {
+		method: 'POST',
+		headers: { ...getAuthHeaders() },
+	})
+	if (!res.ok) await throwWithResponse(res, `Link failed: ${res.status}`)
+	const data = await res.json()
+	return data.link_token as string
+}
+
+export async function requestEmailVerification(): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/auth/email/request`, {
+		method: 'POST',
+		headers: { ...getAuthHeaders() },
+	})
+	if (!res.ok) await throwWithResponse(res, `Verification request failed: ${res.status}`)
+}
+
+export async function verifyEmail(token: string): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/auth/email/verify`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ token }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Verification failed: ${res.status}`)
+}
+
+export async function uploadAvatar(file: File): Promise<void> {
+	const form = new FormData()
+	form.append('avatar', file)
+	const res = await authedFetch(`${API_BASE}/api/avatar`, {
+		method: 'POST',
+		headers: { ...getAuthHeaders() },
+		body: form,
+	})
+	if (!res.ok) throw new Error(`Avatar upload failed: ${res.status}`)
+}
+
+export async function deleteAvatar(): Promise<void> {
+	const res = await authedFetch(`${API_BASE}/api/avatar`, {
+		method: 'DELETE',
+		headers: { ...getAuthHeaders() },
+	})
+	if (!res.ok) throw new Error(`Avatar delete failed: ${res.status}`)
+}
+
+export function avatarImageUrl(v?: string | number): string {
+	const suffix = v !== undefined ? `?v=${encodeURIComponent(String(v))}` : ''
+	return `${API_BASE}/api/avatar/me${suffix}`
+}
+
+export interface PrereqInfo {
+    id: string
+    label: string
+    status: string
+    mastery_pct: number
+}
+
+export interface LessonInfo {
+    title: string
+    body?: string
+    concepts: string[]
+    progress?: Record<string, ConceptProgress>
+    prerequisites?: PrereqInfo[]
+    dependents?: PrereqInfo[]
+}
+
+// Lesson bodies ship separately (the list payload is metadata-only) and are
+// fetched on selection. No client-side memoization: a stale body surviving a
+// backend restart is worse than an extra request. no-store also bypasses the
+// Next.js data cache in dev.
+// One figure, table or other instructional block referenced by a lesson.
+//
+// `src` is the reference exactly as the lesson body writes it; resolution to a served
+// URL happens in KatexContent, which is the only place that knows the serving base.
+// `line` is the 1-based line in the body, so a renderer can interleave figures with the
+// prose rather than appending them.
+export interface LessonAsset {
+	id: string
+	kind: 'image' | 'table'
+	src?: string
+	alt?: string
+	caption?: string
+	line: number
+	section?: string
+	concept_ids?: string[]
+	source?: string
+}
+
+// A lesson plus its figure inventory. `/study` renders the body verbatim and needs
+// nothing from `assets`; the list exists so a figure can be addressed, counted and
+// repaired rather than being trapped inside the markdown.
+export interface LessonDocument {
+	title: string
+	body: string
+	source?: string
+	assets: LessonAsset[]
+}
+
+// Lesson bodies ship separately (the list payload is metadata-only) and are
+// fetched on selection. No client-side memoization: a stale body surviving a
+// backend restart is worse than an extra request. no-store also bypasses the
+// Next.js data cache in dev.
+export async function getLessonDocument(title: string): Promise<LessonDocument> {
+	const res = await authedFetch(`${API_BASE}/api/lessons/body?title=${encodeURIComponent(title)}`, {
+		cache: 'no-store',
+	})
+	if (!res.ok) throw new Error(`Lesson body fetch failed: ${res.status}`)
+	const data = (await res.json()) as Partial<LessonDocument>
+	// The server sends [] rather than null, but a proxy or an older build could omit the
+	// field, and every caller iterates it.
+	return {
+		title: data.title ?? title,
+		body: data.body ?? '',
+		source: data.source,
+		assets: data.assets ?? [],
+	}
+}
+
+export async function getLessonBody(title: string): Promise<string> {
+	return (await getLessonDocument(title)).body
+}
+
+export interface LessonsRes {
+	lessons: Record<string, LessonInfo[]>
+}
+
+export async function getLessons(studentId?: string): Promise<LessonsRes> {
+	const url = studentId ? `${API_BASE}/api/lessons?student_id=${encodeURIComponent(studentId)}` : `${API_BASE}/api/lessons`
+	const res = await authedFetch(url, { cache: 'no-store' })
+	if (!res.ok) return { lessons: {} }
+	return validateResponse(LessonsResSchema, await res.json(), 'getLessons') as LessonsRes
+}
+
+export interface PracticeQuestion {
+	question: string
+	answer: string
+	explanation: string
+	// Declared by the generator that produced the question, because the
+	// concept's grading type describes the grader and not the answer syntax.
+	answer_hint?: string
+	answer_input_mode?: 'numeric' | 'text'
+}
+
+export interface LessonPracticeRes {
+	questions: PracticeQuestion[]
+	concept_id: string
+}
+
+export interface KpInfo {
+	label: string
+	section?: string
+	subgoals: string[]
+	worked_example: string
+	// Figures belonging to this learning step, selected from the lesson by section (or by
+	// an authored asset_ids list on the shard). `/learn` shows these; `/study` shows the
+	// whole lesson. Optional so a response from a build predating the field still renders.
+	assets?: LessonAsset[]
+}
+
+export interface LessonKpsRes {
+	concept_id: string
+	kps: KpInfo[]
+	diagram?: string
+}
+
+export async function getLessonPractice(conceptId: string, count = 5, opts?: { seed?: number; exclude?: string[]; difficulty?: number }): Promise<LessonPracticeRes> {
+	const params = new URLSearchParams({ count: String(count) })
+	if (opts?.seed) params.set('seed', String(opts.seed))
+	if (opts?.difficulty !== undefined) params.set('difficulty', String(opts.difficulty))
+	for (const ex of opts?.exclude ?? []) params.append('exclude', ex)
+	const res = await authedFetch(`${API_BASE}/api/lessons/${encodeURIComponent(conceptId)}/practice?${params.toString()}`)
+	if (!res.ok) throw new Error(`Lesson practice fetch failed: ${res.status}`)
+	return res.json()
+}
+
+// The knowledge-point shard, shared between concurrent callers for the length of the request.
+//
+// `/learn` needs it twice on one page: LearnStepper renders the worked example for the current
+// section, and the reference panel renders every block for the same concept. Two callers, one
+// payload, and the shard is authored content that does not change while the tab is open — so
+// this is the in-flight cache rather than the session cache, because a later visit should
+// re-read it (a shard can be corrected, and a stale copy of a teaching section is a wrong
+// lesson rather than a stale progress bar).
+const lessonKPsInFlight = new Map<string, Promise<LessonKpsRes>>()
+
+export function getLessonKPs(conceptId: string): Promise<LessonKpsRes> {
+	const existing = lessonKPsInFlight.get(conceptId)
+	if (existing) return existing
+	const p = (async () => {
+		const res = await authedFetch(`${API_BASE}/api/lessons/${encodeURIComponent(conceptId)}/kp`, { cache: 'no-store' })
+		if (!res.ok) return { concept_id: conceptId, kps: [] }
+		return res.json() as Promise<LessonKpsRes>
+	})().finally(() => {
+		lessonKPsInFlight.delete(conceptId)
+	})
+	lessonKPsInFlight.set(conceptId, p)
+	return p
+}
+
+/** What kind of work a recommendation is. Mirrors scheduler.Kind in Go. */
+export type RecommendationKind = 'learn' | 'practice' | 'review' | 'mastery_check'
+
+/** Why the task was chosen, in language a learner can act on. Mirrors scheduler.Reason. */
+export type RecommendationReason = 'new' | 'review_due' | 'needs_practice' | 'prerequisite' | 'mastery_ready'
+
+/**
+ * One worthwhile task, decided by the engine.
+ *
+ * The wording is the server's, and that is the point: `/profile` and `/learn` used to format
+ * one head two ways — "Currently working towards X / Answer it" beside "Next up / Continue: X",
+ * sometimes with different labels for the same concept — because each derived its own copy.
+ */
+export interface Recommendation {
+  id: string
+  conceptId: string
+  conceptTitle: string
+  kind: RecommendationKind
+  reason: RecommendationReason
+  priority: number
+  estimatedMinutes?: number
+  xp?: number
+  action: { type: RecommendationKind; href: string }
+  badge: string
+  detail: string
+  cta: string
+}
+
+/**
+ * The engine's answer: one dominant task plus the alternatives the learner may pick.
+ *
+ * "The engine chooses; the learner disposes" — so `alternatives` is part of the contract rather
+ * than an afterthought, and a learner who disagrees with the head can act on it.
+ */
+export interface RecommendationRes {
+  primary: Recommendation | null
+  alternatives: Recommendation[]
+  generatedAt: string
+}
+
+/**
+ * GET /api/next — the single answer to "what should I do now?".
+ *
+ * Fail-soft to an orientation recommendation rather than an empty response: the client used to
+ * assemble this from five requests plus a bundled copy of the corpus, and every one of those
+ * had a fallback, so a network blip already degraded gracefully and must keep doing so.
+ *
+ * The fallback mirrors the server's own empty-state head (`internal/scheduler.Recommend`)
+ * word for word, href included. That is not tidiness: this is the one place the client
+ * answers a question the engine normally answers, and the two versions of "there is nothing
+ * for you right now" already disagreed once — this one still said "browse lessons", a route
+ * that has since been closed. Two copies of a fallback are two copies of the product's
+ * decision about what a learner with nothing to do should be told.
+ */
+export async function getNext(exclude?: string[]): Promise<RecommendationRes> {
+  const fallback: RecommendationRes = {
+    primary: {
+      id: 'graph',
+      conceptId: '',
+      conceptTitle: 'Concept graph',
+      kind: 'learn',
+      reason: 'new',
+      priority: 0,
+      action: { type: 'learn', href: '/graph' },
+      badge: 'All learned',
+      detail: 'Nothing is due right now — the graph shows what builds on what you have',
+      cta: 'See the graph →',
+    },
+    alternatives: [],
+    generatedAt: new Date().toISOString(),
+  }
+  const params = new URLSearchParams()
+  if (exclude?.length) params.set('exclude', exclude.join(','))
+  const qs = params.toString()
+  // The five requests this replaced each carried their own `.catch(...)` default, so a network
+  // blip degraded to a browse recommendation rather than to a dead end. One call has to keep
+  // that — but the absorption belongs here rather than in each caller, because a caller that
+  // swallows the error instead ends up holding a shelf it can never replace, and the Learn
+  // done card's failure branch (which exists precisely for this) stops being reachable.
+  try {
+    const res = await authedFetch(`${API_BASE}/api/next${qs ? `?${qs}` : ''}`, { cache: 'no-store' })
+    if (!res.ok) return fallback
+    const data = (await res.json()) as Partial<RecommendationRes>
+    if (!data.primary) return fallback
+    return { primary: data.primary, alternatives: data.alternatives ?? [], generatedAt: data.generatedAt ?? '' }
+  } catch {
+    return fallback
+  }
+}
+
+export interface EligibilityPrereq {
+	conceptId: string
+	title: string
+	state: string
+	met: boolean
+}
+
+export interface ReadinessRes {
+	concept_id: string
+	ready: boolean
+	weak: { id: string; label: string; status: string; mastery_pct: number }[]
+	missing: { id: string; label: string; status: string; mastery_pct: number }[]
+	/**
+	 * The server's eligibility verdict, present on current servers and absent on
+	 * older payloads. The client renders it; it never computes it. `eligible`
+	 * false means the topic's prerequisites are unmet and /learn will refuse it.
+	 */
+	eligible?: boolean
+	state?: string
+	reason?: string
+	prerequisites?: EligibilityPrereq[]
+}
+
+export async function getLessonReadiness(conceptId: string): Promise<ReadinessRes> {
+	const res = await authedFetch(`${API_BASE}/api/lessons/${encodeURIComponent(conceptId)}/readiness`, { cache: 'no-store' })
+	// Fail soft, in the direction that matters: a blip must not block a learner
+	// whose prerequisites are satisfied. The practice endpoint still refuses a
+	// genuinely locked topic, so the server remains the authority.
+	if (!res.ok) return { concept_id: conceptId, ready: true, weak: [], missing: [], eligible: true }
+	return res.json()
+}
+
+/** The canonical eligibility read. Thin alias so call sites name the intent. */
+export async function getLessonEligibility(conceptId: string): Promise<ReadinessRes> {
+	return getLessonReadiness(conceptId)
+}
+
+export interface StudyAnswerRes {
+	correct: boolean
+	feedback: string
+	explanation?: string
+	new_status?: string
+	streak?: number
+	required_streak?: number
+	xp: number
+	expected_answer?: string
+	ungraded?: boolean
+	/** One sentence naming the mistake, when it is certain. Empty otherwise. */
+	diagnosis?: string
+	/**
+	 * Authoritative mastery evidence score for this concept, 0..1, from the same
+	 * `BuildEvidence` the ladder decides on.
+	 *
+	 * Absent on an ungraded answer: nothing was recorded, so there is no new evidence.
+	 */
+	evidence_score?: number
+	/**
+	 * `evidence_score` in plain language, from `mastery.EvidenceBand`. Presentational only,
+	 * and deliberately claiming nothing about retention — the evidence model has no spacing
+	 * term, so it cannot support such a claim.
+	 *
+	 * Empty before the evidence floor is met, which is what stops a single correct answer
+	 * from reading as a strong result.
+	 */
+	evidence_band?: string
+}
+
+interface StudyAnswerBody {
+	concept_id: string
+	answer: string
+	elapsed: number
+	student_id?: string
+	question?: string
+}
+
+// No `expected` is sent: the server anchors every served question against its
+// own answer, so a client-supplied one is either redundant or an attempt to
+// grade itself. A 409 means the server has no record of this question (the
+// anchor's TTL expired, or the tab was left open too long) and the caller
+// should re-serve rather than resubmit.
+export async function submitStudyAnswer(conceptId: string, answer: string, elapsed: number, question?: string): Promise<StudyAnswerRes> {
+	const { getGuestId } = await import('./auth')
+	const headers = { 'Content-Type': 'application/json', ...getAuthHeaders() } satisfies Record<string, string>
+	const body: StudyAnswerBody = { concept_id: conceptId, answer, elapsed, question }
+	const guestId = getGuestId()
+	if (guestId && !('Authorization' in headers)) {
+		body.student_id = guestId
+	}
+	const res = await authedFetch(`${API_BASE}/api/study/answer`, {
+		method: 'POST',
+		headers,
+		body: JSON.stringify(body),
+	})
+	if (!res.ok) await throwWithResponse(res, `Study answer failed: ${res.status}`)
+	return res.json() as Promise<StudyAnswerRes>
+}
+
+export interface DueReviewsRes {
+	count: number
+}
+
+export interface DailyActivity {
+	date: string
+	questions: number
+	correct: number
+	concepts: string[]
+}
+
+export async function getActivity(days: number = 365): Promise<DailyActivity[]> {
+	const headers = { ...getAuthHeaders() } satisfies Record<string, string>
+	const res = await authedFetch(`${API_BASE}/api/activity?days=${days}`, { headers })
+	if (!res.ok) return []
+	return res.json()
+}
+
+export async function getDueReviews(): Promise<DueReviewsRes> {
+	const headers = { ...getAuthHeaders() } satisfies Record<string, string>
+	const res = await authedFetch(`${API_BASE}/api/reviews/due`, { headers })
+	if (!res.ok) return { count: 0 }
+	return res.json()
+}
+
+export async function startReviewSession(): Promise<StartSessionRes> {
+	const headers = {
+		'Content-Type': 'application/json',
+		...getAuthHeaders(),
+	} satisfies Record<string, string>
+	const res = await authedFetch(`${API_BASE}/api/reviews/session`, {
+		method: 'POST',
+		headers,
+	})
+	if (!res.ok) throw new Error(`Review session start failed: ${res.status}`)
+	return res.json()
+}
+
+export async function submitReviewAnswer(
+	sessionID: string,
+	answer: string,
+	elapsed: number,
+	attemptID: string,
+): Promise<AnswerRes> {
+	const headers = {
+		'Content-Type': 'application/json',
+		...getAuthHeaders(),
+	} satisfies Record<string, string>
+	const res = await authedFetch(`${API_BASE}/api/reviews/answer`, {
+		method: 'POST',
+		headers,
+		body: JSON.stringify({ session_id: sessionID, attempt_id: attemptID, answer, elapsed }),
+	})
+	if (!res.ok) await throwWithResponse(res, `Review answer submit failed: ${res.status}`)
+	return res.json()
+}
+
+// Quiz (actionable every 50 XP, 80% difficulty, guest unlimited retake, own grading path)
+export interface QuizStartRes {
+	session_id: string
+	student_id?: string
+	concept_id?: string
+  concept_name?: string
+  question?: string
+  done?: boolean
+  grading_type?: string
+  answer_hint?: string
+  answer_input_mode?: 'numeric' | 'text'
+  // Timed closed-book contract (Batch 1 backend).
+  closed_book?: boolean
+  time_limit_seconds?: number
+  questions_total?: number
+}
+export interface QuizAnswerRes {
+  done: boolean
+  correct?: boolean
+  // A verdict, or one of the grader's bare status tokens ("Not equivalent"). Never the
+  // solution: a test measures knowledge and does not teach, so the response carries no
+  // explanation and no answer-revealing diagnosis. Instruction is reached through /learn.
+  feedback?: string
+  xp?: number
+  new_status?: string
+  /**
+   * Authoritative mastery evidence score, 0..1.
+   *
+   * Absent on an ungraded answer (nothing was recorded, so there is no new evidence).
+   * This is a progress reading, not a mastery verdict — `new_status` is the verdict, and
+   * the score alone never means anything without the evidence floor the ladder also
+   * requires.
+   */
+  evidence_score?: number
+  concept_id?: string
+  concept_name?: string
+  question?: string
+  grading_type?: string
+  answer_hint?: string
+  answer_input_mode?: 'numeric' | 'text'
+	// Batch 1: immediate remedial concepts + retake flag.
+	remedial?: string[]
+	retake_available?: boolean
+	closed_book?: boolean
+	time_limit_seconds?: number
+	questions_total?: number
+}
+
+interface QuizSessionBody {
+	student_id?: string
+}
+
+export async function startQuizSession(): Promise<QuizStartRes> {
+	const { getGuestId } = await import('./auth')
+	const headers = { 'Content-Type': 'application/json', ...getAuthHeaders() } satisfies Record<string, string>
+	const body: QuizSessionBody = {}
+	const guestId = getGuestId()
+	if (guestId && !('Authorization' in headers)) body.student_id = guestId
+	const res = await authedFetch(`${API_BASE}/api/quiz/session`, {
+		method: 'POST',
+		headers,
+		body: JSON.stringify(body),
+	})
+	if (!res.ok) await throwWithResponse(res, `Quiz session start failed: ${res.status}`)
+	return res.json()
+}
+interface QuizAnswerBody {
+	session_id: string
+	concept_id: string
+	answer: string
+	elapsed: number
+	student_id?: string
+}
+
+export async function submitQuizAnswer(sessionId: string, conceptId: string, answer: string, elapsed: number, dontKnow?: boolean): Promise<QuizAnswerRes> {
+	const { getGuestId } = await import('./auth')
+	const headers = { 'Content-Type': 'application/json', ...getAuthHeaders() } satisfies Record<string, string>
+	const body: QuizAnswerBody & { dont_know: boolean } = { session_id: sessionId, concept_id: conceptId, answer, elapsed, dont_know: dontKnow ?? false }
+	const guestId = getGuestId()
+	if (guestId && !('Authorization' in headers)) body.student_id = guestId
+	const res = await authedFetch(`${API_BASE}/api/quiz/answer`, {
+		method: 'POST',
+		headers,
+		body: JSON.stringify(body),
+	})
+	if (!res.ok) await throwWithResponse(res, `Quiz answer failed: ${res.status}`)
+	return res.json()
+}
+
+interface QuizSkipBody {
+	session_id: string
+	student_id?: string
+}
+
+// Skip the pending quiz question: advances with no grade, no XP, no remedial.
+export async function skipQuizQuestion(sessionId: string): Promise<QuizAnswerRes> {
+	const { getGuestId } = await import('./auth')
+	const headers = { 'Content-Type': 'application/json', ...getAuthHeaders() } satisfies Record<string, string>
+	const body: QuizSkipBody = { session_id: sessionId }
+	const guestId = getGuestId()
+	if (guestId && !('Authorization' in headers)) body.student_id = guestId
+	const res = await authedFetch(`${API_BASE}/api/quiz/skip`, {
+		method: 'POST',
+		headers,
+		body: JSON.stringify(body),
+	})
+	if (!res.ok) await throwWithResponse(res, `Quiz skip failed: ${res.status}`)
+	return res.json()
+}
+
+export async function validateToken(): Promise<{ valid: boolean; student_id: string }> {
+	const headers = getAuthHeaders()
+	if (!headers.Authorization) return { valid: false, student_id: '' }
+	// Canonical route is /api/auth/me (the server has no /api/me).
+	// Network failures reject so callers never mistake "offline" for "logged out".
+	const res = await authedFetch(`${API_BASE}/api/auth/me`, { headers })
+	if (!res.ok) return { valid: false, student_id: '' }
+	try {
+		const me = await res.json()
+		return { valid: true, student_id: typeof me?.student_id === 'string' ? me.student_id : '' }
+	} catch {
+		// Unparseable body is NOT a valid session — never report valid:true.
+		return { valid: false, student_id: '' }
+	}
+}
+
+// Content reports — users complain about questions, explanations,
+// lesson bodies, worked examples, or diagrams.
+export type ReportKind = 'question' | 'explanation' | 'lesson_body' | 'worked_example' | 'diagram'
+export type ReportReason = 'wrong_answer' | 'bad_explanation' | 'unclear' | 'formatting' | 'other'
+export type ReportStatus = 'open' | 'confirmed' | 'fixed' | 'dismissed'
+
+export interface SubmitReportInput {
+	concept_id?: string
+	kind: ReportKind
+	question?: string
+	expected?: string
+	explanation?: string
+	lesson_id?: string
+	source?: string
+	session_id?: string
+	attempt_id?: string
+	reason: ReportReason
+	detail?: string
+	// What the learner typed and the format the field offered. Sent from the
+	// payload already in hand so a moderator can rebuild the exact attempt.
+	answer_given?: string
+	grading_type?: string
+	answer_hint?: string
+	answer_input_mode?: string
+}
+
+export interface SubmitReportRes {
+	id: number
+	status: ReportStatus
+}
+
+interface ReportBody extends SubmitReportInput {
+	reporter_id?: string
+}
+
+export async function submitReport(input: SubmitReportInput): Promise<SubmitReportRes> {
+	const { getGuestId } = await import('./auth')
+	const headers = { 'Content-Type': 'application/json', ...getAuthHeaders() } satisfies Record<string, string>
+	const body: ReportBody = { ...input }
+	const guestId = getGuestId()
+	if (guestId && !('Authorization' in headers)) {
+		body.reporter_id = guestId
+	}
+	const res = await authedFetch(`${API_BASE}/api/reports`, {
+		method: 'POST',
+		headers,
+		body: JSON.stringify(body),
+	})
+	if (!res.ok) throw new Error(`Report submit failed: ${res.status}`)
+	return res.json() as Promise<SubmitReportRes>
+}
+
+// ── Role-based administration ──────────────────────────────────────────────
+//
+// A different mechanism from the triage session above, on purpose. Triage is gated by a shared
+// password from the deployment environment and confers no account identity; these calls carry
+// the learner's own token and are authorized by the role on that account. The server decides —
+// a 403 here means the backend said no, and hiding the pages in the UI is a convenience on top
+// of that, never the control.
+//
+// Every one of these uses authedFetch. A 401 means the caller's own session is not signed in,
+// a 403 means the account lacks the permission, and authedFetch's handling of a 401 is correct
+// for the first case. The server decides; hiding a page in the UI is a convenience on top.
+
+const RoleSchema = z.enum(['student', 'moderator', 'admin', 'owner'])
+
+// AdminUser mirrors the server's AdminUser projection. It has no field for a password hash, a
+// share token or learning state, and the schema is the reason: a response carrying a field this
+// type does not name cannot reach a page, whatever the server sends.
+const AdminUserSchema = z.object({
+	id: z.string(),
+	name: z.string(),
+	username: z.string(),
+	email: z.string(),
+	role: RoleSchema,
+	created_at: z.string(),
+	has_password: z.boolean(),
+})
+
+export type AdminUser = z.infer<typeof AdminUserSchema>
+export type Role = z.infer<typeof RoleSchema>
+
+// One definition, used by the overview's "recent activity" and by the audit page. Two schemas
+// for one row type is how the two surfaces come to disagree about what an event looks like.
+const AdminAuditEventSchema = z.object({
+	id: z.number(),
+	actor_id: z.string(),
+	action: z.string(),
+	entity_type: z.string(),
+	entity_id: z.string(),
+	before_json: z.string(),
+	after_json: z.string(),
+	created_at: z.string(),
+})
+
+const AdminOverviewSchema = z.object({
+	users: z.number(),
+	staff: z.number(),
+	owners: z.number(),
+	concepts: z.number(),
+	domains: z.number(),
+	questions: z.number(),
+	reports: z.object({
+		open: z.number(),
+		reviewing: z.number(),
+		resolved: z.number(),
+		dismissed: z.number(),
+		outstanding: z.number(),
+	}),
+	recent_activity: z.array(AdminAuditEventSchema),
+})
+
+export type AdminOverview = z.infer<typeof AdminOverviewSchema>
+export type AdminAuditEvent = z.infer<typeof AdminAuditEventSchema>
+
+export interface AdminUsersRes {
+	users: AdminUser[]
+}
+
+export interface AdminAuditRes {
+	events: AdminAuditEvent[]
+}
+
+export async function adminOverview(): Promise<AdminOverview> {
+	const res = await authedFetch(`${API_BASE}/api/admin/overview`, { cache: 'no-store' })
+	if (!res.ok) await throwWithResponse(res, 'Could not load the overview')
+	return validateResponse(AdminOverviewSchema, await res.json(), 'adminOverview')
+}
+
+export async function searchAdminUsers(q: string): Promise<AdminUsersRes> {
+	const params = new URLSearchParams()
+	if (q.trim()) params.set('q', q.trim())
+	const qs = params.toString()
+	const res = await authedFetch(`${API_BASE}/api/admin/users${qs ? `?${qs}` : ''}`, { cache: 'no-store' })
+	if (!res.ok) await throwWithResponse(res, 'Could not load users')
+	const data = (await res.json()) as { users?: unknown }
+	return { users: validateResponse(z.array(AdminUserSchema), data.users ?? [], 'adminUsers') }
+}
+
+/**
+ * Set an account's role.
+ *
+ * `role` is a closed union here as well as on the server. Both ends reject anything else, and
+ * the reason they both bother is that coercing would let the response say one thing and the row
+ * say another — which is exactly the sort of quiet disagreement the rest of this client has been
+ * bitten by.
+ */
+export async function setUserRole(userId: string, role: Role): Promise<{ user: AdminUser; changed: boolean }> {
+	const res = await authedFetch(`${API_BASE}/api/admin/users/${encodeURIComponent(userId)}`, {
+		method: 'PATCH',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ role }),
+	})
+	if (!res.ok) await throwWithResponse(res, 'Could not change the role')
+	const data = (await res.json()) as { user?: unknown; changed?: unknown }
+	return {
+		user: validateResponse(AdminUserSchema, data.user, 'adminUserRole'),
+		changed: data.changed === true,
+	}
+}
+
+export async function listAdminAudit(): Promise<AdminAuditRes> {
+	const res = await authedFetch(`${API_BASE}/api/admin/audit`, { cache: 'no-store' })
+	if (!res.ok) await throwWithResponse(res, 'Could not load the audit log')
+	const data = (await res.json()) as { events?: unknown }
+	return { events: validateResponse(z.array(AdminAuditEventSchema), data.events ?? [], 'adminAudit') }
+}
+
+// ── Admin V2 ──────────────────────────────────────────────────────────────
+//
+// The moderation queue, contributor management and content inspection. The permission list from
+// /api/admin/me drives which sections render; every call is still authorized server-side.
+
+export interface AdminMe {
+	id: string
+	role: Role
+	permissions: string[]
+	assignable_roles: Role[]
+}
+
+export async function adminMe(): Promise<AdminMe> {
+	const res = await authedFetch(`${API_BASE}/api/admin/me`, { cache: 'no-store' })
+	if (!res.ok) await throwWithResponse(res, 'Could not load your admin access')
+	const data = (await res.json()) as AdminMe
+	return data
+}
+
+// A moderation record. It is never deleted; resolved/dismissed stamp who decided and why.
+const QuestionReportSchema = z.object({
+	id: z.number(),
+	reporter_id: z.string(),
+	concept_id: z.string(),
+	kind: z.string(),
+	question: z.string(),
+	expected: z.string(),
+	explanation: z.string(),
+	lesson_id: z.string(),
+	source: z.string(),
+	session_id: z.string(),
+	attempt_id: z.string(),
+	// Captured with the report so a moderator can replay the attempt rather
+	// than guess it: what the learner typed, and the field they typed it in.
+	// Older rows predate the capture, hence optional.
+	answer_given: z.string().optional(),
+	grading_type: z.string().optional(),
+	answer_hint: z.string().optional(),
+	answer_input_mode: z.enum(['numeric', 'text']).optional(),
+	reason: z.string(),
+	detail: z.string(),
+	status: z.string(),
+	resolution: z.string(),
+	resolved_by: z.string(),
+	resolved_at: z.string(),
+	created_at: z.string(),
+})
+export type QuestionReport = z.infer<typeof QuestionReportSchema>
+
+export type ModerationStatus = 'open' | 'reviewing' | 'resolved' | 'dismissed'
+
+export async function listAdminReports(status?: string): Promise<{ reports: QuestionReport[] }> {
+	const qs = status && status !== 'all' ? `?status=${encodeURIComponent(status)}` : ''
+	const res = await authedFetch(`${API_BASE}/api/admin/reports${qs}`, { cache: 'no-store' })
+	if (!res.ok) await throwWithResponse(res, 'Could not load reports')
+	const data = (await res.json()) as { reports?: unknown }
+	return { reports: validateResponse(z.array(QuestionReportSchema), data.reports ?? [], 'adminReports') }
+}
+
+export async function getAdminReport(id: number): Promise<{ report: QuestionReport; history: AdminAuditEvent[] }> {
+	const res = await authedFetch(`${API_BASE}/api/admin/reports/${id}`, { cache: 'no-store' })
+	if (!res.ok) await throwWithResponse(res, 'Could not load the report')
+	const data = (await res.json()) as { report?: unknown; history?: unknown }
+	return {
+		report: validateResponse(QuestionReportSchema, data.report, 'adminReport'),
+		history: validateResponse(z.array(AdminAuditEventSchema), data.history ?? [], 'adminReportHistory'),
+	}
+}
+
+// Replays a stored attempt through the same grader the learner faced. The
+// endpoint is pure: it never enters SubmitAnswer, so no XP, streak, attempt or
+// mastery changes. `writes: false` in the response is the server saying so.
+export interface AdminGradeRes {
+	correct: boolean
+	score: number
+	feedback?: string
+	diagnosis?: string
+	unavailable?: boolean
+	graded_answer: string
+	expected: string
+	answer_hint?: string
+	answer_input_mode?: 'numeric' | 'text'
+	writes: boolean
+}
+
+export async function gradeAdminReport(id: number, answer: string): Promise<AdminGradeRes> {
+	const res = await authedFetch(`${API_BASE}/api/admin/reports/${id}/grade`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ answer }),
+	})
+	if (!res.ok) await throwWithResponse(res, 'Could not grade the reported answer')
+	return (await res.json()) as AdminGradeRes
+}
+
+export async function moderateReport(id: number, status: ModerationStatus, resolution: string): Promise<QuestionReport> {	const res = await authedFetch(`${API_BASE}/api/admin/reports/${id}`, {
+		method: 'PATCH',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ status, resolution }),
+	})
+	if (!res.ok) await throwWithResponse(res, 'Could not update the report')
+	const data = (await res.json()) as { report?: unknown }
+	return validateResponse(QuestionReportSchema, data.report, 'adminReportUpdate')
+}
+
+export async function listAdmins(): Promise<{ admins: AdminUser[] }> {
+	const res = await authedFetch(`${API_BASE}/api/admin/admins`, { cache: 'no-store' })
+	if (!res.ok) await throwWithResponse(res, 'Could not load staff')
+	const data = (await res.json()) as { admins?: unknown }
+	return { admins: validateResponse(z.array(AdminUserSchema), data.admins ?? [], 'adminAdmins') }
+}
+
+const AdminInvitationSchema = z.object({
+	id: z.number(),
+	email: z.string(),
+	role: RoleSchema,
+	invited_by: z.string(),
+	created_at: z.string(),
+	expires_at: z.string(),
+	accepted_at: z.string(),
+	accepted_by: z.string(),
+	revoked_at: z.string(),
+	revoked_by: z.string(),
+})
+export type AdminInvitation = z.infer<typeof AdminInvitationSchema>
+
+export async function listAdminInvitations(): Promise<{ invitations: AdminInvitation[] }> {
+	const res = await authedFetch(`${API_BASE}/api/admin/invitations`, { cache: 'no-store' })
+	if (!res.ok) await throwWithResponse(res, 'Could not load invitations')
+	const data = (await res.json()) as { invitations?: unknown }
+	return { invitations: validateResponse(z.array(AdminInvitationSchema), data.invitations ?? [], 'adminInvitations') }
+}
+
+export async function createAdminInvitation(email: string, role: Role): Promise<{ id: number; token: string; email: string; role: Role; expires_at: string }> {
+	const res = await authedFetch(`${API_BASE}/api/admin/invitations`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ email, role }),
+	})
+	if (!res.ok) await throwWithResponse(res, 'Could not create the invitation')
+	return res.json() as Promise<{ id: number; token: string; email: string; role: Role; expires_at: string }>
+}
+
+export async function acceptAdminInvitation(token: string): Promise<{ role: Role }> {
+	const res = await authedFetch(`${API_BASE}/api/admin/invitations/accept`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ token }),
+	})
+	if (!res.ok) await throwWithResponse(res, 'Could not accept the invitation')
+	return res.json() as Promise<{ role: Role }>
+}
+
+export async function revokeAdminInvitation(id: number): Promise<AdminInvitation> {
+	const res = await authedFetch(`${API_BASE}/api/admin/invitations/${id}/revoke`, { method: 'POST' })
+	if (!res.ok) await throwWithResponse(res, 'Could not revoke the invitation')
+	const data = (await res.json()) as { invitation?: unknown }
+	return validateResponse(AdminInvitationSchema, data.invitation, 'adminInvitationRevoke')
+}
+
+// ── Optional AI augmentation ──
+//
+// Both calls are best-effort enhancements, never a dependency. The server
+// refuses them when AI is disabled (503) or the caller's daily budget is spent
+// (429); getGoalScope folds either into used_ai=false so a caller falls back to
+// its deterministic match with no special case. No `expected_answer` is ever a
+// field here: the graded answer stays on the server.
+
+export interface AssistantLink {
+	/** The id the assistant named, e.g. "glossary" or a destination id. */
+	id: string
+	label: string
+	/** An internal route the server chose; never built from the model's text. */
+	href: string
+}
+
+export interface AssistantTurn {
+	role: 'user' | 'assistant'
+	content: string
+}
+
+/**
+ * One run of a reply: either text or a link. Links arrive as parts rather than
+ * as a list beside the text, so the label appears where the assistant wrote it
+ * and is not printed a second time underneath.
+ */
+export interface AssistantPart {
+	text?: string
+	link?: AssistantLink
+}
+
+export interface AssistantReply {
+	reply: string
+	segments: AssistantPart[]
+}
+
+/**
+ * Ask the product assistant. It answers "what is Orchid" and "where do I
+ * start"; it is not a tutor and holds no concept or mastery context. `history`
+ * is replayed so the assistant can follow up on its own clarifying question; the
+ * server bounds it and keeps only user and assistant turns. Throws when AI is
+ * unavailable or the quota is spent, so the caller shows "unavailable" rather
+ * than a wrong answer.
+ */
+export async function askAssistant(body: { message: string; history?: AssistantTurn[] }): Promise<AssistantReply> {
+	const headers = { 'Content-Type': 'application/json', ...getAuthHeaders() } satisfies Record<string, string>
+	const res = await authedFetch(`${API_BASE}/api/ai/assistant`, {
+		method: 'POST',
+		headers,
+		body: JSON.stringify(body),
+	})
+	if (!res.ok) await throwWithResponse(res, `Assistant unavailable: ${res.status}`)
+	const data = (await res.json()) as AssistantReply
+	return { reply: data.reply, segments: data.segments ?? [] }
+}
+
+export interface GoalScopeRes {
+	/** Destination ids the model chose, validated against the server's own list. */
+	destinations: string[]
+	/** False when AI is off, failed, or chose nothing — use the deterministic match. */
+	used_ai: boolean
+	/**
+	 * Why AI did not contribute, set only when used_ai is false. The server
+	 * distinguishes "the provider failed" from "the model chose nothing", so the
+	 * UI can say "suggestions unavailable" instead of silently showing an empty
+	 * list for both.
+	 */
+	reason?: 'disabled' | 'no_candidates' | 'failed' | 'no_match'
+}
+
+/**
+ * Ask the model to map a free-text goal to destinations. Never throws: a
+ * failure is reported as used_ai=false, because the caller already has a
+ * deterministic answer on screen and must not lose it to a provider outage.
+ */
+export async function getGoalScope(goal: string): Promise<GoalScopeRes> {
+	const headers = { 'Content-Type': 'application/json', ...getAuthHeaders() } satisfies Record<string, string>
+	const res = await authedFetch(`${API_BASE}/api/ai/goal-scope`, {
+		method: 'POST',
+		headers,
+		body: JSON.stringify({ goal }),
+	})
+	if (!res.ok) return { destinations: [], used_ai: false }
+	return res.json() as Promise<GoalScopeRes>
+}
+
+export interface AdminContentConcept {
+	id: string
+	label: string
+	domain: string
+	subdomain: string
+	grading_type: string
+	prerequisites: string[]
+	// The format the question will actually be served with, and whether it was
+	// declared by the generator rather than derived from the grading type. The
+	// concept record alone cannot answer this: grading_type names the grader.
+	answer_hint: string
+	answer_input_mode: 'numeric' | 'text'
+	answer_overridden: boolean
+}
+
+export async function listAdminContent(
+	q = '',
+	opts: { overridden?: boolean } = {},
+): Promise<{ concepts: AdminContentConcept[]; total: number }> {
+	const params = new URLSearchParams()
+	if (q.trim()) params.set('q', q.trim())
+	if (opts.overridden) params.set('overridden', '1')
+	const qs = params.toString() ? `?${params.toString()}` : ''
+	const res = await authedFetch(`${API_BASE}/api/admin/content${qs}`, { cache: 'no-store' })
+	if (!res.ok) await throwWithResponse(res, 'Could not load content')
+	const data = (await res.json()) as { concepts?: AdminContentConcept[]; total?: number }
+	return { concepts: data.concepts ?? [], total: data.total ?? 0 }
+}
+
+// The lab. Both routes are read-only: generate serves what the generator would
+// produce for a concept, and grade runs the same pure GradeAnswer the report
+// replay uses. `writes: false` in each response is the server stating that.
+export interface LabQuestion {
+	question: string
+	answer: string
+	explanation: string
+	answer_hint: string
+	answer_input_mode: 'numeric' | 'text'
+}
+
+export interface LabGenerateRes {
+	concept_id: string
+	concept_name: string
+	grading_type: string
+	answer_hint: string
+	answer_input_mode: 'numeric' | 'text'
+	difficulty: number
+	questions: LabQuestion[]
+	writes: boolean
+}
+
+export async function generateLabQuestions(
+	conceptId: string,
+	count = 3,
+	difficulty = 0.5,
+): Promise<LabGenerateRes> {
+	const res = await authedFetch(`${API_BASE}/api/admin/lab/generate`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ concept_id: conceptId, count, difficulty }),
+	})
+	if (!res.ok) await throwWithResponse(res, 'Could not generate questions')
+	return (await res.json()) as LabGenerateRes
+}
+
+export async function gradeLabAnswer(
+	conceptId: string,
+	expected: string,
+	answer: string,
+): Promise<AdminGradeRes> {
+	const res = await authedFetch(`${API_BASE}/api/admin/lab/grade`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ concept_id: conceptId, expected, answer }),
+	})
+	if (!res.ok) await throwWithResponse(res, 'Could not grade the answer')
+	const data = (await res.json()) as AdminGradeRes
+	return data
+}

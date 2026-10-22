@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one TD error",
+    "section": "Worked: one TD error",
+    "subgoals": [
+      "Bootstrap reward plus discounted value",
+      "Subtract the current estimate",
+      "Update critic and actor from one number"
+    ]
+  },
+  {
+    "label": "Worked: advantage over raw return",
+    "section": "Worked: advantage over raw return",
+    "subgoals": [
+      "Center returns with the critic",
+      "Blend horizons with GAE",
+      "Average over parallel actors"
+    ]
+  },
+  {
+    "label": "When actions go continuous",
+    "section": "When actions go continuous",
+    "subgoals": [
+      "Swap probabilities for densities",
+      "Pair a deterministic actor with noise",
+      "Match the method to the action space"
+    ]
+  }
+]

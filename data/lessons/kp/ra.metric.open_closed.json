@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Open sets",
+    "section": "Open sets",
+    "subgoals": [
+      "Give every point a ball inside the set",
+      "Recognise a ball as open",
+      "Close under arbitrary unions and finite intersections"
+    ]
+  },
+  {
+    "label": "Closed sets",
+    "section": "Closed sets",
+    "subgoals": [
+      "Complement an open set",
+      "Equalise closed with containing limit points",
+      "Dualise the union and intersection laws"
+    ]
+  },
+  {
+    "label": "Relative and absolute",
+    "section": "Relative and absolute",
+    "subgoals": [
+      "Restrict the metric to a subset",
+      "Intersect the ambient open sets",
+      "Read openness relative to the subspace"
+    ]
+  }
+]

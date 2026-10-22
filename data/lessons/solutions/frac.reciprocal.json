@@ -1,0 +1,15 @@
+{
+  "concept": "frac.reciprocal",
+  "setup": "The fraction is \\(\\frac{[[in_num]]}{[[in_den]]}\\), and you are asked for its reciprocal.",
+  "steps": [
+    {
+      "fact": "in_num",
+      "say": "The reciprocal turns the fraction over: the numerator \\([[in_num]]\\) becomes the denominator and the denominator \\([[in_den]]\\) becomes the numerator."
+    },
+    {
+      "fact": "out_num",
+      "say": "So the reciprocal is \\(\\frac{[[out_num]]}{[[out_den]]}\\). Multiplying the two together gives 1, which is what defines a reciprocal."
+    }
+  ],
+  "answer": "So the reciprocal is \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

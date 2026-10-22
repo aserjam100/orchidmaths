@@ -1,0 +1,15 @@
+{
+  "concept": "geo.coord.slope",
+  "setup": "You are finding the slope of the line through two given points.",
+  "steps": [
+    {
+      "fact": "rise",
+      "say": "Slope is rise over run: the change in y is \\([[rise]]\\) and the change in x is \\([[run]]\\). Subtract the coordinates in the same order both times, or the sign will flip."
+    },
+    {
+      "fact": "slope",
+      "say": "Dividing gives the slope \\([[slope]]\\), which is the same between any two points on the line -- that sameness is what makes a line straight."
+    }
+  ],
+  "answer": "So the slope is \\([[slope]]\\)."
+}

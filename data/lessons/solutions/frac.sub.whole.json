@@ -1,0 +1,15 @@
+{
+  "concept": "frac.sub.whole",
+  "setup": "You are subtracting a fraction from a whole number.",
+  "steps": [
+    {
+      "fact": "out_num",
+      "say": "Write the whole number over 1 first, then over the fraction's denominator. A whole number is a fraction whose numerator and denominator are equal, which is what makes the subtraction possible."
+    },
+    {
+      "fact": "out_den",
+      "say": "With both numbers over the same denominator the subtraction is one line, and the result reduces to \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+    }
+  ],
+  "answer": "So the difference is \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

@@ -1,0 +1,497 @@
+'use client'
+
+import { useEffect, useMemo, useState } from 'react'
+import Link from 'next/link'
+import { useTheme } from '../../hooks/useTheme'
+import { getUserInfo, ensureGuestId, ensureGuestToken, getGuestId, isLoggedIn, isStaffRole, type UserInfo } from '../../lib/auth'
+import { ensureDicebearAvatar, resolveAvatar } from '../../lib/dicebear'
+import { getActivity, getProgress, getWeaknesses, getDueReviews, getEfficacy, getScores, getSettings, getMe } from '../../lib/api'
+import type { DailyActivity, Scores, WeaknessRes, ConceptProgress, EfficacyReport } from '../../lib/api'
+import ProfileHeader from '../../components/ProfileHeader'
+import ActivityHeatmap from '../../components/ActivityHeatmap'
+import StrugglesSection from '../../components/StrugglesSection'
+import ProfileSkeleton from '../../components/skeletons/ProfileSkeleton'
+import { AppSidebar, type AppSidebarProps } from '../../components/app-sidebar'
+import { ChevronsRight } from '../../components/icons'
+import BottomTabs from '../../components/BottomTabs'
+import { SidebarInset, SidebarProvider, SidebarTrigger } from '../../components/ui/sidebar'
+import RecommendedTaskList from '../../components/RecommendedTaskList'
+import DailyGoalControl, { getGuestGoal } from '../../components/DailyGoalControl'
+import { isNewUser, type Shelf } from '../../lib/nextUp'
+import { fetchShelf } from '../../lib/recommendations'
+import OrchidMark from '../../components/OrchidMark'
+import { concepts as conceptCatalog } from '../../lib/conceptData'
+import { usePrimaryLevel } from '../../hooks/usePrimaryLevel'
+import { levelInfo, levelScope } from '../../lib/primaryLevel'
+import { HourglassIcon, PauseIcon } from '@animateicons/react/lucide'
+
+// UserInfo is imported rather than redeclared. This page had its own copy of the shape, which
+// is ADR-043's failure mode in its smallest form: a second schema describing the same payload,
+// so a field added to the real one type-checks here as a *missing property* instead of as a
+// change — and when `role` arrived from /api/auth/me, this copy did not have it. The compiler
+// said the field did not exist, which is the one symptom of the duplication that anyone noticed;
+// the other is that it never would have been noticed at all.
+
+// Every branch below returns through this. /profile used to repeat
+// <SidebarProvider>…</SidebarProvider> in some return paths and nothing at all in others, and
+// the chrome was opt-in per branch. That is how this page ended up with no mobile navigation
+// and no theme control: three of the six paths — both error paths and the "Loading scores…"
+// wait — simply opted out, and the tab bar was never restored when BottomTabs came back. Wrapping
+// once makes a bare branch impossible to write by accident, which is the failure itself.
+//
+// `isStaffRole` used to live here as a second copy of the predicate, and it is now
+// imported from lib/auth: the copy here had no way to learn that the server's staff set is
+// moderator-or-above, so the two answers to "is this account staff" were free to disagree —
+// which is the duplicate-schema failure in its smallest form (ADR-043).
+
+function ProfileShell({
+  children,
+  ...sidebarProps
+}: { children: React.ReactNode } & AppSidebarProps) {
+  return (
+    <>
+      <SidebarProvider>
+        <AppSidebar {...sidebarProps} />
+        <SidebarInset>
+          {/* The opener for the overlay sheet, dressed as the same control the collapsed desktop
+              rail uses: the Orchid mark over a right-pointing chevron. shadcn's SidebarTrigger defaults to a bare
+              mark, which on mobile is the app's logo sitting at the top-left behaving like a wordmark
+              rather than a button — the exact thing 114a3e25 fixed on the desktop rail and the
+              reason this opener was missed here. On mobile the nav slides in from the left, so
+              right is also the honest direction for it to point. */}
+          <div className="mb-2 flex justify-start md:hidden px-4 sm:px-6 pt-8">
+            <SidebarTrigger variant="ghost" className="flex-col gap-0.5">
+              <span aria-hidden="true" className="font-mono text-sm text-orchid-blue"><OrchidMark /></span>
+              <ChevronsRight size={10} className="text-orchid-muted" />
+            </SidebarTrigger>
+          </div>
+          {children}
+        </SidebarInset>
+      </SidebarProvider>
+      {/* lg:hidden, so this restores mobile navigation and leaves the desktop rail alone. The
+          ghost SidebarTrigger above stays because it is what opens the sheet. */}
+      <BottomTabs />
+    </>
+  )
+}
+
+export default function ProfilePage() {
+  const { mounted } = useTheme()
+
+  const [user, setUser] = useState<UserInfo | null>(null)
+  const [scores, setScores] = useState<Scores | null>(null)
+  const [activity, setActivity] = useState<DailyActivity[]>([])
+  const [progress, setProgress] = useState<Record<string, ConceptProgress>>({})
+  const [weaknesses, setWeaknesses] = useState<WeaknessRes | null>(null)
+  const [efficacy, setEfficacy] = useState<EfficacyReport | null>(null)
+  const [dueReviews, setDueReviews] = useState(0)
+  const [shelf, setShelf] = useState<Shelf | null>(null)
+  // Placement is the server's record, not local storage's. `isLoggedIn` accounts
+  // fetch it from /api/auth/me; a stale `orchid_user` must not resurrect the
+  // diagnostic as an active task.
+  const [placementCompleted, setPlacementCompleted] = useState<boolean | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
+  const [goalOverride, setGoalOverride] = useState<number | null>(null)
+  const [avatarUrl, setAvatarUrl] = useState<string | undefined>(undefined)
+  const [avatarPreset, setAvatarPreset] = useState<number | null>(null)
+
+  // Guest daily-goal override (server default applies otherwise).
+  useEffect(() => {
+    if (mounted && !getUserInfo()) {
+      setGoalOverride(getGuestGoal())
+    }
+  }, [mounted])
+
+  // Null when an older server omits it. The bar hides rather than substituting a literal — a
+  // bar computed against a gate the engine does not use is a claim about this learner, and is
+  // worse than no bar. The banner and its CTA still render, because `quiz_due` is the flag that
+  // actually says whether the quiz is open, and dropping the way into it would cost a learner
+  // the assessment on a stale deployment.
+  const quizGate = scores?.quiz_gate_xp && scores.quiz_gate_xp > 0 ? scores.quiz_gate_xp : null
+
+  const effScores = useMemo(
+    () => (scores && goalOverride ? { ...scores, daily_xp_goal: goalOverride } : scores),
+    [scores, goalOverride],
+  )
+
+  // New = nothing mastered and no answered questions anywhere.
+  const isNew = scores != null && isNewUser({ conceptsMastered: scores.concepts_mastered, activity })
+
+  // The head, as the engine ranked it.
+  //
+  // This used to be re-derived here from `progress`, `weaknesses`, `activity`, `dueReviews`
+  // and `scores` — five inputs the browser combined with its own copy of the eligibility and
+  // ranking rules, which had already drifted from internal/scheduler: a duplicated XP award
+  // that still halved reviews, and a different ranking order. Now it arrives decided.
+  //
+  // A null shelf is the pre-fetch state rather than an empty one: rendering "nothing
+  // recommended" while the request is in flight would misreport the learner.
+  const head = shelf
+
+  // What the head names, for "where am I". Read off the same head as the recommendation, so
+  // the two cannot disagree — which is the property that matters, and the reason this block
+  // keeps the label even though it no longer offers a button: the engine owns both the name
+  // and the destination, so a learner is never shown one concept's name and sent to another.
+  const frontierLabel = head?.next.title ?? null
+  // Counts are over the learner's level, the same set Learn draws from. Over the whole corpus,
+  // "unlocked" counted every root concept in calculus and topology as reachable.
+  const [myLevel] = usePrimaryLevel()
+  const levelCatalog = useMemo(() => {
+    const scope = levelScope(myLevel)
+    return conceptCatalog.filter(c => scope.has(c.id))
+  }, [myLevel])
+
+
+  useEffect(() => {
+    if (!mounted) return
+
+    const info = getUserInfo()
+    setUser(info)
+    // Ensure guest has an ephemeral id so profile/diagnostic works without account
+    if (!info) {
+      ensureGuestId()
+      // Best-effort: mint a guest bearer token so the guest reads their own
+      // progress/scores as themselves (no credential = 401 for UUID rows).
+      ensureGuestToken()
+    }
+
+      // Avatar precedence lives in resolveAvatar (shared with Header):
+      // custom upload > Google photo > DiceBear pick > legacy preset >
+      // automatic initial.
+      const hydrateAvatar = (s: {
+        avatar_custom?: boolean
+        avatar_dicebear?: { style: string; seed: string } | null
+        avatar_preset?: number | null
+      }) => {
+        const resolved = resolveAvatar(info, s)
+        setAvatarPreset(resolved.preset ?? null)
+        setAvatarUrl(resolved.url)
+      }
+      getSettings().then(hydrateAvatar).catch(() => {
+        if (info?.avatar_url) setAvatarUrl(info.avatar_url)
+      })
+      // Surprise DiceBear combo for photo-less users (all auth flows land here).
+      ensureDicebearAvatar().then(pick => {
+        if (pick) hydrateAvatar({ avatar_dicebear: { style: pick.style, seed: pick.seed } })
+      }).catch(() => {})
+
+     async function fetchData() {
+      try {
+        if (info) {
+          const [scoresRes, activityRes, progressRes, weaknessesRes] = await Promise.all([
+            getScores(info!.student_id).catch(() => null as Scores | null),
+            getActivity().catch(() => [] as DailyActivity[]),
+            getProgress(info!.student_id).catch(() => ({} as Record<string, ConceptProgress>)),
+            getWeaknesses().catch(() => ({ by_domain: {} } as WeaknessRes)),
+          ])
+          if (!scoresRes) {
+            // 401 or fetch failure — token likely expired (JWT_SECRET rotated) or network.
+            // Keep guest-like state so page doesn't hang on "Loading scores…"
+            setError('Session expired or scores unavailable — please sign in again')
+          }
+          setScores(scoresRes as Scores | null)
+          setActivity(activityRes)
+          setProgress(progressRes)
+          setWeaknesses(weaknessesRes)
+          getDueReviews().then(r => setDueReviews(r.count)).catch(() => {})
+          getEfficacy().then(setEfficacy).catch(() => {})
+          // Placement from the server. The client must not infer diagnostic
+          // completion from the displayed question or from local storage.
+          getMe().then(me => setPlacementCompleted(me.diagnostic_completed ?? false)).catch(() => {
+            setPlacementCompleted(info?.diagnostic_completed ?? false)
+          })
+          // The recommendation is the engine's answer, not a re-ranking of the fetches above.
+          // Fetched beside them rather than derived from them: the report's numbers and the
+          // recommendation come from one authority each, and neither is computed from the other.
+          fetchShelf().then(setShelf).catch(() => setShelf(null))
+        } else {
+          // Guest: fetch progress via ephemeral guest_id so Study answers are visible
+          const guestId = getGuestId() || ''
+          const [activityRes, progressRes] = await Promise.all([
+            getActivity().catch(() => [] as DailyActivity[]),
+            guestId ? getProgress(guestId).catch(() => ({} as Record<string, ConceptProgress>)) : Promise.resolve({} as Record<string, ConceptProgress>),
+          ])
+          setActivity(activityRes as DailyActivity[])
+          setScores(null)
+          setProgress(progressRes as Record<string, ConceptProgress>)
+          setWeaknesses(null)
+        }
+      } catch {
+        if (info) setError('Failed to load profile data')
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchData()
+  }, [mounted])
+
+  const monoFont = "var(--font-jetbrains-mono), 'JetBrains Mono', monospace"
+
+  if (!mounted) {
+    return <div style={{ background: 'var(--bg)', minHeight: '100vh' }} />
+  }
+
+  if (loading) {
+    return (
+      <ProfileShell name="…" studentId="…">
+        <ProfileSkeleton />
+      </ProfileShell>
+    )
+  }
+
+  if (error) {
+    return (
+      <ProfileShell name="…" studentId="…">
+        <div className="mx-auto px-4 sm:px-6 py-20 overflow-x-hidden min-w-0">
+          <div
+            style={{
+              fontFamily: monoFont,
+              fontSize: 14,
+              color: 'var(--text-muted)',
+              textAlign: 'center',
+            }}
+          >
+            {error}
+          </div>
+        </div>
+      </ProfileShell>
+    )
+  }
+
+  if (!user) {
+    return (
+      <ProfileShell name="Guest" studentId={getGuestId() || 'guest'}>
+          <div id="profile-main" className="mx-auto w-full max-w-[820px] min-w-0 px-4 sm:px-6 py-8 sm:py-12 overflow-x-hidden">
+          <div className="border border-orchid-border p-6 text-center bg-orchid-surface min-w-0">
+            <h2 className="font-serif text-[1.2rem] text-orchid-primary mb-2">Welcome to your profile</h2>
+            <p className="font-mono text-xs text-orchid-secondary mb-4">Sign in to track XP, streaks and mastery. Your activity heatmap will appear here once you start practicing.</p>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+              <Link href="/login" className="w-full sm:w-auto border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-6 py-2 font-mono text-xs min-h-[36px] inline-flex items-center justify-center text-center whitespace-nowrap">Sign in</Link>
+              <Link href="/onboard" className="w-full sm:w-auto border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-6 py-2 font-mono text-xs min-h-[36px] inline-flex items-center justify-center text-center whitespace-nowrap">Start diagnostic test →</Link>
+              <Link href="/learn" className="w-full sm:w-auto border border-orchid-border text-orchid-secondary hover:border-orchid-blue hover:text-orchid-blue px-6 py-2 font-mono text-xs min-h-[36px] inline-flex items-center justify-center text-center whitespace-nowrap">Try as guest →</Link>
+            </div>
+          </div>
+
+          <section id="activity" aria-label="Activity" className="mt-6 min-w-0 scroll-mt-28">
+            <h2 className="mb-3 font-mono text-[12px] uppercase tracking-wider text-orchid-muted">
+              Activity
+            </h2>
+            <div className="w-full max-w-full min-w-0 overflow-hidden">
+              <ActivityHeatmap data={activity} />
+            </div>
+          </section>
+
+          </div>
+      </ProfileShell>
+    )
+  }
+
+  if (user && !scores) {
+    // Avoid infinite "Loading scores…" when token is expired or backend returns 401.
+    // Show actionable error with sign-in CTA instead of hanging.
+    if (error) {
+      return (
+        <ProfileShell name={user.name} studentId={user.student_id} isAdmin={isStaffRole(user.role)}>
+          <div className="mx-auto px-4 sm:px-6 py-20 overflow-x-hidden min-w-0">
+            <div style={{ fontFamily: monoFont, fontSize: 14, color: 'var(--text-muted)', textAlign: 'center' }}>
+              {error}
+              <div className="mt-4 flex gap-3 justify-center">
+                <Link href="/login" className="border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-6 py-2 font-mono text-xs min-h-[36px] inline-flex items-center justify-center">Sign in</Link>
+                <button type="button" onClick={() => window.location.reload()} className="border border-orchid-border text-orchid-secondary px-6 py-2 font-mono text-xs min-h-[36px] inline-flex items-center justify-center">Retry</button>
+              </div>
+            </div>
+          </div>
+        </ProfileShell>
+      )
+    }
+    return (
+      <ProfileShell name={user.name} studentId={user.student_id} isAdmin={isStaffRole(user.role)}>
+        <div className="mx-auto px-4 sm:px-6 py-20 overflow-x-hidden min-w-0">
+          <div style={{ fontFamily: monoFont, fontSize: 14, color: 'var(--text-muted)', textAlign: 'center' }}>
+            Loading scores…
+          </div>
+        </div>
+      </ProfileShell>
+    )
+  }
+
+  return (
+    <ProfileShell
+      name={user.name}
+      studentId={user.student_id}
+      username={user.username}
+      level={scores?.level}
+      streak={scores?.current_streak}
+      avatarUrl={avatarUrl}
+      avatarPreset={avatarPreset}
+      dueReviews={dueReviews}
+      isAdmin={isStaffRole(user.role)}
+    >
+        <a href="#profile-main" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-orchid-surface focus:px-4 focus:py-2 focus:font-mono focus:text-xs focus:text-orchid-blue">
+          Skip to profile content
+        </a>
+        <div id="profile-main" className="mx-auto w-full max-w-[820px] min-w-0 px-4 sm:px-6 py-8 sm:py-12 overflow-x-hidden">
+          <div className="min-w-0">
+        {/* One header: identity, XP, where you are, and the small actions folded onto it so they
+            do not each become their own block. */}
+        <ProfileHeader
+          name={user.name}
+          scores={effScores ?? scores}
+          avatarSeed={user.student_id}
+          avatarUrl={avatarPreset !== null ? undefined : avatarUrl}
+          avatarPreset={avatarPreset}
+          catalogue={levelCatalog}
+          progress={progress}
+          frontierLabel={frontierLabel}
+          footer={
+            <>
+              {(isNew && placementCompleted === false) && (
+                <Link href="/onboard" className="text-orchid-blue hover:text-orchid-blue-hover">
+                  New here? Take the diagnostic →
+                </Link>
+              )}
+              <Link href="/levels" className="text-orchid-blue hover:text-orchid-blue-hover">
+                {myLevel ? `Level: ${levelInfo(myLevel)?.name}` : 'Choose your level'} →
+              </Link>
+              <Link href="/plan" className="text-orchid-blue hover:text-orchid-blue-hover">
+                Plan your learning →
+              </Link>
+              {/* /how-it-works was reachable only from the landing-page header and a line on the
+                  docs index, so once a learner was inside the app there was no path to the page
+                  that explains the numbers on this one. It belongs here, next to Plan. */}
+              <Link href="/how-it-works" className="text-orchid-blue hover:text-orchid-blue-hover">
+                How Orchid works →
+              </Link>
+              {effScores && !isLoggedIn() && (
+                <DailyGoalControl
+                  current={effScores.daily_xp_goal}
+                  onSaved={g => {
+                    setGoalOverride(g)
+                    const sid = user.student_id || getGuestId() || ''
+                    if (sid) {
+                      getScores(sid).then(setScores).catch(() => {})
+                    }
+                  }}
+                />
+              )}
+            </>
+          }
+        />
+
+        {/* Activity is the second thing on the page. */}
+        <section id="activity" aria-label="Activity" className="mt-6 min-w-0 scroll-mt-28">
+          <h2 className="mb-3 font-mono text-[12px] uppercase tracking-wider text-orchid-muted">
+            Activity
+          </h2>
+          <div className="w-full max-w-full min-w-0 overflow-hidden">
+            <ActivityHeatmap data={activity} />
+          </div>
+        </section>
+
+        {scores.paused_until && (
+          <div className="mt-6 w-full max-w-full min-w-0 overflow-hidden border border-orchid-border bg-orchid-surface p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+            <p className="flex items-center gap-2 font-mono text-xs text-orchid-primary min-w-0">
+              <PauseIcon
+                size={14}
+                duration={1.5}
+                color="var(--text-primary, currentColor)"
+                aria-hidden="true"
+              />
+              <span className="min-w-0 break-words [overflow-wrap:anywhere] leading-snug">
+                Paused until {scores.paused_until}: due reviews are hidden
+              </span>
+            </p>
+            <Link href="/settings" className="w-full sm:w-auto sm:shrink-0 border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-4 py-2 font-mono text-xs min-h-[36px] inline-flex items-center justify-center text-center whitespace-nowrap">
+              Resume
+            </Link>
+          </div>
+        )}
+
+        {dueReviews > 0 && (
+          <Link
+            href="/review"
+            className="mt-6 flex w-full min-w-0 flex-col gap-2 bg-orchid-surface border border-orchid-blue-faint px-4 py-3 hover:border-orchid-blue transition-colors sm:flex-row sm:items-center sm:justify-between"
+          >
+            <span className="flex items-center gap-2 font-mono text-xs text-orchid-blue min-w-0">
+              {/* An icon, not the hourglass emoji (U+23F3) this replaced. Decorative: the
+                  sentence beside it already says what the line is, so a screen reader
+                  announcing "hourglass" would only add noise. */}
+              <HourglassIcon
+                size={14}
+                duration={1.5}
+                color="var(--accent-blue)"
+                aria-hidden="true"
+              />
+              <span className="min-w-0 break-words [overflow-wrap:anywhere] leading-snug">
+                {dueReviews} concept{dueReviews !== 1 ? 's' : ''} due for review
+              </span>
+            </span>
+            <span className="font-mono text-[12px] text-orchid-blue border border-orchid-blue-faint px-3 py-1.5 shrink-0 inline-flex items-center justify-center min-h-[36px] w-full sm:w-auto text-center whitespace-nowrap">
+              Review Now →
+            </span>
+          </Link>
+        )}
+
+        {/* Quiz gate. Every number here is the server's: whether the gate is open
+            (quiz_due), how much it is (quiz_gate_xp) and how far along the learner is
+            (xp_since_quiz). The block had a literal 50 in the copy, in the bar and in an
+            `xp_total >= 50` fallback for a field the server does send, so ADR-020's rescale
+            could move the gate and leave all three describing the old one. */}
+        {scores && scores.quiz_due && (
+          <div className="mt-6 w-full min-w-0 overflow-hidden border border-orchid-blue bg-orchid-surface p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+            <div className="w-full sm:flex-1 min-w-0">
+              <div className="flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:gap-2 flex-wrap">
+                <span className="shrink-0 bg-orchid-blue text-white px-2 py-0.5 font-mono text-[11px] uppercase tracking-wider">Quiz due</span>
+                <span className="break-words font-mono text-[12px] sm:text-xs text-orchid-primary">{quizGate ? `${quizGate} XP reached: mastery check recommended` : 'mastery check recommended'}</span>
+              </div>
+              {quizGate && (
+                <div className="mt-2 h-1 bg-orchid-code overflow-hidden">
+                  <div className="h-full bg-orchid-blue" style={{ width: `${Math.min(((scores.xp_since_quiz ?? scores.xp_total) / quizGate) * 100, 100)}%` }} />
+                </div>
+              )}
+            </div>
+            <Link href="/goals?quiz=1" className="w-full sm:w-auto sm:shrink-0 border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-6 py-2 font-mono text-xs min-h-[36px] inline-flex items-center justify-center text-center whitespace-nowrap">
+              Start the quiz →
+            </Link>
+          </div>
+        )}
+
+        <RecommendedTaskList shelf={head} loading={shelf === null} />
+
+        {efficacy && efficacy.concepts_touched > 0 && (
+          <section id="how-doing" aria-label="How you are doing" className="mt-6 min-w-0 scroll-mt-28">
+            <h2 className="mb-2 font-mono text-[12px] uppercase tracking-wider text-orchid-muted">
+              How you&apos;re doing
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 min-w-0">
+              {[
+                { label: 'First-pass', value: `${Math.round(efficacy.first_pass_rate * 100)}%`, hint: 'correct on attempt 1' },
+                { label: 'Second-pass', value: `${Math.round(efficacy.second_pass_rate * 100)}%`, hint: 'correct within 2 tries' },
+                { label: 'Avg attempts', value: efficacy.avg_attempts_per_concept.toFixed(2), hint: 'per concept' },
+                { label: 'Concepts', value: String(efficacy.concepts_touched), hint: `${efficacy.total_attempts} attempts` },
+              ].map(m => (
+                <div key={m.label} className="border border-orchid-border bg-orchid-surface p-3 min-w-0">
+                  <div className="font-mono text-[11px] uppercase text-orchid-muted">{m.label}</div>
+                  <div className="font-mono text-xl text-orchid-blue mt-1 truncate">{m.value}</div>
+                  <div className="font-mono text-[11px] text-orchid-secondary mt-0.5 truncate">{m.hint}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <section id="struggles" aria-label="Struggles" className="mt-6 min-w-0 scroll-mt-28">
+          <StrugglesSection weaknesses={weaknesses} />
+          <div className="mt-2">
+            <Link href="/history" className="font-mono text-[12px] text-orchid-blue hover:text-orchid-blue-hover">
+              Every question you&apos;ve answered →
+            </Link>
+          </div>
+        </section>
+          </div>
+        </div>
+    </ProfileShell>
+  )
+}

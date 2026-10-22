@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Inside out",
+    "section": "Inside out",
+    "subgoals": [
+      "Read a composition in the right order",
+      "Evaluate the inner function first",
+      "Compute a value"
+    ]
+  },
+  {
+    "label": "Order matters",
+    "section": "Order matters",
+    "subgoals": [
+      "Show the two orders differ",
+      "State the domain condition",
+      "Explain why composition can fail to exist"
+    ]
+  },
+  {
+    "label": "Composition and inverses",
+    "section": "Composition and inverses",
+    "subgoals": [
+      "Define an inverse by composition",
+      "Check an inverse both ways",
+      "Invert a composition"
+    ]
+  }
+]

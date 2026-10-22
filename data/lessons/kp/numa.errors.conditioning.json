@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Sensitivity of the answer",
+    "section": "Sensitivity of the answer",
+    "subgoals": [
+      "Perturb the data relatively",
+      "Measure the relative change in the answer",
+      "Form their ratio as the condition number"
+    ]
+  },
+  {
+    "label": "Worked: raising to a power",
+    "section": "Worked: raising to a power",
+    "subgoals": [
+      "Differentiate the power",
+      "Form x times the derivative over the function",
+      "Read the exponent as the condition number"
+    ]
+  },
+  {
+    "label": "Conditioning is not stability",
+    "section": "Conditioning is not stability",
+    "subgoals": [
+      "Distinguish the problem's sensitivity from the method's error",
+      "Multiply them for the total error",
+      "Decide what to change"
+    ]
+  }
+]

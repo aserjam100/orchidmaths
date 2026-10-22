@@ -1,0 +1,15 @@
+{
+  "concept": "arith.mult.word_tables",
+  "setup": "There are [[groups]] groups with [[per_group]] [[item]] in each group.",
+  "steps": [
+    {
+      "fact": "groups",
+      "say": "Equal groups mean multiply: [[groups]] groups of [[per_group]]."
+    },
+    {
+      "fact": "total",
+      "say": "[[groups]] × [[per_group]] = [[total]]."
+    }
+  ],
+  "answer": "There are [[total]] [[item]] altogether."
+}

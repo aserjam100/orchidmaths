@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Section 4.2 Trees",
+    "section": "Section 4.2 Trees",
+    "subgoals": [
+      "Delete edges until no cycle remains",
+      "Keep every vertex connected",
+      "Count edges to verify n-1"
+    ]
+  },
+  {
+    "label": "Definition of a Tree.",
+    "section": "Definition of a Tree.",
+    "subgoals": [
+      "Test connectedness across all pairs",
+      "Search for any cycle to fail the test",
+      "Accept connected plus acyclic as a tree"
+    ]
+  },
+  {
+    "label": "Subsection  Properties of Trees",
+    "section": "Subsection  Properties of Trees",
+    "subgoals": [
+      "Count edges against vertices minus one",
+      "Remove any edge to disconnect the tree",
+      "Add any edge to create exactly one cycle"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "concept": "alg.quad.vertex_form",
+  "setup": "You are writing \\(y = [[quad]]\\) in vertex form.",
+  "steps": [
+    {
+      "fact": "half",
+      "say": "Half of the \\(x\\)-coefficient is \\([[half]]\\), so the completed square is \\([[square]]\\)."
+    },
+    {
+      "fact": "k",
+      "say": "Adjusting the constant leaves \\(y = [[vertex_form]]\\), so \\(h = [[h]]\\) and \\(k = [[k]]\\)."
+    },
+    {
+      "fact": "h",
+      "say": "The pair is \\([[h]],[[k]]\\), with \\(h\\) first."
+    }
+  ],
+  "answer": "So \\(y = [[vertex_form]]\\) and \\((h,k) = ([[h]],[[k]])\\)."
+}

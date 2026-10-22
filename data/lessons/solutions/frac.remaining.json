@@ -1,0 +1,15 @@
+{
+  "concept": "frac.remaining",
+  "setup": "Part of a whole is used, and you are asked what fraction remains.",
+  "steps": [
+    {
+      "fact": "out_num",
+      "say": "The whole is one, written over the same denominator as the part used, so the remainder is a subtraction from it."
+    },
+    {
+      "fact": "out_den",
+      "say": "That subtraction gives \\(\\frac{[[out_num]]}{[[out_den]]}\\). Reading the answer as a remainder is what makes it a fraction of the whole rather than a count of anything."
+    }
+  ],
+  "answer": "So the fraction remaining is \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

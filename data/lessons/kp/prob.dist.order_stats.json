@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Sorting the sample",
+    "section": "Sorting the sample",
+    "subgoals": [
+      "Sort the observations",
+      "Name the maximum and minimum",
+      "Write the maximum event as an intersection"
+    ]
+  },
+  {
+    "label": "Worked: the maximum of uniforms",
+    "section": "Worked: the maximum of uniforms",
+    "subgoals": [
+      "Intersect the n events",
+      "Multiply the per-observation probabilities",
+      "Evaluate x to the n at a point"
+    ]
+  },
+  {
+    "label": "The minimum and the density",
+    "section": "The minimum and the density",
+    "subgoals": [
+      "Write the minimum's survival probability",
+      "Differentiate for the maximum's density",
+      "Use the density to get an expectation"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The four sums",
+    "section": "The four sums",
+    "subgoals": [
+      "Average the two angles",
+      "Halve the difference",
+      "Choose the pair of factors by the case"
+    ]
+  },
+  {
+    "label": "Deriving them",
+    "section": "Deriving them",
+    "subgoals": [
+      "Write the angles around their average",
+      "Add and subtract the product formulas",
+      "Solve for the sum or difference"
+    ]
+  },
+  {
+    "label": "Uses",
+    "section": "Uses",
+    "subgoals": [
+      "Turn interference into an envelope",
+      "Read the beat frequency",
+      "Factor an equation into solvable cases"
+    ]
+  }
+]

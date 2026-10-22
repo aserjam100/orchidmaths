@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Rationals between any two reals",
+    "section": "Rationals between any two reals",
+    "subgoals": [
+      "Choose n larger than the reciprocal of the gap",
+      "Lay down the grid of step one over n",
+      "Select the grid point inside the gap"
+    ]
+  },
+  {
+    "label": "Irrationals between any two reals",
+    "section": "Irrationals between any two reals",
+    "subgoals": [
+      "Find a rational inside the interval",
+      "Add a small irrational",
+      "Stay inside the interval"
+    ]
+  },
+  {
+    "label": "Consequences",
+    "section": "Consequences",
+    "subgoals": [
+      "Apply density to a subinterval",
+      "Repeat to get infinitely many",
+      "Separate density from completeness"
+    ]
+  }
+]

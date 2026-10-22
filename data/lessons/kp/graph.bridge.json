@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Edges whose removal disconnects",
+    "section": "Edges whose removal disconnects",
+    "subgoals": [
+      "Delete an edge and count components",
+      "Check whether the edge lies on a cycle",
+      "Name the 2-edge-connected case"
+    ]
+  },
+  {
+    "label": "Worked: trees and cycles",
+    "section": "Worked: trees and cycles",
+    "subgoals": [
+      "Count n-1 bridges in a tree",
+      "See 0 bridges in a cycle",
+      "Count all leaf edges in a star"
+    ]
+  },
+  {
+    "label": "Bridges and cut vertices",
+    "section": "Bridges and cut vertices",
+    "subgoals": [
+      "Separate the two sides",
+      "Relate a bridge to Tutte's condition",
+      "Distinguish edge cuts from vertex cuts"
+    ]
+  }
+]

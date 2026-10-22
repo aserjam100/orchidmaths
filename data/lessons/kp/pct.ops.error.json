@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Find the absolute difference",
+    "section": "Find the absolute difference",
+    "subgoals": [
+      "Subtract the measured and accepted values",
+      "Take the absolute value",
+      "Treat an overestimate and an underestimate alike"
+    ]
+  },
+  {
+    "label": "Divide by the accepted value",
+    "section": "Divide by the accepted value",
+    "subgoals": [
+      "Use the accepted value as the reference",
+      "Multiply by 100",
+      "Write the rate as a percent"
+    ]
+  },
+  {
+    "label": "Interpret the result",
+    "section": "Interpret the result",
+    "subgoals": [
+      "Read the percent as a miss of the accepted value",
+      "Keep the answer positive",
+      "Distinguish percent error from percent change"
+    ]
+  }
+]

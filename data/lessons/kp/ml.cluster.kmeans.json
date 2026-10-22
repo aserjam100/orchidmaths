@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Assign, then move the centroid",
+    "section": "Assign, then move the centroid",
+    "subgoals": [
+      "Assign each point to the nearest centre",
+      "Average the assigned coordinates",
+      "Repeat until assignments stop"
+    ]
+  },
+  {
+    "label": "Worked: one centroid update",
+    "section": "Worked: one centroid update",
+    "subgoals": [
+      "Average x over (1,1),(3,5),(5,3)",
+      "Average y over the same points",
+      "Write the centroid as (3, 3)"
+    ]
+  },
+  {
+    "label": "Choosing k and when k-means fails",
+    "section": "Choosing k and when k-means fails",
+    "subgoals": [
+      "Pick k by validation or the elbow",
+      "Check the spherical-cluster assumption",
+      "Spread the starting centres with k-means++"
+    ]
+  }
+]

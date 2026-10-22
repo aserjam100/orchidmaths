@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Natural exponential derivative",
+    "section": "",
+    "subgoals": [
+      "Differentiate e^x to e^x",
+      "Extend with the chain rule to e^u",
+      "Differentiate e^(3x) to 3e^(3x)"
+    ]
+  },
+  {
+    "label": "General base power rule",
+    "section": "",
+    "subgoals": [
+      "Rewrite a^x as e^(x ln a)",
+      "Differentiate a^x to a^x ln a",
+      "Differentiate 2^x to 2^x ln 2"
+    ]
+  },
+  {
+    "label": "Worked general-base examples",
+    "section": "",
+    "subgoals": [
+      "Differentiate 2^(3x) to 3 ln 2 * 2^(3x)",
+      "Add chain-rule factors for a^(kx)",
+      "Confirm 5^(2x) gives 2 ln 5 * 5^(2x)"
+    ]
+  }
+]

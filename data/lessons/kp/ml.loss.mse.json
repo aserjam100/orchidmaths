@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: MSE of two predictions",
+    "section": "Worked: MSE of two predictions",
+    "subgoals": [
+      "Square each prediction error",
+      "Sum the squared errors",
+      "Divide by the sample count"
+    ]
+  },
+  {
+    "label": "Worked: one gradient step",
+    "section": "Worked: one gradient step",
+    "subgoals": [
+      "Differentiate to get y minus t",
+      "Step against the gradient",
+      "Verify the loss decreased"
+    ]
+  },
+  {
+    "label": "When MSE is the wrong loss",
+    "section": "When MSE is the wrong loss",
+    "subgoals": [
+      "Score a confident wrong prediction",
+      "Compare against cross-entropy growth",
+      "Choose the loss by target type"
+    ]
+  }
+]

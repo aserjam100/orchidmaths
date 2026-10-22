@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The statement",
+    "section": "The statement",
+    "subgoals": [
+      "Assume continuity on the closed interval",
+      "Take a value between the endpoint values",
+      "Conclude a point where it is attained"
+    ]
+  },
+  {
+    "label": "Proof by bisection",
+    "section": "Proof by bisection",
+    "subgoals": [
+      "Check the sign at the endpoints",
+      "Bisect keeping the sign change",
+      "Let continuity fix the value"
+    ]
+  },
+  {
+    "label": "Consequences",
+    "section": "Consequences",
+    "subgoals": [
+      "Find a root of an odd-degree polynomial",
+      "Produce a fixed point",
+      "Recognise the image as an interval"
+    ]
+  }
+]

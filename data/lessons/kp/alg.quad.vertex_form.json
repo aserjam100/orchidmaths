@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Complete the square",
+    "section": "Complete the square",
+    "subgoals": [
+      "Halve the x-coefficient",
+      "Add and subtract the square",
+      "Keep the expression's value"
+    ]
+  },
+  {
+    "label": "Read off the vertex",
+    "section": "Read off the vertex",
+    "subgoals": [
+      "Set h to minus half the coefficient",
+      "Adjust the constant to find k",
+      "Identify the vertex as (h,k)"
+    ]
+  },
+  {
+    "label": "Check by expanding",
+    "section": "Check by expanding",
+    "subgoals": [
+      "Expand the square",
+      "Compare the x-coefficient with -2h",
+      "Compare the constant with h^2+k"
+    ]
+  }
+]

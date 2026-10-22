@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The definition",
+    "section": "The definition",
+    "subgoals": [
+      "Fix epsilon",
+      "Choose one delta for the whole set",
+      "Apply it to every pair of points"
+    ]
+  },
+  {
+    "label": "Continuous but not uniformly",
+    "section": "Continuous but not uniformly",
+    "subgoals": [
+      "Compare the steepness near nought",
+      "Watch the required delta shrink",
+      "Contrast with the squaring function"
+    ]
+  },
+  {
+    "label": "Heine-Cantor and its uses",
+    "section": "Heine-Cantor and its uses",
+    "subgoals": [
+      "Restrict to a closed bounded interval",
+      "Invoke Heine-Cantor",
+      "Use it to interchange limits"
+    ]
+  }
+]

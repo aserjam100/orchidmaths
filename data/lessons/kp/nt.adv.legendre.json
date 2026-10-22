@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: residues mod 5",
+    "section": "Worked: residues mod 5",
+    "subgoals": [
+      "Square each residue 1 through 4",
+      "Sort the outputs into residues and non-residues",
+      "Read off (1/5), (4/5), (2/5)"
+    ]
+  },
+  {
+    "label": "Worked: Euler criterion mod 7",
+    "section": "Worked: Euler criterion mod 7",
+    "subgoals": [
+      "Halve p-1 to get the exponent 3",
+      "Raise 2 to the 3rd mod 7",
+      "Match the result against the square 3"
+    ]
+  },
+  {
+    "label": "Worked: the supplement for 2",
+    "section": "Worked: the supplement for 2",
+    "subgoals": [
+      "Reduce 17 mod 8",
+      "Apply the plus-or-minus-1 rule",
+      "Confirm with the witness 6"
+    ]
+  }
+]

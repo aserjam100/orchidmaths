@@ -1,0 +1,23 @@
+{
+  "concept": "trig.eq.quadratic",
+  "setup": "The equation is $[[eq]] = 0$, for $0^{\\circ} \\le x < 360^{\\circ}$.",
+  "steps": [
+    {
+      "fact": "eq",
+      "say": "A quadratic in a ratio factors like any other, so the equation is $[[factored]] = 0$."
+    },
+    {
+      "fact": "r1",
+      "say": "The first factor needs $\\sin x = [[r1]]$, which in one turn is reached at $[[s1]]$."
+    },
+    {
+      "fact": "r2",
+      "say": "The second needs $\\sin x = [[r2]]$, reached at $[[s2]]$."
+    },
+    {
+      "fact": "value",
+      "say": "Those are every angle from $0^{\\circ}$ up to but not including $360^{\\circ}$ that satisfies either factor, and together they are [[value]]."
+    }
+  ],
+  "answer": "So the equation has [[value]] [[noun]] in that interval."
+}

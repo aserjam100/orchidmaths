@@ -1,0 +1,29 @@
+[
+  {
+    "label": "When a product of nonzero elements is zero",
+    "section": "When a product of nonzero elements is zero",
+    "subgoals": [
+      "Test ab = 0 with a and b nonzero",
+      "Mark the shared factor with n",
+      "Exclude 0 from the definition"
+    ]
+  },
+  {
+    "label": "Worked: zero divisors in Z_4 and Z_6",
+    "section": "Worked: zero divisors in Z_4 and Z_6",
+    "subgoals": [
+      "Compute 2 times 2 mod 4",
+      "Compute 2 times 3 mod 6",
+      "Separate units from zero divisors"
+    ]
+  },
+  {
+    "label": "No zero divisors means cancellation",
+    "section": "No zero divisors means cancellation",
+    "subgoals": [
+      "Subtract ac from ab",
+      "Factor a(b - c) = 0",
+      "Conclude b = c with no zero divisors"
+    ]
+  }
+]

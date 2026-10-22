@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Partial sums",
+    "section": "Partial sums",
+    "subgoals": [
+      "Define the partial sums",
+      "Form their sequence",
+      "Recognise the sum as their limit"
+    ]
+  },
+  {
+    "label": "Worked: the geometric series",
+    "section": "Worked: the geometric series",
+    "subgoals": [
+      "Subtract the shifted partial sum",
+      "Isolate the remainder",
+      "Send the remainder to zero"
+    ]
+  },
+  {
+    "label": "The divergence test",
+    "section": "The divergence test",
+    "subgoals": [
+      "Express the term as a difference of partial sums",
+      "Use convergence of the partial sums",
+      "Recall the harmonic counterexample"
+    ]
+  }
+]

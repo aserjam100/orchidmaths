@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiply fractions",
+    "section": "",
+    "subgoals": [
+      "Multiply the numerators",
+      "Multiply the denominators",
+      "Simplify the product"
+    ]
+  },
+  {
+    "label": "Fraction multiplication rule",
+    "section": "",
+    "subgoals": [
+      "State the rule for products of fractions",
+      "Apply it step by step",
+      "Cancel common factors first when possible"
+    ]
+  },
+  {
+    "label": "Simplify fractions",
+    "section": "",
+    "subgoals": [
+      "Divide by a common factor",
+      "Reduce to lowest terms",
+      "Verify the product"
+    ]
+  }
+]

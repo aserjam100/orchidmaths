@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Raise each factor",
+    "section": "Raise each factor",
+    "subgoals": [
+      "Identify the coefficient and the variable",
+      "Apply the exponent to both factors",
+      "Write the coefficient power and the variable power"
+    ]
+  },
+  {
+    "label": "Multiply the powers",
+    "section": "Multiply the powers",
+    "subgoals": [
+      "Use the rule (ab)^n = a^n b^n",
+      "Evaluate the coefficient power",
+      "Keep the variable power unchanged"
+    ]
+  },
+  {
+    "label": "Check with numbers",
+    "section": "Check with numbers",
+    "subgoals": [
+      "Substitute 1 for the variable",
+      "Substitute a second value",
+      "Compare both results with the simplified form"
+    ]
+  }
+]

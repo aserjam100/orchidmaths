@@ -1,0 +1,29 @@
+[
+  {
+    "label": "One-sided limits exist",
+    "section": "One-sided limits exist",
+    "subgoals": [
+      "Take a monotone function increasing",
+      "Use the supremum on the left",
+      "Use the infimum on the right"
+    ]
+  },
+  {
+    "label": "Countably many jumps",
+    "section": "Countably many jumps",
+    "subgoals": [
+      "Associate a rational to each jump",
+      "Keep the assignment injective",
+      "Conclude countably many jumps"
+    ]
+  },
+  {
+    "label": "Integrability and the left limit",
+    "section": "Integrability and the left limit",
+    "subgoals": [
+      "List the jumps as a null set",
+      "Read the left limit as a supremum",
+      "Describe the image interval"
+    ]
+  }
+]

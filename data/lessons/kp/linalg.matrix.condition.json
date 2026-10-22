@@ -1,0 +1,29 @@
+[
+  {
+    "label": "How much a matrix can stretch",
+    "section": "How much a matrix can stretch",
+    "subgoals": [
+      "Read the singular values",
+      "Divide the largest by the smallest",
+      "Compare the result with 1"
+    ]
+  },
+  {
+    "label": "Worked: condition numbers from singular values",
+    "section": "Worked: condition numbers from singular values",
+    "subgoals": [
+      "Divide 10 by 2",
+      "Divide 5 by 0.5",
+      "Divide 9 by 9"
+    ]
+  },
+  {
+    "label": "Why conditioning matters",
+    "section": "Why conditioning matters",
+    "subgoals": [
+      "Bound the relative error by kappa",
+      "See digits lost near singularity",
+      "Diagnose with the SVD"
+    ]
+  }
+]

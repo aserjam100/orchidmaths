@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Clearing below the pivot",
+    "section": "Clearing below the pivot",
+    "subgoals": [
+      "Choose the pivot row",
+      "Subtract a multiple to zero an entry",
+      "Repeat for the next unknown"
+    ]
+  },
+  {
+    "label": "Worked: a two-by-two system",
+    "section": "Worked: a two-by-two system",
+    "subgoals": [
+      "Form the multiplier",
+      "Subtract to eliminate",
+      "Back-substitute for the remaining unknown"
+    ]
+  },
+  {
+    "label": "Cost and the back substitution",
+    "section": "Cost and the back substitution",
+    "subgoals": [
+      "Count the operations",
+      "Note the directness",
+      "Link accuracy to the pivots"
+    ]
+  }
+]

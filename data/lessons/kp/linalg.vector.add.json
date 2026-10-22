@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Geometric representation",
+    "section": "",
+    "subgoals": [
+      "Place vectors tail to tail",
+      "Complete the parallelogram diagonal",
+      "Read the diagonal as the sum"
+    ]
+  },
+  {
+    "label": "Components and coordinate representation",
+    "section": "",
+    "subgoals": [
+      "Split each vector into x/y/z components",
+      "Add matching components separately",
+      "Reassemble the sum vector"
+    ]
+  },
+  {
+    "label": "Vector operations",
+    "section": "",
+    "subgoals": [
+      "Add component-wise for u + v",
+      "Scale each component by r for r v",
+      "Subtract by adding the opposite vector"
+    ]
+  }
+]

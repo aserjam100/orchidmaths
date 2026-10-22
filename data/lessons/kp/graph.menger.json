@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Disjoint paths and cuts",
+    "section": "Disjoint paths and cuts",
+    "subgoals": [
+      "Pack internally disjoint paths",
+      "Find the smallest separating set",
+      "Equate packing and covering"
+    ]
+  },
+  {
+    "label": "Worked: a small separation",
+    "section": "Worked: a small separation",
+    "subgoals": [
+      "Take two triangles sharing a vertex",
+      "See one separating vertex",
+      "See one internally disjoint path"
+    ]
+  },
+  {
+    "label": "Packing and covering",
+    "section": "Packing and covering",
+    "subgoals": [
+      "Specialise to edge-disjoint paths",
+      "Derive kappa <= lambda <= delta",
+      "Compare with max-flow min-cut"
+    ]
+  }
+]

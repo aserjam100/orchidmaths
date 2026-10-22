@@ -1,0 +1,3366 @@
+[
+  {
+    "concept_id": "alg.eq.vars_both_sides",
+    "source": "teaching/alg.eq.vars_both_sides.md"
+  },
+  {
+    "concept_id": "alg.eq.vars_both_sides.word",
+    "source": "teaching/alg.eq.vars_both_sides.md"
+  },
+  {
+    "concept_id": "alg.exp.evaluate",
+    "source": "teaching/alg.exp.evaluate.md"
+  },
+  {
+    "concept_id": "alg.factor.diff_squares",
+    "source": "teaching/alg.factor.diff_squares.md"
+  },
+  {
+    "concept_id": "alg.factor.gcf",
+    "source": "teaching/alg.factor.gcf.md"
+  },
+  {
+    "concept_id": "alg.func.evaluate",
+    "source": "teaching/alg.func.evaluate.md"
+  },
+  {
+    "concept_id": "alg.func.linear",
+    "source": "teaching/alg.func.linear.md"
+  },
+  {
+    "concept_id": "alg.func.notation",
+    "source": "teaching/alg.func.notation.md"
+  },
+  {
+    "concept_id": "alg.ineq.compound",
+    "source": "teaching/alg.ineq.compound.md"
+  },
+  {
+    "concept_id": "alg.ineq.two_var",
+    "source": "teaching/alg.ineq.two_var.md"
+  },
+  {
+    "concept_id": "alg.linear.graph",
+    "source": "teaching/alg.linear.graph.md"
+  },
+  {
+    "concept_id": "alg.linear.parallel_perp",
+    "source": "teaching/alg.linear.parallel_perp.md"
+  },
+  {
+    "concept_id": "alg.linear.slope",
+    "source": "teaching/alg.linear.slope.md"
+  },
+  {
+    "concept_id": "alg.linear.standard_form",
+    "source": "teaching/alg.linear.standard_form.md"
+  },
+  {
+    "concept_id": "alg.poly.mult_mono",
+    "source": "teaching/alg.poly.mult_mono.md"
+  },
+  {
+    "concept_id": "alg.quad.discriminant",
+    "source": "teaching/alg.quad.discriminant.md"
+  },
+  {
+    "concept_id": "alg.seq.sum_arith",
+    "source": "teaching/alg.seq.sum_arith.md"
+  },
+  {
+    "concept_id": "alg.systems.substitution",
+    "source": "teaching/alg.systems.substitution.md"
+  },
+  {
+    "concept_id": "alg.systems.word",
+    "source": "teaching/alg.systems.word.md"
+  },
+  {
+    "concept_id": "arith.exp.neg",
+    "source": "teaching/arith.exp.neg.md"
+  },
+  {
+    "concept_id": "arith.exp.zero",
+    "source": "teaching/arith.exp.zero.md"
+  },
+  {
+    "concept_id": "arith.factor.gcf",
+    "source": "teaching/arith.factor.gcf.md"
+  },
+  {
+    "concept_id": "arith.neg.add_sub",
+    "source": "teaching/arith.neg.add_sub.md"
+  },
+  {
+    "concept_id": "arith.neg.mult_div",
+    "source": "teaching/arith.neg.mult_div.md"
+  },
+  {
+    "concept_id": "arith.neg.number_line",
+    "source": "teaching/arith.neg.number_line.md"
+  },
+  {
+    "concept_id": "arith.neg.order_ops",
+    "source": "teaching/arith.neg.order_ops.md"
+  },
+  {
+    "concept_id": "arith.order_ops.basic",
+    "source": "teaching/arith.order_ops.basic.md"
+  },
+  {
+    "concept_id": "arith.order_ops.full",
+    "source": "teaching/arith.order_ops.full.md"
+  },
+  {
+    "concept_id": "arith.order_ops.nested",
+    "source": "teaching/arith.order_ops.nested.md"
+  },
+  {
+    "concept_id": "arith.sci_notation.ops",
+    "source": "teaching/arith.sci_notation.ops.md"
+  },
+  {
+    "concept_id": "arith.sqrt.perfect",
+    "source": "teaching/arith.sqrt.perfect.md"
+  },
+  {
+    "concept_id": "discrete.graphs.basics",
+    "source": "teaching/discrete.graphs.basics.md"
+  },
+  {
+    "concept_id": "discrete.graphs.paths",
+    "source": "teaching/discrete.graphs.paths.md"
+  },
+  {
+    "concept_id": "discrete.graphs.trees",
+    "source": "teaching/discrete.graphs.trees.md"
+  },
+  {
+    "concept_id": "discrete.logic.connectives",
+    "source": "teaching/discrete.logic.connectives.md"
+  },
+  {
+    "concept_id": "discrete.logic.quantifiers",
+    "source": "teaching/discrete.logic.quantifiers.md"
+  },
+  {
+    "concept_id": "discrete.logic.truth_tables",
+    "source": "teaching/discrete.logic.truth_tables.md"
+  },
+  {
+    "concept_id": "discrete.sequences.recurrence",
+    "source": "teaching/discrete.sequences.recurrence.md"
+  },
+  {
+    "concept_id": "discrete.sets.venn",
+    "source": "teaching/discrete.sets.venn.md"
+  },
+  {
+    "concept_id": "geo.basic.angle_measure",
+    "source": "teaching/geo.basic.angle_measure.md"
+  },
+  {
+    "concept_id": "geo.basic.angles",
+    "source": "teaching/geo.basic.angles.md"
+  },
+  {
+    "concept_id": "geo.basic.complementary",
+    "source": "teaching/geo.basic.complementary.md"
+  },
+  {
+    "concept_id": "geo.basic.points_lines",
+    "source": "teaching/geo.basic.points_lines.md"
+  },
+  {
+    "concept_id": "geo.basic.vertical",
+    "source": "teaching/geo.basic.vertical.md"
+  },
+  {
+    "concept_id": "geo.circle.area",
+    "source": "teaching/geo.circle.area.md"
+  },
+  {
+    "concept_id": "geo.circle.circumference",
+    "source": "teaching/geo.circle.circumference.md"
+  },
+  {
+    "concept_id": "geo.circle.parts",
+    "source": "teaching/geo.circle.parts.md"
+  },
+  {
+    "concept_id": "geo.coord.distance",
+    "source": "teaching/geo.coord.distance.md"
+  },
+  {
+    "concept_id": "geo.coord.midpoint",
+    "source": "teaching/geo.coord.midpoint.md"
+  },
+  {
+    "concept_id": "geo.coord.plot",
+    "source": "teaching/geo.coord.plot.md"
+  },
+  {
+    "concept_id": "geo.quad.area",
+    "source": "teaching/geo.quad.area.md"
+  },
+  {
+    "concept_id": "geo.quad.perimeter",
+    "source": "teaching/geo.quad.perimeter.md"
+  },
+  {
+    "concept_id": "geo.quad.types",
+    "source": "teaching/geo.quad.types.md"
+  },
+  {
+    "concept_id": "geo.solid.surface_area",
+    "source": "teaching/geo.solid.surface_area.md"
+  },
+  {
+    "concept_id": "geo.solid.volume_rect",
+    "source": "teaching/geo.solid.volume_rect.md"
+  },
+  {
+    "concept_id": "geo.triangle.angles",
+    "source": "teaching/geo.triangle.angles.md"
+  },
+  {
+    "concept_id": "geo.triangle.area",
+    "source": "teaching/geo.triangle.area.md"
+  },
+  {
+    "concept_id": "geo.triangle.types",
+    "source": "teaching/geo.triangle.types.md"
+  },
+  {
+    "concept_id": "linalg.systems.matrix",
+    "source": "teaching/linalg.systems.matrix.md"
+  },
+  {
+    "concept_id": "nt.adv.diophantine",
+    "source": "teaching/nt.adv.diophantine.md"
+  },
+  {
+    "concept_id": "nt.adv.fermat_little",
+    "source": "authored/nt.adv.fermat_little.md"
+  },
+  {
+    "concept_id": "nt.app.crypto",
+    "source": "teaching/nt.crypto.md"
+  },
+  {
+    "concept_id": "nt.basics.gcd_euclidean",
+    "source": "teaching/nt.gcd_euclidean.md"
+  },
+  {
+    "concept_id": "ode.adv.systems",
+    "source": "teaching/ode.systems.md"
+  },
+  {
+    "concept_id": "ode.first_order.exact",
+    "source": "teaching/ode.exact.md"
+  },
+  {
+    "concept_id": "ode.first_order.linear",
+    "source": "teaching/ode.linear_first.md"
+  },
+  {
+    "concept_id": "ode.first_order.separable",
+    "source": "teaching/ode.separable.md"
+  },
+  {
+    "concept_id": "ode.second_order.homogeneous",
+    "source": "teaching/ode.homogeneous.md"
+  },
+  {
+    "concept_id": "ode.second_order.nonhomogeneous",
+    "source": "teaching/ode.nonhomogeneous.md"
+  },
+  {
+    "concept_id": "ode.transforms.laplace",
+    "source": "teaching/ode.laplace.md"
+  },
+  {
+    "concept_id": "prealg.eq.one_step_add",
+    "source": "teaching/prealg.eq.one_step_add.md"
+  },
+  {
+    "concept_id": "prealg.eq.one_step_mult",
+    "source": "teaching/prealg.eq.one_step_mult.md"
+  },
+  {
+    "concept_id": "prealg.eq.two_step",
+    "source": "teaching/prealg.eq.two_step.md"
+  },
+  {
+    "concept_id": "prealg.eq.word",
+    "source": "teaching/prealg.eq.word.md"
+  },
+  {
+    "concept_id": "prealg.expr.distribute",
+    "source": "teaching/prealg.expr.distribute.md"
+  },
+  {
+    "concept_id": "prealg.expr.evaluate",
+    "source": "teaching/prealg.expr.evaluate.md"
+  },
+  {
+    "concept_id": "prealg.expr.like_terms",
+    "source": "teaching/prealg.expr.like_terms.md"
+  },
+  {
+    "concept_id": "prealg.ineq.one_step",
+    "source": "teaching/prealg.ineq.one_step.md"
+  },
+  {
+    "concept_id": "prealg.ineq.two_step",
+    "source": "teaching/prealg.ineq.two_step.md"
+  },
+  {
+    "concept_id": "prealg.var.concept",
+    "source": "teaching/prealg.var.concept.md"
+  },
+  {
+    "concept_id": "stat.data.bar_graph",
+    "source": "teaching/stat.data.bar_graph.md"
+  },
+  {
+    "concept_id": "stat.data.line_plot",
+    "source": "teaching/stat.data.line_plot.md"
+  },
+  {
+    "concept_id": "stat.data.mode",
+    "source": "teaching/stat.data.mode.md"
+  },
+  {
+    "concept_id": "stat.data.range",
+    "source": "teaching/stat.data.range.md"
+  },
+  {
+    "concept_id": "stat.data.read_table",
+    "source": "teaching/stat.data.read_table.md"
+  },
+  {
+    "concept_id": "topo.basics.continuous",
+    "source": "authored/topo.basics.continuous.md"
+  },
+  {
+    "concept_id": "topo.basics.metric",
+    "source": "authored/topo.basics.metric.md"
+  },
+  {
+    "concept_id": "topo.basics.open_closed",
+    "source": "authored/topo.basics.open_closed.md"
+  },
+  {
+    "concept_id": "topo.compact",
+    "source": "teaching/topo.compact.md"
+  },
+  {
+    "concept_id": "topo.connected",
+    "source": "teaching/topo.connected.md"
+  },
+  {
+    "concept_id": "topo.hausdorff",
+    "source": "teaching/topo.hausdorff.md"
+  },
+  {
+    "concept_id": "abstract.group.cyclic",
+    "source": "teaching/abstract.group.cyclic.md"
+  },
+  {
+    "concept_id": "abstract.group.order",
+    "source": "teaching/abstract.group.order.md"
+  },
+  {
+    "concept_id": "abstract.rings.ideal",
+    "source": "teaching/abstract.rings.ideal.md"
+  },
+  {
+    "concept_id": "abstract.rings.quotient",
+    "source": "teaching/abstract.rings.quotient.md"
+  },
+  {
+    "concept_id": "ml.perceptron",
+    "source": "teaching/ml.perceptron.md"
+  },
+  {
+    "concept_id": "ml.loss.mse",
+    "source": "teaching/ml.loss.mse.md"
+  },
+  {
+    "concept_id": "ml.forward_pass",
+    "source": "teaching/ml.forward_pass.md"
+  },
+  {
+    "concept_id": "ml.gradient_descent",
+    "source": "teaching/ml.gradient_descent.md"
+  },
+  {
+    "concept_id": "nt.basics.bezout",
+    "source": "teaching/nt.bezout.md"
+  },
+  {
+    "concept_id": "nt.basics.crt",
+    "source": "teaching/nt.crt.md"
+  },
+  {
+    "concept_id": "nt.adv.wilson",
+    "source": "teaching/nt.wilson.md"
+  },
+  {
+    "concept_id": "nt.basics.prime_inf",
+    "source": "teaching/nt.prime_inf.md"
+  },
+  {
+    "concept_id": "ode.second_order.variation_params",
+    "source": "teaching/ode.variation_params.md"
+  },
+  {
+    "concept_id": "ode.transforms.convolution",
+    "source": "teaching/ode.convolution.md"
+  },
+  {
+    "concept_id": "ode.systems.linear_phase",
+    "source": "teaching/ode.linear_phase.md"
+  },
+  {
+    "concept_id": "ode.numerical.euler",
+    "source": "teaching/ode.euler.md"
+  },
+  {
+    "concept_id": "complex.ops.modulus",
+    "source": "teaching/complex.modulus.md"
+  },
+  {
+    "concept_id": "complex.ops.argument",
+    "source": "teaching/complex.argument.md"
+  },
+  {
+    "concept_id": "complex.adv.euler_identity",
+    "source": "teaching/complex.euler_identity.md"
+  },
+  {
+    "concept_id": "complex.adv.cauchy_riemann",
+    "source": "teaching/complex.cauchy_riemann.md"
+  },
+  {
+    "concept_id": "complex.adv.residue",
+    "source": "teaching/complex.residue.md"
+  },
+  {
+    "concept_id": "ml.loss.cross_entropy",
+    "source": "teaching/ml.cross_entropy.md"
+  },
+  {
+    "concept_id": "ml.regularization",
+    "source": "teaching/ml.regularization.md"
+  },
+  {
+    "concept_id": "ml.overfitting",
+    "source": "teaching/ml.overfitting.md"
+  },
+  {
+    "concept_id": "ml.validation",
+    "source": "teaching/ml.validation.md"
+  },
+  {
+    "concept_id": "ml.optim.momentum",
+    "source": "teaching/ml.momentum.md"
+  },
+  {
+    "concept_id": "topo.quotient",
+    "source": "teaching/topo.quotient.md"
+  },
+  {
+    "concept_id": "topo.product",
+    "source": "teaching/topo.product.md"
+  },
+  {
+    "concept_id": "topo.urysohn",
+    "source": "teaching/topo.urysohn.md"
+  },
+  {
+    "concept_id": "topo.metrization",
+    "source": "teaching/topo.metrization.md"
+  },
+  {
+    "concept_id": "abstract.group.normal",
+    "source": "teaching/abstract.group.normal.md"
+  },
+  {
+    "concept_id": "abstract.group.lagrange",
+    "source": "teaching/abstract.group.lagrange.md"
+  },
+  {
+    "concept_id": "abstract.group.quotient_group",
+    "source": "teaching/abstract.group.quotient_group.md"
+  },
+  {
+    "concept_id": "abstract.rings.polynomial",
+    "source": "teaching/abstract.rings.polynomial.md"
+  },
+  {
+    "concept_id": "discrete.logic.equivalence",
+    "source": "teaching/discrete.equivalence.md"
+  },
+  {
+    "concept_id": "discrete.sets.relations",
+    "source": "teaching/discrete.relations.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.pigeonhole",
+    "source": "teaching/discrete.pigeonhole.md"
+  },
+  {
+    "concept_id": "discrete.graphs.eulerian",
+    "source": "teaching/discrete.eulerian.md"
+  },
+  {
+    "concept_id": "discrete.proof.strong_induction",
+    "source": "teaching/discrete.strong_induction.md"
+  },
+  {
+    "concept_id": "abstract.group.action",
+    "source": "teaching/abstract.group.action.md"
+  },
+  {
+    "concept_id": "abstract.group.sylow",
+    "source": "teaching/abstract.group.sylow.md"
+  },
+  {
+    "concept_id": "abstract.rings.ufd",
+    "source": "teaching/abstract.rings.ufd.md"
+  },
+  {
+    "concept_id": "abstract.field.extension",
+    "source": "teaching/abstract.field.extension.md"
+  },
+  {
+    "concept_id": "abstract.structures.galois",
+    "source": "teaching/abstract.structures.galois.md"
+  },
+  {
+    "concept_id": "topo.connected.path",
+    "source": "teaching/topo.path_connected.md"
+  },
+  {
+    "concept_id": "topo.compact.local",
+    "source": "teaching/topo.local_compact.md"
+  },
+  {
+    "concept_id": "topo.separation.tietze",
+    "source": "teaching/topo.tietze.md"
+  },
+  {
+    "concept_id": "topo.homotopy",
+    "source": "teaching/topo.homotopy.md"
+  },
+  {
+    "concept_id": "topo.manifold",
+    "source": "teaching/topo.manifold.md"
+  },
+  {
+    "concept_id": "ml.regularization.dropout",
+    "source": "teaching/ml.dropout.md"
+  },
+  {
+    "concept_id": "ml.arch.cnn",
+    "source": "teaching/ml.cnn.md"
+  },
+  {
+    "concept_id": "ml.arch.rnn",
+    "source": "teaching/ml.rnn.md"
+  },
+  {
+    "concept_id": "ml.optim.batchnorm",
+    "source": "teaching/ml.batchnorm.md"
+  },
+  {
+    "concept_id": "ml.eval.roc",
+    "source": "teaching/ml.roc.md"
+  },
+  {
+    "concept_id": "nt.adv.legendre",
+    "source": "teaching/nt.legendre.md"
+  },
+  {
+    "concept_id": "nt.adv.quadratic_reciprocity",
+    "source": "teaching/nt.quadratic_reciprocity.md"
+  },
+  {
+    "concept_id": "nt.basics.order_mod",
+    "source": "teaching/nt.order_mod.md"
+  },
+  {
+    "concept_id": "nt.adv.primitive_root",
+    "source": "teaching/nt.primitive_root.md"
+  },
+  {
+    "concept_id": "nt.adv.mobius",
+    "source": "teaching/nt.mobius.md"
+  },
+  {
+    "concept_id": "ode.numerical.rk4",
+    "source": "teaching/ode.rk4.md"
+  },
+  {
+    "concept_id": "ode.stability",
+    "source": "teaching/ode.stability.md"
+  },
+  {
+    "concept_id": "ode.pde.characteristics",
+    "source": "teaching/ode.characteristics.md"
+  },
+  {
+    "concept_id": "ode.transforms.fourier",
+    "source": "teaching/ode.fourier.md"
+  },
+  {
+    "concept_id": "ode.nonlinear.bifurcation",
+    "source": "teaching/ode.bifurcation.md"
+  },
+  {
+    "concept_id": "complex.adv.analytic",
+    "source": "teaching/complex.analytic.md"
+  },
+  {
+    "concept_id": "complex.series.laurent",
+    "source": "teaching/complex.laurent.md"
+  },
+  {
+    "concept_id": "complex.integral.contour",
+    "source": "teaching/complex.contour.md"
+  },
+  {
+    "concept_id": "complex.adv.harmonic",
+    "source": "teaching/complex.harmonic.md"
+  },
+  {
+    "concept_id": "complex.topology.riemann_sphere",
+    "source": "teaching/complex.riemann_sphere.md"
+  },
+  {
+    "concept_id": "nt.analytic.prime_number_theorem",
+    "source": "teaching/nt.pnt.md"
+  },
+  {
+    "concept_id": "nt.adv.dirichlet",
+    "source": "teaching/nt.dirichlet.md"
+  },
+  {
+    "concept_id": "nt.adv.sieve",
+    "source": "teaching/nt.sieve.md"
+  },
+  {
+    "concept_id": "ode.pde.wave",
+    "source": "teaching/ode.wave.md"
+  },
+  {
+    "concept_id": "ode.pde.heat",
+    "source": "teaching/ode.heat.md"
+  },
+  {
+    "concept_id": "ode.green.function",
+    "source": "teaching/ode.green.md"
+  },
+  {
+    "concept_id": "topo.connected.local_path",
+    "source": "teaching/topo.local_path.md"
+  },
+  {
+    "concept_id": "topo.compact.one_point",
+    "source": "teaching/topo.one_point.md"
+  },
+  {
+    "concept_id": "topo.separation.completely_regular",
+    "source": "teaching/topo.completely_regular.md"
+  },
+  {
+    "concept_id": "topo.homotopy.fundamental",
+    "source": "teaching/topo.fundamental.md"
+  },
+  {
+    "concept_id": "topo.manifold.orientability",
+    "source": "teaching/topo.orientability.md"
+  },
+  {
+    "concept_id": "ml.arch.transformer",
+    "source": "teaching/ml.transformer.md"
+  },
+  {
+    "concept_id": "ml.arch.gan",
+    "source": "teaching/ml.gan.md"
+  },
+  {
+    "concept_id": "ml.optim.adam",
+    "source": "teaching/ml.adam.md"
+  },
+  {
+    "concept_id": "ml.eval.calibration",
+    "source": "teaching/ml.calibration.md"
+  },
+  {
+    "concept_id": "ml.data.augmentation",
+    "source": "teaching/ml.augmentation.md"
+  },
+  {
+    "concept_id": "linalg.inner_product",
+    "source": "teaching/linalg.inner_product.md"
+  },
+  {
+    "concept_id": "linalg.decomp.lu",
+    "source": "teaching/linalg.lu.md"
+  },
+  {
+    "concept_id": "linalg.decomp.qr",
+    "source": "teaching/linalg.qr.md"
+  },
+  {
+    "concept_id": "linalg.decomp.svd",
+    "source": "teaching/linalg.svd.md"
+  },
+  {
+    "concept_id": "linalg.decomp.jordan",
+    "source": "teaching/linalg.jordan.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.stars_bars",
+    "source": "teaching/discrete.stars_bars.md"
+  },
+  {
+    "concept_id": "discrete.graphs.coloring",
+    "source": "teaching/discrete.coloring.md"
+  },
+  {
+    "concept_id": "discrete.proof.contradiction",
+    "source": "teaching/discrete.contradiction.md"
+  },
+  {
+    "concept_id": "discrete.sets.inclusion_exclusion",
+    "source": "teaching/discrete.inclusion_exclusion.md"
+  },
+  {
+    "concept_id": "discrete.sequences.generating_functions",
+    "source": "teaching/discrete.generating_functions.md"
+  },
+  {
+    "concept_id": "complex.adv.conformal",
+    "source": "teaching/complex.conformal.md"
+  },
+  {
+    "concept_id": "complex.integral.cauchy_goursat",
+    "source": "teaching/complex.cauchy_goursat.md"
+  },
+  {
+    "concept_id": "complex.series.power",
+    "source": "teaching/complex.power_series.md"
+  },
+  {
+    "concept_id": "complex.adv.mobius",
+    "source": "teaching/complex.mobius.md"
+  },
+  {
+    "concept_id": "complex.adv.schwarz_lemma",
+    "source": "teaching/complex.schwarz.md"
+  },
+  {
+    "concept_id": "abstract.rings.localization",
+    "source": "teaching/abstract.rings.localization.md"
+  },
+  {
+    "concept_id": "abstract.field.finite",
+    "source": "teaching/abstract.field.finite.md"
+  },
+  {
+    "concept_id": "abstract.group.nilpotent",
+    "source": "teaching/abstract.group.nilpotent.md"
+  },
+  {
+    "concept_id": "abstract.structures.tensor",
+    "source": "teaching/abstract.structures.tensor.md"
+  },
+  {
+    "concept_id": "abstract.group.solvable",
+    "source": "teaching/abstract.group.solvable.md"
+  },
+  {
+    "concept_id": "nt.analytic.zeta",
+    "source": "teaching/nt.zeta.md"
+  },
+  {
+    "concept_id": "nt.adv.chebyshev",
+    "source": "teaching/nt.chebyshev.md"
+  },
+  {
+    "concept_id": "nt.adv.elliptic_curve",
+    "source": "teaching/nt.elliptic.md"
+  },
+  {
+    "concept_id": "nt.adv.continued_fractions",
+    "source": "teaching/nt.continued.md"
+  },
+  {
+    "concept_id": "nt.adv.class_number",
+    "source": "teaching/nt.class_number.md"
+  },
+  {
+    "concept_id": "ode.sturm_liouville",
+    "source": "teaching/ode.sturm_liouville.md"
+  },
+  {
+    "concept_id": "ode.boundary_value",
+    "source": "teaching/ode.boundary.md"
+  },
+  {
+    "concept_id": "ode.nonlinear.lyapunov",
+    "source": "teaching/ode.lyapunov.md"
+  },
+  {
+    "concept_id": "ode.pde.laplace_eq",
+    "source": "teaching/ode.laplace_eq.md"
+  },
+  {
+    "concept_id": "ode.integral.volterra",
+    "source": "teaching/ode.volterra.md"
+  },
+  {
+    "concept_id": "topo.embedding",
+    "source": "teaching/topo.embedding.md"
+  },
+  {
+    "concept_id": "topo.knot",
+    "source": "teaching/topo.knot.md"
+  },
+  {
+    "concept_id": "topo.cohomology",
+    "source": "teaching/topo.cohomology.md"
+  },
+  {
+    "concept_id": "topo.compactification.stone_cech",
+    "source": "teaching/topo.stone_cech.md"
+  },
+  {
+    "concept_id": "topo.dimension",
+    "source": "teaching/topo.dimension.md"
+  },
+  {
+    "concept_id": "ml.nlp.transformer",
+    "source": "teaching/ml.nlp_transformer.md"
+  },
+  {
+    "concept_id": "ml.reinforcement.qlearning",
+    "source": "teaching/ml.qlearning.md"
+  },
+  {
+    "concept_id": "ml.reinforcement.policy_gradient",
+    "source": "teaching/ml.policy.md"
+  },
+  {
+    "concept_id": "ml.nlp.bert",
+    "source": "teaching/ml.bert.md"
+  },
+  {
+    "concept_id": "ml.reinforcement.actor_critic",
+    "source": "teaching/ml.actor_critic.md"
+  },
+  {
+    "concept_id": "abstract.group.free",
+    "source": "teaching/abstract.group.free.md"
+  },
+  {
+    "concept_id": "abstract.rings.noetherian",
+    "source": "teaching/abstract.rings.noetherian.md"
+  },
+  {
+    "concept_id": "abstract.field.galois_group",
+    "source": "teaching/abstract.field.galois_group.md"
+  },
+  {
+    "concept_id": "abstract.structures.exact_sequence",
+    "source": "teaching/abstract.structures.exact_sequence.md"
+  },
+  {
+    "concept_id": "abstract.group.commutator",
+    "source": "teaching/abstract.group.commutator.md"
+  },
+  {
+    "concept_id": "topo.covering",
+    "source": "teaching/topology/covering-spaces.md"
+  },
+  {
+    "concept_id": "topo.fundamental.van_kampen",
+    "source": "teaching/topology/van-kampen.md"
+  },
+  {
+    "concept_id": "topo.fiber_bundle",
+    "source": "teaching/topology/fiber-bundles.md"
+  },
+  {
+    "concept_id": "topo.homology.cellular",
+    "source": "teaching/topology/cellular-homology.md"
+  },
+  {
+    "concept_id": "topo.cohomology.de_rham",
+    "source": "teaching/topology/de-rham-cohomology.md"
+  },
+  {
+    "concept_id": "frac.sub.word",
+    "source": "teaching/fractions/subtraction-word.md"
+  },
+  {
+    "concept_id": "calc.deriv.newton",
+    "source": "authored/calc.deriv.newton.md"
+  },
+  {
+    "concept_id": "calc.deriv.error_prop",
+    "source": "authored/calc.deriv.newton.md"
+  },
+  {
+    "concept_id": "calc.integral.work",
+    "source": "authored/calc.integral.applied.md"
+  },
+  {
+    "concept_id": "calc.integral.center_mass",
+    "source": "authored/calc.integral.applied.md"
+  },
+  {
+    "concept_id": "calc.series.ratio_test",
+    "source": "authored/calc.series.ratio.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.counting_principle",
+    "source": "authored/discrete.combinatorics.counting_principle.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.factorial",
+    "source": "authored/discrete.combinatorics.factorial.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.multinomial",
+    "source": "authored/discrete.combinatorics.multinomial.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.circular",
+    "source": "authored/discrete.combinatorics.circular.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.derangement",
+    "source": "authored/discrete.combinatorics.derangement.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.catalan",
+    "source": "authored/discrete.combinatorics.catalan.md"
+  },
+  {
+    "concept_id": "calc.vec.parametric_derivative",
+    "source": "authored/calc.vec.parametric_derivative.md"
+  },
+  {
+    "concept_id": "calc.vec.arc_length",
+    "source": "authored/calc.vec.arc_length.md"
+  },
+  {
+    "concept_id": "calc.vec.curvature",
+    "source": "authored/calc.vec.curvature.md"
+  },
+  {
+    "concept_id": "calc.vec.line_integral",
+    "source": "authored/calc.vec.line_integral.md"
+  },
+  {
+    "concept_id": "calc.vec.jacobian_value",
+    "source": "authored/calc.vec.jacobian_value.md"
+  },
+  {
+    "concept_id": "calc.multi.double_integral_rect",
+    "source": "authored/calc.multi.double_integral_rect.md"
+  },
+  {
+    "concept_id": "calc.multi.triple_integral_box",
+    "source": "authored/calc.multi.triple_integral_box.md"
+  },
+  {
+    "concept_id": "calc.vec.curl",
+    "source": "authored/calc.vec.curl.md"
+  },
+  {
+    "concept_id": "calc.vec.divergence",
+    "source": "authored/calc.vec.divergence.md"
+  },
+  {
+    "concept_id": "calc.vec.conservative_test",
+    "source": "authored/calc.vec.conservative_test.md"
+  },
+  {
+    "concept_id": "calc.vec.greens_theorem",
+    "source": "authored/calc.vec.greens_theorem.md"
+  },
+  {
+    "concept_id": "calc.multi.transform_jacobian",
+    "source": "authored/calc.multi.transform_jacobian.md"
+  },
+  {
+    "concept_id": "calc.multi.double_integral_region",
+    "source": "authored/calc.multi.double_integral_region.md"
+  },
+  {
+    "concept_id": "calc.multi.saddle_test",
+    "source": "authored/calc.multi.saddle_test.md"
+  },
+  {
+    "concept_id": "calc.multi.lagrange",
+    "source": "authored/calc.multi.lagrange.md"
+  },
+  {
+    "concept_id": "calc.vec.divergence_theorem",
+    "source": "authored/calc.vec.divergence_theorem.md"
+  },
+  {
+    "concept_id": "calc.vec.flux_uniform",
+    "source": "authored/calc.vec.flux_uniform.md"
+  },
+  {
+    "concept_id": "calc.vec.potential_value",
+    "source": "authored/calc.vec.potential_value.md"
+  },
+  {
+    "concept_id": "calc.multi.coordinates_jacobian",
+    "source": "authored/calc.multi.coordinates_jacobian.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.vandermonde",
+    "source": "authored/discrete.combinatorics.vandermonde.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.double_counting",
+    "source": "authored/discrete.combinatorics.double_counting.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.surjections",
+    "source": "authored/discrete.combinatorics.surjections.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.stirling_second",
+    "source": "authored/discrete.combinatorics.stirling_second.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.bell",
+    "source": "authored/discrete.combinatorics.bell.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.compositions",
+    "source": "authored/discrete.combinatorics.compositions.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.integer_partitions",
+    "source": "authored/discrete.combinatorics.integer_partitions.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.lattice_paths",
+    "source": "authored/discrete.combinatorics.lattice_paths.md"
+  },
+  {
+    "concept_id": "calc.vec.surface_area",
+    "source": "authored/calc.vec.surface_area.md"
+  },
+  {
+    "concept_id": "calc.vec.curl_3d",
+    "source": "authored/calc.vec.curl_3d.md"
+  },
+  {
+    "concept_id": "calc.vec.stokes",
+    "source": "authored/calc.vec.stokes.md"
+  },
+  {
+    "concept_id": "calc.vec.work",
+    "source": "authored/calc.vec.work.md"
+  },
+  {
+    "concept_id": "precalc.poly.remainder_theorem",
+    "source": "authored/precalc.poly.remainder_theorem.md"
+  },
+  {
+    "concept_id": "precalc.poly.rational_roots",
+    "source": "authored/precalc.poly.rational_roots.md"
+  },
+  {
+    "concept_id": "precalc.rational.asymptote",
+    "source": "authored/precalc.rational.asymptote.md"
+  },
+  {
+    "concept_id": "precalc.exp.equation",
+    "source": "authored/precalc.exp.equation.md"
+  },
+  {
+    "concept_id": "precalc.log.evaluate",
+    "source": "authored/precalc.log.evaluate.md"
+  },
+  {
+    "concept_id": "precalc.exp.growth_model",
+    "source": "authored/precalc.exp.growth_model.md"
+  },
+  {
+    "concept_id": "precalc.func.inverse_value",
+    "source": "authored/precalc.func.inverse_value.md"
+  },
+  {
+    "concept_id": "precalc.conic.circle_radius",
+    "source": "authored/precalc.conic.circle_radius.md"
+  },
+  {
+    "concept_id": "precalc.poly.zeros_multiplicity",
+    "source": "authored/precalc.poly.zeros_multiplicity.md"
+  },
+  {
+    "concept_id": "precalc.poly.descartes",
+    "source": "authored/precalc.poly.descartes.md"
+  },
+  {
+    "concept_id": "precalc.poly.complex_conjugate",
+    "source": "authored/precalc.poly.complex_conjugate.md"
+  },
+  {
+    "concept_id": "precalc.rational.oblique_asymptote",
+    "source": "authored/precalc.rational.oblique_asymptote.md"
+  },
+  {
+    "concept_id": "precalc.log.equation",
+    "source": "authored/precalc.log.equation.md"
+  },
+  {
+    "concept_id": "precalc.exp.compound_interest",
+    "source": "authored/precalc.exp.compound_interest.md"
+  },
+  {
+    "concept_id": "precalc.func.composition_value",
+    "source": "authored/precalc.func.composition_value.md"
+  },
+  {
+    "concept_id": "precalc.analytic.distance",
+    "source": "authored/precalc.analytic.distance.md"
+  },
+  {
+    "concept_id": "geo.similar.ratio",
+    "source": "authored/geo.similar.ratio.md"
+  },
+  {
+    "concept_id": "geo.similar.missing_side",
+    "source": "authored/geo.similar.missing_side.md"
+  },
+  {
+    "concept_id": "geo.transform.dilation",
+    "source": "authored/geo.transform.dilation.md"
+  },
+  {
+    "concept_id": "geo.polygon.interior_angles",
+    "source": "authored/geo.polygon.interior_angles.md"
+  },
+  {
+    "concept_id": "geo.polygon.exterior_angle",
+    "source": "authored/geo.polygon.exterior_angle.md"
+  },
+  {
+    "concept_id": "geo.circle.inscribed_angle",
+    "source": "authored/geo.circle.inscribed_angle.md"
+  },
+  {
+    "concept_id": "geo.circle.chord",
+    "source": "authored/geo.circle.chord.md"
+  },
+  {
+    "concept_id": "geo.triangle.special_right",
+    "source": "authored/geo.triangle.special_right.md"
+  },
+  {
+    "concept_id": "geo.triangle.inequality",
+    "source": "authored/geo.triangle.inequality.md"
+  },
+  {
+    "concept_id": "geo.similar.area_ratio",
+    "source": "authored/geo.similar.area_ratio.md"
+  },
+  {
+    "concept_id": "geo.circle.tangent_length",
+    "source": "authored/geo.circle.tangent_length.md"
+  },
+  {
+    "concept_id": "geo.solid.pyramid_volume",
+    "source": "authored/geo.solid.pyramid_volume.md"
+  },
+  {
+    "concept_id": "geo.triangle.exterior_angle",
+    "source": "authored/geo.triangle.exterior_angle.md"
+  },
+  {
+    "concept_id": "geo.triangle.midsegment",
+    "source": "authored/geo.triangle.midsegment.md"
+  },
+  {
+    "concept_id": "geo.triangle.isosceles",
+    "source": "authored/geo.triangle.isosceles.md"
+  },
+  {
+    "concept_id": "geo.circle.cyclic_quad",
+    "source": "authored/geo.circle.cyclic_quad.md"
+  },
+  {
+    "concept_id": "geo.solid.prism_volume",
+    "source": "authored/geo.solid.prism_volume.md"
+  },
+  {
+    "concept_id": "geo.coord.slope",
+    "source": "authored/geo.coord.slope.md"
+  },
+  {
+    "concept_id": "geo.coord.distance_3d",
+    "source": "authored/geo.coord.distance_3d.md"
+  },
+  {
+    "concept_id": "geo.quad.trapezoid_area",
+    "source": "authored/geo.quad.trapezoid_area.md"
+  },
+  {
+    "concept_id": "geo.solid.similar_volume",
+    "source": "authored/geo.solid.similar_volume.md"
+  },
+  {
+    "concept_id": "geo.circle.tangent_chord",
+    "source": "authored/geo.circle.tangent_chord.md"
+  },
+  {
+    "concept_id": "calc.integral.average_value",
+    "source": "authored/calc.integral.average_value.md"
+  },
+  {
+    "concept_id": "calc.integral.cross_section_volume",
+    "source": "authored/calc.integral.cross_section_volume.md"
+  },
+  {
+    "concept_id": "calc.multi.change_order",
+    "source": "authored/calc.multi.change_order.md"
+  },
+  {
+    "concept_id": "calc.multi.tangent_plane",
+    "source": "authored/calc.multi.tangent_plane.md"
+  },
+  {
+    "concept_id": "calc.multi.closed_extrema",
+    "source": "authored/calc.multi.closed_extrema.md"
+  },
+  {
+    "concept_id": "calc.polar.area",
+    "source": "authored/calc.polar.area.md"
+  },
+  {
+    "concept_id": "calc.polar.slope",
+    "source": "authored/calc.polar.slope.md"
+  },
+  {
+    "concept_id": "ml.linreg.least_squares",
+    "source": "authored/ml.linreg.least_squares.md"
+  },
+  {
+    "concept_id": "ml.linreg.predict",
+    "source": "authored/ml.linreg.predict.md"
+  },
+  {
+    "concept_id": "ml.reg.ridge_penalty",
+    "source": "authored/ml.reg.ridge_penalty.md"
+  },
+  {
+    "concept_id": "ml.eval.accuracy",
+    "source": "authored/ml.eval.accuracy.md"
+  },
+  {
+    "concept_id": "ml.eval.precision",
+    "source": "authored/ml.eval.precision.md"
+  },
+  {
+    "concept_id": "ml.eval.recall",
+    "source": "authored/ml.eval.recall.md"
+  },
+  {
+    "concept_id": "ml.pca.variance_percent",
+    "source": "authored/ml.pca.variance_percent.md"
+  },
+  {
+    "concept_id": "ml.knn.nearest_distance",
+    "source": "authored/ml.knn.nearest_distance.md"
+  },
+  {
+    "concept_id": "linalg.independence.count",
+    "source": "authored/linalg.independence.count.md"
+  },
+  {
+    "concept_id": "linalg.rank.nullity",
+    "source": "authored/linalg.rank.nullity.md"
+  },
+  {
+    "concept_id": "linalg.matrix.inverse_2x2",
+    "source": "authored/linalg.matrix.inverse_2x2.md"
+  },
+  {
+    "concept_id": "linalg.eigen.trace",
+    "source": "authored/linalg.eigen.trace.md"
+  },
+  {
+    "concept_id": "linalg.eigen.det_product",
+    "source": "authored/linalg.eigen.det_product.md"
+  },
+  {
+    "concept_id": "linalg.orth.projection_coeff",
+    "source": "authored/linalg.orth.projection_coeff.md"
+  },
+  {
+    "concept_id": "linalg.vec.norm_squared",
+    "source": "authored/linalg.vec.norm_squared.md"
+  },
+  {
+    "concept_id": "linalg.transform.det_scale",
+    "source": "authored/linalg.transform.det_scale.md"
+  },
+  {
+    "concept_id": "frac.reciprocal",
+    "source": "authored/frac.reciprocal.md"
+  },
+  {
+    "concept_id": "frac.of_number",
+    "source": "authored/frac.of_number.md"
+  },
+  {
+    "concept_id": "frac.complex",
+    "source": "authored/frac.complex.md"
+  },
+  {
+    "concept_id": "frac.order_ops",
+    "source": "authored/frac.order_ops.md"
+  },
+  {
+    "concept_id": "frac.compare.cross",
+    "source": "authored/frac.compare.cross.md"
+  },
+  {
+    "concept_id": "frac.how_many",
+    "source": "authored/frac.how_many.md"
+  },
+  {
+    "concept_id": "frac.add.three",
+    "source": "authored/frac.add.three.md"
+  },
+  {
+    "concept_id": "frac.of_fraction",
+    "source": "authored/frac.of_fraction.md"
+  },
+  {
+    "concept_id": "frac.lcd",
+    "source": "authored/frac.lcd.md"
+  },
+  {
+    "concept_id": "frac.unit_decompose",
+    "source": "authored/frac.unit_decompose.md"
+  },
+  {
+    "concept_id": "frac.mult.cancel",
+    "source": "authored/frac.mult.cancel.md"
+  },
+  {
+    "concept_id": "frac.mixed.div",
+    "source": "authored/frac.mixed.div.md"
+  },
+  {
+    "concept_id": "frac.sub.whole",
+    "source": "authored/frac.sub.whole.md"
+  },
+  {
+    "concept_id": "frac.as_division",
+    "source": "authored/frac.as_division.md"
+  },
+  {
+    "concept_id": "frac.order.half",
+    "source": "authored/frac.order.half.md"
+  },
+  {
+    "concept_id": "frac.of_unit",
+    "source": "authored/frac.of_unit.md"
+  },
+  {
+    "concept_id": "frac.recipe.scale",
+    "source": "authored/frac.recipe.scale.md"
+  },
+  {
+    "concept_id": "frac.remaining",
+    "source": "authored/frac.remaining.md"
+  },
+  {
+    "concept_id": "frac.equivalent.scale",
+    "source": "authored/frac.equivalent.scale.md"
+  },
+  {
+    "concept_id": "stat.spread.mad",
+    "source": "authored/stat.spread.mad.md"
+  },
+  {
+    "concept_id": "stat.spread.iqr",
+    "source": "authored/stat.spread.iqr.md"
+  },
+  {
+    "concept_id": "stat.quartile.value",
+    "source": "authored/stat.quartile.value.md"
+  },
+  {
+    "concept_id": "stat.zscore.value",
+    "source": "authored/stat.zscore.value.md"
+  },
+  {
+    "concept_id": "stat.sampling.se",
+    "source": "authored/stat.sampling.se.md"
+  },
+  {
+    "concept_id": "stat.infer.margin",
+    "source": "authored/stat.infer.margin.md"
+  },
+  {
+    "concept_id": "stat.prob.conditional",
+    "source": "authored/stat.prob.conditional.md"
+  },
+  {
+    "concept_id": "calc.seq.limit_value",
+    "source": "authored/calc.seq.limit_value.md"
+  },
+  {
+    "concept_id": "calc.seq.recursive_value",
+    "source": "authored/calc.seq.recursive_value.md"
+  },
+  {
+    "concept_id": "calc.seq.arithmetic_sum",
+    "source": "authored/calc.seq.arithmetic_sum.md"
+  },
+  {
+    "concept_id": "calc.multi.mass_lamina",
+    "source": "authored/calc.multi.mass_lamina.md"
+  },
+  {
+    "concept_id": "calc.integral.substitution_value",
+    "source": "authored/calc.integral.substitution_value.md"
+  },
+  {
+    "concept_id": "calc.integral.mass_density",
+    "source": "authored/calc.integral.mass_density.md"
+  },
+  {
+    "concept_id": "calc.deriv.higher_order_value",
+    "source": "authored/calc.deriv.higher_order_value.md"
+  },
+  {
+    "concept_id": "nt.divisor.count",
+    "source": "authored/nt.divisor.count.md"
+  },
+  {
+    "concept_id": "nt.divisor.sum",
+    "source": "authored/nt.divisor.sum.md"
+  },
+  {
+    "concept_id": "nt.prime.exponent",
+    "source": "authored/nt.prime.exponent.md"
+  },
+  {
+    "concept_id": "nt.congruence.linear",
+    "source": "authored/nt.congruence.linear.md"
+  },
+  {
+    "concept_id": "nt.pythagorean.hypotenuse",
+    "source": "authored/nt.pythagorean.hypotenuse.md"
+  },
+  {
+    "concept_id": "nt.residue.count",
+    "source": "authored/nt.residue.count.md"
+  },
+  {
+    "concept_id": "nt.base.convert",
+    "source": "authored/nt.base.convert.md"
+  },
+  {
+    "concept_id": "ode.ivp.evaluate",
+    "source": "authored/ode.ivp.evaluate.md"
+  },
+  {
+    "concept_id": "ode.characteristic.sum",
+    "source": "authored/ode.characteristic.sum.md"
+  },
+  {
+    "concept_id": "ode.equilibrium.nonzero",
+    "source": "authored/ode.equilibrium.nonzero.md"
+  },
+  {
+    "concept_id": "ode.wronskian",
+    "source": "authored/ode.wronskian.md"
+  },
+  {
+    "concept_id": "ode.numerical.steps",
+    "source": "authored/ode.numerical.steps.md"
+  },
+  {
+    "concept_id": "ode.laplace.value",
+    "source": "authored/ode.laplace.value.md"
+  },
+  {
+    "concept_id": "ode.pde.discriminant",
+    "source": "authored/ode.pde.discriminant.md"
+  },
+  {
+    "concept_id": "trig.basics.coterminal",
+    "source": "authored/trig.basics.coterminal.md"
+  },
+  {
+    "concept_id": "trig.basics.quadrant",
+    "source": "authored/trig.basics.quadrant.md"
+  },
+  {
+    "concept_id": "trig.basics.arc_length",
+    "source": "authored/trig.basics.arc_length.md"
+  },
+  {
+    "concept_id": "trig.basics.sector_area",
+    "source": "authored/trig.basics.sector_area.md"
+  },
+  {
+    "concept_id": "trig.ident.double_angle",
+    "source": "authored/trig.ident.double_angle.md"
+  },
+  {
+    "concept_id": "trig.ident.cofunction",
+    "source": "authored/trig.ident.cofunction.md"
+  },
+  {
+    "concept_id": "trig.adv.heron_area",
+    "source": "authored/trig.adv.heron_area.md"
+  },
+  {
+    "concept_id": "trig.graph.amplitude",
+    "source": "authored/trig.graph.amplitude.md"
+  },
+  {
+    "concept_id": "trig.ident.sum_diff",
+    "source": "authored/trig.ident.sum_diff.md"
+  },
+  {
+    "concept_id": "trig.ident.half_angle",
+    "source": "authored/trig.ident.half_angle.md"
+  },
+  {
+    "concept_id": "trig.eq.quadratic",
+    "source": "authored/trig.eq.quadratic.md"
+  },
+  {
+    "concept_id": "trig.adv.ambiguous_case",
+    "source": "authored/trig.adv.ambiguous_case.md"
+  },
+  {
+    "concept_id": "trig.adv.area_sas",
+    "source": "authored/trig.adv.area_sas.md"
+  },
+  {
+    "concept_id": "trig.adv.vector_magnitude",
+    "source": "authored/trig.adv.vector_magnitude.md"
+  },
+  {
+    "concept_id": "trig.adv.vector_dot",
+    "source": "authored/trig.adv.vector_dot.md"
+  },
+  {
+    "concept_id": "trig.graph.phase_shift",
+    "source": "authored/trig.graph.phase_shift.md"
+  },
+  {
+    "concept_id": "discrete.logic.inference",
+    "source": "authored/discrete.logic.inference.md"
+  },
+  {
+    "concept_id": "discrete.logic.predicates",
+    "source": "authored/discrete.logic.predicates.md"
+  },
+  {
+    "concept_id": "discrete.logic.satisfiability",
+    "source": "authored/discrete.logic.satisfiability.md"
+  },
+  {
+    "concept_id": "discrete.proof.contrapositive",
+    "source": "authored/discrete.proof.contrapositive.md"
+  },
+  {
+    "concept_id": "discrete.proof.counterexample",
+    "source": "authored/discrete.proof.counterexample.md"
+  },
+  {
+    "concept_id": "discrete.proof.structural",
+    "source": "authored/discrete.proof.structural.md"
+  },
+  {
+    "concept_id": "discrete.sets.powerset",
+    "source": "authored/discrete.sets.powerset.md"
+  },
+  {
+    "concept_id": "discrete.sets.partial_order",
+    "source": "authored/discrete.sets.partial_order.md"
+  },
+  {
+    "concept_id": "discrete.sets.countable",
+    "source": "authored/discrete.sets.countable.md"
+  },
+  {
+    "concept_id": "discrete.combinatorics.complement",
+    "source": "authored/discrete.combinatorics.complement.md"
+  },
+  {
+    "concept_id": "discrete.graphs.bipartite",
+    "source": "authored/discrete.graphs.bipartite.md"
+  },
+  {
+    "concept_id": "discrete.graphs.planar",
+    "source": "authored/discrete.graphs.planar.md"
+  },
+  {
+    "concept_id": "discrete.graphs.cayley",
+    "source": "authored/discrete.graphs.cayley.md"
+  },
+  {
+    "concept_id": "discrete.graphs.degree_sequence",
+    "source": "authored/discrete.graphs.degree_sequence.md"
+  },
+  {
+    "concept_id": "discrete.sequences.linear_recurrence",
+    "source": "authored/discrete.sequences.linear_recurrence.md"
+  },
+  {
+    "concept_id": "discrete.sequences.growth_rates",
+    "source": "authored/discrete.sequences.growth_rates.md"
+  },
+  {
+    "concept_id": "complex.basics.parts",
+    "source": "authored/complex.basics.parts.md"
+  },
+  {
+    "concept_id": "complex.basics.powers",
+    "source": "authored/complex.basics.powers.md"
+  },
+  {
+    "concept_id": "complex.basics.reciprocal",
+    "source": "authored/complex.basics.reciprocal.md"
+  },
+  {
+    "concept_id": "complex.basics.geometry",
+    "source": "authored/complex.basics.geometry.md"
+  },
+  {
+    "concept_id": "complex.basics.loci",
+    "source": "authored/complex.basics.loci.md"
+  },
+  {
+    "concept_id": "complex.basics.arg_arithmetic",
+    "source": "authored/complex.basics.arg_arithmetic.md"
+  },
+  {
+    "concept_id": "complex.basics.equations",
+    "source": "authored/complex.basics.equations.md"
+  },
+  {
+    "concept_id": "complex.adv.conjugate_roots",
+    "source": "authored/complex.adv.conjugate_roots.md"
+  },
+  {
+    "concept_id": "complex.adv.trig_exponential",
+    "source": "authored/complex.adv.trig_exponential.md"
+  },
+  {
+    "concept_id": "complex.adv.hyperbolic",
+    "source": "authored/complex.adv.hyperbolic.md"
+  },
+  {
+    "concept_id": "complex.adv.geometric_series",
+    "source": "authored/complex.adv.geometric_series.md"
+  },
+  {
+    "concept_id": "complex.adv.mobius_fixed",
+    "source": "authored/complex.adv.mobius_fixed.md"
+  },
+  {
+    "concept_id": "complex.adv.residue_simple",
+    "source": "authored/complex.adv.residue_simple.md"
+  },
+  {
+    "concept_id": "complex.adv.cross_ratio",
+    "source": "authored/complex.adv.cross_ratio.md"
+  },
+  {
+    "concept_id": "complex.topology.open_sets",
+    "source": "authored/complex.topology.open_sets.md"
+  },
+  {
+    "concept_id": "complex.topology.domain",
+    "source": "authored/complex.topology.domain.md"
+  },
+  {
+    "concept_id": "alg.linear.two_points",
+    "source": "authored/alg.linear.two_points.md"
+  },
+  {
+    "concept_id": "alg.linear.intercepts",
+    "source": "authored/alg.linear.intercepts.md"
+  },
+  {
+    "concept_id": "alg.factor.grouping",
+    "source": "authored/alg.factor.grouping.md"
+  },
+  {
+    "concept_id": "alg.factor.cubes",
+    "source": "authored/alg.factor.cubes.md"
+  },
+  {
+    "concept_id": "alg.quad.vertex_form",
+    "source": "authored/alg.quad.vertex_form.md"
+  },
+  {
+    "concept_id": "alg.quad.word_problem",
+    "source": "authored/alg.quad.word_problem.md"
+  },
+  {
+    "concept_id": "alg.poly.end_behavior",
+    "source": "authored/alg.poly.end_behavior.md"
+  },
+  {
+    "concept_id": "alg.rational.simplify",
+    "source": "authored/alg.rational.simplify.md"
+  },
+  {
+    "concept_id": "alg.rational.mult_div",
+    "source": "authored/alg.rational.mult_div.md"
+  },
+  {
+    "concept_id": "alg.rational.add_sub",
+    "source": "authored/alg.rational.add_sub.md"
+  },
+  {
+    "concept_id": "alg.radical.rational_exponents",
+    "source": "authored/alg.radical.rational_exponents.md"
+  },
+  {
+    "concept_id": "alg.radical.rationalize",
+    "source": "authored/alg.radical.rationalize.md"
+  },
+  {
+    "concept_id": "alg.func.variation",
+    "source": "authored/alg.func.variation.md"
+  },
+  {
+    "concept_id": "alg.log.change_base",
+    "source": "authored/alg.log.change_base.md"
+  },
+  {
+    "concept_id": "alg.conic.classify",
+    "source": "authored/alg.conic.classify.md"
+  },
+  {
+    "concept_id": "arith.compare.whole",
+    "source": "authored/arith.compare.whole.md"
+  },
+  {
+    "concept_id": "arith.place.expanded",
+    "source": "authored/arith.place.expanded.md"
+  },
+  {
+    "concept_id": "arith.place.powers_ten",
+    "source": "authored/arith.place.powers_ten.md"
+  },
+  {
+    "concept_id": "arith.estimate.sum",
+    "source": "authored/arith.estimate.sum.md"
+  },
+  {
+    "concept_id": "arith.estimate.product",
+    "source": "authored/arith.estimate.product.md"
+  },
+  {
+    "concept_id": "arith.word.multi_step",
+    "source": "authored/arith.word.multi_step.md"
+  },
+  {
+    "concept_id": "arith.div.interpret_remainder",
+    "source": "authored/arith.div.interpret_remainder.md"
+  },
+  {
+    "concept_id": "arith.div.zero",
+    "source": "authored/arith.div.zero.md"
+  },
+  {
+    "concept_id": "arith.neg.word",
+    "source": "authored/arith.neg.word.md"
+  },
+  {
+    "concept_id": "arith.exp.negative_base",
+    "source": "authored/arith.exp.negative_base.md"
+  },
+  {
+    "concept_id": "arith.exp.power_product",
+    "source": "authored/arith.exp.power_product.md"
+  },
+  {
+    "concept_id": "arith.exp.power_quotient",
+    "source": "authored/arith.exp.power_quotient.md"
+  },
+  {
+    "concept_id": "arith.sqrt.cube",
+    "source": "authored/arith.sqrt.cube.md"
+  },
+  {
+    "concept_id": "arith.sqrt.estimate",
+    "source": "authored/arith.sqrt.estimate.md"
+  },
+  {
+    "concept_id": "pct.ops.change",
+    "source": "authored/pct.ops.change.md"
+  },
+  {
+    "concept_id": "pct.ops.error",
+    "source": "authored/pct.ops.error.md"
+  },
+  {
+    "concept_id": "pct.ops.commission",
+    "source": "authored/pct.ops.commission.md"
+  },
+  {
+    "concept_id": "pct.ops.markup",
+    "source": "authored/pct.ops.markup.md"
+  },
+  {
+    "concept_id": "pct.ops.simple_interest",
+    "source": "authored/pct.ops.simple_interest.md"
+  },
+  {
+    "concept_id": "ratio.ops.percent_proportion",
+    "source": "authored/ratio.ops.percent_proportion.md"
+  },
+  {
+    "concept_id": "ratio.ops.better_buy",
+    "source": "authored/ratio.ops.better_buy.md"
+  },
+  {
+    "concept_id": "prealg.expr.translate",
+    "source": "authored/prealg.expr.translate.md"
+  },
+  {
+    "concept_id": "prealg.expr.formula",
+    "source": "authored/prealg.expr.formula.md"
+  },
+  {
+    "concept_id": "prealg.ineq.word",
+    "source": "authored/prealg.ineq.word.md"
+  },
+  {
+    "concept_id": "prealg.ineq.graph",
+    "source": "authored/prealg.ineq.graph.md"
+  },
+  {
+    "concept_id": "prealg.measure.convert",
+    "source": "authored/prealg.measure.convert.md"
+  },
+  {
+    "concept_id": "prealg.measure.metric",
+    "source": "authored/prealg.measure.metric.md"
+  },
+  {
+    "concept_id": "prealg.measure.temperature",
+    "source": "authored/prealg.measure.temperature.md"
+  },
+  {
+    "concept_id": "abstract.group.center",
+    "source": "teaching/abstract.group.center.md"
+  },
+  {
+    "concept_id": "abstract.group.automorphism",
+    "source": "teaching/abstract.group.automorphism.md"
+  },
+  {
+    "concept_id": "abstract.group.simple",
+    "source": "teaching/abstract.group.simple.md"
+  },
+  {
+    "concept_id": "abstract.group.p_group",
+    "source": "teaching/abstract.group.p_group.md"
+  },
+  {
+    "concept_id": "abstract.group.composition_series",
+    "source": "teaching/abstract.group.composition_series.md"
+  },
+  {
+    "concept_id": "abstract.rings.zero_divisor",
+    "source": "teaching/abstract.rings.zero_divisor.md"
+  },
+  {
+    "concept_id": "abstract.rings.integral_domain",
+    "source": "teaching/abstract.rings.integral_domain.md"
+  },
+  {
+    "concept_id": "abstract.rings.prime_ideal",
+    "source": "teaching/abstract.rings.prime_ideal.md"
+  },
+  {
+    "concept_id": "abstract.rings.euclidean",
+    "source": "teaching/abstract.rings.euclidean.md"
+  },
+  {
+    "concept_id": "abstract.field.characteristic",
+    "source": "teaching/abstract.field.characteristic.md"
+  },
+  {
+    "concept_id": "abstract.field.algebraic",
+    "source": "teaching/abstract.field.algebraic.md"
+  },
+  {
+    "concept_id": "abstract.structures.submodule",
+    "source": "teaching/abstract.structures.submodule.md"
+  },
+  {
+    "concept_id": "abstract.structures.module_hom",
+    "source": "teaching/abstract.structures.module_hom.md"
+  },
+  {
+    "concept_id": "ml.activation.sigmoid",
+    "source": "teaching/ml.activation.sigmoid.md"
+  },
+  {
+    "concept_id": "ml.logistic.regression",
+    "source": "teaching/ml.logistic.regression.md"
+  },
+  {
+    "concept_id": "ml.grad.vanishing",
+    "source": "teaching/ml.grad.vanishing.md"
+  },
+  {
+    "concept_id": "ml.loss.mae",
+    "source": "teaching/ml.loss.mae.md"
+  },
+  {
+    "concept_id": "ml.eval.confusion",
+    "source": "teaching/ml.eval.confusion.md"
+  },
+  {
+    "concept_id": "ml.eval.f1",
+    "source": "teaching/ml.eval.f1.md"
+  },
+  {
+    "concept_id": "ml.cluster.kmeans",
+    "source": "teaching/ml.cluster.kmeans.md"
+  },
+  {
+    "concept_id": "ml.data.scaling",
+    "source": "teaching/ml.data.scaling.md"
+  },
+  {
+    "concept_id": "ml.data.onehot",
+    "source": "teaching/ml.data.onehot.md"
+  },
+  {
+    "concept_id": "ml.data.imbalance",
+    "source": "teaching/ml.data.imbalance.md"
+  },
+  {
+    "concept_id": "ml.tree.gini",
+    "source": "teaching/ml.tree.gini.md"
+  },
+  {
+    "concept_id": "ml.tree.ensemble",
+    "source": "teaching/ml.tree.ensemble.md"
+  },
+  {
+    "concept_id": "topo.metric.ball",
+    "source": "teaching/topo.metric.ball.md"
+  },
+  {
+    "concept_id": "topo.metric.interior",
+    "source": "teaching/topo.metric.interior.md"
+  },
+  {
+    "concept_id": "topo.metric.limit_point",
+    "source": "teaching/topo.metric.limit_point.md"
+  },
+  {
+    "concept_id": "topo.metric.convergence",
+    "source": "teaching/topo.metric.convergence.md"
+  },
+  {
+    "concept_id": "topo.metric.complete",
+    "source": "teaching/topo.metric.complete.md"
+  },
+  {
+    "concept_id": "topo.metric.basis",
+    "source": "teaching/topo.metric.basis.md"
+  },
+  {
+    "concept_id": "topo.metric.subspace",
+    "source": "teaching/topo.metric.subspace.md"
+  },
+  {
+    "concept_id": "topo.metric.dense",
+    "source": "teaching/topo.metric.dense.md"
+  },
+  {
+    "concept_id": "topo.invariant.homeomorphism",
+    "source": "teaching/topo.invariant.homeomorphism.md"
+  },
+  {
+    "concept_id": "topo.invariant.euler",
+    "source": "teaching/topo.invariant.euler.md"
+  },
+  {
+    "concept_id": "topo.invariant.genus",
+    "source": "teaching/topo.invariant.genus.md"
+  },
+  {
+    "concept_id": "topo.invariant.betti",
+    "source": "teaching/topo.invariant.betti.md"
+  },
+  {
+    "concept_id": "linalg.space.axioms",
+    "source": "teaching/linalg.space.axioms.md"
+  },
+  {
+    "concept_id": "linalg.transform.kernel",
+    "source": "teaching/linalg.transform.kernel.md"
+  },
+  {
+    "concept_id": "linalg.transform.invertible",
+    "source": "teaching/linalg.transform.invertible.md"
+  },
+  {
+    "concept_id": "linalg.basis.change",
+    "source": "teaching/linalg.basis.change.md"
+  },
+  {
+    "concept_id": "linalg.orth.complement",
+    "source": "teaching/linalg.orth.complement.md"
+  },
+  {
+    "concept_id": "linalg.orth.projection_matrix",
+    "source": "teaching/linalg.orth.projection_matrix.md"
+  },
+  {
+    "concept_id": "linalg.symmetric.spectral",
+    "source": "teaching/linalg.symmetric.spectral.md"
+  },
+  {
+    "concept_id": "linalg.quadratic.definite",
+    "source": "teaching/linalg.quadratic.definite.md"
+  },
+  {
+    "concept_id": "linalg.vector.cross",
+    "source": "teaching/linalg.vector.cross.md"
+  },
+  {
+    "concept_id": "linalg.matrix.condition",
+    "source": "teaching/linalg.matrix.condition.md"
+  },
+  {
+    "concept_id": "linalg.eigen.cayley_hamilton",
+    "source": "teaching/linalg.eigen.cayley_hamilton.md"
+  },
+  {
+    "concept_id": "stat.infer.hypothesis",
+    "source": "teaching/stat.infer.hypothesis.md"
+  },
+  {
+    "concept_id": "stat.infer.ztest",
+    "source": "teaching/stat.infer.ztest.md"
+  },
+  {
+    "concept_id": "stat.infer.ttest",
+    "source": "teaching/stat.infer.ttest.md"
+  },
+  {
+    "concept_id": "stat.infer.pvalue",
+    "source": "teaching/stat.infer.pvalue.md"
+  },
+  {
+    "concept_id": "stat.infer.type_error",
+    "source": "teaching/stat.infer.type_error.md"
+  },
+  {
+    "concept_id": "stat.infer.proportion",
+    "source": "teaching/stat.infer.proportion.md"
+  },
+  {
+    "concept_id": "stat.test.chi_square",
+    "source": "teaching/stat.test.chi_square.md"
+  },
+  {
+    "concept_id": "stat.test.anova",
+    "source": "teaching/stat.test.anova.md"
+  },
+  {
+    "concept_id": "stat.reg.r2",
+    "source": "teaching/stat.reg.r2.md"
+  },
+  {
+    "concept_id": "stat.data.histogram",
+    "source": "teaching/stat.data.histogram.md"
+  },
+  {
+    "concept_id": "stat.infer.nonparametric",
+    "source": "teaching/stat.infer.nonparametric.md"
+  },
+  {
+    "concept_id": "calc.deriv.hyperbolic",
+    "source": "teaching/calc.deriv.hyperbolic.md"
+  },
+  {
+    "concept_id": "calc.deriv.parametric_second",
+    "source": "teaching/calc.deriv.parametric_second.md"
+  },
+  {
+    "concept_id": "calc.deriv.finite_difference",
+    "source": "teaching/calc.deriv.finite_difference.md"
+  },
+  {
+    "concept_id": "calc.polar.arc_length",
+    "source": "teaching/calc.polar.arc_length.md"
+  },
+  {
+    "concept_id": "calc.vec.torsion",
+    "source": "teaching/calc.vec.torsion.md"
+  },
+  {
+    "concept_id": "calc.vec.frenet",
+    "source": "teaching/calc.vec.frenet.md"
+  },
+  {
+    "concept_id": "calc.multi.taylor2",
+    "source": "teaching/calc.multi.taylor2.md"
+  },
+  {
+    "concept_id": "calc.integral.hydrostatic",
+    "source": "teaching/calc.integral.hydrostatic.md"
+  },
+  {
+    "concept_id": "calc.integral.pappus",
+    "source": "teaching/calc.integral.pappus.md"
+  },
+  {
+    "concept_id": "calc.integral.moment_inertia",
+    "source": "teaching/calc.integral.moment_inertia.md"
+  },
+  {
+    "concept_id": "nt.adv.jacobi",
+    "source": "teaching/nt.adv.jacobi.md"
+  },
+  {
+    "concept_id": "nt.adv.discrete_log",
+    "source": "teaching/nt.adv.discrete_log.md"
+  },
+  {
+    "concept_id": "nt.adv.modular_sqrt",
+    "source": "teaching/nt.adv.modular_sqrt.md"
+  },
+  {
+    "concept_id": "nt.adv.two_squares",
+    "source": "teaching/nt.adv.two_squares.md"
+  },
+  {
+    "concept_id": "nt.adv.pell",
+    "source": "teaching/nt.adv.pell.md"
+  },
+  {
+    "concept_id": "nt.adv.pisano",
+    "source": "teaching/nt.adv.pisano.md"
+  },
+  {
+    "concept_id": "nt.adv.carmichael_function",
+    "source": "teaching/nt.adv.carmichael_function.md"
+  },
+  {
+    "concept_id": "nt.adv.miller_rabin",
+    "source": "teaching/nt.adv.miller_rabin.md"
+  },
+  {
+    "concept_id": "nt.adv.prime_gap",
+    "source": "teaching/nt.adv.prime_gap.md"
+  },
+  {
+    "concept_id": "nt.adv.bertrand",
+    "source": "teaching/nt.adv.bertrand.md"
+  },
+  {
+    "concept_id": "ode.first_order.bernoulli",
+    "source": "teaching/ode.first_order.bernoulli.md"
+  },
+  {
+    "concept_id": "ode.second_order.cauchy_euler",
+    "source": "teaching/ode.second_order.cauchy_euler.md"
+  },
+  {
+    "concept_id": "ode.second_order.reduction",
+    "source": "teaching/ode.second_order.reduction.md"
+  },
+  {
+    "concept_id": "ode.second_order.power_series",
+    "source": "teaching/ode.second_order.power_series.md"
+  },
+  {
+    "concept_id": "ode.systems.matrix_exp",
+    "source": "teaching/ode.systems.matrix_exp.md"
+  },
+  {
+    "concept_id": "ode.transforms.step",
+    "source": "teaching/ode.transforms.step.md"
+  },
+  {
+    "concept_id": "ode.second_order.spring",
+    "source": "teaching/ode.second_order.spring.md"
+  },
+  {
+    "concept_id": "ode.first_order.mixing",
+    "source": "teaching/ode.first_order.mixing.md"
+  },
+  {
+    "concept_id": "ode.systems.predator_prey",
+    "source": "teaching/ode.systems.predator_prey.md"
+  },
+  {
+    "concept_id": "ode.numerical.heun",
+    "source": "teaching/ode.numerical.heun.md"
+  },
+  {
+    "concept_id": "precalc.exp.continuous",
+    "source": "teaching/precalc.exp.continuous.md"
+  },
+  {
+    "concept_id": "precalc.exp.cooling",
+    "source": "teaching/precalc.exp.cooling.md"
+  },
+  {
+    "concept_id": "precalc.log.scale",
+    "source": "teaching/precalc.log.scale.md"
+  },
+  {
+    "concept_id": "precalc.poly.inequality",
+    "source": "teaching/precalc.poly.inequality.md"
+  },
+  {
+    "concept_id": "precalc.rational.holes",
+    "source": "teaching/precalc.rational.holes.md"
+  },
+  {
+    "concept_id": "precalc.conic.general",
+    "source": "teaching/precalc.conic.general.md"
+  },
+  {
+    "concept_id": "precalc.parametric.projectile",
+    "source": "teaching/precalc.parametric.projectile.md"
+  },
+  {
+    "concept_id": "precalc.vector.resultant",
+    "source": "teaching/precalc.vector.resultant.md"
+  },
+  {
+    "concept_id": "precalc.func.decomposition",
+    "source": "teaching/precalc.func.decomposition.md"
+  },
+  {
+    "concept_id": "graph.isomorphism",
+    "source": "teaching/graph.isomorphism.md"
+  },
+  {
+    "concept_id": "graph.complement",
+    "source": "teaching/graph.complement.md"
+  },
+  {
+    "concept_id": "graph.subgraph",
+    "source": "teaching/graph.subgraph.md"
+  },
+  {
+    "concept_id": "graph.homomorphism",
+    "source": "teaching/graph.homomorphism.md"
+  },
+  {
+    "concept_id": "graph.product",
+    "source": "teaching/graph.product.md"
+  },
+  {
+    "concept_id": "graph.distance",
+    "source": "teaching/graph.distance.md"
+  },
+  {
+    "concept_id": "graph.cut_vertex",
+    "source": "teaching/graph.cut_vertex.md"
+  },
+  {
+    "concept_id": "graph.bridge",
+    "source": "teaching/graph.bridge.md"
+  },
+  {
+    "concept_id": "graph.connectivity",
+    "source": "teaching/graph.connectivity.md"
+  },
+  {
+    "concept_id": "graph.menger",
+    "source": "teaching/graph.menger.md"
+  },
+  {
+    "concept_id": "graph.matching",
+    "source": "teaching/graph.matching.md"
+  },
+  {
+    "concept_id": "graph.perfect_matching",
+    "source": "teaching/graph.perfect_matching.md"
+  },
+  {
+    "concept_id": "graph.tutte",
+    "source": "teaching/graph.tutte.md"
+  },
+  {
+    "concept_id": "graph.vertex_cover",
+    "source": "teaching/graph.vertex_cover.md"
+  },
+  {
+    "concept_id": "graph.independent_set",
+    "source": "teaching/graph.independent_set.md"
+  },
+  {
+    "concept_id": "graph.chromatic_polynomial",
+    "source": "teaching/graph.chromatic_polynomial.md"
+  },
+  {
+    "concept_id": "graph.brooks",
+    "source": "teaching/graph.brooks.md"
+  },
+  {
+    "concept_id": "graph.edge_coloring",
+    "source": "teaching/graph.edge_coloring.md"
+  },
+  {
+    "concept_id": "graph.perfect_graph",
+    "source": "teaching/graph.perfect_graph.md"
+  },
+  {
+    "concept_id": "graph.list_coloring",
+    "source": "teaching/graph.list_coloring.md"
+  },
+  {
+    "concept_id": "graph.kuratowski",
+    "source": "teaching/graph.kuratowski.md"
+  },
+  {
+    "concept_id": "graph.minor",
+    "source": "teaching/graph.minor.md"
+  },
+  {
+    "concept_id": "graph.treewidth",
+    "source": "teaching/graph.treewidth.md"
+  },
+  {
+    "concept_id": "graph.genus",
+    "source": "teaching/graph.genus.md"
+  },
+  {
+    "concept_id": "graph.outerplanar",
+    "source": "teaching/graph.outerplanar.md"
+  },
+  {
+    "concept_id": "graph.adjacency",
+    "source": "teaching/graph.adjacency.md"
+  },
+  {
+    "concept_id": "graph.laplacian",
+    "source": "teaching/graph.laplacian.md"
+  },
+  {
+    "concept_id": "graph.matrix_tree",
+    "source": "teaching/graph.matrix_tree.md"
+  },
+  {
+    "concept_id": "graph.spectral_radius",
+    "source": "teaching/graph.spectral_radius.md"
+  },
+  {
+    "concept_id": "graph.spectral_gap",
+    "source": "teaching/graph.spectral_gap.md"
+  },
+  {
+    "concept_id": "graph.mantel",
+    "source": "teaching/graph.mantel.md"
+  },
+  {
+    "concept_id": "graph.turan",
+    "source": "teaching/graph.turan.md"
+  },
+  {
+    "concept_id": "graph.ramsey",
+    "source": "teaching/graph.ramsey.md"
+  },
+  {
+    "concept_id": "graph.random_threshold",
+    "source": "teaching/graph.random_threshold.md"
+  },
+  {
+    "concept_id": "graph.moore_bound",
+    "source": "teaching/graph.moore_bound.md"
+  },
+  {
+    "concept_id": "graph.max_flow",
+    "source": "teaching/graph.max_flow.md"
+  },
+  {
+    "concept_id": "graph.tournament",
+    "source": "teaching/graph.tournament.md"
+  },
+  {
+    "concept_id": "graph.strong_connectivity",
+    "source": "teaching/graph.strong_connectivity.md"
+  },
+  {
+    "concept_id": "graph.topological_sort",
+    "source": "teaching/graph.topological_sort.md"
+  },
+  {
+    "concept_id": "graph.dag_paths",
+    "source": "teaching/graph.dag_paths.md"
+  },
+  {
+    "concept_id": "prob.space.axioms",
+    "source": "teaching/prob.space.axioms.md"
+  },
+  {
+    "concept_id": "prob.space.sigma_algebra",
+    "source": "teaching/prob.space.sigma_algebra.md"
+  },
+  {
+    "concept_id": "prob.space.inclusion_exclusion",
+    "source": "teaching/prob.space.inclusion_exclusion.md"
+  },
+  {
+    "concept_id": "prob.space.continuity",
+    "source": "teaching/prob.space.continuity.md"
+  },
+  {
+    "concept_id": "prob.cond.multiplication",
+    "source": "teaching/prob.cond.multiplication.md"
+  },
+  {
+    "concept_id": "prob.bayes.prior",
+    "source": "teaching/prob.bayes.prior.md"
+  },
+  {
+    "concept_id": "prob.independence.pairwise",
+    "source": "teaching/prob.independence.pairwise.md"
+  },
+  {
+    "concept_id": "prob.rv.definition",
+    "source": "teaching/prob.rv.definition.md"
+  },
+  {
+    "concept_id": "prob.rv.cdf",
+    "source": "teaching/prob.rv.cdf.md"
+  },
+  {
+    "concept_id": "prob.rv.pmf",
+    "source": "teaching/prob.rv.pmf.md"
+  },
+  {
+    "concept_id": "prob.rv.pdf",
+    "source": "teaching/prob.rv.pdf.md"
+  },
+  {
+    "concept_id": "prob.rv.expectation",
+    "source": "teaching/prob.rv.expectation.md"
+  },
+  {
+    "concept_id": "prob.rv.variance",
+    "source": "teaching/prob.rv.variance.md"
+  },
+  {
+    "concept_id": "prob.rv.mgf",
+    "source": "teaching/prob.rv.mgf.md"
+  },
+  {
+    "concept_id": "prob.rv.transform",
+    "source": "teaching/prob.rv.transform.md"
+  },
+  {
+    "concept_id": "prob.dist.order_stats",
+    "source": "teaching/prob.dist.order_stats.md"
+  },
+  {
+    "concept_id": "prob.dist.memoryless",
+    "source": "teaching/prob.dist.memoryless.md"
+  },
+  {
+    "concept_id": "prob.limit.markov",
+    "source": "teaching/prob.limit.markov.md"
+  },
+  {
+    "concept_id": "prob.limit.chebyshev",
+    "source": "teaching/prob.limit.chebyshev.md"
+  },
+  {
+    "concept_id": "prob.limit.clt",
+    "source": "teaching/prob.limit.clt.md"
+  },
+  {
+    "concept_id": "prob.cond.total_probability",
+    "source": "teaching/prob.cond.total_probability.md"
+  },
+  {
+    "concept_id": "prob.rv.joint",
+    "source": "teaching/prob.rv.joint.md"
+  },
+  {
+    "concept_id": "prob.dist.poisson_process",
+    "source": "teaching/prob.dist.poisson_process.md"
+  },
+  {
+    "concept_id": "prob.dist.exponential_family",
+    "source": "teaching/prob.dist.exponential_family.md"
+  },
+  {
+    "concept_id": "prob.limit.weak_law",
+    "source": "teaching/prob.limit.weak_law.md"
+  },
+  {
+    "concept_id": "prob.joint.marginal",
+    "source": "teaching/prob.joint.marginal.md"
+  },
+  {
+    "concept_id": "prob.joint.continuous",
+    "source": "teaching/prob.joint.continuous.md"
+  },
+  {
+    "concept_id": "prob.joint.rv_independence",
+    "source": "teaching/prob.joint.rv_independence.md"
+  },
+  {
+    "concept_id": "prob.expect.conditional",
+    "source": "teaching/prob.expect.conditional.md"
+  },
+  {
+    "concept_id": "prob.expect.total",
+    "source": "teaching/prob.expect.total.md"
+  },
+  {
+    "concept_id": "prob.expect.total_variance",
+    "source": "teaching/prob.expect.total_variance.md"
+  },
+  {
+    "concept_id": "prob.cov.covariance",
+    "source": "teaching/prob.cov.covariance.md"
+  },
+  {
+    "concept_id": "prob.cov.correlation",
+    "source": "teaching/prob.cov.correlation.md"
+  },
+  {
+    "concept_id": "prob.conv.in_probability",
+    "source": "teaching/prob.conv.in_probability.md"
+  },
+  {
+    "concept_id": "prob.conv.in_distribution",
+    "source": "teaching/prob.conv.in_distribution.md"
+  },
+  {
+    "concept_id": "prob.conv.almost_sure",
+    "source": "teaching/prob.conv.almost_sure.md"
+  },
+  {
+    "concept_id": "prob.conv.strong_law",
+    "source": "teaching/prob.conv.strong_law.md"
+  },
+  {
+    "concept_id": "prob.conv.borel_cantelli",
+    "source": "teaching/prob.conv.borel_cantelli.md"
+  },
+  {
+    "concept_id": "prob.conv.slutsky",
+    "source": "teaching/prob.conv.slutsky.md"
+  },
+  {
+    "concept_id": "prob.conv.delta",
+    "source": "teaching/prob.conv.delta.md"
+  },
+  {
+    "concept_id": "prob.chf.definition",
+    "source": "teaching/prob.chf.definition.md"
+  },
+  {
+    "concept_id": "prob.chf.moments",
+    "source": "teaching/prob.chf.moments.md"
+  },
+  {
+    "concept_id": "prob.chf.independence",
+    "source": "teaching/prob.chf.independence.md"
+  },
+  {
+    "concept_id": "prob.chf.continuity",
+    "source": "teaching/prob.chf.continuity.md"
+  },
+  {
+    "concept_id": "prob.chf.clt",
+    "source": "teaching/prob.chf.clt.md"
+  },
+  {
+    "concept_id": "prob.process.markov_chain",
+    "source": "teaching/prob.process.markov_chain.md"
+  },
+  {
+    "concept_id": "prob.process.transition_matrix",
+    "source": "teaching/prob.process.transition_matrix.md"
+  },
+  {
+    "concept_id": "prob.process.stationary",
+    "source": "teaching/prob.process.stationary.md"
+  },
+  {
+    "concept_id": "prob.process.random_walk",
+    "source": "teaching/prob.process.random_walk.md"
+  },
+  {
+    "concept_id": "prob.process.martingale",
+    "source": "teaching/prob.process.martingale.md"
+  },
+  {
+    "concept_id": "numa.errors.absolute",
+    "source": "teaching/numa.errors.absolute.md"
+  },
+  {
+    "concept_id": "numa.errors.roundoff",
+    "source": "teaching/numa.errors.roundoff.md"
+  },
+  {
+    "concept_id": "numa.errors.cancellation",
+    "source": "teaching/numa.errors.cancellation.md"
+  },
+  {
+    "concept_id": "numa.errors.conditioning",
+    "source": "teaching/numa.errors.conditioning.md"
+  },
+  {
+    "concept_id": "numa.errors.stability",
+    "source": "teaching/numa.errors.stability.md"
+  },
+  {
+    "concept_id": "numa.errors.taylor",
+    "source": "teaching/numa.errors.taylor.md"
+  },
+  {
+    "concept_id": "numa.roots.bisection",
+    "source": "teaching/numa.roots.bisection.md"
+  },
+  {
+    "concept_id": "numa.roots.fixed_point",
+    "source": "teaching/numa.roots.fixed_point.md"
+  },
+  {
+    "concept_id": "numa.roots.newton",
+    "source": "teaching/numa.roots.newton.md"
+  },
+  {
+    "concept_id": "numa.roots.secant",
+    "source": "teaching/numa.roots.secant.md"
+  },
+  {
+    "concept_id": "numa.roots.false_position",
+    "source": "teaching/numa.roots.false_position.md"
+  },
+  {
+    "concept_id": "numa.roots.order",
+    "source": "teaching/numa.roots.order.md"
+  },
+  {
+    "concept_id": "numa.roots.multiple",
+    "source": "teaching/numa.roots.multiple.md"
+  },
+  {
+    "concept_id": "numa.roots.bracketing",
+    "source": "teaching/numa.roots.bracketing.md"
+  },
+  {
+    "concept_id": "numa.roots.horner",
+    "source": "teaching/numa.roots.horner.md"
+  },
+  {
+    "concept_id": "numa.interp.lagrange",
+    "source": "teaching/numa.interp.lagrange.md"
+  },
+  {
+    "concept_id": "numa.interp.divided_differences",
+    "source": "teaching/numa.interp.divided_differences.md"
+  },
+  {
+    "concept_id": "numa.interp.error",
+    "source": "teaching/numa.interp.error.md"
+  },
+  {
+    "concept_id": "numa.interp.chebyshev",
+    "source": "teaching/numa.interp.chebyshev.md"
+  },
+  {
+    "concept_id": "numa.interp.splines",
+    "source": "teaching/numa.interp.splines.md"
+  },
+  {
+    "concept_id": "numa.interp.least_squares",
+    "source": "teaching/numa.interp.least_squares.md"
+  },
+  {
+    "concept_id": "numa.interp.normal_equations",
+    "source": "teaching/numa.interp.normal_equations.md"
+  },
+  {
+    "concept_id": "numa.interp.orthogonal",
+    "source": "teaching/numa.interp.orthogonal.md"
+  },
+  {
+    "concept_id": "numa.interp.extrapolation",
+    "source": "teaching/numa.interp.extrapolation.md"
+  },
+  {
+    "concept_id": "numa.integration.trapezoid",
+    "source": "teaching/numa.integration.trapezoid.md"
+  },
+  {
+    "concept_id": "numa.integration.midpoint",
+    "source": "teaching/numa.integration.midpoint.md"
+  },
+  {
+    "concept_id": "numa.integration.simpson",
+    "source": "teaching/numa.integration.simpson.md"
+  },
+  {
+    "concept_id": "numa.integration.composite",
+    "source": "teaching/numa.integration.composite.md"
+  },
+  {
+    "concept_id": "numa.integration.error",
+    "source": "teaching/numa.integration.error.md"
+  },
+  {
+    "concept_id": "numa.integration.romberg",
+    "source": "teaching/numa.integration.romberg.md"
+  },
+  {
+    "concept_id": "numa.integration.gauss",
+    "source": "teaching/numa.integration.gauss.md"
+  },
+  {
+    "concept_id": "numa.integration.adaptive",
+    "source": "teaching/numa.integration.adaptive.md"
+  },
+  {
+    "concept_id": "numa.integration.improper",
+    "source": "teaching/numa.integration.improper.md"
+  },
+  {
+    "concept_id": "numa.linear.elimination",
+    "source": "teaching/numa.linear.elimination.md"
+  },
+  {
+    "concept_id": "numa.linear.pivoting",
+    "source": "teaching/numa.linear.pivoting.md"
+  },
+  {
+    "concept_id": "numa.linear.lu",
+    "source": "teaching/numa.linear.lu.md"
+  },
+  {
+    "concept_id": "numa.linear.jacobi",
+    "source": "teaching/numa.linear.jacobi.md"
+  },
+  {
+    "concept_id": "numa.linear.gauss_seidel",
+    "source": "teaching/numa.linear.gauss_seidel.md"
+  },
+  {
+    "concept_id": "numa.linear.power",
+    "source": "teaching/numa.linear.power.md"
+  },
+  {
+    "concept_id": "numa.linear.least_squares_qr",
+    "source": "teaching/numa.linear.least_squares_qr.md"
+  },
+  {
+    "concept_id": "ra.order.supremum",
+    "source": "teaching/ra.order.supremum.md"
+  },
+  {
+    "concept_id": "ra.order.completeness",
+    "source": "teaching/ra.order.completeness.md"
+  },
+  {
+    "concept_id": "ra.order.archimedean",
+    "source": "teaching/ra.order.archimedean.md"
+  },
+  {
+    "concept_id": "ra.order.nested_intervals",
+    "source": "teaching/ra.order.nested_intervals.md"
+  },
+  {
+    "concept_id": "ra.order.density",
+    "source": "teaching/ra.order.density.md"
+  },
+  {
+    "concept_id": "ra.order.countable",
+    "source": "teaching/ra.order.countable.md"
+  },
+  {
+    "concept_id": "ra.order.uncountable",
+    "source": "teaching/ra.order.uncountable.md"
+  },
+  {
+    "concept_id": "ra.order.extended",
+    "source": "teaching/ra.order.extended.md"
+  },
+  {
+    "concept_id": "ra.seq.convergence",
+    "source": "teaching/ra.seq.convergence.md"
+  },
+  {
+    "concept_id": "ra.seq.monotone",
+    "source": "teaching/ra.seq.monotone.md"
+  },
+  {
+    "concept_id": "ra.seq.subsequence",
+    "source": "teaching/ra.seq.subsequence.md"
+  },
+  {
+    "concept_id": "ra.seq.bolzano_weierstrass",
+    "source": "teaching/ra.seq.bolzano_weierstrass.md"
+  },
+  {
+    "concept_id": "ra.seq.cauchy",
+    "source": "teaching/ra.seq.cauchy.md"
+  },
+  {
+    "concept_id": "ra.seq.series",
+    "source": "teaching/ra.seq.series.md"
+  },
+  {
+    "concept_id": "ra.seq.tests",
+    "source": "teaching/ra.seq.tests.md"
+  },
+  {
+    "concept_id": "ra.seq.absolute",
+    "source": "teaching/ra.seq.absolute.md"
+  },
+  {
+    "concept_id": "ra.seq.rearrangement",
+    "source": "teaching/ra.seq.rearrangement.md"
+  },
+  {
+    "concept_id": "ra.seq.cauchy_criterion",
+    "source": "teaching/ra.seq.cauchy_criterion.md"
+  },
+  {
+    "concept_id": "ra.limit.function",
+    "source": "teaching/ra.limit.function.md"
+  },
+  {
+    "concept_id": "ra.limit.sequential",
+    "source": "teaching/ra.limit.sequential.md"
+  },
+  {
+    "concept_id": "ra.limit.continuity",
+    "source": "teaching/ra.limit.continuity.md"
+  },
+  {
+    "concept_id": "ra.limit.ivt",
+    "source": "teaching/ra.limit.ivt.md"
+  },
+  {
+    "concept_id": "ra.limit.evt",
+    "source": "teaching/ra.limit.evt.md"
+  },
+  {
+    "concept_id": "ra.limit.uniform",
+    "source": "teaching/ra.limit.uniform.md"
+  },
+  {
+    "concept_id": "ra.limit.compact",
+    "source": "teaching/ra.limit.compact.md"
+  },
+  {
+    "concept_id": "ra.limit.connected",
+    "source": "teaching/ra.limit.connected.md"
+  },
+  {
+    "concept_id": "ra.limit.discontinuity",
+    "source": "teaching/ra.limit.discontinuity.md"
+  },
+  {
+    "concept_id": "ra.limit.monotone_fn",
+    "source": "teaching/ra.limit.monotone_fn.md"
+  },
+  {
+    "concept_id": "ra.deriv.mvt",
+    "source": "teaching/ra.deriv.mvt.md"
+  },
+  {
+    "concept_id": "ra.deriv.chain",
+    "source": "teaching/ra.deriv.chain.md"
+  },
+  {
+    "concept_id": "ra.deriv.taylor",
+    "source": "teaching/ra.deriv.taylor.md"
+  },
+  {
+    "concept_id": "ra.deriv.lhopital",
+    "source": "teaching/ra.deriv.lhopital.md"
+  },
+  {
+    "concept_id": "ra.deriv.riemann",
+    "source": "teaching/ra.deriv.riemann.md"
+  },
+  {
+    "concept_id": "ra.deriv.darboux",
+    "source": "teaching/ra.deriv.darboux.md"
+  },
+  {
+    "concept_id": "ra.deriv.ftc",
+    "source": "teaching/ra.deriv.ftc.md"
+  },
+  {
+    "concept_id": "ra.deriv.parts",
+    "source": "teaching/ra.deriv.parts.md"
+  },
+  {
+    "concept_id": "ra.deriv.improper",
+    "source": "teaching/ra.deriv.improper.md"
+  },
+  {
+    "concept_id": "ra.deriv.uniform_conv",
+    "source": "teaching/ra.deriv.uniform_conv.md"
+  },
+  {
+    "concept_id": "ra.deriv.power_series",
+    "source": "teaching/ra.deriv.power_series.md"
+  },
+  {
+    "concept_id": "ra.deriv.interchange",
+    "source": "teaching/ra.deriv.interchange.md"
+  },
+  {
+    "concept_id": "ra.metric.spaces",
+    "source": "teaching/ra.metric.spaces.md"
+  },
+  {
+    "concept_id": "ra.metric.open_closed",
+    "source": "teaching/ra.metric.open_closed.md"
+  },
+  {
+    "concept_id": "ra.metric.closure",
+    "source": "teaching/ra.metric.closure.md"
+  },
+  {
+    "concept_id": "ra.metric.convergence",
+    "source": "teaching/ra.metric.convergence.md"
+  },
+  {
+    "concept_id": "ra.metric.complete",
+    "source": "teaching/ra.metric.complete.md"
+  },
+  {
+    "concept_id": "ra.metric.compact",
+    "source": "teaching/ra.metric.compact.md"
+  },
+  {
+    "concept_id": "ra.metric.continuity",
+    "source": "teaching/ra.metric.continuity.md"
+  },
+  {
+    "concept_id": "ra.metric.contraction",
+    "source": "teaching/ra.metric.contraction.md"
+  },
+  {
+    "concept_id": "ra.metric.baire",
+    "source": "teaching/ra.metric.baire.md"
+  },
+  {
+    "concept_id": "ra.metric.equivalent",
+    "source": "teaching/ra.metric.equivalent.md"
+  },
+  {
+    "concept_id": "calc.limit.intermediate_value",
+    "source": "teaching/calc.limit.intermediate_value.md"
+  },
+  {
+    "concept_id": "calc.limit.limsup",
+    "source": "teaching/calc.limit.limsup.md"
+  },
+  {
+    "concept_id": "calc.limit.oscillation",
+    "source": "teaching/calc.limit.oscillation.md"
+  },
+  {
+    "concept_id": "calc.deriv.inverse_hyperbolic",
+    "source": "teaching/calc.deriv.inverse_hyperbolic.md"
+  },
+  {
+    "concept_id": "calc.deriv.mvt_applications",
+    "source": "teaching/calc.deriv.mvt_applications.md"
+  },
+  {
+    "concept_id": "calc.deriv.newton_convergence",
+    "source": "teaching/calc.deriv.newton_convergence.md"
+  },
+  {
+    "concept_id": "calc.deriv.convex_jensen",
+    "source": "teaching/calc.deriv.convex_jensen.md"
+  },
+  {
+    "concept_id": "calc.deriv.marginal_analysis",
+    "source": "teaching/calc.deriv.marginal_analysis.md"
+  },
+  {
+    "concept_id": "calc.deriv.epsilon_delta_deriv",
+    "source": "teaching/calc.deriv.epsilon_delta_deriv.md"
+  },
+  {
+    "concept_id": "calc.series.operations",
+    "source": "teaching/calc.series.operations.md"
+  },
+  {
+    "concept_id": "calc.series.binomial",
+    "source": "teaching/calc.series.binomial.md"
+  },
+  {
+    "concept_id": "calc.series.cauchy_product",
+    "source": "teaching/calc.series.cauchy_product.md"
+  },
+  {
+    "concept_id": "calc.series.p_series",
+    "source": "teaching/calc.series.p_series.md"
+  },
+  {
+    "concept_id": "calc.series.dirichlet_test",
+    "source": "teaching/calc.series.dirichlet_test.md"
+  },
+  {
+    "concept_id": "calc.series.gamma",
+    "source": "teaching/calc.series.gamma.md"
+  },
+  {
+    "concept_id": "calc.integral.numerical_error",
+    "source": "teaching/calc.integral.numerical_error.md"
+  },
+  {
+    "concept_id": "calc.integral.double_polar",
+    "source": "teaching/calc.integral.double_polar.md"
+  },
+  {
+    "concept_id": "calc.integral.surface_scalar",
+    "source": "teaching/calc.integral.surface_scalar.md"
+  },
+  {
+    "concept_id": "calc.integral.beta",
+    "source": "teaching/calc.integral.beta.md"
+  },
+  {
+    "concept_id": "calc.integral.consumer_surplus",
+    "source": "teaching/calc.integral.consumer_surplus.md"
+  },
+  {
+    "concept_id": "calc.integral.fourier_coefficients",
+    "source": "teaching/calc.integral.fourier_coefficients.md"
+  },
+  {
+    "concept_id": "calc.multi.lagrange_two",
+    "source": "teaching/calc.multi.lagrange_two.md"
+  },
+  {
+    "concept_id": "calc.multi.implicit_function",
+    "source": "teaching/calc.multi.implicit_function.md"
+  },
+  {
+    "concept_id": "calc.multi.inverse_function",
+    "source": "teaching/calc.multi.inverse_function.md"
+  },
+  {
+    "concept_id": "calc.multi.iterated_limits",
+    "source": "teaching/calc.multi.iterated_limits.md"
+  },
+  {
+    "concept_id": "calc.multi.euler_homogeneous",
+    "source": "teaching/calc.multi.euler_homogeneous.md"
+  },
+  {
+    "concept_id": "calc.vec.line_scalar",
+    "source": "teaching/calc.vec.line_scalar.md"
+  },
+  {
+    "concept_id": "calc.vec.parametric_surface",
+    "source": "teaching/calc.vec.parametric_surface.md"
+  },
+  {
+    "concept_id": "calc.vec.flux_general",
+    "source": "teaching/calc.vec.flux_general.md"
+  },
+  {
+    "concept_id": "calc.vec.identities",
+    "source": "teaching/calc.vec.identities.md"
+  },
+  {
+    "concept_id": "alg.func.piecewise",
+    "source": "teaching/alg.func.piecewise.md"
+  },
+  {
+    "concept_id": "alg.func.transformations",
+    "source": "teaching/alg.func.transformations.md"
+  },
+  {
+    "concept_id": "alg.func.inverse_domain",
+    "source": "teaching/alg.func.inverse_domain.md"
+  },
+  {
+    "concept_id": "alg.exp.graph",
+    "source": "teaching/alg.exp.graph.md"
+  },
+  {
+    "concept_id": "alg.exp.compound",
+    "source": "teaching/alg.exp.compound.md"
+  },
+  {
+    "concept_id": "alg.log.graph",
+    "source": "teaching/alg.log.graph.md"
+  },
+  {
+    "concept_id": "alg.log.model",
+    "source": "teaching/alg.log.model.md"
+  },
+  {
+    "concept_id": "alg.radical.simplify",
+    "source": "teaching/alg.radical.simplify.md"
+  },
+  {
+    "concept_id": "alg.radical.operations",
+    "source": "teaching/alg.radical.operations.md"
+  },
+  {
+    "concept_id": "alg.radical.conjugate",
+    "source": "teaching/alg.radical.conjugate.md"
+  },
+  {
+    "concept_id": "alg.rational.complex_fraction",
+    "source": "teaching/alg.rational.complex_fraction.md"
+  },
+  {
+    "concept_id": "alg.rational.proportions",
+    "source": "teaching/alg.rational.proportions.md"
+  },
+  {
+    "concept_id": "alg.rational.asymptotes",
+    "source": "teaching/alg.rational.asymptotes.md"
+  },
+  {
+    "concept_id": "alg.systems.three_var",
+    "source": "teaching/alg.systems.three_var.md"
+  },
+  {
+    "concept_id": "alg.systems.matrices",
+    "source": "teaching/alg.systems.matrices.md"
+  },
+  {
+    "concept_id": "alg.systems.nonlinear",
+    "source": "teaching/alg.systems.nonlinear.md"
+  },
+  {
+    "concept_id": "alg.seq.sigma",
+    "source": "teaching/alg.seq.sigma.md"
+  },
+  {
+    "concept_id": "alg.seq.induction",
+    "source": "teaching/alg.seq.induction.md"
+  },
+  {
+    "concept_id": "alg.poly.factor_theorem",
+    "source": "teaching/alg.poly.factor_theorem.md"
+  },
+  {
+    "concept_id": "alg.poly.rational_root",
+    "source": "teaching/alg.poly.rational_root.md"
+  },
+  {
+    "concept_id": "trig.basics.periodicity",
+    "source": "teaching/trig.basics.periodicity.md"
+  },
+  {
+    "concept_id": "trig.basics.angular_velocity",
+    "source": "teaching/trig.basics.angular_velocity.md"
+  },
+  {
+    "concept_id": "trig.basics.bearings",
+    "source": "teaching/trig.basics.bearings.md"
+  },
+  {
+    "concept_id": "trig.ident.product_to_sum",
+    "source": "teaching/trig.ident.product_to_sum.md"
+  },
+  {
+    "concept_id": "trig.ident.sum_to_product",
+    "source": "teaching/trig.ident.sum_to_product.md"
+  },
+  {
+    "concept_id": "trig.ident.triple_angle",
+    "source": "teaching/trig.ident.triple_angle.md"
+  },
+  {
+    "concept_id": "trig.ident.power_reduction",
+    "source": "teaching/trig.ident.power_reduction.md"
+  },
+  {
+    "concept_id": "trig.ident.pythagorean_variants",
+    "source": "teaching/trig.ident.pythagorean_variants.md"
+  },
+  {
+    "concept_id": "trig.eq.general_solution",
+    "source": "teaching/trig.eq.general_solution.md"
+  },
+  {
+    "concept_id": "trig.eq.linear",
+    "source": "teaching/trig.eq.linear.md"
+  },
+  {
+    "concept_id": "trig.ineq.advanced",
+    "source": "teaching/trig.ineq.advanced.md"
+  },
+  {
+    "concept_id": "trig.graph.tan",
+    "source": "teaching/trig.graph.tan.md"
+  },
+  {
+    "concept_id": "trig.graph.transformations",
+    "source": "teaching/trig.graph.transformations.md"
+  },
+  {
+    "concept_id": "trig.graph.inverse",
+    "source": "teaching/trig.graph.inverse.md"
+  },
+  {
+    "concept_id": "trig.graph.reciprocal",
+    "source": "teaching/trig.graph.reciprocal.md"
+  },
+  {
+    "concept_id": "trig.hyperbolic.identities",
+    "source": "teaching/trig.hyperbolic.identities.md"
+  },
+  {
+    "concept_id": "trig.hyperbolic.inverse",
+    "source": "teaching/trig.hyperbolic.inverse.md"
+  },
+  {
+    "concept_id": "trig.hyperbolic.derivative",
+    "source": "teaching/trig.hyperbolic.derivative.md"
+  },
+  {
+    "concept_id": "trig.adv.polar",
+    "source": "teaching/trig.adv.polar.md"
+  },
+  {
+    "concept_id": "trig.adv.vector_projection",
+    "source": "teaching/trig.adv.vector_projection.md"
+  },
+  {
+    "concept_id": "arith.add.single",
+    "source": "authored/arith.add.single.md"
+  },
+  {
+    "concept_id": "arith.sub.single",
+    "source": "authored/arith.sub.single.md"
+  },
+  {
+    "concept_id": "arith.place.tens",
+    "source": "authored/arith.place.tens.md"
+  },
+  {
+    "concept_id": "arith.add.double",
+    "source": "authored/arith.add.double.md"
+  },
+  {
+    "concept_id": "arith.add.carry",
+    "source": "authored/arith.add.carry.md"
+  },
+  {
+    "concept_id": "arith.sub.double",
+    "source": "authored/arith.sub.double.md"
+  },
+  {
+    "concept_id": "arith.sub.borrow",
+    "source": "authored/arith.sub.borrow.md"
+  },
+  {
+    "concept_id": "arith.add.word",
+    "source": "authored/arith.add.word.md"
+  },
+  {
+    "concept_id": "arith.sub.word",
+    "source": "authored/arith.sub.word.md"
+  },
+  {
+    "concept_id": "arith.mult.concept",
+    "source": "authored/arith.mult.concept.md"
+  },
+  {
+    "concept_id": "arith.div.concept",
+    "source": "authored/arith.div.concept.md"
+  },
+  {
+    "concept_id": "arith.compare.within100",
+    "source": "authored/arith.compare.within100.md"
+  },
+  {
+    "concept_id": "arith.add.triple",
+    "source": "authored/arith.add.triple.md"
+  },
+  {
+    "concept_id": "arith.place.hundreds",
+    "source": "authored/arith.place.hundreds.md"
+  },
+  {
+    "concept_id": "arith.compare.within1000",
+    "source": "authored/arith.compare.within1000.md"
+  },
+  {
+    "concept_id": "arith.mult.2_5_10",
+    "source": "authored/arith.mult.2_5_10.md"
+  },
+  {
+    "concept_id": "arith.mult.3_4",
+    "source": "authored/arith.mult.3_4.md"
+  },
+  {
+    "concept_id": "arith.div.tables",
+    "source": "authored/arith.div.tables.md"
+  },
+  {
+    "concept_id": "arith.mult.word_tables",
+    "source": "authored/arith.mult.word_tables.md"
+  },
+  {
+    "concept_id": "arith.div.word_tables",
+    "source": "authored/arith.div.word_tables.md"
+  },
+  {
+    "concept_id": "frac.basics.concept",
+    "source": "authored/frac.basics.concept.md"
+  },
+  {
+    "concept_id": "frac.basics.parts",
+    "source": "authored/frac.basics.parts.md"
+  },
+  {
+    "concept_id": "frac.compare.unit_like",
+    "source": "authored/frac.compare.unit_like.md"
+  },
+  {
+    "concept_id": "frac.add.same",
+    "source": "authored/frac.add.same.md"
+  },
+  {
+    "concept_id": "frac.sub.same",
+    "source": "authored/frac.sub.same.md"
+  }
+]

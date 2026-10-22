@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiplying by the fraction",
+    "section": "Multiplying by the fraction",
+    "subgoals": [
+      "Read of as multiply",
+      "Compute a fraction of a number",
+      "Say why the wording matters"
+    ]
+  },
+  {
+    "label": "Why the answer is whole here",
+    "section": "Why the answer is whole here",
+    "subgoals": [
+      "Divide the whole by the denominator",
+      "Take the numerator's worth",
+      "Handle a denominator that does not divide"
+    ]
+  },
+  {
+    "label": "The same as sharing",
+    "section": "The same as sharing",
+    "subgoals": [
+      "Share and take",
+      "See why of means multiply",
+      "Check one reading against the other"
+    ]
+  }
+]

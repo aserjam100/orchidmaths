@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The denominator",
+    "section": "The denominator",
+    "subgoals": [
+      "Find the bottom number",
+      "Call it the denominator",
+      "Read it as the number of equal parts in the whole"
+    ]
+  },
+  {
+    "label": "The numerator",
+    "section": "The numerator",
+    "subgoals": [
+      "Find the top number",
+      "Call it the numerator",
+      "Read it as the number of parts you have"
+    ]
+  },
+  {
+    "label": "Read a fraction",
+    "section": "Read a fraction",
+    "subgoals": [
+      "Say the numerator",
+      "Say the denominator as a part name",
+      "Say what the fraction means"
+    ]
+  }
+]

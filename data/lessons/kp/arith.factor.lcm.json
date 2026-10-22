@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Prime factorization",
+    "section": "",
+    "subgoals": [
+      "Break the number into any factor pair",
+      "Factor each branch",
+      "Collect the prime factors"
+    ]
+  },
+  {
+    "label": "Factor-tree method",
+    "section": "",
+    "subgoals": [
+      "Draw the factor tree",
+      "Factor until every leaf is prime",
+      "Write the product of primes"
+    ]
+  },
+  {
+    "label": "Using prime factorization",
+    "section": "",
+    "subgoals": [
+      "Verify the prime product",
+      "Compare with the ladder method",
+      "Apply prime factorization to the LCM"
+    ]
+  }
+]

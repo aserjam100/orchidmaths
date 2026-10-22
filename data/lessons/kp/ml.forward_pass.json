@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: an identity layer",
+    "section": "Worked: an identity layer",
+    "subgoals": [
+      "Multiply weights by the input",
+      "Add the bias vector",
+      "Apply the activation"
+    ]
+  },
+  {
+    "label": "Worked: a ReLU layer",
+    "section": "Worked: a ReLU layer",
+    "subgoals": [
+      "Compute the affine map z",
+      "Threshold negatives with ReLU",
+      "Feed the output to the next layer"
+    ]
+  },
+  {
+    "label": "Before backpropagation",
+    "section": "Before backpropagation",
+    "subgoals": [
+      "Finish the forward pass to get loss",
+      "Order forward before backward",
+      "Hand predictions to the loss"
+    ]
+  }
+]

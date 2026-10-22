@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the line closes into a circle",
+    "section": "Worked: the line closes into a circle",
+    "subgoals": [
+      "Identify the compact sets of R",
+      "Trap infinity between both tails",
+      "Match the result against the circle"
+    ]
+  },
+  {
+    "label": "Worked: the plane closes into a sphere",
+    "section": "Worked: the plane closes into a sphere",
+    "subgoals": [
+      "Complement large discs for infinity",
+      "Project stereographically",
+      "Extend continuously to the pole"
+    ]
+  },
+  {
+    "label": "When compactification fails",
+    "section": "When compactification fails",
+    "subgoals": [
+      "Search Q for a compact neighbourhood",
+      "Show infinity cannot be separated",
+      "Conclude local compactness is required"
+    ]
+  }
+]

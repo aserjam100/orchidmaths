@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: A_3 is normal in S_3",
+    "section": "Worked: A_3 is normal in S_3",
+    "subgoals": [
+      "Conjugate a 3-cycle and track cycle type",
+      "Confirm the result stays in A_3",
+      "Invoke the index-2 shortcut"
+    ]
+  },
+  {
+    "label": "Worked: {e, (1 2)} is not normal in S_3",
+    "section": "Worked: {e, (1 2)} is not normal in S_3",
+    "subgoals": [
+      "Conjugate (1 2) by (1 3)",
+      "Find (2 3) outside the set",
+      "Conclude normality fails"
+    ]
+  },
+  {
+    "label": "Abelian shortcut",
+    "section": "Abelian shortcut",
+    "subgoals": [
+      "Note ghg^-1 = h in abelian groups",
+      "Apply to every subgroup at once",
+      "Restrict attention to non-abelian groups"
+    ]
+  }
+]

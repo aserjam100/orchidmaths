@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Disks and interior points",
+    "section": "Disks and interior points",
+    "subgoals": [
+      "Define an open set by disks",
+      "See why the open disk is open",
+      "See why the closed disk is not"
+    ]
+  },
+  {
+    "label": "Boundaries and closure",
+    "section": "Boundaries and closure",
+    "subgoals": [
+      "Identify the boundary",
+      "Relate closure and interior",
+      "Note inclusion or exclusion of the boundary"
+    ]
+  },
+  {
+    "label": "Classifying a set",
+    "section": "Classifying a set",
+    "subgoals": [
+      "Ask about its own boundary",
+      "Ask about the complement's boundary",
+      "Rule out both open and closed for a disk"
+    ]
+  }
+]

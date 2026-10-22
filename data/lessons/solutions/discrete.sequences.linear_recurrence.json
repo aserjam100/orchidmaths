@@ -1,0 +1,23 @@
+{
+  "concept": "discrete.sequences.linear_recurrence",
+  "setup": "The recurrence is \\(a_n = [[c1]]a_{n-1} - [[c2]]a_{n-2}\\), with \\(a_0 = [[a0]]\\) and \\(a_1 = [[a1]]\\).",
+  "steps": [
+    {
+      "fact": "c1",
+      "say": "Substituting \\(a_n = r^n\\) gives the characteristic equation \\(r^2 - [[c1]]r + [[c2]] = 0\\), whose roots are \\([[r1]]\\) and \\([[r2]]\\)."
+    },
+    {
+      "fact": "r2",
+      "say": "Distinct roots give the general solution \\(a_n = A \\cdot [[r1]]^n + B \\cdot [[r2]]^n\\)."
+    },
+    {
+      "fact": "a0",
+      "say": "The initial conditions give \\(A + B = [[a0]]\\) and \\([[r1]]A + [[r2]]B = [[a1]]\\), so \\(A = [[a]]\\) and \\(B = [[b]]\\)."
+    },
+    {
+      "fact": "value",
+      "say": "Substituting gives \\(a_n = [[value]]\\). Check: at \\(n = 0\\) the value is \\([[a0]]\\), and at \\(n = 1\\) it is \\([[a1]]\\)."
+    }
+  ],
+  "answer": "So \\(a_n = [[value]]\\)."
+}

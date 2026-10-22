@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: theta at 10",
+    "section": "Worked: theta at 10",
+    "subgoals": [
+      "List the primes 2, 3, 5, 7",
+      "Add their logs to 5.35",
+      "Compare against the asymptote x"
+    ]
+  },
+  {
+    "label": "Worked: von Mangoldt at 8, 9, 12",
+    "section": "Worked: von Mangoldt at 8, 9, 12",
+    "subgoals": [
+      "Detect the prime powers 8 and 9",
+      "Name their base-prime logs",
+      "Zero out 12 for its two distinct primes"
+    ]
+  },
+  {
+    "label": "Worked: psi at 10",
+    "section": "Worked: psi at 10",
+    "subgoals": [
+      "Add the prime-power tail to theta(10)",
+      "Total the sum to 7.83",
+      "Read psi(x) as the sharpest PNT form"
+    ]
+  }
+]

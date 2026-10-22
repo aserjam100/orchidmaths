@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Count in twos",
+    "section": "Count in twos",
+    "subgoals": [
+      "Count in twos",
+      "Stop after the right number of steps",
+      "Say the last number"
+    ]
+  },
+  {
+    "label": "Count in fives",
+    "section": "Count in fives",
+    "subgoals": [
+      "Count in fives",
+      "Stop after the right number of steps",
+      "Check the answer ends in 5 or 0"
+    ]
+  },
+  {
+    "label": "Count in tens",
+    "section": "Count in tens",
+    "subgoals": [
+      "Read the number of tens",
+      "Write a 0 after it",
+      "Remember the order does not matter"
+    ]
+  }
+]

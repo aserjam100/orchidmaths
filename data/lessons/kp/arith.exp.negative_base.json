@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Parentheses include the sign",
+    "section": "Parentheses include the sign",
+    "subgoals": [
+      "Make the negative number the base",
+      "Multiply the base by itself the stated number of times",
+      "Count the negative factors"
+    ]
+  },
+  {
+    "label": "No parentheses: the power acts first",
+    "section": "No parentheses: the power acts first",
+    "subgoals": [
+      "Evaluate the positive base",
+      "Apply the negative sign after the power",
+      "Keep the result negative"
+    ]
+  },
+  {
+    "label": "Even and odd powers",
+    "section": "Even and odd powers",
+    "subgoals": [
+      "Pair the negative factors",
+      "Leave a negative result for an odd count",
+      "Read the parentheses before calculating"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The axiom",
+    "section": "The axiom",
+    "subgoals": [
+      "Start from an ordered field",
+      "Assume a nonempty set is bounded above",
+      "Demand a real least upper bound"
+    ]
+  },
+  {
+    "label": "Why the rationals fail",
+    "section": "Why the rationals fail",
+    "subgoals": [
+      "Form a bounded set of rationals",
+      "Suppose a rational bound exists",
+      "Show its square would have to be two"
+    ]
+  },
+  {
+    "label": "Equivalent formulations",
+    "section": "Equivalent formulations",
+    "subgoals": [
+      "State one equivalent property",
+      "Derive another from it",
+      "Note that any one may serve as the axiom"
+    ]
+  }
+]

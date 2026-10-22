@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Density times area",
+    "section": "Density times area",
+    "subgoals": [
+      "Multiply density by area",
+      "Check the units",
+      "Recognise when no integral is needed"
+    ]
+  },
+  {
+    "label": "When the density varies",
+    "section": "When the density varies",
+    "subgoals": [
+      "Write the double integral",
+      "Read it as a sum of pieces",
+      "Say what the integral generalises"
+    ]
+  },
+  {
+    "label": "Reading the units",
+    "section": "Reading the units",
+    "subgoals": [
+      "Check an area integral",
+      "Check a length integral",
+      "Catch a wrong measure"
+    ]
+  }
+]

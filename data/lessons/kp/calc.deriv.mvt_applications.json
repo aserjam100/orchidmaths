@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Average and instantaneous rates",
+    "section": "Average and instantaneous rates",
+    "subgoals": [
+      "Compute the average rate over the interval",
+      "Assert the instantaneous rate equals it",
+      "Attach it to a physical quantity"
+    ]
+  },
+  {
+    "label": "Why the equality must occur",
+    "section": "Why the equality must occur",
+    "subgoals": [
+      "Assume the rate stays above the average",
+      "Get more change than the average allows",
+      "Cross to equality"
+    ]
+  },
+  {
+    "label": "Consequences for estimates",
+    "section": "Consequences for estimates",
+    "subgoals": [
+      "Bound a change by the largest slope",
+      "Get the linear-approximation error",
+      "Force constants from a zero derivative"
+    ]
+  }
+]

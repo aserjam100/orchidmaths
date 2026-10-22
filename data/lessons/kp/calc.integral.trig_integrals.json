@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Sort by even vs odd power",
+      "Preview half-angle for even, peel-off for odd",
+      "Flag integral of sin^2 x as half-angle case"
+    ]
+  },
+  {
+    "label": "Integrals of trigonometric powers with \\\\(n\\\\) even",
+    "section": "",
+    "subgoals": [
+      "Replace sin^2 via (1-cos2x)/2",
+      "Integrate term-by-term after lowering",
+      "Evaluate integral of sin^2 x = (x - sin2x/2)/2 + C"
+    ]
+  },
+  {
+    "label": "Integrals of trigonometric powers with \\\\(n\\\\) odd",
+    "section": "",
+    "subgoals": [
+      "Peel sin x off sin^3 x for u = cos x",
+      "Convert rest via 1-cos^2",
+      "Integrate sin^3 x to -cos x + cos^3 x/3 + C"
+    ]
+  }
+]

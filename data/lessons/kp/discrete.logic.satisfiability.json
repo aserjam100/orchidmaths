@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The three classes",
+    "section": "The three classes",
+    "subgoals": [
+      "Define tautology, contradiction, contingency",
+      "See that the classes partition formulas",
+      "Link equivalence to a tautological biconditional"
+    ]
+  },
+  {
+    "label": "Deciding by truth table",
+    "section": "Deciding by truth table",
+    "subgoals": [
+      "Write a column per subformula",
+      "Count the satisfied rows",
+      "Classify from the count"
+    ]
+  },
+  {
+    "label": "Why the classification matters",
+    "section": "Why the classification matters",
+    "subgoals": [
+      "Turn classification into an equivalence test",
+      "Separate true in a row from true in all rows",
+      "Use the empty-premise reading"
+    ]
+  }
+]

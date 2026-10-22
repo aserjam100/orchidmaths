@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The trace",
+    "section": "The trace",
+    "subgoals": [
+      "Define the trace",
+      "Compute it",
+      "Note it is not visible on the diagonal"
+    ]
+  },
+  {
+    "label": "Why it is the sum",
+    "section": "Why it is the sum",
+    "subgoals": [
+      "Use the characteristic polynomial",
+      "Invoke the factor theorem",
+      "Conclude the identity"
+    ]
+  },
+  {
+    "label": "Using it",
+    "section": "Using it",
+    "subgoals": [
+      "Recover one eigenvalue from the trace",
+      "Note the pair of invariants",
+      "Say when the pair is enough"
+    ]
+  }
+]

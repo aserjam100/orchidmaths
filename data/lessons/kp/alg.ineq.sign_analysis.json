@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is sign analysis",
+    "section": "",
+    "subgoals": [
+      "Define the method",
+      "Identify factors",
+      "Prepare the number line"
+    ]
+  },
+  {
+    "label": "Systematic procedure",
+    "section": "",
+    "subgoals": [
+      "Find the critical points",
+      "Test each interval",
+      "Record the signs"
+    ]
+  },
+  {
+    "label": "Geometric representation",
+    "section": "",
+    "subgoals": [
+      "Draw the sign chart",
+      "Read off valid intervals",
+      "State the solution"
+    ]
+  }
+]

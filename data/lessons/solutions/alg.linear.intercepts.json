@@ -1,0 +1,19 @@
+{
+  "concept": "alg.linear.intercepts",
+  "setup": "The line is \\([[eq]]\\).",
+  "steps": [
+    {
+      "fact": "x_int",
+      "say": "Setting \\(y=0\\) gives \\([[coef_x]]x = [[rhs]]\\), so \\(x = [[x_int]]\\)."
+    },
+    {
+      "fact": "y_int",
+      "say": "Setting \\(x=0\\) gives \\([[coef_y]]y = [[rhs]]\\), so \\(y = [[y_int]]\\)."
+    },
+    {
+      "fact": "eq",
+      "say": "So the intercepts are \\(([[x_int]], 0)\\) and \\((0, [[y_int]])\\), entered as \\([[x_int]],[[y_int]]\\)."
+    }
+  ],
+  "answer": "The intercept pair is \\([[x_int]],[[y_int]]\\)."
+}

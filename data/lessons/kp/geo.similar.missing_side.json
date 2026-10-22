@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Setting up the proportion",
+    "section": "Setting up the proportion",
+    "subgoals": [
+      "Write the ratios of corresponding sides",
+      "Equate them as a proportion",
+      "Solve a multiplication"
+    ]
+  },
+  {
+    "label": "Solving for the unknown",
+    "section": "Solving for the unknown",
+    "subgoals": [
+      "Cross-multiply",
+      "Check the answer's size",
+      "Detect an upside-down proportion"
+    ]
+  },
+  {
+    "label": "Choosing the corresponding sides",
+    "section": "Choosing the corresponding sides",
+    "subgoals": [
+      "Match sides by their angles",
+      "Use the vertex order in the name",
+      "Write a similarity statement"
+    ]
+  }
+]

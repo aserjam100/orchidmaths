@@ -1,0 +1,607 @@
+[
+  {
+    "id": "complex.basics.concept",
+    "label": "Imaginary unit i and complex numbers",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "complex",
+    "prerequisites": [
+      "arith.sqrt.perfect",
+      "arith.neg.number_line"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "complex.ops.add_sub",
+    "label": "Add and subtract complex numbers",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.basics.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 10.0
+    }
+  },
+  {
+    "id": "complex.ops.mult",
+    "label": "Multiply complex numbers",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.ops.add_sub",
+      "alg.poly.foil"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "complex.ops.conjugate",
+    "label": "Complex conjugate",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.ops.mult"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 10.0
+    }
+  },
+  {
+    "id": "complex.ops.divide",
+    "label": "Divide complex numbers",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.ops.conjugate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "complex.adv.polar",
+    "label": "Polar form of complex numbers",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.ops.divide",
+      "trig.basics.unit_circle"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "complex.adv.de_moivre",
+    "label": "De Moivre's theorem",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.adv.polar"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "complex.adv.roots",
+    "label": "Roots of complex numbers",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.adv.de_moivre"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "complex.adv.exponential",
+    "label": "Exponential form of complex numbers (Euler's formula)",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "symbolic",
+    "prerequisites": [
+      "complex.adv.polar"
+    ],
+    "mastery_threshold": {
+      "streak": 3,
+      "avg_time_seconds": 120
+    }
+  },
+  {
+    "id": "complex.adv.logarithm",
+    "label": "Complex logarithm and branches",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "symbolic",
+    "prerequisites": [
+      "complex.adv.exponential"
+    ],
+    "mastery_threshold": {
+      "streak": 3,
+      "avg_time_seconds": 120
+    }
+  },
+  {
+    "id": "complex.adv.inequalities",
+    "label": "Fundamental inequalities for complex numbers",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "symbolic",
+    "prerequisites": [
+      "complex.basics.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 3,
+      "avg_time_seconds": 120
+    }
+  },
+  {
+    "id": "complex.ops.modulus",
+    "label": "Modulus of a complex number",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "complex.ops.conjugate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "complex.ops.argument",
+    "label": "Argument of a complex number",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.ops.modulus",
+      "trig.basics.unit_circle"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "complex.adv.euler_identity",
+    "label": "Euler's identity",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.exponential"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "complex.adv.cauchy_riemann",
+    "label": "Cauchy-Riemann equations",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.polar",
+      "calc.deriv.partial"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "complex.adv.residue",
+    "label": "Residues and the residue theorem",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.cauchy_riemann"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "complex.adv.analytic",
+    "label": "Analytic functions",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.cauchy_riemann"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "complex.series.laurent",
+    "label": "Laurent series",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.analytic"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "complex.integral.contour",
+    "label": "Contour integration",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.series.laurent",
+      "calc.integral.definite"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "complex.adv.harmonic",
+    "label": "Harmonic functions and mean value",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.analytic"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "complex.topology.riemann_sphere",
+    "label": "Riemann sphere and stereographic projection",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.topology",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.polar",
+      "topo.manifold"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "complex.adv.conformal",
+    "label": "Conformal mappings",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.analytic"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "complex.integral.cauchy_goursat",
+    "label": "Cauchy-Goursat theorem",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.analytic"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "complex.series.power",
+    "label": "Power series and radius of convergence",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.analytic",
+      "calc.series.power"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "complex.adv.mobius",
+    "label": "Möbius transformations",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.topology",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.topology.riemann_sphere"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "complex.adv.schwarz_lemma",
+    "label": "Schwarz lemma",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.conformal"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "complex.basics.parts",
+    "label": "Real and imaginary parts",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "complex.basics.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30
+    }
+  },
+  {
+    "id": "complex.basics.powers",
+    "label": "Powers of complex numbers",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.ops.mult"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 45
+    }
+  },
+  {
+    "id": "complex.basics.reciprocal",
+    "label": "The reciprocal of a complex number",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.ops.divide"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 50
+    }
+  },
+  {
+    "id": "complex.basics.geometry",
+    "label": "Distance in the complex plane",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "complex.ops.modulus"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 35
+    }
+  },
+  {
+    "id": "complex.basics.loci",
+    "label": "Loci in the complex plane",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.ops.modulus",
+      "alg.linear.parallel_perp"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30
+    }
+  },
+  {
+    "id": "complex.basics.arg_arithmetic",
+    "label": "Arguments under multiplication",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "complex.ops.argument",
+      "complex.adv.polar"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 35
+    }
+  },
+  {
+    "id": "complex.basics.equations",
+    "label": "Linear equations over the complex numbers",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.basics",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.ops.divide",
+      "complex.ops.conjugate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 50
+    }
+  },
+  {
+    "id": "complex.adv.conjugate_roots",
+    "label": "Conjugate roots of real polynomials",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.ops.conjugate",
+      "alg.poly.roots"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30
+    }
+  },
+  {
+    "id": "complex.adv.trig_exponential",
+    "label": "Trigonometric functions from exponentials",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.exponential",
+      "trig.ident.identities"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30
+    }
+  },
+  {
+    "id": "complex.adv.hyperbolic",
+    "label": "Hyperbolic functions on imaginary arguments",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.adv.exponential"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30
+    }
+  },
+  {
+    "id": "complex.adv.geometric_series",
+    "label": "Complex geometric series",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.ops.divide",
+      "alg.seq.geometric"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 50
+    }
+  },
+  {
+    "id": "complex.adv.mobius_fixed",
+    "label": "Fixed points of Moebius transformations",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.adv.mobius",
+      "alg.quad.formula"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 60
+    }
+  },
+  {
+    "id": "complex.adv.residue_simple",
+    "label": "Residues at simple poles",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.adv.residue"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 55
+    }
+  },
+  {
+    "id": "complex.adv.cross_ratio",
+    "label": "The cross-ratio",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.advanced",
+    "grading_type": "complex",
+    "prerequisites": [
+      "complex.adv.mobius"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 50
+    }
+  },
+  {
+    "id": "complex.topology.open_sets",
+    "label": "Open and closed sets in the plane",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.topology",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.ops.modulus",
+      "topo.basics.open_closed"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30
+    }
+  },
+  {
+    "id": "complex.topology.domain",
+    "label": "Domains in the complex plane",
+    "domain": "complex_numbers",
+    "subdomain": "complex_numbers.topology",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "complex.topology.open_sets",
+      "topo.connected"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30
+    }
+  }
+]

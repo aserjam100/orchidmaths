@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Find each unit price",
+    "section": "Find each unit price",
+    "subgoals": [
+      "Divide price by quantity",
+      "Use the same unit for both packages",
+      "Keep the money in the same units"
+    ]
+  },
+  {
+    "label": "Compare the unit prices",
+    "section": "Compare the unit prices",
+    "subgoals": [
+      "Compare the two unit prices",
+      "Choose the lower unit price",
+      "Do not choose by total price alone"
+    ]
+  },
+  {
+    "label": "Check the comparison",
+    "section": "Check the comparison",
+    "subgoals": [
+      "Multiply the unit price by the quantity",
+      "Recover the total price",
+      "Check that the comparison is consistent"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why a logarithm appears",
+    "section": "Why a logarithm appears",
+    "subgoals": [
+      "Set the hyperbolic function equal to the value",
+      "Solve the quadratic in the exponential",
+      "Take the logarithm"
+    ]
+  },
+  {
+    "label": "Domains and ranges",
+    "section": "Domains and ranges",
+    "subgoals": [
+      "Read the range of the original",
+      "Use it as the domain of the inverse",
+      "Keep the endpoints open where the original never attains them"
+    ]
+  },
+  {
+    "label": "Worked reading",
+    "section": "Worked reading",
+    "subgoals": [
+      "Square the given value",
+      "Add one and take the root",
+      "Read the logarithm if asked"
+    ]
+  }
+]

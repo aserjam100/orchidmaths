@@ -1,0 +1,29 @@
+[
+  {
+    "label": "One third of a prism",
+    "section": "One third of a prism",
+    "subgoals": [
+      "State the volume formula",
+      "Compute a volume",
+      "Identify the base area"
+    ]
+  },
+  {
+    "label": "Why the third",
+    "section": "Why the third",
+    "subgoals": [
+      "Assemble three pyramids into a prism",
+      "Describe the slicing argument",
+      "Say what a first course assumes"
+    ]
+  },
+  {
+    "label": "Cones and other pyramids",
+    "section": "Cones and other pyramids",
+    "subgoals": [
+      "Treat a cone as a pyramid",
+      "Add a prism and a pyramid",
+      "Keep the two formulas apart"
+    ]
+  }
+]

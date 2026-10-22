@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Dividing is multiplying by the reciprocal",
+    "section": "Dividing is multiplying by the reciprocal",
+    "subgoals": [
+      "Write the division as a product",
+      "Invert the divisor",
+      "Multiply across the numerators and denominators"
+    ]
+  },
+  {
+    "label": "Combining the inner parts first",
+    "section": "Combining the inner parts first",
+    "subgoals": [
+      "Combine each part over a common denominator",
+      "Reduce each part to a single fraction",
+      "Then invert and multiply"
+    ]
+  },
+  {
+    "label": "Keeping track of restrictions",
+    "section": "Keeping track of restrictions",
+    "subgoals": [
+      "List the values each denominator forbids",
+      "Keep the restrictions after cancellation",
+      "State the final domain explicitly"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "concept": "geo.quad.trapezoid_area",
+  "setup": "The trapezoid has parallel sides of \\([[base_a]]\\) and \\([[base_b]]\\) and a height of \\([[height]]\\).",
+  "steps": [
+    {
+      "fact": "base_a",
+      "say": "A trapezoid has one pair of parallel sides, and its area is not simply base times height because the two bases differ: \\([[base_a]]\\) and \\([[base_b]]\\)."
+    },
+    {
+      "fact": "height",
+      "say": "Taking the average of the two bases makes the trapezoid behave like a rectangle of that width, so the area is the average times the height \\([[height]]\\), which is \\([[area]]\\)."
+    }
+  ],
+  "answer": "So the trapezoid's area is \\([[area]]\\) square units."
+}

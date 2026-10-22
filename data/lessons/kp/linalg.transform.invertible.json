@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Three properties of a linear map",
+    "section": "Three properties of a linear map",
+    "subgoals": [
+      "Define injective by the kernel",
+      "Define surjective by the image",
+      "Require a linear inverse for invertibility"
+    ]
+  },
+  {
+    "label": "Worked: a map that cannot be injective",
+    "section": "Worked: a map that cannot be injective",
+    "subgoals": [
+      "Bound the rank by the codomain dimension",
+      "Apply rank-nullity",
+      "Exhibit a nonzero kernel vector"
+    ]
+  },
+  {
+    "label": "The square-matrix shortcut",
+    "section": "The square-matrix shortcut",
+    "subgoals": [
+      "Match domain and codomain dimensions",
+      "Use rank n for injective and surjective",
+      "Test det A nonzero"
+    ]
+  }
+]

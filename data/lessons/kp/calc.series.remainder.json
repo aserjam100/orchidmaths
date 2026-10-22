@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Remainder bound",
+    "section": "",
+    "subgoals": [
+      "Bound |R(n)| by a(n+1)",
+      "Stop (-1)^n/n at n = 10 to 1/11",
+      "Stop (-1)^n/n^2 at n = 5 to 1/36"
+    ]
+  },
+  {
+    "label": "Leibniz criterion refresher",
+    "section": "",
+    "subgoals": [
+      "Require decreasing null sequence",
+      "Confirm alternation",
+      "License the remainder bound"
+    ]
+  },
+  {
+    "label": "Worked remainder examples",
+    "section": "",
+    "subgoals": [
+      "Truncate the worked series at n = 10",
+      "Identify the first omitted term",
+      "Report the numeric bound"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Density as a function of position",
+    "section": "Density as a function of position",
+    "subgoals": [
+      "Describe the local piece",
+      "Write its approximate mass",
+      "Say why it becomes an integral"
+    ]
+  },
+  {
+    "label": "Integrating along the rod",
+    "section": "Integrating along the rod",
+    "subgoals": [
+      "Integrate the density over the length",
+      "Evaluate a linear density",
+      "Note the quadratic growth"
+    ]
+  },
+  {
+    "label": "Why not multiply",
+    "section": "Why not multiply",
+    "subgoals": [
+      "Give the average-density shortcut",
+      "Say when it is easy",
+      "Keep the integral as the definition"
+    ]
+  }
+]

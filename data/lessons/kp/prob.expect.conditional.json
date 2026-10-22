@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Conditioning on a value",
+    "section": "Conditioning on a value",
+    "subgoals": [
+      "Restrict the table to the fixed value",
+      "Normalise the slice into conditional masses",
+      "Average X within the slice"
+    ]
+  },
+  {
+    "label": "Worked: a column of the table",
+    "section": "Worked: a column of the table",
+    "subgoals": [
+      "Pick the two weights in the slice",
+      "Form their relative masses",
+      "Average X in the slice"
+    ]
+  },
+  {
+    "label": "A function of the conditioning variable",
+    "section": "A function of the conditioning variable",
+    "subgoals": [
+      "Treat the conditional mean as a function of Y",
+      "Take its mean over Y",
+      "Prepare the tower property"
+    ]
+  }
+]

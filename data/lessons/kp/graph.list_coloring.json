@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Colors chosen from lists",
+    "section": "Colors chosen from lists",
+    "subgoals": [
+      "Assign a list to each vertex",
+      "Choose one color per list",
+      "Define k-choosability"
+    ]
+  },
+  {
+    "label": "Worked: even and odd cycles",
+    "section": "Worked: even and odd cycles",
+    "subgoals": [
+      "Color an even cycle with two",
+      "Require three for an odd cycle",
+      "Color a path from one end"
+    ]
+  },
+  {
+    "label": "Choosability versus chromatic number",
+    "section": "Choosability versus chromatic number",
+    "subgoals": [
+      "Note chi_l >= chi",
+      "Show the gap on bipartite graphs",
+      "Apply the list Brooks bound"
+    ]
+  }
+]

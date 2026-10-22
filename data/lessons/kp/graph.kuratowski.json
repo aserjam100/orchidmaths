@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Subdivisions",
+    "section": "Subdivisions",
+    "subgoals": [
+      "Replace an edge by a degree-two path",
+      "Keep the embedding across the subdivision",
+      "Name the two forbidden graphs"
+    ]
+  },
+  {
+    "label": "Worked: why K_{3,3} is not planar",
+    "section": "Worked: why K_{3,3} is not planar",
+    "subgoals": [
+      "Count 6 vertices and 9 edges",
+      "Use the bipartite face bound 2n - 4",
+      "Reach 9 > 8 as the contradiction"
+    ]
+  },
+  {
+    "label": "Forbidden subdivisions and minors",
+    "section": "Forbidden subdivisions and minors",
+    "subgoals": [
+      "State Wagner's minor version",
+      "Compare subdivision with minor",
+      "Use planarity of $K_4$ and $C_5$"
+    ]
+  }
+]

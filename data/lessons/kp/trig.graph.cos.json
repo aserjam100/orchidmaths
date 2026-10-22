@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Meet sine and cosine as circle coordinates",
+      "Set radius 1 so legs equal sin and cos",
+      "Let theta + 2k*pi revisit each point"
+    ]
+  },
+  {
+    "label": "Definition of sine and cosine",
+    "section": "",
+    "subgoals": [
+      "Project P onto the y-axis for sine",
+      "Project P onto the x-axis for cosine",
+      "Scale legs by hypotenuse 1 for the ratios"
+    ]
+  },
+  {
+    "label": "Fundamental trigonometric identity",
+    "section": "",
+    "subgoals": [
+      "Square and add coordinates for sin^2 + cos^2 = 1",
+      "Clamp the range to [-1, 1] by radius 1",
+      "Repeat every 2pi for the periodic graph"
+    ]
+  }
+]

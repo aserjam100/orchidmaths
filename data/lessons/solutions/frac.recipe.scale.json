@@ -1,0 +1,15 @@
+{
+  "concept": "frac.recipe.scale",
+  "setup": "A recipe needs a fractional amount of an ingredient for one number of servings, and you are asked for the amount at a different number.",
+  "steps": [
+    {
+      "fact": "out_num",
+      "say": "Find the amount for one serving first by dividing, then multiply by the servings wanted. Scaling a recipe is a multiplication by the ratio of the two serving counts."
+    },
+    {
+      "fact": "out_den",
+      "say": "The result is \\(\\frac{[[out_num]]}{[[out_den]]}\\) of a unit. Keeping the units in the answer is what makes it usable in a kitchen rather than only arithmetic."
+    }
+  ],
+  "answer": "So the amount needed is \\(\\frac{[[out_num]]}{[[out_den]]}\\) of a unit."
+}

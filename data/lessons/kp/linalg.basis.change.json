@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Coordinates depend on the basis",
+    "section": "Coordinates depend on the basis",
+    "subgoals": [
+      "Write v in the chosen basis",
+      "Keep the vector fixed while the coordinates change",
+      "Compare standard and nonstandard coordinates"
+    ]
+  },
+  {
+    "label": "Worked: solving for coordinates",
+    "section": "Worked: solving for coordinates",
+    "subgoals": [
+      "Set up a(1,1) + b(1,-1) = (3,5)",
+      "Solve a + b = 3 and a - b = 5",
+      "Record (4,-1)"
+    ]
+  },
+  {
+    "label": "The change-of-basis matrix",
+    "section": "The change-of-basis matrix",
+    "subgoals": [
+      "Put the basis vectors in the columns of P",
+      "Invert P for the coordinate map",
+      "Compose two changes of basis"
+    ]
+  }
+]

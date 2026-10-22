@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Read the prefix",
+    "section": "Read the prefix",
+    "subgoals": [
+      "Relate kilo- to 1000",
+      "Relate centi- to one hundredth",
+      "Relate milli- to one thousandth"
+    ]
+  },
+  {
+    "label": "Move the decimal point",
+    "section": "Move the decimal point",
+    "subgoals": [
+      "Count the places in the power of ten",
+      "Move right for a smaller unit",
+      "Keep the digits in order"
+    ]
+  },
+  {
+    "label": "Check the direction",
+    "section": "Check the direction",
+    "subgoals": [
+      "Compare the size of the units",
+      "Check that the number grows when the unit shrinks",
+      "Confirm the measurement is unchanged"
+    ]
+  }
+]

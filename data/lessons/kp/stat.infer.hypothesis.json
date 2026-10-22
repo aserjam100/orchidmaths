@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two claims, one decision",
+    "section": "Two claims, one decision",
+    "subgoals": [
+      "State the null and the alternative",
+      "Choose one- or two-sided",
+      "Fix alpha before the data"
+    ]
+  },
+  {
+    "label": "Worked: writing the hypotheses",
+    "section": "Worked: writing the hypotheses",
+    "subgoals": [
+      "Translate the claim into mu = 500",
+      "Choose the direction of the alternative",
+      "Decide one- versus two-sided"
+    ]
+  },
+  {
+    "label": "Significance is a rule fixed in advance",
+    "section": "Significance is a rule fixed in advance",
+    "subgoals": [
+      "Set the maximum false-alarm rate",
+      "Compare the p-value with alpha",
+      "Distinguish failing to reject from proving"
+    ]
+  }
+]

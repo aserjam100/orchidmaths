@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Valid forms",
+    "section": "Valid forms",
+    "subgoals": [
+      "Name modus ponens and modus tollens",
+      "Say why each is valid",
+      "Recognise disjunctive syllogism"
+    ]
+  },
+  {
+    "label": "The two fallacies",
+    "section": "The two fallacies",
+    "subgoals": [
+      "Distinguish affirming the consequent",
+      "Distinguish denying the antecedent",
+      "Give a counterexample assignment"
+    ]
+  },
+  {
+    "label": "Reading an argument",
+    "section": "Reading an argument",
+    "subgoals": [
+      "Write the argument in standard form",
+      "Match it to a known form",
+      "Decide validity from the form alone"
+    ]
+  }
+]

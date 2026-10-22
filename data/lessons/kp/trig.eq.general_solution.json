@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why one cycle is not the answer",
+    "section": "Why one cycle is not the answer",
+    "subgoals": [
+      "Find the solutions in one period",
+      "Add whole periods to each",
+      "Keep the families separate"
+    ]
+  },
+  {
+    "label": "The two-family pattern",
+    "section": "The two-family pattern",
+    "subgoals": [
+      "Expect two base angles for sine and cosine",
+      "Expect one for tangent",
+      "Attach the right period to each"
+    ]
+  },
+  {
+    "label": "Writing the answer",
+    "section": "Writing the answer",
+    "subgoals": [
+      "Use an integer multiple of the period",
+      "Allow negative integers",
+      "Check that the families cover every solution"
+    ]
+  }
+]

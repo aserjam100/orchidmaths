@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Flows and cuts",
+    "section": "Flows and cuts",
+    "subgoals": [
+      "Respect the capacities",
+      "Conserve flow at interior vertices",
+      "Bound any flow by any cut"
+    ]
+  },
+  {
+    "label": "Worked: a small network",
+    "section": "Worked: a small network",
+    "subgoals": [
+      "Send 2 units through the first path",
+      "Send 3 units through the second",
+      "Match the cut capacity 5"
+    ]
+  },
+  {
+    "label": "Residual graphs and integrality",
+    "section": "Residual graphs and integrality",
+    "subgoals": [
+      "Build the residual graph",
+      "Augment along a residual path",
+      "Read the minimum cut from the reachable set"
+    ]
+  }
+]

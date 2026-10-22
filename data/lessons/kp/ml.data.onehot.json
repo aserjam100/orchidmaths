@@ -1,0 +1,29 @@
+[
+  {
+    "label": "One column per category",
+    "section": "One column per category",
+    "subgoals": [
+      "Create one column per category",
+      "Place a single 1 in the observed column",
+      "Avoid implying an order"
+    ]
+  },
+  {
+    "label": "Worked: encoding three categories",
+    "section": "Worked: encoding three categories",
+    "subgoals": [
+      "Write [1,0,0] for red",
+      "Write [0,1,0] for green",
+      "Write [0,0,1] for blue"
+    ]
+  },
+  {
+    "label": "The dummy-variable trap",
+    "section": "The dummy-variable trap",
+    "subgoals": [
+      "Sum the one-hot columns",
+      "Spot the collinearity with the intercept",
+      "Drop one column as the reference"
+    ]
+  }
+]

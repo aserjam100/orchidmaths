@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Coloring edges, not vertices",
+    "section": "Coloring edges, not vertices",
+    "subgoals": [
+      "Color the line graph",
+      "Bound by Delta",
+      "Apply Vizing's Delta+1"
+    ]
+  },
+  {
+    "label": "Worked: complete graphs and cycles",
+    "section": "Worked: complete graphs and cycles",
+    "subgoals": [
+      "Compute 3 for K_4",
+      "Compute 5 for K_5",
+      "Alternate two colors on an even cycle"
+    ]
+  },
+  {
+    "label": "Vizing's theorem",
+    "section": "Vizing's theorem",
+    "subgoals": [
+      "Split graphs into class 1 and 2",
+      "Use Konig for bipartite graphs",
+      "Note the NP-hard classification"
+    ]
+  }
+]

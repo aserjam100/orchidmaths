@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why It Works",
+    "section": "Why It Works",
+    "subgoals": [
+      "Slide the triangle angles onto one straight line",
+      "Read the straight line as 180 degrees",
+      "Blame parallel lines for the constant sum"
+    ]
+  },
+  {
+    "label": "Using the Rule",
+    "section": "Using the Rule",
+    "subgoals": [
+      "Subtract two known angles from 180",
+      "Turn 62 plus 71 into 180 minus 133 for 47",
+      "Split right triangles into 90 plus two summing to 90"
+    ]
+  },
+  {
+    "label": "Drill: third angle from 90 and 38",
+    "section": "",
+    "subgoals": [
+      "Write 180 minus 90 minus 38",
+      "Land on 52 degrees",
+      "Confirm the two acute angles total 90"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Completeness as an axiom",
+    "section": "Completeness as an axiom",
+    "subgoals": [
+      "Require every Cauchy sequence to converge",
+      "Keep the limit inside the space",
+      "Contrast with a merely topological property"
+    ]
+  },
+  {
+    "label": "Completions and subspaces",
+    "section": "Completions and subspaces",
+    "subgoals": [
+      "Build the completion from Cauchy sequences",
+      "Restrict to a closed subset",
+      "Idealise the missing limits"
+    ]
+  },
+  {
+    "label": "Uses",
+    "section": "Uses",
+    "subgoals": [
+      "Produce a Cauchy sequence of approximations",
+      "Apply completeness for the limit",
+      "Read the limit as the solution"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Write the numbers in columns",
+    "section": "Write the numbers in columns",
+    "subgoals": [
+      "Write the bigger number on top",
+      "Line up tens and ones",
+      "Start at the ones column"
+    ]
+  },
+  {
+    "label": "Regroup 1 ten as 10 ones",
+    "section": "Regroup 1 ten as 10 ones",
+    "subgoals": [
+      "See that the top ones digit is too small",
+      "Change 1 ten into 10 ones",
+      "Subtract the ones"
+    ]
+  },
+  {
+    "label": "Subtract the tens",
+    "section": "Subtract the tens",
+    "subgoals": [
+      "Use the tens left after regrouping",
+      "Subtract the tens",
+      "Check by adding back"
+    ]
+  }
+]

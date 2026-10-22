@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Absolute convergence",
+    "section": "Absolute convergence",
+    "subgoals": [
+      "Form the series of absolute values",
+      "Bound any block of terms",
+      "Use the Cauchy criterion to conclude"
+    ]
+  },
+  {
+    "label": "Conditional convergence",
+    "section": "Conditional convergence",
+    "subgoals": [
+      "Check the absolute values diverge",
+      "Alternate the signs of the terms",
+      "Trap the sum between consecutive partial sums"
+    ]
+  },
+  {
+    "label": "Reading the tests correctly",
+    "section": "Reading the tests correctly",
+    "subgoals": [
+      "Use an absolute test first",
+      "Apply the alternating test only for the signed sum",
+      "Examine the absolute values separately"
+    ]
+  }
+]

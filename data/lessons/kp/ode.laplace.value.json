@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The transform of a power",
+    "section": "The transform of a power",
+    "subgoals": [
+      "State the transform",
+      "Substitute a value",
+      "Note the convergence condition"
+    ]
+  },
+  {
+    "label": "Evaluating at a point",
+    "section": "Evaluating at a point",
+    "subgoals": [
+      "Choose the value one",
+      "See the answer become the factorial",
+      "Keep the transform variable in view"
+    ]
+  },
+  {
+    "label": "Why the factorial appears",
+    "section": "Why the factorial appears",
+    "subgoals": [
+      "Integrate by parts repeatedly",
+      "Bring the exponent down",
+      "Connect it to the derivative rule"
+    ]
+  }
+]

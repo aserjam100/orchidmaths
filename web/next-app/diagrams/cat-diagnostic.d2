@@ -1,0 +1,59 @@
+# CAT Diagnostic — info-gain over a compressed covering set
+style.font: mono
+
+Start: {
+  shape: circle
+  width: 20
+  height: 20
+  style: {
+    fill: "#1B365D"
+    font-color: "#ffffff"
+    stroke: "#1B365D"
+  }
+}
+
+Start -> Cover
+
+Cover: Compressed covering set\nroots + evenly spaced\ntarget 30 concepts
+
+Cover -> Pick
+
+Pick: Pick next concept\nby information gain\n(uncertainty x coverage)
+
+Pick -> Question
+
+Question: Generate question\nfor chosen concept
+
+Question -> Answer
+
+Answer: Student answers\ngraded with evidence
+
+Answer -> Propagate
+
+Propagate: Propagate evidence\n+-0.3 to neighbours
+
+Propagate -> Stop
+
+Stop: Cover done AND\nasked >= 25,\nor asked >= 45
+
+Stop -> Done: Yes
+Stop -> Pick: No
+
+Done: Frontier located\ngaps by domain\ncompletion estimates
+
+nodes: {
+  style: {
+    font-size: 10
+    border-radius: 4
+    stroke: "#6b6a64"
+    font-color: "#141413"
+  }
+}
+
+edges: {
+  style: {
+    stroke: "#504e49"
+    font-size: 9
+    font-color: "#504e49"
+  }
+}

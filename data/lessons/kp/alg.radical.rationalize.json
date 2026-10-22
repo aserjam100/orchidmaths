@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiply by the root",
+    "section": "Multiply by the root",
+    "subgoals": [
+      "Multiply numerator and denominator by the root",
+      "Keep the fraction's value unchanged",
+      "Move the root to the numerator"
+    ]
+  },
+  {
+    "label": "Clear the denominator",
+    "section": "Clear the denominator",
+    "subgoals": [
+      "Multiply out the numerator",
+      "Reduce the coefficient",
+      "Write the integer denominator"
+    ]
+  },
+  {
+    "label": "Choose the squarefree radicand",
+    "section": "Choose the squarefree radicand",
+    "subgoals": [
+      "Move perfect squares out of the root",
+      "Keep the radicand squarefree",
+      "Enter coefficient first, radicand second"
+    ]
+  }
+]

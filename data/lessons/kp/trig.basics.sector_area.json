@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A slice of the circle",
+    "section": "A slice of the circle",
+    "subgoals": [
+      "Describe a sector as an arc plus two radii",
+      "Compare the angle to a full turn of 2 pi",
+      "State that the sector keeps that fraction of the area"
+    ]
+  },
+  {
+    "label": "The sector area formula",
+    "section": "One half r squared theta",
+    "subgoals": [
+      "Write the area as one half r squared theta",
+      "Substitute the radius and the angle",
+      "Keep the answer as a multiple of pi"
+    ]
+  },
+  {
+    "label": "The whole circle case",
+    "section": "The special case of a whole circle",
+    "subgoals": [
+      "Set the angle to 2 pi",
+      "Recover pi r squared from the formula",
+      "Treat that as a check on the sector formula"
+    ]
+  }
+]

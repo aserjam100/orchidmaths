@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Generating the moments",
+    "section": "Generating the moments",
+    "subgoals": [
+      "Expand the exponential",
+      "Take expectations term by term",
+      "Differentiate at zero for a moment"
+    ]
+  },
+  {
+    "label": "Worked: reading the normal",
+    "section": "Worked: reading the normal",
+    "subgoals": [
+      "Match the exponent to the normal form",
+      "Read the mean as the t coefficient",
+      "Double the t-squared coefficient for the variance"
+    ]
+  },
+  {
+    "label": "Sums of independent variables",
+    "section": "Sums of independent variables",
+    "subgoals": [
+      "Factor the exponential of a sum",
+      "Split the expectation by independence",
+      "Multiply the generating functions"
+    ]
+  }
+]

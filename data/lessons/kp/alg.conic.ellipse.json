@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Conic sections intro",
+    "section": "",
+    "subgoals": [
+      "Recognize the ellipse as a conic section",
+      "Identify the major and minor axes",
+      "Locate the center"
+    ]
+  },
+  {
+    "label": "What is an ellipse",
+    "section": "",
+    "subgoals": [
+      "State the two-focus definition",
+      "Identify vertices and foci",
+      "Use the standard equation"
+    ]
+  },
+  {
+    "label": "Sum of distances to foci",
+    "section": "",
+    "subgoals": [
+      "Explain the constant-sum property",
+      "Verify it on points of the ellipse",
+      "Connect to the equation"
+    ]
+  }
+]

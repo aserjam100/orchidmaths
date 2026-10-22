@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What are indeterminate forms?",
+    "section": "",
+    "subgoals": [
+      "Flag 0/0, inf/inf, 0*inf, inf-inf shapes",
+      "Route 0/0 to factor-or-L'Hopital",
+      "Preview (x^2-1)/(x-1) to 2"
+    ]
+  },
+  {
+    "label": "The form \\\\( \\frac{0}{0} \\\\)",
+    "section": "",
+    "subgoals": [
+      "Factor and cancel the zero factor",
+      "Evaluate the reduced form at the point",
+      "Check (x^2-4)/(x-2) to 4"
+    ]
+  },
+  {
+    "label": "The form \\\\( \\dfrac{\\infty}{\\infty} \\\\)",
+    "section": "",
+    "subgoals": [
+      "Divide top and bottom by top power",
+      "Read the leading-coefficient ratio",
+      "Evaluate (3x^2+1)/(2x^2-x) to 3/2"
+    ]
+  }
+]

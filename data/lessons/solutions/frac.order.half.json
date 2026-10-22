@@ -1,0 +1,15 @@
+{
+  "concept": "frac.order.half",
+  "setup": "You are comparing three fractions to one half.",
+  "steps": [
+    {
+      "fact": "count",
+      "say": "One half is the benchmark that needs no common denominator: a fraction exceeds a half exactly when twice its numerator beats its denominator, which is a comparison of two whole numbers."
+    },
+    {
+      "fact": "out_num",
+      "say": "Applying that to each of the three gives \\([[count]]\\) of them above a half. The benchmark works because a half is the one fraction whose numerator and denominator are the easiest to double."
+    }
+  ],
+  "answer": "So \\([[count]]\\) of the three fractions are greater than one half."
+}

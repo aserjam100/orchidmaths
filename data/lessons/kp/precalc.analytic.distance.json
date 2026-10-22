@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The distance formula",
+    "section": "The distance formula",
+    "subgoals": [
+      "State the formula",
+      "Compute a distance",
+      "Note the symmetry in the two points"
+    ]
+  },
+  {
+    "label": "It is the Pythagorean theorem",
+    "section": "It is the Pythagorean theorem",
+    "subgoals": [
+      "Draw the right triangle",
+      "Extend it to three dimensions",
+      "See why order does not matter"
+    ]
+  },
+  {
+    "label": "Midpoints and the same idea",
+    "section": "Midpoints and the same idea",
+    "subgoals": [
+      "Compute a midpoint",
+      "Relate it to averaging",
+      "Describe the plane's coordinate arithmetic"
+    ]
+  }
+]

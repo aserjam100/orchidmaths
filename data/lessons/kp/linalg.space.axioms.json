@@ -1,0 +1,29 @@
+[
+  {
+    "label": "One set, two operations, eight rules",
+    "section": "One set, two operations, eight rules",
+    "subgoals": [
+      "Check closure under addition",
+      "Check closure under scalar multiplication",
+      "Verify the zero and inverse axioms"
+    ]
+  },
+  {
+    "label": "Worked: checking a candidate space",
+    "section": "Worked: checking a candidate space",
+    "subgoals": [
+      "Test polynomials of degree at most 2",
+      "Confirm closure and negatives",
+      "Refute the nonnegative quadrant by scaling"
+    ]
+  },
+  {
+    "label": "Why the axioms matter",
+    "section": "Why the axioms matter",
+    "subgoals": [
+      "Prove from the axioms alone",
+      "Transfer results to function spaces",
+      "Disqualify a set on one failed axiom"
+    ]
+  }
+]

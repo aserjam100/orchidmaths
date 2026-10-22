@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two graphs at once",
+    "section": "Two graphs at once",
+    "subgoals": [
+      "Form pairs of vertices",
+      "Change one coordinate per edge",
+      "Keep coordinates independent"
+    ]
+  },
+  {
+    "label": "Worked: the Cartesian edge count",
+    "section": "Worked: the Cartesian edge count",
+    "subgoals": [
+      "Take two P_3 factors",
+      "Count 2*3 edges in one direction",
+      "Add 3*2 in the other for 12"
+    ]
+  },
+  {
+    "label": "Grids and hypercubes",
+    "section": "Grids and hypercubes",
+    "subgoals": [
+      "Multiply paths for a grid",
+      "Multiply K_2 copies for Q_n",
+      "Add distances coordinatewise"
+    ]
+  }
+]

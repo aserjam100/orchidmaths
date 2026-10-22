@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Frequency from the equation",
+    "section": "Frequency from the equation",
+    "subgoals": [
+      "Write y'' + omega^2 y = 0",
+      "Read omega from the coefficient",
+      "Relate omega to stiffness and mass"
+    ]
+  },
+  {
+    "label": "Worked: an undamped oscillation",
+    "section": "Worked: an undamped oscillation",
+    "subgoals": [
+      "Use y = A cos + B sin",
+      "Set A = y(0)",
+      "Set B = y'(0)/omega"
+    ]
+  },
+  {
+    "label": "Damping and forcing",
+    "section": "Damping and forcing",
+    "subgoals": [
+      "Add the damping term",
+      "Classify under, critical and over",
+      "Resonate at the natural frequency"
+    ]
+  }
+]

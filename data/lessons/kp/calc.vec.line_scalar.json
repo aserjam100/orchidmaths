@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The arc length element",
+    "section": "The arc length element",
+    "subgoals": [
+      "Weight each piece by its length",
+      "Replace the length element by speed times the parameter step",
+      "Note the result is direction-free"
+    ]
+  },
+  {
+    "label": "Computing along a segment",
+    "section": "Computing along a segment",
+    "subgoals": [
+      "Parametrise the segment",
+      "Integrate the linear coordinate",
+      "Multiply the length by the average"
+    ]
+  },
+  {
+    "label": "Mass, average and arc length",
+    "section": "Mass, average and arc length",
+    "subgoals": [
+      "Set the function to one for length",
+      "Integrate a density for mass",
+      "Add direction for work"
+    ]
+  }
+]

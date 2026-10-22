@@ -1,0 +1,112 @@
+# Barrage load profile: guest study loop vs SQLite on one clock.
+#
+# STALE SCENARIO (not retargeted): the study-loop below drives POST
+# /api/session + POST /api/answer, both removed — the live flow is
+# GET /api/lessons/{id}/practice + POST /api/study/answer (see ADR-042 and
+# the Phase 0 audit). Do not trust numbers from this file until the steps
+# are rewritten against the current seams; the DB runner shapes below the
+# `db:` key are still valid.
+#
+# Scenario runner drives the real HTTP flow (session -> chained answers ->
+# scores) while the db runner issues the app's heaviest read shapes directly
+# against the same SQLite file. Correlated buckets show whether answer-submit
+# latency comes from the app (grading/engine) or the database (write lock).
+#
+# Run (from repo root; port must be free — 8081 is taken by llama-server
+# on this machine, hence 18082):
+#   go build -o /tmp/orchid-loadtest ./cmd/orchid
+#   DATABASE_URL=/tmp/orchid-loadtest.db ORCHID_LOADTEST=1 \
+#     /tmp/orchid-loadtest -serve -no-auth -port 18082 &
+#   barrage run -c loadtest/barrage-study-loop.yaml --json loadtest/baseline-sqlite-pool8.json
+#
+# NOTE: DATABASE_URL takes a bare file path — the `sqlite:` prefix used in
+# docker-compose.yml is not stripped by NewSQLiteStore and fails to open.
+#
+# ORCHID_LOADTEST=1 is required: without it the write limiter (20/3s per IP)
+# absorbs the burst as 429s and the run measures the limiter, not the app.
+# Scratch DB only — never point this at orchid.db or production.
+
+duration: 30s
+bucket_width: 1s
+ramp: 5s
+concurrency: 20
+
+# Capacity search: doubling 20->40->... up to 320, then linear fine-fill
+# between last-ok and first-broken. Each level runs a 10s burst; ramp: and
+# duration: above are ignored while auto-ramp runs. Break = any runner P99
+# over its threshold (scenarios judged vs --http-threshold) or success <95%.
+# Run: barrage run -c loadtest/barrage-study-loop.yaml --auto-ramp \
+#        --http-threshold 500ms --json loadtest/autoramp.json
+# Fixed-load verification at one concurrency needs a config WITHOUT the
+# auto_ramp block (its presence forces auto-ramp mode): strip the block to
+# /tmp and run e.g. barrage run -c /tmp/barrage-fixed38.yaml --http-threshold
+# 500ms --json loadtest/capacity-c38.json. NOTE: sub-100% success in barrage
+# output is burst-cutoff artifact (in-flight journeys at run end), not app
+# errors — verify zero app errors with a status-capturing client instead.
+auto_ramp:
+  max_concurrency: 320
+  step_duration: 10s
+
+scenario:
+  - name: study-loop
+    weight: 3
+    steps:
+      - method: POST
+        url: http://localhost:18082/api/session
+        body: '{"name":"loadtest"}'
+        headers:
+          Content-Type: application/json
+        extract:
+          sid: $.session_id
+          aid: $.question.attempt_id
+          student: $.student_id
+      - method: POST
+        url: http://localhost:18082/api/answer
+        body: '{"session_id":"{{sid}}","attempt_id":"{{aid}}","answer":"0","elapsed":1.5}'
+        headers:
+          Content-Type: application/json
+        extract:
+          aid: $.next_question.attempt_id
+      - method: POST
+        url: http://localhost:18082/api/answer
+        body: '{"session_id":"{{sid}}","attempt_id":"{{aid}}","answer":"0","elapsed":1.5}'
+        headers:
+          Content-Type: application/json
+        extract:
+          aid: $.next_question.attempt_id
+      - method: POST
+        url: http://localhost:18082/api/answer
+        body: '{"session_id":"{{sid}}","attempt_id":"{{aid}}","answer":"0","elapsed":1.5}'
+        headers:
+          Content-Type: application/json
+      - method: GET
+        url: http://localhost:18082/api/scores/{{student}}
+  - name: read-browse
+    weight: 1
+    steps:
+      - method: GET
+        url: http://localhost:18082/api/graph
+      - method: GET
+        url: http://localhost:18082/api/leaderboard
+
+db:
+  rate: 20
+  target:
+    driver: sqlite
+    conn: /tmp/orchid-loadtest.db
+    queries:
+      - query: SELECT COUNT(*) FROM attempts
+        weight: 20
+        type: read
+      - query: SELECT concept_id, status, streak FROM concept_progress LIMIT 50
+        weight: 20
+        type: read
+      - query: SELECT id FROM sessions ORDER BY started_at DESC LIMIT 20
+        weight: 15
+        type: read
+      - query: SELECT student_id, COUNT(*) FROM attempts GROUP BY student_id ORDER BY 2 DESC LIMIT 10
+        weight: 15
+        type: read
+      - query: SELECT AVG(elapsed_seconds) FROM attempts
+        weight: 10
+        type: read

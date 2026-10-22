@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is an arithmetic sequence",
+    "section": "",
+    "subgoals": [
+      "Difference consecutive terms for d = a_n - a_(n-1)",
+      "Sort d > 0 increasing, d < 0 decreasing, d = 0 constant",
+      "Write the nth term a_n = a_1 + (n-1)*d"
+    ]
+  },
+  {
+    "label": "Example",
+    "section": "",
+    "subgoals": [
+      "Seed a_1 = 2 with d = 3",
+      "Generate 2, 5, 8, 11, 14 term by term",
+      "Confirm gaps stay 3 across the list"
+    ]
+  },
+  {
+    "label": "Sum of n terms",
+    "section": "",
+    "subgoals": [
+      "Pair first and last terms a_1 + a_n",
+      "Multiply pairs by n/2 for the sum S_n",
+      "Compute totals without listing every term"
+    ]
+  }
+]

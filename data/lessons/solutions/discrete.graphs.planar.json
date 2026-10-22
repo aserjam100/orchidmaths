@@ -1,0 +1,19 @@
+{
+  "concept": "discrete.graphs.planar",
+  "setup": "The graph is connected and planar with \\([[v]]\\) vertices and \\([[e]]\\) edges.",
+  "steps": [
+    {
+      "fact": "v",
+      "say": "Euler's formula for a connected planar graph is \\(V - E + F = 2\\), with the outer region counted as a face."
+    },
+    {
+      "fact": "e",
+      "say": "Substituting \\(V = [[v]]\\) and \\(E = [[e]]\\) leaves \\(F = [[e]] - [[v]] + 2\\)."
+    },
+    {
+      "fact": "value",
+      "say": "So \\(F = [[value]]\\)."
+    }
+  ],
+  "answer": "So the graph has [[value]] faces."
+}

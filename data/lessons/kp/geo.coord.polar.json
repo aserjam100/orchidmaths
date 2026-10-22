@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Radial–angular description of a point",
+    "section": "",
+    "subgoals": [
+      "Fix pole O with polar axis and orientation",
+      "Split radius rho = |OQ| from anomaly theta",
+      "Project x = rho*cos(theta), y = rho*sin(theta) onto axes"
+    ]
+  },
+  {
+    "label": "Determining the angle \\\\(\\theta\\\\)",
+    "section": "",
+    "subgoals": [
+      "Recover rho = sqrt(x^2 + y^2) via Pythagoras",
+      "Combine tan(theta) = y/x with cos = x/rho, sin = y/rho",
+      "Resolve the theta vs theta + pi ambiguity by quadrant"
+    ]
+  },
+  {
+    "label": "Non-uniqueness of polar representation",
+    "section": "",
+    "subgoals": [
+      "Shift theta by 2*pi*k for the same point",
+      "Collapse the origin to (0, theta) for any theta",
+      "Normalize to a canonical representation for bijectivity"
+    ]
+  }
+]

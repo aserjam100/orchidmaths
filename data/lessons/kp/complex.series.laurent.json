@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one over z is its own Laurent series",
+    "section": "Worked: one over z is its own Laurent series",
+    "subgoals": [
+      "Write 1/z as the single power z^{-1}",
+      "Read a_{-1} and the zero regular part",
+      "Classify the pole from the finite principal part"
+    ]
+  },
+  {
+    "label": "Worked: one over z squared has residue zero",
+    "section": "Worked: one over z squared has residue zero",
+    "subgoals": [
+      "Write 1/z^2 with the z^{-1} slot exposed",
+      "Read the residue a_{-1} = 0",
+      "Conclude the unit-circle integral is zero"
+    ]
+  },
+  {
+    "label": "Worked: exponential of one over z is essential",
+    "section": "Worked: exponential of one over z is essential",
+    "subgoals": [
+      "Substitute w = 1/z into the exponential series",
+      "Observe the negative powers never stop",
+      "Classify the singularity as essential"
+    ]
+  }
+]

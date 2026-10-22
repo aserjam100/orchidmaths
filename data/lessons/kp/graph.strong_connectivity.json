@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Reachability both ways",
+    "section": "Reachability both ways",
+    "subgoals": [
+      "Require a path in each direction",
+      "Distinguish it from undirected connectivity",
+      "Partition into maximal mutually reachable sets"
+    ]
+  },
+  {
+    "label": "Worked: the condensation",
+    "section": "Worked: the condensation",
+    "subgoals": [
+      "Contract each component to a vertex",
+      "Keep only edges between components",
+      "See that a cycle would merge components"
+    ]
+  },
+  {
+    "label": "Testing strong connectivity",
+    "section": "Testing strong connectivity",
+    "subgoals": [
+      "Run Tarjan's single depth-first search",
+      "Run Kosaraju on the reversed graph",
+      "Use two searches to decide connectivity"
+    ]
+  }
+]

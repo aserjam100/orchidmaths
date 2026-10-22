@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Statement and sharpness",
+    "section": "Statement and sharpness",
+    "subgoals": [
+      "Require boundedness",
+      "Conclude a convergent subsequence",
+      "Distinguish it from convergence of the whole sequence"
+    ]
+  },
+  {
+    "label": "Proof by bisection",
+    "section": "Proof by bisection",
+    "subgoals": [
+      "Choose an interval with infinitely many terms",
+      "Bisect keeping the infinite half",
+      "Take the nested common point"
+    ]
+  },
+  {
+    "label": "The metric form",
+    "section": "The metric form",
+    "subgoals": [
+      "State the metric version",
+      "Identify the closed bounded sets",
+      "Use it in a general metric space"
+    ]
+  }
+]

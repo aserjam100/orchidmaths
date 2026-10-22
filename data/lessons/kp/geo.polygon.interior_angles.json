@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Triangulating the polygon",
+    "section": "Triangulating the polygon",
+    "subgoals": [
+      "Draw the diagonals from one vertex",
+      "Count the triangles",
+      "See that they cover every angle"
+    ]
+  },
+  {
+    "label": "The formula",
+    "section": "The formula",
+    "subgoals": [
+      "State the sum formula",
+      "Evaluate for a pentagon",
+      "Recover the quadrilateral case"
+    ]
+  },
+  {
+    "label": "Regular polygons",
+    "section": "Regular polygons",
+    "subgoals": [
+      "Divide the sum by the sides",
+      "Compute a regular pentagon's angle",
+      "Read the formula as sharing out"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A linear term plus a power",
+    "section": "A linear term plus a power",
+    "subgoals": [
+      "Rewrite as y' + P y = Q y^n",
+      "Rule out n = 0 and n = 1",
+      "Divide by y^n"
+    ]
+  },
+  {
+    "label": "Worked: y' + y = y^2",
+    "section": "Worked: y' + y = y^2",
+    "subgoals": [
+      "Set v = 1/y",
+      "Compute v' - v = -1",
+      "Solve and substitute back"
+    ]
+  },
+  {
+    "label": "Choosing the substitution",
+    "section": "Choosing the substitution",
+    "subgoals": [
+      "Use v = y^(1-n)",
+      "Check the transformed equation is linear",
+      "Watch for division by zero"
+    ]
+  }
+]

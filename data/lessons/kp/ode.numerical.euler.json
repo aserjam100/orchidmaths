@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one step for y' = y",
+    "section": "Worked: one step for y' = y",
+    "subgoals": [
+      "Read the slope f(0, 1) = 1",
+      "Step to y_1 = 1.1",
+      "Compare against e^0.1"
+    ]
+  },
+  {
+    "label": "Worked: a second step and its error",
+    "section": "Worked: a second step and its error",
+    "subgoals": [
+      "Read the slope at (0.1, 1.1)",
+      "Step to y_2 = 1.21",
+      "Compare against e^0.2 to see error growth"
+    ]
+  },
+  {
+    "label": "Error shrinks linearly with h",
+    "section": "Error shrinks linearly with h",
+    "subgoals": [
+      "Quote local O(h^2) error per step",
+      "Count 1/h steps for global O(h)",
+      "Weigh halving h against doubling cost"
+    ]
+  }
+]

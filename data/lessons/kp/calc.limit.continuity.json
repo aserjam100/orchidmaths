@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Continuous function at a point",
+    "section": "",
+    "subgoals": [
+      "Check lim(x to a) = f(a) three-way",
+      "Test polynomials at sample points",
+      "Flag 1/x at 0 as discontinuous"
+    ]
+  },
+  {
+    "label": "Continuous function on an interval",
+    "section": "",
+    "subgoals": [
+      "Test continuity at every interior point",
+      "Check one-sided at endpoints",
+      "Certify sin x continuous on R"
+    ]
+  },
+  {
+    "label": "Functions continuous on their domain",
+    "section": "",
+    "subgoals": [
+      "Match each elementary type to its domain",
+      "Exclude denominator zeros and log nonpositives",
+      "Confirm tan x continuous off pi/2 + k pi"
+    ]
+  }
+]

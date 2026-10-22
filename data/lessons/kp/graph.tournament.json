@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Orienting a complete graph",
+    "section": "Orienting a complete graph",
+    "subgoals": [
+      "Orient every edge of K_n",
+      "Count n(n-1)/2 games",
+      "Raise two to the number of edges"
+    ]
+  },
+  {
+    "label": "Worked: counting small tournaments",
+    "section": "Worked: counting small tournaments",
+    "subgoals": [
+      "Count six games for n equal to 4",
+      "Compute 2 to the 6",
+      "Compute 2 to the 10 for n equal to 5"
+    ]
+  },
+  {
+    "label": "Scores and Hamiltonian paths",
+    "section": "Scores and Hamiltonian paths",
+    "subgoals": [
+      "List the scores in order",
+      "Recognise the transitive sequence 0 to n - 1",
+      "Find a Hamiltonian path by induction"
+    ]
+  }
+]

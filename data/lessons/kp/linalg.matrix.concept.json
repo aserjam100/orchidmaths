@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Count m rows by n columns",
+      "Index each entry as aij",
+      "Read a23 as row 2 column 3"
+    ]
+  },
+  {
+    "label": "Vectors and the zero matrix",
+    "section": "",
+    "subgoals": [
+      "Read a column vector as an m x 1 matrix",
+      "Add the zero matrix entry by entry",
+      "Confirm dimensions match before adding"
+    ]
+  },
+  {
+    "label": "Square matrices and special types",
+    "section": "",
+    "subgoals": [
+      "Test squareness by comparing m against n",
+      "Flag symmetric entries across the diagonal",
+      "Name triangular types from the zero pattern"
+    ]
+  }
+]

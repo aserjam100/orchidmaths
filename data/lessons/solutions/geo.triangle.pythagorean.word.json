@@ -1,0 +1,19 @@
+{
+  "concept": "geo.triangle.pythagorean.word",
+  "setup": "[[story]] The sides named in the story are [[known]].",
+  "steps": [
+    {
+      "fact": "rule",
+      "say": "Use the Pythagorean theorem: [[rule]]."
+    },
+    {
+      "fact": "known",
+      "say": "Put in the sides that are known: [[known]]."
+    },
+    {
+      "fact": "unknown",
+      "say": "The square root gives [[unknown]] feet for the [[side]]."
+    }
+  ],
+  "answer": "The [[side]] is [[unknown]] feet."
+}

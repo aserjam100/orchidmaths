@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Form all sums c1v1 + ... + ckvk",
+      "Vary the scalars across R",
+      "Collect the outputs as the span"
+    ]
+  },
+  {
+    "label": "Coordinate representation",
+    "section": "",
+    "subgoals": [
+      "Fix the standard basis e1..en",
+      "Expand v in that coordinate frame",
+      "Test whether b lands in the column space"
+    ]
+  },
+  {
+    "label": "Matrix–Vector interpretation",
+    "section": "",
+    "subgoals": [
+      "Multiply A times x to sweep the column combinations",
+      "Vary x over all of R^n",
+      "Collect the image as the span of the columns"
+    ]
+  }
+]

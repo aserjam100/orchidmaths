@@ -1,0 +1,19 @@
+# Postgres via pgx (postgres.go:7) and SQLite both supported; SQLite is default for local
+services:
+  orchid:
+    build: .
+    ports:
+      - "${PORT:-8080}:8080"
+    environment:
+      - DATABASE_URL=${DATABASE_URL:-sqlite:/data/orchid.db}
+      - JWT_SECRET=${JWT_SECRET:-}
+      - CORS_ALLOWED_ORIGINS=${CORS_ALLOWED_ORIGINS:-}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID:-}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET:-}
+      - GOOGLE_REDIRECT_URL=${GOOGLE_REDIRECT_URL:-}
+      - PORT=8080
+    volumes:
+      - orchid_data:/data
+
+volumes:
+  orchid_data:

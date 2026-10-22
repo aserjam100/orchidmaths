@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Dynamic programming on a DAG",
+    "section": "Dynamic programming on a DAG",
+    "subgoals": [
+      "Initialise the source count to one",
+      "Add each predecessor's count",
+      "Finish a vertex before its successors"
+    ]
+  },
+  {
+    "label": "Worked: a diamond",
+    "section": "Worked: a diamond",
+    "subgoals": [
+      "Set counts 1, 0, 0, 0",
+      "Propagate from vertex 0",
+      "Add both predecessors at vertex 3"
+    ]
+  },
+  {
+    "label": "Why acyclicity matters",
+    "section": "Why acyclicity matters",
+    "subgoals": [
+      "Stop on a directed cycle",
+      "Rely on a topological order",
+      "Contrast with undirected counting"
+    ]
+  }
+]

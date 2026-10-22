@@ -1,0 +1,37 @@
+<svg width="460px" height="130px" viewBox="0 0 460 130" xmlns="http://www.w3.org/2000/svg">
+<rect width="460" height="130" fill="white"/>
+<line x1="40" y1="56" x2="440" y2="56" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="440,56 432.63,52.885 432.63,59.115" fill="#BABABA"/>
+<polygon points="40,56 47.37,52.885 47.37,59.115" fill="#BABABA"/>
+<line x1="50" y1="46" x2="50" y2="66" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+<text x="50" y="82" font-size="13" fill="#333333" text-anchor="middle">70</text>
+<line x1="88" y1="51" x2="88" y2="61" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<text x="88" y="82" font-size="13" fill="#636363" text-anchor="middle">71</text>
+<line x1="126" y1="51" x2="126" y2="61" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<text x="126" y="82" font-size="13" fill="#636363" text-anchor="middle">72</text>
+<line x1="164" y1="51" x2="164" y2="61" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<text x="164" y="82" font-size="13" fill="#636363" text-anchor="middle">73</text>
+<line x1="202" y1="51" x2="202" y2="61" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<text x="202" y="82" font-size="13" fill="#636363" text-anchor="middle">74</text>
+<line x1="240" y1="51" x2="240" y2="61" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<text x="240" y="82" font-size="13" fill="#636363" text-anchor="middle">75</text>
+<line x1="278" y1="51" x2="278" y2="61" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<text x="278" y="82" font-size="13" fill="#636363" text-anchor="middle">76</text>
+<line x1="316" y1="51" x2="316" y2="61" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<text x="316" y="82" font-size="13" fill="#636363" text-anchor="middle">77</text>
+<line x1="354" y1="51" x2="354" y2="61" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<text x="354" y="82" font-size="13" fill="#636363" text-anchor="middle">78</text>
+<line x1="392" y1="51" x2="392" y2="61" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<text x="392" y="82" font-size="13" fill="#636363" text-anchor="middle">79</text>
+<line x1="430" y1="46" x2="430" y2="66" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+<text x="430" y="82" font-size="13" fill="#333333" text-anchor="middle">80</text>
+<circle cx="278" cy="56" r="4" fill="#333333"/>
+<line x1="50" y1="104" x2="274" y2="104" stroke="#BABABA" stroke-width="1" stroke-linecap="round"/>
+<polygon points="274,104 266.63,100.885 266.63,107.115" fill="#BABABA"/>
+<polygon points="50,104 57.37,100.885 57.37,107.115" fill="#BABABA"/>
+<text x="162" y="124" font-size="12" fill="#333333" text-anchor="middle">6</text>
+<line x1="282" y1="104" x2="430" y2="104" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="430,104 422.63,100.885 422.63,107.115" fill="#333333"/>
+<polygon points="282,104 289.37,100.885 289.37,107.115" fill="#333333"/>
+<text x="356" y="124" font-size="12" fill="#333333" text-anchor="middle">4</text>
+</svg>

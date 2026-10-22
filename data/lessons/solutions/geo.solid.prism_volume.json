@@ -1,0 +1,15 @@
+{
+  "concept": "geo.solid.prism_volume",
+  "setup": "The prism has a base of area \\([[base]]\\) square units and a height of \\([[height]]\\) units.",
+  "steps": [
+    {
+      "fact": "base",
+      "say": "Every cross-section parallel to the base is congruent to it, which is what makes a prism a prism -- so the base area \\([[base]]\\) is the same at every level."
+    },
+    {
+      "fact": "height",
+      "say": "Stacking that area through the height \\([[height]]\\) multiplies the two: the volume is \\([[base]] \\times [[height]] = [[volume]]\\)."
+    }
+  ],
+  "answer": "So the prism's volume is \\([[volume]]\\) cubic units."
+}

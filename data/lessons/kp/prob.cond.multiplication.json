@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Conditioning step by step",
+    "section": "Conditioning step by step",
+    "subgoals": [
+      "Define the conditional probability",
+      "Restrict the sample space to A",
+      "Multiply back to the joint probability"
+    ]
+  },
+  {
+    "label": "Worked: drawing without replacement",
+    "section": "Worked: drawing without replacement",
+    "subgoals": [
+      "Condition on the first attribute",
+      "Use the conditional chance of the second",
+      "Multiply to the joint probability"
+    ]
+  },
+  {
+    "label": "The chain rule",
+    "section": "The chain rule",
+    "subgoals": [
+      "Factor a triple intersection",
+      "Condition each factor on the earlier events",
+      "Telescope to the joint probability"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Building the basis",
+    "section": "Building the basis",
+    "subgoals": [
+      "Build a polynomial that vanishes at the other nodes",
+      "Normalise it to one at its own node",
+      "Add the weighted basis polynomials"
+    ]
+  },
+  {
+    "label": "Worked: three points",
+    "section": "Worked: three points",
+    "subgoals": [
+      "Form the three basis polynomials",
+      "Evaluate each at the query point",
+      "Combine with the node values"
+    ]
+  },
+  {
+    "label": "Strengths and costs",
+    "section": "Strengths and costs",
+    "subgoals": [
+      "Note the simplicity for one evaluation",
+      "See the cost of adding a node",
+      "Contrast it with the Newton form"
+    ]
+  }
+]

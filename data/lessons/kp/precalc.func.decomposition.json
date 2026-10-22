@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Composition in reverse",
+    "section": "Composition in reverse",
+    "subgoals": [
+      "Identify the outer operation",
+      "Read the inner expression",
+      "Check by composing"
+    ]
+  },
+  {
+    "label": "Worked: (x + 1)^2",
+    "section": "Worked: (x + 1)^2",
+    "subgoals": [
+      "Name squaring as outer",
+      "Set g(x) = x + 1",
+      "Check f(g(x)) = h(x)"
+    ]
+  },
+  {
+    "label": "More than one valid decomposition",
+    "section": "More than one valid decomposition",
+    "subgoals": [
+      "Try a simpler outer function",
+      "Compare equivalent decompositions",
+      "Prefer the useful inner function"
+    ]
+  }
+]

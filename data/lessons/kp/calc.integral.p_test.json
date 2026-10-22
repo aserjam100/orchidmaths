@@ -1,0 +1,29 @@
+[
+  {
+    "label": "p-integral test",
+    "section": "",
+    "subgoals": [
+      "Test integral of dx/x^p over [1,inf): converge iff p > 1",
+      "Check 1/x^3 converges",
+      "Reject 1/x (p = 1)"
+    ]
+  },
+  {
+    "label": "Unbounded intervals",
+    "section": "",
+    "subgoals": [
+      "Set up the limit at infinity",
+      "Evaluate the antiderivative first",
+      "Take the limit last"
+    ]
+  },
+  {
+    "label": "Worked p-test",
+    "section": "",
+    "subgoals": [
+      "Evaluate integral of dx/x^3 over [1,inf) = 1/2",
+      "Contrast p > 1 vs p <= 1",
+      "Note the flipped rule at 0"
+    ]
+  }
+]

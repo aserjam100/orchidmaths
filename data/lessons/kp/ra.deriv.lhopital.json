@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The indeterminate case",
+    "section": "The indeterminate case",
+    "subgoals": [
+      "Recognise zero over zero",
+      "Replace the functions by their derivatives",
+      "Take the limit of the new ratio"
+    ]
+  },
+  {
+    "label": "Repeated application",
+    "section": "Repeated application",
+    "subgoals": [
+      "Recheck the indeterminate form",
+      "Apply the rule again",
+      "Stop when a determinate ratio appears"
+    ]
+  },
+  {
+    "label": "When it does not help",
+    "section": "When it does not help",
+    "subgoals": [
+      "Note the rule is one-way",
+      "Check the hypotheses first",
+      "Fall back on an expansion"
+    ]
+  }
+]

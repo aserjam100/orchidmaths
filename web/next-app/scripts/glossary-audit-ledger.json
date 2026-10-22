@@ -1,0 +1,4726 @@
+{
+ "version": 1,
+ "batches": {
+  "advanced": [
+   "natural-numbers",
+   "integers",
+   "rationals",
+   "real-numbers",
+   "complex-numbers",
+   "imaginary-unit",
+   "conjugate",
+   "real-imag-parts",
+   "modulus-complex",
+   "euler-identity",
+   "gamma-function",
+   "beta-function",
+   "zeta-function",
+   "error-function",
+   "bessel-function",
+   "group-notation",
+   "isomorphism",
+   "congruence-mod",
+   "gcd",
+   "lcm",
+   "totient",
+   "tensor-product",
+   "direct-sum-xor",
+   "argmin-argmax",
+   "fourier-transform",
+   "laplace-transform",
+   "big-o-notation"
+  ],
+  "algebra": [
+   "function-notation",
+   "inverse-function",
+   "composition",
+   "mapping-arrow",
+   "exponential-exp",
+   "logarithm",
+   "natural-log",
+   "sequence-term",
+   "summation-sigma",
+   "product-notation",
+   "binomial-coefficient",
+   "proportional-to",
+   "delta-difference",
+   "ellipsis",
+   "slope-intercept",
+   "quadratic-formula"
+  ],
+  "arithmetic": [
+   "plus",
+   "minus",
+   "multiply",
+   "divide",
+   "plus-minus",
+   "minus-plus",
+   "equals",
+   "not-equals",
+   "approx",
+   "identical-to",
+   "less-than",
+   "greater-than",
+   "less-equal",
+   "greater-equal",
+   "fraction",
+   "decimal-point",
+   "percent",
+   "ratio",
+   "proportion",
+   "power",
+   "square-root",
+   "nth-root",
+   "absolute-value",
+   "factorial",
+   "divides",
+   "grouping",
+   "interval",
+   "overline-repeat",
+   "scientific-notation",
+   "mixed-number",
+   "asymptotic"
+  ],
+  "calculus": [
+   "limit",
+   "derivative-lagrange",
+   "derivative-leibniz",
+   "partial-derivative",
+   "differential",
+   "integral",
+   "double-integral",
+   "triple-integral",
+   "line-integral",
+   "contour-integral",
+   "nabla-gradient",
+   "divergence",
+   "curl",
+   "laplacian",
+   "epsilon-delta",
+   "infinity",
+   "supremum",
+   "infimum",
+   "euler-number",
+   "riemann-sum",
+   "continuity-note"
+  ],
+  "geometry": [
+   "angle",
+   "degree",
+   "radian",
+   "triangle",
+   "congruent",
+   "similar",
+   "parallel",
+   "perpendicular",
+   "line-segment-ray",
+   "arc-notation",
+   "distance-formula",
+   "midpoint-formula",
+   "slope",
+   "pi-constant",
+   "sine",
+   "cosine",
+   "tangent",
+   "reciprocal-trig",
+   "inverse-trig",
+   "vector-arrow",
+   "circle-equation"
+  ],
+  "greek": [
+   "alpha",
+   "beta",
+   "gamma-letter",
+   "delta-letter",
+   "epsilon",
+   "zeta",
+   "eta",
+   "theta",
+   "iota",
+   "kappa",
+   "lambda",
+   "mu",
+   "nu",
+   "xi",
+   "omicron",
+   "pi-letter",
+   "rho",
+   "sigma-letter",
+   "tau",
+   "upsilon",
+   "phi",
+   "chi",
+   "psi",
+   "omega",
+   "wavelength-note"
+  ],
+  "linear": [
+   "vector-notation",
+   "matrix-notation",
+   "transpose",
+   "inverse-matrix",
+   "determinant",
+   "trace",
+   "rank",
+   "eigenvalue",
+   "eigenvector",
+   "inner-product",
+   "dot-product-note",
+   "cross-product",
+   "kronecker-delta",
+   "identity-matrix",
+   "permutation",
+   "combination",
+   "graph-notation",
+   "mod-arithmetic",
+   "floor-ceiling"
+  ],
+  "logic": [
+   "element-of",
+   "not-element",
+   "subset",
+   "subset-equal",
+   "superset",
+   "superset-equal",
+   "union",
+   "intersection",
+   "set-difference",
+   "complement",
+   "empty-set",
+   "power-set",
+   "set-builder",
+   "forall",
+   "exists",
+   "negation",
+   "conjunction",
+   "disjunction",
+   "implies",
+   "equivalent-iff",
+   "therefore",
+   "because",
+   "cardinality",
+   "qed",
+   "predicate-relation"
+  ],
+  "probability": [
+   "probability-of-event",
+   "conditional-probability",
+   "random-variable",
+   "expectation",
+   "population-mean",
+   "variance",
+   "standard-deviation",
+   "covariance",
+   "correlation",
+   "normal-distribution",
+   "discrete-distributions",
+   "z-score",
+   "sample-mean",
+   "proportion-phat",
+   "estimator-hat",
+   "hypothesis-h0",
+   "p-value",
+   "regression-note"
+  ]
+ },
+ "entries": {
+  "natural-numbers": {
+   "symbol": "ℕ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "integers": {
+   "symbol": "ℤ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "rationals": {
+   "symbol": "ℚ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "real-numbers": {
+   "symbol": "ℝ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "complex-numbers": {
+   "symbol": "ℂ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "imaginary-unit": {
+   "symbol": "i",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "conjugate": {
+   "symbol": "z̄",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "real-imag-parts": {
+   "symbol": "Re(z) Im(z)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "modulus-complex": {
+   "symbol": "|z|",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "euler-identity": {
+   "symbol": "e^(iπ) + 1 = 0",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "gamma-function": {
+   "symbol": "Γ(n)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "beta-function": {
+   "symbol": "B(x, y)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "zeta-function": {
+   "symbol": "ζ(s)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "error-function": {
+   "symbol": "erf(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "bessel-function": {
+   "symbol": "J_n(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "group-notation": {
+   "symbol": "(G, ·)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "isomorphism": {
+   "symbol": "≅",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "congruence-mod": {
+   "symbol": "a ≡ b (mod n)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "gcd": {
+   "symbol": "gcd(a, b)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "lcm": {
+   "symbol": "lcm(a, b)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "totient": {
+   "symbol": "φ(n)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "tensor-product": {
+   "symbol": "⊗",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "direct-sum-xor": {
+   "symbol": "⊕",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "argmin-argmax": {
+   "symbol": "arg min",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "fourier-transform": {
+   "symbol": "ℱ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "laplace-transform": {
+   "symbol": "ℒ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "big-o-notation": {
+   "symbol": "O(n²)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2",
+    "https://dlmf.nist.gov/5.12",
+    "https://dlmf.nist.gov/7.2",
+    "https://dlmf.nist.gov/10.4",
+    "https://dlmf.nist.gov/10.8",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "function-notation": {
+   "symbol": "f(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "inverse-function": {
+   "symbol": "f⁻¹(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "composition": {
+   "symbol": "f ∘ g",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "mapping-arrow": {
+   "symbol": "→ ↦",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "exponential-exp": {
+   "symbol": "exp(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "logarithm": {
+   "symbol": "log_b(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "natural-log": {
+   "symbol": "ln(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "sequence-term": {
+   "symbol": "aₙ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "summation-sigma": {
+   "symbol": "Σ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "product-notation": {
+   "symbol": "Π",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "binomial-coefficient": {
+   "symbol": "C(n, k)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "proportional-to": {
+   "symbol": "∝",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "delta-difference": {
+   "symbol": "Δ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "ellipsis": {
+   "symbol": "…",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "slope-intercept": {
+   "symbol": "y = mx + b",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "quadratic-formula": {
+   "symbol": "x = (−b ± √(b²−4ac)) / 2a",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "plus": {
+   "symbol": "+",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "minus": {
+   "symbol": "−",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "multiply": {
+   "symbol": "×",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "divide": {
+   "symbol": "÷",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "plus-minus": {
+   "symbol": "±",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "minus-plus": {
+   "symbol": "∓",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "equals": {
+   "symbol": "=",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "not-equals": {
+   "symbol": "≠",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "approx": {
+   "symbol": "≈",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "identical-to": {
+   "symbol": "≡",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "less-than": {
+   "symbol": "<",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "greater-than": {
+   "symbol": ">",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "less-equal": {
+   "symbol": "≤",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "greater-equal": {
+   "symbol": "≥",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "fraction": {
+   "symbol": "a/b",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "decimal-point": {
+   "symbol": ".",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "percent": {
+   "symbol": "%",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "ratio": {
+   "symbol": ":",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "proportion": {
+   "symbol": "::",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "power": {
+   "symbol": "xⁿ",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "see audit notes batch greek+arithmetic"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "square-root": {
+   "symbol": "√",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "nth-root": {
+   "symbol": "∛",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "see audit notes batch greek+arithmetic"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "absolute-value": {
+   "symbol": "|x|",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "factorial": {
+   "symbol": "n!",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "divides": {
+   "symbol": "∣",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "grouping": {
+   "symbol": "() [] {}",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "interval": {
+   "symbol": "[a, b]",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "overline-repeat": {
+   "symbol": "x̄",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "scientific-notation": {
+   "symbol": "×10ⁿ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "mixed-number": {
+   "symbol": "a b/c",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "asymptotic": {
+   "symbol": "~",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "limit": {
+   "symbol": "lim",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "derivative-lagrange": {
+   "symbol": "f′(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "derivative-leibniz": {
+   "symbol": "dy/dx",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "partial-derivative": {
+   "symbol": "∂",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "differential": {
+   "symbol": "dx",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "integral": {
+   "symbol": "∫",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "double-integral": {
+   "symbol": "∬",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "triple-integral": {
+   "symbol": "∭",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "line-integral": {
+   "symbol": "∫_C",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "contour-integral": {
+   "symbol": "∮",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "nabla-gradient": {
+   "symbol": "∇",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "divergence": {
+   "symbol": "∇·F",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "curl": {
+   "symbol": "∇×F",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "laplacian": {
+   "symbol": "∇²",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "epsilon-delta": {
+   "symbol": "ε–δ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "infinity": {
+   "symbol": "∞",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "supremum": {
+   "symbol": "sup",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "infimum": {
+   "symbol": "inf",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "euler-number": {
+   "symbol": "e",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "riemann-sum": {
+   "symbol": "Σ f(xᵢ)Δx",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "continuity-note": {
+   "symbol": "continuous",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "angle": {
+   "symbol": "∠",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "degree": {
+   "symbol": "°",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "radian": {
+   "symbol": "rad",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "triangle": {
+   "symbol": "△",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "congruent": {
+   "symbol": "≅",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "similar": {
+   "symbol": "∼",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "parallel": {
+   "symbol": "∥",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "perpendicular": {
+   "symbol": "⊥",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "line-segment-ray": {
+   "symbol": "AB̄ AB⃗",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "arc-notation": {
+   "symbol": "arc AB",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "distance-formula": {
+   "symbol": "d = √((x₂−x₁)² + (y₂−y₁)²)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "midpoint-formula": {
+   "symbol": "M = ((x₁+x₂)/2, (y₁+y₂)/2)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "slope": {
+   "symbol": "m",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "pi-constant": {
+   "symbol": "π",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "sine": {
+   "symbol": "sin",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "cosine": {
+   "symbol": "cos",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "tangent": {
+   "symbol": "tan",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "reciprocal-trig": {
+   "symbol": "csc sec cot",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "inverse-trig": {
+   "symbol": "arcsin",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "vector-arrow": {
+   "symbol": "v⃗",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "circle-equation": {
+   "symbol": "(x−h)² + (y−k)² = r²",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+    "https://tutorial.math.lamar.edu/classes/calciii/curldivergence.aspx"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "alpha": {
+   "symbol": "α Α",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "see audit notes batch greek+arithmetic"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "beta": {
+   "symbol": "β Β",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "see audit notes batch greek+arithmetic"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://mathworld.wolfram.com/MangoldtFunction.html"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "gamma-letter": {
+   "symbol": "γ Γ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "delta-letter": {
+   "symbol": "δ Δ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "epsilon": {
+   "symbol": "ε ϵ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "zeta": {
+   "symbol": "ζ Ζ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/25.6"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "eta": {
+   "symbol": "η Η",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "see audit notes batch greek+arithmetic"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://encyclopediaofmath.org/wiki/Correlation_ratio"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "theta": {
+   "symbol": "θ ϑ Θ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "iota": {
+   "symbol": "ι Ι",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "kappa": {
+   "symbol": "κ ϰ Κ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "lambda": {
+   "symbol": "λ Λ",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "see audit notes batch greek+arithmetic"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://mathworld.wolfram.com/MangoldtFunction.html"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "mu": {
+   "symbol": "μ Μ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "nu": {
+   "symbol": "ν Ν",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "xi": {
+   "symbol": "ξ Ξ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "omicron": {
+   "symbol": "ο Ο",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "pi-letter": {
+   "symbol": "π ϖ Π",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "rho": {
+   "symbol": "ρ ϱ Ρ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "sigma-letter": {
+   "symbol": "σ ς Σ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "tau": {
+   "symbol": "τ Τ",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "see audit notes batch greek+arithmetic"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://www.tauday.com/tau-manifesto"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "upsilon": {
+   "symbol": "υ Υ",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "see audit notes batch greek+arithmetic"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "phi": {
+   "symbol": "φ ϕ Φ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "chi": {
+   "symbol": "χ Χ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "psi": {
+   "symbol": "ψ Ψ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "omega": {
+   "symbol": "ω Ω",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "wavelength-note": {
+   "symbol": "λ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "vector-notation": {
+   "symbol": "v",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "matrix-notation": {
+   "symbol": "A",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "transpose": {
+   "symbol": "Aᵀ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "inverse-matrix": {
+   "symbol": "A⁻¹",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "determinant": {
+   "symbol": "det(A)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "trace": {
+   "symbol": "tr(A)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "rank": {
+   "symbol": "rank(A)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "eigenvalue": {
+   "symbol": "λ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "eigenvector": {
+   "symbol": "v (Av = λv)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "inner-product": {
+   "symbol": "⟨u, v⟩",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "dot-product-note": {
+   "symbol": "u · v",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "cross-product": {
+   "symbol": "u × v",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "kronecker-delta": {
+   "symbol": "δᵢⱼ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "identity-matrix": {
+   "symbol": "I",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "permutation": {
+   "symbol": "P(n, k)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "combination": {
+   "symbol": "C(n, k)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "graph-notation": {
+   "symbol": "G = (V, E)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "mod-arithmetic": {
+   "symbol": "a mod n",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "floor-ceiling": {
+   "symbol": "⌊x⌋ ⌈x⌉",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "element-of": {
+   "symbol": "∈",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "not-element": {
+   "symbol": "∉",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "subset": {
+   "symbol": "⊂",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "subset-equal": {
+   "symbol": "⊆",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "superset": {
+   "symbol": "⊃",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "superset-equal": {
+   "symbol": "⊇",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "union": {
+   "symbol": "∪",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "intersection": {
+   "symbol": "∩",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "set-difference": {
+   "symbol": "∖",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "complement": {
+   "symbol": "Aᶜ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "empty-set": {
+   "symbol": "∅",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "power-set": {
+   "symbol": "℘(A)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "set-builder": {
+   "symbol": "{ x | … }",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "forall": {
+   "symbol": "∀",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "exists": {
+   "symbol": "∃",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "negation": {
+   "symbol": "¬",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "conjunction": {
+   "symbol": "∧",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "disjunction": {
+   "symbol": "∨",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "example explanation reworded; see audit notes batch algebra+logic"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "implies": {
+   "symbol": "⇒",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "equivalent-iff": {
+   "symbol": "⇔",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "therefore": {
+   "symbol": "∴",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "because": {
+   "symbol": "∵",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "cardinality": {
+   "symbol": "|A|",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://us.metamath.org/mpeuni/qnnen.html"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "qed": {
+   "symbol": "∎",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "predicate-relation": {
+   "symbol": "P(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "probability-of-event": {
+   "symbol": "P(A)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "conditional-probability": {
+   "symbol": "P(A|B)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "random-variable": {
+   "symbol": "X",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "expectation": {
+   "symbol": "E[X]",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "population-mean": {
+   "symbol": "μ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "variance": {
+   "symbol": "Var(X)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "standard-deviation": {
+   "symbol": "σ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "covariance": {
+   "symbol": "Cov(X, Y)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "correlation": {
+   "symbol": "ρ r",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "normal-distribution": {
+   "symbol": "N(μ, σ²)",
+   "status": "corrected-and-verified",
+   "issues": [],
+   "changes": [
+    "convention note added; license string corrected"
+   ],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "discrete-distributions": {
+   "symbol": "Bin(n, p)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "z-score": {
+   "symbol": "z",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "sample-mean": {
+   "symbol": "x̄",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "proportion-phat": {
+   "symbol": "p̂",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "estimator-hat": {
+   "symbol": "θ̂",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "hypothesis-h0": {
+   "symbol": "H₀ H₁",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "p-value": {
+   "symbol": "p",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "regression-note": {
+   "symbol": "ŷ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://openstax.org/books/introductory-statistics/pages/6-1-the-standard-normal-distribution"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "aleph-null": {
+   "symbol": "ℵ₀",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://www.britannica.com/science/aleph-null"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "indexed-union": {
+   "symbol": "⋃ ⋂",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "cartesian-product": {
+   "symbol": "A × B",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "symmetric-difference": {
+   "symbol": "A △ B",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "piecewise-definition": {
+   "symbol": "f(x) = {…",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "domain-range": {
+   "symbol": "dom(f)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "continued-fraction": {
+   "symbol": "[a₀; a₁, a₂, …]",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://mathworld.wolfram.com/PiContinuedFraction.html"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "pythagorean-theorem": {
+   "symbol": "a² + b² = c²",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "law-of-sines": {
+   "symbol": "a/sin A = b/sin B",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "law-of-cosines": {
+   "symbol": "c² = a² + b² − 2ab cos C",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "lhopital-rule": {
+   "symbol": "lim f/g",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "chain-rule": {
+   "symbol": "dy/dx = dy/du · du/dx",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "integration-by-parts": {
+   "symbol": "∫u dv",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "taylor-series": {
+   "symbol": "Σ f⁽ⁿ⁾(a)/n! (x−a)ⁿ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "linear-span": {
+   "symbol": "Span{…}",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "null-space-kernel": {
+   "symbol": "ker(T)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "orthogonal-matrix": {
+   "symbol": "QᵀQ = I",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "bayes-theorem": {
+   "symbol": "P(A|B) = P(B|A)P(A)/P(B)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "independence-events": {
+   "symbol": "P(A∩B)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "standard-error": {
+   "symbol": "SE = σ/√n",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "confidence-interval": {
+   "symbol": "x̄ ± z*·σ/√n",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "big-theta": {
+   "symbol": "Θ(n²)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://xlinux.nist.gov/dads/HTML/theta.html"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "big-omega": {
+   "symbol": "Ω(n)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://xlinux.nist.gov/dads/HTML/omegaCapital.html"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "euler-mascheroni": {
+   "symbol": "γ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/5.2"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "prime-counting": {
+   "symbol": "π(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/27.2"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "mobius-function": {
+   "symbol": "μ(n)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://dlmf.nist.gov/27.2"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "irrational-numbers": {
+   "symbol": "∉ ℚ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "absolute-relative-error": {
+   "symbol": "|x − x̂|",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "trapezoid-rule": {
+   "symbol": "Tₙ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "partial-fractions": {
+   "symbol": "P(x)/Q(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "remainder-factor-theorem": {
+   "symbol": "P(a) = 0",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "mathematical-induction": {
+   "symbol": "P(1), P(k) ⇒ P(k+1)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "converse-contrapositive": {
+   "symbol": "Q ⇒ P",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "tautology-contradiction": {
+   "symbol": "⊤ ⊥",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "wlog": {
+   "symbol": "WLOG",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "proof-by-contradiction": {
+   "symbol": "¬P ⊢ ⊥",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "parabola": {
+   "symbol": "y = ax² + bx + c",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "ellipse": {
+   "symbol": "x²/a² + y²/b² = 1",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "hyperbola": {
+   "symbol": "x²/a² − y²/b² = 1",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "tangent-line": {
+   "symbol": "y − f(a) = f′(a)(x − a)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "hyperbolic-functions": {
+   "symbol": "sinh cosh tanh",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "fundamental-theorem-calculus": {
+   "symbol": "∫ₐᵇ f = F(b) − F(a)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "mean-value-theorem": {
+   "symbol": "f′(c)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "improper-integral": {
+   "symbol": "∫₁^∞",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "metric-space": {
+   "symbol": "d(x, y)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://arechnitzer.gitlab.io/m319text/sec_metric_complete.html"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "cauchy-sequence": {
+   "symbol": "∀ε>0",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://arechnitzer.gitlab.io/m319text/sec_metric_complete.html"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "ordinary-differential-equation": {
+   "symbol": "y′ = f(x, y)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://math.libretexts.org/Courses/Irvine_Valley_College/Introduction_to_Differential_Equations_(IVC_Math_24)/01%3A_First_Order_Differential_Equations/1.02%3A_Basic_Terminology/1.2.02%3A_Differential_Equation_Terminology"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "partial-differential-equation": {
+   "symbol": "∂u/∂t",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://math.libretexts.org/Courses/Irvine_Valley_College/Introduction_to_Differential_Equations_(IVC_Math_24)/01%3A_First_Order_Differential_Equations/1.02%3A_Basic_Terminology/1.2.02%3A_Differential_Equation_Terminology"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "initial-value-problem": {
+   "symbol": "y(x₀) = y₀",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://math.libretexts.org/Courses/Irvine_Valley_College/Introduction_to_Differential_Equations_(IVC_Math_24)/01%3A_First_Order_Differential_Equations/1.02%3A_Basic_Terminology/1.2.02%3A_Differential_Equation_Terminology"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "equilibrium-stability": {
+   "symbol": "y′ = 0",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://math.libretexts.org/Courses/Irvine_Valley_College/Introduction_to_Differential_Equations_(IVC_Math_24)/01%3A_First_Order_Differential_Equations/1.02%3A_Basic_Terminology/1.2.02%3A_Differential_Equation_Terminology"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "lagrange-multipliers": {
+   "symbol": "∇f = λ∇g",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "convex-function": {
+   "symbol": "f″ ≥ 0",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "generating-function": {
+   "symbol": "G(x)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://mathweb.ucsd.edu/~ebender/CombText/ch-10.pdf"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "pigeonhole-principle": {
+   "symbol": "m+1 → m",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "binomial-theorem": {
+   "symbol": "(a+b)ⁿ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "basis-dimension": {
+   "symbol": "dim(V)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "linear-independence": {
+   "symbol": "c₁v₁ + … = 0",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "diagonalization": {
+   "symbol": "A = PDP⁻¹",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "central-limit-theorem": {
+   "symbol": "X̄ₙ → N",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "law-of-large-numbers": {
+   "symbol": "X̄ₙ → μ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "prime-number": {
+   "symbol": "p",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "holomorphic-function": {
+   "symbol": "f′(z₀)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "topological-space": {
+   "symbol": "(X, T)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "compact-set": {
+   "symbol": "compact",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "connected-set": {
+   "symbol": "connected",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "homeomorphism": {
+   "symbol": "≅ (spaces)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "manifold": {
+   "symbol": "Mⁿ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "ring": {
+   "symbol": "(R, +, ×)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "field-algebra": {
+   "symbol": "𝔽",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "homomorphism": {
+   "symbol": "φ(ab) = φ(a)φ(b)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "diophantine-equation": {
+   "symbol": "x² + y² = z²",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://mathshistory.st-andrews.ac.uk/HistTopics/Fermat's_last_theorem/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "shannon-entropy": {
+   "symbol": "H",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://doi.org/10.4249/scholarpedia.3901"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "turing-machine": {
+   "symbol": "δ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://plato.stanford.edu/entries/turing-machine/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "fundamental-theorem-algebra": {
+   "symbol": "n roots",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "fermats-last-theorem": {
+   "symbol": "xⁿ + yⁿ = zⁿ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://mathshistory.st-andrews.ac.uk/HistTopics/Fermat's_last_theorem/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "riemann-hypothesis": {
+   "symbol": "Re(s) = ½",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "trigonometric-identities": {
+   "symbol": "sin² + cos² = 1",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "sigma-algebra": {
+   "symbol": "(X, M)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://planetmath.org/sigmaalgebra"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "hilbert-space": {
+   "symbol": "H",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://phys.libretexts.org/Bookshelves/Quantum_Mechanics/Quantum_Mechanics_(Fowler)/02%3A_Some_Essential_Math/2.03%3A_Function_Spaces"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "category": {
+   "symbol": "C",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://plato.stanford.edu/entries/category-theory/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "morphism": {
+   "symbol": "f: X → Y",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://plato.stanford.edu/entries/category-theory/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "functor": {
+   "symbol": "F: C → D",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://plato.stanford.edu/entries/category-theory/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "natural-transformation": {
+   "symbol": "η: F ⇒ G",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://plato.stanford.edu/entries/category-theory/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "equivalence-of-categories": {
+   "symbol": "C ≃ D",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://plato.stanford.edu/entries/category-theory/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "universal-property": {
+   "symbol": "∃!",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://plato.stanford.edu/entries/category-theory/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "limit-colimit": {
+   "symbol": "lim← lim→",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://plato.stanford.edu/entries/category-theory/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "adjoint-functors": {
+   "symbol": "F ⊣ G",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://plato.stanford.edu/entries/category-theory/"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "linear-operator": {
+   "symbol": "T: V → W",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Self-adjoint_operator"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "operator-norm": {
+   "symbol": "‖T‖",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Self-adjoint_operator"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "bounded-operator": {
+   "symbol": "‖Tx‖ ≤ C‖x‖",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Self-adjoint_operator"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "adjoint-operator": {
+   "symbol": "T*",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Self-adjoint_operator"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "self-adjoint-operator": {
+   "symbol": "A = A*",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Self-adjoint_operator"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "normal-operator": {
+   "symbol": "N*N = NN*",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Spectral_theorem"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "projection-operator": {
+   "symbol": "P² = P",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Spectral_theorem"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "compact-operator": {
+   "symbol": "compact operator",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Spectral_theorem"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "spectrum-operator": {
+   "symbol": "σ(A)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Spectral_theorem"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "spectral-theorem": {
+   "symbol": "A = UDU*",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Spectral_theorem"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "chain-complex": {
+   "symbol": "⋯ → Cₙ₊₁ → Cₙ → ⋯",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "homology-groups": {
+   "symbol": "Hₙ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "cohomology": {
+   "symbol": "Hⁿ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "chain-map": {
+   "symbol": "fₙ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "exact-sequence": {
+   "symbol": "0 → A → B → C → 0",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "cokernel": {
+   "symbol": "coker",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "projective-resolution": {
+   "symbol": "⋯ → P₁ → P₀ → M → 0",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "derived-functor": {
+   "symbol": "LₙF / RⁿF",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "tor-ext": {
+   "symbol": "Torₙ / Extⁿ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "chain-homotopy": {
+   "symbol": "f ≃ g",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Chain_complex"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "affine-variety": {
+   "symbol": "V(S)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Algebraic_variety"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "projective-variety": {
+   "symbol": "ℙⁿ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Algebraic_variety"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "coordinate-ring": {
+   "symbol": "k[V]",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Algebraic_variety"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "zariski-topology": {
+   "symbol": "Zariski",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Algebraic_variety"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "regular-function": {
+   "symbol": "O(V)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Algebraic_variety"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "variety-dimension": {
+   "symbol": "dim V",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Algebraic_variety"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "singular-point": {
+   "symbol": "sing",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Algebraic_variety"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "scheme": {
+   "symbol": "Spec R",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Algebraic_variety"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "sheaf": {
+   "symbol": "F(U)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Sheaf_(mathematics)"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "local-ring": {
+   "symbol": "(R, m)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Algebraic_variety"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "group-representation": {
+   "symbol": "ρ: G → GL(V)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Group_representation"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "invariant-subspace": {
+   "symbol": "ρ(g)W ⊆ W",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Group_representation"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "irreducible-representation": {
+   "symbol": "irrep",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Group_representation"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "character-representation": {
+   "symbol": "χ(g)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Group_representation"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "schurs-lemma": {
+   "symbol": "Schur",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Schur%27s_lemma"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "group-algebra": {
+   "symbol": "ℂ[G]",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Group_representation"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "induced-representation": {
+   "symbol": "Ind",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Group_representation"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "lie-algebra-representation": {
+   "symbol": "dρ",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Group_representation"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "smooth-manifold": {
+   "symbol": "M",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "chart-atlas": {
+   "symbol": "(U, φ)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "tangent-space": {
+   "symbol": "T_pM",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "vector-field": {
+   "symbol": "X",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "differential-form": {
+   "symbol": "ω",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "riemannian-metric": {
+   "symbol": "g",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "geodesic": {
+   "symbol": "γ(t)",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "connection": {
+   "symbol": "∇",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "curvature": {
+   "symbol": "R",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "exterior-derivative": {
+   "symbol": "d",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "stokes-theorem": {
+   "symbol": "∫_M dω",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "tensor-field": {
+   "symbol": "T",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "pushforward-pullback": {
+   "symbol": "dF / F*",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  },
+  "lie-derivative": {
+   "symbol": "L_X",
+   "status": "verified",
+   "issues": [],
+   "changes": [],
+   "sources_consulted": [
+    "dataset-cited-sources",
+    "https://en.wikipedia.org/wiki/Differentiable_manifold"
+   ],
+   "example_checked": true,
+   "latex_checked": true,
+   "xrefs_checked": true
+  }
+ }
+}

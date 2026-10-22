@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the universal property",
+    "section": "Worked: the universal property",
+    "subgoals": [
+      "Embed N densely in beta N",
+      "Factor the map through beta N",
+      "Force uniqueness by density"
+    ]
+  },
+  {
+    "label": "Worked: growth of beta N",
+    "section": "Worked: growth of beta N",
+    "subgoals": [
+      "Sort ultrafilters into principal and free",
+      "Exhibit the nonempty remainder",
+      "Count doubly-exponentially many points"
+    ]
+  },
+  {
+    "label": "Worked: who gets compactified",
+    "section": "Worked: who gets compactified",
+    "subgoals": [
+      "Inherit regularity from the ambient compactum",
+      "Embed Tychonoff spaces in beta X",
+      "Conclude compactifiable means Tychonoff"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The diagonal partials",
+    "section": "The diagonal partials",
+    "subgoals": [
+      "Write the divergence",
+      "Compute it for a linear field",
+      "Relate it to the trace"
+    ]
+  },
+  {
+    "label": "Sources and sinks",
+    "section": "Sources and sinks",
+    "subgoals": [
+      "Interpret a positive divergence",
+      "Recognise radial flow",
+      "Contrast zero curl with zero divergence"
+    ]
+  },
+  {
+    "label": "Divergence versus curl",
+    "section": "Divergence versus curl",
+    "subgoals": [
+      "State what each operator measures",
+      "Name incompressible and irrotational flows",
+      "Explain why both appear together"
+    ]
+  }
+]

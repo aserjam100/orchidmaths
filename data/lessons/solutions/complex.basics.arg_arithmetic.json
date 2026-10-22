@@ -1,0 +1,19 @@
+{
+  "concept": "complex.basics.arg_arithmetic",
+  "setup": "The arguments are \\([[a1]]^\\circ\\) and \\([[a2]]^\\circ\\).",
+  "steps": [
+    {
+      "fact": "a1",
+      "say": "Multiplying adds arguments, so the product's argument is \\([[a1]] + [[a2]] = [[sum]]\\) degrees."
+    },
+    {
+      "fact": "sum",
+      "say": "The sum [[sum]] may lie outside the requested interval."
+    },
+    {
+      "fact": "value",
+      "say": "Reducing it modulo 360 gives [[value]] degrees."
+    }
+  ],
+  "answer": "So the argument is \\([[value]]^\\circ\\)."
+}

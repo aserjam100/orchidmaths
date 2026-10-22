@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Fitting a parabola",
+    "section": "Fitting a parabola",
+    "subgoals": [
+      "Fit a parabola to the three values",
+      "Integrate the parabola exactly",
+      "Read the weights one, four, one"
+    ]
+  },
+  {
+    "label": "Worked: the square over an interval",
+    "section": "Worked: the square over an interval",
+    "subgoals": [
+      "Evaluate at the two endpoints and the midpoint",
+      "Apply the weights one, four, one",
+      "Divide by six and multiply by the width"
+    ]
+  },
+  {
+    "label": "Why it is the default",
+    "section": "Why it is the default",
+    "subgoals": [
+      "State the exactness on cubics",
+      "Read the fourth-order error",
+      "Prefer it for smooth integrands"
+    ]
+  }
+]

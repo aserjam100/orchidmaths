@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: unrolling three steps",
+    "section": "Worked: unrolling three steps",
+    "subgoals": [
+      "Seed the initial hidden state",
+      "Reuse the same weights each step",
+      "Carry memory through the state"
+    ]
+  },
+  {
+    "label": "Worked: gradients vanish",
+    "section": "Worked: gradients vanish",
+    "subgoals": [
+      "Multiply Jacobians step by step",
+      "Watch the product decay exponentially",
+      "Link distance to forgotten influence"
+    ]
+  },
+  {
+    "label": "When gates are needed",
+    "section": "When gates are needed",
+    "subgoals": [
+      "Route gradients through gated cells",
+      "Choose LSTM or GRU for long range",
+      "Keep plain recurrence for short histories"
+    ]
+  }
+]

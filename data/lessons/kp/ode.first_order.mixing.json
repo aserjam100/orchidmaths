@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Rate in minus rate out",
+    "section": "Rate in minus rate out",
+    "subgoals": [
+      "Write dQ/dt = r c - r Q/V",
+      "Recognise a linear equation",
+      "Set the derivative to zero"
+    ]
+  },
+  {
+    "label": "Worked: a brine tank",
+    "section": "Worked: a brine tank",
+    "subgoals": [
+      "Take V = 100, c = 0.2, r = 5",
+      "Write Q' = 1 - Q/20",
+      "Solve Q = 20"
+    ]
+  },
+  {
+    "label": "The limiting amount",
+    "section": "The limiting amount",
+    "subgoals": [
+      "Identify Q = V c",
+      "Note the flow rate cancels",
+      "Handle unequal inflow and outflow"
+    ]
+  }
+]

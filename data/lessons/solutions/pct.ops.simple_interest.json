@@ -1,0 +1,19 @@
+{
+  "concept": "pct.ops.simple_interest",
+  "setup": "The principal is $[[principal]], the annual rate is [[rate]]%, and the time is [[time]] [[time_unit]].",
+  "steps": [
+    {
+      "fact": "principal",
+      "say": "Use I = P x r x t with P = $[[principal]]."
+    },
+    {
+      "fact": "rate",
+      "say": "Write [[rate]]% as [[rate]]/100."
+    },
+    {
+      "fact": "interest",
+      "say": "Multiply: $[[principal]] x [[rate]]/100 x [[time]] = $[[interest]]."
+    }
+  ],
+  "answer": "The simple interest is $[[interest]]."
+}

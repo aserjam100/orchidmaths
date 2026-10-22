@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The Vocabulary",
+    "section": "The Vocabulary",
+    "subgoals": [
+      "Run the radius from center to edge",
+      "Double the radius through the center for the diameter",
+      "Join any two edge points for a chord"
+    ]
+  },
+  {
+    "label": "Naming Arcs",
+    "section": "Naming Arcs",
+    "subgoals": [
+      "Name an arc by its two endpoints",
+      "Split the circle into 180-degree semicircles",
+      "Sort leftover arcs into minor and major"
+    ]
+  },
+  {
+    "label": "Drill: radius 6 and the 9-inch chord test",
+    "section": "",
+    "subgoals": [
+      "Double 6 to a 12 cm diameter",
+      "Cap every chord at the diameter",
+      "Reject radius 4 against a 9-inch chord"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Turning the fraction over",
+    "section": "Turning the fraction over",
+    "subgoals": [
+      "Swap numerator and denominator",
+      "Define it by the product one",
+      "Give the reciprocal of a whole number"
+    ]
+  },
+  {
+    "label": "Why division uses it",
+    "section": "Why division uses it",
+    "subgoals": [
+      "Turn division into multiplication",
+      "Explain the rule from what division means",
+      "Say why the rule is worth knowing"
+    ]
+  },
+  {
+    "label": "Reciprocals of whole numbers",
+    "section": "Reciprocals of whole numbers",
+    "subgoals": [
+      "Write a whole number as a fraction",
+      "Note the unit-fraction result",
+      "Say why zero has none"
+    ]
+  }
+]

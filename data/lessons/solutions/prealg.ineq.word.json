@@ -1,0 +1,19 @@
+{
+  "concept": "prealg.ineq.word",
+  "setup": "This is a [[context]] problem. The fixed amount is [[fixed]] and the repeated amount is [[rate]].",
+  "steps": [
+    {
+      "fact": "inequality",
+      "say": "Let x be the unknown. The inequality is \\([[inequality]]\\)."
+    },
+    {
+      "fact": "solve_step",
+      "say": "Subtract [[fixed]] from both sides: \\([[solve_step]]\\)."
+    },
+    {
+      "fact": "division",
+      "say": "Divide by [[rate]]: \\([[division]]\\)."
+    }
+  ],
+  "answer": "The [[ask]] whole number is [[answer]]."
+}

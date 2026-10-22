@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A linear score turned into a probability",
+    "section": "A linear score turned into a probability",
+    "subgoals": [
+      "Apply the sigmoid to w*x + b",
+      "Minimise cross-entropy",
+      "Keep predictions inside the unit interval"
+    ]
+  },
+  {
+    "label": "Worked: classifying at the 0.5 threshold",
+    "section": "Worked: classifying at the 0.5 threshold",
+    "subgoals": [
+      "Compare the score with zero",
+      "Read sigma(2) as above one half",
+      "Read sigma(-2) as below one half"
+    ]
+  },
+  {
+    "label": "Why the boundary stays linear",
+    "section": "Why the boundary stays linear",
+    "subgoals": [
+      "Set the probability equal to one half",
+      "Solve w*x + b = 0",
+      "Name the resulting hyperplane"
+    ]
+  }
+]

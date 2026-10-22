@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What division means",
+    "section": "What division means",
+    "subgoals": [
+      "Write division as the inverse of multiplication",
+      "Name the dividend, divisor and quotient",
+      "Require a unique quotient"
+    ]
+  },
+  {
+    "label": "Why zero cannot be a divisor",
+    "section": "Why zero cannot be a divisor",
+    "subgoals": [
+      "Set the divisor to zero",
+      "Try to solve divisor times quotient equals dividend",
+      "Conclude that no unique quotient exists"
+    ]
+  },
+  {
+    "label": "Zero divided by a nonzero number",
+    "section": "Zero divided by a nonzero number",
+    "subgoals": [
+      "Keep the divisor nonzero",
+      "Solve divisor times quotient equals zero",
+      "Conclude that the quotient is zero"
+    ]
+  }
+]

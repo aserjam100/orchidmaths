@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction to mean deviations",
+    "section": "",
+    "subgoals": [
+      "Measure each |xi - xbar| deviation from the mean",
+      "Square, average, then root into the quadratic deviation",
+      "Tag sum(xi-M)^2 as the deviance"
+    ]
+  },
+  {
+    "label": "Variance",
+    "section": "",
+    "subgoals": [
+      "Average sum(xi-M)^2/n into sigma^2",
+      "Expand (xi-M)^2 into xi^2-2M*xi+M^2 for the short form",
+      "Scale sigma^2 by a^2 when data scale by a"
+    ]
+  },
+  {
+    "label": "Variance of discrete and continuous random variables",
+    "section": "",
+    "subgoals": [
+      "Weight (x-mu)^2 by f(x) and sum for discrete X",
+      "Integrate (x-mu)^2*f(x) over R for continuous X",
+      "Swap the sum for the integral across RV types"
+    ]
+  }
+]

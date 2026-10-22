@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Multiply n.(n-1)...1",
+      "Anchor 0! at 1",
+      "Evaluate 4! as 24"
+    ]
+  },
+  {
+    "label": "Simplifying factorial ratios",
+    "section": "",
+    "subgoals": [
+      "Cancel shared factors top and bottom",
+      "Collapse n!/(n-k)! to a falling product",
+      "Strip the common tail"
+    ]
+  },
+  {
+    "label": "Factorial in combinatorics",
+    "section": "",
+    "subgoals": [
+      "Count orderings of n distinct objects",
+      "Multiply choices n.(n-1)...1",
+      "Divide by k! when order stops mattering"
+    ]
+  }
+]

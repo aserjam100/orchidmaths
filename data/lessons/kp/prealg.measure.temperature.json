@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Use the conversion formula",
+    "section": "Use the conversion formula",
+    "subgoals": [
+      "Use F = 9C/5 + 32 for Celsius to Fahrenheit",
+      "Use C = 5(F - 32)/9 for Fahrenheit to Celsius",
+      "Recognize the formulas as inverses"
+    ]
+  },
+  {
+    "label": "Substitute before computing",
+    "section": "Substitute before computing",
+    "subgoals": [
+      "Put the temperature in parentheses",
+      "Multiply before adding",
+      "Keep the order of operations"
+    ]
+  },
+  {
+    "label": "Check the reference points",
+    "section": "Check the reference points",
+    "subgoals": [
+      "Use 0 C = 32 F",
+      "Use 100 C = 212 F",
+      "Check the direction of the result"
+    ]
+  }
+]

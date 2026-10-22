@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Where the rate is zero",
+    "section": "Where the rate is zero",
+    "subgoals": [
+      "Define an equilibrium",
+      "Say no integration is needed",
+      "Note the right side depends on the state only"
+    ]
+  },
+  {
+    "label": "Reading the roots off the factors",
+    "section": "Reading the roots off the factors",
+    "subgoals": [
+      "Set each factor to zero",
+      "Read a logistic model's two roots",
+      "Prefer factored forms"
+    ]
+  },
+  {
+    "label": "Which equilibrium is interesting",
+    "section": "Which equilibrium is interesting",
+    "subgoals": [
+      "Say what zero means",
+      "Say what the non-zero one means",
+      "Note stability is a separate question"
+    ]
+  }
+]

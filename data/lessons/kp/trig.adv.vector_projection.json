@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The shadow reading",
+    "section": "The shadow reading",
+    "subgoals": [
+      "Take the dot product",
+      "Divide by the length of the target",
+      "Read the sign from the angle"
+    ]
+  },
+  {
+    "label": "Computing it",
+    "section": "Computing it",
+    "subgoals": [
+      "Form the dot product",
+      "Take the length of the target",
+      "Divide and reduce"
+    ]
+  },
+  {
+    "label": "Projection vector and uses",
+    "section": "Projection vector and uses",
+    "subgoals": [
+      "Multiply by the unit vector",
+      "Subtract for the perpendicular part",
+      "Read work as a scalar projection"
+    ]
+  }
+]

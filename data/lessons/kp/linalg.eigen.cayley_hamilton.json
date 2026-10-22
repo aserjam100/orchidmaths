@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Every matrix satisfies its characteristic polynomial",
+    "section": "Every matrix satisfies its characteristic polynomial",
+    "subgoals": [
+      "Write det(A - lambda I)",
+      "Replace lambda by A",
+      "Multiply the constant term by I"
+    ]
+  },
+  {
+    "label": "Worked: a 2x2 example",
+    "section": "Worked: a 2x2 example",
+    "subgoals": [
+      "Compute lambda^2 - 4 lambda + 3",
+      "Form A^2 - 4A + 3I",
+      "Check the sum is zero"
+    ]
+  },
+  {
+    "label": "Powers and the minimal polynomial",
+    "section": "Powers and the minimal polynomial",
+    "subgoals": [
+      "Reduce A^2 to 4A - 3I",
+      "Express higher powers in I and A",
+      "Divide the characteristic polynomial by the minimal one"
+    ]
+  }
+]

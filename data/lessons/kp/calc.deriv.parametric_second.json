@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Differentiate the slope, not the coordinates",
+    "section": "Differentiate the slope, not the coordinates",
+    "subgoals": [
+      "Start from dy/dx = y'/x'",
+      "Differentiate with respect to t",
+      "Divide by x' once more"
+    ]
+  },
+  {
+    "label": "Worked: a parametric parabola",
+    "section": "Worked: a parametric parabola",
+    "subgoals": [
+      "Take x = t and y = t^2",
+      "Compute x' = 1 and y' = 2t",
+      "Apply the formula for 2"
+    ]
+  },
+  {
+    "label": "Concavity from the second derivative",
+    "section": "Concavity from the second derivative",
+    "subgoals": [
+      "Read the sign for concavity",
+      "Check x' is nonzero",
+      "Exclude vertical tangents"
+    ]
+  }
+]

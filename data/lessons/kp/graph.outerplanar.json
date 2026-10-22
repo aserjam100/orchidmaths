@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Drawing on the outer face",
+    "section": "Drawing on the outer face",
+    "subgoals": [
+      "Place every vertex on the outer face",
+      "Triangulate the polygon's interior",
+      "Decide outerplanar from the drawing"
+    ]
+  },
+  {
+    "label": "Worked: the edge bound",
+    "section": "Worked: the edge bound",
+    "subgoals": [
+      "Count n sides of the polygon",
+      "Add n - 3 diagonals",
+      "Reach 2n - 3 edges"
+    ]
+  },
+  {
+    "label": "Forbidden minors and treewidth",
+    "section": "Forbidden minors and treewidth",
+    "subgoals": [
+      "Exclude $K_4$ as a minor",
+      "Exclude $K_{2,3}$ as a minor",
+      "Bound the treewidth by two"
+    ]
+  }
+]

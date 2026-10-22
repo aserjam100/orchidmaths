@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is the Squeeze Theorem",
+    "section": "",
+    "subgoals": [
+      "Trap g between f <= g <= h",
+      "Name explicit bounding functions",
+      "Preview -|x| <= x sin(1/x) <= |x|"
+    ]
+  },
+  {
+    "label": "Statement",
+    "section": "",
+    "subgoals": [
+      "Check outer limits both equal L",
+      "Transfer L to the middle",
+      "Evaluate x sin(1/x) to 0"
+    ]
+  },
+  {
+    "label": "Proof of the Squeeze Theorem",
+    "section": "",
+    "subgoals": [
+      "Push outer bounds together at a",
+      "Force the middle to L",
+      "Confirm via eps-sandwich"
+    ]
+  }
+]

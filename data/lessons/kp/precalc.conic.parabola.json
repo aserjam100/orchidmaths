@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction to Conic Sections",
+    "section": "",
+    "subgoals": [
+      "Write the conic in the general quadratic f(x,y) = 0 form",
+      "Check a11 and a22 are both nonzero",
+      "Sort the cone cut into circle, parabola, ellipse, or hyperbola"
+    ]
+  },
+  {
+    "label": "Each coefficient carries specific geometric information about the conic.",
+    "section": "",
+    "subgoals": [
+      "Read curvature and shape off a11 and a22",
+      "Zero out a12 to align the conic with the axes",
+      "Shift position with a13, a23, and a33"
+    ]
+  },
+  {
+    "label": "Degenerate conic",
+    "section": "",
+    "subgoals": [
+      "Factor f(x,y) into (ax+by+c)(a'x+b'y+c')",
+      "Split the degenerate case into lines, one line, or empty set",
+      "Test factorability over C before calling it degenerate"
+    ]
+  }
+]

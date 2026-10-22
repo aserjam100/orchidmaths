@@ -1,0 +1,15 @@
+{
+  "concept": "trig.adv.heron_area",
+  "setup": "The triangle has sides [[a]], [[b]] and [[c]], and no angle is given.",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "Three sides fix a triangle, so its area is determined even though no height is given. Heron's formula reaches it through the semiperimeter $s$: $A = \\sqrt{s(s-a)(s-b)(s-c)}$."
+    },
+    {
+      "fact": "value",
+      "say": "The semiperimeter is half the perimeter, and that single number is what lets the three sides be used without choosing a base. The four factors multiply to a perfect square, and its root is [[value]]."
+    }
+  ],
+  "answer": "So the area is [[value]]."
+}

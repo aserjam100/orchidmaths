@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Rotation and scaling",
+    "section": "Rotation and scaling",
+    "subgoals": [
+      "Describe the shape",
+      "Name the two operations",
+      "Compute a transformed length"
+    ]
+  },
+  {
+    "label": "The determinant as a squared scale",
+    "section": "The determinant as a squared scale",
+    "subgoals": [
+      "Compute the determinant",
+      "Explain why it is positive",
+      "Identify the pure rotation case"
+    ]
+  },
+  {
+    "label": "When the determinant is zero",
+    "section": "When the determinant is zero",
+    "subgoals": [
+      "Show the only zero case",
+      "Connect it to invertibility",
+      "Read the algebra geometrically"
+    ]
+  }
+]

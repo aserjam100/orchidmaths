@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one dropout mask",
+    "section": "Worked: one dropout mask",
+    "subgoals": [
+      "Sample the keep-or-drop mask",
+      "Rescale survivors by 1/(1-p)",
+      "Run all units unscaled at test"
+    ]
+  },
+  {
+    "label": "Worked: counting the ensemble",
+    "section": "Worked: counting the ensemble",
+    "subgoals": [
+      "Count masks as 2 to the n",
+      "Share weights across subnetworks",
+      "Average via the full test network"
+    ]
+  },
+  {
+    "label": "When dropout hurts",
+    "section": "When dropout hurts",
+    "subgoals": [
+      "Spot capacity starved by noise",
+      "Lower p on tiny layers",
+      "Disable dropout at inference"
+    ]
+  }
+]

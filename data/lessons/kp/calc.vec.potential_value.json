@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Recovering the potential",
+    "section": "Recovering the potential",
+    "subgoals": [
+      "Integrate one component",
+      "Determine the other unknown function",
+      "Write the potential with a constant"
+    ]
+  },
+  {
+    "label": "Using the initial condition",
+    "section": "Using the initial condition",
+    "subgoals": [
+      "Fix the constant from one value",
+      "Evaluate the potential at a point",
+      "Connect it to a line integral"
+    ]
+  },
+  {
+    "label": "Why the constant matters",
+    "section": "Why the constant matters",
+    "subgoals": [
+      "Show it cancels in a difference",
+      "Explain why it is a convention",
+      "Keep the function single-valued"
+    ]
+  }
+]

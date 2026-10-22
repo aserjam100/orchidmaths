@@ -1,0 +1,23 @@
+{
+  "concept": "trig.adv.ambiguous_case",
+  "setup": "A triangle has $A = [[angle]]^{\\circ}$, the side $a = [[a]]$ opposite $A$, and the side $b = [[b]]$ opposite $B$, with no third measurement.",
+  "steps": [
+    {
+      "fact": "b",
+      "say": "This is a side-side-angle triple, and the law of sines leaves the angle at the far vertex open: an angle and its supplement share a sine, so two different angles can fit the same three given numbers."
+    },
+    {
+      "fact": "h",
+      "say": "The side $[[b]]$ and the angle $[[angle]]^{\\circ}$ fix a height above the far ray, $h = b\\sin A = [[h]]$, and the side opposite $A$ has to reach that ray."
+    },
+    {
+      "fact": "a",
+      "say": "The side that has to reach is $a = [[a]]$."
+    },
+    {
+      "fact": "value",
+      "say": "Compared with the height and with $b$, a shorter side never arrives, a side between them arrives twice, once on each side of the perpendicular, and a side at least as long as $b$ arrives once."
+    }
+  ],
+  "answer": "So the number of triangles is [[value]]."
+}

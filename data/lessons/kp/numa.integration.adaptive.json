@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Spending effort where it is needed",
+    "section": "Spending effort where it is needed",
+    "subgoals": [
+      "Estimate the local error on each piece",
+      "Compare with the local tolerance share",
+      "Split only the pieces that miss"
+    ]
+  },
+  {
+    "label": "Worked: a local error estimate",
+    "section": "Worked: a local error estimate",
+    "subgoals": [
+      "Compute the two rule estimates",
+      "Take their difference as the error estimate",
+      "Split or accept the subinterval"
+    ]
+  },
+  {
+    "label": "Why it pays off",
+    "section": "Why it pays off",
+    "subgoals": [
+      "List the hard integrands",
+      "Compare the evaluation counts",
+      "Accept the bookkeeping as the price"
+    ]
+  }
+]

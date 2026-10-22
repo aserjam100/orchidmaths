@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Bounded monotone sequences converge",
+    "section": "Bounded monotone sequences converge",
+    "subgoals": [
+      "Use completeness to get a supremum",
+      "Pick a term within epsilon of it",
+      "Use monotonicity for the whole tail"
+    ]
+  },
+  {
+    "label": "Worked: a square-root recurrence",
+    "section": "Worked: a square-root recurrence",
+    "subgoals": [
+      "Show the terms increase",
+      "Find an upper bound",
+      "Solve the fixed-point equation"
+    ]
+  },
+  {
+    "label": "Why it is useful",
+    "section": "Why it is useful",
+    "subgoals": [
+      "Define a constant as a limit",
+      "Use it for nonnegative series",
+      "Establish existence before the value"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Use multiplication notation",
+    "section": "",
+    "subgoals": [
+      "Identify the factors",
+      "Rewrite as repeated addition",
+      "Estimate the product"
+    ]
+  },
+  {
+    "label": "Model multiplication",
+    "section": "",
+    "subgoals": [
+      "Break the multiplier into tens and ones",
+      "Model with arrays or blocks",
+      "Combine the parts"
+    ]
+  },
+  {
+    "label": "Multiply whole numbers",
+    "section": "",
+    "subgoals": [
+      "Multiply the ones",
+      "Multiply the tens",
+      "Add the partial products"
+    ]
+  }
+]

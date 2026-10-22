@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Row operations",
+    "section": "",
+    "subgoals": [
+      "Write the augmented matrix",
+      "Swap, scale, and add rows",
+      "Aim for one variable fewer per step"
+    ]
+  },
+  {
+    "label": "Eliminate in order",
+    "section": "",
+    "subgoals": [
+      "Clear x_1 below the first row",
+      "Clear x_2 below the second row",
+      "Back-substitute from the last row"
+    ]
+  },
+  {
+    "label": "Worked 3x3 system",
+    "section": "",
+    "subgoals": [
+      "Read the triangular form",
+      "Solve for the last variable first",
+      "Substitute back up the rows"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Factor before cancelling",
+    "section": "Factor before cancelling",
+    "subgoals": [
+      "Factor the numerator completely",
+      "Factor the denominator completely",
+      "Match whole factors, not single terms"
+    ]
+  },
+  {
+    "label": "Cancel a common factor",
+    "section": "Cancel a common factor",
+    "subgoals": [
+      "Cancel one matching factor",
+      "Write the remaining factor",
+      "Do not cancel terms inside a sum"
+    ]
+  },
+  {
+    "label": "Keep the domain restriction",
+    "section": "Keep the domain restriction",
+    "subgoals": [
+      "Find the zero of each cancelled factor",
+      "State the excluded values",
+      "Keep the original domain"
+    ]
+  }
+]

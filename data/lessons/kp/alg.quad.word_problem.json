@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Name the width",
+    "section": "Name the width",
+    "subgoals": [
+      "Let w be the width",
+      "Translate the length into an expression",
+      "Multiply the two sides for the area"
+    ]
+  },
+  {
+    "label": "Build the equation",
+    "section": "Build the equation",
+    "subgoals": [
+      "Expand the product",
+      "Move the area to the left",
+      "Solve by factoring or the formula"
+    ]
+  },
+  {
+    "label": "Reject the negative root",
+    "section": "Reject the negative root",
+    "subgoals": [
+      "Notice the roots have opposite signs",
+      "Keep the positive width",
+      "Check the area from the answer"
+    ]
+  }
+]

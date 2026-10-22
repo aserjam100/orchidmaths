@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The product rule",
+    "section": "The product rule",
+    "subgoals": [
+      "Multiply the outcomes of two independent steps",
+      "Extend the product rule to three steps",
+      "Count 4-character codes that allow repeats"
+    ]
+  },
+  {
+    "label": "The sum rule",
+    "section": "The sum rule",
+    "subgoals": [
+      "Add the outcomes of disjoint ways",
+      "Explain why disjointness matters",
+      "Repair a count whose ways overlap"
+    ]
+  },
+  {
+    "label": "Using both rules",
+    "section": "Using both rules",
+    "subgoals": [
+      "Split a problem into steps",
+      "Choose which rule applies at each step",
+      "Combine a product with a sum"
+    ]
+  }
+]

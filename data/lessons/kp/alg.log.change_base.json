@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Write both numbers as powers",
+    "section": "Write both numbers as powers",
+    "subgoals": [
+      "Choose a common base",
+      "Write the logarithm's base as a power",
+      "Write the argument as a power"
+    ]
+  },
+  {
+    "label": "Division subtracts exponents",
+    "section": "Division subtracts exponents",
+    "subgoals": [
+      "Apply the change-of-base formula",
+      "Cancel the common logarithm",
+      "Form the ratio of exponents"
+    ]
+  },
+  {
+    "label": "The answer is a ratio",
+    "section": "The answer is a ratio",
+    "subgoals": [
+      "Reduce the fraction",
+      "Check that base^(ratio) equals the argument",
+      "Keep an exact fraction"
+    ]
+  }
+]

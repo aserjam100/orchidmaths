@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Compare by place value",
+    "section": "Compare by place value",
+    "subgoals": [
+      "Line up the numbers by place",
+      "Find the first place where the digits differ",
+      "Decide which digit is larger"
+    ]
+  },
+  {
+    "label": "Use the symbols",
+    "section": "Use the symbols",
+    "subgoals": [
+      "Read > as greater than",
+      "Read < as less than",
+      "Face the wider end toward the larger number"
+    ]
+  },
+  {
+    "label": "Order a list",
+    "section": "Order a list",
+    "subgoals": [
+      "Find the smallest number first",
+      "Remove it and repeat",
+      "Check that each number is no larger than the next"
+    ]
+  }
+]

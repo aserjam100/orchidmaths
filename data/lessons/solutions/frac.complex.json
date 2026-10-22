@@ -1,0 +1,15 @@
+{
+  "concept": "frac.complex",
+  "setup": "The complex fraction is \\(\\frac{[[left_num]]}{[[left_den]]}\\) over \\(\\frac{[[right_num]]}{[[right_den]]}\\).",
+  "steps": [
+    {
+      "fact": "right_den",
+      "say": "A fraction over a fraction is the top fraction divided by the bottom one. Dividing by \\(\\frac{[[right_num]]}{[[right_den]]}\\) means multiplying by its reciprocal, \\(\\frac{[[right_den]]}{[[right_num]]}\\)."
+    },
+    {
+      "fact": "out_num",
+      "say": "Multiplying the two fractions gives \\(\\frac{[[out_num]]}{[[out_den]]}\\), which is already in lowest terms after reducing."
+    }
+  ],
+  "answer": "So the complex fraction simplifies to \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

@@ -1,0 +1,23 @@
+{
+  "concept": "alg.eq.extraneous_roots",
+  "setup": "The equation is \\(\\sqrt{x + [[a]]} = x - [[b]]\\), and squaring both sides produces the candidates [[candidates]].",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "The square root requires \\(x + [[a]] \\ge 0\\), and the right side must not be negative, so any real solution needs \\(x \\ge [[b]]\\)."
+    },
+    {
+      "fact": "b",
+      "say": "Squaring can introduce values below \\([[b]]\\), and those solve the squared equation without solving the original one."
+    },
+    {
+      "fact": "candidates",
+      "say": "Of the candidates [[candidates]], only the one at least \\([[b]]\\) survives that check."
+    },
+    {
+      "fact": "answer",
+      "say": "That surviving value is \\([[answer]]\\)."
+    }
+  ],
+  "answer": "So the original equation has the solution \\(x = [[answer]]\\)."
+}

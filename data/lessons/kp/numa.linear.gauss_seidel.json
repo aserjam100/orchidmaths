@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Using fresh values at once",
+    "section": "Using fresh values at once",
+    "subgoals": [
+      "Visit the unknowns in order",
+      "Substitute the freshest values",
+      "Complete the sweep with updated entries"
+    ]
+  },
+  {
+    "label": "Worked: the second unknown",
+    "section": "Worked: the second unknown",
+    "subgoals": [
+      "Compute the first unknown",
+      "Use it immediately in the second equation",
+      "Continue down the sweep"
+    ]
+  },
+  {
+    "label": "Its guarantee and its matrix form",
+    "section": "Its guarantee and its matrix form",
+    "subgoals": [
+      "Require diagonal dominance",
+      "Write the splitting with the lower triangle",
+      "Generalise to over-relaxation"
+    ]
+  }
+]

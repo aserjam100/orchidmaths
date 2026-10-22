@@ -1,0 +1,15 @@
+{
+  "concept": "alg.func.piecewise",
+  "setup": "The rule uses 2x + 1 when the input is less than 0 and 3x − 2 when the input is 0 or more; here the input is [[x0]].",
+  "steps": [
+    {
+      "fact": "x0",
+      "say": "Compare the input [[x0]] with the boundary 0 to choose the branch."
+    },
+    {
+      "fact": "answer",
+      "say": "Substituting [[x0]] into the chosen branch gives [[answer]]."
+    }
+  ],
+  "answer": "So f([[x0]]) = [[answer]]."
+}

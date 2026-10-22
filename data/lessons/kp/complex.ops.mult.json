@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Split each factor into a + bi",
+      "Read off the four pairwise products",
+      "Replace i^2 by -1"
+    ]
+  },
+  {
+    "label": "Sum and difference of complex numbers",
+    "section": "",
+    "subgoals": [
+      "Add real parts and imaginary parts separately",
+      "Subtract component-wise for the difference",
+      "Group into real-plus-imaginary form"
+    ]
+  },
+  {
+    "label": "Product of complex numbers",
+    "section": "",
+    "subgoals": [
+      "Expand (a+bi)(c+di) term by term",
+      "Collect (ac-bd) + (ad+bc)i",
+      "Scale the modulus by |w| and rotate by arg(w)"
+    ]
+  }
+]

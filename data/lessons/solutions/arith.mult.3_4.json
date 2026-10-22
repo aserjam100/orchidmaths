@@ -1,0 +1,15 @@
+{
+  "concept": "arith.mult.3_4",
+  "setup": "You need [[factor]] × [[n]].",
+  "steps": [
+    {
+      "fact": "factor",
+      "say": "Count in [[factor]]s, [[n]] times."
+    },
+    {
+      "fact": "total",
+      "say": "[[factor]] × [[n]] = [[total]]."
+    }
+  ],
+  "answer": "[[factor]] × [[n]] = [[total]]."
+}

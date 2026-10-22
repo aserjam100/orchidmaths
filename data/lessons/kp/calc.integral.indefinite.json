@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Primitives",
+    "section": "",
+    "subgoals": [
+      "Read F' = f to certify antiderivatives",
+      "Add +C for the family",
+      "Check x^3/3 against x^2 by differentiating"
+    ]
+  },
+  {
+    "label": "What is the indefinite integral",
+    "section": "",
+    "subgoals": [
+      "Write integral of f as F + C with F' = f",
+      "Contrast definite (number) vs indefinite (family)",
+      "Test integral of 2x dx = x^2 + C"
+    ]
+  },
+  {
+    "label": "Linearity properties",
+    "section": "",
+    "subgoals": [
+      "Split integral of (f+g) into integral of f + integral of g",
+      "Pull constants out of the integral",
+      "Integrate 3x^2+2x to x^3+x^2 + C"
+    ]
+  }
+]

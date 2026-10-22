@@ -1,0 +1,15 @@
+{
+  "concept": "geo.solid.similar_volume",
+  "setup": "Two solids are similar, with every length in the larger \\([[factor]]\\) times the corresponding length in the smaller.",
+  "steps": [
+    {
+      "fact": "area_ratio",
+      "say": "The length ratio is applied once per dimension, so surface area -- which has two dimensions -- scales by \\([[area_ratio]]\\)."
+    },
+    {
+      "fact": "volume_ratio",
+      "say": "Volume has three dimensions, so it scales by the cube of the length ratio: \\([[factor]]^3 = [[volume_ratio]]\\). That is why a model at a small scale holds far less than it looks like it should."
+    }
+  ],
+  "answer": "So the larger solid's volume is \\([[volume_ratio]]\\) times the smaller's."
+}

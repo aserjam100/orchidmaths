@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The set of elements that commute with everything",
+    "section": "The set of elements that commute with everything",
+    "subgoals": [
+      "Check gx = xg for every x",
+      "Recognize abelian means Z(G) = G",
+      "Spot a centerless group"
+    ]
+  },
+  {
+    "label": "Worked: the center of D_4",
+    "section": "Worked: the center of D_4",
+    "subgoals": [
+      "Test r^2 against every element",
+      "Show a reflection fails to commute",
+      "Conclude the center has order 2"
+    ]
+  },
+  {
+    "label": "The center is normal",
+    "section": "The center is normal",
+    "subgoals": [
+      "Conjugate z by g to recover z",
+      "Identify G/Z(G) as the failure of commutativity",
+      "Read off the quotient when G is abelian"
+    ]
+  }
+]

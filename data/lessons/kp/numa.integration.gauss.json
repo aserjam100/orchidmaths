@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Choosing the nodes too",
+    "section": "Choosing the nodes too",
+    "subgoals": [
+      "Count the free nodes and weights",
+      "Match that many polynomial conditions",
+      "Read the degree of exactness"
+    ]
+  },
+  {
+    "label": "Worked: two points on the standard interval",
+    "section": "Worked: two points on the standard interval",
+    "subgoals": [
+      "Write the two symmetric nodes",
+      "Evaluate the function at each",
+      "Add the equal weighted values"
+    ]
+  },
+  {
+    "label": "Why it is the most efficient",
+    "section": "Why it is the most efficient",
+    "subgoals": [
+      "Compare evaluations to degree",
+      "Note the need for tables",
+      "Use weighted variants for infinite intervals"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Degree sequences",
+    "section": "Reading a degree sequence",
+    "subgoals": [
+      "List degrees in non-increasing order",
+      "Read a sequence off a graph",
+      "See it is an invariant, not a classifier"
+    ]
+  },
+  {
+    "label": "The handshake lemma",
+    "section": "The handshake lemma",
+    "subgoals": [
+      "Sum the degrees",
+      "Divide by two for the edge count",
+      "Count odd degrees as even"
+    ]
+  },
+  {
+    "label": "Feasibility",
+    "section": "Feasibility",
+    "subgoals": [
+      "Apply the parity test",
+      "Run Havel-Hakimi",
+      "Recognise a non-graphical sequence"
+    ]
+  }
+]

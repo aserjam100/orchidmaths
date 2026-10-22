@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The statement",
+    "section": "The statement",
+    "subgoals": [
+      "Require closed and bounded",
+      "Bounded values are guaranteed",
+      "Show the bound is attained"
+    ]
+  },
+  {
+    "label": "Why the hypotheses matter",
+    "section": "Why the hypotheses matter",
+    "subgoals": [
+      "Remove closedness",
+      "Remove boundedness",
+      "Watch the maximum disappear"
+    ]
+  },
+  {
+    "label": "Consequences",
+    "section": "Consequences",
+    "subgoals": [
+      "Describe the image of the interval",
+      "Plan an optimisation around it",
+      "Combine with the intermediate value theorem"
+    ]
+  }
+]

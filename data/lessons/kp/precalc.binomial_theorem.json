@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Binomial Theorem",
+    "section": "",
+    "subgoals": [
+      "Read row n of Pascal's triangle as expansion coefficients",
+      "Pair each coefficient with one a^(n-k) b^k term",
+      "Count n+1 terms in the full expansion"
+    ]
+  },
+  {
+    "label": "Statement",
+    "section": "",
+    "subgoals": [
+      "Expand (a+b)^n into n+1 coefficient-weighted terms",
+      "Run a's exponent down from n to 0",
+      "Match C(n,k) against C(n,n-k) for symmetry"
+    ]
+  },
+  {
+    "label": "Binomial coefficient",
+    "section": "",
+    "subgoals": [
+      "Compute C(n,k) as n! over k!(n-k)!",
+      "Zero out C(n,k) when n < k",
+      "Count unordered k-choices from n elements"
+    ]
+  }
+]

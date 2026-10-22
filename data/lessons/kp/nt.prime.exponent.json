@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Powers of the prime in the factorial",
+    "section": "Powers of the prime in the factorial",
+    "subgoals": [
+      "See each factor's copies",
+      "Count the copies in total",
+      "Say why it is a counting problem"
+    ]
+  },
+  {
+    "label": "Counting with floors",
+    "section": "Counting with floors",
+    "subgoals": [
+      "Count multiples of the prime",
+      "Add the multiples of its squares",
+      "Stop when the power exceeds n"
+    ]
+  },
+  {
+    "label": "Why each power is counted once",
+    "section": "Why each power is counted once",
+    "subgoals": [
+      "Explain the repeated counting",
+      "Match copies to powers",
+      "Name Legendre's formula"
+    ]
+  }
+]

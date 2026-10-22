@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Test closure under the group operation",
+      "Check inverses stay inside the subset",
+      "Verify the identity lands in the subset"
+    ]
+  },
+  {
+    "label": "Properties",
+    "section": "",
+    "subgoals": [
+      "Multiply out cosets aH element by element",
+      "Count cosets to divide |G| by |H|",
+      "Conjugate via gHg^-1 to test normality"
+    ]
+  },
+  {
+    "label": "Algebraic hierarchy",
+    "section": "",
+    "subgoals": [
+      "Nest subgroups inside groups inside rings",
+      "Quotient by a normal subgroup",
+      "Map the quotient onto the homomorphic image"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "5.5 Averages and Probability",
+    "section": "",
+    "subgoals": [
+      "List every outcome the process can produce",
+      "Multiply choice counts stage by stage",
+      "Check the list exhausts all branches"
+    ]
+  },
+  {
+    "label": "Calculate the Mean of a Set of Numbers",
+    "section": "",
+    "subgoals": [
+      "Add 85+88+94 into 267",
+      "Divide 267 by 3 into 89",
+      "Report Ethan's mean as 89 points"
+    ]
+  },
+  {
+    "label": "The Mean",
+    "section": "",
+    "subgoals": [
+      "Divide the data sum by n",
+      "Count ordered selections against unordered ones",
+      "Divide out permutations for combinations"
+    ]
+  }
+]

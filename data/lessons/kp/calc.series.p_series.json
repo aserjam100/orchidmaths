@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The threshold",
+    "section": "The threshold",
+    "subgoals": [
+      "Set the exponent above one for convergence",
+      "Recognise the harmonic boundary case",
+      "Use the integral test"
+    ]
+  },
+  {
+    "label": "Why the boundary differs",
+    "section": "Why the boundary differs",
+    "subgoals": [
+      "See the harmonic partial sums grow like a logarithm",
+      "Watch a steeper power settle",
+      "Separate shrinking from converging"
+    ]
+  },
+  {
+    "label": "Comparison and the tests",
+    "section": "Comparison and the tests",
+    "subgoals": [
+      "Compare term by term",
+      "Use limit comparison for asymptotic rates",
+      "Read the verdict from the decay rate"
+    ]
+  }
+]

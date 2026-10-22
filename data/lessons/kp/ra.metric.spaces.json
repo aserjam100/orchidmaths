@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The axioms",
+    "section": "The axioms",
+    "subgoals": [
+      "Require nonnegativity and symmetry",
+      "Vanish only on equal points",
+      "Impose the triangle inequality"
+    ]
+  },
+  {
+    "label": "The examples",
+    "section": "The examples",
+    "subgoals": [
+      "Read the line as a metric space",
+      "Place discrete metrics on any set",
+      "Measure functions by their sup distance"
+    ]
+  },
+  {
+    "label": "Balls and the topology",
+    "section": "Balls and the topology",
+    "subgoals": [
+      "Define the open ball",
+      "Generate open sets from balls",
+      "Equate metrics by their open sets"
+    ]
+  }
+]

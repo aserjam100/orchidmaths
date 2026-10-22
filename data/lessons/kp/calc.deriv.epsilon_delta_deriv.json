@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The precise statement",
+    "section": "The precise statement",
+    "subgoals": [
+      "Fix a tolerance for the quotient",
+      "Find the distance that achieves it",
+      "Exclude the point itself"
+    ]
+  },
+  {
+    "label": "What differentiability gives",
+    "section": "What differentiability gives",
+    "subgoals": [
+      "Write the change as slope times step plus error",
+      "Send the step to zero for continuity",
+      "Keep corner cases as counterexamples"
+    ]
+  },
+  {
+    "label": "One-sided and two-sided limits",
+    "section": "One-sided and two-sided limits",
+    "subgoals": [
+      "Think of a corner with two slopes",
+      "See the two-sided limit disagree",
+      "Rule out the derivative"
+    ]
+  }
+]

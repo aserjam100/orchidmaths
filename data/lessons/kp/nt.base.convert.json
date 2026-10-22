@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Place value in any base",
+    "section": "Place value in any base",
+    "subgoals": [
+      "State the place-value rule",
+      "Note base ten is a case",
+      "Replace the powers of ten"
+    ]
+  },
+  {
+    "label": "Expanding the digits",
+    "section": "Expanding the digits",
+    "subgoals": [
+      "Multiply and add from the left",
+      "Or weight by powers",
+      "Compare the two methods"
+    ]
+  },
+  {
+    "label": "Bases that are not decimal",
+    "section": "Bases that are not decimal",
+    "subgoals": [
+      "Give binary and hexadecimal",
+      "Give base twelve",
+      "Say the base is a convention"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The height from the angle",
+    "section": "The height you were not given",
+    "subgoals": [
+      "Drop a perpendicular to expose the height",
+      "Write the height as a side times the sine of the included angle",
+      "Substitute into half the base times the height"
+    ]
+  },
+  {
+    "label": "The sine as the perpendicular part",
+    "section": "Why the sine is the factor",
+    "subgoals": [
+      "Relate the sine to the height over the hypotenuse",
+      "Check the case of a right included angle",
+      "See why an obtuse angle gives the same area as its supplement"
+    ]
+  },
+  {
+    "label": "Two sides and one angle",
+    "section": "Using the formula",
+    "subgoals": [
+      "Multiply the two given sides",
+      "Multiply by the sine of the included angle",
+      "Halve the product"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The theorem",
+    "section": "The theorem",
+    "subgoals": [
+      "State the exterior angle theorem",
+      "Identify the remote interior angles",
+      "Use it instead of the third angle"
+    ]
+  },
+  {
+    "label": "Why it is true",
+    "section": "Why it is true",
+    "subgoals": [
+      "Use the angle sum",
+      "Use the straight angle",
+      "Equate the two expressions"
+    ]
+  },
+  {
+    "label": "Using it",
+    "section": "Using it",
+    "subgoals": [
+      "Answer without the third angle",
+      "Bound each interior angle",
+      "Extend it to a polygon"
+    ]
+  }
+]

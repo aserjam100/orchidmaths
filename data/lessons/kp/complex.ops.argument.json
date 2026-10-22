@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: argument of 1+i",
+    "section": "Worked: argument of 1+i",
+    "subgoals": [
+      "Locate the quadrant of 1+i",
+      "Take arctan of the ratio b/a",
+      "Confirm against the polar form"
+    ]
+  },
+  {
+    "label": "Worked: arguments on the axes",
+    "section": "Worked: arguments on the axes",
+    "subgoals": [
+      "Point 1 along the positive real axis",
+      "Point i straight up the imaginary axis",
+      "Point -1 along the negative real axis"
+    ]
+  },
+  {
+    "label": "Worked: arguments add under multiplication",
+    "section": "Worked: arguments add under multiplication",
+    "subgoals": [
+      "Add the two factor arguments",
+      "Multiply out (1+i)(1+i)",
+      "Check the product argument against the sum"
+    ]
+  }
+]

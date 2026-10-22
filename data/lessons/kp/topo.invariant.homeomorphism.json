@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Same shape, different metric",
+    "section": "Same shape, different metric",
+    "subgoals": [
+      "Compare open sets, not distances",
+      "Stretch without tearing",
+      "Match a square with a circle"
+    ]
+  },
+  {
+    "label": "Worked: the open interval is the line",
+    "section": "Worked: the open interval is the line",
+    "subgoals": [
+      "Apply tan(pi(x - 1/2))",
+      "Send the endpoints to infinity",
+      "Invert with arctan"
+    ]
+  },
+  {
+    "label": "Topological invariants",
+    "section": "Topological invariants",
+    "subgoals": [
+      "Preserve connectedness",
+      "Preserve compactness",
+      "Use a missing invariant to separate spaces"
+    ]
+  }
+]

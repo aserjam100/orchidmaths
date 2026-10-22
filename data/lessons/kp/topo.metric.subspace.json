@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Restricting the opens",
+    "section": "Restricting the opens",
+    "subgoals": [
+      "Trace ambient opens with A",
+      "Keep the coarsest topology for the inclusion",
+      "Compare subspace and ambient openness"
+    ]
+  },
+  {
+    "label": "Worked: an open set inside [0,1]",
+    "section": "Worked: an open set inside [0,1]",
+    "subgoals": [
+      "Write [0,1/2) as A intersect (-1,1/2)",
+      "Check openness in the subspace",
+      "Show no ball around 0 stays inside in R"
+    ]
+  },
+  {
+    "label": "Which properties are inherited",
+    "section": "Which properties are inherited",
+    "subgoals": [
+      "Intersect separating opens with A",
+      "Inherit Hausdorffness",
+      "Test compactness and connectedness separately"
+    ]
+  }
+]

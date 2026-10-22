@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The fraction correct",
+    "section": "The fraction correct",
+    "subgoals": [
+      "Write the formula",
+      "Compute an accuracy",
+      "Note the first metric to compute"
+    ]
+  },
+  {
+    "label": "What accuracy hides",
+    "section": "What accuracy hides",
+    "subgoals": [
+      "Name the equal-cost assumption",
+      "Give the rare-class failure",
+      "Explain the unbalanced case"
+    ]
+  },
+  {
+    "label": "When accuracy is the wrong metric",
+    "section": "When accuracy is the wrong metric",
+    "subgoals": [
+      "State when it is right",
+      "Point to precision and recall",
+      "Choose the trade deliberately"
+    ]
+  }
+]

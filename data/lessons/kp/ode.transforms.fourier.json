@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: derivatives become factors",
+    "section": "Worked: derivatives become factors",
+    "subgoals": [
+      "Write F(y') as the integral of y' e^{-iwt}",
+      "Integrate by parts to pull out iw",
+      "Apply twice for F(y'') = -w^2 Y"
+    ]
+  },
+  {
+    "label": "Worked: an ODE turned into division",
+    "section": "Worked: an ODE turned into division",
+    "subgoals": [
+      "Transform y'' + 4y = f to (-w^2+4)Y = F",
+      "Divide to isolate Y",
+      "Invert to recover y(t)"
+    ]
+  },
+  {
+    "label": "Convolution and inversion",
+    "section": "Convolution and inversion",
+    "subgoals": [
+      "State F(f*g) = F(f)F(g)",
+      "Read the impulse response 1/(1-w^2)",
+      "Summarize transform-divide-invert"
+    ]
+  }
+]

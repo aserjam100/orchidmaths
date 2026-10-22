@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Changing the limits",
+    "section": "Changing the limits",
+    "subgoals": [
+      "Express the limits in the new variable",
+      "Do it as the substitution is made",
+      "Avoid substituting back"
+    ]
+  },
+  {
+    "label": "Why the factor has to be there",
+    "section": "Why the factor has to be there",
+    "subgoals": [
+      "State the chain rule backwards",
+      "Look for the derivative as a factor",
+      "Decide when to use another method"
+    ]
+  },
+  {
+    "label": "Checking by differentiating",
+    "section": "Checking by differentiating",
+    "subgoals": [
+      "Differentiate the antiderivative",
+      "Separate the two error kinds",
+      "Cost the check"
+    ]
+  }
+]

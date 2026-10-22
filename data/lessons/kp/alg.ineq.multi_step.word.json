@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Write the budget as an inequality",
+    "section": "",
+    "subgoals": [
+      "Find the phrase that sets the limit",
+      "Decide which side of the limit is allowed",
+      "Write the cost as flat fee plus rate times the unknown"
+    ]
+  },
+  {
+    "label": "Solve the inequality",
+    "section": "",
+    "subgoals": [
+      "Take the flat fee off both sides",
+      "Divide both sides by the rate",
+      "Keep the direction of the inequality"
+    ]
+  },
+  {
+    "label": "Take the greatest whole number",
+    "section": "",
+    "subgoals": [
+      "Mark the solution boundary on a number line",
+      "Take the whole number that still fits",
+      "Check the next whole number is over the limit"
+    ]
+  }
+]

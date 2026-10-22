@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Replacing the curve by a level",
+    "section": "Replacing the curve by a level",
+    "subgoals": [
+      "Find the midpoint of the interval",
+      "Evaluate the function there",
+      "Multiply by the width"
+    ]
+  },
+  {
+    "label": "Worked: the square over an interval",
+    "section": "Worked: the square over an interval",
+    "subgoals": [
+      "Compute the midpoint value",
+      "Multiply by the interval width",
+      "Compare with the exact integral"
+    ]
+  },
+  {
+    "label": "A surprising accuracy",
+    "section": "A surprising accuracy",
+    "subgoals": [
+      "Compare the error order to the trapezoid rule",
+      "Compare the error constants",
+      "Note the opposite sides"
+    ]
+  }
+]

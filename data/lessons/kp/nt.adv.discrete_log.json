@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The inverse of exponentiation",
+    "section": "The inverse of exponentiation",
+    "subgoals": [
+      "List the powers of the primitive root",
+      "Match the target residue",
+      "Read the exponent"
+    ]
+  },
+  {
+    "label": "Worked: a logarithm modulo 11",
+    "section": "Worked: a logarithm modulo 11",
+    "subgoals": [
+      "Enumerate 2^1 through 2^10",
+      "Find 9 at exponent 6",
+      "Read x = 6"
+    ]
+  },
+  {
+    "label": "Hardness and cryptography",
+    "section": "Hardness and cryptography",
+    "subgoals": [
+      "Compare exponentiation with its inverse",
+      "Note the exponential naive attack",
+      "Choose a prime with a large factor in p - 1"
+    ]
+  }
+]

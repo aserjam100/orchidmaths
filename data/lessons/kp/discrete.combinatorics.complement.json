@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Counting by complement",
+    "section": "The complement move",
+    "subgoals": [
+      "Write the universe and the subset",
+      "Subtract the complement",
+      "Check the two parts partition"
+    ]
+  },
+  {
+    "label": "At least one",
+    "section": "At least one",
+    "subgoals": [
+      "Turn at least one into not none",
+      "Multiply the restricted choices",
+      "Subtract from the total"
+    ]
+  },
+  {
+    "label": "Choosing the smaller side",
+    "section": "Choosing the smaller side",
+    "subgoals": [
+      "Compare the constraints on each side",
+      "Count the side with fewer cases",
+      "Use 2^n - 2^(n-2) for two elements"
+    ]
+  }
+]

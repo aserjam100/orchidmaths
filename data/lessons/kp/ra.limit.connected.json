@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Separation and connectedness",
+    "section": "Separation and connectedness",
+    "subgoals": [
+      "Deny a separation into two pieces",
+      "Keep each piece away from the other",
+      "Identify intervals as the connected sets"
+    ]
+  },
+  {
+    "label": "Why intervals are connected",
+    "section": "Why intervals are connected",
+    "subgoals": [
+      "Choose a point in each piece",
+      "Stay inside the interval between them",
+      "Show the change point belongs to neither piece"
+    ]
+  },
+  {
+    "label": "Continuity preserves connectedness",
+    "section": "Continuity preserves connectedness",
+    "subgoals": [
+      "Pull a separation of the image back",
+      "Use continuity to keep the pieces apart",
+      "Read the image as an interval"
+    ]
+  }
+]

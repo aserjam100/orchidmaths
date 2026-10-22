@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: x squared minus y squared is harmonic",
+    "section": "Worked: x squared minus y squared is harmonic",
+    "subgoals": [
+      "Differentiate twice in x",
+      "Differentiate twice in y",
+      "Add to get Laplacian zero"
+    ]
+  },
+  {
+    "label": "Worked: recovering the conjugate of x squared minus y squared",
+    "section": "Worked: recovering the conjugate of x squared minus y squared",
+    "subgoals": [
+      "Integrate v_x = -u_y for v up to h(y)",
+      "Pin h with v_y = u_x",
+      "Assemble u + iv as z^2"
+    ]
+  },
+  {
+    "label": "Worked: mean value on x squared minus y squared",
+    "section": "Worked: mean value on x squared minus y squared",
+    "subgoals": [
+      "Parametrize the circle of radius r",
+      "Average cos 2t over the full turn",
+      "Match the average against the center value"
+    ]
+  }
+]

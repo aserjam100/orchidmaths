@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: S_3' = A_3",
+    "section": "Worked: S_3' = A_3",
+    "subgoals": [
+      "Push commutators into A_3 via the sign map",
+      "Exhibit a nontrivial commutator",
+      "Pin S_3' to exactly A_3"
+    ]
+  },
+  {
+    "label": "Worked: abelianization of F_2",
+    "section": "Worked: abelianization of F_2",
+    "subgoals": [
+      "Force a and b to commute",
+      "Read two infinite-order generators",
+      "Conclude Z^2"
+    ]
+  },
+  {
+    "label": "Abelian test",
+    "section": "Abelian test",
+    "subgoals": [
+      "Check G' equals 1",
+      "Apply to A_3",
+      "Read order 1"
+    ]
+  }
+]

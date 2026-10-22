@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Rewrite as limit over truncated proper integrals",
+      "Classify unbounded vs singular type",
+      "Preview integral of dx/x^2 over [1,inf) = 1"
+    ]
+  },
+  {
+    "label": "Improper integrals over unbounded intervals",
+    "section": "",
+    "subgoals": [
+      "Replace inf by t and integrate first",
+      "Take t to inf on the closed form",
+      "Evaluate integral of e^(-x) over [1,inf) = 1/e"
+    ]
+  },
+  {
+    "label": "Improper integrals with infinite discontinuities",
+    "section": "",
+    "subgoals": [
+      "Split at the singular point c",
+      "Take one-sided limits into c",
+      "Evaluate integral of dx/sqrt(x) over [0,1] = 2"
+    ]
+  }
+]

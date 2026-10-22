@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Disproof by counterexample",
+    "section": "One witness is enough",
+    "subgoals": [
+      "One witness refutes a universal claim",
+      "Check the claim's domain",
+      "State the witness and why it fails"
+    ]
+  },
+  {
+    "label": "Euler's polynomial",
+    "section": "Euler's polynomial",
+    "subgoals": [
+      "Check the long prime run",
+      "Compute f(40) = 1681",
+      "See the c-1 factorisation pattern"
+    ]
+  },
+  {
+    "label": "Searching for the first failure",
+    "section": "Searching for the first failure",
+    "subgoals": [
+      "Scan n in order",
+      "Stop at the first composite value",
+      "Report the smallest witness"
+    ]
+  }
+]

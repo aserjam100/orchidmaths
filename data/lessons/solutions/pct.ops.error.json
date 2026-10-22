@@ -1,0 +1,15 @@
+{
+  "concept": "pct.ops.error",
+  "setup": "The measured value is [[measured]] and the accepted value is [[actual]].",
+  "steps": [
+    {
+      "fact": "difference",
+      "say": "Take the absolute difference: |[[measured]] - [[actual]]| = [[difference]]."
+    },
+    {
+      "fact": "percent",
+      "say": "Divide by the accepted value and multiply by 100: [[difference]] / [[actual]] x 100 = [[percent]]%."
+    }
+  ],
+  "answer": "The percent error is [[percent]]%."
+}

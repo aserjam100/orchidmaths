@@ -1,0 +1,10 @@
+<svg width="460px" height="180px" viewBox="0 0 460 180" xmlns="http://www.w3.org/2000/svg">
+<rect width="460" height="180" fill="white"/>
+<rect x="100" y="18" width="192" height="128" fill="#E6E6E6" stroke="#333333" stroke-width="1"/>
+<line x1="164" y1="18" x2="164" y2="146" stroke="#333333" stroke-width="1"/>
+<line x1="228" y1="18" x2="228" y2="146" stroke="#333333" stroke-width="1"/>
+<line x1="100" y1="82" x2="292" y2="82" stroke="#333333" stroke-width="1"/>
+<text x="86" y="87.0" font-size="13" fill="#333333" text-anchor="end">2 ft</text>
+<text x="196.0" y="172" font-size="13" fill="#333333" text-anchor="middle">3 ft</text>
+<text x="310" y="87.0" font-size="13" fill="#333333" text-anchor="start">2 · 3 = 6 ft²</text>
+</svg>

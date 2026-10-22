@@ -1,0 +1,19 @@
+{
+  "concept": "discrete.graphs.degree_sequence",
+  "setup": "The graph is the complete bipartite graph \\(K_{[[a]],[[b]]}\\).",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "Every vertex in the first part is joined to all \\([[b]]\\) vertices of the second, so each has degree \\([[b]]\\); the \\([[b]]\\) vertices of the second part each have degree \\([[a]]\\)."
+    },
+    {
+      "fact": "sequence",
+      "say": "In non-increasing order the degrees are [[sequence]]."
+    },
+    {
+      "fact": "sum",
+      "say": "Their sum is [[sum]], which equals \\(2 \\cdot [[edges]]\\), the handshake lemma's check."
+    }
+  ],
+  "answer": "So the degree sequence is [[sequence]]."
+}

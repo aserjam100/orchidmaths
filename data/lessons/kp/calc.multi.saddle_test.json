@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The discriminant",
+    "section": "The discriminant",
+    "subgoals": [
+      "Write the discriminant",
+      "Compute it for a quadratic",
+      "Explain the subtracted square"
+    ]
+  },
+  {
+    "label": "Minima, maxima and saddles",
+    "section": "Minima, maxima and saddles",
+    "subgoals": [
+      "Classify a point with D > 0",
+      "Classify a saddle",
+      "Use the sign of f_xx"
+    ]
+  },
+  {
+    "label": "Why the test fails when D is zero",
+    "section": "Why the test fails when D is zero",
+    "subgoals": [
+      "Read D as a determinant",
+      "Explain the flat direction",
+      "See why higher terms are needed"
+    ]
+  }
+]

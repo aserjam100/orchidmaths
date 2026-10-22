@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Keep the denominator",
+    "section": "Keep the denominator",
+    "subgoals": [
+      "Check the denominators are the same",
+      "Keep that denominator",
+      "Do not add the denominators"
+    ]
+  },
+  {
+    "label": "Add the numerators",
+    "section": "Add the numerators",
+    "subgoals": [
+      "Add the top numbers",
+      "Write the total over the same denominator",
+      "Read the answer aloud"
+    ]
+  },
+  {
+    "label": "Making one whole",
+    "section": "Making one whole",
+    "subgoals": [
+      "Add the numerators",
+      "See if the numerator equals the denominator",
+      "Write one whole as 1"
+    ]
+  }
+]

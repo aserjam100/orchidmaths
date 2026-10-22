@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The two parts",
+    "section": "The two parts",
+    "subgoals": [
+      "Prove the statement for the first integer",
+      "Assume it for n and derive it for n plus one",
+      "Combine the base and the step"
+    ]
+  },
+  {
+    "label": "Structuring the step",
+    "section": "Structuring the step",
+    "subgoals": [
+      "State the induction hypothesis clearly",
+      "Write the n-plus-one case in terms of the n case",
+      "Substitute the hypothesis and simplify"
+    ]
+  },
+  {
+    "label": "Beyond the simple form",
+    "section": "Beyond the simple form",
+    "subgoals": [
+      "Use strong induction when the step needs earlier cases",
+      "Start the base case where the statement begins to hold",
+      "Keep the chain unbroken from the base upwards"
+    ]
+  }
+]

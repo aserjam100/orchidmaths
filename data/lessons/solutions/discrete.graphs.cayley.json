@@ -1,0 +1,19 @@
+{
+  "concept": "discrete.graphs.cayley",
+  "setup": "The trees are labelled on \\([[n]]\\) given vertices.",
+  "steps": [
+    {
+      "fact": "n",
+      "say": "Cayley's formula counts labelled trees on \\(n\\) vertices as \\(n^{n-2}\\)."
+    },
+    {
+      "fact": "exponent",
+      "say": "Here the exponent is \\([[n]] - 2 = [[exponent]]\\)."
+    },
+    {
+      "fact": "value",
+      "say": "So the count is \\([[n]]^{[[exponent]]} = [[value]]\\)."
+    }
+  ],
+  "answer": "So there are [[value]] labelled trees."
+}

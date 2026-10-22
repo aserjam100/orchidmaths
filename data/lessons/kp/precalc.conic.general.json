@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The discriminant decides the type",
+    "section": "The discriminant decides the type",
+    "subgoals": [
+      "Read A, B and C",
+      "Compute B^2 - 4AC",
+      "Classify by its sign"
+    ]
+  },
+  {
+    "label": "Worked: ellipse, parabola and hyperbola",
+    "section": "Worked: ellipse, parabola and hyperbola",
+    "subgoals": [
+      "Compute -23 for the ellipse",
+      "Compute 0 for the parabola",
+      "Compute 4 for the hyperbola"
+    ]
+  },
+  {
+    "label": "Rotation and the cross term",
+    "section": "Rotation and the cross term",
+    "subgoals": [
+      "Note B rotates the axes",
+      "Remove B by rotation",
+      "Keep the discriminant invariant"
+    ]
+  }
+]

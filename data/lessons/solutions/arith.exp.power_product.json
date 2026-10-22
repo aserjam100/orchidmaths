@@ -1,0 +1,15 @@
+{
+  "concept": "arith.exp.power_product",
+  "setup": "You are raising the product [[coefficient]]x to the power [[power]].",
+  "steps": [
+    {
+      "fact": "coefficient",
+      "say": "Raise the coefficient [[coefficient]] to the power [[power]] to get [[coefficient_power]]."
+    },
+    {
+      "fact": "power",
+      "say": "Raise x to the power [[power]]."
+    }
+  ],
+  "answer": "The simplified expression is \\([[answer]]\\)."
+}

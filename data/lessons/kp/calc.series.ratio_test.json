@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The ratio test",
+    "section": "The test",
+    "subgoals": [
+      "Form the ratio of consecutive terms",
+      "Take its limit and read L<1, L>1 or L=1",
+      "See why L<1 compares to a geometric series"
+    ]
+  },
+  {
+    "label": "Worked examples",
+    "section": "Worked examples",
+    "subgoals": [
+      "Cancel factorials and powers before limiting",
+      "Recognise the (1+1/n)^n limit as e",
+      "Watch the same terms diverge when the fraction inverts"
+    ]
+  },
+  {
+    "label": "When it is inconclusive",
+    "section": "When it is inconclusive",
+    "subgoals": [
+      "See why every p-series gives L=1",
+      "Reach for the root test when powers dominate",
+      "Know which comparisons no ratio can settle"
+    ]
+  }
+]

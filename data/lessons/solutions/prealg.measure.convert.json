@@ -1,0 +1,15 @@
+{
+  "concept": "prealg.measure.convert",
+  "setup": "Convert [[value]] [[from_unit]] to [[to_unit]].",
+  "steps": [
+    {
+      "fact": "factor",
+      "say": "Each [[from_unit]] equals [[factor]] [[to_unit]]."
+    },
+    {
+      "fact": "value",
+      "say": "Multiply [[value]] by [[factor]]."
+    }
+  ],
+  "answer": "[[value]] [[from_unit]] = [[answer]] [[to_unit]]."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Where the bound comes from",
+    "section": "Where the bound comes from",
+    "subgoals": [
+      "Replace the curve by chords",
+      "Bound the local error by the second derivative",
+      "Sum to get the global bound"
+    ]
+  },
+  {
+    "label": "Doubling the subintervals",
+    "section": "Doubling the subintervals",
+    "subgoals": [
+      "See the square in the denominator",
+      "Choose the count from the tolerance",
+      "Remember Simpson falls faster"
+    ]
+  },
+  {
+    "label": "Reading the estimate honestly",
+    "section": "Reading the estimate honestly",
+    "subgoals": [
+      "Bound the derivative rather than compute it",
+      "Accept a pessimistic but valid bound",
+      "Recognise the pattern in other rules"
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+'use client'
+
+const SYMBOLS: { label: string; value: string }[] = [
+  { label: 'π', value: 'π' }, { label: '±', value: '±' }, { label: '∞', value: '∞' },
+  { label: '√', value: '√' }, { label: '∛', value: '∛' }, { label: '²', value: '²' },
+  { label: '³', value: '³' }, { label: '°', value: '°' }, { label: '≠', value: '≠' },
+  { label: '≈', value: '≈' }, { label: '≤', value: '≤' }, { label: '≥', value: '≥' },
+  { label: '×', value: '×' }, { label: '÷', value: '÷' }, { label: '·', value: '·' },
+  { label: '∫', value: '∫' }, { label: '∑', value: '∑' }, { label: '∂', value: '∂' },
+  { label: 'θ', value: 'θ' }, { label: 'α', value: 'α' }, { label: 'β', value: 'β' },
+  { label: '(', value: '(' }, { label: ')', value: ')' }, { label: '[', value: '[' },
+  { label: ']', value: ']' }, { label: '|', value: '|' }, { label: '/', value: '/' },
+  // Mixed numbers need a space ("4 1/10"); numeric mobile keyboards lack one.
+  { label: '␣', value: ' ' },
+  // Comma separates solution lists / ordered answers (tuple, ordering types).
+  { label: ',', value: ',' },
+]
+
+interface Props {
+  targetRef: React.RefObject<HTMLInputElement>
+  onInsert: (val: string) => void
+  compact?: boolean
+}
+
+export default function SymbolPalette({ targetRef, onInsert, compact }: Props) {
+  function insert(sym: string) {
+    const el = targetRef.current
+    if (!el) {
+      onInsert(sym)
+      return
+    }
+    const start = el.selectionStart ?? el.value.length
+    const end = el.selectionEnd ?? el.value.length
+    const before = el.value.slice(0, start)
+    const after = el.value.slice(end)
+    const next = before + sym + after
+    onInsert(next)
+    requestAnimationFrame(() => {
+      el.focus()
+      const pos = start + sym.length
+      el.setSelectionRange(pos, pos)
+    })
+  }
+
+  return (
+    <div className={`flex flex-wrap gap-1.5 p-2 bg-orchid-surface border border-orchid-border w-full max-w-full overflow-hidden ${compact ? 'mt-1' : 'mt-2'}`}>
+      {SYMBOLS.map((s) => (
+        <button
+          key={s.label}
+          type="button"
+          onClick={() => insert(s.value)}
+          className="w-9 h-9 min-w-[36px] min-h-[36px] font-mono text-xs border border-orchid-border-strong bg-orchid-code text-orchid-primary hover:border-orchid-blue hover:text-orchid-blue shrink-0 inline-flex items-center justify-center"
+          aria-label={`Insert ${s.label}`}
+        >
+          {s.label}
+        </button>
+      ))}
+    </div>
+  )
+}

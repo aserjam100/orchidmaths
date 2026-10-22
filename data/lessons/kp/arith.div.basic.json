@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Use division notation",
+    "section": "",
+    "subgoals": [
+      "Recognize the parts of a division",
+      "Read the notation",
+      "Relate to a fact family"
+    ]
+  },
+  {
+    "label": "Model division",
+    "section": "",
+    "subgoals": [
+      "Partition into equal groups",
+      "Count groups or per-group",
+      "Verify with multiplication"
+    ]
+  },
+  {
+    "label": "Divide whole numbers",
+    "section": "",
+    "subgoals": [
+      "Divide without remainder",
+      "Use times tables",
+      "Check the quotient"
+    ]
+  }
+]

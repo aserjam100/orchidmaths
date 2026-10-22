@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: solve via Ly=b, Ux=y",
+    "section": "Worked: solve via Ly=b, Ux=y",
+    "subgoals": [
+      "Solve forward for y",
+      "Solve backward for x",
+      "Skip elimination entirely"
+    ]
+  },
+  {
+    "label": "Worked: det from U",
+    "section": "Worked: det from U",
+    "subgoals": [
+      "Read det(L) as 1",
+      "Multiply the U diagonal",
+      "Report 6"
+    ]
+  },
+  {
+    "label": "Pivoting",
+    "section": "Pivoting",
+    "subgoals": [
+      "Spot the zero pivot",
+      "Swap rows via P",
+      "Default to partial pivoting"
+    ]
+  }
+]

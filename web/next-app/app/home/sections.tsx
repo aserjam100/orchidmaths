@@ -1,0 +1,420 @@
+'use client'
+
+import Link from 'next/link'
+import { useEffect, useRef, useState } from 'react'
+import { LOGIN_HERO } from '../../lib/loginHero'
+import { PIPELINE_STATES, quizGateXP, levels, moeCoverage, type MoeLevelCoverage } from './data'
+
+// The two hero actions. They are written out in full rather than composed, because
+// the ghost button used to be the primary button plus overrides and the two
+// background utilities (`bg-orchid-blue` and `bg-transparent`, `hover:bg-orchid-blue-hover`
+// and `hover:bg-white/15`) collided: same property, same specificity, so the winner was
+// whichever Tailwind emitted last — and the GitHub button hovered to blue on the image.
+// Separate constants with no overlapping property cannot collide. Both actions are
+// content-width and left-aligned on phones: as full-width bars with only the page's
+// 16px gutters they read as touching the screen edges.
+const CTA_PRIMARY =
+  'inline-flex min-h-[44px] items-center justify-center bg-orchid-blue px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-orchid-blue-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orchid-blue'
+// On the artwork the second action is a white hairline over a dark scrim, not the
+// themed surface border: a `orchid-border` line is tuned for the page background,
+// not for a photograph, and would disappear against the drawing.
+// Wipe-fill ghost: on hover a blue layer sweeps left to right behind the label
+// (origin-left scale-x). The fill lives on a child span, not the anchor, so the
+// anchor never carries two background utilities at once — the collision that once
+// turned this button blue. `overflow-hidden` clips the sweep; the label sits
+// `relative` above it.
+const CTA_GHOST_ON_ART =
+  'group relative inline-flex min-h-[44px] items-center justify-center overflow-hidden border border-white/45 bg-transparent px-6 py-3 text-sm font-medium text-white transition-colors hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white'
+
+// "Get started" opens the diagnostic, so a new learner is placed at their level before the
+// first question. "Just practise" keeps the old direct route into Learn for anyone who wants it.
+export function HeroSection({ onGetStarted, onPractise }: { onGetStarted: () => void; onPractise: () => void }) {
+  return (
+    // One responsive hero, not two stacked variants. Below lg it is the full-bleed
+    // treatment (B): art behind the copy under a scrim. At lg and up it is the
+    // side-by-side panel (A): copy left, art right, scrim gone and copy back on
+    // theme tokens. A single h1 and a single img serve both — no duplicated
+    // heading, no second download.
+    //
+    // The section sits in the page's capped, padded column, so the picture is a
+    // banner aligned to the content rather than a window-wide bleed — every other
+    // section shares that column, and a hero that ignored it would be the odd one
+    // out. `isolate` keeps the background's stacking context local so it cannot
+    // paint over the sticky header.
+    <section className="group/hero relative isolate overflow-hidden border-b border-orchid-division lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-10">
+      {/* Art. Full-bleed backdrop below lg; the grid's right column at lg and up.
+          `lg:relative` re-seats it as a grid item while the img keeps filling it
+          with object-cover, and `lg:order-2` puts it right of the copy. DOM order
+          stays art-first so that on phones — where both layers are positioned —
+          the copy paints above the picture.
+          The picture never touches the header: `top-4` holds it off the section
+          top on phones, `lg:mt-10` on desktop (`lg:top-auto lg:bottom-auto` cancel
+          the phone offsets once it is a grid item). */}
+      <div aria-hidden="true" className="hero-art-in absolute inset-x-0 bottom-0 top-4 overflow-hidden lg:relative lg:bottom-auto lg:top-auto lg:order-2 lg:mt-10 lg:min-h-[480px]">
+        <img
+          src={LOGIN_HERO.file}
+          alt=""
+          width={LOGIN_HERO.width}
+          height={LOGIN_HERO.height}
+          loading="eager"
+          decoding="async"
+          className="absolute inset-0 size-full object-cover object-center transition-transform duration-700 ease-out group-hover/hero:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover/hero:scale-100"
+        />
+        {/* Phone scrim only: it darkens the text side and fades toward the art, so
+            the copy has contrast without flattening the drawing. Stronger than the
+            earlier wash, because phone copy spans the full frame. */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/35 lg:hidden" />
+      </div>
+      <div className="relative max-w-[72ch] px-4 py-16 [text-shadow:0_1px_14px_rgba(0,0,0,0.45)] md:py-24 lg:order-1 lg:px-0 lg:[text-shadow:none]">
+        <div className="section-label hero-label reveal">( 01 · Title Block )</div>
+        <h1
+          className="reveal mt-5 max-w-[18ch] text-balance font-serif text-[clamp(2.5rem,6vw,4.5rem)] font-normal leading-[1.05] sm:leading-[0.95] tracking-tight text-white lg:text-orchid-primary"
+          style={{ animationDelay: '80ms' }}
+        >
+          Primary maths, mastered one step at a time
+        </h1>
+        <p
+          className="reveal mt-6 max-w-[46ch] text-pretty text-base sm:text-[15px] leading-relaxed text-white/85 lg:text-orchid-secondary"
+          style={{ animationDelay: '160ms' }}
+        >
+          Adaptive practice for Primary 1 to 6, mapped to the MOE Primary Mathematics syllabus.
+          Your child moves on only when they are both accurate and quick on what comes before.
+          Every question is freshly generated, so there is nothing to memorise.
+        </p>
+        <div className="reveal mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center" style={{ animationDelay: '240ms' }}>
+          <button type="button" onClick={onGetStarted} className={CTA_PRIMARY}>
+            Get started
+          </button>
+          <a
+            href="https://github.com/aserjam100/orchid"
+            className={`${CTA_GHOST_ON_ART} lg:border-orchid-border lg:text-orchid-primary lg:hover:border-orchid-blue lg:focus-visible:outline-orchid-blue`}
+          >
+            <span
+              aria-hidden="true"
+              className="absolute inset-0 origin-left scale-x-0 bg-orchid-blue transition-transform duration-300 ease-out group-hover:scale-x-100 motion-reduce:transition-none"
+            />
+            <span className="relative group-hover:text-white">View on GitHub</span>
+          </a>
+        </div>
+        <p className="reveal mt-4 font-mono text-[12px] text-white/60 lg:text-orchid-muted" style={{ animationDelay: '320ms' }}>
+          Starts with a short placement test. No account needed.{' '}
+          <button
+            type="button"
+            onClick={onPractise}
+            className="underline underline-offset-2 hover:text-white lg:hover:text-orchid-blue"
+          >
+            Skip it and just practise →
+          </button>
+        </p>
+      </div>
+    </section>
+  )
+}
+
+// Counts up when the stat scrolls into view. The target is rendered first so
+// no-JS, reduced-motion, and e2e reads always see the real number; the
+// observer restarts it from 0 only once the element is (barely) on screen.
+function CountUp({ target, duration = 1200 }: { target: number; duration?: number }) {
+  const ref = useRef<HTMLSpanElement>(null)
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    let raf = 0
+    const observer = new IntersectionObserver(
+      entries => {
+        if (!entries[0]?.isIntersecting) return
+        observer.disconnect()
+        const start = performance.now()
+        const tick = (now: number) => {
+          const t = Math.min(1, (now - start) / duration)
+          const eased = 1 - Math.pow(1 - t, 3)
+          el.textContent = String(Math.round(eased * target))
+          if (t < 1) raf = requestAnimationFrame(tick)
+        }
+        raf = requestAnimationFrame(tick)
+      },
+      { threshold: 0 }
+    )
+    observer.observe(el)
+    return () => {
+      observer.disconnect()
+      cancelAnimationFrame(raf)
+    }
+  }, [target, duration])
+  return <span ref={ref}>{target}</span>
+}
+
+export function TrustSection() {
+  return (
+    <section data-reveal className="border-b border-orchid-division py-16">
+      <div className="section-label">( 02 · Why it is trusted )</div>
+      <div className="mt-5 grid gap-10 md:grid-cols-12 md:items-start">
+        <p className="max-w-[52ch] text-sm leading-relaxed text-orchid-secondary md:col-span-7">
+          Every learning outcome in the MOE 2021 Primary Mathematics syllabus is mapped to the
+          Orchid topics that practise it, and marked full, partial or not yet covered. The{' '}
+          <Link href="/docs/curriculum" className="link-underline text-orchid-blue">coverage report</Link>{' '}
+          lists all of them, gaps included. Orchid is independent and is not affiliated with or
+          endorsed by the Ministry of Education, Singapore.
+        </p>
+        <div className="grid grid-cols-3 divide-x divide-orchid-division border border-orchid-border md:col-span-5">
+          <div className="p-5">
+            <div className="font-serif text-3xl tracking-tight text-orchid-primary"><CountUp target={moeCoverage.conceptCount} /></div>
+            <div className="mt-1 font-mono text-[11px] uppercase tracking-wider text-orchid-muted">MOE-mapped concepts</div>
+          </div>
+          <div className="p-5">
+            <div className="font-serif text-3xl tracking-tight text-orchid-primary">∞</div>
+            <div className="mt-1 font-mono text-[11px] uppercase tracking-wider text-orchid-muted">generated problems</div>
+          </div>
+          <div className="p-5">
+            <div className="font-serif text-3xl tracking-tight text-orchid-primary">{quizGateXP}</div>
+            <div className="mt-1 font-mono text-[11px] uppercase tracking-wider text-orchid-muted">XP mastery check</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+const FEATURES = [
+  {
+    numeral: 'I.',
+    title: 'Mastery gating',
+    body: 'You cannot advance until your streak and response time both meet the threshold. Knowing the answer is not enough; you must know it fast.',
+  },
+  {
+    numeral: 'II.',
+    title: 'Concept graph',
+    body: 'Every concept is a node with explicit prerequisites. Orchid reads the graph and your progress together, and picks what you see next from the two.',
+  },
+  {
+    numeral: 'III.',
+    title: 'Spaced repetition',
+    body: 'Concepts you master resurface automatically before they decay. About a third of each session is review, and signed-in learners can also clear what is due in Review.',
+  },
+]
+
+export function FeaturesSection() {
+  return (
+    <section data-reveal className="border-b border-orchid-division py-16">
+      <div className="section-label">( 03 · 3 Main Features )</div>
+      <div className="mt-6 grid gap-px border border-orchid-division bg-orchid-division md:grid-cols-3">
+        {FEATURES.map(f => (
+          <div key={f.title} className="bg-orchid-bg p-6">
+            <div className="font-mono text-xs text-orchid-blue">{f.numeral}</div>
+            <h4 className="mt-3 font-serif text-lg text-orchid-primary">{f.title}</h4>
+            <p className="mt-2 text-[14px] leading-relaxed text-orchid-secondary">{f.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+const chipClass = (status: string) => {
+  if (status === 'mastered') return 'border border-orchid-blue bg-orchid-blue text-orchid-bg'
+  if (status === 'decaying') return 'border border-dashed border-orchid-border text-orchid-primary'
+  return 'border border-orchid-border text-orchid-primary'
+}
+
+export function StatesSection() {
+  return (
+    <section data-reveal className="border-b border-orchid-division py-16">
+      <div className="section-label">( 04 · The States )</div>
+      <div className="mt-6 flex flex-wrap items-center gap-2 font-mono text-xs">
+        {PIPELINE_STATES.map((s, i) => (
+          <span key={s.label} className="flex items-center gap-2">
+            {i > 0 && <span className="text-orchid-muted">→</span>}
+            <span className={`px-3 py-1.5 ${chipClass(s.status)}`}>{s.label}</span>
+          </span>
+        ))}
+      </div>
+      <p className="mt-4 font-mono text-[12px] text-orchid-muted">
+        example · <span className="text-orchid-blue">arith.add.single</span> · 10 correct in a row at ≤8s → MASTERED
+      </p>
+      <div className="mt-6 overflow-x-auto border border-orchid-border bg-orchid-primary p-8 font-mono text-[14px] leading-loose text-orchid-bg dark:bg-orchid-code dark:text-orchid-primary">
+        {/* Mirrors computePriority and buildCandidatesAdvanced in internal/scheduler/scheduler.go. */}
+        <span className="opacity-40">priority</span> = (0.5 × days_since_last_seen)
+        <br />
+        <span className="pl-20">+ (0.2 × (1 − mastery))</span>
+        <br />
+        <span className="pl-20">+ (0.3 × weakness)</span>
+        <br />
+        <span className="pl-20">
+          + 5.0{' '}
+          <span className="underline decoration-orchid-blue decoration-2 underline-offset-2">if DECAYING</span>
+        </span>
+        <br />
+        <span className="pl-20">
+          + 2.0{' '}
+          <span className="underline decoration-orchid-blue decoration-2 underline-offset-2">if it builds on a weak prerequisite</span>
+        </span>
+        <br />
+        <span className="pl-20">
+          − 3.0{' '}
+          <span className="underline decoration-orchid-blue decoration-2 underline-offset-2">if easily confused with one just practised</span>
+        </span>
+      </div>
+      <p className="mt-4 max-w-[60ch] text-[14px] leading-relaxed text-orchid-secondary">
+        The scheduler enforces three rules: prerequisites must be mastered (or placed by the
+        diagnostic) before a concept unlocks, the same concept is not shown twice in a row while
+        another is available, and roughly 70% of each session is new material.
+      </p>
+    </section>
+  )
+}
+
+function CoverageTable({ rows }: { rows: MoeLevelCoverage[] }) {
+  return (
+    <table className="w-full font-mono text-xs">
+      <thead className="text-left text-orchid-muted [&_th]:border-b [&_th]:border-orchid-border [&_th]:pb-1.5 [&_th]:font-normal">
+        <tr>
+          <th>Level</th>
+          <th className="text-right">Outcomes</th>
+          <th className="text-right">Full</th>
+          <th className="text-right">Partial</th>
+          <th className="text-right">Not yet</th>
+        </tr>
+      </thead>
+      <tbody className="[&_td]:border-b [&_td]:border-orchid-division [&_td]:py-1.5">
+        {rows.map(r => (
+          <tr key={r.level}>
+            <td className="text-orchid-secondary">{r.name}</td>
+            <td className="text-right text-orchid-primary">{r.outcomes}</td>
+            <td className="text-right text-orchid-primary">{r.full}</td>
+            <td className="text-right text-orchid-primary">{r.partial}</td>
+            <td className="text-right text-orchid-primary">{r.none}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}
+
+export function CoverageSection() {
+  return (
+    <section data-reveal className="border-b border-orchid-division py-16">
+      <div className="flex flex-wrap items-end justify-between gap-2">
+        <div className="section-label">( 05 · What Orchid covers )</div>
+        <Link
+          href="/docs/curriculum"
+          className="font-mono text-[12px] text-orchid-muted transition-colors hover:text-orchid-blue"
+        >
+          Full coverage report →
+        </Link>
+      </div>
+      <p className="mt-4 max-w-[60ch] text-[14px] leading-relaxed text-orchid-secondary">
+        Each of the {moeCoverage.outcomeCount} learning outcomes in the MOE 2021 Primary Mathematics
+        syllabus, by level, and how fully Orchid practises it today.
+      </p>
+      <div className="mt-6 max-w-[640px]">
+        <CoverageTable rows={moeCoverage.levels} />
+      </div>
+      <p className="mt-4 font-mono text-[12px] text-orchid-muted">
+        Problems are generated on demand, never stored. There is nothing to memorise.
+      </p>
+    </section>
+  )
+}
+
+export function RankingSection() {
+  return (
+    <section data-reveal className="border-b border-orchid-division py-16">
+      <div className="section-label">( 06 · Ranking System )</div>
+      <p className="mt-4 max-w-[52ch] text-sm text-orchid-secondary">
+        The leaderboard resets every Monday at 00:00 UTC. It ranks learners by the concepts they
+        mastered that week:
+      </p>
+      <div className="mt-4 overflow-x-auto border border-orchid-border bg-orchid-primary p-6 font-mono text-[14px] leading-loose text-orchid-bg dark:bg-orchid-code dark:text-orchid-primary">
+        {/* Mirrors buildEntries in internal/leaderboard/compute.go. */}
+        <span className="opacity-40">score</span> = concepts_mastered_this_week × 100
+      </div>
+      <div className="mt-8 font-mono text-[11px] uppercase tracking-[0.2em] text-orchid-muted">
+        Levels of mastery · concepts mastered
+      </div>
+      <div className="mt-3 grid grid-cols-3 gap-px border border-orchid-division bg-orchid-division md:grid-cols-9">
+        {levels.map(l => {
+          const elite = 'elite' in l && l.elite
+          return (
+            <div key={l.name} className={elite ? 'bg-orchid-primary p-3 text-orchid-bg dark:bg-orchid-code dark:text-orchid-primary' : 'bg-orchid-bg p-3'}>
+              <div className={elite ? 'font-mono text-[11px] opacity-50' : 'font-mono text-[11px] text-orchid-muted'}>
+                {l.num}
+              </div>
+              <div className={`mt-1 font-serif text-[14px] ${elite ? '' : 'text-orchid-primary'}`}>{l.name}</div>
+              <div className={elite ? 'mt-1 font-mono text-[11px] opacity-50' : 'mt-1 font-mono text-[11px] text-orchid-muted'}>
+                {l.range}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </section>
+  )
+}
+
+const FAQS = [
+  {
+    q: 'Do I need an account to start?',
+    a: 'No. Begin with the placement test or go straight to practice. Sign in to keep progress across devices, join the leaderboard and use Review.',
+  },
+  {
+    q: 'Why does speed matter, not just accuracy?',
+    a: 'Fluency requires retrieval under time pressure. Knowing the answer is not enough; you must know it fast, or the foundation will not hold the next concept.',
+  },
+  {
+    q: `What happens every ${quizGateXP} XP?`,
+    a: 'A mastery-check quiz verifies retention across your recent concepts before new material continues.',
+  },
+  {
+    q: 'Is Orchid free and open-source?',
+    a: 'Yes — MIT licensed, with no paywall on the graph. Every concept and generator is in the repository.',
+  },
+]
+
+export function FaqSection() {
+  return (
+    <section data-reveal className="grid gap-10 py-16 md:grid-cols-2">
+      <div className="min-w-0">
+        <div className="section-label">( 07 · Questions, answered. )</div>
+        <div className="mt-5 divide-y divide-orchid-division border-y border-orchid-division">
+          {FAQS.map(f => (
+            <details key={f.q} className="group py-3">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 font-serif text-[15px] text-orchid-primary">
+                <span>{f.q}</span>
+                <span className="font-mono text-orchid-muted transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <p className="mt-2 text-[14px] leading-relaxed text-orchid-secondary">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+      <div className="min-w-0">
+        <div className="section-label">( 08 · How it is extended. )</div>
+        <p className="mt-4 text-[14px] leading-relaxed text-orchid-secondary">
+          Every concept is a JSON node. Every problem is a Go generator function. Every
+          contribution goes through a graph validator that rejects cycles and orphaned nodes
+          automatically.
+        </p>
+        <pre className="mt-4 overflow-x-auto overscroll-x-contain whitespace-pre border border-orchid-border bg-orchid-primary p-4 font-mono text-[12px] leading-relaxed text-orchid-bg sm:p-5 dark:bg-orchid-code dark:text-orchid-primary">
+{`{
+  "id":                "arith.add.carry",
+  "label":             "Addition with carrying",
+  "domain":            "arithmetic",
+  "grading_type":      "numeric",
+  "prerequisites":     ["arith.add.double"],
+  "mastery_threshold": {
+    "streak":          10,
+    "avg_time_seconds": 12
+  }
+}`}
+        </pre>
+        <Link
+          href="/docs/contributing"
+          className="mt-4 inline-block font-mono text-[12px] text-orchid-muted transition-colors hover:text-orchid-blue"
+        >
+          Read the contributing guide →
+        </Link>
+      </div>
+    </section>
+  )
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "No proper nontrivial normal subgroups",
+    "section": "No proper nontrivial normal subgroups",
+    "subgoals": [
+      "Show every normal subgroup is trivial",
+      "Exhibit one normal subgroup to refute simplicity",
+      "Use abelian implies all subgroups normal"
+    ]
+  },
+  {
+    "label": "Worked: Z_7 is simple and Z_6 is not",
+    "section": "Worked: Z_7 is simple and Z_6 is not",
+    "subgoals": [
+      "List subgroups from the divisors of the order",
+      "Rule out proper subgroups for prime order",
+      "Find the normal subgroup of order 2 in Z_6"
+    ]
+  },
+  {
+    "label": "The smallest nonabelian simple group",
+    "section": "The smallest nonabelian simple group",
+    "subgoals": [
+      "Recall A_5 has order 60",
+      "Compare with smaller nonabelian groups",
+      "Name Z_p as the abelian simple groups"
+    ]
+  }
+]

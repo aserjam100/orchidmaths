@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Count k-subsets ignoring order",
+      "Compute n!/(k!(n-k)!)",
+      "Return 0 when k > n"
+    ]
+  },
+  {
+    "label": "Pascal's triangle",
+    "section": "",
+    "subgoals": [
+      "Add the two entries above for Pascal's rule",
+      "Read C(n,k) off row n",
+      "Walk down the triangle to row n"
+    ]
+  },
+  {
+    "label": "Fundamental properties of the binomial coefficient",
+    "section": "",
+    "subgoals": [
+      "Cancel k! against n! term by term",
+      "Apply symmetry C(n,k) = C(n,n-k)",
+      "Sum the row to 2^n"
+    ]
+  }
+]

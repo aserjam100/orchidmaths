@@ -1,0 +1,15 @@
+{
+  "concept": "ratio.ops.better_buy",
+  "setup": "Compare the unit prices of the two packages.",
+  "steps": [
+    {
+      "fact": "unit_1",
+      "say": "Package 1 costs [[price_1]] dollars for [[size_1]] ounces, so its unit price is [[unit_1]] dollars per ounce."
+    },
+    {
+      "fact": "unit_2",
+      "say": "Package 2 costs [[price_2]] dollars for [[size_2]] ounces, so its unit price is [[unit_2]] dollars per ounce."
+    }
+  ],
+  "answer": "The lower unit price is the better buy. [[answer]]"
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The line through the middle",
+    "section": "The line through the middle",
+    "subgoals": [
+      "Describe least squares",
+      "Minimise the squared distances",
+      "See why a formula exists"
+    ]
+  },
+  {
+    "label": "The formulas",
+    "section": "The formulas",
+    "subgoals": [
+      "Write the slope formula",
+      "Use the point of averages",
+      "Check the fit through the mean"
+    ]
+  },
+  {
+    "label": "Why squared",
+    "section": "Why squared",
+    "subgoals": [
+      "Explain why squares are used",
+      "Name the outlier weakness",
+      "Contrast with absolute error"
+    ]
+  }
+]

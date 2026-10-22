@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Sort into removable, jump, infinite",
+      "Compute left vs right limits",
+      "Preview (x^2-1)/(x-1) hole at x = 1"
+    ]
+  },
+  {
+    "label": "Recall of continuity",
+    "section": "",
+    "subgoals": [
+      "Recheck lim(x to a) vs f(a)",
+      "Name which equality fails",
+      "Test |x|/x at 0 for jump"
+    ]
+  },
+  {
+    "label": "Removable discontinuity",
+    "section": "",
+    "subgoals": [
+      "Cancel the hole factor (x-1)",
+      "Fill f(1) = 2 to repair",
+      "Confirm repaired function continuous"
+    ]
+  }
+]

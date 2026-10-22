@@ -1,0 +1,19 @@
+{
+  "concept": "alg.rational.mult_div",
+  "setup": "You are [[operation]] \\([[first]]\\) and \\([[second]]\\).",
+  "steps": [
+    {
+      "fact": "approach",
+      "say": "[[approach]]"
+    },
+    {
+      "fact": "num_factored",
+      "say": "Factor the difference of squares in the numerator as \\([[num_factored]]\\), then cancel \\([[cancelled]]\\)."
+    },
+    {
+      "fact": "valid_for",
+      "say": "The original denominators and the divisor require \\([[valid_for]]\\)."
+    }
+  ],
+  "answer": "The simplified expression is \\([[remaining]]\\), valid for \\([[valid_for]]\\)."
+}

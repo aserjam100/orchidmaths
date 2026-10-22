@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The epsilon definition",
+    "section": "The epsilon definition",
+    "subgoals": [
+      "Fix an arbitrary positive epsilon",
+      "Find a threshold depending on it",
+      "Keep every later term within epsilon"
+    ]
+  },
+  {
+    "label": "Worked: a ratio of polynomials",
+    "section": "Worked: a ratio of polynomials",
+    "subgoals": [
+      "Divide numerator and denominator by n",
+      "Send the constant terms to zero",
+      "Read the leading-coefficient ratio"
+    ]
+  },
+  {
+    "label": "Uniqueness and boundedness",
+    "section": "Uniqueness and boundedness",
+    "subgoals": [
+      "Separate two candidate limits",
+      "Bound the tail and the finite head",
+      "Exhibit a bounded divergent sequence"
+    ]
+  }
+]

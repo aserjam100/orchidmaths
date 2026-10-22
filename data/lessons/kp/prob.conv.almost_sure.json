@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Convergence on almost every path",
+    "section": "Convergence on almost every path",
+    "subgoals": [
+      "Fix an outcome and read a numerical sequence",
+      "Require convergence there",
+      "Collect the failures into a null set"
+    ]
+  },
+  {
+    "label": "It implies convergence in probability",
+    "section": "It implies convergence in probability",
+    "subgoals": [
+      "Derive the epsilon condition from pointwise convergence",
+      "Apply the subsequence theorem",
+      "Note that the whole sequence may still fail"
+    ]
+  },
+  {
+    "label": "Borel-Cantelli as the tool",
+    "section": "Borel-Cantelli as the tool",
+    "subgoals": [
+      "Bound the tail probabilities",
+      "Sum them",
+      "Invoke Borel-Cantelli for the almost-sure statement"
+    ]
+  }
+]

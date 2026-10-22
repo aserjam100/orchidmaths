@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is Big O notation",
+    "section": "",
+    "subgoals": [
+      "Bound |f| <= C|g| past some N",
+      "Name C and N explicitly",
+      "Classify 3n^2+2n as O(n^2)"
+    ]
+  },
+  {
+    "label": "Example",
+    "section": "",
+    "subgoals": [
+      "Exhibit C = 4, N = 1 for 3n^2+2n <= 4n^2",
+      "Drop lower-order terms",
+      "Confirm the bound holds past N"
+    ]
+  },
+  {
+    "label": "The meaning of \\\\( O(1) \\\\)",
+    "section": "",
+    "subgoals": [
+      "Read O(1) as bounded sequence",
+      "Contrast O(1) vs O(n) growth",
+      "Check cos n and (-1)^n are O(1)"
+    ]
+  }
+]

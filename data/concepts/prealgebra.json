@@ -1,0 +1,873 @@
+[
+  {
+    "id": "dec.basics.compare",
+    "label": "Compare decimal values",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "comparison",
+    "prerequisites": [
+      "arith.dec.intro"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 8.0
+    }
+  },
+  {
+    "id": "dec.ops.add",
+    "label": "Add decimals",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.dec.intro",
+      "arith.add.carry"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "dec.ops.sub",
+    "label": "Subtract decimals",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.ops.add"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "dec.ops.mult",
+    "label": "Multiply decimals",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.ops.add",
+      "arith.mult.double"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "dec.ops.div",
+    "label": "Divide decimals",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.ops.mult",
+      "arith.div.long"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "dec.ops.add.word",
+    "label": "Money: total cost",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.ops.add"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "dec.ops.sub.word",
+    "label": "Money: change from a purchase",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.ops.sub"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "dec.ops.mult.word",
+    "label": "Money: cost of several items",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.ops.mult"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "dec.ops.div.word",
+    "label": "Money: unit price",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.ops.div"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "dec.convert.from_frac",
+    "label": "Convert fraction to decimal by division",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "frac.basics.parts",
+      "arith.div.long"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "dec.convert.to_frac",
+    "label": "Convert terminating decimal to fraction",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.convert.from_frac",
+      "frac.ops.simplify"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "dec.ops.round",
+    "label": "Round decimals to given place",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.decimals",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.basics.compare"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 10.0
+    }
+  },
+  {
+    "id": "pct.basics.concept",
+    "label": "Percentage as parts per hundred",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.dec.intro"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 8.0
+    }
+  },
+  {
+    "id": "pct.convert.to_dec",
+    "label": "Convert percentage to decimal",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.basics.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 8.0
+    }
+  },
+  {
+    "id": "pct.convert.from_dec",
+    "label": "Convert decimal to percentage",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.convert.to_dec"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 8.0
+    }
+  },
+  {
+    "id": "pct.ops.of_number",
+    "label": "Find X percent of a number",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.convert.to_dec",
+      "arith.mult.double"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "pct.ops.find_rate",
+    "label": "What percentage is A of B",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.ops.of_number",
+      "arith.div.basic"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "pct.ops.increase",
+    "label": "Percentage increase and decrease",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.ops.of_number"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "pct.ops.discount",
+    "label": "Calculate discounts and sale prices",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.ops.increase"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "pct.ops.tax_tip",
+    "label": "Tax and tip calculations",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.ops.discount"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "arith.neg.abs_value",
+    "label": "Absolute value",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.negatives",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.neg.number_line"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 6.0
+    }
+  },
+  {
+    "id": "arith.neg.order_ops",
+    "label": "Order of operations with negatives",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.negatives",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.order_ops.full",
+      "arith.neg.mult_div"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "ratio.basics.concept",
+    "label": "What is a ratio",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.ratios",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.div.basic"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 10.0
+    }
+  },
+  {
+    "id": "ratio.ops.simplify",
+    "label": "Simplify a ratio",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.ratios",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ratio.basics.concept",
+      "arith.factor.gcf"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "ratio.ops.proportion",
+    "label": "Solve a proportion",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.ratios",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ratio.ops.simplify",
+      "arith.mult.double"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "ratio.ops.rate",
+    "label": "Unit rates",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.ratios",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ratio.ops.proportion"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "ratio.ops.rate.word",
+    "label": "Rate word problems",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.ratios",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ratio.ops.rate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "ratio.ops.proportion.word",
+    "label": "Proportion word problems",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.ratios",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ratio.ops.proportion"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "ratio.ops.scale",
+    "label": "Scale drawings and maps",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.ratios",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ratio.ops.rate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "arith.exp.neg",
+    "label": "Negative exponents",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.exponents",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.exp.evaluate",
+      "frac.basics.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "arith.exp.zero",
+    "label": "Zero exponent rule",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.exponents",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.exp.evaluate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 6.0
+    }
+  },
+  {
+    "id": "arith.exp.sci_notation",
+    "label": "Scientific notation",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.exponents",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.exp.evaluate",
+      "dec.ops.mult"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "arith.sci_notation.ops",
+    "label": "Operations with scientific notation",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.exponents",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.exp.sci_notation"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "prealg.var.concept",
+    "label": "What is a variable",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.variables",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ratio.ops.proportion"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 10.0
+    }
+  },
+  {
+    "id": "prealg.expr.evaluate",
+    "label": "Evaluate expression at given value of x",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.variables",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "prealg.var.concept",
+      "arith.order_ops.full"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "prealg.expr.like_terms",
+    "label": "Identify and collect like terms",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.variables",
+    "grading_type": "polynomial",
+    "prerequisites": [
+      "prealg.expr.evaluate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "prealg.expr.distribute",
+    "label": "Distributive property",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.variables",
+    "grading_type": "polynomial",
+    "prerequisites": [
+      "prealg.expr.like_terms"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "prealg.eq.one_step_add",
+    "label": "Solve x + b = c",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.equations",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "prealg.expr.evaluate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "prealg.eq.one_step_mult",
+    "label": "Solve ax = c",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.equations",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "prealg.eq.one_step_add"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "prealg.eq.two_step",
+    "label": "Solve ax + b = c",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.equations",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "prealg.eq.one_step_mult"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "prealg.eq.word",
+    "label": "Write and solve equations from word problems",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.equations",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "prealg.eq.two_step"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "prealg.ineq.one_step",
+    "label": "Solve one-step inequalities",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.inequalities",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "prealg.eq.one_step_mult"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "prealg.ineq.two_step",
+    "label": "Solve two-step inequalities",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.inequalities",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "prealg.ineq.one_step",
+      "prealg.eq.two_step"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "prealg.real.properties",
+    "label": "Properties of real numbers",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.variables",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "prealg.var.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 12.0
+    }
+  },
+  {
+    "id": "prealg.real.concept",
+    "label": "Real numbers and the number line",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.variables",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "dec.basics.compare"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 8.0
+    }
+  },
+  {
+    "id": "prealg.types",
+    "label": "Types of numbers",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.variables",
+    "grading_type": "symbolic",
+    "prerequisites": [
+      "prealg.real.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 3,
+      "avg_time_seconds": 120
+    }
+  },
+  {
+    "id": "pct.ops.change",
+    "label": "Percent change from old and new values",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.ops.find_rate",
+      "dec.ops.sub"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "pct.ops.error",
+    "label": "Percent error",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.ops.change",
+      "dec.ops.sub",
+      "arith.neg.abs_value"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "pct.ops.commission",
+    "label": "Commission",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.ops.of_number",
+      "dec.ops.mult"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "pct.ops.markup",
+    "label": "Markup and selling price",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.ops.increase",
+      "pct.ops.of_number"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "pct.ops.simple_interest",
+    "label": "Simple interest",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.percentages",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "pct.ops.of_number",
+      "dec.ops.mult",
+      "prealg.expr.evaluate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "ratio.ops.percent_proportion",
+    "label": "Solve percent problems with a proportion",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.ratios",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ratio.ops.proportion",
+      "pct.ops.of_number"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "ratio.ops.better_buy",
+    "label": "Compare unit prices to find the better buy",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.ratios",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ratio.ops.rate",
+      "dec.ops.div.word"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "prealg.expr.translate",
+    "label": "Translate words into algebraic expressions",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.variables",
+    "grading_type": "expression",
+    "prerequisites": [
+      "prealg.var.concept",
+      "prealg.expr.evaluate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "prealg.expr.formula",
+    "label": "Evaluate a formula",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.variables",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "prealg.expr.evaluate",
+      "prealg.expr.distribute"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "prealg.ineq.word",
+    "label": "Write and solve inequality word problems",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.inequalities",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "prealg.ineq.two_step",
+      "prealg.expr.translate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 35.0
+    }
+  },
+  {
+    "id": "prealg.ineq.graph",
+    "label": "Graph an inequality on a number line",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.inequalities",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "prealg.ineq.one_step",
+      "prealg.real.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "prealg.measure.convert",
+    "label": "Convert customary units",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.measurement",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.ops.mult",
+      "ratio.ops.rate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "prealg.measure.metric",
+    "label": "Convert metric units",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.measurement",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.place.powers_ten",
+      "dec.ops.mult"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "prealg.measure.temperature",
+    "label": "Convert between Celsius and Fahrenheit",
+    "domain": "prealgebra",
+    "subdomain": "prealgebra.measurement",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "dec.ops.mult",
+      "dec.ops.add",
+      "prealg.expr.evaluate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  }
+]

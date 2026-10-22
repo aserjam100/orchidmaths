@@ -1,0 +1,110 @@
+'use client'
+
+import dynamic from 'next/dynamic'
+import { useTheme } from '../../hooks/useTheme'
+import Link from 'next/link'
+import Header from '../../components/Header'
+import BottomTabs from '../../components/BottomTabs'
+import SectionHeader from '../../components/SectionHeader'
+import Footer from '../../components/Footer'
+import Loading from '../../components/Loading'
+
+const DiagnosticFlow = dynamic(() => import('../../components/DiagnosticFlow'), {
+  ssr: false,
+  loading: () => (
+    <div style={{
+      height: 420, border: '0.5px solid var(--border)',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      color: 'var(--text-muted)', fontFamily: "var(--font-jetbrains-mono), 'JetBrains Mono', monospace", fontSize: '14px',
+    }}>
+      <Loading label="LOADING DIAGNOSTIC" />
+    </div>
+  ),
+})
+
+export default function DiagnosePage() {
+  const { mounted } = useTheme()
+
+  if (!mounted) return <div style={{ background: 'var(--bg)', minHeight: '100vh' }} />
+
+  return (
+    <>
+      <Header />
+      <div className="max-w-container mx-auto px-4 sm:px-6 pb-[calc(80px+env(safe-area-inset-bottom))] lg:pb-0 overflow-x-hidden min-w-0">
+      <section className="pt-8 min-w-0 overflow-hidden">
+        <span className="flex mb-4">
+          <Link href="/" className="text-orchid-secondary text-sm hover:text-orchid-blue">
+            ← Back
+          </Link>
+        </span>
+
+        <SectionHeader label="Diagnostic Test" title="Find your starting point" />
+
+        <p className="text-orchid-secondary text-sm leading-relaxed text-center max-w-[600px] mx-auto mt-4">
+          A diagnostic test that locates your position in the concept graph
+          using as few questions as possible.
+        </p>
+      </section>
+
+
+      {/* How it works */}
+      <section className="py-20 max-sm:py-12">
+        <SectionHeader label="Method" title="How the diagnostic works" />
+
+        <div className="flex justify-center mt-8">
+          <DiagnosticFlow />
+        </div>
+
+        <ul className="max-w-[600px] mx-auto mt-8 space-y-3 list-none">
+           {[
+             'The concept graph is sorted topologically: the diagnostic starts at the midpoint.',
+             'Each concept is probed with multiple questions at varying difficulty to get a reliable estimate.',
+             'Correct answers within the time limit move the probe forward toward harder concepts.',
+             'Incorrect or slow answers move backward toward foundational material.',
+             'The diagnostic records a mastery estimate for every concept passed through.',
+           ].map((step) => (
+            <li
+              key={step}
+              className="text-orchid-secondary text-[0.95rem] leading-[1.7] pl-9 relative before:content-[counter(step)] before:absolute before:left-0 before:text-orchid-blue before:font-mono before:text-[14px]"
+              style={{ counterIncrement: 'step-counter 1' }}
+            >
+              {step}
+            </li>
+          ))}
+        </ul>
+        <style>{`ul { counter-reset: step-counter; }`}</style>
+      </section>
+
+
+      {/* Actions */}
+      <section className="py-20 max-sm:py-12 text-center">
+        <SectionHeader label="Ready" title="Begin your diagnostic" />
+
+        <p className="text-orchid-secondary text-sm leading-relaxed max-w-[500px] mx-auto mt-4 mb-8">
+          You can retake the diagnostic test at any time: retaking never
+          deletes progress, and Orchid always keeps the most optimistic estimate.
+        </p>
+
+        <div className="flex gap-3 justify-center max-sm:flex-col max-sm:items-center min-w-0">
+          <Link
+            href="/onboard"
+            className="border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint rounded-none h-10 min-h-[36px] px-6 text-[14px] font-medium transition-colors flex items-center justify-center w-full sm:w-auto max-w-[280px]"
+          >
+            Start diagnostic test
+          </Link>
+          <Link
+            href="/docs/system-design#cat-diagnostic"
+            className="border border-orchid-border-strong text-orchid-primary hover:border-orchid-blue hover:text-orchid-blue rounded-none h-10 min-h-[36px] px-6 text-[14px] font-medium transition-colors flex items-center justify-center w-full sm:w-auto max-w-[280px]"
+          >
+            Read the full algorithm
+          </Link>
+        </div>
+      </section>
+
+    </div>
+
+    <Footer />
+    <BottomTabs />
+    </>
+  )
+}

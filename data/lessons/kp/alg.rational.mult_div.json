@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiply across",
+    "section": "Multiply across",
+    "subgoals": [
+      "Factor both fractions first",
+      "Multiply numerators and denominators",
+      "Leave the product factored until cancelling"
+    ]
+  },
+  {
+    "label": "Invert for division",
+    "section": "Invert for division",
+    "subgoals": [
+      "Keep the first fraction",
+      "Invert only the second fraction",
+      "Change division to multiplication"
+    ]
+  },
+  {
+    "label": "Cancel and state the restrictions",
+    "section": "Cancel and state the restrictions",
+    "subgoals": [
+      "List every original denominator's zero",
+      "Include the divisor's numerator",
+      "Keep all restrictions in the answer"
+    ]
+  }
+]

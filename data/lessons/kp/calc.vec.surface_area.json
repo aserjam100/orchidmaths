@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The area element",
+    "section": "The area element",
+    "subgoals": [
+      "Write the area element",
+      "Explain the factor's two terms",
+      "See it as a cross-product length"
+    ]
+  },
+  {
+    "label": "A tilted plane",
+    "section": "A tilted plane",
+    "subgoals": [
+      "Compute the factor for a plane",
+      "Multiply by the rectangle's area",
+      "Check the flat case gives 1"
+    ]
+  },
+  {
+    "label": "When the factor varies",
+    "section": "When the factor varies",
+    "subgoals": [
+      "Keep a varying factor inside the integral",
+      "Compare a patch with its shadow",
+      "Say what the surface integral counts"
+    ]
+  }
+]

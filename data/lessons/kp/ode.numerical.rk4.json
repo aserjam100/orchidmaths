@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one RK4 step for y' = y",
+    "section": "Worked: one RK4 step for y' = y",
+    "subgoals": [
+      "Probe k1 through k4 at 0.1 step",
+      "Form the (k1+2k2+2k3+k4)/6 average",
+      "Step to y_1 = 1.10517"
+    ]
+  },
+  {
+    "label": "Worked: RK4 against Euler",
+    "section": "Worked: RK4 against Euler",
+    "subgoals": [
+      "Compare RK4 error 1e-7 vs Euler 0.0052",
+      "Fix the step size for fairness",
+      "Conclude probes beat tangents"
+    ]
+  },
+  {
+    "label": "Order costs evaluations",
+    "section": "Order costs evaluations",
+    "subgoals": [
+      "Count four evaluations per step",
+      "Quote O(h^4) global error",
+      "Compute the 16x halving payoff"
+    ]
+  }
+]

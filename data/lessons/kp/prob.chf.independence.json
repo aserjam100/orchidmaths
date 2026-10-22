@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The product rule",
+    "section": "The product rule",
+    "subgoals": [
+      "Write the exponential of the sum as a product",
+      "Factor the expectation by independence",
+      "Read the product of transforms"
+    ]
+  },
+  {
+    "label": "Convolution becomes multiplication",
+    "section": "Convolution becomes multiplication",
+    "subgoals": [
+      "Recognise the sum law as a convolution",
+      "Transform it into a product",
+      "Work with the transforms instead"
+    ]
+  },
+  {
+    "label": "Without independence",
+    "section": "Without independence",
+    "subgoals": [
+      "Use the joint transform for dependent variables",
+      "Evaluate it on the diagonal",
+      "See factorisation as equivalent to independence"
+    ]
+  }
+]

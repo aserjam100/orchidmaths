@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Radius of convergence",
+    "section": "Radius of convergence",
+    "subgoals": [
+      "Form the series in powers of the variable",
+      "Apply the root or ratio test",
+      "Read the radius from the coefficients"
+    ]
+  },
+  {
+    "label": "Term-by-term operations",
+    "section": "Term-by-term operations",
+    "subgoals": [
+      "Differentiate the general term",
+      "Integrate the general term",
+      "Trust the same radius inside"
+    ]
+  },
+  {
+    "label": "Worked: a geometric radius",
+    "section": "Worked: a geometric radius",
+    "subgoals": [
+      "Take the ratio of successive terms",
+      "Impose the ratio below one",
+      "Invert the constant for the radius"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Find the nearest squares",
+    "section": "Find the nearest squares",
+    "subgoals": [
+      "List perfect squares around the radicand",
+      "Find the square below the radicand",
+      "Find the square above the radicand"
+    ]
+  },
+  {
+    "label": "Bracket the radicand",
+    "section": "Bracket the radicand",
+    "subgoals": [
+      "Order the two squares around the radicand",
+      "Write the matching order for the roots",
+      "Keep the bounds consecutive"
+    ]
+  },
+  {
+    "label": "Name the two integers",
+    "section": "Name the two integers",
+    "subgoals": [
+      "Report the smaller bound first",
+      "Report the larger bound second",
+      "Check that squaring the bounds straddles the radicand"
+    ]
+  }
+]

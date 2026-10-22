@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The Markov property",
+    "section": "The Markov property",
+    "subgoals": [
+      "Condition on the present state",
+      "Detach the future from the past",
+      "Describe the chain by one-step probabilities"
+    ]
+  },
+  {
+    "label": "Worked: a two-step transition",
+    "section": "Worked: a two-step transition",
+    "subgoals": [
+      "List the two routes through the intermediate state",
+      "Multiply along each route",
+      "Add the route probabilities"
+    ]
+  },
+  {
+    "label": "The transition matrix",
+    "section": "The transition matrix",
+    "subgoals": [
+      "Arrange the probabilities in a matrix",
+      "Check that each row sums to one",
+      "Use powers for several steps"
+    ]
+  }
+]

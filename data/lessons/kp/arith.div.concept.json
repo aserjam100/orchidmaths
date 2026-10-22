@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Share one at a time",
+    "section": "Share one at a time",
+    "subgoals": [
+      "Count how many groups there are",
+      "Give one to each group in turn",
+      "Count how many are in one group"
+    ]
+  },
+  {
+    "label": "The division sign",
+    "section": "The division sign",
+    "subgoals": [
+      "Write the total first",
+      "Write ÷ and the number of groups",
+      "Write the number in each group after ="
+    ]
+  },
+  {
+    "label": "Check by multiplying",
+    "section": "Check by multiplying",
+    "subgoals": [
+      "Take the number in each group",
+      "Multiply by the number of groups",
+      "See if you get the total"
+    ]
+  }
+]

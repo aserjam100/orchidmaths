@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Degree and diameter",
+    "section": "Degree and diameter",
+    "subgoals": [
+      "Count the vertex itself",
+      "Count at most d neighbours",
+      "Count at most d(d-1) at distance two"
+    ]
+  },
+  {
+    "label": "Worked: the Petersen graph",
+    "section": "Worked: the Petersen graph",
+    "subgoals": [
+      "Compute 3 squared plus one",
+      "Check the Petersen graph is 3-regular",
+      "Note C_5 attains the d equal to 2 bound"
+    ]
+  },
+  {
+    "label": "Moore graphs and the degree-diameter problem",
+    "section": "Moore graphs and the degree-diameter problem",
+    "subgoals": [
+      "Define a Moore graph",
+      "List the known Moore graphs",
+      "State the degree-diameter problem"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A smooth step from 0 to 1",
+    "section": "A smooth step from 0 to 1",
+    "subgoals": [
+      "Evaluate 1/(1+e^-x) at exact inputs",
+      "Use sigma(-x) = 1 - sigma(x)",
+      "Bound the derivative by 1/4"
+    ]
+  },
+  {
+    "label": "Worked: sigma of exact inputs",
+    "section": "Worked: sigma of exact inputs",
+    "subgoals": [
+      "Compute sigma(0) as one half",
+      "Rewrite e^(-ln 3) as 1/3",
+      "Pair ln 3 with -ln 3"
+    ]
+  },
+  {
+    "label": "Why the derivative is small",
+    "section": "Why the derivative is small",
+    "subgoals": [
+      "Differentiate sigma(x)(1 - sigma(x))",
+      "Maximise at x = 0",
+      "Multiply the bound through many layers"
+    ]
+  }
+]

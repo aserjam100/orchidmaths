@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: cosets of {0, 3} in Z_6",
+    "section": "Worked: cosets of {0, 3} in Z_6",
+    "subgoals": [
+      "List the three cosets",
+      "Check equal size and no overlap",
+      "Read the index as 3"
+    ]
+  },
+  {
+    "label": "Worked: no subgroup of order 4 in a group of order 6",
+    "section": "Worked: no subgroup of order 4 in a group of order 6",
+    "subgoals": [
+      "Test 4 against divisibility by 6",
+      "See the tiling fail",
+      "Conclude no such subgroup exists"
+    ]
+  },
+  {
+    "label": "Converse fails",
+    "section": "Converse fails",
+    "subgoals": [
+      "Note 6 divides 12",
+      "Recall A_4 has no order-6 subgroup",
+      "Separate necessity from sufficiency"
+    ]
+  }
+]

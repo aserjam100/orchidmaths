@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The formula",
+    "section": "The formula",
+    "subgoals": [
+      "State the curvature formula for a graph",
+      "Explain the role of each factor",
+      "Compute kappa at a point"
+    ]
+  },
+  {
+    "label": "A parabola at its vertex",
+    "section": "A parabola at its vertex",
+    "subgoals": [
+      "Evaluate curvature where the slope is zero",
+      "Relate the coefficient to the bending",
+      "Contrast the vertex with a steeper point"
+    ]
+  },
+  {
+    "label": "Circles",
+    "section": "Circles",
+    "subgoals": [
+      "State the curvature of a circle",
+      "Explain the reciprocal radius",
+      "Recognise zero curvature"
+    ]
+  }
+]

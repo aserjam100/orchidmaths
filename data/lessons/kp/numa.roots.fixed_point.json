@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Turning a root into a fixed point",
+    "section": "Turning a root into a fixed point",
+    "subgoals": [
+      "Rearrange the equation to x equals g of x",
+      "Iterate from a starting guess",
+      "Recognise the fixed point as the limit"
+    ]
+  },
+  {
+    "label": "Worked: a geometric iteration",
+    "section": "Worked: a geometric iteration",
+    "subgoals": [
+      "Substitute the previous iterate",
+      "Compute two or three steps",
+      "Watch the distance to the limit shrink"
+    ]
+  },
+  {
+    "label": "The contraction condition",
+    "section": "The contraction condition",
+    "subgoals": [
+      "Measure the slope near the fixed point",
+      "Predict convergence when it is below one",
+      "Choose a rearrangement with a small slope"
+    ]
+  }
+]

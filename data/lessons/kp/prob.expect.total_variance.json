@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Variance within plus variance between",
+    "section": "Variance within plus variance between",
+    "subgoals": [
+      "Average the within-slice variances",
+      "Take the variance of the slice means",
+      "Add the two parts"
+    ]
+  },
+  {
+    "label": "Worked: two equally likely groups",
+    "section": "Worked: two equally likely groups",
+    "subgoals": [
+      "Average the conditional variances",
+      "Compute the variance of the two means",
+      "Add"
+    ]
+  },
+  {
+    "label": "Why the terms are the only ones",
+    "section": "Why the terms are the only ones",
+    "subgoals": [
+      "Expand the variance",
+      "Substitute the conditional moments",
+      "Show the cross term vanishes"
+    ]
+  }
+]

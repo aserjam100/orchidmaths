@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Each prime contributes a series",
+    "section": "Each prime contributes a series",
+    "subgoals": [
+      "Write a prime power's divisors",
+      "Sum them as a series",
+      "See the factorisation"
+    ]
+  },
+  {
+    "label": "Multiplying the series",
+    "section": "Multiplying the series",
+    "subgoals": [
+      "Multiply the series",
+      "Expand to see the divisors",
+      "Note the closed form"
+    ]
+  },
+  {
+    "label": "Perfect numbers",
+    "section": "Perfect numbers",
+    "subgoals": [
+      "Define a perfect number by the sum",
+      "Write it as an equation",
+      "Name the Euclid-Euler theorem"
+    ]
+  }
+]

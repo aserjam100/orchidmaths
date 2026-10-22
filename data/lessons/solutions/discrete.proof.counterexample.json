@@ -1,0 +1,19 @@
+{
+  "concept": "discrete.proof.counterexample",
+  "setup": "The claim is that \\(f(n) = n^2 + n + [[c]]\\) is prime for every positive integer \\(n\\).",
+  "steps": [
+    {
+      "fact": "c",
+      "say": "A single \\(n\\) with a composite value refutes the claim, so the task is to find the smallest such \\(n\\) rather than to argue about all of them."
+    },
+    {
+      "fact": "last_prime",
+      "say": "Testing in order, \\(f(n)\\) is prime for every \\(n\\) from 0 to [[last_prime]], so no smaller positive \\(n\\) refutes the claim."
+    },
+    {
+      "fact": "value",
+      "say": "At \\(n = [[n]]\\) the value is \\([[value]]\\), and [[value]] = [[factor1]] \\cdot [[factor2]], so it is not prime."
+    }
+  ],
+  "answer": "So the smallest counterexample is \\(n = [[n]]\\)."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The limit formula",
+    "section": "The limit formula",
+    "subgoals": [
+      "Multiply by z - z0",
+      "Take the limit",
+      "Require a simple pole"
+    ]
+  },
+  {
+    "label": "Why simple poles are easy",
+    "section": "Why simple poles are easy",
+    "subgoals": [
+      "Read the Laurent coefficient",
+      "No series expansion needed",
+      "Use P(z0)/Q'(z0) for a quotient"
+    ]
+  },
+  {
+    "label": "A worked residue",
+    "section": "A worked residue",
+    "subgoals": [
+      "Identify the pole",
+      "Evaluate the numerator there",
+      "Check with the limit"
+    ]
+  }
+]

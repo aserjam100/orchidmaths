@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The step and the plant",
+    "section": "The step and the plant",
+    "subgoals": [
+      "Replace the function by its tangent",
+      "Subtract the value over the derivative",
+      "Require a nonzero slope at the root"
+    ]
+  },
+  {
+    "label": "Why the error squares",
+    "section": "Why the error squares",
+    "subgoals": [
+      "Subtract the old error from the new",
+      "See the new error as the square",
+      "Read the factor as curvature over slope"
+    ]
+  },
+  {
+    "label": "When it fails",
+    "section": "When it fails",
+    "subgoals": [
+      "Watch for a vanishing slope",
+      "Guard the step against a bad start",
+      "Use a bracket for a good guess"
+    ]
+  }
+]

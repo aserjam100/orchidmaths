@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Place angle theta on the unit circle x^2 + y^2 = 1",
+      "Orient positive counterclockwise, negative clockwise",
+      "Identify theta + 2k*pi with the same circle point"
+    ]
+  },
+  {
+    "label": "Definition of sine and cosine",
+    "section": "",
+    "subgoals": [
+      "Read sin(theta) as the y-coordinate of P",
+      "Read cos(theta) as the x-coordinate of P",
+      "Project OP onto each axis for the two values"
+    ]
+  },
+  {
+    "label": "Fundamental trigonometric identity",
+    "section": "",
+    "subgoals": [
+      "Add squared coordinates for sin^2 + cos^2 = 1",
+      "Clamp both functions between -1 and 1",
+      "Shift by 2pi with values unchanged for periodicity"
+    ]
+  }
+]

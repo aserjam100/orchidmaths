@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Shifts and reflections",
+    "section": "Shifts and reflections",
+    "subgoals": [
+      "Add outside the function to move vertically",
+      "Negate the output to flip it over the x-axis",
+      "Leave the shape unchanged"
+    ]
+  },
+  {
+    "label": "Stretches and compressions",
+    "section": "Stretches and compressions",
+    "subgoals": [
+      "Multiply the output for a vertical stretch",
+      "Match the input factor to the inverse horizontal change",
+      "Remember that inside changes reverse"
+    ]
+  },
+  {
+    "label": "Order matters",
+    "section": "Order matters",
+    "subgoals": [
+      "Identify the parent function",
+      "List transformations from the outside in",
+      "Track a few key points through the changes"
+    ]
+  }
+]

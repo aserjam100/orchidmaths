@@ -1,0 +1,41 @@
+<svg width="210px" height="180px" viewBox="0 0 210 180" xmlns="http://www.w3.org/2000/svg">
+<rect width="210" height="180" fill="white"/>
+<line x1="14" y1="94.5" x2="186.6" y2="94.5" stroke="#BABABA" stroke-width="1.5"/>
+<polygon points="194,94.5 186.6,91.4 186.6,97.6" fill="#BABABA"/>
+<text x="197" y="107.5" font-size="12" fill="#333333" text-anchor="start">x</text>
+<line x1="108.09" y1="21.4" x2="108.09" y2="152" stroke="#BABABA" stroke-width="1.5"/>
+<polygon points="108.09,14 104.99,21.4 111.19,21.4" fill="#BABABA"/>
+<text x="112.09" y="21" font-size="12" fill="#333333" text-anchor="start">y</text>
+<line x1="26.27" y1="91.0" x2="26.27" y2="98.0" stroke="#BABABA" stroke-width="1"/>
+<text x="26.27" y="109.5" font-size="11" fill="#333333" text-anchor="middle">-4</text>
+<line x1="46.73" y1="91.0" x2="46.73" y2="98.0" stroke="#BABABA" stroke-width="1"/>
+<line x1="67.18" y1="91.0" x2="67.18" y2="98.0" stroke="#BABABA" stroke-width="1"/>
+<text x="67.18" y="109.5" font-size="11" fill="#333333" text-anchor="middle">-2</text>
+<line x1="87.64" y1="91.0" x2="87.64" y2="98.0" stroke="#BABABA" stroke-width="1"/>
+<line x1="108.09" y1="91.0" x2="108.09" y2="98.0" stroke="#BABABA" stroke-width="1"/>
+<line x1="128.55" y1="91.0" x2="128.55" y2="98.0" stroke="#BABABA" stroke-width="1"/>
+<text x="128.55" y="109.5" font-size="11" fill="#333333" text-anchor="middle">1</text>
+<line x1="149.0" y1="91.0" x2="149.0" y2="98.0" stroke="#BABABA" stroke-width="1"/>
+<line x1="169.45" y1="91.0" x2="169.45" y2="98.0" stroke="#BABABA" stroke-width="1"/>
+<text x="169.45" y="109.5" font-size="11" fill="#333333" text-anchor="middle">3</text>
+<line x1="104.59" y1="140.5" x2="111.59" y2="140.5" stroke="#BABABA" stroke-width="1"/>
+<line x1="104.59" y1="129.0" x2="111.59" y2="129.0" stroke="#BABABA" stroke-width="1"/>
+<line x1="104.59" y1="117.5" x2="111.59" y2="117.5" stroke="#BABABA" stroke-width="1"/>
+<line x1="104.59" y1="106.0" x2="111.59" y2="106.0" stroke="#BABABA" stroke-width="1"/>
+<line x1="104.59" y1="94.5" x2="111.59" y2="94.5" stroke="#BABABA" stroke-width="1"/>
+<line x1="104.59" y1="83.0" x2="111.59" y2="83.0" stroke="#BABABA" stroke-width="1"/>
+<line x1="104.59" y1="71.5" x2="111.59" y2="71.5" stroke="#BABABA" stroke-width="1"/>
+<line x1="104.59" y1="60.0" x2="111.59" y2="60.0" stroke="#BABABA" stroke-width="1"/>
+<text x="102.09" y="64.0" font-size="11" fill="#333333" text-anchor="end">3</text>
+<line x1="104.59" y1="48.5" x2="111.59" y2="48.5" stroke="#BABABA" stroke-width="1"/>
+<line x1="104.59" y1="37.0" x2="111.59" y2="37.0" stroke="#BABABA" stroke-width="1"/>
+<line x1="104.59" y1="25.5" x2="111.59" y2="25.5" stroke="#BABABA" stroke-width="1"/>
+<text x="102.09" y="29.5" font-size="11" fill="#333333" text-anchor="end">6</text>
+<path d="M 16.05,135.9 C 19.11,130.92 28.66,115.58 34.45,106.0 C 40.25,96.42 45.36,86.07 50.82,78.4 C 56.27,70.73 61.73,64.41 67.18,60.0 C 72.64,55.59 76.73,55.21 83.55,51.95 C 90.36,48.69 101.95,43.52 108.09,40.45 C 114.23,37.38 116.95,36.04 120.36,33.55 C 123.77,31.06 127.18,26.84 128.55,25.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+<circle cx="67.18" cy="60.0" r="3.2" fill="white" stroke="#333333" stroke-width="1.5"/>
+<circle cx="128.55" cy="25.5" r="3.2" fill="#333333" stroke="#333333" stroke-width="1.5"/>
+<path d="M 128.55,60.0 C 130.25,62.3 135.36,68.43 138.77,73.8 C 142.18,79.17 146.27,85.68 149.0,92.2 C 151.73,98.72 153.26,106.0 155.14,112.9 C 157.01,119.8 158.82,127.08 160.25,133.6 C 161.68,140.12 163.15,148.93 163.73,152.0" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+<circle cx="128.55" cy="60.0" r="3.2" fill="white" stroke="#333333" stroke-width="1.5"/>
+<path d="M 172.73,152.0 C 173.38,145.29 174.94,124.02 176.61,111.75 C 178.28,99.48 180.53,88.18 182.75,78.4 C 184.97,68.62 187.52,61.15 189.91,53.1 C 192.3,45.05 194.68,38.53 197.07,30.1 C 199.45,21.67 203.03,7.1 204.23,2.5" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+<text x="19.11" y="140.5" font-size="11" fill="#333333" text-anchor="start">f(x)</text>
+</svg>

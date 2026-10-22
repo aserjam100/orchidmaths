@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: 1/(1-x) holds all ones",
+    "section": "Worked: 1/(1-x) holds all ones",
+    "subgoals": [
+      "Multiply (1-x) against the geometric series",
+      "Cancel by telescoping to leave 1",
+      "Read off the all-ones coefficients"
+    ]
+  },
+  {
+    "label": "Worked: Fibonacci closed form",
+    "section": "Worked: Fibonacci closed form",
+    "subgoals": [
+      "Subtract xA and x^2A to isolate x",
+      "Solve A(x) = x/(1-x-x^2)",
+      "Expand to recover Fibonacci coefficients"
+    ]
+  },
+  {
+    "label": "Ordinary versus exponential",
+    "section": "Ordinary versus exponential",
+    "subgoals": [
+      "Match convolution to ordinary products",
+      "Match binomial convolution to exponential products",
+      "Pick the series type by labelled or not"
+    ]
+  }
+]

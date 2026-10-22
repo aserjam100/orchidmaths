@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Test closure of a.b inside G",
+      "Check (a.b).c equals a.(b.c)",
+      "Solve a.x = e for each inverse"
+    ]
+  },
+  {
+    "label": "Properties",
+    "section": "",
+    "subgoals": [
+      "Cancel a common factor from both sides",
+      "Identify the unique identity e",
+      "Invert each element back to e"
+    ]
+  },
+  {
+    "label": "Algebraic hierarchy",
+    "section": "",
+    "subgoals": [
+      "Drop commutativity to step from abelian to group",
+      "Add a second operation to reach a ring",
+      "Restrict nonzero elements under multiplication to find the field"
+    ]
+  }
+]

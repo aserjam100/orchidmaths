@@ -1,0 +1,100 @@
+# Orchid System Design  --  Full Architecture
+
+direction: right
+
+UI: UI Layer {
+  Web: Web App\nNext.js + React + KaTeX
+}
+
+API: API Layer {
+  Auth: Auth\nSignup / Login / JWT
+  Session: Session\nPractice Flow
+  Graph: Graph\nDAG Visualization
+  Diag: Diagnostic\nAdaptive Testing
+  Lboard: Leaderboard\nWeekly Scores
+  Reviews: Reviews\nSpaced Repetition
+}
+
+Engine: Core Engine {
+  DAG: DAG Loader\nJSON to Topo-Sorted Graph
+  Sched: Scheduler\nSM-2 Priority Queue
+  Gen: Generators\n18 Domain Registries
+  Master: Mastery\nUNSEEN -> LEARNING -> PRACTICING -> MASTERED
+  Score: Scoring\nXP + Speed + Streak
+  Weak: Weakness\nPropagation Engine
+  DiagEng: Diagnostic\nInfo-gain CAT
+}
+
+Grading: Grading Layer {
+  Router: Router\nDispatch by GradingType
+  Numeric: Numeric\nInt/Float/Fraction
+  Poly: SymPy\nPython Subprocess
+  Symbolic: Symbolic\nString Normalize
+  Choice: Multiple Choice\nCase-Insensitive
+  Comp: Comparison\n>/</=/>=/<=
+  Order: Ordering\nPositional Match
+  Complex: Complex\nPolar to SymPy
+}
+
+Storage: Storage Layer {
+  Repo: Repository\nInterface
+  SQLite: SQLite\nDev / Local
+  PG: PostgreSQL\nProduction Web
+}
+
+# Connections
+Web -> Auth
+Web -> Session
+Web -> Graph
+Web -> Diag
+Web -> Lboard
+Web -> Reviews
+
+# API to Engine
+Auth -> DAG
+Session -> DAG
+Session -> Sched
+Session -> Gen
+Session -> Master
+Session -> Score
+Diag -> DiagEng
+Reviews -> Sched
+
+# Engine internal
+DAG -> Sched
+Sched -> Gen
+Gen -> Master
+Master -> Weak
+Master -> Score
+
+# Engine to Grading
+Gen -> Router
+Router -> Numeric
+Router -> Polys
+Router -> Symbolic
+Router -> Choice
+Router -> Comp
+Router -> Order
+Router -> Complex
+
+# Grading to Storage
+Score -> Repo
+Master -> Repo
+DiagEng -> Repo
+Repo -> SQLite
+Repo -> PG
+
+# Styling
+nodes: {
+  style: {
+    font-size: 13
+    border-radius: 6
+  }
+}
+
+edges: {
+  style: {
+    stroke: "#6b6a64"
+    font-size: 10
+  }
+}

@@ -1,0 +1,4215 @@
+[
+  {
+    "id": "natural-numbers",
+    "symbol": "ℕ",
+    "latex": "\\mathbb{N}",
+    "name": "Natural numbers",
+    "aliases": [
+      "natural numbers",
+      "N blackboard",
+      "counting numbers",
+      "positive integers"
+    ],
+    "category": "advanced",
+    "definition": "The counting numbers 1, 2, 3, … (some authors include 0; check the local convention). They support induction: prove a base case and the step from n to n+1.",
+    "reading": "“N”.",
+    "examples": [
+      {
+        "tex": "n \\in \\mathbb{N}",
+        "explanation": "n is a natural number."
+      }
+    ],
+    "relatedSymbols": [
+      "integers",
+      "exists",
+      "sequence-term"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "integers",
+    "symbol": "ℤ",
+    "latex": "\\mathbb{Z}",
+    "name": "Integers",
+    "aliases": [
+      "integers",
+      "Z blackboard",
+      "whole numbers",
+      "zahlen"
+    ],
+    "category": "advanced",
+    "definition": "All whole numbers, positive, negative and zero: …, −2, −1, 0, 1, 2, …. The symbol comes from German “Zahlen” (numbers).",
+    "reading": "“Z”.",
+    "examples": [
+      {
+        "tex": "-3 \\in \\mathbb{Z}",
+        "explanation": "Negative three is an integer."
+      }
+    ],
+    "relatedSymbols": [
+      "natural-numbers",
+      "rationals",
+      "divides"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "rationals",
+    "symbol": "ℚ",
+    "latex": "\\mathbb{Q}",
+    "name": "Rational numbers",
+    "aliases": [
+      "rational numbers",
+      "Q blackboard",
+      "fractions set",
+      "quotients"
+    ],
+    "category": "advanced",
+    "definition": "All ratios of integers with nonzero denominator. Decimals of rationals always terminate or repeat; anything else is irrational.",
+    "reading": "“Q”.",
+    "examples": [
+      {
+        "tex": "\\frac{2}{3} \\in \\mathbb{Q}",
+        "explanation": "Two thirds is rational."
+      }
+    ],
+    "relatedSymbols": [
+      "integers",
+      "real-numbers",
+      "fraction"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "real-numbers",
+    "symbol": "ℝ",
+    "latex": "\\mathbb{R}",
+    "name": "Real numbers",
+    "aliases": [
+      "real numbers",
+      "R blackboard",
+      "real line",
+      "continuum",
+      "irrationals"
+    ],
+    "category": "advanced",
+    "definition": "All rationals plus irrationals: every point on the number line. The reals are complete, meaning limits of convergent sequences stay inside.",
+    "reading": "“R” or “the reals”.",
+    "examples": [
+      {
+        "tex": "\\sqrt{2} \\in \\mathbb{R}",
+        "explanation": "Root two is real but not rational."
+      }
+    ],
+    "relatedSymbols": [
+      "rationals",
+      "complex-numbers",
+      "forall",
+      "supremum"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "complex-numbers",
+    "symbol": "ℂ",
+    "latex": "\\mathbb{C}",
+    "name": "Complex numbers",
+    "aliases": [
+      "complex numbers",
+      "C blackboard",
+      "complex plane",
+      "a plus bi"
+    ],
+    "category": "advanced",
+    "definition": "Numbers a + bi with real a, b and i² = −1. Every nonzero complex number has a magnitude and an angle; every polynomial equation has a complex root (fundamental theorem of algebra).",
+    "reading": "“C” or “the complex numbers”.",
+    "examples": [
+      {
+        "tex": "z = 3 + 4i",
+        "explanation": "Real part 3, imaginary part 4."
+      }
+    ],
+    "relatedSymbols": [
+      "imaginary-unit",
+      "conjugate",
+      "modulus-complex",
+      "real-numbers"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "imaginary-unit",
+    "symbol": "i",
+    "latex": "i",
+    "name": "Imaginary unit",
+    "aliases": [
+      "imaginary unit",
+      "i",
+      "sqrt minus one",
+      "j engineering"
+    ],
+    "category": "advanced",
+    "definition": "The number with i² = −1, extending the reals to the complex plane. Engineers often write j instead, since i means current.",
+    "reading": "“i”.",
+    "examples": [
+      {
+        "tex": "i^2 = -1,\\quad i^4 = 1",
+        "explanation": "Powers of i cycle every four."
+      }
+    ],
+    "relatedSymbols": [
+      "complex-numbers",
+      "euler-identity",
+      "square-root"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "conjugate",
+    "symbol": "z̄",
+    "latex": "\\bar{z}",
+    "name": "Complex conjugate",
+    "aliases": [
+      "conjugate",
+      "z bar",
+      "complex conjugate",
+      "mirror real axis"
+    ],
+    "category": "advanced",
+    "definition": "Reflects a complex number across the real axis by negating its imaginary part. A number times its conjugate gives its squared magnitude.",
+    "reading": "“z bar”.",
+    "examples": [
+      {
+        "tex": "\\overline{3 + 4i} = 3 - 4i",
+        "explanation": "Flip the sign of the imaginary part."
+      }
+    ],
+    "relatedSymbols": [
+      "complex-numbers",
+      "modulus-complex",
+      "imaginary-unit"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "real-imag-parts",
+    "symbol": "Re(z) Im(z)",
+    "latex": "\\operatorname{Re}(z), \\operatorname{Im}(z)",
+    "name": "Real and imaginary parts",
+    "aliases": [
+      "real part",
+      "imaginary part",
+      "Re z",
+      "Im z",
+      "Argand components"
+    ],
+    "category": "advanced",
+    "definition": "Extract the components of z = a + bi: Re(z) = a and Im(z) = b. Note Im(z) is the real number b, not bi.",
+    "reading": "“the real part of z” and “the imaginary part of z”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{Re}(3 + 4i) = 3,\\; \\operatorname{Im}(3 + 4i) = 4",
+        "explanation": "Components of 3 + 4i."
+      }
+    ],
+    "commonMistakes": [
+      "Writing Im(3+4i) = 4i; the imaginary part is the real coefficient 4."
+    ],
+    "relatedSymbols": [
+      "complex-numbers",
+      "conjugate",
+      "imaginary-unit"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "modulus-complex",
+    "symbol": "|z|",
+    "latex": "|z|",
+    "name": "Complex modulus",
+    "aliases": [
+      "modulus",
+      "absolute complex",
+      "magnitude complex",
+      "norm complex"
+    ],
+    "category": "advanced",
+    "definition": "The distance of z from the origin: |a + bi| = √(a² + b²). It generalizes absolute value to the complex plane and equals √(z·z̄).",
+    "reading": "“the modulus of z”.",
+    "examples": [
+      {
+        "tex": "|3 + 4i| = 5",
+        "explanation": "A 3-4-5 triangle from the origin."
+      }
+    ],
+    "relatedSymbols": [
+      "absolute-value",
+      "conjugate",
+      "complex-numbers",
+      "square-root"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "euler-identity",
+    "symbol": "e^(iπ) + 1 = 0",
+    "latex": "e^{i\\pi} + 1 = 0",
+    "name": "Euler's identity",
+    "aliases": [
+      "euler identity",
+      "e i pi",
+      "most beautiful equation"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig",
+      "calculus"
+    ],
+    "definition": "Links five fundamental constants in one equation. It is the special case x = π of Euler's formula e^(ix) = cos x + i·sin x.",
+    "reading": "“e to the i pi plus one equals zero”.",
+    "examples": [
+      {
+        "tex": "e^{ix} = \\cos x + i\\sin x",
+        "explanation": "Euler's formula: rotation in the complex plane."
+      }
+    ],
+    "relatedSymbols": [
+      "euler-number",
+      "imaginary-unit",
+      "pi-constant",
+      "sine",
+      "cosine"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 4",
+        "url": "https://dlmf.nist.gov/4",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "gamma-function",
+    "symbol": "Γ(n)",
+    "latex": "\\Gamma(n)",
+    "name": "Gamma function",
+    "aliases": [
+      "gamma function",
+      "Gamma",
+      "factorial extension",
+      "generalized factorial"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Extends the factorial to non-integers: Γ(n) = (n−1)! for positive integers, defined by an integral elsewhere. It appears in probability distributions and volume formulas.",
+    "reading": "“Gamma of n”.",
+    "examples": [
+      {
+        "tex": "\\Gamma(5) = 4! = 24",
+        "explanation": "At integers it recovers the factorial, shifted by one."
+      }
+    ],
+    "relatedSymbols": [
+      "factorial",
+      "gamma-letter",
+      "beta-function",
+      "integral"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 5",
+        "url": "https://dlmf.nist.gov/5",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "beta-function",
+    "symbol": "B(x, y)",
+    "latex": "B(x, y)",
+    "name": "Beta function",
+    "aliases": [
+      "beta function",
+      "B x y",
+      "euler integral first kind"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "A two-argument special function closely tied to gamma: B(x,y) = Γ(x)Γ(y)/Γ(x+y). It normalizes the beta distribution in probability.",
+    "reading": "“Beta of x y”.",
+    "examples": [
+      {
+        "tex": "B(x, y) = \\frac{\\Gamma(x)\\Gamma(y)}{\\Gamma(x + y)}",
+        "explanation": "Beta expressed through gamma."
+      }
+    ],
+    "relatedSymbols": [
+      "gamma-function",
+      "beta",
+      "gamma-letter"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 5",
+        "url": "https://dlmf.nist.gov/5",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "zeta-function",
+    "symbol": "ζ(s)",
+    "latex": "\\zeta(s)",
+    "name": "Riemann zeta function",
+    "aliases": [
+      "zeta function",
+      "riemann zeta",
+      "zeta s",
+      "prime distribution"
+    ],
+    "category": "advanced",
+    "definition": "Sums 1/nˢ over all positive integers. Its values at even integers involve powers of π; its zeros encode the distribution of primes, including the unproven Riemann hypothesis.",
+    "reading": "“zeta of s”.",
+    "examples": [
+      {
+        "tex": "\\zeta(2) = \\frac{\\pi^2}{6}",
+        "explanation": "The Basel problem: reciprocals of squares sum to π²/6."
+      }
+    ],
+    "relatedSymbols": [
+      "zeta",
+      "pi-constant",
+      "infinity"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 25",
+        "url": "https://dlmf.nist.gov/25",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "error-function",
+    "symbol": "erf(x)",
+    "latex": "\\operatorname{erf}(x)",
+    "name": "Error function",
+    "aliases": [
+      "error function",
+      "erf",
+      "gaussian integral",
+      "normal cdf"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "probability",
+      "calculus"
+    ],
+    "definition": "Captures areas under the bell curve: erf(x) is twice the normal area from 0 to x. Normal probabilities are arithmetic with erf.",
+    "reading": "“erf of x”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{erf}(x) = \\frac{2}{\\sqrt{\\pi}}\\int_0^x e^{-t^2}\\,dt",
+        "explanation": "Scaled area under the Gaussian bell."
+      }
+    ],
+    "relatedSymbols": [
+      "normal-distribution",
+      "integral",
+      "euler-number"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 7",
+        "url": "https://dlmf.nist.gov/7",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "bessel-function",
+    "symbol": "J_n(x)",
+    "latex": "J_n(x)",
+    "name": "Bessel function",
+    "aliases": [
+      "bessel",
+      "J n x",
+      "cylindrical functions",
+      "vibrating membrane"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Oscillating special functions solving radial wave problems: vibrations of drums, heat in cylinders, signal modes. J_n is the Bessel function of the first kind of order n.",
+    "reading": "“Bessel J sub n of x”.",
+    "examples": [
+      {
+        "tex": "J_0(0) = 1",
+        "explanation": "The zero-order Bessel function starts at 1 like cosine."
+      }
+    ],
+    "relatedSymbols": [
+      "sine",
+      "cosine",
+      "differential"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 10",
+        "url": "https://dlmf.nist.gov/10",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "group-notation",
+    "symbol": "(G, ·)",
+    "latex": "(G, \\cdot)",
+    "name": "Group",
+    "aliases": [
+      "group",
+      "abstract algebra group",
+      "group operation",
+      "subgroup",
+      "abelian group"
+    ],
+    "category": "advanced",
+    "definition": "A set G with one operation satisfying closure, associativity, an identity element and inverses. Groups capture symmetry: rotations, permutations and number systems all form groups.",
+    "reading": "“the group G under dot”.",
+    "examples": [
+      {
+        "tex": "(\\mathbb{Z}, +)",
+        "explanation": "Integers under addition: identity 0, inverse −n."
+      }
+    ],
+    "relatedSymbols": [
+      "integers",
+      "isomorphism",
+      "function-notation",
+      "mapping-arrow"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "isomorphism",
+    "symbol": "≅",
+    "latex": "\\cong",
+    "name": "Isomorphism",
+    "aliases": [
+      "isomorphism",
+      "structurally identical",
+      "homomorphism bijective",
+      "quotient structure",
+      "equivalence class"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "logic-sets"
+    ],
+    "definition": "A structure-preserving correspondence between two objects: a bijection carrying the operations across. Isomorphic objects are algebraically the same, differing only in labels.",
+    "reading": "“G is isomorphic to H”.",
+    "examples": [
+      {
+        "tex": "(\\mathbb{R}, +) \\cong (\\mathbb{R}_{>0}, \\times)",
+        "explanation": "The exponential maps addition to multiplication bijectively."
+      }
+    ],
+    "relatedSymbols": [
+      "congruent",
+      "group-notation",
+      "equivalent-iff",
+      "exponential-exp"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ],
+    "notes": "Shares the ≅ glyph with geometric congruence; the algebraic reading is set by context."
+  },
+  {
+    "id": "congruence-mod",
+    "symbol": "a ≡ b (mod n)",
+    "latex": "a \\equiv b \\pmod{n}",
+    "name": "Modular congruence",
+    "aliases": [
+      "congruence modulo",
+      "mod n equivalence",
+      "clock congruence",
+      "residue class"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "States that a and b leave the same remainder on division by n, equivalently n divides their difference. Congruence classes partition the integers into n residue systems.",
+    "reading": "“a is congruent to b mod n”.",
+    "examples": [
+      {
+        "tex": "17 \\equiv 5 \\pmod{12}",
+        "explanation": "Both leave remainder 5; their difference 12 is a multiple of 12."
+      }
+    ],
+    "relatedSymbols": [
+      "identical-to",
+      "mod-arithmetic",
+      "divides",
+      "gcd"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 27",
+        "url": "https://dlmf.nist.gov/27",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "gcd",
+    "symbol": "gcd(a, b)",
+    "latex": "\\gcd(a, b)",
+    "name": "Greatest common divisor",
+    "aliases": [
+      "gcd",
+      "greatest common divisor",
+      "greatest common factor",
+      "gcf",
+      "hcf",
+      "euclid"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete",
+      "arithmetic"
+    ],
+    "definition": "The largest integer dividing both a and b. Euclid's algorithm computes it with repeated remainders; it underlies fraction reduction and modular inverses.",
+    "reading": "“the g c d of a and b”.",
+    "examples": [
+      {
+        "tex": "\\gcd(12, 18) = 6",
+        "explanation": "Six is the largest shared divisor."
+      }
+    ],
+    "relatedSymbols": [
+      "lcm",
+      "divides",
+      "congruence-mod",
+      "fraction"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "lcm",
+    "symbol": "lcm(a, b)",
+    "latex": "\\operatorname{lcm}(a, b)",
+    "name": "Least common multiple",
+    "aliases": [
+      "lcm",
+      "least common multiple",
+      "lowest common multiple",
+      "common denominator"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "arithmetic"
+    ],
+    "definition": "The smallest positive integer that is a multiple of both a and b. It gives the least common denominator for adding fractions, and satisfies gcd(a,b)·lcm(a,b) = a·b.",
+    "reading": "“the l c m of a and b”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{lcm}(4, 6) = 12",
+        "explanation": "Twelve is the first shared multiple."
+      }
+    ],
+    "relatedSymbols": [
+      "gcd",
+      "fraction",
+      "divides"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "totient",
+    "symbol": "φ(n)",
+    "latex": "\\varphi(n)",
+    "name": "Euler's totient function",
+    "aliases": [
+      "totient",
+      "phi function",
+      "euler phi",
+      "coprime count",
+      "phi n"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "Counts integers from 1 to n that share no factor with n. It powers RSA cryptography via Euler's theorem: a^φ(n) ≡ 1 mod n for a coprime to n.",
+    "reading": "“phi of n” or “totient of n”.",
+    "examples": [
+      {
+        "tex": "\\varphi(9) = 6",
+        "explanation": "1, 2, 4, 5, 7, 8 are coprime to 9."
+      }
+    ],
+    "relatedSymbols": [
+      "phi",
+      "gcd",
+      "congruence-mod"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 27",
+        "url": "https://dlmf.nist.gov/27",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "tensor-product",
+    "symbol": "⊗",
+    "latex": "\\otimes",
+    "name": "Tensor product",
+    "aliases": [
+      "tensor product",
+      "otimes",
+      "kronecker product",
+      "outer product spaces"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "Builds a larger vector space from two smaller ones, with dimension multiplied. It combines quantum states, extends scalars, and writes the Kronecker product of matrices.",
+    "reading": "“V tensor W”.",
+    "examples": [
+      {
+        "tex": "\\dim(V \\otimes W) = \\dim V \\cdot \\dim W",
+        "explanation": "Dimensions multiply under the tensor product."
+      }
+    ],
+    "relatedSymbols": [
+      "vector-notation",
+      "matrix-notation",
+      "cross-product"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "direct-sum-xor",
+    "symbol": "⊕",
+    "latex": "\\oplus",
+    "name": "Direct sum (exclusive or)",
+    "aliases": [
+      "direct sum",
+      "oplus",
+      "xor",
+      "exclusive or",
+      "circled plus"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete",
+      "logic-sets"
+    ],
+    "definition": "In algebra, the direct sum combines structures component-wise. In logic and computing, the same glyph means exclusive or: exactly one side true.",
+    "reading": "“direct sum” or “xor”.",
+    "examples": [
+      {
+        "tex": "\\mathbb{R}^2 \\oplus \\mathbb{R}^3 \\cong \\mathbb{R}^5",
+        "explanation": "Dimensions add under direct sum."
+      },
+      {
+        "tex": "P \\oplus Q",
+        "explanation": "Exactly one of P, Q holds."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Algebra",
+        "meaning": "Component-wise combination of structures."
+      },
+      {
+        "context": "Logic",
+        "meaning": "Exclusive or."
+      }
+    ],
+    "relatedSymbols": [
+      "plus",
+      "disjunction",
+      "vector-notation"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "argmin-argmax",
+    "symbol": "arg min",
+    "latex": "\\operatorname{argmin}",
+    "name": "Arg min and arg max",
+    "aliases": [
+      "argmin",
+      "argmax",
+      "arg min",
+      "arg max",
+      "minimizer",
+      "maximizer",
+      "optimizer"
+    ],
+    "category": "advanced",
+    "definition": "Name where a minimum or maximum occurs, rather than its value. argmin f is the input achieving the smallest output; argmax the largest.",
+    "reading": "“arg min of f”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{argmin}_x (x - 3)^2 = 3",
+        "explanation": "The square is smallest at x = 3."
+      }
+    ],
+    "relatedSymbols": [
+      "supremum",
+      "infimum",
+      "function-notation"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "fourier-transform",
+    "symbol": "ℱ",
+    "latex": "\\mathcal{F}",
+    "name": "Fourier transform",
+    "aliases": [
+      "fourier transform",
+      "F transform",
+      "frequency domain",
+      "spectrum analysis",
+      "DFT FFT"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Decomposes a signal into its frequencies: the transform at each frequency measures how much of that oscillation the signal contains. It turns differentiation into multiplication and convolution into products.",
+    "reading": "“the Fourier transform of f”.",
+    "examples": [
+      {
+        "tex": "\\mathcal{F}\\{f\\}(\\xi) = \\int_{-\\infty}^{\\infty} f(x) e^{-2\\pi i x \\xi}\\,dx",
+        "explanation": "Correlate f against every oscillation frequency."
+      }
+    ],
+    "relatedSymbols": [
+      "integral",
+      "euler-identity",
+      "laplace-transform",
+      "infinity"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions",
+        "url": "https://dlmf.nist.gov/",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "laplace-transform",
+    "symbol": "ℒ",
+    "latex": "\\mathcal{L}",
+    "name": "Laplace transform",
+    "aliases": [
+      "laplace transform",
+      "L transform",
+      "s domain",
+      "transfer function",
+      "ODE transform"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Converts differential equations into algebra by mapping functions of time to functions of a complex frequency s. Derivatives become multiplication by s, so circuits and controls solve with fractions.",
+    "reading": "“the Laplace transform of f”.",
+    "examples": [
+      {
+        "tex": "\\mathcal{L}\\{f'\\}(s) = sF(s) - f(0)",
+        "explanation": "Differentiation becomes multiplication by s."
+      }
+    ],
+    "relatedSymbols": [
+      "fourier-transform",
+      "integral",
+      "derivative-leibniz",
+      "exponential-exp"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions",
+        "url": "https://dlmf.nist.gov/",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "big-o-notation",
+    "symbol": "O(n²)",
+    "latex": "O(n^2)",
+    "name": "Big-O notation",
+    "aliases": [
+      "big O",
+      "big-O",
+      "order of growth",
+      "complexity",
+      "asymptotic bound",
+      "omicron order"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete",
+      "calculus"
+    ],
+    "definition": "Bounds growth from above up to a constant factor: f is O(g) when |f| ≤ C·g eventually. It classifies algorithms (linear, quadratic, exponential) while ignoring hardware constants.",
+    "reading": "“big O of n-squared”.",
+    "examples": [
+      {
+        "tex": "3n^2 + 5n = O(n^2)",
+        "explanation": "Quadratic term dominates; constants and lower terms drop."
+      }
+    ],
+    "relatedSymbols": [
+      "omicron",
+      "asymptotic",
+      "limit",
+      "infinity"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ],
+    "notes": "Uses the Latin letter O, not omicron, by convention."
+  },
+  {
+    "id": "big-theta",
+    "symbol": "Θ(n²)",
+    "latex": "\\Theta(n^2)",
+    "name": "Big-Theta notation",
+    "aliases": [
+      "big theta",
+      "theta notation",
+      "tight bound",
+      "asymptotically tight",
+      "theta complexity"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "Bounds growth tightly from both sides: f is Θ(g) when squeezed between constant multiples of g eventually. It states the true order of growth, unlike the one-sided O or Ω.",
+    "reading": "“big Theta of n-squared”.",
+    "examples": [
+      {
+        "tex": "3n^2 + 5n = \\Theta(n^2)",
+        "explanation": "Sandwiched between 3n² and 4n² for large n: bounded above and below."
+      }
+    ],
+    "relatedSymbols": [
+      "big-o-notation",
+      "big-omega",
+      "asymptotic",
+      "theta"
+    ],
+    "sources": [
+      {
+        "label": "NIST Dictionary of Algorithms and Data Structures, Theta",
+        "url": "https://xlinux.nist.gov/dads/HTML/theta.html",
+        "license": "NIST DADS (U.S. federal reference); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "big-omega",
+    "symbol": "Ω(n)",
+    "latex": "\\Omega(n)",
+    "name": "Big-Omega notation",
+    "aliases": [
+      "big omega",
+      "omega notation",
+      "lower bound",
+      "asymptotic lower bound",
+      "omega complexity"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "Bounds growth from below: f is Ω(g) when it stays above some constant multiple of g from some point on. The DADS definition requires this for all large n, which is stronger than some textbooks' infinitely-often version.",
+    "reading": "“big Omega of n”.",
+    "examples": [
+      {
+        "tex": "n^2 = \\Omega(n)",
+        "explanation": "n² stays above 1·n from n = 1 onward."
+      }
+    ],
+    "relatedSymbols": [
+      "big-o-notation",
+      "big-theta",
+      "asymptotic",
+      "omega"
+    ],
+    "sources": [
+      {
+        "label": "NIST Dictionary of Algorithms and Data Structures, Omega",
+        "url": "https://xlinux.nist.gov/dads/HTML/omegaCapital.html",
+        "license": "NIST DADS (U.S. federal reference); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "euler-mascheroni",
+    "symbol": "γ",
+    "latex": "\\gamma",
+    "name": "Euler–Mascheroni constant",
+    "aliases": [
+      "euler mascheroni",
+      "gamma constant",
+      "0.57721",
+      "harmonic log difference",
+      "euler constant"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "The limiting gap between harmonic growth and the logarithm: γ = lim(Hₙ − ln n) ≈ 0.57721, where Hₙ = 1 + 1/2 + … + 1/n. It appears in series evaluations, zeta values and number theory.",
+    "reading": "“Euler's gamma”.",
+    "examples": [
+      {
+        "tex": "\\gamma = \\lim_{n \\to \\infty} (H_n - \\ln n) \\approx 0.57721",
+        "explanation": "Harmonic sums outrun the logarithm by this constant amount."
+      }
+    ],
+    "relatedSymbols": [
+      "gamma-letter",
+      "zeta-function",
+      "limit",
+      "euler-number"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 5",
+        "url": "https://dlmf.nist.gov/5.2",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "prime-counting",
+    "symbol": "π(x)",
+    "latex": "\\pi(x)",
+    "name": "Prime-counting function",
+    "aliases": [
+      "prime counting",
+      "pi of x primes",
+      "prime number theorem",
+      "PNT",
+      "how many primes"
+    ],
+    "category": "advanced",
+    "definition": "Counts the primes up to x: π(x) = Σ_{p≤x} 1. The prime number theorem says π(x) ~ x/ln x: primes thin out logarithmically, with the ratio tending to 1.",
+    "reading": "“pi of x”.",
+    "examples": [
+      {
+        "tex": "\\pi(10) = 4",
+        "explanation": "The primes 2, 3, 5 and 7 do not exceed 10."
+      }
+    ],
+    "relatedSymbols": [
+      "pi-letter",
+      "asymptotic",
+      "divides",
+      "infinity"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 27",
+        "url": "https://dlmf.nist.gov/27.2",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "mobius-function",
+    "symbol": "μ(n)",
+    "latex": "\\mu(n)",
+    "name": "Möbius function",
+    "aliases": [
+      "mobius",
+      "mu function",
+      "mobius inversion",
+      "squarefree indicator",
+      "moebius"
+    ],
+    "category": "advanced",
+    "definition": "Encodes square factors: μ(n) = (−1)ᵏ for a product of k distinct primes, 0 when any square divides n, and μ(1) = 1. It inverts sums over divisors (Möbius inversion).",
+    "reading": "“mu of n”.",
+    "examples": [
+      {
+        "tex": "\\mu(30) = -1",
+        "explanation": "30 = 2·3·5 has three distinct prime factors: (−1)³."
+      },
+      {
+        "tex": "\\mu(12) = 0",
+        "explanation": "12 = 2²·3 has the squared divisor 4."
+      }
+    ],
+    "relatedSymbols": [
+      "mu",
+      "divides",
+      "totient",
+      "congruence-mod"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 27",
+        "url": "https://dlmf.nist.gov/27.2",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "prime-number",
+    "symbol": "p",
+    "latex": "p",
+    "name": "Prime number",
+    "aliases": [
+      "prime",
+      "prime number",
+      "composite",
+      "primality",
+      "fundamental theorem of arithmetic",
+      "prime factorization"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "arithmetic"
+    ],
+    "definition": "An integer above 1 divisible only by 1 and itself. Every integer above 1 factors uniquely into primes (the fundamental theorem of arithmetic), and there are infinitely many of them.",
+    "reading": "“p is prime”.",
+    "examples": [
+      {
+        "tex": "12 = 2^2 \\cdot 3",
+        "explanation": "Twelve's unique prime factorization: two squared times three."
+      }
+    ],
+    "relatedSymbols": [
+      "divides",
+      "gcd",
+      "prime-counting",
+      "congruence-mod",
+      "factorial"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 27",
+        "url": "https://dlmf.nist.gov/27.2",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "holomorphic-function",
+    "symbol": "f′(z₀)",
+    "latex": "f'(z_0)",
+    "name": "Holomorphic function",
+    "aliases": [
+      "holomorphic",
+      "analytic function",
+      "complex differentiable",
+      "cauchy-riemann",
+      "entire function"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "A complex function differentiable at every point of an open set — far stronger than real differentiability. Holomorphic functions are automatically infinitely differentiable and equal their Taylor series; entire means holomorphic everywhere.",
+    "reading": "“holomorphic”.",
+    "examples": [
+      {
+        "tex": "f(z) = z^2,\\; f'(z) = 2z",
+        "explanation": "Differentiable at every complex point, hence holomorphic on the whole plane."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Terminology",
+        "meaning": "Holomorphic and analytic coincide for complex functions (unlike smooth-but-not-analytic real cases)."
+      }
+    ],
+    "relatedSymbols": [
+      "complex-numbers",
+      "derivative-lagrange",
+      "taylor-series",
+      "contour-integral"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ],
+    "notes": "Standard first-course complex-analysis definition; cross-checked against the Cauchy framing used across references."
+  },
+  {
+    "id": "topological-space",
+    "symbol": "(X, T)",
+    "latex": "(X, \\mathcal{T})",
+    "name": "Topological space",
+    "aliases": [
+      "topological space",
+      "topology",
+      "open sets axioms",
+      "discrete topology",
+      "indiscrete topology",
+      "trivial topology"
+    ],
+    "category": "advanced",
+    "definition": "A set X with a collection T of subsets called open sets, satisfying: ∅ and X are open, arbitrary unions of opens are open, finite intersections are open. This generalizes distance-based geometry to spaces with no metric.",
+    "reading": "“the topological space X”.",
+    "examples": [
+      {
+        "tex": "\\mathcal{T} = \\{\\emptyset, \\{a\\}, \\{a, b\\}\\}",
+        "explanation": "A valid topology on X = {a, b}: unions and finite intersections stay inside."
+      }
+    ],
+    "relatedSymbols": [
+      "empty-set",
+      "union",
+      "intersection",
+      "metric-space",
+      "interval"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Introduction to Topological Spaces",
+        "url": "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces",
+        "license": "Public Domain (page footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "compact-set",
+    "symbol": "compact",
+    "latex": "\\text{compact}",
+    "name": "Compactness",
+    "aliases": [
+      "compact",
+      "compact set",
+      "heine-borel",
+      "finite subcover",
+      "sequentially compact"
+    ],
+    "category": "advanced",
+    "definition": "Every open cover has a finite subcover: the set is, in a precise sense, finitely large. In ℝⁿ this is exactly closed and bounded (Heine–Borel); continuous images of compact sets stay compact, so extrema are attained.",
+    "reading": "“compact”.",
+    "examples": [
+      {
+        "tex": "[0, 1] \\text{ compact},\\; (0, 1) \\text{ not}",
+        "explanation": "The closed interval qualifies; the open one fails closedness (and its cover by (1/n, 1) has no finite subcover)."
+      }
+    ],
+    "relatedSymbols": [
+      "interval",
+      "topological-space",
+      "infinity",
+      "supremum"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Introduction to Topological Spaces",
+        "url": "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces",
+        "license": "Public Domain (page footer); consulted, original wording"
+      }
+    ],
+    "notes": "Heine–Borel and finite-subcover formulations cross-checked against UChicago May REU topology notes excerpts."
+  },
+  {
+    "id": "connected-set",
+    "symbol": "connected",
+    "latex": "\\text{connected}",
+    "name": "Connectedness",
+    "aliases": [
+      "connected",
+      "connected set",
+      "disconnected",
+      "path connected",
+      "separation",
+      "clopen"
+    ],
+    "category": "advanced",
+    "definition": "A space that cannot be split into two disjoint nonempty open pieces: it is all one piece. Path-connected (joinable by paths) implies connected; intervals are the connected subsets of ℝ.",
+    "reading": "“connected”.",
+    "examples": [
+      {
+        "tex": "(0, 1) \\cup (2, 3) \\text{ disconnected}",
+        "explanation": "Two separated open parts witness the split; neither piece alone disconnects."
+      }
+    ],
+    "relatedSymbols": [
+      "interval",
+      "topological-space",
+      "compact-set",
+      "real-numbers"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Introduction to Topological Spaces",
+        "url": "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces",
+        "license": "Public Domain (page footer); consulted, original wording"
+      }
+    ],
+    "notes": "Separation-based definition cross-checked against UChicago May REU topology notes excerpts."
+  },
+  {
+    "id": "homeomorphism",
+    "symbol": "≅ (spaces)",
+    "latex": "\\cong",
+    "name": "Homeomorphism",
+    "aliases": [
+      "homeomorphism",
+      "topological equivalence",
+      "homeomorphic",
+      "rubber sheet",
+      "bicontinuous bijection"
+    ],
+    "category": "advanced",
+    "definition": "A continuous bijection with continuous inverse: the two spaces are topologically the same, differing only by stretching. Properties surviving homeomorphism (compactness, connectedness) are the topological invariants.",
+    "reading": "“homeomorphic”.",
+    "examples": [
+      {
+        "tex": "(0, 1) \\cong \\mathbb{R}",
+        "explanation": "x ↦ tan(π(x − 1/2)) stretches the bounded interval onto the whole line, reversibly."
+      }
+    ],
+    "relatedSymbols": [
+      "isomorphism",
+      "congruent",
+      "topological-space",
+      "function-notation"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Introduction to Topological Spaces",
+        "url": "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces",
+        "license": "Public Domain (page footer); consulted, original wording"
+      }
+    ],
+    "notes": "Continuous-bijection-with-continuous-inverse formulation cross-checked against UChicago May REU topology notes excerpts. Shares ≅ with geometric congruence and algebraic isomorphism; context decides."
+  },
+  {
+    "id": "manifold",
+    "symbol": "Mⁿ",
+    "latex": "M^n",
+    "name": "Manifold",
+    "aliases": [
+      "manifold",
+      "n-manifold",
+      "locally euclidean",
+      "surface",
+      "atlas charts",
+      "differentiable manifold"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig"
+    ],
+    "definition": "A space that locally looks like ordinary Euclidean space: every point has a neighborhood resembling an open piece of ℝⁿ. Curves, surfaces, and spacetime models are 1-, 2- and 4-manifolds.",
+    "reading": "“manifold”.",
+    "examples": [
+      {
+        "tex": "S^1",
+        "explanation": "The circle: removing any point leaves something shaped like an open interval, so it is locally one-dimensional."
+      }
+    ],
+    "relatedSymbols": [
+      "topological-space",
+      "circle-equation",
+      "homeomorphism",
+      "triangle"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Introduction to Topological Spaces",
+        "url": "https://math.libretexts.org/Workbench/Topology%3A_A_First_Course/01%3A_Introduction_to_Topological_Spaces/1.01%3A_Introduction_to_Topological_Spaces",
+        "license": "Public Domain (page footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "ring",
+    "symbol": "(R, +, ×)",
+    "latex": "(R, +, \\times)",
+    "name": "Ring",
+    "aliases": [
+      "ring",
+      "commutative ring",
+      "ring theory",
+      "subring",
+      "ring with identity"
+    ],
+    "category": "advanced",
+    "definition": "A set with addition (an abelian group) and a compatible multiplication: associative, distributive over addition. Commutative rings, like the integers, also commute multiplicatively.",
+    "reading": "“the ring R”.",
+    "examples": [
+      {
+        "tex": "(\\mathbb{Z}, +, \\times)",
+        "explanation": "The integers: addition and multiplication satisfy every ring axiom."
+      }
+    ],
+    "relatedSymbols": [
+      "integers",
+      "group-notation",
+      "field-algebra",
+      "homomorphism"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "field-algebra",
+    "symbol": "𝔽",
+    "latex": "\\mathbb{F}",
+    "name": "Field",
+    "aliases": [
+      "field",
+      "number field",
+      "finite field",
+      "field axioms",
+      "ordered field",
+      "field extension"
+    ],
+    "category": "advanced",
+    "definition": "A commutative ring where every nonzero element has a multiplicative inverse: division (except by zero) always works. Rationals, reals and complex numbers are fields; integers are not.",
+    "reading": "“the field F”.",
+    "examples": [
+      {
+        "tex": "\\mathbb{Q}",
+        "explanation": "The rationals form a field; 2 has no integer inverse, so ℤ does not."
+      }
+    ],
+    "relatedSymbols": [
+      "rationals",
+      "real-numbers",
+      "complex-numbers",
+      "ring",
+      "group-notation"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "homomorphism",
+    "symbol": "φ(ab) = φ(a)φ(b)",
+    "latex": "\\varphi(ab) = \\varphi(a)\\varphi(b)",
+    "name": "Homomorphism",
+    "aliases": [
+      "homomorphism",
+      "structure preserving map",
+      "group hom",
+      "kernel image",
+      "endomorphism",
+      "automorphism"
+    ],
+    "category": "advanced",
+    "definition": "A map between same-type structures that preserves the operations: the image of a product is the product of the images. Its kernel (elements sent to the identity) measures how far it is from an isomorphism.",
+    "reading": "“homomorphism”.",
+    "examples": [
+      {
+        "tex": "\\varphi(a + b) = \\varphi(a) + \\varphi(b) \\pmod{2}",
+        "explanation": "Parity mod 2: adding integers then reducing matches reducing then adding."
+      }
+    ],
+    "relatedSymbols": [
+      "isomorphism",
+      "group-notation",
+      "function-notation",
+      "null-space-kernel"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "diophantine-equation",
+    "symbol": "x² + y² = z²",
+    "latex": "x^2 + y^2 = z^2",
+    "name": "Diophantine equation",
+    "aliases": [
+      "diophantine",
+      "integer solutions",
+      "diophantus",
+      "pythagorean triple",
+      "exponential diophantine"
+    ],
+    "category": "advanced",
+    "definition": "A polynomial equation whose solutions are sought in integers (or rationals). Some have infinitely many solutions, some none — deciding which drove centuries of number theory, including Fermat's Last Theorem.",
+    "reading": "“Diophantine equation”.",
+    "examples": [
+      {
+        "tex": "3^2 + 4^2 = 5^2",
+        "explanation": "The smallest Pythagorean triple: (3, 4, 5) solves x² + y² = z² in integers."
+      }
+    ],
+    "relatedSymbols": [
+      "integers",
+      "pythagorean-theorem",
+      "fermats-last-theorem",
+      "congruence-mod"
+    ],
+    "sources": [
+      {
+        "label": "MacTutor, Fermat's last theorem",
+        "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Fermat's_last_theorem/",
+        "license": "© University of St Andrews (MacTutor); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "shannon-entropy",
+    "symbol": "H",
+    "latex": "H",
+    "name": "Shannon entropy",
+    "aliases": [
+      "entropy",
+      "shannon entropy",
+      "information entropy",
+      "bits of uncertainty",
+      "H(X)"
+    ],
+    "category": "probability",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "Measures uncertainty in bits: H = −Σ p·log₂ p over the outcomes. A fair coin has entropy 1 (one yes/no question resolves it); certain outcomes carry zero entropy.",
+    "reading": "“entropy”.",
+    "examples": [
+      {
+        "tex": "H = -(0.5\\log_2 0.5 + 0.5\\log_2 0.5) = 1",
+        "explanation": "A fair coin flip holds exactly one bit of uncertainty."
+      }
+    ],
+    "relatedSymbols": [
+      "random-variable",
+      "expectation",
+      "probability-of-event",
+      "variance"
+    ],
+    "sources": [
+      {
+        "label": "Scholarpedia, Entropy (Downarowicz)",
+        "url": "https://doi.org/10.4249/scholarpedia.3901",
+        "license": "CC BY-NC-SA 3.0 (page footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "turing-machine",
+    "symbol": "δ",
+    "latex": "\\delta",
+    "name": "Turing machine",
+    "aliases": [
+      "turing machine",
+      "universal machine",
+      "computability",
+      "halting problem",
+      "church-turing",
+      "state transition"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "logic-sets"
+    ],
+    "definition": "An abstract computer: finitely many states plus an infinite tape, stepping by a transition function δ from (state, symbol) to (symbol, move, state). The model defines computability itself via the Church–Turing thesis; the halting problem shows its limits.",
+    "reading": "“Turing machine”.",
+    "examples": [
+      {
+        "tex": "\\delta(q, s)",
+        "explanation": "The transition function: in state q reading s, what to write, where to move, and what state comes next."
+      }
+    ],
+    "relatedSymbols": [
+      "function-notation",
+      "big-o-notation",
+      "exists",
+      "forall"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy, Turing Machines",
+        "url": "https://plato.stanford.edu/entries/turing-machine/",
+        "license": "SEP (open access); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "fundamental-theorem-algebra",
+    "symbol": "n roots",
+    "latex": "\\text{n roots}",
+    "name": "Fundamental theorem of algebra",
+    "aliases": [
+      "fundamental theorem of algebra",
+      "FTA",
+      "n complex roots",
+      "polynomial roots",
+      "gauss theorem"
+    ],
+    "category": "advanced",
+    "definition": "Every non-constant polynomial with complex coefficients has a complex root — hence exactly n roots counting multiplicity for degree n. The complex numbers are algebraically closed: no extension is ever needed.",
+    "reading": "“the fundamental theorem of algebra”.",
+    "examples": [
+      {
+        "tex": "x^2 + 1 = (x - i)(x + i)",
+        "explanation": "Degree two, two complex roots: the reals alone could not factor it."
+      }
+    ],
+    "relatedSymbols": [
+      "complex-numbers",
+      "imaginary-unit",
+      "quadratic-formula",
+      "remainder-factor-theorem"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "fermats-last-theorem",
+    "symbol": "xⁿ + yⁿ = zⁿ",
+    "latex": "x^n + y^n = z^n",
+    "name": "Fermat's Last Theorem",
+    "aliases": [
+      "fermat last theorem",
+      "FLT",
+      "wiles proof",
+      "no integer solutions",
+      "diophantine exponent"
+    ],
+    "category": "advanced",
+    "definition": "xⁿ + yⁿ = zⁿ has no nonzero integer solutions for n > 2. Conjectured by Fermat around 1637 and proved by Wiles (with Taylor) in 1995 via elliptic curves and modularity.",
+    "reading": "“Fermat's Last Theorem”.",
+    "examples": [
+      {
+        "tex": "x^4 + y^4 = z^4",
+        "explanation": "No nonzero integers satisfy even the n = 4 case, which Fermat himself proved."
+      }
+    ],
+    "relatedSymbols": [
+      "diophantine-equation",
+      "integers",
+      "prime-number",
+      "pythagorean-theorem"
+    ],
+    "sources": [
+      {
+        "label": "MacTutor, Fermat's last theorem",
+        "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Fermat's_last_theorem/",
+        "license": "© University of St Andrews (MacTutor); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "riemann-hypothesis",
+    "symbol": "Re(s) = ½",
+    "latex": "\\operatorname{Re}(s) = \\frac{1}{2}",
+    "name": "Riemann hypothesis",
+    "aliases": [
+      "riemann hypothesis",
+      "critical line",
+      "nontrivial zeros",
+      "millennium problem",
+      "zeta zeros"
+    ],
+    "category": "advanced",
+    "definition": "All nontrivial zeros of the Riemann zeta function lie on the critical line Re(s) = 1/2. Unproven since 1859, it would pin down the fine distribution of primes; verified computationally for the first trillions of zeros.",
+    "reading": "“the Riemann hypothesis”.",
+    "examples": [
+      {
+        "tex": "\\zeta\\left(\\frac{1}{2} + 14.13i\\right) = 0",
+        "explanation": "The first zero up the critical line, at height about t = 14.13."
+      }
+    ],
+    "commonMistakes": [
+      "Calling it proven; extensive computation is evidence, not proof."
+    ],
+    "relatedSymbols": [
+      "zeta-function",
+      "prime-counting",
+      "complex-numbers",
+      "infinity"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 25",
+        "url": "https://dlmf.nist.gov/25",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ],
+    "notes": "Zero locations cross-checked against the published zero tables referenced across analytic number theory literature."
+  },
+  {
+    "id": "sigma-algebra",
+    "symbol": "(X, M)",
+    "latex": "(X, \\mathcal{M})",
+    "name": "Sigma-algebra",
+    "aliases": [
+      "sigma-algebra",
+      "sigma-field",
+      "σ-field",
+      "sigma algebra of sets",
+      "measurable sets",
+      "measurable space"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "logic-sets",
+      "probability"
+    ],
+    "definition": "A collection M of subsets of a set X containing X itself and closed under complements and countable unions (hence also countable intersections). Its members are the measurable sets: exactly those a measure is allowed to size.",
+    "reading": "“sigma-algebra”.",
+    "examples": [
+      {
+        "tex": "\\{\\emptyset, \\{1\\}, \\{2\\}, \\{1, 2\\}\\}",
+        "explanation": "The power set of {1, 2}: the largest sigma-algebra on two points."
+      }
+    ],
+    "commonMistakes": [
+      "Settling for closure under finite unions: that gives an algebra of sets, not a sigma-algebra, and measures need the countable case for limits."
+    ],
+    "relatedSymbols": [
+      "power-set",
+      "empty-set",
+      "union",
+      "intersection",
+      "complement",
+      "probability-of-event"
+    ],
+    "sources": [
+      {
+        "label": "PlanetMath, σ-algebra",
+        "url": "https://planetmath.org/sigmaalgebra",
+        "license": "CC BY-SA (PlanetMath); consulted, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "hilbert-space",
+    "symbol": "H",
+    "latex": "H",
+    "name": "Hilbert space",
+    "aliases": [
+      "hilbert space",
+      "complete inner product space",
+      "L2",
+      "L^2",
+      "square integrable functions",
+      "pre-hilbert space",
+      "inner product space"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete",
+      "calculus"
+    ],
+    "definition": "A vector space with an inner product in which every Cauchy sequence converges to a point inside: complete in the induced norm ‖x‖ = √⟨x,x⟩. Finite-dimensional inner-product spaces qualify automatically; square-integrable functions are the canonical infinite-dimensional example.",
+    "reading": "“Hilbert space”.",
+    "examples": [
+      {
+        "tex": "\\mathbb{R}^n",
+        "explanation": "With the dot product: every Cauchy sequence of vectors converges, so completeness is automatic in finite dimensions."
+      }
+    ],
+    "relatedSymbols": [
+      "inner-product",
+      "vector-notation",
+      "cauchy-sequence",
+      "metric-space",
+      "fourier-transform"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Function Spaces (Fowler, UVA)",
+        "url": "https://phys.libretexts.org/Bookshelves/Quantum_Mechanics/Quantum_Mechanics_(Fowler)/02%3A_Some_Essential_Math/2.03%3A_Function_Spaces",
+        "license": "Page license not declared; consulted as reference, original wording, no text reused"
+      }
+    ],
+    "notes": "Completeness formulation cross-checked against UBC metric-completeness notes and a CalPoly Hilbert-space thesis (search excerpts); the entry follows the opened Fowler text."
+  },
+  {
+    "id": "category",
+    "symbol": "C",
+    "latex": "\\mathbf{C}",
+    "name": "Category",
+    "aliases": [
+      "category",
+      "objects and morphisms",
+      "category theory",
+      "concrete category",
+      "small category"
+    ],
+    "category": "advanced",
+    "definition": "Objects together with morphisms between them, equipped with associative composition and an identity morphism per object. Groups, spaces, and vector spaces each form categories with their structure-preserving maps.",
+    "reading": "“category C”.",
+    "examples": [
+      {
+        "tex": "\\mathbf{Grp}",
+        "explanation": "Groups as objects, group homomorphisms as morphisms, composed as functions."
+      }
+    ],
+    "relatedSymbols": [
+      "morphism",
+      "functor",
+      "group-notation",
+      "function-notation",
+      "set-builder"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy, Category Theory",
+        "url": "https://plato.stanford.edu/entries/category-theory/",
+        "license": "SEP (open access); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "morphism",
+    "symbol": "f: X → Y",
+    "latex": "f: X \\to Y",
+    "name": "Morphism",
+    "aliases": [
+      "morphism",
+      "arrow",
+      "map",
+      "domain codomain",
+      "identity morphism",
+      "isomorphism categorical",
+      "monomorphism",
+      "epimorphism"
+    ],
+    "category": "advanced",
+    "definition": "An arrow f: X → Y with a domain and codomain. Morphisms compose when target meets source, associatively, with identities doing nothing. An isomorphism has a two-sided inverse; mono and epi generalize injective and surjective.",
+    "reading": "“f from X to Y”.",
+    "examples": [
+      {
+        "tex": "g \\circ f: X \\to Z",
+        "explanation": "With f: X → Y and g: Y → Z, the composite runs X through both steps."
+      }
+    ],
+    "relatedSymbols": [
+      "category",
+      "functor",
+      "composition",
+      "mapping-arrow",
+      "isomorphism"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy, Category Theory",
+        "url": "https://plato.stanford.edu/entries/category-theory/",
+        "license": "SEP (open access); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "functor",
+    "symbol": "F: C → D",
+    "latex": "F: \\mathbf{C} \\to \\mathbf{D}",
+    "name": "Functor",
+    "aliases": [
+      "functor",
+      "covariant functor",
+      "contravariant functor",
+      "forgetful functor",
+      "free functor",
+      "structure preserving map"
+    ],
+    "category": "advanced",
+    "definition": "A structure-preserving map between categories: objects to objects, morphisms to morphisms, respecting composition and identities. Covariant functors keep arrow direction; contravariant ones reverse it.",
+    "reading": "“functor F”.",
+    "examples": [
+      {
+        "tex": "U: \\mathbf{Grp} \\to \\mathbf{Set}",
+        "explanation": "The forgetful functor keeps each group's underlying set and sends homomorphisms to plain functions."
+      }
+    ],
+    "relatedSymbols": [
+      "category",
+      "morphism",
+      "natural-transformation",
+      "composition",
+      "function-notation"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy, Category Theory",
+        "url": "https://plato.stanford.edu/entries/category-theory/",
+        "license": "SEP (open access); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "natural-transformation",
+    "symbol": "η: F ⇒ G",
+    "latex": "\\eta: F \\Rightarrow G",
+    "name": "Natural transformation",
+    "aliases": [
+      "natural transformation",
+      "naturality square",
+      "natural isomorphism",
+      "morphism of functors",
+      "eta components"
+    ],
+    "category": "advanced",
+    "definition": "A coherent family of morphisms η_X: F(X) → G(X), one per object, making every naturality square commute: G(f)∘η_X = η_Y∘F(f). When each component is an isomorphism, the functors are naturally isomorphic.",
+    "reading": "“eta from F to G”.",
+    "examples": [
+      {
+        "tex": "x \\mapsto \\{x\\}",
+        "explanation": "Each set embeds in its power set; maps commute with the embedding, uniformly in X."
+      }
+    ],
+    "relatedSymbols": [
+      "functor",
+      "morphism",
+      "composition",
+      "equivalent-iff",
+      "mapping-arrow"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy, Category Theory",
+        "url": "https://plato.stanford.edu/entries/category-theory/",
+        "license": "SEP (open access); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "equivalence-of-categories",
+    "symbol": "C ≃ D",
+    "latex": "\\mathbf{C} \\simeq \\mathbf{D}",
+    "name": "Equivalence of categories",
+    "aliases": [
+      "equivalence of categories",
+      "categorical equivalence",
+      "essentially surjective",
+      "fully faithful",
+      "isomorphism of categories"
+    ],
+    "category": "advanced",
+    "definition": "Functors F, G in opposite directions with natural isomorphisms GF ≅ Id and FG ≅ Id: the categories have the same structure up to isomorphism. This is strictly weaker than isomorphism of categories (rare on-the-nose equality) — and it is the notion that matters in practice.",
+    "reading": "“C equivalent to D”.",
+    "examples": [
+      {
+        "tex": "\\mathbf{Grp} \\not\\cong \\mathbf{Set}",
+        "explanation": "Groups carry strictly more structure than sets (e.g. Grp has a zero object, Set does not), yet functors still relate them."
+      }
+    ],
+    "commonMistakes": [
+      "Demanding an isomorphism of categories (bijection on objects); equivalence only asks essential surjectivity plus fully faithfulness."
+    ],
+    "relatedSymbols": [
+      "functor",
+      "natural-transformation",
+      "adjoint-functors",
+      "isomorphism",
+      "universal-property"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy, Category Theory",
+        "url": "https://plato.stanford.edu/entries/category-theory/",
+        "license": "SEP (open access); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "universal-property",
+    "symbol": "∃!",
+    "latex": "\\exists !",
+    "name": "Universal property",
+    "aliases": [
+      "universal property",
+      "unique existence",
+      "there exists unique",
+      "initial object",
+      "terminal object",
+      "zero object",
+      "characterization"
+    ],
+    "category": "advanced",
+    "definition": "Characterizes an object by unique morphisms to or from it, not by internal structure: initial objects receive none-but (maps out uniquely), terminal objects receive exactly one map from each object, and a zero object is both. Products, limits, and free constructions are all universal in this sense.",
+    "reading": "“there exists a unique”.",
+    "examples": [
+      {
+        "tex": "1 \\text{ terminal in } \\mathbf{Set}",
+        "explanation": "Every set has exactly one map into a singleton: the universal property of a one-point set."
+      }
+    ],
+    "relatedSymbols": [
+      "exists",
+      "forall",
+      "limit-colimit",
+      "mapping-arrow",
+      "empty-set"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy, Category Theory",
+        "url": "https://plato.stanford.edu/entries/category-theory/",
+        "license": "SEP (open access); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "limit-colimit",
+    "symbol": "lim← lim→",
+    "latex": "\\lim_{\\leftarrow}, \\lim_{\\rightarrow}",
+    "name": "Limit and colimit",
+    "aliases": [
+      "limit",
+      "colimit",
+      "projective limit",
+      "inductive limit",
+      "product coproduct",
+      "pullback",
+      "pushout",
+      "equalizer",
+      "terminal initial"
+    ],
+    "category": "advanced",
+    "definition": "Universal cones over (limit) and under (colimit) a diagram. Products, pullbacks, equalizers, and terminal objects are limits; coproducts, pushouts, coequalizers, and initial objects are colimits. Left adjoints preserve colimits, right adjoints preserve limits.",
+    "reading": "“limit” and “colimit”.",
+    "examples": [
+      {
+        "tex": "A \\times B",
+        "explanation": "The product with its two projections: any pair of maps into A and B factors uniquely through it."
+      }
+    ],
+    "relatedSymbols": [
+      "universal-property",
+      "cartesian-product",
+      "intersection",
+      "union",
+      "adjoint-functors"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy, Category Theory",
+        "url": "https://plato.stanford.edu/entries/category-theory/",
+        "license": "SEP (open access); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "adjoint-functors",
+    "symbol": "F ⊣ G",
+    "latex": "F \\dashv G",
+    "name": "Adjoint functors",
+    "aliases": [
+      "adjoint",
+      "adjunction",
+      "left adjoint",
+      "right adjoint",
+      "unit counit",
+      "free forgetful",
+      "galois connection"
+    ],
+    "category": "advanced",
+    "definition": "Functors F: C → D and G: D → C in opposite directions with unit η: Id → GF and counit ε: FG → Id satisfying the triangle identities. F is the optimal way to build D-structure from C-data (free groups from sets); G forgets back.",
+    "reading": "“F left adjoint to G”.",
+    "examples": [
+      {
+        "tex": "F \\dashv U,\\; U: \\mathbf{Grp} \\to \\mathbf{Set}",
+        "explanation": "Free groups are left adjoint to forgetting group structure: the universal way to put generators into a group."
+      }
+    ],
+    "relatedSymbols": [
+      "functor",
+      "natural-transformation",
+      "universal-property",
+      "equivalence-of-categories",
+      "limit-colimit"
+    ],
+    "sources": [
+      {
+        "label": "Stanford Encyclopedia of Philosophy, Category Theory",
+        "url": "https://plato.stanford.edu/entries/category-theory/",
+        "license": "SEP (open access); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "linear-operator",
+    "symbol": "T: V → W",
+    "latex": "T: V \\to W",
+    "name": "Linear operator",
+    "aliases": [
+      "linear operator",
+      "operator",
+      "linear map",
+      "domain codomain range kernel",
+      "bounded operator preview"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "An additive, homogeneous map between vector spaces: T(ax + y) = aT(x) + T(y). Every operator has a domain, codomain, range, and kernel; finite-dimensional ones are exactly matrices.",
+    "reading": "“T from V to W”.",
+    "examples": [
+      {
+        "tex": "T(x, y) = (x + y, x - y)",
+        "explanation": "Linearity checks out: scaling and adding inputs scales and adds outputs."
+      }
+    ],
+    "relatedSymbols": [
+      "vector-notation",
+      "matrix-notation",
+      "function-notation",
+      "null-space-kernel",
+      "operator-norm"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Self-adjoint operator",
+        "url": "https://en.wikipedia.org/wiki/Self-adjoint_operator",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "operator-norm",
+    "symbol": "‖T‖",
+    "latex": "\\|T\\|",
+    "name": "Operator norm",
+    "aliases": [
+      "operator norm",
+      "induced norm",
+      "sup norm operator",
+      "bounded norm",
+      "submultiplicative"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "The largest stretch factor: ‖T‖ = sup ‖Tx‖ over unit vectors. Finite exactly for bounded operators; submultiplicative (‖ST‖ ≤ ‖S‖‖T‖), so bounded operators form an algebra.",
+    "reading": "“the norm of T”.",
+    "examples": [
+      {
+        "tex": "\\|I\\| = 1",
+        "explanation": "The identity stretches nothing: every unit vector stays unit."
+      }
+    ],
+    "relatedSymbols": [
+      "absolute-value",
+      "supremum",
+      "bounded-operator",
+      "matrix-notation",
+      "modulus-complex"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Self-adjoint operator",
+        "url": "https://en.wikipedia.org/wiki/Self-adjoint_operator",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "bounded-operator",
+    "symbol": "‖Tx‖ ≤ C‖x‖",
+    "latex": "\\|Tx\\| \\le C\\|x\\|",
+    "name": "Bounded and unbounded operators",
+    "aliases": [
+      "bounded operator",
+      "unbounded operator",
+      "continuous operator",
+      "densely defined",
+      "everywhere defined",
+      "hellinger-toeplitz"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "Bounded operators send bounded sets to bounded sets — equivalently, for linear maps, they are continuous, with finite operator norm. Unbounded operators (like differentiation) can only be densely defined; an everywhere-defined symmetric operator is automatically bounded.",
+    "reading": "“bounded operator”.",
+    "examples": [
+      {
+        "tex": "\\mathbb{C}^n \\to \\mathbb{C}^n \\text{ always bounded}",
+        "explanation": "In finite dimensions every linear map is continuous: unboundedness is an infinite-dimensional phenomenon."
+      }
+    ],
+    "commonMistakes": [
+      "Assuming differentiation-style operators can live everywhere; unbounded operators always come with a restricted domain."
+    ],
+    "relatedSymbols": [
+      "operator-norm",
+      "linear-operator",
+      "self-adjoint-operator",
+      "hilbert-space",
+      "limit"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Self-adjoint operator",
+        "url": "https://en.wikipedia.org/wiki/Self-adjoint_operator",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "adjoint-operator",
+    "symbol": "T*",
+    "latex": "T^*",
+    "name": "Adjoint operator",
+    "aliases": [
+      "adjoint",
+      "hermitian conjugate",
+      "conjugate transpose",
+      "T star",
+      "dagger operator"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "The operator T* defined by ⟨Tx, y⟩ = ⟨x, T*y⟩. In finite dimensions it is the conjugate transpose; for unbounded operators it lives on the subspace where the relation makes sense — which is why domains matter.",
+    "reading": "“T star”.",
+    "examples": [
+      {
+        "tex": "\\begin{pmatrix} 1 & i \\\\ 0 & 2 \\end{pmatrix}^* = \\begin{pmatrix} 1 & 0 \\\\ -i & 2 \\end{pmatrix}",
+        "explanation": "Transpose and conjugate each entry."
+      }
+    ],
+    "relatedSymbols": [
+      "transpose",
+      "inner-product",
+      "self-adjoint-operator",
+      "hilbert-space",
+      "conjugate"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Self-adjoint operator",
+        "url": "https://en.wikipedia.org/wiki/Self-adjoint_operator",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "self-adjoint-operator",
+    "symbol": "A = A*",
+    "latex": "A = A^*",
+    "name": "Self-adjoint operator",
+    "aliases": [
+      "self-adjoint",
+      "hermitian operator",
+      "symmetric operator",
+      "observable quantum",
+      "real spectrum"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "Densely defined with A = A* — including equal domains. Symmetric (⟨Ax,y⟩ = ⟨x,Ay⟩ on its domain) is strictly weaker: a symmetric operator can fail to be self-adjoint when its adjoint lives on a larger domain. Observables in quantum mechanics must be self-adjoint, with real spectrum.",
+    "reading": "“self-adjoint”.",
+    "examples": [
+      {
+        "tex": "\\begin{pmatrix} 1 & 0 \\\\ 0 & 2 \\end{pmatrix}",
+        "explanation": "Diagonal and real: equals its own conjugate transpose."
+      }
+    ],
+    "commonMistakes": [
+      "Calling symmetric enough; without domain equality the spectral guarantees fail."
+    ],
+    "relatedSymbols": [
+      "adjoint-operator",
+      "normal-operator",
+      "spectrum-operator",
+      "hilbert-space",
+      "eigenvalue"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Self-adjoint operator",
+        "url": "https://en.wikipedia.org/wiki/Self-adjoint_operator",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "normal-operator",
+    "symbol": "N*N = NN*",
+    "latex": "N^*N = NN^*",
+    "name": "Normal and unitary operators",
+    "aliases": [
+      "normal operator",
+      "unitary operator",
+      "unitary matrix",
+      "normal matrix",
+      "isometry",
+      "unit circle spectrum"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "Normal operators commute with their adjoint (N*N = NN*): self-adjoint and unitary operators are the key cases, all unitarily diagonalizable in finite dimensions. Unitary operators (U*U = I) preserve lengths; their eigenvalues sit on the unit circle.",
+    "reading": "“normal” and “unitary”.",
+    "examples": [
+      {
+        "tex": "\\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}",
+        "explanation": "Quarter-turn rotation: unitary, with eigenvalues ±i on the unit circle."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Normal",
+        "meaning": "Commutes with its adjoint; unitarily diagonalizable."
+      },
+      {
+        "context": "Unitary",
+        "meaning": "Length-preserving (U*U = I); quantum evolutions."
+      }
+    ],
+    "relatedSymbols": [
+      "self-adjoint-operator",
+      "eigenvalue",
+      "orthogonal-matrix",
+      "spectral-theorem",
+      "modulus-complex"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Spectral theorem",
+        "url": "https://en.wikipedia.org/wiki/Spectral_theorem",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "projection-operator",
+    "symbol": "P² = P",
+    "latex": "P^2 = P",
+    "name": "Projection operator",
+    "aliases": [
+      "projection",
+      "projector",
+      "orthogonal projection",
+      "idempotent operator",
+      "spectral projection",
+      "P squared equals P"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "Idempotent operators (P² = P): applying twice changes nothing after the first. Orthogonal projections add P* = P and split the space into range plus orthogonal kernel; spectral measures assemble operators from them.",
+    "reading": "“projection”.",
+    "examples": [
+      {
+        "tex": "P(x, y) = (x, 0)",
+        "explanation": "Projecting twice onto the x-axis lands where the first projection put you."
+      }
+    ],
+    "relatedSymbols": [
+      "identity-matrix",
+      "self-adjoint-operator",
+      "inner-product",
+      "vector-notation",
+      "spectral-theorem"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Spectral theorem",
+        "url": "https://en.wikipedia.org/wiki/Spectral_theorem",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "compact-operator",
+    "symbol": "compact operator",
+    "latex": "\\text{compact}",
+    "name": "Compact operator",
+    "aliases": [
+      "compact operator",
+      "completely continuous",
+      "finite rank limit",
+      "hilbert-schmidt preview",
+      "discrete spectrum"
+    ],
+    "category": "advanced",
+    "definition": "Maps bounded sets to sets with compact closure — norm-limits of finite-rank operators on Hilbert space. The spectrum is discrete except possibly 0, and compact self-adjoint operators keep an orthonormal eigenbasis: the friendliest infinite-dimensional case.",
+    "reading": "“compact operator”.",
+    "examples": [
+      {
+        "tex": "Te_n = \\frac{1}{n}e_n",
+        "explanation": "Eigenvalues 1/n accumulate only at 0: the signature of compactness."
+      }
+    ],
+    "relatedSymbols": [
+      "spectrum-operator",
+      "spectral-theorem",
+      "limit",
+      "hilbert-space",
+      "sequence-term"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Spectral theorem",
+        "url": "https://en.wikipedia.org/wiki/Spectral_theorem",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "spectrum-operator",
+    "symbol": "σ(A)",
+    "latex": "\\sigma(A)",
+    "name": "Spectrum and resolvent",
+    "aliases": [
+      "spectrum",
+      "resolvent",
+      "resolvent set",
+      "point spectrum",
+      "continuous spectrum",
+      "sigma A"
+    ],
+    "category": "advanced",
+    "definition": "The λ for which A − λI fails to be invertible. Eigenvalues (point spectrum) are only part of it: continuous and residual spectrum appear in infinite dimensions. The complement is the resolvent set; self-adjoint spectra are real.",
+    "reading": "“the spectrum of A”.",
+    "examples": [
+      {
+        "tex": "\\sigma = [0, 1]",
+        "explanation": "Multiplication by t on L²[0,1] has this whole interval as spectrum — with no eigenvalues at all."
+      }
+    ],
+    "commonMistakes": [
+      "Equating spectrum with eigenvalues; the distinction only collapses in finite dimensions."
+    ],
+    "relatedSymbols": [
+      "eigenvalue",
+      "inverse-matrix",
+      "self-adjoint-operator",
+      "normal-operator",
+      "infinity"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Spectral theorem",
+        "url": "https://en.wikipedia.org/wiki/Spectral_theorem",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "spectral-theorem",
+    "symbol": "A = UDU*",
+    "latex": "A = UDU^*",
+    "name": "Spectral theorem",
+    "aliases": [
+      "spectral theorem",
+      "diagonalization",
+      "spectral decomposition",
+      "orthonormal eigenbasis",
+      "functional calculus",
+      "multiplication operator form"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "Self-adjoint (and more generally normal) operators diagonalize in an orthonormal basis in finite dimensions. Infinite dimensions need care: compact self-adjoint keeps eigenvectors; general bounded self-adjoint becomes multiplication operators or projection-valued integrals.",
+    "reading": "“the spectral theorem”.",
+    "examples": [
+      {
+        "tex": "\\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}",
+        "explanation": "Symmetric with eigenvalues 3 and 1 along (1,1) and (1,−1): diagonalizable by rotation."
+      }
+    ],
+    "relatedSymbols": [
+      "eigenvalue",
+      "eigenvector",
+      "diagonalization",
+      "normal-operator",
+      "self-adjoint-operator",
+      "projection-operator"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Spectral theorem",
+        "url": "https://en.wikipedia.org/wiki/Spectral_theorem",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "chain-complex",
+    "symbol": "⋯ → Cₙ₊₁ → Cₙ → ⋯",
+    "latex": "\\cdots \\to C_{n+1} \\to C_n \\to \\cdots",
+    "name": "Chain complex",
+    "aliases": [
+      "chain complex",
+      "cochain complex",
+      "differential d squared zero",
+      "boundary operator",
+      "differential graded"
+    ],
+    "category": "advanced",
+    "definition": "Modules (or abelian groups) linked by differentials with d² = 0: the image of each map lands in the kernel of the next. Cochain complexes run the arrows upward; everything else carries over with degrees reversed.",
+    "reading": "“chain complex”.",
+    "examples": [
+      {
+        "tex": "\\cdots \\to 0 \\to \\mathbb{Z} \\overset{\\times 2}{\\to} \\mathbb{Z} \\to 0 \\to \\cdots",
+        "explanation": "Multiplication by 2 with zeros around it: consecutive composites vanish trivially."
+      }
+    ],
+    "relatedSymbols": [
+      "homology-groups",
+      "exact-sequence",
+      "homomorphism",
+      "group-notation",
+      "chain-map"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "homology-groups",
+    "symbol": "Hₙ",
+    "latex": "H_n",
+    "name": "Homology",
+    "aliases": [
+      "homology",
+      "homology group",
+      "cycles modulo boundaries",
+      "singular homology",
+      "simplicial homology",
+      "H_n"
+    ],
+    "category": "advanced",
+    "definition": "Cycles modulo boundaries: Hₙ = ker(dₙ)/im(dₙ₊₁). It measures exactly how far a complex is from exactness — zero homology means every cycle is a boundary. H₀ counts path components.",
+    "reading": "“H n”.",
+    "examples": [
+      {
+        "tex": "H_0 = \\mathbb{Z}",
+        "explanation": "For a path-connected space: one component, one copy of ℤ."
+      }
+    ],
+    "relatedSymbols": [
+      "chain-complex",
+      "exact-sequence",
+      "cohomology",
+      "triangle"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "cohomology",
+    "symbol": "Hⁿ",
+    "latex": "H^n",
+    "name": "Cohomology",
+    "aliases": [
+      "cohomology",
+      "cohomology group",
+      "de Rham cohomology",
+      "singular cohomology",
+      "H^n",
+      "cocycles"
+    ],
+    "category": "advanced",
+    "definition": "Homology of a cochain complex: same ker/im construction with arrows running upward. De Rham cohomology reads closed differential forms modulo exact ones, detecting holes analytically rather than combinatorially.",
+    "reading": "“H n” (cohomology).",
+    "examples": [
+      {
+        "tex": "H^1(S^1) = \\mathbb{R}",
+        "explanation": "The circle's loop integral detects one independent hole."
+      }
+    ],
+    "commonMistakes": [
+      "Treating cohomology as just homology with raised indices; the contravariant behavior and ring structure genuinely differ."
+    ],
+    "relatedSymbols": [
+      "homology-groups",
+      "chain-complex",
+      "manifold",
+      "manifold",
+      "integral",
+      "differential-form"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "chain-map",
+    "symbol": "fₙ",
+    "latex": "f_n",
+    "name": "Chain map",
+    "aliases": [
+      "chain map",
+      "morphism of complexes",
+      "commutes with differential",
+      "induced map on homology",
+      "quasi-isomorphism"
+    ],
+    "category": "advanced",
+    "definition": "Degree-wise maps between complexes commuting with the differentials: d∘f = f∘d at every level. Chain maps send cycles to cycles and boundaries to boundaries, hence induce maps on homology.",
+    "reading": "“chain map”.",
+    "examples": [
+      {
+        "tex": "f_*: H_n(X) \\to H_n(Y)",
+        "explanation": "A continuous map of spaces induces maps on homology groups."
+      }
+    ],
+    "relatedSymbols": [
+      "chain-complex",
+      "homology-groups",
+      "function-notation",
+      "composition",
+      "homomorphism"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "exact-sequence",
+    "symbol": "0 → A → B → C → 0",
+    "latex": "0 \\to A \\to B \\to C \\to 0",
+    "name": "Exact sequence",
+    "aliases": [
+      "exact sequence",
+      "short exact sequence",
+      "long exact sequence",
+      "exact at",
+      "injective surjective ends",
+      "SES",
+      "LES"
+    ],
+    "category": "advanced",
+    "definition": "A complex with zero homology everywhere: image equals kernel at each spot. Short exact (0 → A → B → C → 0) means injective start and surjective end; a short exact sequence of complexes unrolls into a long exact sequence in homology.",
+    "reading": "“short exact sequence”.",
+    "examples": [
+      {
+        "tex": "0 \\to \\mathbb{Z} \\overset{\\times m}{\\to} \\mathbb{Z} \\to \\mathbb{Z}/m\\mathbb{Z} \\to 0",
+        "explanation": "Multiply by m is injective; its cokernel is the integers mod m."
+      }
+    ],
+    "relatedSymbols": [
+      "chain-complex",
+      "homomorphism",
+      "isomorphism",
+      "cokernel",
+      "homology-groups"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "cokernel",
+    "symbol": "coker",
+    "latex": "\\operatorname{coker}",
+    "name": "Cokernel",
+    "aliases": [
+      "cokernel",
+      "coker",
+      "codomain modulo image",
+      "dual of kernel",
+      "obstruction to surjectivity"
+    ],
+    "category": "advanced",
+    "definition": "The codomain modulo the image: what the map fails to hit. Dual to the kernel (which measures failure of injectivity); together they bookend every homomorphism.",
+    "reading": "“cokernel”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{coker}(\\times 2: \\mathbb{Z} \\to \\mathbb{Z}) = \\mathbb{Z}/2\\mathbb{Z}",
+        "explanation": "Doubling misses exactly the odd integers."
+      }
+    ],
+    "relatedSymbols": [
+      "null-space-kernel",
+      "homomorphism",
+      "exact-sequence",
+      "isomorphism"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "projective-resolution",
+    "symbol": "⋯ → P₁ → P₀ → M → 0",
+    "latex": "\\cdots \\to P_1 \\to P_0 \\to M \\to 0",
+    "name": "Projective resolutions",
+    "aliases": [
+      "projective resolution",
+      "free resolution",
+      "projective module",
+      "injective module",
+      "injective resolution",
+      "lifting property"
+    ],
+    "category": "advanced",
+    "definition": "An exact sequence of projective modules onto M: a 'best approximation' by well-behaved pieces, used to compute derived functors. Free modules are projective; injective modules dualize the picture (divisible groups over ℤ).",
+    "reading": "“projective resolution”.",
+    "examples": [
+      {
+        "tex": "\\cdots \\to 0 \\to \\mathbb{Z} \\overset{\\times m}{\\to} \\mathbb{Z} \\to \\mathbb{Z}/m\\mathbb{Z} \\to 0",
+        "explanation": "A free (hence projective) resolution of ℤ/m: exact except at the end, where homology reads the module back."
+      }
+    ],
+    "relatedSymbols": [
+      "exact-sequence",
+      "homology-groups",
+      "derived-functor",
+      "group-notation"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ],
+    "notes": "Projective/injective machinery cross-checked against UT Austin homological-algebra lecture-note excerpts (Lecture 4)."
+  },
+  {
+    "id": "derived-functor",
+    "symbol": "LₙF / RⁿF",
+    "latex": "L_nF, R^nF",
+    "name": "Derived functor",
+    "aliases": [
+      "derived functor",
+      "left derived",
+      "right derived",
+      "Tor Ext",
+      "long exact sequence of derived functors",
+      "half exact"
+    ],
+    "category": "advanced",
+    "definition": "Extends a half-exact functor to a long exact sequence: left-derived functors continue right-exact ones to the left (Tor from ⊗), right-derived continue left-exact ones to the right (Ext from Hom). They measure exactly what the original functor destroys.",
+    "reading": "“derived functor”.",
+    "examples": [
+      {
+        "tex": "0 \\to \\operatorname{Tor}_1 \\to",
+        "explanation": "Tor appears where tensoring breaks exactness on the left."
+      }
+    ],
+    "relatedSymbols": [
+      "projective-resolution",
+      "tor-ext",
+      "functor",
+      "exact-sequence",
+      "homology-groups"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ],
+    "notes": "Tor/Ext lecture structure cross-checked against UT Austin homological-algebra lecture-note excerpts (Lecture 5)."
+  },
+  {
+    "id": "tor-ext",
+    "symbol": "Torₙ / Extⁿ",
+    "latex": "\\operatorname{Tor}_n, \\operatorname{Ext}^n",
+    "name": "Tor and Ext",
+    "aliases": [
+      "Tor",
+      "Ext",
+      "torsion product",
+      "extension group",
+      "Tor preserves colimits",
+      "Ext classifies extensions"
+    ],
+    "category": "advanced",
+    "definition": "The derived functors of tensor product (Tor, left-derived) and Hom (Ext, right-derived). Tor₁ detects torsion killed by tensoring; Ext¹ classifies extensions 0 → B → ? → A → 0 up to equivalence.",
+    "reading": "“Tor” and “Ext”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{Tor}_1(\\mathbb{Z}/m, \\mathbb{Z}/n) = \\mathbb{Z}/d",
+        "explanation": "With d = gcd(m, n): tensoring detects exactly the shared torsion."
+      }
+    ],
+    "relatedSymbols": [
+      "derived-functor",
+      "projective-resolution",
+      "tensor-product",
+      "homomorphism",
+      "exact-sequence"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ],
+    "notes": "Standard formulas cross-checked against UT Austin homological-algebra lecture-note excerpts (Lecture 5: derived functors, Tor and Ext)."
+  },
+  {
+    "id": "chain-homotopy",
+    "symbol": "f ≃ g",
+    "latex": "f \\simeq g",
+    "name": "Chain homotopy",
+    "aliases": [
+      "chain homotopy",
+      "homotopic chain maps",
+      "null-homotopic",
+      "homotopy equivalence of complexes",
+      "same map on homology"
+    ],
+    "category": "advanced",
+    "definition": "Chain maps differing by dh + hd for degree-shifting maps h: homotopic in the algebraic sense. Homotopic maps induce the identical map on homology — the algebraic shadow of homotopic spaces giving equal homology.",
+    "reading": "“f homotopic to g”.",
+    "examples": [
+      {
+        "tex": "f - g = dh + hd",
+        "explanation": "The difference factors through the differentials, hence vanishes on homology classes."
+      }
+    ],
+    "relatedSymbols": [
+      "chain-map",
+      "homology-groups",
+      "composition",
+      "mapping-arrow",
+      "equivalent-iff"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Chain complex",
+        "url": "https://en.wikipedia.org/wiki/Chain_complex",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "affine-variety",
+    "symbol": "V(S)",
+    "latex": "V(S)",
+    "name": "Affine variety",
+    "aliases": [
+      "affine variety",
+      "zero locus",
+      "algebraic set",
+      "irreducible variety",
+      "affine space",
+      "hypersurface"
+    ],
+    "category": "advanced",
+    "definition": "The common zero locus V(S) of polynomials in affine space — an affine algebraic set, and a variety when irreducible (not a union of two proper closed subsets). Equations become geometry.",
+    "reading": "“V of S”.",
+    "examples": [
+      {
+        "tex": "V(y - x^2)",
+        "explanation": "The parabola as a plane curve: an irreducible affine variety."
+      }
+    ],
+    "relatedSymbols": [
+      "parabola",
+      "coordinate-ring",
+      "zariski-topology",
+      "projective-variety"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Algebraic variety",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_variety",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "projective-variety",
+    "symbol": "ℙⁿ",
+    "latex": "\\mathbb{P}^n",
+    "name": "Projective variety",
+    "aliases": [
+      "projective variety",
+      "projective space",
+      "homogeneous polynomials",
+      "points at infinity",
+      "complete variety",
+      "elliptic curve"
+    ],
+    "category": "advanced",
+    "definition": "Zero loci of homogeneous polynomials in projective space, where scaling doesn't matter. Projective space adds points at infinity, making varieties complete (compact-like): parallel lines finally meet.",
+    "reading": "“P n”.",
+    "examples": [
+      {
+        "tex": "\\mathbb{P}^1",
+        "explanation": "The projective line: an affine line plus one point at infinity, topologically a circle."
+      }
+    ],
+    "relatedSymbols": [
+      "affine-variety",
+      "coordinate-ring",
+      "infinity",
+      "circle-equation",
+      "scheme"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Algebraic variety",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_variety",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "coordinate-ring",
+    "symbol": "k[V]",
+    "latex": "k[V]",
+    "name": "Coordinate ring",
+    "aliases": [
+      "coordinate ring",
+      "affine coordinate ring",
+      "polynomial functions",
+      "Nullstellenssatz correspondence",
+      "structure ring"
+    ],
+    "category": "advanced",
+    "definition": "Polynomial functions on V: the polynomial ring modulo the ideal of functions vanishing on V. Hilbert's Nullstellensatz makes this the algebra-geometry dictionary — points match maximal ideals, irreducible means integral domain.",
+    "reading": "“the coordinate ring of V”.",
+    "examples": [
+      {
+        "tex": "k[x, y]/(y - x^2)",
+        "explanation": "Functions on the parabola: polynomials identified wherever they agree on it."
+      }
+    ],
+    "relatedSymbols": [
+      "affine-variety",
+      "ring",
+      "homomorphism",
+      "remainder-factor-theorem"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Algebraic variety",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_variety",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "zariski-topology",
+    "symbol": "Zariski",
+    "latex": "\\text{Zariski}",
+    "name": "Zariski topology",
+    "aliases": [
+      "zariski topology",
+      "zariski closed",
+      "zariski open dense",
+      "cofinite topology",
+      "algebraic topology (zariski)"
+    ],
+    "category": "advanced",
+    "definition": "The topology whose closed sets are exactly the algebraic sets. Far coarser than Euclidean: on an irreducible variety every nonempty open is dense, and on the affine line the closed sets are just finite sets plus everything.",
+    "reading": "“Zariski topology”.",
+    "examples": [
+      {
+        "tex": "\\mathbb{A}^1",
+        "explanation": "Closed subsets of the affine line: finite point sets and the whole line — nothing in between."
+      }
+    ],
+    "commonMistakes": [
+      "Expecting Hausdorff separation; distinct points need not have disjoint Zariski neighborhoods."
+    ],
+    "relatedSymbols": [
+      "topological-space",
+      "affine-variety",
+      "complement",
+      "interval"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Algebraic variety",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_variety",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "regular-function",
+    "symbol": "O(V)",
+    "latex": "\\mathcal{O}(V)",
+    "name": "Regular and rational functions",
+    "aliases": [
+      "regular function",
+      "rational function algebraic",
+      "function field",
+      "morphism of varieties",
+      "regular map",
+      "birational"
+    ],
+    "category": "advanced",
+    "definition": "Regular functions are locally polynomial (ratios with nonvanishing denominator); rational functions are defined on some dense open, forming the function field. Morphisms of varieties are maps given locally by regular functions.",
+    "reading": "“regular functions on V”.",
+    "examples": [
+      {
+        "tex": "\\frac{1}{x}",
+        "explanation": "Regular on A¹ minus the origin, rational on all of A¹: defined almost everywhere."
+      }
+    ],
+    "relatedSymbols": [
+      "coordinate-ring",
+      "function-notation",
+      "domain-range",
+      "fraction",
+      "mapping-arrow"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Algebraic variety",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_variety",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "variety-dimension",
+    "symbol": "dim V",
+    "latex": "\\dim V",
+    "name": "Dimension of a variety",
+    "aliases": [
+      "dimension",
+      "krull dimension",
+      "transcendence degree",
+      "curve surface threefold",
+      "codimension"
+    ],
+    "category": "advanced",
+    "definition": "The length of the longest chain of irreducible closed subsets (Krull dimension): curves have 1, surfaces 2. Equivalently the transcendence degree of the function field — the number of independent parameters.",
+    "reading": "“dimension of V”.",
+    "examples": [
+      {
+        "tex": "\\dim \\mathbb{A}^2 = 2",
+        "explanation": "Plane ⊃ curve ⊃ point: a chain of length two, matching two coordinates."
+      }
+    ],
+    "relatedSymbols": [
+      "affine-variety",
+      "basis-dimension",
+      "projective-variety",
+      "manifold",
+      "infinity"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Algebraic variety",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_variety",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "singular-point",
+    "symbol": "sing",
+    "latex": "\\text{sing}",
+    "name": "Singular and nonsingular points",
+    "aliases": [
+      "singular point",
+      "singularity",
+      "smooth point",
+      "node cusp",
+      "jacobian criterion",
+      "tangent space zariski"
+    ],
+    "category": "advanced",
+    "definition": "Points where a variety fails to be manifold-like, detected by the Jacobian criterion: all defining partials vanish. A node has distinct tangents, a cusp has coincident ones; elsewhere the (Zariski) tangent space has the expected dimension.",
+    "reading": "“singular point”.",
+    "examples": [
+      {
+        "tex": "y^2 = x^3",
+        "explanation": "Cusp at the origin: both partials vanish there, so no well-defined tangent."
+      }
+    ],
+    "relatedSymbols": [
+      "partial-derivative",
+      "affine-variety",
+      "tangent-line",
+      "manifold",
+      "derivative-lagrange"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Algebraic variety",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_variety",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "scheme",
+    "symbol": "Spec R",
+    "latex": "\\operatorname{Spec} R",
+    "name": "Scheme",
+    "aliases": [
+      "scheme",
+      "spec",
+      "spectrum of a ring",
+      "affine scheme",
+      "nilpotents",
+      "structure morphism",
+      "separated finite type"
+    ],
+    "category": "advanced",
+    "definition": "A locally ringed space locally isomorphic to spectra of rings: varieties generalized to allow nilpotents (x² = 0 thickens the origin infinitesimally) and non-closed points. Spec R has prime ideals as points; a variety over k is a separated finite-type integral scheme.",
+    "reading": "“Spec R”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{Spec} \\mathbb{Z}",
+        "explanation": "One generic point plus a closed point per prime: arithmetic as geometry."
+      }
+    ],
+    "commonMistakes": [
+      "Treating schemes as varieties with fancier words; nilpotents and generic points are genuinely new content."
+    ],
+    "relatedSymbols": [
+      "ring",
+      "sheaf",
+      "topological-space",
+      "affine-variety",
+      "local-ring"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Algebraic variety",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_variety",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "sheaf",
+    "symbol": "F(U)",
+    "latex": "\\mathcal{F}(U)",
+    "name": "Sheaf (and stalk)",
+    "aliases": [
+      "sheaf",
+      "stalk",
+      "germ",
+      "presheaf",
+      "gluing axiom",
+      "structure sheaf",
+      "sheaf of rings",
+      "sections"
+    ],
+    "category": "advanced",
+    "definition": "Local data attached to opens with restriction maps, satisfying locality (matching restrictions agree) and gluing (compatible local data assemble uniquely). The stalk at a point is the germ-level limit — the local ring in scheme theory.",
+    "reading": "“sheaf” and “stalk”.",
+    "examples": [
+      {
+        "tex": "\\mathcal{O}(U)",
+        "explanation": "Continuous (or regular, or smooth) functions on each open U: restricting and gluing work as expected."
+      }
+    ],
+    "relatedSymbols": [
+      "topological-space",
+      "set-builder",
+      "function-notation",
+      "scheme",
+      "ring",
+      "local-ring"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Sheaf (mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Sheaf_(mathematics)",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "local-ring",
+    "symbol": "(R, m)",
+    "latex": "(R, \\mathfrak{m})",
+    "name": "Local ring",
+    "aliases": [
+      "local ring",
+      "maximal ideal unique",
+      "localization",
+      "germs of functions",
+      "discrete valuation ring",
+      "DVR"
+    ],
+    "category": "advanced",
+    "definition": "A ring with exactly one maximal ideal: everything outside it is a unit. Stalks of structure sheaves and localizations (e.g. rationals with odd denominator) are the archetypes — algebra zoomed into one point.",
+    "reading": "“local ring”.",
+    "examples": [
+      {
+        "tex": "\\left\\{\\frac{a}{b} : b \\text{ odd}\\right\\}",
+        "explanation": "Integers localized away from 2: the unique maximal ideal is the even numerators."
+      }
+    ],
+    "relatedSymbols": [
+      "ring",
+      "sheaf",
+      "homomorphism",
+      "integers",
+      "fraction"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Algebraic variety",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_variety",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "group-representation",
+    "symbol": "ρ: G → GL(V)",
+    "latex": "\\rho: G \\to GL(V)",
+    "name": "Group representation",
+    "aliases": [
+      "group representation",
+      "linear representation",
+      "representation space",
+      "faithful representation",
+      "matrix representation",
+      "rho"
+    ],
+    "category": "advanced",
+    "definition": "A homomorphism from a group into automorphisms of a vector space: each group element acts as an invertible linear map, turning abstract symmetry into matrices. The space acted on is the representation space; injective means faithful.",
+    "reading": "“rho from G to G L of V”.",
+    "examples": [
+      {
+        "tex": "R(\\theta) = \\begin{pmatrix} \\cos\\theta & -\\sin\\theta \\\\ \\sin\\theta & \\cos\\theta \\end{pmatrix}",
+        "explanation": "Rotations of the plane: angles add because matrices multiply."
+      }
+    ],
+    "relatedSymbols": [
+      "group-notation",
+      "homomorphism",
+      "matrix-notation",
+      "eigenvalue",
+      "invariant-subspace"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Group representation",
+        "url": "https://en.wikipedia.org/wiki/Group_representation",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "invariant-subspace",
+    "symbol": "ρ(g)W ⊆ W",
+    "latex": "\\rho(g)W \\subseteq W",
+    "name": "Invariant subspaces and subrepresentations",
+    "aliases": [
+      "invariant subspace",
+      "subrepresentation",
+      "stable subspace",
+      "restriction of representation",
+      "G-stable"
+    ],
+    "category": "advanced",
+    "definition": "A subspace carried into itself by every group element: ρ(g)W ⊆ W for all g. Restricting the action gives a subrepresentation — a smaller representation living inside.",
+    "reading": "“invariant subspace”.",
+    "examples": [
+      {
+        "tex": "R_z(\\theta)(0, 0, 1) = (0, 0, 1)",
+        "explanation": "Rotation about the z-axis fixes that axis: a one-dimensional subrepresentation."
+      }
+    ],
+    "relatedSymbols": [
+      "group-representation",
+      "vector-notation",
+      "linear-span",
+      "irreducible-representation",
+      "subset"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Group representation",
+        "url": "https://en.wikipedia.org/wiki/Group_representation",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "irreducible-representation",
+    "symbol": "irrep",
+    "latex": "\\text{irrep}",
+    "name": "Irreducible representation",
+    "aliases": [
+      "irreducible representation",
+      "irrep",
+      "simple module",
+      "completely reducible",
+      "semisimple representation",
+      "maschke theorem",
+      "decomposable"
+    ],
+    "category": "advanced",
+    "definition": "A nonzero representation with no proper subrepresentations: the atoms of the theory. Complete reducibility (splitting into irreducibles) needs hypotheses — Maschke's theorem gives it when the characteristic avoids the group order, e.g. always over ℂ for finite groups.",
+    "reading": "“irreducible representation”.",
+    "examples": [
+      {
+        "tex": "SO(2) \\text{ on } \\mathbb{R}^2",
+        "explanation": "Plane rotations: no real line stays put, so this two-dimensional representation is irreducible over ℝ."
+      }
+    ],
+    "commonMistakes": [
+      "Assuming every representation splits; modular representations (characteristic dividing |G|) need not be completely reducible."
+    ],
+    "relatedSymbols": [
+      "invariant-subspace",
+      "group-representation",
+      "character-representation",
+      "schurs-lemma",
+      "prime-number"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Group representation",
+        "url": "https://en.wikipedia.org/wiki/Group_representation",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "character-representation",
+    "symbol": "χ(g)",
+    "latex": "\\chi(g)",
+    "name": "Character of a representation",
+    "aliases": [
+      "character",
+      "trace character",
+      "chi",
+      "class function",
+      "character table",
+      "orthogonality relations"
+    ],
+    "category": "advanced",
+    "definition": "The trace function χ(g) = tr(ρ(g)): a class function constant on conjugacy classes. Over ℂ, the character determines a finite-group representation up to isomorphism, and irreducible characters are orthonormal.",
+    "reading": "“chi of g”.",
+    "examples": [
+      {
+        "tex": "\\chi(R(\\theta)) = 2\\cos\\theta",
+        "explanation": "Trace of the rotation matrix: the character sees the angle, not the basis."
+      }
+    ],
+    "relatedSymbols": [
+      "trace",
+      "group-representation",
+      "irreducible-representation",
+      "eigenvalue",
+      "conjugate"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Group representation",
+        "url": "https://en.wikipedia.org/wiki/Group_representation",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "schurs-lemma",
+    "symbol": "Schur",
+    "latex": "\\text{Schur}",
+    "name": "Schur's lemma",
+    "aliases": [
+      "schur lemma",
+      "schur's lemma",
+      "intertwining operator",
+      "G-linear map",
+      "scalar operators",
+      "dixmier version"
+    ],
+    "category": "advanced",
+    "definition": "A nonzero equivariant map between irreducibles is an isomorphism — there is nothing in between. Consequently, over an algebraically closed field, equivariant self-maps are just scalars.",
+    "reading": "“Schur's lemma”.",
+    "examples": [
+      {
+        "tex": "f = \\lambda I",
+        "explanation": "Any G-linear endomorphism of a complex irreducible is a scalar matrix."
+      }
+    ],
+    "relatedSymbols": [
+      "homomorphism",
+      "irreducible-representation",
+      "eigenvalue",
+      "null-space-kernel",
+      "isomorphism"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Schur's lemma",
+        "url": "https://en.wikipedia.org/wiki/Schur%27s_lemma",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "group-algebra",
+    "symbol": "ℂ[G]",
+    "latex": "\\mathbb{C}[G]",
+    "name": "Group algebra",
+    "aliases": [
+      "group algebra",
+      "group ring",
+      "convolution algebra",
+      "C[G]",
+      "regular representation",
+      "modules over group ring"
+    ],
+    "category": "advanced",
+    "definition": "Formal linear combinations of group elements with convolution product extending the group law. Representations of G are exactly modules over ℂ[G]; its dimension is |G| for finite groups.",
+    "reading": "“the group algebra”.",
+    "examples": [
+      {
+        "tex": "\\dim \\mathbb{C}[G] = |G|",
+        "explanation": "Basis indexed by group elements for finite G."
+      }
+    ],
+    "relatedSymbols": [
+      "group-notation",
+      "vector-notation",
+      "ring",
+      "irreducible-representation",
+      "basis-dimension"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Group representation",
+        "url": "https://en.wikipedia.org/wiki/Group_representation",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "induced-representation",
+    "symbol": "Ind",
+    "latex": "\\operatorname{Ind}",
+    "name": "Induced and restricted representations",
+    "aliases": [
+      "induced representation",
+      "restricted representation",
+      "induction",
+      "restriction",
+      "frobenius reciprocity",
+      "permutation representation"
+    ],
+    "category": "advanced",
+    "definition": "Restriction views a representation through a subgroup; induction builds a G-representation from an H-representation on cosets (Frobenius reciprocity relates their Hom-spaces). Inducing the trivial rep gives permutation action on cosets.",
+    "reading": "“induced representation”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{Ind}_H^G(1)",
+        "explanation": "Inducing the trivial representation: G permuting the cosets of H."
+      }
+    ],
+    "relatedSymbols": [
+      "group-representation",
+      "invariant-subspace",
+      "homomorphism",
+      "permutation",
+      "subset"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Group representation",
+        "url": "https://en.wikipedia.org/wiki/Group_representation",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "lie-algebra-representation",
+    "symbol": "dρ",
+    "latex": "d\\rho",
+    "name": "Lie algebra representation",
+    "aliases": [
+      "lie algebra representation",
+      "differential of representation",
+      "spin representation",
+      "su(2)",
+      "highest weight",
+      "pauli matrices"
+    ],
+    "category": "advanced",
+    "definition": "A Lie algebra homomorphism into matrices, preserving brackets: the infinitesimal version of a Lie group representation, obtained by differentiating at the identity. For semisimple algebras, irreducibles are classified by highest weights.",
+    "reading": "“d rho”.",
+    "examples": [
+      {
+        "tex": "\\sigma_x, \\sigma_y, \\sigma_z",
+        "explanation": "Pauli matrices: the spin-1/2 representation, with bracket relations matching su(2)."
+      }
+    ],
+    "relatedSymbols": [
+      "group-representation",
+      "homomorphism",
+      "matrix-notation",
+      "derivative-lagrange",
+      "irreducible-representation"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Group representation",
+        "url": "https://en.wikipedia.org/wiki/Group_representation",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "smooth-manifold",
+    "symbol": "M",
+    "latex": "M",
+    "name": "Smooth manifold",
+    "aliases": [
+      "smooth manifold",
+      "differentiable manifold",
+      "Hausdorff second countable",
+      "n-manifold",
+      "atlas maximal"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig"
+    ],
+    "definition": "A Hausdorff, second-countable topological space with a maximal smooth atlas: locally Euclidean with smooth transitions, so calculus works globally. The Hausdorff and countability hypotheses buy bump functions and partitions of unity.",
+    "reading": "“smooth manifold”.",
+    "examples": [
+      {
+        "tex": "S^1",
+        "explanation": "The circle with its standard smooth structure: locally an interval, globally a loop."
+      }
+    ],
+    "relatedSymbols": [
+      "manifold",
+      "topological-space",
+      "chart-atlas",
+      "homeomorphism",
+      "triangle"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "chart-atlas",
+    "symbol": "(U, φ)",
+    "latex": "(U, \\varphi)",
+    "name": "Charts and atlases",
+    "aliases": [
+      "chart",
+      "atlas",
+      "coordinate chart",
+      "transition map",
+      "maximal atlas",
+      "smooth structure",
+      "compatible charts"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig"
+    ],
+    "definition": "A chart identifies an open patch with Euclidean space; an atlas covers the manifold. It is smooth when all transition maps between overlapping charts are smooth — the maximal such atlas is the smooth structure itself.",
+    "reading": "“chart”.",
+    "examples": [
+      {
+        "tex": "\\psi \\circ \\varphi^{-1}",
+        "explanation": "The transition map: re-expressing one chart's coordinates in another's, required smooth."
+      }
+    ],
+    "relatedSymbols": [
+      "smooth-manifold",
+      "homeomorphism",
+      "mapping-arrow",
+      "function-notation"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "tangent-space",
+    "symbol": "T_pM",
+    "latex": "T_pM",
+    "name": "Tangent space",
+    "aliases": [
+      "tangent space",
+      "tangent vector",
+      "derivation at a point",
+      "TpM",
+      "velocity vector",
+      "tangent plane"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig",
+      "calculus"
+    ],
+    "definition": "The n-dimensional vector space of directions at p: derivations on germs (or velocity vectors of curves, or chart-based vectors — equivalent views). Not the calculus tangent line: that is one affine line, this is the whole linear space of directions.",
+    "reading": "“T p M”.",
+    "examples": [
+      {
+        "tex": "T_p S^1",
+        "explanation": "The line touching the circle at p: every direction of travel through p."
+      }
+    ],
+    "relatedSymbols": [
+      "tangent-line",
+      "vector-notation",
+      "derivative-leibniz",
+      "smooth-manifold",
+      "vector-field"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "vector-field",
+    "symbol": "X",
+    "latex": "X",
+    "name": "Vector field",
+    "aliases": [
+      "vector field",
+      "smooth vector field",
+      "integral curve",
+      "flow",
+      "wind field",
+      "section of tangent bundle"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig",
+      "calculus"
+    ],
+    "definition": "A smooth choice of tangent vector at every point: a section of the tangent bundle. Integral curves follow the arrows; their collective motion is the flow.",
+    "reading": "“vector field”.",
+    "examples": [
+      {
+        "tex": "X(x, y) = (-y, x)",
+        "explanation": "Counterclockwise rotation field: integral curves are concentric circles."
+      }
+    ],
+    "relatedSymbols": [
+      "tangent-space",
+      "smooth-manifold",
+      "function-notation",
+      "derivative-leibniz",
+      "lie-derivative"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "differential-form",
+    "symbol": "ω",
+    "latex": "\\omega",
+    "name": "Differential form",
+    "aliases": [
+      "differential form",
+      "k-form",
+      "wedge product",
+      "alternating form",
+      "integrand",
+      "pullback of forms"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Alternating multilinear machines eating tangent vectors and returning numbers: the natural integrands on manifolds. The wedge product combines them; pullback transports them along smooth maps.",
+    "reading": "“omega” (a differential form).",
+    "examples": [
+      {
+        "tex": "\\omega = dx \\wedge dy",
+        "explanation": "The area form: feeding two vectors returns their signed spanned area."
+      }
+    ],
+    "relatedSymbols": [
+      "tangent-space",
+      "integral",
+      "exterior-derivative",
+      "multiply"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "riemannian-metric",
+    "symbol": "g",
+    "latex": "g",
+    "name": "Riemannian metric",
+    "aliases": [
+      "riemannian metric",
+      "metric tensor",
+      "inner product on tangent spaces",
+      "lengths and angles",
+      "flat metric",
+      "first fundamental form"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig"
+    ],
+    "definition": "A smoothly varying inner product on each tangent space: it defines lengths, angles, and volumes. There is then a unique torsion-free compatible connection (Levi-Civita) doing the differentiating.",
+    "reading": "“Riemannian metric”.",
+    "examples": [
+      {
+        "tex": "ds^2 = dx^2 + dy^2",
+        "explanation": "The flat Euclidean metric: Pythagoras infinitesimally."
+      }
+    ],
+    "relatedSymbols": [
+      "inner-product",
+      "tangent-space",
+      "smooth-manifold",
+      "connection",
+      "pythagorean-theorem"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "geodesic",
+    "symbol": "γ(t)",
+    "latex": "\\gamma",
+    "name": "Geodesic",
+    "aliases": [
+      "geodesic",
+      "shortest path",
+      "locally minimizing",
+      "autoparallel",
+      "great circle",
+      "constant speed curve"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig"
+    ],
+    "definition": "Locally length-minimizing constant-speed curves: autoparallel transport of their own velocity (∇_γ̇γ̇ = 0). Great circles on spheres; straight lines in flat space.",
+    "reading": "“geodesic”.",
+    "examples": [
+      {
+        "tex": "\\text{great circles on } S^2",
+        "explanation": "Equators and meridians: the shortest routes on a sphere."
+      }
+    ],
+    "relatedSymbols": [
+      "riemannian-metric",
+      "connection",
+      "tangent-space",
+      "distance-formula",
+      "limit"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "connection",
+    "symbol": "∇",
+    "latex": "\\nabla",
+    "name": "Connection and covariant derivative",
+    "aliases": [
+      "connection",
+      "covariant derivative",
+      "levi-civita",
+      "christoffel symbols",
+      "parallel transport",
+      "affine connection"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Differentiates vector fields along directions with the Leibniz rule: ∇_X Y. Christoffel symbols are its coordinates; metric-compatible and torsion-free gives the unique Levi-Civita connection. Shares its glyph with the gradient — a different concept.",
+    "reading": "“connection” (nabla here is not the gradient).",
+    "examples": [
+      {
+        "tex": "\\nabla_X Y",
+        "explanation": "The covariant derivative of Y in direction X: ordinary directional derivative plus correction terms."
+      }
+    ],
+    "relatedSymbols": [
+      "nabla-gradient",
+      "derivative-leibniz",
+      "vector-field",
+      "riemannian-metric",
+      "partial-derivative"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "curvature",
+    "symbol": "R",
+    "latex": "R",
+    "name": "Curvature (and torsion)",
+    "aliases": [
+      "curvature",
+      "riemann curvature",
+      "sectional curvature",
+      "gaussian curvature",
+      "torsion",
+      "flat vs curved"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig"
+    ],
+    "definition": "Measures path-dependence of parallel transport: second covariant derivatives fail to commute by the Riemann tensor. Zero means flat; sectional and Gaussian curvatures are its two-dimensional faces. Torsion separately measures frame-twisting.",
+    "reading": "“curvature”.",
+    "examples": [
+      {
+        "tex": "\\text{triangle angles} > \\pi",
+        "explanation": "On a positively curved sphere, triangle angles sum past 180°."
+      }
+    ],
+    "relatedSymbols": [
+      "connection",
+      "geodesic",
+      "riemannian-metric",
+      "triangle",
+      "angle"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "exterior-derivative",
+    "symbol": "d",
+    "latex": "d",
+    "name": "Exterior derivative",
+    "aliases": [
+      "exterior derivative",
+      "d squared zero",
+      "de Rham complex",
+      "grad curl div unified",
+      "closed exact forms"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Sends k-forms to (k+1)-forms with d² = 0, unifying gradient, curl, and divergence. Closed forms (dω = 0) modulo exact ones (ω = dη) is de Rham cohomology.",
+    "reading": "“d”.",
+    "examples": [
+      {
+        "tex": "df = f_x\\,dx + f_y\\,dy",
+        "explanation": "On functions it is the total differential: gradient in form language."
+      }
+    ],
+    "relatedSymbols": [
+      "differential-form",
+      "chain-complex",
+      "cohomology",
+      "partial-derivative",
+      "nabla-gradient"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "stokes-theorem",
+    "symbol": "∫_M dω",
+    "latex": "\\int_M d\\omega",
+    "name": "Stokes' theorem",
+    "aliases": [
+      "stokes theorem",
+      "generalized stokes",
+      "boundary integral",
+      "fundamental theorem of calculus generalized",
+      "green gauss stokes unified"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "∫_M dω = ∫_{∂M} ω: integrating a derivative over a region equals integrating the form over its boundary. One statement unifying the fundamental theorem of calculus, Green, classical Stokes, and Gauss.",
+    "reading": "“Stokes' theorem”.",
+    "examples": [
+      {
+        "tex": "\\int_a^b f' = f(b) - f(a)",
+        "explanation": "The one-dimensional case: boundary of [a, b] is its two endpoints."
+      }
+    ],
+    "relatedSymbols": [
+      "integral",
+      "differential-form",
+      "contour-integral",
+      "fundamental-theorem-calculus",
+      "exterior-derivative"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "tensor-field",
+    "symbol": "T",
+    "latex": "T",
+    "name": "Tensor fields",
+    "aliases": [
+      "tensor field",
+      "type r s tensor",
+      "multilinear map",
+      "metric as tensor",
+      "transformation law",
+      "not just arrays"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "geometry-trig",
+      "linear-discrete"
+    ],
+    "definition": "Smoothly varying multilinear maps on tangent and cotangent spaces, of type (r, s). The metric and curvature are examples. A bare array of numbers is not a tensor: the transformation law under change of coordinates is the content.",
+    "reading": "“tensor field”.",
+    "examples": [
+      {
+        "tex": "ds^2 = dx^2 + dy^2",
+        "explanation": "The metric as a (0,2)-tensor: it eats two vectors and returns their inner product."
+      }
+    ],
+    "commonMistakes": [
+      "Calling any multi-indexed array a tensor; without the transformation law it is just numbers in boxes."
+    ],
+    "relatedSymbols": [
+      "tensor-product",
+      "tangent-space",
+      "riemannian-metric",
+      "matrix-notation",
+      "vector-notation"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "pushforward-pullback",
+    "symbol": "dF / F*",
+    "latex": "dF, F^*",
+    "name": "Pushforward and pullback",
+    "aliases": [
+      "pushforward",
+      "pullback",
+      "differential of a map",
+      "jacobian pushforward",
+      "pullback of forms",
+      "F star"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "A smooth map F: M → N pushes tangent vectors forward (dF, the Jacobian in coordinates) and pulls functions and forms back (F*). Vectors go with the map; covectors and forms go against it.",
+    "reading": "“pushforward” and “pullback”.",
+    "examples": [
+      {
+        "tex": "dF_p: T_pM \\to T_{F(p)}N",
+        "explanation": "The best linear approximation of F at p, sending directions to directions."
+      }
+    ],
+    "relatedSymbols": [
+      "derivative-leibniz",
+      "mapping-arrow",
+      "composition",
+      "differential-form",
+      "chain-rule"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "lie-derivative",
+    "symbol": "L_X",
+    "latex": "\\mathcal{L}_X",
+    "name": "Lie derivative",
+    "aliases": [
+      "lie derivative",
+      "dragging along flow",
+      "cartan formula",
+      "L_X",
+      "no connection needed"
+    ],
+    "category": "advanced",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Differentiates tensors by dragging them along a vector field's flow — no connection or metric needed. Cartan's formula L_X = dι_X + ι_Xd ties it to the exterior derivative; on functions it is just the directional derivative.",
+    "reading": "“Lie derivative along X”.",
+    "examples": [
+      {
+        "tex": "\\mathcal{L}_X f = X(f)",
+        "explanation": "On functions: differentiate f in the X direction."
+      }
+    ],
+    "relatedSymbols": [
+      "vector-field",
+      "exterior-derivative",
+      "connection",
+      "derivative-leibniz",
+      "differential-form"
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia, Differentiable manifold",
+        "url": "https://en.wikipedia.org/wiki/Differentiable_manifold",
+        "license": "CC BY-SA 4.0 (Wikipedia footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Maps that preserve addition and scaling",
+    "section": "Maps that preserve addition and scaling",
+    "subgoals": [
+      "Check f(x + y) = f(x) + f(y)",
+      "Check f(rx) = r f(x)",
+      "Note the scalar is unchanged"
+    ]
+  },
+  {
+    "label": "Kernels, images and injectivity",
+    "section": "Kernels, images and injectivity",
+    "subgoals": [
+      "Identify the kernel as a submodule",
+      "Identify the image as a submodule",
+      "Use a zero kernel for injectivity"
+    ]
+  },
+  {
+    "label": "Worked: homomorphisms from Z_2 to Z_4",
+    "section": "Worked: homomorphisms from Z_2 to Z_4",
+    "subgoals": [
+      "Fix the image of the class of 1",
+      "Solve 2a = 0 in Z_4",
+      "Count the two solutions"
+    ]
+  }
+]

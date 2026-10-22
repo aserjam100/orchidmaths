@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Amount per serving",
+    "section": "Amount per serving",
+    "subgoals": [
+      "Divide by the serving count",
+      "See why that makes it scalable",
+      "Do the division exactly"
+    ]
+  },
+  {
+    "label": "Multiplying back up",
+    "section": "Multiplying back up",
+    "subgoals": [
+      "Multiply by the new count",
+      "Keep the two steps in order",
+      "Avoid the wrong ratio"
+    ]
+  },
+  {
+    "label": "Keeping the units",
+    "section": "Keeping the units",
+    "subgoals": [
+      "Carry the unit",
+      "Check more servings need more",
+      "Compare with the original"
+    ]
+  }
+]

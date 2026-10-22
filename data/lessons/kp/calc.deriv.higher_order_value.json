@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The power rule applied k times",
+    "section": "The power rule applied k times",
+    "subgoals": [
+      "Bring down the exponent",
+      "Reduce it by one",
+      "Repeat k times"
+    ]
+  },
+  {
+    "label": "The falling factorial",
+    "section": "The falling factorial",
+    "subgoals": [
+      "Name the descending product",
+      "See why powers eventually vanish",
+      "Connect it to polynomial degree"
+    ]
+  },
+  {
+    "label": "Evaluating at a point",
+    "section": "Evaluating at a point",
+    "subgoals": [
+      "Substitute into the product form",
+      "Skip the intermediate derivatives",
+      "Check the sign's parity"
+    ]
+  }
+]

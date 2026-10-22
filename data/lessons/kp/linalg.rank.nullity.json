@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Rank and nullity",
+    "section": "Rank and nullity",
+    "subgoals": [
+      "Define the rank",
+      "Define the nullity",
+      "Connect collapse to nullity"
+    ]
+  },
+  {
+    "label": "The theorem",
+    "section": "The theorem",
+    "subgoals": [
+      "State rank plus nullity",
+      "Note that rows do not appear",
+      "Compute a nullity"
+    ]
+  },
+  {
+    "label": "What it says about solutions",
+    "section": "What it says about solutions",
+    "subgoals": [
+      "State the solvability condition",
+      "Describe the solution set",
+      "Read the two numbers geometrically"
+    ]
+  }
+]

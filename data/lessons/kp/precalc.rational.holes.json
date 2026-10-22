@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A cancelled factor is a hole",
+    "section": "A cancelled factor is a hole",
+    "subgoals": [
+      "Factor numerator and denominator",
+      "Cancel the common factor",
+      "Record the excluded value"
+    ]
+  },
+  {
+    "label": "Worked: (x^2 - 4)/(x - 2)",
+    "section": "Worked: (x^2 - 4)/(x - 2)",
+    "subgoals": [
+      "Factor as (x-2)(x+2)",
+      "Cancel x-2",
+      "Place the hole at (2,4)"
+    ]
+  },
+  {
+    "label": "Holes versus asymptotes",
+    "section": "Holes versus asymptotes",
+    "subgoals": [
+      "Cancel first",
+      "Assign cancelled factors to holes",
+      "Assign surviving factors to asymptotes"
+    ]
+  }
+]

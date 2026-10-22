@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Four counts behind every metric",
+    "section": "Four counts behind every metric",
+    "subgoals": [
+      "Fill TP, FP, FN and TN",
+      "Put actual classes on rows",
+      "Put predicted classes on columns"
+    ]
+  },
+  {
+    "label": "Worked: reading the cells",
+    "section": "Worked: reading the cells",
+    "subgoals": [
+      "Add TP and FN for actual positives",
+      "Add TP and FP for predicted positives",
+      "Add all four for the total"
+    ]
+  },
+  {
+    "label": "From cells to precision and recall",
+    "section": "From cells to precision and recall",
+    "subgoals": [
+      "Divide TP by TP + FP",
+      "Divide TP by TP + FN",
+      "Read both from the same table"
+    ]
+  }
+]

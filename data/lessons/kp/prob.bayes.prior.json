@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Prior, likelihood, posterior",
+    "section": "Prior, likelihood, posterior",
+    "subgoals": [
+      "Name the prior",
+      "Name the likelihood",
+      "Combine them into the posterior"
+    ]
+  },
+  {
+    "label": "Worked: two boxes",
+    "section": "Worked: two boxes",
+    "subgoals": [
+      "Write the two likelihoods",
+      "Cancel the equal priors",
+      "Divide to the posterior"
+    ]
+  },
+  {
+    "label": "The law of total probability",
+    "section": "The law of total probability",
+    "subgoals": [
+      "Partition the hypotheses",
+      "Weight each likelihood by its prior",
+      "Sum to the unconditional probability"
+    ]
+  }
+]

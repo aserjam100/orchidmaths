@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What the parts mean",
+    "section": "What the parts mean",
+    "subgoals": [
+      "Read the real and imaginary parts separately",
+      "Place the number at (a, b)",
+      "Keep the imaginary part a real number"
+    ]
+  },
+  {
+    "label": "Equality of complex numbers",
+    "section": "Equality of complex numbers",
+    "subgoals": [
+      "Match real parts",
+      "Match imaginary parts",
+      "Turn one equation into two"
+    ]
+  },
+  {
+    "label": "Reading coefficients",
+    "section": "Reading coefficients",
+    "subgoals": [
+      "Handle an expression as a part",
+      "Divide when the coefficient is scaled",
+      "Refuse to compare i with a number"
+    ]
+  }
+]

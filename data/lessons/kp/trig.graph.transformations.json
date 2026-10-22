@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The four parameters",
+    "section": "The four parameters",
+    "subgoals": [
+      "Read the outside coefficient as amplitude",
+      "Read the inside coefficient as period",
+      "Read the two constants as shifts"
+    ]
+  },
+  {
+    "label": "Order of application",
+    "section": "Order of application",
+    "subgoals": [
+      "Factor the inside coefficient out",
+      "Compress and shift horizontally",
+      "Stretch and shift vertically"
+    ]
+  },
+  {
+    "label": "Recovering an equation from a graph",
+    "section": "Recovering an equation from a graph",
+    "subgoals": [
+      "Measure amplitude and midline",
+      "Measure the period",
+      "Locate a feature for the phase shift"
+    ]
+  }
+]

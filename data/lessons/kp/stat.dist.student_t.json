@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction to the student’s \\\\(t\\\\) distribution",
+    "section": "",
+    "subgoals": [
+      "Divide Z by sqrt(V/k) for unknown variance",
+      "Track k degrees of freedom into tail weight",
+      "Converge the density to N(0,1) as k grows"
+    ]
+  },
+  {
+    "label": "Key features",
+    "section": "",
+    "subgoals": [
+      "Write the Gamma-ratio density in t and k",
+      "Read mu = 0 for k > 1",
+      "Compute sigma^2 = k/(k-2) for k > 2"
+    ]
+  },
+  {
+    "label": "Symmetry of the student’s \\\\(t\\\\) distribution",
+    "section": "",
+    "subgoals": [
+      "Mirror left-tail alpha onto right-tail alpha",
+      "Negate t_alpha into t_(1-alpha) = -t_alpha",
+      "Look critical values up by k in the t-table"
+    ]
+  }
+]

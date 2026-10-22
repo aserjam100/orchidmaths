@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A root and a power",
+    "section": "A root and a power",
+    "subgoals": [
+      "Read the denominator as the root",
+      "Read the numerator as the power",
+      "Take the root before the power"
+    ]
+  },
+  {
+    "label": "Evaluate the root first",
+    "section": "Evaluate the root first",
+    "subgoals": [
+      "Write the base as a perfect power",
+      "Apply the exponent rule",
+      "Reduce to an integer"
+    ]
+  },
+  {
+    "label": "Negative exponents take a reciprocal",
+    "section": "Negative exponents take a reciprocal",
+    "subgoals": [
+      "Evaluate the positive power",
+      "Take the reciprocal",
+      "Enter an exact fraction, not a decimal"
+    ]
+  }
+]

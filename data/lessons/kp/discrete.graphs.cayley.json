@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Labelled trees",
+    "section": "Counting labelled trees",
+    "subgoals": [
+      "Count small labelled trees",
+      "Read the exponent n-2",
+      "Distinguish shape from labelling"
+    ]
+  },
+  {
+    "label": "Prüfer sequences",
+    "section": "Prüfer sequences",
+    "subgoals": [
+      "Delete the smallest leaf and record",
+      "Recover the tree from the record",
+      "Count sequences of length n-2"
+    ]
+  },
+  {
+    "label": "Using the formula",
+    "section": "Using the formula",
+    "subgoals": [
+      "Apply n^(n-2)",
+      "Compute for five and six vertices",
+      "Connect degree to label frequency"
+    ]
+  }
+]

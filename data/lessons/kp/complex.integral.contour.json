@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: integral of one over z around the unit circle",
+    "section": "Worked: integral of one over z around the unit circle",
+    "subgoals": [
+      "Parametrize with z = e^{it}",
+      "Integrate i dt from 0 to 2 pi",
+      "Match against the enclosed residue"
+    ]
+  },
+  {
+    "label": "Worked: integral of one over z squared is zero",
+    "section": "Worked: integral of one over z squared is zero",
+    "subgoals": [
+      "Parametrize to get i e^{-it} dt",
+      "Average e^{-it} over the full turn",
+      "Match against the zero residue"
+    ]
+  },
+  {
+    "label": "Worked: ML bound for z squared on the unit circle",
+    "section": "Worked: ML bound for z squared on the unit circle",
+    "subgoals": [
+      "Take the supremum M of |z^2| on the circle",
+      "Measure the loop length L",
+      "Multiply to bound the integral"
+    ]
+  }
+]

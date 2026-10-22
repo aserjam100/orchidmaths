@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Symmetric matrices have real eigenvalues",
+    "section": "Symmetric matrices have real eigenvalues",
+    "subgoals": [
+      "Compute x^T A x for an eigenvector",
+      "Use symmetry to force a real eigenvalue",
+      "Orthogonalise eigenvectors for distinct eigenvalues"
+    ]
+  },
+  {
+    "label": "Worked: orthogonally diagonalizing a symmetric matrix",
+    "section": "Worked: orthogonally diagonalizing a symmetric matrix",
+    "subgoals": [
+      "Find eigenvalues 3 and 1",
+      "Find eigenvectors (1,1) and (1,-1)",
+      "Normalize into Q"
+    ]
+  },
+  {
+    "label": "Why orthogonality matters",
+    "section": "Why orthogonality matters",
+    "subgoals": [
+      "Replace the inverse by the transpose",
+      "Expose a sum of weighted squares",
+      "Reduce powers to Q Lambda^k Q^T"
+    ]
+  }
+]

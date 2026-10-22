@@ -1,0 +1,453 @@
+import { test, expect, type Page } from './fixtures'
+import conceptsData from '../data/concepts.json'
+import { answerField, enterAnswer, focusAnswerField } from './helpers/answer'
+
+const sample = conceptsData as Array<{ id: string; label: string; domain: string; prerequisites: string[] }>
+
+test.beforeEach(async ({ context }) => {
+  await context.route('**/api/**', route => route.fulfill({ status: 404, body: '' }))
+})
+
+async function overflowPx(page: Page): Promise<number> {
+  return page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
+}
+
+const ROUTES = [
+  '/',
+  '/profile',
+  '/learn',
+  '/review',
+  '/learn?concept=arith.add.single',
+  '/graph',
+  '/leaderboard',
+  '/login',
+  '/onboard',
+  '/settings',
+  '/goals',
+  '/diagnose',
+  '/how-it-works',
+  '/docs',
+  '/docs/architecture',
+  '/docs/contributing',
+]
+
+for (const route of ROUTES) {
+  test(`no horizontal overflow on ${route}`, async ({ page }) => {
+    await page.goto(route)
+    await page.waitForTimeout(2500)
+    const overflow = await overflowPx(page)
+    expect(overflow).toBeLessThanOrEqual(1)
+  })
+}
+
+test('landing FAQ and extension columns stay inside the viewport', async ({ page }) => {
+  await page.goto('/')
+  const section = page.locator('section', { hasText: 'Questions, answered' })
+  await section.scrollIntoViewIfNeeded()
+  const vw = page.viewportSize()!.width
+
+  // Regression: the JSON pre's min-content used to widen the grid track past
+  // the container, so main's overflow-x-clip cut off the FAQ text and code.
+  for (const child of await section.locator('> div').all()) {
+    const box = await child.boundingBox()
+    expect(box).toBeTruthy()
+    expect(box!.x).toBeGreaterThanOrEqual(0)
+    expect(box!.x + box!.width).toBeLessThanOrEqual(vw + 1)
+  }
+
+  const pre = section.locator('pre')
+  const box = await pre.boundingBox()
+  expect(box).toBeTruthy()
+  expect(box!.x).toBeGreaterThanOrEqual(0)
+  expect(box!.x + box!.width).toBeLessThanOrEqual(vw + 1)
+})
+
+test('bottom tabs present and scroll-aware on mobile', async ({ page }) => {
+  await page.goto('/how-it-works')
+  const tabs = page.locator('nav.lg\\:hidden')
+  await expect(tabs).toBeVisible()
+
+  await page.evaluate(() => { document.documentElement.style.scrollBehavior = 'auto' })
+
+  // Scroll down mid-page (not the bottom — bottom force-shows) → hidden while scrolling
+  await page.evaluate(() => window.scrollTo(0, Math.min(800, document.documentElement.scrollHeight - window.innerHeight - 300)))
+  // poll for hidden — rAF + idleMs 300 needs >150ms
+  await expect.poll(async () => tabs.evaluate(el => getComputedStyle(el).transform), { timeout: 5000 }).not.toContain('matrix(1, 0, 0, 1, 0, 0)')
+
+  // Stopping scroll re-shows after the 300ms idle window
+  await page.waitForTimeout(600)
+  await expect(tabs).toBeInViewport()
+
+  await page.evaluate(() => window.scrollTo(0, 0))
+  await page.waitForTimeout(600)
+  await expect(tabs).toBeInViewport()
+})
+
+// The chrome is one shared state, so the header and the tab bar always agree.
+// Both hide together, both come back together, and both leave the tab order
+// while hidden -- otherwise a keyboard user tabs into links they cannot see.
+test('chrome hides the header and the tab bar together, and tap toggles it', async ({ page }) => {
+  await page.goto('/how-it-works')
+  const header = page.locator('header')
+  const tabs = page.locator('nav.lg\\:hidden')
+  const toggle = page.getByTestId('chrome-toggle')
+  await expect(tabs).toBeVisible()
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true')
+
+  await page.evaluate(() => { document.documentElement.style.scrollBehavior = 'auto' })
+  await page.evaluate(() => window.scrollTo(0, 800))
+  await page.waitForTimeout(600)
+
+  await toggle.click()
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false')
+  await expect(header).toHaveAttribute('inert', '')
+  await expect(tabs).toHaveAttribute('inert', '')
+  // Collapsed, not merely translated: the header gives its height back.
+  await expect.poll(async () => header.evaluate(el => el.getBoundingClientRect().height)).toBe(0)
+
+  // A tap is a decision, not a suggestion: idle and settle must not undo it.
+  await page.waitForTimeout(1500)
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false')
+
+  await toggle.click()
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true')
+  await expect(tabs).toBeInViewport()
+  await expect(header).not.toHaveAttribute('inert', '')
+})
+
+test('chrome reveals at the bottom then gets out of the way', async ({ page }) => {
+  await page.goto('/how-it-works')
+  const tabs = page.locator('nav.lg\\:hidden')
+  const toggle = page.getByTestId('chrome-toggle')
+  await page.evaluate(() => { document.documentElement.style.scrollBehavior = 'auto' })
+
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight))
+  await expect(tabs).toBeInViewport()
+
+  // Then it hides itself, and stays hidden: collapsing the header shortens the
+  // document, so the browser clamps scrollY and reports it as a scroll event.
+  // Acting on that clamp used to restart the timer in a loop that never settled.
+  //
+  // The window is generous on purpose. `BOTTOM_AUTO_HIDE_MS` is 2000ms of real
+  // wall-clock time, so the assertion has to outlast it even when the suite is
+  // running every project in parallel and the machine is saturated; 6000ms had
+  // no headroom over 2000ms under load and this test flaked rather than failed.
+  await expect.poll(async () => toggle.getAttribute('aria-expanded'), { timeout: 15_000 }).toBe('false')
+  await page.waitForTimeout(2500)
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false')
+})
+
+test('desktop keeps its chrome: no handle, no scroll hiding', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 })
+  await page.goto('/how-it-works')
+  const header = page.locator('header')
+  await page.evaluate(() => { document.documentElement.style.scrollBehavior = 'auto' })
+
+  // The handle is a mobile affordance; the tab bar does not exist at lg.
+  await expect(page.getByTestId('chrome-toggle')).toBeHidden()
+  await page.evaluate(() => window.scrollTo(0, 900))
+  await page.waitForTimeout(800)
+
+  await expect(header).toBeInViewport()
+  await expect(header).not.toHaveAttribute('inert', '')
+})
+
+// The control has to exist wherever the chrome can hide, including the landing
+// page, which has a header but no tab bar.
+test('chrome control appears wherever there is chrome, and only there', async ({ page }) => {
+  await page.goto('/')
+  await expect(page.getByTestId('chrome-toggle')).toBeVisible()
+  await expect(page.getByTestId('chrome-tap-strip')).toHaveCount(1)
+
+  // /profile used to assert the opposite: no control, because it had neither a header nor a tab
+  // bar on mobile. That was not a design decision — it was the bug. The page's shell replaced
+  // Header and BottomTabs with a desktop-only sidebar, so arriving at /profile from any other
+  // page's tab bar left a learner with no way back. The tab bar is back, so there is chrome here,
+  // and the control has something to hide.
+  await page.goto('/profile')
+  await expect(page.getByTestId('chrome-toggle')).toBeVisible()
+  await expect(page.getByTestId('chrome-tap-strip')).toHaveCount(1)
+})
+
+// Hiding is a small control on the bar's edge; getting it back is a tap
+// anywhere along the bottom of the screen, because that is the gesture you
+// reach for mid-scroll.
+// The reported bug, stated as an assertion: /profile is reachable from every other page's tab
+// bar, so arriving there must not end navigation. It did — the page's shell replaced Header and
+// BottomTabs with a sidebar that shadcn renders as an overlay sheet below lg, which left one small
+// ghost trigger and no tabs. The structural guard for this is in test/navCoverage.test.ts; this is
+// the same thing checked on a real phone viewport, through the real tab bar.
+test('/profile keeps the tab bar, so it is not a dead end on mobile', async ({ page }) => {
+  await page.goto('/profile')
+  for (const label of ['Home', 'Learn', 'Domains', 'Graph']) {
+    await expect(page.getByRole('link', { name: label, exact: true }).last()).toBeVisible()
+  }
+
+  // Exactly one sidebar opener. The shell supplies it, but two branches also carried their own
+  // copy from before the shell existed, and both rendered — so the page opened with two λ buttons
+  // stacked at the top. A guard that only checks the tab bar would pass straight through that.
+  const opener = page.getByRole('button', { name: 'Toggle sidebar' })
+  await expect(opener).toHaveCount(1)
+
+  // And it looks like a control rather than the wordmark. shadcn's SidebarTrigger defaults to a
+  // bare λ, which is the app logo sitting at the top-left behaving like a link — the same problem
+  // 114a3e25 fixed on the collapsed desktop rail, reached again through the mobile opener. The
+  // chevron is what makes it an affordance; assert it is present so it cannot quietly go back.
+  await expect(opener.locator('svg')).toHaveCount(1)
+
+  // And it is live, not just painted: the tab bar is the way out.
+  await page.getByRole('link', { name: 'Practice', exact: true }).last().click()
+  await expect(page).toHaveURL(/\/learn/)
+})
+
+test('the bottom edge brings the chrome back, and only while it is hidden', async ({ page }) => {
+  await page.goto('/how-it-works')
+  const header = page.locator('header')
+  const strip = page.getByTestId('chrome-tap-strip')
+  const toggle = page.getByTestId('chrome-toggle')
+  await page.evaluate(() => { document.documentElement.style.scrollBehavior = 'auto' })
+
+  // While the bars are up the strip must not intercept taps meant for content.
+  await expect(strip).toHaveCSS('pointer-events', 'none')
+
+  await toggle.click()
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false')
+  await expect(strip).toHaveCSS('pointer-events', 'auto')
+
+  // Tap the very bottom of the viewport, not the button.
+  const size = page.viewportSize()!
+  await page.mouse.click(size.width / 2, size.height - 6)
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true')
+  await expect(header).toBeInViewport()
+
+  // And the strip goes inert again, so it stops eating bottom-edge taps.
+  await expect(strip).toHaveCSS('pointer-events', 'none')
+  await page.mouse.click(size.width / 2, size.height - 6)
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true')
+})
+
+test('mobile landing hero is diagram-free and overflow-safe', async ({ page }) => {
+  const errors: string[] = []
+  page.on('pageerror', e => errors.push(String(e)))
+  page.on('console', m => {
+    if (m.type() === 'error') errors.push(m.text())
+  })
+
+  await page.goto('/')
+  const hero = page.locator('section').first()
+  await hero.getByRole('heading', { level: 1 }).scrollIntoViewIfNeeded()
+  await expect(hero.locator('.graph-label--domain')).toHaveCount(0)
+  await expect(hero.getByRole('button', { name: 'Astrolabe', exact: true })).toHaveCount(0)
+  expect(await overflowPx(page)).toBeLessThanOrEqual(1)
+  expect(errors).toEqual([])
+})
+
+test('mobile graph renders and is usable', async ({ page }) => {
+  await page.goto('/graph')
+  const nodes = page.locator('.react-flow__node')
+  await expect(nodes.first()).toBeVisible({ timeout: 45_000 })
+  await expect.poll(async () => nodes.count(), { timeout: 45_000 }).toBeGreaterThan(100)
+
+  expect(await overflowPx(page)).toBeLessThanOrEqual(1)
+
+  // search overlay stays inside viewport and remains usable
+  const input = page.getByPlaceholder('Search concepts…')
+  await input.fill(sample[5].label.slice(0, 5))
+  const box = await input.boundingBox()
+  expect(box).toBeTruthy()
+  const vw = page.viewportSize()!.width
+  expect(box!.x).toBeGreaterThanOrEqual(0)
+  expect(box!.x + box!.width).toBeLessThanOrEqual(vw)
+  expect(box!.height).toBeGreaterThanOrEqual(36)
+
+  // ambient toggle must NOT be offered on mobile (forced off there)
+  await expect(page.getByTitle('Toggle edge flow animation')).toHaveCount(0)
+})
+
+test('mobile pinch-zoom works on the concept map', async ({ page }) => {
+  await page.goto('/graph')
+  await expect(page.locator('.react-flow__node').first()).toBeVisible({ timeout: 45_000 })
+
+  const pane = page.locator('.react-flow__viewport')
+  const before = await pane.evaluate(el => el.style.transform)
+  await page.locator('.react-flow').hover({ position: { x: 180, y: 160 } })
+  await page.mouse.wheel(0, -240)
+  await page.waitForTimeout(1000)
+  await expect.poll(async () => pane.evaluate(el => el.style.transform), { timeout: 5000 }).not.toBe(before)
+})
+
+test('mobile info panel wraps without overflowing', async ({ page }) => {
+  const target = sample.find(c => c.prerequisites.length > 2) ?? sample[10]
+  await page.goto(`/graph?concept=${encodeURIComponent(target.id)}`)
+  // The node action is now a link whose label follows the concept's state, not a fixed
+  // "Open concept". With no progress stubbed the concept reads as unseen, so it is the Learn
+  // half — and it is a link, because clicking a concept on the graph takes the learner to the
+  // place that teaches it rather than to an article they can read instead.
+  const action = page.getByRole('link', { name: 'Learn this →' })
+  await expect(action).toBeVisible({ timeout: 30_000 })
+  const box = await action.boundingBox()
+  expect(box).toBeTruthy()
+  const vw = page.viewportSize()!.width
+  expect(box!.x).toBeGreaterThanOrEqual(0)
+  expect(box!.x + box!.width).toBeLessThanOrEqual(vw)
+})
+
+test('graph list toggle and search buttons meet 36px hit area', async ({ page }) => {
+  await page.goto('/graph')
+  const listBtn = page.locator('button[aria-label="Open concept list"]')
+  await expect(listBtn).toBeVisible({ timeout: 30_000 })
+  const listBox = await listBtn.boundingBox()
+  expect(listBox).toBeTruthy()
+  expect(listBox!.height).toBeGreaterThanOrEqual(36)
+})
+
+test('graph zoom controls are 44px on mobile', async ({ page }) => {
+  await page.goto('/graph')
+  await expect(page.locator('.react-flow__node').first()).toBeVisible({ timeout: 30_000 })
+  const ctrl = page.locator('.react-flow__controls-button').first()
+  const box = await ctrl.boundingBox()
+  expect(box).toBeTruthy()
+  expect(box!.width).toBeGreaterThanOrEqual(44)
+  expect(box!.height).toBeGreaterThanOrEqual(44)
+})
+
+test('stacked table cards are centered with equal gutters', async ({ page }) => {
+  for (const path of ['/docs/contributing', '/how-it-works']) {
+    await page.goto(path)
+    const stack = page.locator('div.sm\\:hidden.space-y-2').first()
+    await expect(stack).toBeVisible()
+    const firstCard = stack.locator('> div').first()
+    const box = await firstCard.boundingBox()
+    expect(box).toBeTruthy()
+    const vw = page.viewportSize()!.width
+    expect(Math.abs(box!.x - (vw - (box!.x + box!.width)))).toBeLessThanOrEqual(1)
+  }
+})
+
+test('scroll containers are edge-to-edge and horizontally scrollable', async ({ page }) => {
+  // Leaderboard table
+  await page.goto('/leaderboard')
+  const lb = page.locator('div.overflow-x-auto').first()
+  await expect(lb).toBeVisible()
+  let lbBox = await lb.boundingBox()
+  expect(lbBox).toBeTruthy()
+  expect(lbBox!.x).toBeLessThanOrEqual(1)
+  expect(Math.abs(lbBox!.x + lbBox!.width - page.viewportSize()!.width)).toBeLessThanOrEqual(1)
+  // Only scrollable when content overflows (320px table fits inside 390px viewport)
+  const lbScrollable = await lb.evaluate(el => el.scrollWidth > el.clientWidth)
+  if (lbScrollable) {
+    await lb.evaluate(el => { el.scrollLeft = 50 })
+    expect(await lb.evaluate(el => el.scrollLeft)).toBeGreaterThan(0)
+  }
+
+  // Yearly heatmap (switch view first). It is on the hub, with the rest of the
+  // report.
+  await page.goto('/profile')
+  await page.getByRole('button', { name: 'Yearly' }).click()
+  const yearly = page.locator('div.overflow-x-auto').first()
+  await expect(yearly).toBeVisible()
+  const yBox = await yearly.boundingBox()
+  expect(yBox).toBeTruthy()
+  expect(yBox!.x).toBeLessThanOrEqual(1)
+  expect(Math.abs(yBox!.x + yBox!.width - page.viewportSize()!.width)).toBeLessThanOrEqual(1)
+  const yScrollable = await yearly.evaluate(el => el.scrollWidth > el.clientWidth)
+  if (yScrollable) {
+    await yearly.evaluate(el => { el.scrollLeft = 50 })
+    expect(await yearly.evaluate(el => el.scrollLeft)).toBeGreaterThan(0)
+  }
+})
+
+test('double-clicking Check Answer fires exactly one POST', async ({ page }) => {
+  let answerPosts = 0
+  page.on('request', req => {
+    if (req.method() === 'POST' && (req.url().includes('/api/study/answer') || req.url().includes('/api/quiz/answer'))) answerPosts++
+  })
+
+  // Mock the Learn seam: the attempt-first feed submits through POST /api/study/answer,
+  // which is the endpoint's name rather than a route the learner can visit.
+  const LESSON = { title: 'Addition Basics', body: '# Addition Basics\nLearn', concepts: ['arith.add.single'] }
+  const PRACTICE = { questions: [{ question: '5+4=?', answer: '9', explanation: '', source: 'curated' }], concept_id: 'arith.add.single' }
+  const KP = { concept_id: 'arith.add.single', kps: [{ label: 'Use addition notation', section: 'Use Addition Notation', subgoals: [], worked_example: 'Add' }], diagram: '' }
+  const READY = { concept_id: 'arith.add.single', ready: true, weak: [], missing: [] }
+  await page.route('**/api/lessons**', route => {
+    const url = route.request().url()
+    if (url.includes('/practice')) return route.fulfill({ json: PRACTICE })
+    if (url.includes('/kp')) return route.fulfill({ json: KP })
+    if (url.includes('/body')) return route.fulfill({ json: { title: LESSON.title, body: LESSON.body } })
+    if (url.includes('/readiness')) return route.fulfill({ json: READY })
+    return route.fulfill({ json: { lessons: { arithmetic: [LESSON] } } })
+  })
+  await page.route('**/api/study/answer', r => r.fulfill({ json: { correct: true, feedback: 'Correct!', xp: 1, expected_answer: '9' } }))
+  await page.route('**/api/scores/**', r => r.fulfill({ json: { lifetime_points: 100, weekly_score: 10, speed_bonus: 0, concepts_mastered: 1, current_streak: 1, level: 'Novice', xp_total: 10, xp_today: 10, daily_xp_goal: 30 } }))
+  await page.route('**/api/progress/**', r => r.fulfill({ json: {} }))
+  await page.route('**/api/activity**', r => r.fulfill({ json: [] }))
+  await page.route('**/api/weaknesses**', r => r.fulfill({ json: { by_domain: {} } }))
+  await page.route('**/api/reviews/due**', r => r.fulfill({ json: { count: 0 } }))
+  await page.route('**/api/courses**', r => r.fulfill({ json: { courses: [] } }))
+  await page.route('**/api/transcript**', r => r.fulfill({ json: { courses: [] } }))
+  await page.route('**/api/efficacy**', r => r.fulfill({ json: { concepts_touched: 1, first_pass_rate: 1, second_pass_rate: 1, avg_attempts_per_concept: 1, total_attempts: 1 } }))
+
+  await page.goto('/learn?concept=arith.add.single')
+  // The teaching slice comes first and the question is behind it: the worked example is what
+  // the learner reads before being asked anything, and it is not the question itself.
+  await expect(page.getByText('5+4=?')).toHaveCount(0)
+  await page.getByRole('button', { name: 'Next →' }).click()
+  await expect(page.getByText('5+4=?')).toBeVisible({ timeout: 30_000 })
+
+  const input = answerField(page)
+  await expect(input).toBeVisible({ timeout: 20_000 })
+  // Regression guard: `flex-1` on the column form once made flex-basis:0% win
+  // over the height class, collapsing the box to ~22px on mobile. The math editor
+  // keeps the same 48px floor, so the guard still applies to it.
+  const inputBox = await input.boundingBox()
+  expect(inputBox?.height).toBeGreaterThanOrEqual(48)
+  await focusAnswerField(page)
+  // Submit hugs its label instead of stretching to the column width.
+  const submit = page.getByRole('button', { name: 'Check', exact: true }).first()
+  const submitBox = await submit.boundingBox()
+  expect(submitBox?.height).toBe(48)
+  expect(submitBox?.width ?? 0).toBeLessThan(inputBox?.width ?? 0)
+  // `enterAnswer`, not `typeAnswer`: this spec runs on both mobile projects, where the
+  // profile is coarse-pointer and the virtual keypad opens on focus and swallows
+  // synthetic keystrokes. Typing here made the test fail deterministically at 320px
+  // while passing at 412px — not a product fault and not machine load, just an input
+  // method that is invalid on a profile with no physical keyboard. What is under test
+  // here is double-submit prevention, so the way the answer gets in is incidental and
+  // should follow the profile. See `typeAnswer`'s note.
+  await enterAnswer(page, '9')
+  // Wait for the answer to reach the host before clicking. `enterAnswer` returns as
+  // soon as the field has the text, but Check stays disabled until the value has
+  // propagated into host state, and the disabled→enabled transition leaves the
+  // button moving. dblclick's own stability wait then times out on a *disabled*
+  // button, which reads like a product bug and is not one.
+  await expect(submit).toBeEnabled({ timeout: 20_000 })
+  await submit.dblclick()
+  await page.waitForTimeout(500)
+
+  expect(answerPosts).toBe(1)
+  await expect(page.getByText('Failed to submit answer')).toHaveCount(0)
+})
+
+// The assistant trigger and the table-of-contents button both float in the
+// bottom-right corner, and on `/how-it-works` the trigger sat directly on top of
+// the Contents button: two 44px controls at the same offset, so the TOC was
+// unreachable on a phone. They are stacked now, and this pins the stacking
+// rather than the numbers, so either offset can move as long as the two boxes
+// stay apart.
+test('the assistant trigger does not cover the contents button', async ({ page }) => {
+  await page.goto('/how-it-works')
+
+  const contents = page.getByRole('button', { name: 'Table of contents' })
+  const assistant = page.getByRole('button', { name: 'Open assistant' })
+  await expect(contents).toBeVisible()
+  await expect(assistant).toBeVisible()
+
+  const c = await contents.boundingBox()
+  const a = await assistant.boundingBox()
+  expect(c, 'contents button has no box').not.toBeNull()
+  expect(a, 'assistant trigger has no box').not.toBeNull()
+  if (!c || !a) return
+
+  const overlap = c.x < a.x + a.width && a.x < c.x + c.width && c.y < a.y + a.height && a.y < c.y + c.height
+  expect(overlap, `contents ${JSON.stringify(c)} overlaps assistant ${JSON.stringify(a)}`).toBe(false)
+})

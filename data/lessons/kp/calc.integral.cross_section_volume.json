@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Slicing the solid",
+    "section": "Slicing the solid",
+    "subgoals": [
+      "State the volume integral",
+      "Write the area of a section",
+      "Compute a volume"
+    ]
+  },
+  {
+    "label": "The integral of the area",
+    "section": "The integral of the area",
+    "subgoals": [
+      "Relate it to solids of revolution",
+      "Express the area in the axis variable",
+      "Identify the curve supplying the side"
+    ]
+  },
+  {
+    "label": "Choosing the axis",
+    "section": "Choosing the axis",
+    "subgoals": [
+      "Slice perpendicular to the axis you integrate",
+      "Swap the axis when it helps",
+      "Say why the orientation is given"
+    ]
+  }
+]

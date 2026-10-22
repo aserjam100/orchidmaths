@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Half of the third side",
+    "section": "Half of the third side",
+    "subgoals": [
+      "State both properties",
+      "Compute a midsegment",
+      "Say why parallelism matters"
+    ]
+  },
+  {
+    "label": "Why it is half",
+    "section": "Why it is half",
+    "subgoals": [
+      "Find the similar triangle",
+      "Give the similarity ratio",
+      "Conclude the parallelism"
+    ]
+  },
+  {
+    "label": "Three midsegments",
+    "section": "Three midsegments",
+    "subgoals": [
+      "Divide the triangle into four",
+      "Identify the congruent copies",
+      "Compute the area ratio"
+    ]
+  }
+]

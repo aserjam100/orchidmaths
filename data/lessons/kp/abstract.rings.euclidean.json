@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Division with a smaller remainder",
+    "section": "Division with a smaller remainder",
+    "subgoals": [
+      "Write a = qb + r",
+      "Bound r by N(b)",
+      "Iterate until the remainder is zero"
+    ]
+  },
+  {
+    "label": "Worked: the integers and F[x]",
+    "section": "Worked: the integers and F[x]",
+    "subgoals": [
+      "Divide 17 by 5 with remainder 2",
+      "Divide x^3 + 1 by x + 1 exactly",
+      "Read the gcd off the one-generator ideal"
+    ]
+  },
+  {
+    "label": "Euclidean implies PID implies UFD",
+    "section": "Euclidean implies PID implies UFD",
+    "subgoals": [
+      "Choose a least-N element of an ideal",
+      "Show division forces a zero remainder",
+      "Use irreducible is prime in a PID"
+    ]
+  }
+]

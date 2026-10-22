@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The whole is one",
+    "section": "The whole is one",
+    "subgoals": [
+      "Write the whole over the denominator",
+      "Subtract the used part",
+      "Convert before subtracting"
+    ]
+  },
+  {
+    "label": "Reading it as a remainder",
+    "section": "Reading it as a remainder",
+    "subgoals": [
+      "See it as a fraction of the whole",
+      "Check the two parts sum to one",
+      "Reject a negative answer"
+    ]
+  },
+  {
+    "label": "Why the wording matters",
+    "section": "Why the wording matters",
+    "subgoals": [
+      "Recognise left and empty",
+      "Turn a word problem into arithmetic",
+      "Connect it to fractions of a group"
+    ]
+  }
+]

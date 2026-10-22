@@ -1,0 +1,29 @@
+[
+  {
+    "label": "From a factorisation",
+    "section": "From a factorisation",
+    "subgoals": [
+      "Read the divisor count off the exponents",
+      "See a divisor as one choice per prime",
+      "Say no divisor needs listing"
+    ]
+  },
+  {
+    "label": "Choosing an exponent for each prime",
+    "section": "Choosing an exponent for each prime",
+    "subgoals": [
+      "Count the options per prime",
+      "Multiply across the primes",
+      "Note the square case"
+    ]
+  },
+  {
+    "label": "Why the exponents multiply",
+    "section": "Why the exponents multiply",
+    "subgoals": [
+      "Invoke the multiplication principle",
+      "Say the choices are independent",
+      "Read the formula as options"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Name decimals",
+    "section": "",
+    "subgoals": [
+      "Read the whole-number part",
+      "Read the decimal part as tenths or hundredths",
+      "Use and for the decimal point"
+    ]
+  },
+  {
+    "label": "Write decimals",
+    "section": "",
+    "subgoals": [
+      "Write the whole-number part",
+      "Place the decimal point",
+      "Fill zeros for place value"
+    ]
+  },
+  {
+    "label": "Convert decimals to fractions",
+    "section": "",
+    "subgoals": [
+      "Write the decimal as a fraction",
+      "Simplify the fraction",
+      "Convert to a mixed number"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "concept": "trig.func.secant",
+  "setup": "A right triangle has $\\sec\\theta = [[ratio]]$ and a side adjacent to $\\theta$ of $[[given]]$.",
+  "steps": [
+    {
+      "fact": "ratio",
+      "say": "The secant is the reciprocal of the cosine, so it is the hypotenuse divided by the adjacent side. The hypotenuse is therefore the secant times the adjacent side."
+    },
+    {
+      "fact": "given",
+      "say": "The adjacent side is $[[given]]$."
+    },
+    {
+      "fact": "answer",
+      "say": "Multiplying gives $[[ratio]] \\times [[given]] = [[answer]]$."
+    }
+  ],
+  "answer": "So the hypotenuse is $[[answer]]$."
+}

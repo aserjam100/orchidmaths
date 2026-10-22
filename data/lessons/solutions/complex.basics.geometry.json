@@ -1,0 +1,19 @@
+{
+  "concept": "complex.basics.geometry",
+  "setup": "The points are \\(z_1 = [[z1]]\\) and \\(z_2 = [[z2]]\\).",
+  "steps": [
+    {
+      "fact": "z1",
+      "say": "The distance is \\(|z_2 - z_1|\\), the modulus of the displacement from one point to the other."
+    },
+    {
+      "fact": "dx",
+      "say": "The displacement has components [[dx]] and [[dy]]."
+    },
+    {
+      "fact": "value",
+      "say": "So the distance is \\(\\sqrt{[[dx]]^2 + [[dy]]^2} = [[value]]\\)."
+    }
+  ],
+  "answer": "So the distance is [[value]]."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Set z^n = 1",
+      "Write candidates e^{2 pi i k/n}",
+      "Verify n distinct points on the unit circle"
+    ]
+  },
+  {
+    "label": "Group structure",
+    "section": "",
+    "subgoals": [
+      "Multiply two nth roots angle by angle",
+      "Invert by negating the angle",
+      "Close the set under the product"
+    ]
+  },
+  {
+    "label": "Geometric interpretation",
+    "section": "",
+    "subgoals": [
+      "Plot n evenly spaced points on |z| = 1",
+      "Step the angle by 2pi/n each time",
+      "Spot the regular n-gon vertices"
+    ]
+  }
+]

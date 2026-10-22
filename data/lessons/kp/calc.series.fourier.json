@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Write a_0/2 + sum a_n cos nx + b_n sin nx",
+      "Require 2 pi-periodicity",
+      "Preview square-wave series"
+    ]
+  },
+  {
+    "label": "Fourier Coefficients",
+    "section": "",
+    "subgoals": [
+      "Integrate f(x)cos(nx)/pi for a_n",
+      "Integrate f(x)sin(nx)/pi for b_n",
+      "Compute a_0 as the mean value"
+    ]
+  },
+  {
+    "label": "Convergence of Fourier series",
+    "section": "",
+    "subgoals": [
+      "Check Dirichlet jump conditions",
+      "Read convergence at jumps as midpoint",
+      "Confirm Gibbs overshoot near jumps"
+    ]
+  }
+]

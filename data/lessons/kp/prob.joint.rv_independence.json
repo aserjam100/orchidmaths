@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The factorisation",
+    "section": "The factorisation",
+    "subgoals": [
+      "State the product rule at every pair",
+      "Translate it into events",
+      "Recover the joint from the margins"
+    ]
+  },
+  {
+    "label": "Worked: expectations factor",
+    "section": "Worked: expectations factor",
+    "subgoals": [
+      "Factor the double expectation",
+      "Compute the product of the two means",
+      "Read off the covariance"
+    ]
+  },
+  {
+    "label": "Stronger than uncorrelatedness",
+    "section": "Stronger than uncorrelatedness",
+    "subgoals": [
+      "Construct a nonlinear dependence",
+      "Show its covariance vanishes",
+      "Conclude that uncorrelated is weaker than independent"
+    ]
+  }
+]

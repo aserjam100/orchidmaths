@@ -1,0 +1,316 @@
+package lessons
+
+import (
+	"encoding/json"
+	"fmt"
+	"github.com/aserjam100/orchid/internal/latex"
+	"log"
+	"os"
+	"path/filepath"
+	"regexp"
+	"sort"
+	"strings"
+)
+
+type Lesson struct {
+	Title    string
+	Body     string
+	Concepts []string
+	// Source is the corpus the lesson came from ("teaching", "algebrica", "authored").
+	// It is provenance for the prose, not an attribution of any individual claim, and it is
+	// never synthesised — a lesson with no known corpus reports "".
+	Source string
+	// Assets are the lesson's figures, extracted from Body by ExtractAssets. Derived, not
+	// stored, so the body remains the single source and the two cannot disagree; see
+	// assets.go for why they are exposed as data at all.
+	Assets []Asset
+}
+
+// KP is a knowledge-point shard: a subgoal-labeled worked example for one
+// concept (MA: 3 KPs per topic, improve.md:39). Section names a heading
+// within the lesson body used as the worked example.
+type KP struct {
+	Label    string   `json:"label"`
+	Section  string   `json:"section"`
+	Subgoals []string `json:"subgoals"`
+	// AssetIDs optionally names the figures for this learning step, overriding the
+	// section-derived selection in Loader.KPAssets. Left empty for every current shard, so
+	// nothing depends on it yet; it exists so a future step can point at a figure that
+	// lives outside its section without the prose being rearranged to suit.
+	AssetIDs []string `json:"asset_ids,omitempty"`
+	// Slice is an authored teaching slice for this step, used when Section is empty or does
+	// not resolve. It is what `/learn` shows in place of the lesson body: a rule, a few
+	// examples, and at most one misconception note. See slice.go.
+	Slice *Slice `json:"slice,omitempty"`
+}
+
+type mapping struct {
+	ConceptID string `json:"concept_id"`
+	Source    string `json:"source"`
+}
+
+type Loader struct {
+	concepts map[string]*Lesson
+	kps      map[string][]KP
+}
+
+func Load(lessonsDir string) (*Loader, error) {
+	mapPath := filepath.Join(lessonsDir, "lessons.json")
+	data, err := os.ReadFile(mapPath)
+	if err != nil {
+		return nil, fmt.Errorf("read lessons.json: %w", err)
+	}
+	var mappings []mapping
+	if err := json.Unmarshal(data, &mappings); err != nil {
+		return nil, fmt.Errorf("parse lessons.json: %w", err)
+	}
+
+	// Group concept IDs by source file
+	sourceConcepts := make(map[string][]string)
+	conceptSources := make(map[string][]string)
+	for _, m := range mappings {
+		sourceConcepts[m.Source] = append(sourceConcepts[m.Source], m.ConceptID)
+		conceptSources[m.ConceptID] = append(conceptSources[m.ConceptID], m.Source)
+	}
+
+	lessonsBySource := make(map[string]*Lesson, len(sourceConcepts))
+	for source, ids := range sourceConcepts {
+		mdPath := filepath.Join(lessonsDir, source)
+		body, err := os.ReadFile(mdPath)
+		if err != nil {
+			log.Printf("warning: lesson file not found, skipping %q: %v", source, err)
+			continue
+		}
+		content := latex.Canonicalize(string(body), latex.ForSource(source, string(body)))
+		for _, w := range latex.Validate(content, latex.ForSource(source, string(body))) {
+			log.Printf("latex warning in %q: %s", source, w)
+		}
+		title := extractTitle(content)
+		if title == "" {
+			title = titleFromFilename(source)
+		}
+		lessonsBySource[source] = &Lesson{
+			Title:    title,
+			Body:     content,
+			Concepts: ids,
+			Source:   corpusOf(source),
+			Assets:   ExtractAssets(content, ids),
+		}
+	}
+
+	// Deterministic per-concept pick: when a concept maps to several sources,
+	// the last in reverse-lexicographic order wins — authored teaching/*
+	// beats vendored algebrica/* (alphabetically 't' > 'a').
+	concepts := make(map[string]*Lesson, len(conceptSources))
+	for id, srcs := range conceptSources {
+		sort.Strings(srcs)
+		for i := len(srcs) - 1; i >= 0; i-- {
+			if lesson, ok := lessonsBySource[srcs[i]]; ok {
+				concepts[id] = lesson
+				break
+			}
+		}
+	}
+
+	return &Loader{concepts: concepts, kps: loadKPs(lessonsDir)}, nil
+}
+
+// loadKPs reads <dir>/kp/<concept_id>.json shard files (a JSON array of KP).
+// A missing kp directory is not an error — shards are optional enrichment.
+func loadKPs(dir string) map[string][]KP {
+	kpDir := filepath.Join(dir, "kp")
+	entries, err := os.ReadDir(kpDir)
+	if err != nil {
+		return nil
+	}
+	out := make(map[string][]KP)
+	for _, e := range entries {
+		if e.IsDir() || !strings.HasSuffix(e.Name(), ".json") {
+			continue
+		}
+		cid := strings.TrimSuffix(e.Name(), ".json")
+		data, err := os.ReadFile(filepath.Join(kpDir, e.Name()))
+		if err != nil {
+			log.Printf("warning: read kp shard %q: %v", e.Name(), err)
+			continue
+		}
+		var kps []KP
+		if err := json.Unmarshal(data, &kps); err != nil {
+			log.Printf("warning: parse kp shard %q: %v", e.Name(), err)
+			continue
+		}
+		if len(kps) > 0 {
+			out[cid] = kps
+		}
+	}
+	return out
+}
+
+// KPs returns the concept's knowledge-point shards. When no shard file
+// exists, it falls back to a single KP labeled with the lesson title so
+// callers always get a workable worked-example entry.
+func (l *Loader) KPs(conceptID string) []KP {
+	if kps, ok := l.kps[conceptID]; ok && len(kps) > 0 {
+		return kps
+	}
+	lesson := l.concepts[conceptID]
+	if lesson == nil {
+		return nil
+	}
+	return []KP{{Label: lesson.Title}}
+}
+
+// KPSectionBody extracts the worked-example section (heading → next heading)
+// from the concept's lesson body.
+func (l *Loader) KPSectionBody(conceptID, section string) (string, bool) {
+	lesson := l.concepts[conceptID]
+	if lesson == nil || section == "" {
+		return "", false
+	}
+	return extractSection(lesson.Body, section)
+}
+
+// sectionDelimRe strips math delimiters for heading comparison. Shard
+// sections are raw Algebrica (`The substitution \\( t = ...`), while served
+// headings are canonicalized (`The substitution $ t = ...$`); without this
+// the exact match in extractSection fails and callers silently fall back to
+// the full lesson body (duplicated content on study pages).
+var sectionDelimRe = regexp.MustCompile(`\\\\[()\[\]]|\\[()\[\]]|\$\$?`)
+
+func normSectionKey(s string) string {
+	return strings.Join(strings.Fields(sectionDelimRe.ReplaceAllString(s, "")), " ")
+}
+
+// extractSection returns the markdown from the given heading up to the next
+// heading at the same or higher level.
+func extractSection(body, heading string) (string, bool) {
+	want := normSectionKey(heading)
+	lines := strings.Split(body, "\n")
+	start := -1
+	startLevel := 0
+	for i, ln := range lines {
+		t := strings.TrimSpace(ln)
+		if t == "" || t[0] != '#' {
+			continue
+		}
+		level := 0
+		for level < len(t) && t[level] == '#' {
+			level++
+		}
+		name := normSectionKey(strings.TrimSpace(t[level:]))
+		if start < 0 {
+			if name == want {
+				start = i
+				startLevel = level
+			}
+			continue
+		}
+		if level <= startLevel && name != want {
+			return strings.Join(lines[start:i], "\n"), true
+		}
+	}
+	if start < 0 {
+		return "", false
+	}
+	return strings.Join(lines[start:], "\n"), true
+}
+
+func (l *Loader) Lesson(conceptID string) *Lesson {
+	return l.concepts[conceptID]
+}
+
+// LessonByTitle returns the first lesson whose Title matches exactly.
+// Titles are unique per lessons.json registration in practice; if
+// duplicates exist, the domain-grouped order determines the winner.
+func (l *Loader) LessonByTitle(title string) *Lesson {
+	for _, lesson := range l.concepts {
+		if lesson.Title == title {
+			return lesson
+		}
+	}
+	return nil
+}
+
+func (l *Loader) All() map[string]*Lesson {
+	return l.concepts
+}
+
+func (l *Loader) LessonsByDomain() map[string][]*Lesson {
+	byDomain := make(map[string][]*Lesson)
+	seen := make(map[*Lesson]bool)
+	for _, lesson := range l.concepts {
+		if seen[lesson] {
+			continue
+		}
+		seen[lesson] = true
+		domain := "general"
+		if len(lesson.Concepts) > 0 {
+			parts := strings.SplitN(lesson.Concepts[0], ".", 3)
+			if len(parts) >= 2 {
+				domain = parts[0] + "." + parts[1]
+			}
+		}
+		byDomain[domain] = append(byDomain[domain], lesson)
+	}
+	return byDomain
+}
+
+func (l *Loader) Count() int {
+	return len(l.concepts)
+}
+
+func extractTitle(md string) string {
+	var first string
+	for _, line := range strings.Split(md, "\n") {
+		level := 0
+		for level < len(line) && line[level] == '#' {
+			level++
+		}
+		if level == 0 || level > 3 || level >= len(line) || line[level] != ' ' {
+			continue
+		}
+		title := stripTitleMarkup(strings.TrimSpace(line[level:]))
+		if first == "" {
+			first = title
+		}
+		if !isGenericTitle(title) {
+			return title
+		}
+	}
+	if first != "" {
+		return first
+	}
+	return ""
+}
+
+// titleLinkRe extracts link text: titles render as plain text (SectionHeader,
+// study lists), so `[Rolle's Theorem](<../x/>)` must read as its text.
+var titleLinkRe = regexp.MustCompile(`\[([^\]]*)\]\([^)]*\)`)
+
+// stripTitleMarkup removes math delimiters and markdown links from a title.
+// Titles render as plain text outside KatexContent; without this, `$p$` or
+// `\(t\)` (or a pasted `[label](url)`) shows literally.
+func stripTitleMarkup(s string) string {
+	s = titleLinkRe.ReplaceAllString(s, "$1")
+	return normSectionKey(s)
+}
+
+// Generic opening headings ("Introduction") describe position, not content;
+// prefer the first substantive heading for the lesson title.
+func isGenericTitle(t string) bool {
+	switch strings.ToLower(strings.Trim(t, " :")) {
+	case "introduction", "intro", "overview", "contents", "summary", "prerequisites":
+		return true
+	}
+	return false
+}
+
+func titleFromFilename(path string) string {
+	base := filepath.Base(path)
+	base = strings.TrimSuffix(base, ".md")
+	name := strings.ReplaceAll(base, "-", " ")
+	if len(name) > 0 {
+		name = strings.ToUpper(name[:1]) + name[1:]
+	}
+	return name
+}

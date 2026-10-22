@@ -1,0 +1,653 @@
+[
+  {
+    "id": "ml.perceptron",
+    "label": "Perceptron",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "linalg.vector.dot",
+      "alg.func.concept"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "ml.loss.mse",
+    "label": "Mean squared error loss",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "linalg.vector.dot",
+      "stat.data.mean"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "ml.forward_pass",
+    "label": "Forward pass",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.perceptron",
+      "linalg.matrix.mult"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.gradient_descent",
+    "label": "Gradient descent",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "calc.deriv.concept",
+      "linalg.vector.dot"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.backpropagation",
+    "label": "Backpropagation in neural networks",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "symbolic",
+    "prerequisites": [
+      "calc.deriv.chain_rule",
+      "linalg.matrix.mult",
+      "ml.gradient_descent",
+      "ml.forward_pass"
+    ],
+    "mastery_threshold": {
+      "streak": 3,
+      "avg_time_seconds": 120
+    }
+  },
+  {
+    "id": "ml.loss.cross_entropy",
+    "label": "Cross-entropy loss",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.loss.mse"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.regularization",
+    "label": "Regularization (L2 weight decay)",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.loss.cross_entropy",
+      "ml.gradient_descent"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.overfitting",
+    "label": "Overfitting and generalization",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.regularization"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "ml.validation",
+    "label": "Train/validation split and cross-validation",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.overfitting"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.optim.momentum",
+    "label": "Momentum and Adam optimization",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.gradient_descent",
+      "ml.backpropagation"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "ml.regularization.dropout",
+    "label": "Dropout regularization",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.regularization"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "ml.arch.cnn",
+    "label": "Convolutional neural networks",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.forward_pass"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.arch.rnn",
+    "label": "Recurrent neural networks",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.arch.cnn"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.optim.batchnorm",
+    "label": "Batch normalization",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.optim.momentum"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.eval.roc",
+    "label": "ROC curves and evaluation metrics",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.validation"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.arch.transformer",
+    "label": "Transformers and attention",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.arch.rnn"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "ml.arch.gan",
+    "label": "Generative adversarial networks",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.arch.cnn"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.optim.adam",
+    "label": "Adam optimizer details",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.optim.momentum"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.eval.calibration",
+    "label": "Calibration and reliability diagrams",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.eval.roc"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.data.augmentation",
+    "label": "Data augmentation",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.regularization.dropout"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "ml.nlp.transformer",
+    "label": "Transformers for NLP",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.nlp",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.arch.transformer"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.reinforcement.qlearning",
+    "label": "Q-learning",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.reinforcement",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.arch.transformer"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.reinforcement.policy_gradient",
+    "label": "Policy gradients",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.reinforcement",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.reinforcement.qlearning"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "ml.nlp.bert",
+    "label": "BERT and pretraining",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.nlp",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.nlp.transformer"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.reinforcement.actor_critic",
+    "label": "Actor-critic methods",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.reinforcement",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.reinforcement.policy_gradient"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "ml.linreg.least_squares",
+    "label": "The least-squares line",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.regression",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.loss.mse"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.linreg.predict",
+    "label": "Prediction from a fitted model",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.regression",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.linreg.least_squares"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.reg.ridge_penalty",
+    "label": "The ridge penalty",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.regression",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.regularization"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.eval.accuracy",
+    "label": "Accuracy",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.evaluation",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.validation"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.eval.precision",
+    "label": "Precision",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.evaluation",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.eval.accuracy"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.eval.recall",
+    "label": "Recall",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.evaluation",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.eval.accuracy"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.pca.variance_percent",
+    "label": "Variance explained by a component",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.unsupervised",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "linalg.eigen.compute"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.knn.nearest_distance",
+    "label": "Nearest-neighbour distance",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.unsupervised",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.forward_pass"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.activation.sigmoid",
+    "label": "Sigmoid activation",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.forward_pass",
+      "precalc.exp.equation"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "ml.logistic.regression",
+    "label": "Logistic regression",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.regression",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.activation.sigmoid",
+      "ml.loss.cross_entropy"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.grad.vanishing",
+    "label": "Vanishing and exploding gradients",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.neural_networks",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.backpropagation",
+      "ml.activation.sigmoid"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "ml.loss.mae",
+    "label": "Mean absolute error",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.regression",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.loss.mse",
+      "stat.data.mean"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.eval.confusion",
+    "label": "The confusion matrix",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.evaluation",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.validation",
+      "stat.data.read_table"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.eval.f1",
+    "label": "The F1 score",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.evaluation",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.eval.precision",
+      "ml.eval.recall"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.cluster.kmeans",
+    "label": "k-means clustering",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.unsupervised",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.knn.nearest_distance",
+      "stat.data.mean"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "ml.data.scaling",
+    "label": "Feature scaling",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.data",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "stat.data.mean",
+      "stat.dist.z_table"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "ml.data.onehot",
+    "label": "One-hot encoding",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.data",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "ml.perceptron",
+      "stat.data.read_table"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "ml.data.imbalance",
+    "label": "Class imbalance",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.data",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.eval.accuracy",
+      "ml.validation"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.tree.gini",
+    "label": "Gini impurity",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.trees",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "stat.prob.basic",
+      "ml.validation"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "ml.tree.ensemble",
+    "label": "Bagging and random forests",
+    "domain": "machine_learning",
+    "subdomain": "machine_learning.trees",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "ml.tree.gini",
+      "ml.validation"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  }
+]

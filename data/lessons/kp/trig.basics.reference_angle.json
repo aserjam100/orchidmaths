@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Using reference angles to rewrite angles",
+    "section": "",
+    "subgoals": [
+      "Drop to the acute angle alpha against the x-axis",
+      "Strip multiples of 2pi to reach a standard form",
+      "Fix the sign from the quadrant of theta"
+    ]
+  },
+  {
+    "label": "Reduction formulas for \\\\( \\pi/2 + \\alpha \\\\)",
+    "section": "",
+    "subgoals": [
+      "Rotate alpha past vertical into quadrant II",
+      "Swap to sin(pi/2 + alpha) = cos(alpha), cos = -sin(alpha)",
+      "Read the cosine minus sign off the unit circle"
+    ]
+  },
+  {
+    "label": "Reduction formulas for \\\\( \\pi/2 - \\alpha \\\\)",
+    "section": "",
+    "subgoals": [
+      "Fold back from vertical into quadrant I",
+      "Swap to sin(pi/2 - alpha) = cos(alpha), cos = sin(alpha)",
+      "Keep all signs positive inside quadrant I"
+    ]
+  }
+]

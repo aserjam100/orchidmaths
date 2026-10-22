@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Independent or dependent",
+    "section": "Independent or dependent",
+    "subgoals": [
+      "Define independence",
+      "Recognise dependence as redundancy",
+      "Test two vectors"
+    ]
+  },
+  {
+    "label": "Counting the independent ones",
+    "section": "Counting the independent ones",
+    "subgoals": [
+      "Count via the rank",
+      "Say the count is what matters",
+      "Find a maximal independent subset"
+    ]
+  },
+  {
+    "label": "Why the count is the dimension",
+    "section": "Why the count is the dimension",
+    "subgoals": [
+      "Define dimension",
+      "Relate independent and spanning sets",
+      "See a basis as a choice"
+    ]
+  }
+]

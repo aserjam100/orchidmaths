@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Ordering a DAG",
+    "section": "Ordering a DAG",
+    "subgoals": [
+      "Find a vertex with in-degree zero",
+      "Remove it and repeat",
+      "Fail exactly when a cycle remains"
+    ]
+  },
+  {
+    "label": "Worked: Kahn's algorithm",
+    "section": "Worked: Kahn's algorithm",
+    "subgoals": [
+      "Seed the ready set with in-degree zero",
+      "Delete a vertex and update in-degrees",
+      "Detect a cycle when the ready set empties early"
+    ]
+  },
+  {
+    "label": "Uniqueness and choice",
+    "section": "Uniqueness and choice",
+    "subgoals": [
+      "Choose any in-degree-zero vertex",
+      "Produce different valid orders",
+      "Recognise uniqueness by a Hamiltonian path"
+    ]
+  }
+]

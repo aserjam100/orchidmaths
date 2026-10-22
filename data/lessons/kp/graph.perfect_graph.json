@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Clique number equals chromatic number",
+    "section": "Clique number equals chromatic number",
+    "subgoals": [
+      "Compare omega and chi",
+      "Check every induced subgraph",
+      "Name chordal and bipartite examples"
+    ]
+  },
+  {
+    "label": "Worked: bipartite and odd cycles",
+    "section": "Worked: bipartite and odd cycles",
+    "subgoals": [
+      "See omega = chi <= 2 for bipartite",
+      "See 2 versus 3 for C_5",
+      "See the complement of C_5"
+    ]
+  },
+  {
+    "label": "The strong perfect graph theorem",
+    "section": "The strong perfect graph theorem",
+    "subgoals": [
+      "Exclude odd holes",
+      "Exclude odd antiholes",
+      "Credit the 2002 proof"
+    ]
+  }
+]

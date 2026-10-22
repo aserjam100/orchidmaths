@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Replacing the curve by a chord",
+    "section": "Replacing the curve by a chord",
+    "subgoals": [
+      "Join the endpoint values by a chord",
+      "Average the two heights",
+      "Multiply by the width"
+    ]
+  },
+  {
+    "label": "Worked: the square over an interval",
+    "section": "Worked: the square over an interval",
+    "subgoals": [
+      "Evaluate the function at the endpoints",
+      "Average and multiply by the width",
+      "Compare with the exact value"
+    ]
+  },
+  {
+    "label": "When it is exact and when it is not",
+    "section": "When it is exact and when it is not",
+    "subgoals": [
+      "Check exactness on a line",
+      "Relate the sign of the error to curvature",
+      "Read the error order"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Counting sign changes",
+    "section": "Counting sign changes",
+    "subgoals": [
+      "Read the coefficients in order",
+      "Count the flips",
+      "Insist on standard form"
+    ]
+  },
+  {
+    "label": "What the count bounds",
+    "section": "What the count bounds",
+    "subgoals": [
+      "State the bound",
+      "Account for the parity",
+      "Bound the negative roots as well"
+    ]
+  },
+  {
+    "label": "Using it with the candidates",
+    "section": "Using it with the candidates",
+    "subgoals": [
+      "Combine it with the rational roots",
+      "Decide which signs can succeed",
+      "Rule out a case with parity"
+    ]
+  }
+]

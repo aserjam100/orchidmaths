@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Undoing the logarithm",
+    "section": "Undoing the logarithm",
+    "subgoals": [
+      "Exponentiate both sides",
+      "Solve a simple case",
+      "Check the domain"
+    ]
+  },
+  {
+    "label": "Checking for extraneous solutions",
+    "section": "Checking for extraneous solutions",
+    "subgoals": [
+      "Explain how a spurious root appears",
+      "Discard a value outside the domain",
+      "Keep the surviving root"
+    ]
+  },
+  {
+    "label": "Equations with a sum of logarithms",
+    "section": "Equations with a sum of logarithms",
+    "subgoals": [
+      "Combine a sum into a product",
+      "Equate the arguments",
+      "Filter by the domain"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Vertices whose removal disconnects",
+    "section": "Vertices whose removal disconnects",
+    "subgoals": [
+      "Delete a vertex and count components",
+      "Compare with the original count",
+      "Name the 2-connected case"
+    ]
+  },
+  {
+    "label": "Worked: paths and stars",
+    "section": "Worked: paths and stars",
+    "subgoals": [
+      "Count 2 internal vertices in P_4",
+      "Count 1 centre in K_{1,4}",
+      "See 0 in a cycle"
+    ]
+  },
+  {
+    "label": "Blocks and 2-connectivity",
+    "section": "Blocks and 2-connectivity",
+    "subgoals": [
+      "Take maximal 2-connected pieces",
+      "Join blocks at cut vertices",
+      "Use Menger for two disjoint paths"
+    ]
+  }
+]

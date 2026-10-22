@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: e to the z is conformal everywhere",
+    "section": "Worked: e to the z is conformal everywhere",
+    "subgoals": [
+      "Differentiate e^z",
+      "Show the derivative never vanishes",
+      "Conclude angles are preserved at every point"
+    ]
+  },
+  {
+    "label": "Worked: z squared doubles angles at zero",
+    "section": "Worked: z squared doubles angles at zero",
+    "subgoals": [
+      "Take two rays leaving the origin",
+      "Square to double both ray angles",
+      "Compare the opening angle before and after"
+    ]
+  },
+  {
+    "label": "Worked: Mobius maps are conformal on the sphere",
+    "section": "Worked: Mobius maps are conformal on the sphere",
+    "subgoals": [
+      "Differentiate with the quotient rule",
+      "Show the nonzero determinant keeps w' nonzero",
+      "Conclude conformality at every sphere point"
+    ]
+  }
+]

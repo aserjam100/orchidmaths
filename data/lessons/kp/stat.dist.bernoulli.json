@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction to the Bernoulli distribution",
+    "section": "",
+    "subgoals": [
+      "Restrict X to {0,1} for a single trial",
+      "Write P(X=x) = p^x*(1-p)^(1-x)",
+      "Split p for success against q = 1-p for failure"
+    ]
+  },
+  {
+    "label": "Key features",
+    "section": "",
+    "subgoals": [
+      "Write the pmf p^x*(1-p)^(1-x) for x in {0,1}",
+      "Read mu = p straight off the parameter",
+      "Compute sigma^2 = p(1-p) and root into sigma"
+    ]
+  },
+  {
+    "label": "Mean of the Bernoulli distribution",
+    "section": "",
+    "subgoals": [
+      "Expand E(X) into 0*(1-p) + 1*p",
+      "Collapse the sum into mu = p",
+      "Interpret p as the long-run success share"
+    ]
+  }
+]

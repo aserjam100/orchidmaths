@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Transforms identify laws",
+    "section": "Transforms identify laws",
+    "subgoals": [
+      "Compute the transforms of the sequence",
+      "Find their pointwise limit",
+      "Identify the law from the limit transform"
+    ]
+  },
+  {
+    "label": "The role of continuity at zero",
+    "section": "The role of continuity at zero",
+    "subgoals": [
+      "Check continuity of the limit at zero",
+      "See it as a tightness condition",
+      "Conclude that a limit law exists"
+    ]
+  },
+  {
+    "label": "The central limit theorem",
+    "section": "The central limit theorem",
+    "subgoals": [
+      "Compute the limit transform of the sums",
+      "Recognise the normal transform",
+      "Invoke the theorem for weak convergence"
+    ]
+  }
+]

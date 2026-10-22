@@ -1,0 +1,29 @@
+[
+  {
+    "label": "One constant per integration",
+    "section": "One constant per integration",
+    "subgoals": [
+      "See where the constant comes from",
+      "State that the condition fixes it",
+      "Keep the two steps in order"
+    ]
+  },
+  {
+    "label": "Using the initial condition",
+    "section": "Using the initial condition",
+    "subgoals": [
+      "Substitute the given point",
+      "Solve for the constant",
+      "Show the step"
+    ]
+  },
+  {
+    "label": "Evaluating at a point",
+    "section": "Evaluating at a point",
+    "subgoals": [
+      "Evaluate after the constant is fixed",
+      "Check against the condition",
+      "Do the arithmetic last"
+    ]
+  }
+]

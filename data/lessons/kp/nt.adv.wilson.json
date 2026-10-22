@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Factorial Modulo a Prime",
+    "section": "Factorial Modulo a Prime",
+    "subgoals": [
+      "Pair each residue with its inverse",
+      "Isolate the self-inverse pair 1 and p-1",
+      "Collapse the product to -1"
+    ]
+  },
+  {
+    "label": "The Pairing Argument",
+    "section": "The Pairing Argument",
+    "subgoals": [
+      "Argue inverses are unique mod p",
+      "Cancel each pair to 1",
+      "Leave 1 times p-1 standing"
+    ]
+  },
+  {
+    "label": "Example",
+    "section": "Example",
+    "subgoals": [
+      "Expand 4! to 24 for p=5",
+      "Divide 24 by 5 for remainder 4",
+      "Read 4 as -1 mod 5"
+    ]
+  }
+]

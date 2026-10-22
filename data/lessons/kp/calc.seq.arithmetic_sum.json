@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Pairing the ends",
+    "section": "Pairing the ends",
+    "subgoals": [
+      "Describe the pairing",
+      "See why the pairs match",
+      "Name Gauss's method"
+    ]
+  },
+  {
+    "label": "The average of the pair",
+    "section": "The average of the pair",
+    "subgoals": [
+      "Compute the average of first and last",
+      "Multiply by the number of terms",
+      "Explain why symmetry makes it work"
+    ]
+  },
+  {
+    "label": "Why the number of terms matters",
+    "section": "Why the number of terms matters",
+    "subgoals": [
+      "Note the count in the formula",
+      "Name the usual error",
+      "Estimate to check"
+    ]
+  }
+]

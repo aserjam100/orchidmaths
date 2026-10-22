@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Vertices that meet every edge",
+    "section": "Vertices that meet every edge",
+    "subgoals": [
+      "Hit every edge",
+      "Minimise the chosen vertices",
+      "Complement to an independent set"
+    ]
+  },
+  {
+    "label": "Worked: paths and stars",
+    "section": "Worked: paths and stars",
+    "subgoals": [
+      "Cover P_4 with two vertices",
+      "Cover a star with its centre",
+      "Cover K_{2,3} with the smaller side"
+    ]
+  },
+  {
+    "label": "König's theorem",
+    "section": "König's theorem",
+    "subgoals": [
+      "Equate cover and matching on bipartite graphs",
+      "Use the equality algorithmically",
+      "See the gap on C_5"
+    ]
+  }
+]

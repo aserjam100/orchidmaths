@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Partitions and sums",
+    "section": "Partitions and sums",
+    "subgoals": [
+      "Cut the interval into subintervals",
+      "Multiply a value by each length",
+      "Take the limit as the mesh shrinks"
+    ]
+  },
+  {
+    "label": "Upper and lower sums",
+    "section": "Upper and lower sums",
+    "subgoals": [
+      "Bound the sum above and below",
+      "Refine to tighten the bounds",
+      "Meet at one number to be integrable"
+    ]
+  },
+  {
+    "label": "Worked: a right-endpoint sum",
+    "section": "Worked: a right-endpoint sum",
+    "subgoals": [
+      "Write the right-endpoint sum",
+      "Use the triangular sum",
+      "Take the limit in n"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Of the positives that exist",
+    "section": "Of the positives that exist",
+    "subgoals": [
+      "Write the formula",
+      "Compute a recall",
+      "Say what it answers"
+    ]
+  },
+  {
+    "label": "The cost it measures",
+    "section": "The cost it measures",
+    "subgoals": [
+      "Name the expensive error",
+      "Give a case where it matters",
+      "See how raising it lowers precision"
+    ]
+  },
+  {
+    "label": "The two together",
+    "section": "The two together",
+    "subgoals": [
+      "Report the pair",
+      "Choose a threshold from costs",
+      "State the trade explicitly"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Which numbers are representable",
+    "section": "Which numbers are representable",
+    "subgoals": [
+      "Factor n",
+      "Check primes 3 mod 4 have even exponents",
+      "Reject 3, 6 and 12"
+    ]
+  },
+  {
+    "label": "Worked: counting representations of 25",
+    "section": "Worked: counting representations of 25",
+    "subgoals": [
+      "Factor 25 as 5 squared",
+      "List 0^2+5^2 and 3^2+4^2",
+      "Count signs and order for 12"
+    ]
+  },
+  {
+    "label": "The r2 formula",
+    "section": "The r2 formula",
+    "subgoals": [
+      "Count divisors 1 mod 4",
+      "Subtract divisors 3 mod 4",
+      "Multiply the difference by 4"
+    ]
+  }
+]

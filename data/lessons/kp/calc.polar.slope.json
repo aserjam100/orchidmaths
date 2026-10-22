@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The derivative in polar form",
+    "section": "The derivative in polar form",
+    "subgoals": [
+      "Write the formula",
+      "See the curve as parametrised",
+      "Compute one slope"
+    ]
+  },
+  {
+    "label": "Where it simplifies",
+    "section": "Where it simplifies",
+    "subgoals": [
+      "Use a constant radius",
+      "Reduce to minus cotangent",
+      "Detect a vertical tangent"
+    ]
+  },
+  {
+    "label": "Checking against the geometry",
+    "section": "Checking against the geometry",
+    "subgoals": [
+      "Draw the point and heading",
+      "Interpret the slope's sign",
+      "Catch a transposed term"
+    ]
+  }
+]

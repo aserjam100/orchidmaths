@@ -1,0 +1,15 @@
+{
+  "concept": "alg.poly.rational_root",
+  "setup": "The polynomial is x³ + [[b]]x² + [[d]]x + [[e]].",
+  "steps": [
+    {
+      "fact": "e",
+      "say": "By the rational root theorem every integer root divides the constant term [[e]]."
+    },
+    {
+      "fact": "r1",
+      "say": "The three roots are [[r1]], [[r2]] and [[r3]], and the positive one is [[r1]]."
+    }
+  ],
+  "answer": "So the positive root is [[answer]]."
+}

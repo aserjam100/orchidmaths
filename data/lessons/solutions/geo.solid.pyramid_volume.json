@@ -1,0 +1,15 @@
+{
+  "concept": "geo.solid.pyramid_volume",
+  "setup": "A pyramid has a base of area \\([[base]]\\) square units and a height of \\([[height]]\\) units.",
+  "steps": [
+    {
+      "fact": "base",
+      "say": "The prism with the same base and height would have volume base times height, so the base \\([[base]]\\) and the height \\([[height]]\\) together give that comparison figure."
+    },
+    {
+      "fact": "height",
+      "say": "A pyramid fills one third of that prism, for any pyramid and not only the square-based ones, so the volume is a third of \\([[base]] \\times [[height]]\\)."
+    }
+  ],
+  "answer": "So the pyramid's volume is \\([[volume]]\\) cubic units."
+}

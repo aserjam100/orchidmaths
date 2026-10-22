@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Behavior of a sequence",
+    "section": "",
+    "subgoals": [
+      "Test a_n to L via |a_n-L| < eps",
+      "Sort converge vs diverge vs oscillate",
+      "Preview 1/n to 0 vs 2^n to inf"
+    ]
+  },
+  {
+    "label": "Convergent sequence",
+    "section": "",
+    "subgoals": [
+      "Fix eps and solve N from |a_n-L| < eps",
+      "Exhibit N = 1/eps for 1/n",
+      "Confirm tails stay in the strip"
+    ]
+  },
+  {
+    "label": "Example",
+    "section": "",
+    "subgoals": [
+      "Evaluate lim (n+1)/n = 1",
+      "Split numerator and denominator by n",
+      "Confirm limit 1"
+    ]
+  }
+]

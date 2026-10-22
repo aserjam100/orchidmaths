@@ -1,0 +1,15 @@
+{
+  "concept": "trig.basics.angular_velocity",
+  "setup": "A wheel makes [[revs]] complete revolutions in [[seconds]] seconds, and you are asked for its angular velocity in degrees per second.",
+  "steps": [
+    {
+      "fact": "revs",
+      "say": "One revolution is a full turn of 360 degrees, so [[revs]] revolutions sweep $360 \\times [[revs]]$ degrees."
+    },
+    {
+      "fact": "seconds",
+      "say": "Dividing that sweep by [[seconds]] seconds gives the angle turned each second: $360 \\times [[revs]] \\div [[seconds]] = [[answer]]$ degrees per second."
+    }
+  ],
+  "answer": "So the angular velocity is [[answer]] degrees per second."
+}

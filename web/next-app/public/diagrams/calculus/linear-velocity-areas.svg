@@ -1,0 +1,49 @@
+<svg width="420px" height="180px" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg">
+<rect width="420" height="180" fill="white"/>
+<path d="M 151.64,79.82 L 151.64,138.91 L 224.26,79.82 Z" fill="#E6E6E6"/>
+<path d="M 224.26,79.82 L 282.36,32.55 L 282.36,79.82 Z" fill="#E6E6E6"/>
+<line x1="34" y1="79.82" x2="392.6" y2="79.82" stroke="#BABABA" stroke-width="1.5"/>
+<polygon points="400,79.82 392.6,76.72 392.6,82.92" fill="#BABABA"/>
+<text x="403" y="92.82" font-size="12" fill="#333333" text-anchor="start">t</text>
+<line x1="151.64" y1="23.4" x2="151.64" y2="146" stroke="#BABABA" stroke-width="1.5"/>
+<polygon points="151.64,16 148.54,23.4 154.74,23.4" fill="#BABABA"/>
+<text x="155.64" y="23" font-size="12" fill="#333333" text-anchor="start">v</text>
+<line x1="64.5" y1="76.32" x2="64.5" y2="83.32" stroke="#BABABA" stroke-width="1"/>
+<text x="64.5" y="94.82" font-size="11" fill="#333333" text-anchor="middle">−2</text>
+<line x1="108.07" y1="76.32" x2="108.07" y2="83.32" stroke="#BABABA" stroke-width="1"/>
+<text x="108.07" y="94.82" font-size="11" fill="#333333" text-anchor="middle">−1</text>
+<line x1="195.21" y1="76.32" x2="195.21" y2="83.32" stroke="#BABABA" stroke-width="1"/>
+<text x="195.21" y="94.82" font-size="11" fill="#333333" text-anchor="middle">1</text>
+<line x1="238.79" y1="76.32" x2="238.79" y2="83.32" stroke="#BABABA" stroke-width="1"/>
+<text x="238.79" y="94.82" font-size="11" fill="#333333" text-anchor="middle">2</text>
+<line x1="282.36" y1="76.32" x2="282.36" y2="83.32" stroke="#BABABA" stroke-width="1"/>
+<text x="282.36" y="94.82" font-size="11" fill="#333333" text-anchor="middle">3</text>
+<line x1="325.93" y1="76.32" x2="325.93" y2="83.32" stroke="#BABABA" stroke-width="1"/>
+<text x="325.93" y="94.82" font-size="11" fill="#333333" text-anchor="middle">4</text>
+<line x1="369.5" y1="76.32" x2="369.5" y2="83.32" stroke="#BABABA" stroke-width="1"/>
+<text x="369.5" y="94.82" font-size="11" fill="#333333" text-anchor="middle">5</text>
+<line x1="148.14" y1="138.91" x2="155.14" y2="138.91" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="142.91" font-size="11" fill="#333333" text-anchor="end">−5</text>
+<line x1="148.14" y1="127.09" x2="155.14" y2="127.09" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="131.09" font-size="11" fill="#333333" text-anchor="end">−4</text>
+<line x1="148.14" y1="115.27" x2="155.14" y2="115.27" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="119.27" font-size="11" fill="#333333" text-anchor="end">−3</text>
+<line x1="148.14" y1="103.45" x2="155.14" y2="103.45" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="107.45" font-size="11" fill="#333333" text-anchor="end">−2</text>
+<line x1="148.14" y1="91.64" x2="155.14" y2="91.64" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="95.64" font-size="11" fill="#333333" text-anchor="end">−1</text>
+<line x1="148.14" y1="79.82" x2="155.14" y2="79.82" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="83.82" font-size="11" fill="#333333" text-anchor="end">0</text>
+<line x1="148.14" y1="68.0" x2="155.14" y2="68.0" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="72.0" font-size="11" fill="#333333" text-anchor="end">1</text>
+<line x1="148.14" y1="56.18" x2="155.14" y2="56.18" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="60.18" font-size="11" fill="#333333" text-anchor="end">2</text>
+<line x1="148.14" y1="44.36" x2="155.14" y2="44.36" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="48.36" font-size="11" fill="#333333" text-anchor="end">3</text>
+<line x1="148.14" y1="32.55" x2="155.14" y2="32.55" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="36.55" font-size="11" fill="#333333" text-anchor="end">4</text>
+<line x1="148.14" y1="20.73" x2="155.14" y2="20.73" stroke="#BABABA" stroke-width="1"/>
+<text x="145.64" y="24.73" font-size="11" fill="#333333" text-anchor="end">5</text>
+<path d="M 151.64,138.91 L 217.0,85.73 L 282.36,32.55" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+<text x="170" y="32" font-size="11" fill="#333333" text-anchor="start">v(t) = 3t − 5</text>
+</svg>

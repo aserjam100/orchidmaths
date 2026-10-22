@@ -1,0 +1,15 @@
+{
+  "concept": "geo.circle.tangent_length",
+  "setup": "A point is \\([[distance]]\\) units from the centre of a circle of radius \\([[radius]]\\), and a tangent is drawn from the point.",
+  "steps": [
+    {
+      "fact": "radius",
+      "say": "A tangent meets the radius drawn to the point of contact at a right angle, which is the fact that turns this into a right triangle rather than a circle problem."
+    },
+    {
+      "fact": "distance",
+      "say": "The radius \\([[radius]]\\), the tangent segment and the distance \\([[distance]]\\) from the point to the centre form that right triangle, with the distance as the hypotenuse."
+    }
+  ],
+  "answer": "So the tangent segment is \\([[tangent]]\\) units long."
+}

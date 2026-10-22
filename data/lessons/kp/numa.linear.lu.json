@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Separating the elimination from the data",
+    "section": "Separating the elimination from the data",
+    "subgoals": [
+      "Perform the elimination",
+      "Store the multipliers in a lower-triangular factor",
+      "Write the matrix as their product"
+    ]
+  },
+  {
+    "label": "Worked: the multiplier",
+    "section": "Worked: the multiplier",
+    "subgoals": [
+      "Divide the lower entry by the pivot",
+      "Read the multiplier into the lower factor",
+      "Continue down the column"
+    ]
+  },
+  {
+    "label": "Solving and factoring again",
+    "section": "Solving and factoring again",
+    "subgoals": [
+      "Do a forward substitution",
+      "Do a back substitution",
+      "Reuse the factors for a new right-hand side"
+    ]
+  }
+]

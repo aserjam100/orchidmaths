@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Completing the square",
+    "section": "",
+    "subgoals": [
+      "Half the linear coefficient",
+      "Square it and add",
+      "Rewrite as a square"
+    ]
+  },
+  {
+    "label": "Geometric interpretation",
+    "section": "",
+    "subgoals": [
+      "Model the square visually",
+      "See the added area",
+      "Relate to the vertex"
+    ]
+  },
+  {
+    "label": "Derivation of the quadratic formula",
+    "section": "",
+    "subgoals": [
+      "Complete the square on ax^2+bx+c",
+      "Isolate x",
+      "Arrive at the formula"
+    ]
+  }
+]

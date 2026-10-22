@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Use a conversion factor",
+    "section": "Use a conversion factor",
+    "subgoals": [
+      "Write the factor as a ratio equal to 1",
+      "Choose the form that cancels the old unit",
+      "Keep the unit you want"
+    ]
+  },
+  {
+    "label": "Multiply or divide",
+    "section": "Multiply or divide",
+    "subgoals": [
+      "Multiply for a larger-to-smaller conversion",
+      "Divide for a smaller-to-larger conversion",
+      "Use the factor in the correct direction"
+    ]
+  },
+  {
+    "label": "Check the size",
+    "section": "Check the size",
+    "subgoals": [
+      "Compare the number with the original",
+      "Remember that a smaller unit gives a larger number",
+      "Reverse the factor if the answer moves the wrong way"
+    ]
+  }
+]

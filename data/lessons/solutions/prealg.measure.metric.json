@@ -1,0 +1,15 @@
+{
+  "concept": "prealg.measure.metric",
+  "setup": "Convert [[value]] [[from_unit]] to [[to_unit]].",
+  "steps": [
+    {
+      "fact": "power",
+      "say": "The metric prefix changes the unit by 10 to the power [[power]]."
+    },
+    {
+      "fact": "value",
+      "say": "Move the decimal point [[power]] places: [[value]] [[from_unit]]."
+    }
+  ],
+  "answer": "[[value]] [[from_unit]] = [[answer]] [[to_unit]]."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The a times 10^n form",
+    "section": "",
+    "subgoals": [
+      "Split a number into a factor between 1 and 10",
+      "Read the power of 10 from the decimal shift",
+      "Flip the exponent sign below 1"
+    ]
+  },
+  {
+    "label": "Convert decimal to scientific notation",
+    "section": "",
+    "subgoals": [
+      "Move the point to isolate one nonzero digit",
+      "Count the places moved",
+      "Attach 10^n with the shift sign"
+    ]
+  },
+  {
+    "label": "Convert scientific notation to decimal form",
+    "section": "",
+    "subgoals": [
+      "Read n from the power of 10",
+      "Shift right for positive n, left for negative",
+      "Add zeros as placeholders"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "concept": "complex.adv.mobius_fixed",
+  "setup": "The transformation is \\(f(z) = [[fz]]\\).",
+  "steps": [
+    {
+      "fact": "fz",
+      "say": "A fixed point satisfies \\(z = f(z)\\), so clear the denominator and collect terms: \\(cz^2 + (d-a)z - b = 0\\)."
+    },
+    {
+      "fact": "a",
+      "say": "Here \\(a = [[a]]\\), \\(b = [[b]]\\), \\(c = [[c]]\\) and \\(d = [[d]]\\)."
+    },
+    {
+      "fact": "root1",
+      "say": "The quadratic has roots [[root1]] and [[root2]]."
+    },
+    {
+      "fact": "value",
+      "say": "Both are real, so the larger real part is the larger root: [[value]]."
+    }
+  ],
+  "answer": "So the fixed point is [[value]]."
+}

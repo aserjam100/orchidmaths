@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The three operations",
+    "section": "The three operations",
+    "subgoals": [
+      "Apply the three minor operations",
+      "Order the operations without changing the result",
+      "Separate minor from subdivision"
+    ]
+  },
+  {
+    "label": "Worked: a K_5 minor from a larger clique",
+    "section": "Worked: a K_5 minor from a larger clique",
+    "subgoals": [
+      "Delete a vertex of $K_6$",
+      "Contract a subdivided path to one edge",
+      "Recognise a minor without a subgraph"
+    ]
+  },
+  {
+    "label": "Minor-closed families",
+    "section": "Minor-closed families",
+    "subgoals": [
+      "Test a family for minor closure",
+      "Name the excluded minors of planarity",
+      "State the Hadwiger conjecture"
+    ]
+  }
+]

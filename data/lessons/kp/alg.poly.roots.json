@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Define a root of a polynomial",
+      "Check a candidate",
+      "Read roots from factors"
+    ]
+  },
+  {
+    "label": "Multiplicity",
+    "section": "",
+    "subgoals": [
+      "Count repeated factors",
+      "State the multiplicity",
+      "Connect to graph touch"
+    ]
+  },
+  {
+    "label": "Rational root theorem",
+    "section": "",
+    "subgoals": [
+      "List the candidates",
+      "Test each factor",
+      "Find the rational roots"
+    ]
+  }
+]

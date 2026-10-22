@@ -1,0 +1,29 @@
+[
+  {
+    "label": "When normality is not available",
+    "section": "When normality is not available",
+    "subgoals": [
+      "Recognise ordinal data and outliers",
+      "Weaken the distributional assumption",
+      "Keep independence"
+    ]
+  },
+  {
+    "label": "Worked: the sign test",
+    "section": "Worked: the sign test",
+    "subgoals": [
+      "Reduce pairs to signs",
+      "Use the binomial null with p = 1/2",
+      "Compare the positive count with the binomial"
+    ]
+  },
+  {
+    "label": "Ranks and the cost of fewer assumptions",
+    "section": "Ranks and the cost of fewer assumptions",
+    "subgoals": [
+      "Rank absolute differences for Wilcoxon",
+      "Accept lower power under normality",
+      "Choose by the plausibility of the assumptions"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "concept": "alg.rational.proportions",
+  "setup": "The proportion is [[a]]/[[b]] = [[num]]/x.",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "Cross-multiplying gives [[a]]·x = [[b]]·[[num]]."
+    },
+    {
+      "fact": "num",
+      "say": "Dividing both sides by [[a]] isolates x."
+    }
+  ],
+  "answer": "So x = [[answer]]."
+}

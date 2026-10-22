@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The almost-sure statement",
+    "section": "The almost-sure statement",
+    "subgoals": [
+      "State the almost-sure limit",
+      "Contrast it with the weak mode",
+      "See the conclusion as a pathwise statement"
+    ]
+  },
+  {
+    "label": "The hypotheses",
+    "section": "The hypotheses",
+    "subgoals": [
+      "Check independence",
+      "Check identical distribution",
+      "Check that the mean is finite"
+    ]
+  },
+  {
+    "label": "Failure without a mean",
+    "section": "Failure without a mean",
+    "subgoals": [
+      "Choose a distribution with no mean",
+      "Observe the wandering averages",
+      "Conclude that the hypothesis is essential"
+    ]
+  }
+]

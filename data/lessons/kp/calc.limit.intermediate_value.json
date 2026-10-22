@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What the theorem promises",
+    "section": "What the theorem promises",
+    "subgoals": [
+      "Require continuity on the whole interval",
+      "Read a sign change as a root",
+      "Separate existence from location"
+    ]
+  },
+  {
+    "label": "Turning the theorem into arithmetic",
+    "section": "Turning the theorem into arithmetic",
+    "subgoals": [
+      "Evaluate the function at the endpoints",
+      "Solve for the crossing value",
+      "Check the crossing lies in the interval"
+    ]
+  },
+  {
+    "label": "Bracketing and the practical use",
+    "section": "Bracketing and the practical use",
+    "subgoals": [
+      "Start from a sign change",
+      "Halve the bracket and keep the change",
+      "Remember uniqueness is not promised"
+    ]
+  }
+]

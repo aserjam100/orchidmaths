@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiply the decimals",
+    "section": "",
+    "subgoals": [
+      "Multiply the digits as whole numbers",
+      "Count the decimal places in both factors",
+      "Place the decimal point in the product"
+    ]
+  },
+  {
+    "label": "Price of several items",
+    "section": "",
+    "subgoals": [
+      "Read the price of one item",
+      "Read how many are bought",
+      "Multiply the unit price by the count"
+    ]
+  },
+  {
+    "label": "Answer in dollars",
+    "section": "",
+    "subgoals": [
+      "Multiply in cents",
+      "Give the answer to two decimal places",
+      "Label the answer in dollars"
+    ]
+  }
+]

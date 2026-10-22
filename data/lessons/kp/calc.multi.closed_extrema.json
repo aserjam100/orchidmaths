@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Interior and boundary",
+    "section": "Interior and boundary",
+    "subgoals": [
+      "Name the two places to look",
+      "Check the boundary separately",
+      "Dismiss one with a reason"
+    ]
+  },
+  {
+    "label": "The closed-region theorem",
+    "section": "The closed-region theorem",
+    "subgoals": [
+      "State the extreme value theorem",
+      "Say what it guarantees",
+      "Contrast with an open region"
+    ]
+  },
+  {
+    "label": "Checking both",
+    "section": "Checking both",
+    "subgoals": [
+      "Find interior critical points",
+      "Restrict to the boundary",
+      "Compare the values"
+    ]
+  }
+]

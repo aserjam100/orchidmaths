@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Inflection and concavity change",
+    "section": "",
+    "subgoals": [
+      "Solve f''(x) = 0 for candidates",
+      "Require a concavity sign change",
+      "Check x^3 inflects at x = 0"
+    ]
+  },
+  {
+    "label": "Concavity analysis",
+    "section": "",
+    "subgoals": [
+      "Test f'' on each side of candidates",
+      "Reject zeros with no sign change",
+      "Check x^4 has none at x = 0"
+    ]
+  },
+  {
+    "label": "Worked inflection examples",
+    "section": "",
+    "subgoals": [
+      "Solve f'' = 0 for x^4-6x^2 to get x = 0, +-1",
+      "Test f'' sign on each side",
+      "Confirm inflections at x = +-1 only"
+    ]
+  }
+]

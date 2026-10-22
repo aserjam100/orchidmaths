@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The two-by-two formula",
+    "section": "The two-by-two formula",
+    "subgoals": [
+      "Write the formula",
+      "Swap and negate the entries",
+      "Compute an inverse"
+    ]
+  },
+  {
+    "label": "Why the determinant divides",
+    "section": "Why the determinant divides",
+    "subgoals": [
+      "Read the determinant as area scaling",
+      "See the reciprocal",
+      "Explain the zero case"
+    ]
+  },
+  {
+    "label": "Inverses of larger matrices",
+    "section": "Inverses of larger matrices",
+    "subgoals": [
+      "Use row reduction",
+      "Say why there is no formula to memorise",
+      "See the two-by-two as the visible case"
+    ]
+  }
+]

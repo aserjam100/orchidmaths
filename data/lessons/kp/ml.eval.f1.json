@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The harmonic mean of precision and recall",
+    "section": "The harmonic mean of precision and recall",
+    "subgoals": [
+      "Apply 2PR/(P+R)",
+      "Check the equal-precision case",
+      "See a zero recall force zero"
+    ]
+  },
+  {
+    "label": "Worked: two exact F1 values",
+    "section": "Worked: two exact F1 values",
+    "subgoals": [
+      "Compute 0.6 from equal 0.6 scores",
+      "Compute 0.75 from precision 1 and recall 0.6",
+      "Compare with the ordinary mean"
+    ]
+  },
+  {
+    "label": "When F1 is the wrong summary",
+    "section": "When F1 is the wrong summary",
+    "subgoals": [
+      "Weight the two errors by cost",
+      "Choose F-beta for unequal costs",
+      "Prefer accuracy when classes are balanced"
+    ]
+  }
+]

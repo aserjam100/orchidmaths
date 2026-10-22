@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cofactors and trees",
+    "section": "Cofactors and trees",
+    "subgoals": [
+      "Delete one row and column",
+      "Take the determinant",
+      "Read off the tree count"
+    ]
+  },
+  {
+    "label": "Worked: K_4",
+    "section": "Worked: K_4",
+    "subgoals": [
+      "Write 4I - J for $K_4$",
+      "Take the 3 by 3 cofactor",
+      "Compare with 4^2"
+    ]
+  },
+  {
+    "label": "Cayley's formula and examples",
+    "section": "Cayley's formula and examples",
+    "subgoals": [
+      "Apply Cayley's n to the power n - 2",
+      "Count one tree per removed cycle edge",
+      "Use a to the b - 1 times b to the a - 1"
+    ]
+  }
+]

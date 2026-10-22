@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two ways to describe a region",
+    "section": "Two ways to describe a region",
+    "subgoals": [
+      "Describe a triangle both ways",
+      "Describe the same region in type II limits",
+      "See which order is easier"
+    ]
+  },
+  {
+    "label": "Writing the other limits",
+    "section": "Writing the other limits",
+    "subgoals": [
+      "Read the new limits off the picture",
+      "Keep the region the same",
+      "Test a point inside both descriptions"
+    ]
+  },
+  {
+    "label": "Why the value does not change",
+    "section": "Why the value does not change",
+    "subgoals": [
+      "State Fubini's theorem",
+      "Name when it needs care",
+      "Say what the swap is for"
+    ]
+  }
+]

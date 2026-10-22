@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The odd-component condition",
+    "section": "The odd-component condition",
+    "subgoals": [
+      "Delete S and count odd components",
+      "Compare with |S|",
+      "Require the bound for every S"
+    ]
+  },
+  {
+    "label": "Worked: an odd vertex count",
+    "section": "Worked: an odd vertex count",
+    "subgoals": [
+      "Take S empty",
+      "See one odd component",
+      "Fail the inequality"
+    ]
+  },
+  {
+    "label": "Generalizing Hall",
+    "section": "Generalizing Hall",
+    "subgoals": [
+      "Reduce to bipartite Hall",
+      "Handle odd cycles internally",
+      "Place a bridge in the matching"
+    ]
+  }
+]

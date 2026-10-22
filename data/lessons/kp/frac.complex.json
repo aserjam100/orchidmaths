@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A fraction over a fraction",
+    "section": "A fraction over a fraction",
+    "subgoals": [
+      "Recognise a complex fraction",
+      "Read the bar as division",
+      "Say what kind of number it is"
+    ]
+  },
+  {
+    "label": "Multiplying by the reciprocal",
+    "section": "Multiplying by the reciprocal",
+    "subgoals": [
+      "Invert the bottom fraction",
+      "Multiply the two",
+      "Note which route is fastest"
+    ]
+  },
+  {
+    "label": "Simplifying the result",
+    "section": "Simplifying the result",
+    "subgoals": [
+      "Reduce to lowest terms",
+      "Cancel before multiplying",
+      "See that the answer is the same"
+    ]
+  }
+]

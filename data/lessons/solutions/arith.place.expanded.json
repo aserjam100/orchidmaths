@@ -1,0 +1,15 @@
+{
+  "concept": "arith.place.expanded",
+  "setup": "You are writing [[n]] as a sum of its nonzero place values.",
+  "steps": [
+    {
+      "fact": "n",
+      "say": "Read [[n]] by place: thousands, hundreds, tens and ones."
+    },
+    {
+      "fact": "parts",
+      "say": "The nonzero place values are [[expanded]]."
+    }
+  ],
+  "answer": "The expanded form is [[expanded]]."
+}

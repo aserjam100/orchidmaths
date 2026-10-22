@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Radians and the arc",
+    "section": "Radians measure the arc",
+    "subgoals": [
+      "Define one radian as an arc equal to the radius",
+      "State that angle and arc agree on a unit circle",
+      "Scale the arc with the radius"
+    ]
+  },
+  {
+    "label": "The arc length formula",
+    "section": "The arc length formula",
+    "subgoals": [
+      "Multiply the radius by the angle in radians",
+      "Substitute the radius and the angle",
+      "Keep the answer as a multiple of pi when the angle is"
+    ]
+  },
+  {
+    "label": "Why radians",
+    "section": "Why degrees would need a factor",
+    "subgoals": [
+      "Write the degree version with pi over 180",
+      "Identify pi over 180 as the conversion factor",
+      "Say that radians keep the formula free of a factor"
+    ]
+  }
+]

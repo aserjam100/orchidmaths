@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The finite subcover property",
+    "section": "The finite subcover property",
+    "subgoals": [
+      "Take an arbitrary open cover",
+      "Select finitely many members",
+      "Require them alone to cover"
+    ]
+  },
+  {
+    "label": "Compact and sequentially compact",
+    "section": "Compact and sequentially compact",
+    "subgoals": [
+      "Extract a convergent subsequence",
+      "Show a missing subcover contradicts it",
+      "Identify the two properties"
+    ]
+  },
+  {
+    "label": "Continuity and closed bounded",
+    "section": "Continuity and closed bounded",
+    "subgoals": [
+      "Push the compact set through the function",
+      "Identify closed bounded sets on the line",
+      "Keep the converse as a theorem of Euclidean space"
+    ]
+  }
+]

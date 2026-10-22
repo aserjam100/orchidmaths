@@ -1,0 +1,29 @@
+[
+  {
+    "label": "5.5 Averages and Probability",
+    "section": "",
+    "subgoals": [
+      "Count outcomes outside E for the complement",
+      "Subtract P(E) from 1 into P(not E)",
+      "Check P(E) + P(not E) = 1"
+    ]
+  },
+  {
+    "label": "Calculate the Mean of a Set of Numbers",
+    "section": "",
+    "subgoals": [
+      "Add 85+88+94 into 267",
+      "Divide 267 by 3 into 89",
+      "Report Ethan's mean as 89 points"
+    ]
+  },
+  {
+    "label": "The Mean",
+    "section": "",
+    "subgoals": [
+      "Divide the data sum by n",
+      "Split outcomes into E versus not-E shares",
+      "Check both shares sum to 1"
+    ]
+  }
+]

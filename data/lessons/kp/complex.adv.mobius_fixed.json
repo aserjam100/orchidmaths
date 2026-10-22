@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Setting z equal to f(z)",
+    "section": "Setting z equal to f(z)",
+    "subgoals": [
+      "Clear the denominator",
+      "Collect into a quadratic",
+      "Note the c=0 exception"
+    ]
+  },
+  {
+    "label": "The quadratic that follows",
+    "section": "The quadratic that follows",
+    "subgoals": [
+      "Identify the coefficients",
+      "Solve or factor",
+      "Name a repeated root parabolic"
+    ]
+  },
+  {
+    "label": "Choosing the root",
+    "section": "Choosing the root",
+    "subgoals": [
+      "State the selection rule",
+      "Compare real parts",
+      "Break a tie by the imaginary part"
+    ]
+  }
+]

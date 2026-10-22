@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Fractions with numerator one",
+    "section": "Fractions with numerator one",
+    "subgoals": [
+      "Define a unit fraction",
+      "Write a fraction as a sum of them",
+      "Read the size of each part"
+    ]
+  },
+  {
+    "label": "Decomposing one fraction",
+    "section": "Decomposing one fraction",
+    "subgoals": [
+      "Put the sum over a common denominator",
+      "Match the denominators",
+      "Name the greedy method"
+    ]
+  },
+  {
+    "label": "Why it is worth doing",
+    "section": "Why it is worth doing",
+    "subgoals": [
+      "Connect unit fractions to sharing",
+      "See the series connection",
+      "Note the number-theory question"
+    ]
+  }
+]

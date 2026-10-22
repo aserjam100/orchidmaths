@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Edges that are not there",
+    "section": "Edges that are not there",
+    "subgoals": [
+      "Count the possible edges",
+      "Subtract the present edges",
+      "Double the complement to return"
+    ]
+  },
+  {
+    "label": "Worked: the complement of P_4",
+    "section": "Worked: the complement of P_4",
+    "subgoals": [
+      "Count 3 edges in P_4",
+      "Count 6 possible edges",
+      "Find 3 edges in the complement"
+    ]
+  },
+  {
+    "label": "Self-complementary graphs",
+    "section": "Self-complementary graphs",
+    "subgoals": [
+      "Require half the possible edges",
+      "Check n mod 4",
+      "Recognise P_4 as the smallest"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Partitions into blocks",
+    "section": "Partitions into blocks",
+    "subgoals": [
+      "Define S(m,n)",
+      "State what unlabelled changes",
+      "Compute S(3,2)"
+    ]
+  },
+  {
+    "label": "The recurrence",
+    "section": "The recurrence",
+    "subgoals": [
+      "Write the recurrence",
+      "Use its two seeds",
+      "Compute a value from smaller ones"
+    ]
+  },
+  {
+    "label": "Relation to onto functions",
+    "section": "Relation to onto functions",
+    "subgoals": [
+      "Relate Stirling numbers to onto functions",
+      "Count with and without labels",
+      "Connect it to inclusion and exclusion"
+    ]
+  }
+]

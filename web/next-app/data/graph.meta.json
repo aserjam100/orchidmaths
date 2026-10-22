@@ -1,0 +1,68 @@
+{
+  "quizGateXP": 50,
+  "levels": [
+    {
+      "min": 0,
+      "title": "Novice"
+    },
+    {
+      "min": 32,
+      "title": "Apprentice"
+    },
+    {
+      "min": 64,
+      "title": "Student"
+    },
+    {
+      "min": 96,
+      "title": "Scholar"
+    },
+    {
+      "min": 128,
+      "title": "Adept"
+    },
+    {
+      "min": 160,
+      "title": "Expert"
+    },
+    {
+      "min": 192,
+      "title": "Master"
+    },
+    {
+      "min": 224,
+      "title": "Grandmaster"
+    },
+    {
+      "min": 256,
+      "title": "Math Architect"
+    }
+  ],
+  "conceptCount": 1257,
+  "connectionCount": 1666,
+  "domainCount": 21,
+  "domainCounts": {
+    "abstract_algebra": 45,
+    "algebra": 124,
+    "arithmetic": 66,
+    "calculus": 205,
+    "complex_numbers": 42,
+    "differential_equations": 42,
+    "discrete_math": 55,
+    "fractions": 46,
+    "geometry": 45,
+    "graph_theory": 40,
+    "linear_algebra": 45,
+    "machine_learning": 45,
+    "number_theory": 42,
+    "numerical_analysis": 40,
+    "prealgebra": 60,
+    "precalculus": 50,
+    "probability_theory": 50,
+    "real_analysis": 50,
+    "statistics": 55,
+    "topology": 42,
+    "trigonometry": 68
+  },
+  "layoutVersion": 2
+}

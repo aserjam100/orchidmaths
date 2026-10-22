@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Weak convergence of laws",
+    "section": "Weak convergence of laws",
+    "subgoals": [
+      "Compare the distribution functions",
+      "Restrict to continuity points",
+      "Use bounded continuous test functions"
+    ]
+  },
+  {
+    "label": "What it controls and what it does not",
+    "section": "What it controls and what it does not",
+    "subgoals": [
+      "List what is constrained",
+      "Show a joint effect that escapes",
+      "See why a stronger mode needs more"
+    ]
+  },
+  {
+    "label": "The central limit theorem as its central example",
+    "section": "The central limit theorem as its central example",
+    "subgoals": [
+      "Standardise a sum",
+      "Recognise the weak-convergence conclusion",
+      "Note that only the first two moments matter"
+    ]
+  }
+]

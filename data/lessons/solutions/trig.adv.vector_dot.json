@@ -1,0 +1,23 @@
+{
+  "concept": "trig.adv.vector_dot",
+  "setup": "The vectors are $\\langle [[a]], [[b]] \\rangle$ and $\\langle [[c]], [[d]] \\rangle$.",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "The dot product multiplies each pair of matching components and adds the products: $\\langle a, b \\rangle \\cdot \\langle c, d \\rangle = ac + bd$."
+    },
+    {
+      "fact": "t1",
+      "say": "The first product is $([[a]])([[c]]) = [[t1]]$."
+    },
+    {
+      "fact": "t2",
+      "say": "and the second is $([[b]])([[d]]) = [[t2]]$."
+    },
+    {
+      "fact": "value",
+      "say": "Their sum is [[value]], a single number rather than a vector, and its sign says how the two directions relate."
+    }
+  ],
+  "answer": "So the dot product is [[value]]."
+}

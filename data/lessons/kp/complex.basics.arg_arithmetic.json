@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Adding arguments",
+    "section": "Adding arguments",
+    "subgoals": [
+      "Multiply moduli and add arguments",
+      "Derive it from the addition formulas",
+      "Name the rotation-and-scaling reading"
+    ]
+  },
+  {
+    "label": "Reducing modulo 360",
+    "section": "Reducing modulo 360",
+    "subgoals": [
+      "Add the two angles",
+      "Subtract 360 until in range",
+      "Treat the result as a direction"
+    ]
+  },
+  {
+    "label": "Powers and multiples",
+    "section": "Powers and multiples",
+    "subgoals": [
+      "Multiply the argument by the power",
+      "Raise the modulus to the power",
+      "Connect it to De Moivre"
+    ]
+  }
+]

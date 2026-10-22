@@ -1,0 +1,19 @@
+{
+  "concept": "trig.func.cotangent",
+  "setup": "A right triangle has $\\cot\\theta = [[ratio]]$ and a side opposite $\\theta$ of $[[given]]$.",
+  "steps": [
+    {
+      "fact": "ratio",
+      "say": "The cotangent is the reciprocal of the tangent, so it is the adjacent side divided by the opposite side. The adjacent side is therefore the cotangent times the opposite side."
+    },
+    {
+      "fact": "given",
+      "say": "The opposite side is $[[given]]$."
+    },
+    {
+      "fact": "answer",
+      "say": "Multiplying gives $[[ratio]] \\times [[given]] = [[answer]]$."
+    }
+  ],
+  "answer": "So the side adjacent to the angle is $[[answer]]$."
+}

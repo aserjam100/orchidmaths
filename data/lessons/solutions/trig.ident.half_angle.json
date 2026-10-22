@@ -1,0 +1,23 @@
+{
+  "concept": "trig.ident.half_angle",
+  "setup": "You are given $\\cos\\theta = [[cos_num]]/[[cos_den]]$ with $\\theta$ in the first quadrant, and asked for $[[half]]$.",
+  "steps": [
+    {
+      "fact": "half",
+      "say": "The half-angle formulas give the sine of the half angle as the root of $(1 - \\cos\\theta)/2$ and the cosine as the root of $(1 + \\cos\\theta)/2$. Halving an angle inside the first quadrant leaves the half inside it, so the positive root is the one to take."
+    },
+    {
+      "fact": "op",
+      "say": "The radicand is $(1 [[op]] [[cos_num]]/[[cos_den]])/2$, which is $[[rad_num]]/[[rad_den]]$."
+    },
+    {
+      "fact": "rad_num",
+      "say": "Both [[rad_num]] and [[rad_den]] are perfect squares, so the root is exact rather than a decimal approximation."
+    },
+    {
+      "fact": "num",
+      "say": "The square root of $[[rad_num]]/[[rad_den]]$ is $[[num]]/[[den]]$."
+    }
+  ],
+  "answer": "So $[[half]] = [[num]]/[[den]]$."
+}

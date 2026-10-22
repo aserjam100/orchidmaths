@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Three perpendicular unit vectors",
+    "section": "Three perpendicular unit vectors",
+    "subgoals": [
+      "Normalise r' for T",
+      "Differentiate T for N",
+      "Cross T with N for B"
+    ]
+  },
+  {
+    "label": "Worked: the frame of a circle",
+    "section": "Worked: the frame of a circle",
+    "subgoals": [
+      "Compute T = (-sin t, cos t, 0)",
+      "Compute N = (-cos t, -sin t, 0)",
+      "Cross for B = (0,0,1)"
+    ]
+  },
+  {
+    "label": "Why the binormal matters",
+    "section": "Why the binormal matters",
+    "subgoals": [
+      "Read B as the osculating normal",
+      "Watch B turn with torsion",
+      "State the tuple order (Bx, By, Bz)"
+    ]
+  }
+]

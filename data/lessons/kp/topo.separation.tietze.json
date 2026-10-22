@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: extending from two points",
+    "section": "Worked: extending from two points",
+    "subgoals": [
+      "Check the two-point set is closed",
+      "Interpolate linearly between the values",
+      "Extend constantly outside"
+    ]
+  },
+  {
+    "label": "Worked: Urysohn as a corollary",
+    "section": "Worked: Urysohn as a corollary",
+    "subgoals": [
+      "Glue the two closed sets into one domain",
+      "Define 0 on one piece and 1 on the other",
+      "Extend by Tietze to the separator"
+    ]
+  },
+  {
+    "label": "When the subset is not closed",
+    "section": "When the subset is not closed",
+    "subgoals": [
+      "Find a limit point outside Q",
+      "Oscillate toward conflicting limits",
+      "Conclude extension fails in general"
+    ]
+  }
+]

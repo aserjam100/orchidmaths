@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The power set",
+    "section": "The power set",
+    "subgoals": [
+      "List the subsets of a small set",
+      "See the empty set and A as members",
+      "Distinguish membership from inclusion"
+    ]
+  },
+  {
+    "label": "Counting subsets",
+    "section": "Counting subsets",
+    "subgoals": [
+      "Count by independent choices",
+      "Count k-subsets with a binomial coefficient",
+      "Sum the sizes to 2^n"
+    ]
+  },
+  {
+    "label": "Choosing which side to count",
+    "section": "Choosing which side to count",
+    "subgoals": [
+      "Count subsets avoiding an element",
+      "Count subsets containing it",
+      "See the equal halves"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Choosing the image set",
+    "section": "Choosing the image set",
+    "subgoals": [
+      "Define an onto function",
+      "Count all functions first",
+      "Name the cases to remove"
+    ]
+  },
+  {
+    "label": "Inclusion and exclusion",
+    "section": "Inclusion and exclusion",
+    "subgoals": [
+      "Write the alternating sum",
+      "Evaluate a small case",
+      "Explain why the signs alternate"
+    ]
+  },
+  {
+    "label": "The case that matters",
+    "section": "The case that matters",
+    "subgoals": [
+      "See why n > m gives zero",
+      "Explain the n = m case",
+      "Connect onto maps to bijections"
+    ]
+  }
+]

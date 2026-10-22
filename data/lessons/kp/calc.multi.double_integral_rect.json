@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Iterating the integral",
+    "section": "Iterating the integral",
+    "subgoals": [
+      "Read a double integral as two",
+      "Treat the inner variable's partner as constant",
+      "Evaluate over a rectangle"
+    ]
+  },
+  {
+    "label": "Choosing the order",
+    "section": "Choosing the order",
+    "subgoals": [
+      "Swap the order safely",
+      "State when the order does not matter",
+      "Separate a product integrand"
+    ]
+  },
+  {
+    "label": "What the value means",
+    "section": "What the value means",
+    "subgoals": [
+      "Interpret the integral of 1",
+      "Relate the value to a volume",
+      "Connect to the single integral"
+    ]
+  }
+]

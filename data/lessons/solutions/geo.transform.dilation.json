@@ -1,0 +1,15 @@
+{
+  "concept": "geo.transform.dilation",
+  "setup": "A dilation with factor \\([[factor]]\\) is applied to a segment whose length is given.",
+  "steps": [
+    {
+      "fact": "factor",
+      "say": "A dilation moves every point along the ray from the centre and multiplies its distance from the centre by the factor, so it multiplies every length by \\([[factor]]\\) and leaves every angle alone."
+    },
+    {
+      "fact": "length",
+      "say": "The image is similar to the original, so the shape is unchanged and only the size moves: \\([[length]]\\) is the whole of the answer, with no second step."
+    }
+  ],
+  "answer": "So the image of the segment has length \\([[length]]\\)."
+}

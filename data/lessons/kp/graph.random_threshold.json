@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The model G(n,p)",
+    "section": "The model G(n,p)",
+    "subgoals": [
+      "Draw each edge independently",
+      "Average the binomial edge count",
+      "Jump at a threshold"
+    ]
+  },
+  {
+    "label": "Worked: the giant component",
+    "section": "Worked: the giant component",
+    "subgoals": [
+      "Set p equal to c over n",
+      "Below c equal to 1 keep components logarithmic",
+      "Above c equal to 1 find a linear giant"
+    ]
+  },
+  {
+    "label": "Connectivity and isolated vertices",
+    "section": "Connectivity and isolated vertices",
+    "subgoals": [
+      "Order connectivity after the giant threshold",
+      "Track the expected isolated vertices",
+      "Read the threshold (log n)/n"
+    ]
+  }
+]

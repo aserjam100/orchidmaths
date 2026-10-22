@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Maps that preserve edges",
+    "section": "Maps that preserve edges",
+    "subgoals": [
+      "Map every edge to an edge",
+      "Allow non-injective maps",
+      "Do not require non-edge preservation"
+    ]
+  },
+  {
+    "label": "Worked: colorings as homomorphisms",
+    "section": "Worked: colorings as homomorphisms",
+    "subgoals": [
+      "Assign k colors",
+      "Treat colors as vertices of K_k",
+      "Send every edge to an edge of K_k"
+    ]
+  },
+  {
+    "label": "Isomorphism as the bijective case",
+    "section": "Isomorphism as the bijective case",
+    "subgoals": [
+      "Require bijection",
+      "Require a homomorphism inverse",
+      "Read a clique as a map from K_r"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "concept": "geo.triangle.special_right",
+  "setup": "The triangle is a right triangle with a 30 degree angle, so its sides are in the ratio \\(1 : \\sqrt{3} : 2\\).",
+  "steps": [
+    {
+      "fact": "short_leg",
+      "say": "The shortest leg is the one opposite the 30 degree angle, which is \\([[short_leg]]\\) here. Identify that side first, because the ratio is defined from it."
+    },
+    {
+      "fact": "hypotenuse",
+      "say": "The hypotenuse is twice the shortest leg, so it is \\([[hypotenuse]]\\). The long leg would be the short one times the square root of 3, which is where an irrational answer would come from."
+    }
+  ],
+  "answer": "So the sides here are a short leg of \\([[short_leg]]\\) and a hypotenuse of \\([[hypotenuse]]\\)."
+}

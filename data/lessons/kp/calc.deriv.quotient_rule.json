@@ -1,0 +1,29 @@
+[
+  {
+    "label": "3.3 Differentiation Rules",
+    "section": "",
+    "subgoals": [
+      "Expand (f/g)' as (f'g - f*g')/g^2",
+      "Differentiate (x^2+1)/(x-1) via quotient",
+      "Simplify the numerator before evaluating"
+    ]
+  },
+  {
+    "label": "The Basic Rules",
+    "section": "",
+    "subgoals": [
+      "Differentiate c*f to c*f' with constants factored out",
+      "Add derivatives term-by-term for sums",
+      "Combine on 3x^2+2x to 6x+2"
+    ]
+  },
+  {
+    "label": "The Constant Rule",
+    "section": "",
+    "subgoals": [
+      "Pull constants out before differentiating",
+      "Differentiate 4x^3 to 12x^2",
+      "Confirm constant functions give 0"
+    ]
+  }
+]

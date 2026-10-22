@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "alpha",
+    "symbol": "α Α",
+    "latex": "\\alpha",
+    "name": "Alpha",
+    "aliases": [
+      "alpha",
+      "lowercase alpha",
+      "uppercase alpha"
+    ],
+    "pronunciation": "AL-fuh",
+    "category": "greek",
+    "definition": "The first letter of the Greek alphabet. In mathematics it commonly denotes an angle, a regression intercept, or a significance level in statistics, depending on context.",
+    "reading": "“alpha”.",
+    "examples": [
+      {
+        "tex": "\\alpha = 30^\\circ",
+        "explanation": "Alpha names an angle of 30 degrees."
+      }
+    ],
+    "commonMistakes": [
+      "Assuming alpha always means the same thing; its meaning is set by context."
+    ],
+    "relatedSymbols": [
+      "beta",
+      "hypothesis-h0",
+      "angle"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "beta",
+    "symbol": "β Β",
+    "latex": "\\beta",
+    "name": "Beta",
+    "aliases": [
+      "beta",
+      "lowercase beta",
+      "uppercase beta"
+    ],
+    "pronunciation": "BAY-tuh",
+    "category": "greek",
+    "definition": "The second letter of the Greek alphabet. It commonly denotes a second angle, a regression coefficient in statistics, or a shape parameter of the beta distribution.",
+    "reading": "“beta”.",
+    "examples": [
+      {
+        "tex": "y = \\beta_0 + \\beta_1 x",
+        "explanation": "Beta with subscripts names regression coefficients."
+      }
+    ],
+    "relatedSymbols": [
+      "alpha",
+      "regression-note"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "gamma-letter",
+    "symbol": "γ Γ",
+    "latex": "\\gamma",
+    "name": "Gamma",
+    "aliases": [
+      "gamma",
+      "lowercase gamma",
+      "uppercase gamma"
+    ],
+    "pronunciation": "GAM-uh",
+    "category": "greek",
+    "definition": "The third letter of the Greek alphabet. Lowercase gamma commonly denotes a curve parameter, a third angle, or the Euler-Mascheroni constant; uppercase Gamma denotes the gamma function.",
+    "reading": "“gamma”.",
+    "examples": [
+      {
+        "tex": "\\gamma(t) = (\\cos t, \\sin t)",
+        "explanation": "Gamma names a parametrized curve in the plane."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Analysis",
+        "meaning": "Uppercase Gamma is the gamma function, which extends the factorial."
+      }
+    ],
+    "relatedSymbols": [
+      "gamma-function",
+      "delta-letter",
+      "function-notation"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 5",
+        "url": "https://dlmf.nist.gov/5",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "delta-letter",
+    "symbol": "δ Δ",
+    "latex": "\\delta",
+    "name": "Delta",
+    "aliases": [
+      "delta",
+      "lowercase delta",
+      "uppercase delta",
+      "triangle"
+    ],
+    "pronunciation": "DEL-tuh",
+    "category": "greek",
+    "definition": "The fourth letter of the Greek alphabet. Lowercase delta commonly denotes a small quantity; uppercase Delta denotes a change, a discriminant, or a triangle, depending on context.",
+    "reading": "“delta”.",
+    "examples": [
+      {
+        "tex": "\\delta = 0.01",
+        "explanation": "Delta names a small positive quantity."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Change",
+        "meaning": "Uppercase Delta denotes a difference, as in Delta x."
+      },
+      {
+        "context": "Geometry",
+        "meaning": "An uppercase Delta can label a triangle."
+      }
+    ],
+    "relatedSymbols": [
+      "delta-difference",
+      "epsilon-delta",
+      "triangle"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "epsilon",
+    "symbol": "ε ϵ",
+    "latex": "\\epsilon",
+    "name": "Epsilon",
+    "aliases": [
+      "epsilon",
+      "varepsilon",
+      "lowercase epsilon"
+    ],
+    "pronunciation": "EP-sih-lon",
+    "category": "greek",
+    "definition": "The fifth letter of the Greek alphabet, with the variant form ϵ. It most famously denotes an arbitrarily small positive quantity in limits and epsilon-delta arguments.",
+    "reading": "“epsilon”.",
+    "examples": [
+      {
+        "tex": "\\forall \\epsilon > 0",
+        "explanation": "For every positive epsilon, however small."
+      }
+    ],
+    "relatedSymbols": [
+      "epsilon-delta",
+      "delta-letter"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "zeta",
+    "symbol": "ζ Ζ",
+    "latex": "\\zeta",
+    "name": "Zeta",
+    "aliases": [
+      "zeta",
+      "lowercase zeta",
+      "uppercase zeta"
+    ],
+    "pronunciation": "ZAY-tuh",
+    "category": "greek",
+    "definition": "The sixth letter of the Greek alphabet. In mathematics it commonly denotes a complex variable or root, and names the Riemann zeta function.",
+    "reading": "“zeta”.",
+    "examples": [
+      {
+        "tex": "\\zeta(2) = \\frac{\\pi^2}{6}",
+        "explanation": "Zeta of 2 equals pi squared over 6."
+      }
+    ],
+    "relatedSymbols": [
+      "zeta-function",
+      "eta"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 25",
+        "url": "https://dlmf.nist.gov/25",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "eta",
+    "symbol": "η Η",
+    "latex": "\\eta",
+    "name": "Eta",
+    "aliases": [
+      "eta",
+      "lowercase eta",
+      "uppercase eta"
+    ],
+    "pronunciation": "AY-tuh",
+    "category": "greek",
+    "definition": "The seventh letter of the Greek alphabet. It commonly denotes an efficiency, the correlation ratio in statistics, or the Dedekind eta function in number theory.",
+    "reading": "“eta”.",
+    "examples": [
+      {
+        "tex": "\\eta = 0.85",
+        "explanation": "Eta names an efficiency of 85 percent."
+      }
+    ],
+    "relatedSymbols": [
+      "zeta",
+      "theta"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "theta",
+    "symbol": "θ ϑ Θ",
+    "latex": "\\theta",
+    "name": "Theta",
+    "aliases": [
+      "theta",
+      "vartheta",
+      "lowercase theta",
+      "uppercase theta"
+    ],
+    "pronunciation": "THAY-tuh",
+    "category": "greek",
+    "definition": "The eighth letter of the Greek alphabet, with the variant form ϑ. It most commonly denotes an angle, especially in trigonometry and polar coordinates.",
+    "reading": "“theta”.",
+    "examples": [
+      {
+        "tex": "\\sin\\theta = \\frac{1}{2}",
+        "explanation": "Sine of the angle theta equals one half."
+      }
+    ],
+    "relatedSymbols": [
+      "angle",
+      "sine",
+      "estimator-hat"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "OpenStax Algebra and Trigonometry 2e",
+        "url": "https://openstax.org/details/books/algebra-and-trigonometry-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "iota",
+    "symbol": "ι Ι",
+    "latex": "\\iota",
+    "name": "Iota",
+    "aliases": [
+      "iota",
+      "lowercase iota",
+      "uppercase iota"
+    ],
+    "pronunciation": "eye-OH-tuh",
+    "category": "greek",
+    "definition": "The ninth letter of the Greek alphabet. It commonly serves as a small index or a generic small quantity, and gives English the phrase “not one iota” for a tiny amount.",
+    "reading": "“iota”.",
+    "examples": [
+      {
+        "tex": "x_{\\iota}",
+        "explanation": "Iota used as an index on x."
+      }
+    ],
+    "relatedSymbols": [
+      "sequence-term",
+      "kappa"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "kappa",
+    "symbol": "κ ϰ Κ",
+    "latex": "\\kappa",
+    "name": "Kappa",
+    "aliases": [
+      "kappa",
+      "varkappa",
+      "lowercase kappa",
+      "uppercase kappa"
+    ],
+    "pronunciation": "KAP-uh",
+    "category": "greek",
+    "definition": "The tenth letter of the Greek alphabet, with the variant form ϰ. It commonly denotes curvature of a curve or a condition number in numerical analysis.",
+    "reading": "“kappa”.",
+    "examples": [
+      {
+        "tex": "\\kappa = \\frac{1}{r}",
+        "explanation": "Curvature kappa of a circle of radius r."
+      }
+    ],
+    "relatedSymbols": [
+      "iota",
+      "lambda"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "lambda",
+    "symbol": "λ Λ",
+    "latex": "\\lambda",
+    "name": "Lambda",
+    "aliases": [
+      "lambda",
+      "lowercase lambda",
+      "uppercase lambda"
+    ],
+    "pronunciation": "LAM-duh",
+    "category": "greek",
+    "definition": "The eleventh letter of the Greek alphabet. Lowercase lambda commonly denotes an eigenvalue, a rate parameter, or a wavelength; uppercase Lambda denotes the von Mangoldt function in number theory.",
+    "reading": "“lambda”.",
+    "examples": [
+      {
+        "tex": "Av = \\lambda v",
+        "explanation": "Lambda is the eigenvalue belonging to the eigenvector v."
+      }
+    ],
+    "relatedSymbols": [
+      "eigenvalue",
+      "mu",
+      "wavelength-note"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "mu",
+    "symbol": "μ Μ",
+    "latex": "\\mu",
+    "name": "Mu",
+    "aliases": [
+      "mu",
+      "lowercase mu",
+      "uppercase mu",
+      "micro"
+    ],
+    "pronunciation": "myoo",
+    "category": "greek",
+    "definition": "The twelfth letter of the Greek alphabet. In mathematics it commonly denotes a population mean; in science it is the micro prefix and the coefficient of friction.",
+    "reading": "“myoo”.",
+    "examples": [
+      {
+        "tex": "X \\sim N(\\mu, \\sigma^2)",
+        "explanation": "X follows a normal distribution with mean mu."
+      }
+    ],
+    "relatedSymbols": [
+      "population-mean",
+      "lambda",
+      "nu"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "nu",
+    "symbol": "ν Ν",
+    "latex": "\\nu",
+    "name": "Nu",
+    "aliases": [
+      "nu",
+      "lowercase nu",
+      "uppercase nu"
+    ],
+    "pronunciation": "nyoo",
+    "category": "greek",
+    "definition": "The thirteenth letter of the Greek alphabet. It commonly denotes frequency in physics or degrees of freedom in statistics.",
+    "reading": "“nu”.",
+    "examples": [
+      {
+        "tex": "\\nu = 10",
+        "explanation": "Nu names 10 degrees of freedom."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing lowercase nu with the Latin letter v."
+    ],
+    "relatedSymbols": [
+      "mu",
+      "xi"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "xi",
+    "symbol": "ξ Ξ",
+    "latex": "\\xi",
+    "name": "Xi",
+    "aliases": [
+      "xi",
+      "lowercase xi",
+      "uppercase xi"
+    ],
+    "pronunciation": "ksai",
+    "category": "greek",
+    "definition": "The fourteenth letter of the Greek alphabet. It commonly denotes a generic variable, a random variable value, or the Riemann xi function.",
+    "reading": "“ksee”.",
+    "examples": [
+      {
+        "tex": "\\xi_1, \\xi_2, \\dots, \\xi_n",
+        "explanation": "Xi with subscripts lists n generic values."
+      }
+    ],
+    "relatedSymbols": [
+      "nu",
+      "omicron"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "omicron",
+    "symbol": "ο Ο",
+    "latex": "o",
+    "name": "Omicron",
+    "aliases": [
+      "omicron",
+      "lowercase omicron",
+      "uppercase omicron"
+    ],
+    "pronunciation": "OM-ih-kron",
+    "category": "greek",
+    "definition": "The fifteenth letter of the Greek alphabet. It looks identical to the Latin letter o, so it is rarely used as a mathematical symbol; big-O notation uses the Latin O instead.",
+    "reading": "“omicron”.",
+    "examples": [
+      {
+        "tex": "f(n) = O(n^2)",
+        "explanation": "Big-O uses the Latin O, not omicron, for growth rates."
+      }
+    ],
+    "relatedSymbols": [
+      "big-o-notation",
+      "xi",
+      "pi-letter"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "pi-letter",
+    "symbol": "π ϖ Π",
+    "latex": "\\pi",
+    "name": "Pi",
+    "aliases": [
+      "pi",
+      "varpi",
+      "lowercase pi",
+      "uppercase pi"
+    ],
+    "pronunciation": "pye",
+    "category": "greek",
+    "definition": "The sixteenth letter of the Greek alphabet, with the variant form ϖ. Lowercase pi most famously denotes the circle constant; uppercase Pi denotes a product. Each meaning has its own entry.",
+    "reading": "“pie”.",
+    "examples": [
+      {
+        "tex": "\\pi \\approx 3.14159",
+        "explanation": "Pi is approximately 3.14159."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Geometry",
+        "meaning": "Lowercase pi is the ratio of a circle's circumference to its diameter."
+      },
+      {
+        "context": "Algebra",
+        "meaning": "Uppercase Pi denotes a product of many factors."
+      }
+    ],
+    "relatedSymbols": [
+      "pi-constant",
+      "product-notation",
+      "omicron"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "rho",
+    "symbol": "ρ ϱ Ρ",
+    "latex": "\\rho",
+    "name": "Rho",
+    "aliases": [
+      "rho",
+      "varrho",
+      "lowercase rho",
+      "uppercase rho"
+    ],
+    "pronunciation": "roh",
+    "category": "greek",
+    "definition": "The seventeenth letter of the Greek alphabet, with the variant form ϱ. It commonly denotes density, a correlation coefficient, or a radial coordinate.",
+    "reading": "“roh”.",
+    "examples": [
+      {
+        "tex": "\\rho = \\frac{m}{V}",
+        "explanation": "Rho names density: mass over volume."
+      }
+    ],
+    "relatedSymbols": [
+      "correlation",
+      "pi-letter",
+      "sigma-letter"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "sigma-letter",
+    "symbol": "σ ς Σ",
+    "latex": "\\sigma",
+    "name": "Sigma",
+    "aliases": [
+      "sigma",
+      "varsigma",
+      "lowercase sigma",
+      "final sigma",
+      "uppercase sigma"
+    ],
+    "pronunciation": "SIG-muh",
+    "category": "greek",
+    "definition": "The eighteenth letter of the Greek alphabet, with the word-final form ς. Lowercase sigma commonly denotes a standard deviation; uppercase Sigma denotes summation. Each use has its own entry.",
+    "reading": "“sigma”.",
+    "examples": [
+      {
+        "tex": "\\sigma = 2",
+        "explanation": "Sigma names a standard deviation of 2."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Statistics",
+        "meaning": "Lowercase sigma is the population standard deviation."
+      },
+      {
+        "context": "Algebra",
+        "meaning": "Uppercase Sigma denotes a sum of many terms."
+      }
+    ],
+    "relatedSymbols": [
+      "summation-sigma",
+      "standard-deviation",
+      "rho"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "tau",
+    "symbol": "τ Τ",
+    "latex": "\\tau",
+    "name": "Tau",
+    "aliases": [
+      "tau",
+      "lowercase tau",
+      "uppercase tau",
+      "2pi"
+    ],
+    "pronunciation": "taw",
+    "category": "greek",
+    "definition": "The nineteenth letter of the Greek alphabet. It commonly denotes a time constant or a shear stress. Some writers propose tau, equal to two pi, as the circle constant; mainstream mathematics uses pi.",
+    "reading": "“tau”.",
+    "examples": [
+      {
+        "tex": "\\tau = 2\\pi",
+        "explanation": "In the tau proposal, one full turn is tau radians (about 6.283)."
+      }
+    ],
+    "relatedSymbols": [
+      "pi-constant",
+      "sigma-letter",
+      "upsilon"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "upsilon",
+    "symbol": "υ Υ",
+    "latex": "\\upsilon",
+    "name": "Upsilon",
+    "aliases": [
+      "upsilon",
+      "lowercase upsilon",
+      "uppercase upsilon"
+    ],
+    "pronunciation": "UP-sih-lon",
+    "category": "greek",
+    "definition": "The twentieth letter of the Greek alphabet. It is rarely used in mathematics; when it appears it is usually a generic variable. It is better known from physics, where it names a particle.",
+    "reading": "“upsilon”.",
+    "examples": [
+      {
+        "tex": "\\upsilon \\in U",
+        "explanation": "Upsilon names an element of the set U."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing lowercase upsilon with the Latin letter u or with nu."
+    ],
+    "relatedSymbols": [
+      "tau",
+      "phi",
+      "element-of"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "phi",
+    "symbol": "φ ϕ Φ",
+    "latex": "\\phi",
+    "name": "Phi",
+    "aliases": [
+      "phi",
+      "varphi",
+      "lowercase phi",
+      "uppercase phi",
+      "golden ratio"
+    ],
+    "pronunciation": "fye",
+    "category": "greek",
+    "definition": "The twenty-first letter of the Greek alphabet, with the variant form ϕ. It commonly denotes the golden ratio, an angle, or Euler's totient function.",
+    "reading": "“fee” or “fye”.",
+    "examples": [
+      {
+        "tex": "\\varphi = \\frac{1 + \\sqrt{5}}{2}",
+        "explanation": "Phi names the golden ratio, about 1.618."
+      }
+    ],
+    "relatedSymbols": [
+      "totient",
+      "upsilon",
+      "chi"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "chi",
+    "symbol": "χ Χ",
+    "latex": "\\chi",
+    "name": "Chi",
+    "aliases": [
+      "chi",
+      "lowercase chi",
+      "uppercase chi",
+      "chi-squared"
+    ],
+    "pronunciation": "kye",
+    "category": "greek",
+    "definition": "The twenty-second letter of the Greek alphabet. It commonly denotes a character in algebra or names the chi-squared distribution in statistics.",
+    "reading": "“kye”.",
+    "examples": [
+      {
+        "tex": "\\chi^2 = 4.2",
+        "explanation": "A chi-squared test statistic equals 4.2."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing lowercase chi with the Latin letter x."
+    ],
+    "relatedSymbols": [
+      "phi",
+      "psi",
+      "discrete-distributions"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "psi",
+    "symbol": "ψ Ψ",
+    "latex": "\\psi",
+    "name": "Psi",
+    "aliases": [
+      "psi",
+      "lowercase psi",
+      "uppercase psi",
+      "wave function"
+    ],
+    "pronunciation": "sye",
+    "category": "greek",
+    "definition": "The twenty-third letter of the Greek alphabet. It commonly denotes a wave function in quantum mechanics or a generic function alongside phi.",
+    "reading": "“sigh”.",
+    "examples": [
+      {
+        "tex": "\\psi(x) = e^{-x^2}",
+        "explanation": "Psi names a function of x."
+      }
+    ],
+    "relatedSymbols": [
+      "chi",
+      "omega",
+      "function-notation"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "omega",
+    "symbol": "ω Ω",
+    "latex": "\\omega",
+    "name": "Omega",
+    "aliases": [
+      "omega",
+      "lowercase omega",
+      "uppercase omega",
+      "ohm"
+    ],
+    "pronunciation": "oh-MAY-guh",
+    "category": "greek",
+    "definition": "The twenty-fourth and last letter of the Greek alphabet. Lowercase omega commonly denotes angular velocity or the first infinite ordinal; uppercase Omega denotes ohms or sample-space events in probability.",
+    "reading": "“omega”.",
+    "examples": [
+      {
+        "tex": "\\omega = 2\\pi f",
+        "explanation": "Omega names angular velocity: two pi times frequency."
+      }
+    ],
+    "relatedSymbols": [
+      "psi",
+      "probability-of-event",
+      "angle"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Greek and Coptic code chart",
+        "url": "https://www.unicode.org/charts/PDF/U0370.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "wavelength-note",
+    "symbol": "λ",
+    "latex": "\\lambda",
+    "name": "Wavelength (lambda use)",
+    "aliases": [
+      "wavelength",
+      "lambda wavelength"
+    ],
+    "category": "greek",
+    "relatedCategories": [
+      "geometry-trig"
+    ],
+    "definition": "In physics, lowercase lambda denotes wavelength: the distance a wave travels in one cycle. Wave speed equals frequency times wavelength.",
+    "reading": "“lambda”.",
+    "examples": [
+      {
+        "tex": "v = f\\lambda",
+        "explanation": "Wave speed v equals frequency f times wavelength lambda."
+      }
+    ],
+    "relatedSymbols": [
+      "lambda",
+      "mu"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ],
+    "notes": "Included because wavelength is the most common science use of lambda a mathematics learner meets."
+  }
+]

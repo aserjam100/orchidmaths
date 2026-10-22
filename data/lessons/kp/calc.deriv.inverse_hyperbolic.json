@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Inverting the hyperbolic functions",
+    "section": "Inverting the hyperbolic functions",
+    "subgoals": [
+      "Write the input as the hyperbolic function of the output",
+      "Invert with the reciprocal rule",
+      "Use the hyperbolic identity to simplify"
+    ]
+  },
+  {
+    "label": "The three rules",
+    "section": "The three rules",
+    "subgoals": [
+      "Remember the arsinh rule with a plus",
+      "Use the arcosh rule beyond one",
+      "Keep artanh inside minus one to one"
+    ]
+  },
+  {
+    "label": "Recognising them in integrals",
+    "section": "Recognising them in integrals",
+    "subgoals": [
+      "Reverse each rule as an integral",
+      "Spot the quadratic patterns",
+      "Prefer the hyperbolic form to a substitution"
+    ]
+  }
+]

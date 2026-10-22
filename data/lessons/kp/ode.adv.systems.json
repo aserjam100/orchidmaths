@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Homogeneous Systems ($\\mathbf{f} = 0$)",
+    "section": "Homogeneous Systems ($\\mathbf{f} = 0$)",
+    "subgoals": [
+      "Assume x = v e^{lt} to get Av = lv",
+      "Solve the 2x2 eigenproblem for l = 4, 2",
+      "Combine C1 v1 e^{4t} + C2 v2 e^{2t}"
+    ]
+  },
+  {
+    "label": "Nonhomogeneous Systems",
+    "section": "Nonhomogeneous Systems",
+    "subgoals": [
+      "Solve the homogeneous part first",
+      "Vary the constants against f(t)",
+      "Add homogeneous plus particular"
+    ]
+  },
+  {
+    "label": "Complex and repeated eigenvalues",
+    "section": "Nonhomogeneous Systems",
+    "subgoals": [
+      "Split a + bi into oscillation and growth",
+      "Build generalized eigenvectors for repeats",
+      "Pick the ansatz matching the eigenvalue case"
+    ]
+  }
+]

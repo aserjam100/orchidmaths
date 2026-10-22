@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the Wronskian of cos and sin",
+    "section": "Worked: the Wronskian of cos and sin",
+    "subgoals": [
+      "Differentiate cos and sin",
+      "Form W = cos^2 + sin^2",
+      "Conclude W = 1 everywhere"
+    ]
+  },
+  {
+    "label": "Worked: a constant forcing term",
+    "section": "Worked: a constant forcing term",
+    "subgoals": [
+      "Compute u1' = -sin x and u2' = cos x",
+      "Integrate dropping constants",
+      "Assemble y_p = 1 and verify"
+    ]
+  },
+  {
+    "label": "It needs the homogeneous basis first",
+    "section": "It needs the homogeneous basis first",
+    "subgoals": [
+      "Require y1, y2 before W",
+      "Match undetermined coefficients where both apply",
+      "Reserve sec x-type forcing for this method"
+    ]
+  }
+]

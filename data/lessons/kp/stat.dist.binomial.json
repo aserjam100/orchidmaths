@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction to the binomial distribution",
+    "section": "",
+    "subgoals": [
+      "Fix n trials with constant success p",
+      "Count x-success orders with C(n,x)",
+      "Multiply into C(n,x)*p^x*q^(n-x)"
+    ]
+  },
+  {
+    "label": "Key features",
+    "section": "",
+    "subgoals": [
+      "Write b(x;n,p) = C(n,x)*p^x*q^(n-x)",
+      "Read mu = n*p off n and p",
+      "Compute sigma^2 = n*p*(1-p) and root into sigma"
+    ]
+  },
+  {
+    "label": "Mean of the binomial distribution",
+    "section": "",
+    "subgoals": [
+      "Fold x*C(n,x) into n*C(n-1,x-1)",
+      "Factor n*p out of the expectation sum",
+      "Collapse the remaining sum into 1"
+    ]
+  }
+]

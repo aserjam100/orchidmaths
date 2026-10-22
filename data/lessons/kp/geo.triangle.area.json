@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why Half?",
+    "section": "Why Half?",
+    "subgoals": [
+      "Cut a base-by-height rectangle on its diagonal",
+      "Halve bh for two congruent triangles",
+      "Pair any base only with its perpendicular height"
+    ]
+  },
+  {
+    "label": "Units",
+    "section": "Units",
+    "subgoals": [
+      "Multiply lengths to get square units",
+      "Convert inch sides into square inches",
+      "Ignore the extra side that lacks the height"
+    ]
+  },
+  {
+    "label": "Drill: base 10 height 6, and base 8 height 3",
+    "section": "",
+    "subgoals": [
+      "Halve 10 times 6 for 30 square cm",
+      "Halve 8 times 3 for 12 with side 5 ignored",
+      "Check the height meets the base at a right angle"
+    ]
+  }
+]

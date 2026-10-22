@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Reduction to sequences",
+    "section": "Reduction to sequences",
+    "subgoals": [
+      "Take a sequence approaching the point",
+      "Apply the function to its terms",
+      "Demand the outputs approach L"
+    ]
+  },
+  {
+    "label": "Proving a limit fails",
+    "section": "Proving a limit fails",
+    "subgoals": [
+      "Choose an approach sequence",
+      "Contrast two approach directions",
+      "Conclude the two-sided limit fails"
+    ]
+  },
+  {
+    "label": "Continuity at a point",
+    "section": "Continuity at a point",
+    "subgoals": [
+      "Set the limit equal to the value",
+      "Rephrase with sequences",
+      "Let the function commute with the limit"
+    ]
+  }
+]

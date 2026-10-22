@@ -1,0 +1,15 @@
+{
+  "concept": "alg.rational.asymptotes",
+  "setup": "The denominator of the rational function is x² + [[b]]x + [[d]], which is zero at [[m]] and [[n]].",
+  "steps": [
+    {
+      "fact": "m",
+      "say": "A zero of the denominator that does not cancel with the numerator gives a vertical asymptote."
+    },
+    {
+      "fact": "n",
+      "say": "The two vertical asymptotes are at [[m]] and [[n]]."
+    }
+  ],
+  "answer": "So the larger vertical asymptote is [[answer]]."
+}

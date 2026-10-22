@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two colours",
+    "section": "Two colours",
+    "subgoals": [
+      "Colour each edge red or blue",
+      "Look for a monochromatic clique",
+      "Swap colours to see R(a,b) equals R(b,a)"
+    ]
+  },
+  {
+    "label": "Worked: R(3,3) equals 6",
+    "section": "Worked: R(3,3) equals 6",
+    "subgoals": [
+      "Show five vertices admit a 5-cycle coloring",
+      "Pigeonhole three edges at one vertex",
+      "Close a monochromatic triangle"
+    ]
+  },
+  {
+    "label": "Known values and growth",
+    "section": "Known values and growth",
+    "subgoals": [
+      "Recall R(2,k) equals k",
+      "Quote R(3,4), R(3,5), R(4,4)",
+      "Note the open diagonal growth"
+    ]
+  }
+]

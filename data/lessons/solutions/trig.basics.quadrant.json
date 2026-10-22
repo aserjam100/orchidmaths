@@ -1,0 +1,15 @@
+{
+  "concept": "trig.basics.quadrant",
+  "setup": "The angle given is [[angle]]°.",
+  "steps": [
+    {
+      "fact": "angle",
+      "say": "The quadrant boundaries are the multiples of 90°, because each quadrant is a quarter-turn: quadrant 1 runs from 0° to 90°, quadrant 2 from 90° to 180°, quadrant 3 from 180° to 270°, and quadrant 4 from 270° to 360°."
+    },
+    {
+      "fact": "value",
+      "say": "The angle [[angle]]° falls between two of those boundaries, and that interval is quadrant [[value]]."
+    }
+  ],
+  "answer": "So the terminal side lies in quadrant [[value]]."
+}

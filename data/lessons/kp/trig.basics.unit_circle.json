@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Center radius 1 at origin O",
+      "Sweep theta counterclockwise positive, clockwise negative",
+      "Read sin = PR, cos = OR, tan = ST off segments"
+    ]
+  },
+  {
+    "label": "Fundamental trigonometric identity",
+    "section": "",
+    "subgoals": [
+      "Fit right triangle ORP with hypotenuse 1",
+      "Add squared legs for sin^2(theta) + cos^2(theta) = 1",
+      "Parametrize every circle point as (cos(theta), sin(theta))"
+    ]
+  },
+  {
+    "label": "Angles on the unit circle",
+    "section": "",
+    "subgoals": [
+      "Reduce rotations modulo 360 deg to one turn",
+      "Convert 30 deg to pi/6 via the pi/180 factor",
+      "Read arc length directly as the radian measure"
+    ]
+  }
+]

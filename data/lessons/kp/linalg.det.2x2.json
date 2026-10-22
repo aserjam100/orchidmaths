@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Multiply a11 by a22 down the main diagonal",
+      "Multiply a21 by a12 across the off diagonal",
+      "Subtract the off-diagonal product from the main product"
+    ]
+  },
+  {
+    "label": "Diagonal and triangular matrices",
+    "section": "",
+    "subgoals": [
+      "Spot zeros in every off-diagonal entry",
+      "Read the determinant as the product of diagonal entries",
+      "Multiply the diagonal entries together"
+    ]
+  },
+  {
+    "label": "Laplace expansion",
+    "section": "",
+    "subgoals": [
+      "Pick the row or column with the most zeros",
+      "Expand along it with alternating signs",
+      "Sum the signed 1x1 cofactors"
+    ]
+  }
+]

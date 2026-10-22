@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Reciprocal shape",
+    "section": "Reciprocal shape",
+    "subgoals": [
+      "Invert the values",
+      "Send large values to small ones",
+      "Place asymptotes at the zeros"
+    ]
+  },
+  {
+    "label": "Ranges and asymptotes",
+    "section": "Ranges and asymptotes",
+    "subgoals": [
+      "Bound the range away from zero",
+      "Place the cosecant asymptotes",
+      "Place the secant asymptotes"
+    ]
+  },
+  {
+    "label": "Reading a graph back",
+    "section": "Reading a graph back",
+    "subgoals": [
+      "Invert each height",
+      "Turn zeros into asymptotes",
+      "Mark the fixed points at plus and minus one"
+    ]
+  }
+]

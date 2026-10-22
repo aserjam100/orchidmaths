@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The precision of an estimate",
+    "section": "The precision of an estimate",
+    "subgoals": [
+      "Define the standard error",
+      "Contrast it with the standard deviation",
+      "Connect it to a second sample"
+    ]
+  },
+  {
+    "label": "The square root of the sample size",
+    "section": "The square root of the sample size",
+    "subgoals": [
+      "State the formula",
+      "Explain the square root",
+      "Say what quadrupling the sample does"
+    ]
+  },
+  {
+    "label": "Comparing with the standard deviation",
+    "section": "Comparing with the standard deviation",
+    "subgoals": [
+      "Say which changes with the sample",
+      "Name the common confusion",
+      "Note the shared units"
+    ]
+  }
+]

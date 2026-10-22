@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Listing a set",
+    "section": "Listing a set",
+    "subgoals": [
+      "Exhibit a listing of the set",
+      "Check every element appears once",
+      "Check no element is missed"
+    ]
+  },
+  {
+    "label": "Closure properties",
+    "section": "Closure properties",
+    "subgoals": [
+      "Take a subset and restrict the list",
+      "Interleave two lists along diagonals",
+      "Express the set as a countable union"
+    ]
+  },
+  {
+    "label": "The algebraic numbers",
+    "section": "The algebraic numbers",
+    "subgoals": [
+      "Bound the degree and the coefficients",
+      "Count the polynomials in each block",
+      "Take the countable union over the blocks"
+    ]
+  }
+]

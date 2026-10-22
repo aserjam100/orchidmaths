@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cosh of an imaginary angle",
+    "section": "Cosh of an imaginary angle",
+    "subgoals": [
+      "Substitute x = i theta",
+      "Recognise the cosine sum",
+      "Conclude cosh(i theta) = cos theta"
+    ]
+  },
+  {
+    "label": "Sinh of an imaginary angle",
+    "section": "Sinh of an imaginary angle",
+    "subgoals": [
+      "Substitute x = i theta",
+      "Use the sine difference",
+      "Keep the factor i"
+    ]
+  },
+  {
+    "label": "The rotation reading",
+    "section": "The rotation reading",
+    "subgoals": [
+      "See an imaginary hyperbolic angle as a rotation",
+      "Compare the addition formulas",
+      "Relate the Pythagorean identities"
+    ]
+  }
+]

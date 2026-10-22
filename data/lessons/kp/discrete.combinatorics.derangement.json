@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "Definition",
+    "subgoals": [
+      "Define a derangement",
+      "List the two derangements of three objects",
+      "Compute !4"
+    ]
+  },
+  {
+    "label": "The recurrence",
+    "section": "The recurrence",
+    "subgoals": [
+      "State the recurrence and its two seeds",
+      "Derive it by following one object",
+      "Evaluate !5 from the recurrence"
+    ]
+  },
+  {
+    "label": "Inclusion and exclusion",
+    "section": "Inclusion and exclusion",
+    "subgoals": [
+      "Count permutations with a fixed point",
+      "Write the alternating sum",
+      "Relate !n to n!/e"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Exterior angles add to 360",
+    "section": "Exterior angles add to 360",
+    "subgoals": [
+      "Define an exterior angle",
+      "Explain the full turn",
+      "State the sum for any convex polygon"
+    ]
+  },
+  {
+    "label": "One angle of a regular polygon",
+    "section": "One angle of a regular polygon",
+    "subgoals": [
+      "Divide 360 by the side count",
+      "Compute an octagon's angle",
+      "See when the answer is whole"
+    ]
+  },
+  {
+    "label": "Why the walk turns once",
+    "section": "Why the walk turns once",
+    "subgoals": [
+      "Follow the heading around the boundary",
+      "Account for direction",
+      "See the total turn"
+    ]
+  }
+]

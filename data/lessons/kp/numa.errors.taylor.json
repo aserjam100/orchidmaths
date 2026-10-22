@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cutting a series short",
+    "section": "Cutting a series short",
+    "subgoals": [
+      "Expand the exact quantity",
+      "Drop the higher-order terms",
+      "Read the size of the first dropped term"
+    ]
+  },
+  {
+    "label": "Worked: halving the step",
+    "section": "Worked: halving the step",
+    "subgoals": [
+      "Write the error as a constant times a power of the step",
+      "Halve the step",
+      "Compute the new error ratio"
+    ]
+  },
+  {
+    "label": "Truncation versus roundoff",
+    "section": "Truncation versus roundoff",
+    "subgoals": [
+      "Shrink the step to cut truncation error",
+      "Count the extra operations and roundoff",
+      "Find the step that balances them"
+    ]
+  }
+]

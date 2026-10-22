@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The statement",
+    "section": "The statement",
+    "subgoals": [
+      "Form the difference of two partial sums",
+      "Recognise it as a block of terms",
+      "Demand every tail block be small"
+    ]
+  },
+  {
+    "label": "Why it matters",
+    "section": "Why it matters",
+    "subgoals": [
+      "Avoid naming the limit",
+      "Apply it to test the terms",
+      "Invoke completeness of the reals"
+    ]
+  },
+  {
+    "label": "Worked: a geometric tail",
+    "section": "Worked: a geometric tail",
+    "subgoals": [
+      "Bound a block by its first term",
+      "Divide by one minus the ratio",
+      "Send the first term to zero"
+    ]
+  }
+]

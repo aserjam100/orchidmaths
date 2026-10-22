@@ -1,0 +1,64 @@
+# Orchid CAT Diagnostic  --  information gain over a compressed covering set
+
+direction: down
+
+Start: Start Diagnostic\nConcepts in topological order\nEvery learner starts UNSEEN
+
+Cover: Build compressed cover\nroots + evenly spaced\ntarget 30 concepts
+
+Loop: Assessment Loop {
+  Score: Score candidates\nuncertainty x coverage influence
+
+  Pick: Pick highest info gain\nnot yet covered
+
+  Question: Generate Question\nfor chosen concept
+
+  Answer: Student Answers\ngraded with evidence
+
+  Decision: Record evidence\npropagate +-0.3 to neighbours
+
+}
+
+Score -> Pick
+Pick -> Question
+Question -> Answer
+Answer -> Decision
+Decision -> Stop
+Decision -> Score: next
+
+Stop: Stop when\ncover done AND asked >= 25,\nor asked >= 45
+
+Supplemental: Supplemental probe\nwhen confidence < 0.7
+
+Frontier: Frontier at\nlargest belief drop
+
+Result: Frontier located\ngaps by domain\ncompletion estimates
+
+Done: Diagnostic Complete\nMerge with existing progress\noptimistic merge
+
+# Flow
+Start -> Cover
+Cover -> Loop
+Stop -> Supplemental: confidence < 0.7
+Stop -> Frontier: No
+Supplemental -> Frontier
+Frontier -> Result
+Result -> Done
+
+# Side note
+Note: "Key Parameters: compressed covering set (30), info-gain selection, 25-45 questions"
+
+# Styling
+nodes: {
+  style: {
+    font-size: 12
+    border-radius: 6
+  }
+}
+
+edges: {
+  style: {
+    stroke: "#6b6a64"
+    font-size: 10
+  }
+}

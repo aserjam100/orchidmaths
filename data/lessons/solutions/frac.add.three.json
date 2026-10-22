@@ -1,0 +1,15 @@
+{
+  "concept": "frac.add.three",
+  "setup": "You are adding three fractions with different denominators.",
+  "steps": [
+    {
+      "fact": "out_num",
+      "say": "Adding three fractions is the same rule applied twice: put all three over a common denominator first, then add the numerators."
+    },
+    {
+      "fact": "out_den",
+      "say": "The sum reduces to \\(\\frac{[[out_num]]}{[[out_den]]}\\). Reducing at the end is what keeps the answer in the form a fraction is usually written in."
+    }
+  ],
+  "answer": "So the sum is \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

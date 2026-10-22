@@ -1,0 +1,15 @@
+{
+  "concept": "alg.radical.simplify",
+  "setup": "The number under the square root is [[n]], and its largest square factor is [[a]]².",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "Writing [[n]] as [[a]]² times [[b]] separates the perfect square."
+    },
+    {
+      "fact": "b",
+      "say": "The square root of [[a]]² is [[a]], and [[b]] stays under the root."
+    }
+  ],
+  "answer": "So the square root of [[n]] is [[a]] times the square root of [[b]]."
+}

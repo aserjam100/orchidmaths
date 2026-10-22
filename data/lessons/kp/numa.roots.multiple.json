@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Counting the multiplicity",
+    "section": "Counting the multiplicity",
+    "subgoals": [
+      "Differentiate until a nonzero value appears",
+      "Count the vanishing derivatives",
+      "Read the multiplicity"
+    ]
+  },
+  {
+    "label": "Why Newton slows down",
+    "section": "Why Newton slows down",
+    "subgoals": [
+      "Note the vanishing derivative",
+      "Lose the quadratic term",
+      "Accept the linear rate"
+    ]
+  },
+  {
+    "label": "The modified iteration",
+    "section": "The modified iteration",
+    "subgoals": [
+      "Multiply the step by the multiplicity",
+      "Or divide the function by its derivative",
+      "Recover the quadratic rate"
+    ]
+  }
+]

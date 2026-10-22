@@ -1,0 +1,3165 @@
+{
+  "draft": true,
+  "generated_by": "go run ./cmd/masteryunits",
+  "rule": "unit = (domain, floor(conceptDepth / bandWidth)); conceptDepth = the concept's level in the concept DAG's own topological order",
+  "band_width": 3,
+  "note": "DRAFT — ADR-046 D3. Band width is the open decision (how often a learner is assessed), not product policy. Unit prerequisite order is DERIVED from the concept DAG and deliberately not stored: authoring it would be a second hierarchy. Do not hand-edit concept_ids; regenerate with `go run ./cmd/masteryunits -band N`.",
+  "source": "data/concepts",
+  "concept_count": 1257,
+  "unit_count": 117,
+  "units": [
+    {
+      "id": "abstract_algebra.b5",
+      "title": "Abstract Algebra · Stage 6",
+      "domain": "abstract_algebra",
+      "band": 5,
+      "depth_min": 15,
+      "depth_max": 17,
+      "subdomains": [
+        "abstract_algebra.groups"
+      ],
+      "concept_ids": [
+        "abstract.group.cyclic",
+        "abstract.group.def",
+        "abstract.group.examples",
+        "abstract.group.order",
+        "abstract.group.subgroup",
+        "abstract.group.symmetric"
+      ],
+      "concept_count": 6
+    },
+    {
+      "id": "abstract_algebra.b6",
+      "title": "Abstract Algebra · Stage 7",
+      "domain": "abstract_algebra",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 20,
+      "subdomains": [
+        "abstract_algebra.groups",
+        "abstract_algebra.rings",
+        "abstract_algebra.structures"
+      ],
+      "concept_ids": [
+        "abstract.group.automorphism",
+        "abstract.group.center",
+        "abstract.group.dihedral",
+        "abstract.group.homomorphism",
+        "abstract.group.lagrange",
+        "abstract.group.normal",
+        "abstract.rings.def",
+        "abstract.rings.ideal",
+        "abstract.rings.zero_divisor",
+        "abstract.structures.field"
+      ],
+      "concept_count": 10
+    },
+    {
+      "id": "abstract_algebra.b7",
+      "title": "Abstract Algebra · Stage 8",
+      "domain": "abstract_algebra",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 23,
+      "subdomains": [
+        "abstract_algebra.fields",
+        "abstract_algebra.groups",
+        "abstract_algebra.rings",
+        "abstract_algebra.structures"
+      ],
+      "concept_ids": [
+        "abstract.field.characteristic",
+        "abstract.field.extension",
+        "abstract.group.action",
+        "abstract.group.quotient_group",
+        "abstract.group.simple",
+        "abstract.rings.euclidean",
+        "abstract.rings.integral_domain",
+        "abstract.rings.localization",
+        "abstract.rings.polynomial",
+        "abstract.rings.prime_ideal",
+        "abstract.rings.quotient",
+        "abstract.rings.ufd",
+        "abstract.structures.module",
+        "abstract.structures.module_hom",
+        "abstract.structures.submodule"
+      ],
+      "concept_count": 15
+    },
+    {
+      "id": "abstract_algebra.b8",
+      "title": "Abstract Algebra · Stage 9",
+      "domain": "abstract_algebra",
+      "band": 8,
+      "depth_min": 24,
+      "depth_max": 26,
+      "subdomains": [
+        "abstract_algebra.fields",
+        "abstract_algebra.groups",
+        "abstract_algebra.rings",
+        "abstract_algebra.structures"
+      ],
+      "concept_ids": [
+        "abstract.field.algebraic",
+        "abstract.field.finite",
+        "abstract.field.galois_group",
+        "abstract.group.composition_series",
+        "abstract.group.nilpotent",
+        "abstract.group.p_group",
+        "abstract.group.solvable",
+        "abstract.group.sylow",
+        "abstract.rings.noetherian",
+        "abstract.structures.exact_sequence",
+        "abstract.structures.galois",
+        "abstract.structures.tensor"
+      ],
+      "concept_count": 12
+    },
+    {
+      "id": "abstract_algebra.b9",
+      "title": "Abstract Algebra · Stage 10",
+      "domain": "abstract_algebra",
+      "band": 9,
+      "depth_min": 27,
+      "depth_max": 28,
+      "subdomains": [
+        "abstract_algebra.groups"
+      ],
+      "concept_ids": [
+        "abstract.group.commutator",
+        "abstract.group.free"
+      ],
+      "concept_count": 2
+    },
+    {
+      "id": "algebra.b2",
+      "title": "Algebra · Stage 3",
+      "domain": "algebra",
+      "band": 2,
+      "depth_min": 7,
+      "depth_max": 8,
+      "subdomains": [
+        "algebra.radicals"
+      ],
+      "concept_ids": [
+        "alg.radical.operations",
+        "alg.radical.rational_exponents",
+        "alg.radical.rationalize",
+        "alg.radical.simplify"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "algebra.b3",
+      "title": "Algebra · Stage 4",
+      "domain": "algebra",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 9,
+      "subdomains": [
+        "algebra.radicals"
+      ],
+      "concept_ids": [
+        "alg.radical.conjugate"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "algebra.b4",
+      "title": "Algebra · Stage 5",
+      "domain": "algebra",
+      "band": 4,
+      "depth_min": 13,
+      "depth_max": 14,
+      "subdomains": [
+        "algebra.polynomials"
+      ],
+      "concept_ids": [
+        "alg.poly.add_sub",
+        "alg.poly.concept",
+        "alg.poly.division",
+        "alg.poly.end_behavior",
+        "alg.poly.monomial"
+      ],
+      "concept_count": 5
+    },
+    {
+      "id": "algebra.b5",
+      "title": "Algebra · Stage 6",
+      "domain": "algebra",
+      "band": 5,
+      "depth_min": 15,
+      "depth_max": 17,
+      "subdomains": [
+        "algebra.equations",
+        "algebra.factoring",
+        "algebra.functions",
+        "algebra.inequalities",
+        "algebra.linear",
+        "algebra.polynomials",
+        "algebra.systems"
+      ],
+      "concept_ids": [
+        "alg.eq.absolute_value",
+        "alg.eq.binomial",
+        "alg.eq.extraneous_roots",
+        "alg.eq.irrational",
+        "alg.eq.literal",
+        "alg.eq.multi_step",
+        "alg.eq.rational",
+        "alg.eq.vars_both_sides",
+        "alg.eq.vars_both_sides.word",
+        "alg.factor.gcf",
+        "alg.factor.grouping",
+        "alg.factor.trinomial",
+        "alg.func.concept",
+        "alg.func.variation",
+        "alg.ineq.absolute_value",
+        "alg.ineq.compound",
+        "alg.ineq.interval",
+        "alg.ineq.irrational",
+        "alg.ineq.multi_step",
+        "alg.ineq.multi_step.word",
+        "alg.ineq.rational",
+        "alg.ineq.sign_analysis",
+        "alg.ineq.systems",
+        "alg.linear.graph",
+        "alg.linear.parallel_perp",
+        "alg.linear.slope",
+        "alg.linear.slope_intercept",
+        "alg.linear.standard_form",
+        "alg.linear.two_points",
+        "alg.poly.foil",
+        "alg.poly.mult_mono",
+        "alg.poly.special",
+        "alg.poly.synthetic_division",
+        "alg.systems.concept",
+        "alg.systems.gaussian",
+        "alg.systems.substitution"
+      ],
+      "concept_count": 36
+    },
+    {
+      "id": "algebra.b6",
+      "title": "Algebra · Stage 7",
+      "domain": "algebra",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 20,
+      "subdomains": [
+        "algebra.conics",
+        "algebra.exponential",
+        "algebra.factoring",
+        "algebra.functions",
+        "algebra.inequalities",
+        "algebra.linear",
+        "algebra.quadratics",
+        "algebra.rational",
+        "algebra.systems"
+      ],
+      "concept_ids": [
+        "alg.conic.circle",
+        "alg.exp.concept",
+        "alg.factor.ac_method",
+        "alg.factor.cubes",
+        "alg.factor.diff_squares",
+        "alg.func.absolute_value",
+        "alg.func.composite",
+        "alg.func.dirichlet",
+        "alg.func.domain",
+        "alg.func.evaluate",
+        "alg.func.even_odd",
+        "alg.func.graph_analysis",
+        "alg.func.injectivity",
+        "alg.func.inverse",
+        "alg.func.inverse_domain",
+        "alg.func.irrational",
+        "alg.func.linear",
+        "alg.func.monotonicity",
+        "alg.func.notation",
+        "alg.func.piecewise",
+        "alg.func.power",
+        "alg.func.rational",
+        "alg.func.sign",
+        "alg.func.transformations",
+        "alg.ineq.two_var",
+        "alg.linear.intercepts",
+        "alg.quad.complete_square",
+        "alg.quad.formula",
+        "alg.quad.incomplete",
+        "alg.quad.solve_factor",
+        "alg.quad.vertex_form",
+        "alg.rational.add_sub",
+        "alg.rational.asymptotes",
+        "alg.rational.mult_div",
+        "alg.rational.proportions",
+        "alg.rational.simplify",
+        "alg.systems.elimination",
+        "alg.systems.matrices",
+        "alg.systems.nonlinear",
+        "alg.systems.three_var",
+        "alg.systems.word"
+      ],
+      "concept_count": 41
+    },
+    {
+      "id": "algebra.b7",
+      "title": "Algebra · Stage 8",
+      "domain": "algebra",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 23,
+      "subdomains": [
+        "algebra.conics",
+        "algebra.equations",
+        "algebra.exponential",
+        "algebra.functions",
+        "algebra.inequalities",
+        "algebra.logarithms",
+        "algebra.polynomials",
+        "algebra.quadratics",
+        "algebra.rational",
+        "algebra.sequences"
+      ],
+      "concept_ids": [
+        "alg.conic.classify",
+        "alg.conic.ellipse",
+        "alg.conic.hyperbola",
+        "alg.conic.parabola",
+        "alg.eq.exponential",
+        "alg.eq.polynomial",
+        "alg.eq.trinomial",
+        "alg.exp.compound",
+        "alg.exp.evaluate",
+        "alg.exp.graph",
+        "alg.func.quad",
+        "alg.func.sigmoid",
+        "alg.ineq.quadratic",
+        "alg.log.concept",
+        "alg.log.evaluate",
+        "alg.poly.factor_theorem",
+        "alg.poly.rational_root",
+        "alg.poly.roots",
+        "alg.poly.vieta",
+        "alg.quad.complex",
+        "alg.quad.discriminant",
+        "alg.quad.parametric",
+        "alg.quad.quadratic",
+        "alg.quad.word_problem",
+        "alg.rational.complex_fraction",
+        "alg.seq.arithmetic",
+        "alg.seq.geometric",
+        "alg.seq.sigma",
+        "alg.seq.sum_arith",
+        "alg.seq.sum_geo"
+      ],
+      "concept_count": 30
+    },
+    {
+      "id": "algebra.b8",
+      "title": "Algebra · Stage 9",
+      "domain": "algebra",
+      "band": 8,
+      "depth_min": 24,
+      "depth_max": 25,
+      "subdomains": [
+        "algebra.equations",
+        "algebra.inequalities",
+        "algebra.logarithms",
+        "algebra.sequences"
+      ],
+      "concept_ids": [
+        "alg.eq.logarithmic",
+        "alg.ineq.logarithmic",
+        "alg.log.change_base",
+        "alg.log.graph",
+        "alg.log.model",
+        "alg.log.properties",
+        "alg.seq.induction"
+      ],
+      "concept_count": 7
+    },
+    {
+      "id": "arithmetic.b0",
+      "title": "Arithmetic · Stage 1",
+      "domain": "arithmetic",
+      "band": 0,
+      "depth_min": 0,
+      "depth_max": 2,
+      "subdomains": [
+        "arithmetic.addition",
+        "arithmetic.division",
+        "arithmetic.multiplication",
+        "arithmetic.negatives",
+        "arithmetic.place_value",
+        "arithmetic.subtraction"
+      ],
+      "concept_ids": [
+        "arith.add.carry",
+        "arith.add.double",
+        "arith.add.single",
+        "arith.add.word",
+        "arith.compare.within100",
+        "arith.compare.within1000",
+        "arith.div.concept",
+        "arith.mult.2_5_10",
+        "arith.mult.concept",
+        "arith.neg.number_line",
+        "arith.place.hundreds",
+        "arith.place.tens",
+        "arith.place.thousands",
+        "arith.round.hundreds",
+        "arith.round.tens",
+        "arith.sub.double",
+        "arith.sub.single"
+      ],
+      "concept_count": 17
+    },
+    {
+      "id": "arithmetic.b1",
+      "title": "Arithmetic · Stage 2",
+      "domain": "arithmetic",
+      "band": 1,
+      "depth_min": 3,
+      "depth_max": 5,
+      "subdomains": [
+        "arithmetic.addition",
+        "arithmetic.decimals_intro",
+        "arithmetic.division",
+        "arithmetic.estimation",
+        "arithmetic.exponents",
+        "arithmetic.factors",
+        "arithmetic.multiplication",
+        "arithmetic.negatives",
+        "arithmetic.order_of_operations",
+        "arithmetic.place_value",
+        "arithmetic.subtraction"
+      ],
+      "concept_ids": [
+        "arith.add.triple",
+        "arith.compare.whole",
+        "arith.dec.intro",
+        "arith.div.basic",
+        "arith.div.remainder",
+        "arith.div.tables",
+        "arith.div.word_tables",
+        "arith.div.zero",
+        "arith.estimate.product",
+        "arith.estimate.sum",
+        "arith.exp.concept",
+        "arith.exp.evaluate",
+        "arith.factor.find",
+        "arith.factor.prime",
+        "arith.mult.3_4",
+        "arith.mult.double",
+        "arith.mult.tables",
+        "arith.mult.triple",
+        "arith.mult.word",
+        "arith.mult.word_tables",
+        "arith.neg.add_sub",
+        "arith.neg.mult_div",
+        "arith.neg.word",
+        "arith.order_ops.basic",
+        "arith.place.expanded",
+        "arith.place.powers_ten",
+        "arith.round.thousands",
+        "arith.sub.borrow",
+        "arith.sub.word"
+      ],
+      "concept_count": 29
+    },
+    {
+      "id": "arithmetic.b2",
+      "title": "Arithmetic · Stage 3",
+      "domain": "arithmetic",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "arithmetic.division",
+        "arithmetic.exponents",
+        "arithmetic.factors",
+        "arithmetic.order_of_operations",
+        "arithmetic.word_problems"
+      ],
+      "concept_ids": [
+        "arith.div.interpret_remainder",
+        "arith.div.long",
+        "arith.div.word",
+        "arith.exp.negative_base",
+        "arith.exp.power_product",
+        "arith.exp.power_quotient",
+        "arith.exp.power_rule",
+        "arith.exp.product_rule",
+        "arith.exp.quotient_rule",
+        "arith.factor.composite",
+        "arith.factor.gcf",
+        "arith.factor.lcm",
+        "arith.factor.prime_fact",
+        "arith.order_ops.full",
+        "arith.order_ops.nested",
+        "arith.sqrt.cube",
+        "arith.sqrt.estimate",
+        "arith.sqrt.perfect",
+        "arith.sqrt.simplify",
+        "arith.word.multi_step"
+      ],
+      "concept_count": 20
+    },
+    {
+      "id": "calculus.b7",
+      "title": "Calculus · Stage 8",
+      "domain": "calculus",
+      "band": 7,
+      "depth_min": 23,
+      "depth_max": 23,
+      "subdomains": [
+        "calculus.limits"
+      ],
+      "concept_ids": [
+        "calc.limit.concept"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "calculus.b8",
+      "title": "Calculus · Stage 9",
+      "domain": "calculus",
+      "band": 8,
+      "depth_min": 24,
+      "depth_max": 26,
+      "subdomains": [
+        "calculus.derivatives",
+        "calculus.limits",
+        "calculus.sequences",
+        "calculus.series"
+      ],
+      "concept_ids": [
+        "calc.deriv.difference_quotient",
+        "calc.deriv.epsilon_delta_deriv",
+        "calc.limit.algebra",
+        "calc.limit.big_o",
+        "calc.limit.continuity",
+        "calc.limit.epsilon_delta",
+        "calc.limit.exp_limit",
+        "calc.limit.indeterminate",
+        "calc.limit.infinity",
+        "calc.limit.limsup",
+        "calc.limit.little_o",
+        "calc.limit.numeric",
+        "calc.limit.one_sided",
+        "calc.limit.properties",
+        "calc.limit.sine_limit",
+        "calc.limit.squeeze",
+        "calc.limit.supremum",
+        "calc.seq.arithmetic_sum",
+        "calc.seq.bounded",
+        "calc.seq.cauchy",
+        "calc.seq.concept",
+        "calc.seq.convergence",
+        "calc.seq.euler",
+        "calc.seq.function_sequences",
+        "calc.seq.limit_value",
+        "calc.seq.monotone",
+        "calc.seq.recursive_value",
+        "calc.series.concept"
+      ],
+      "concept_count": 28
+    },
+    {
+      "id": "calculus.b9",
+      "title": "Calculus · Stage 10",
+      "domain": "calculus",
+      "band": 9,
+      "depth_min": 27,
+      "depth_max": 29,
+      "subdomains": [
+        "calculus.advanced",
+        "calculus.derivatives",
+        "calculus.integrals",
+        "calculus.limits",
+        "calculus.multivariable",
+        "calculus.series",
+        "calculus.vector"
+      ],
+      "concept_ids": [
+        "calc.deriv.applications",
+        "calc.deriv.chain_multi",
+        "calc.deriv.concept",
+        "calc.deriv.convex_jensen",
+        "calc.deriv.convexity",
+        "calc.deriv.critical_points",
+        "calc.deriv.diff_continuity",
+        "calc.deriv.differential",
+        "calc.deriv.error_prop",
+        "calc.deriv.fermat",
+        "calc.deriv.finite_difference",
+        "calc.deriv.gradient",
+        "calc.deriv.inflection",
+        "calc.deriv.jacobian",
+        "calc.deriv.linear_approx",
+        "calc.deriv.mvt",
+        "calc.deriv.non_differentiability",
+        "calc.deriv.partial",
+        "calc.deriv.partial_higher",
+        "calc.deriv.power_rule",
+        "calc.deriv.rolle",
+        "calc.deriv.sum_rule",
+        "calc.deriv.tangent_line",
+        "calc.deriv.total_diff",
+        "calc.integral.fourier_coefficients",
+        "calc.integral.indefinite",
+        "calc.limit.asymptotes",
+        "calc.limit.discontinuity",
+        "calc.limit.infinite",
+        "calc.limit.intermediate_value",
+        "calc.limit.lhopital",
+        "calc.limit.oscillation",
+        "calc.limit.uniform_continuity",
+        "calc.limit.weierstrass",
+        "calc.multi.euler_homogeneous",
+        "calc.series.absolute",
+        "calc.series.alternating",
+        "calc.series.binomial",
+        "calc.series.cauchy_criterion",
+        "calc.series.cauchy_product",
+        "calc.series.direct_compare",
+        "calc.series.dirichlet_test",
+        "calc.series.fourier",
+        "calc.series.function_series",
+        "calc.series.geometric",
+        "calc.series.harmonic",
+        "calc.series.integral_test",
+        "calc.series.limit_compare",
+        "calc.series.nth_term",
+        "calc.series.operations",
+        "calc.series.p_series",
+        "calc.series.positive_terms",
+        "calc.series.power",
+        "calc.series.radius",
+        "calc.series.ratio_test",
+        "calc.series.remainder",
+        "calc.series.root_test",
+        "calc.series.taylor",
+        "calc.series.telescoping",
+        "calc.vec.curl",
+        "calc.vec.divergence"
+      ],
+      "concept_count": 61
+    },
+    {
+      "id": "calculus.b10",
+      "title": "Calculus · Stage 11",
+      "domain": "calculus",
+      "band": 10,
+      "depth_min": 30,
+      "depth_max": 32,
+      "subdomains": [
+        "calculus.advanced",
+        "calculus.derivatives",
+        "calculus.integrals",
+        "calculus.multivariable",
+        "calculus.polar",
+        "calculus.vector"
+      ],
+      "concept_ids": [
+        "calc.deriv.cauchy_mvt",
+        "calc.deriv.chain_rule",
+        "calc.deriv.clairaut",
+        "calc.deriv.curve_sketch",
+        "calc.deriv.directional",
+        "calc.deriv.exp_log",
+        "calc.deriv.global_extrema",
+        "calc.deriv.higher_order",
+        "calc.deriv.implicit",
+        "calc.deriv.inverse_func",
+        "calc.deriv.marginal_analysis",
+        "calc.deriv.mvt_applications",
+        "calc.deriv.newton",
+        "calc.deriv.newton_convergence",
+        "calc.deriv.optimization",
+        "calc.deriv.product_rule",
+        "calc.deriv.quotient_rule",
+        "calc.deriv.second_test",
+        "calc.deriv.trig",
+        "calc.integral.arc_length",
+        "calc.integral.area_between",
+        "calc.integral.average_value",
+        "calc.integral.center_mass",
+        "calc.integral.cross_section_volume",
+        "calc.integral.definite",
+        "calc.integral.disc",
+        "calc.integral.exp_integral",
+        "calc.integral.ftc",
+        "calc.integral.improper",
+        "calc.integral.mass_density",
+        "calc.integral.mvt",
+        "calc.integral.numerical",
+        "calc.integral.power_rule",
+        "calc.integral.riemann_criteria",
+        "calc.integral.shell",
+        "calc.integral.substitution",
+        "calc.integral.trig_integrals",
+        "calc.integral.washer",
+        "calc.integral.work",
+        "calc.multi.closed_extrema",
+        "calc.multi.coordinates_jacobian",
+        "calc.multi.double_integral_rect",
+        "calc.multi.inverse_function",
+        "calc.multi.lagrange",
+        "calc.multi.lagrange_two",
+        "calc.multi.saddle_test",
+        "calc.multi.tangent_plane",
+        "calc.multi.taylor2",
+        "calc.multi.transform_jacobian",
+        "calc.polar.area",
+        "calc.vec.curl_3d",
+        "calc.vec.identities",
+        "calc.vec.jacobian_value",
+        "calc.vec.parametric_derivative"
+      ],
+      "concept_count": 54
+    },
+    {
+      "id": "calculus.b11",
+      "title": "Calculus · Stage 12",
+      "domain": "calculus",
+      "band": 11,
+      "depth_min": 33,
+      "depth_max": 35,
+      "subdomains": [
+        "calculus.advanced",
+        "calculus.derivatives",
+        "calculus.integrals",
+        "calculus.multivariable",
+        "calculus.polar",
+        "calculus.series",
+        "calculus.vector"
+      ],
+      "concept_ids": [
+        "calc.deriv.chain_power",
+        "calc.deriv.general_exp",
+        "calc.deriv.higher_order_value",
+        "calc.deriv.hyperbolic",
+        "calc.deriv.implicit_second",
+        "calc.deriv.inverse_hyperbolic",
+        "calc.deriv.inverse_trig",
+        "calc.deriv.log_diff",
+        "calc.deriv.parametric_second",
+        "calc.deriv.related_rates",
+        "calc.deriv.trig_other",
+        "calc.integral.beta",
+        "calc.integral.consumer_surplus",
+        "calc.integral.convergence",
+        "calc.integral.double_polar",
+        "calc.integral.hydrostatic",
+        "calc.integral.improper_compare",
+        "calc.integral.irrational",
+        "calc.integral.moment_inertia",
+        "calc.integral.net_change",
+        "calc.integral.numerical_error",
+        "calc.integral.p_test",
+        "calc.integral.pappus",
+        "calc.integral.partial_fractions",
+        "calc.integral.parts",
+        "calc.integral.reduction",
+        "calc.integral.simpson",
+        "calc.integral.strategy",
+        "calc.integral.substitution_value",
+        "calc.integral.surface_area",
+        "calc.integral.surface_scalar",
+        "calc.integral.trapezoid",
+        "calc.integral.trig_substitution",
+        "calc.integral.variable_limits",
+        "calc.integral.volume",
+        "calc.integral.weierstrass_sub",
+        "calc.multi.change_order",
+        "calc.multi.double_integral_region",
+        "calc.multi.implicit_function",
+        "calc.multi.iterated_limits",
+        "calc.multi.mass_lamina",
+        "calc.multi.triple_integral_box",
+        "calc.polar.arc_length",
+        "calc.polar.slope",
+        "calc.series.gamma",
+        "calc.vec.arc_length",
+        "calc.vec.conservative_test",
+        "calc.vec.curvature",
+        "calc.vec.divergence_theorem",
+        "calc.vec.flux_general",
+        "calc.vec.flux_uniform",
+        "calc.vec.frenet",
+        "calc.vec.greens_theorem",
+        "calc.vec.line_integral",
+        "calc.vec.line_scalar",
+        "calc.vec.parametric_surface",
+        "calc.vec.potential_value",
+        "calc.vec.stokes",
+        "calc.vec.surface_area",
+        "calc.vec.torsion",
+        "calc.vec.work"
+      ],
+      "concept_count": 61
+    },
+    {
+      "id": "complex_numbers.b2",
+      "title": "Complex Numbers · Stage 3",
+      "domain": "complex_numbers",
+      "band": 2,
+      "depth_min": 7,
+      "depth_max": 8,
+      "subdomains": [
+        "complex_numbers.advanced",
+        "complex_numbers.basics"
+      ],
+      "concept_ids": [
+        "complex.adv.inequalities",
+        "complex.basics.concept",
+        "complex.basics.parts",
+        "complex.ops.add_sub"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "complex_numbers.b5",
+      "title": "Complex Numbers · Stage 6",
+      "domain": "complex_numbers",
+      "band": 5,
+      "depth_min": 17,
+      "depth_max": 17,
+      "subdomains": [
+        "complex_numbers.basics"
+      ],
+      "concept_ids": [
+        "complex.ops.mult"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "complex_numbers.b6",
+      "title": "Complex Numbers · Stage 7",
+      "domain": "complex_numbers",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 20,
+      "subdomains": [
+        "complex_numbers.advanced",
+        "complex_numbers.basics"
+      ],
+      "concept_ids": [
+        "complex.adv.polar",
+        "complex.basics.equations",
+        "complex.basics.geometry",
+        "complex.basics.loci",
+        "complex.basics.powers",
+        "complex.basics.reciprocal",
+        "complex.ops.argument",
+        "complex.ops.conjugate",
+        "complex.ops.divide",
+        "complex.ops.modulus"
+      ],
+      "concept_count": 10
+    },
+    {
+      "id": "complex_numbers.b7",
+      "title": "Complex Numbers · Stage 8",
+      "domain": "complex_numbers",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 23,
+      "subdomains": [
+        "complex_numbers.advanced",
+        "complex_numbers.basics"
+      ],
+      "concept_ids": [
+        "complex.adv.conjugate_roots",
+        "complex.adv.de_moivre",
+        "complex.adv.euler_identity",
+        "complex.adv.exponential",
+        "complex.adv.geometric_series",
+        "complex.adv.hyperbolic",
+        "complex.adv.logarithm",
+        "complex.adv.roots",
+        "complex.adv.trig_exponential",
+        "complex.basics.arg_arithmetic"
+      ],
+      "concept_count": 10
+    },
+    {
+      "id": "complex_numbers.b9",
+      "title": "Complex Numbers · Stage 10",
+      "domain": "complex_numbers",
+      "band": 9,
+      "depth_min": 29,
+      "depth_max": 29,
+      "subdomains": [
+        "complex_numbers.advanced",
+        "complex_numbers.topology"
+      ],
+      "concept_ids": [
+        "complex.adv.cauchy_riemann",
+        "complex.topology.open_sets"
+      ],
+      "concept_count": 2
+    },
+    {
+      "id": "complex_numbers.b10",
+      "title": "Complex Numbers · Stage 11",
+      "domain": "complex_numbers",
+      "band": 10,
+      "depth_min": 30,
+      "depth_max": 32,
+      "subdomains": [
+        "complex_numbers.advanced",
+        "complex_numbers.topology"
+      ],
+      "concept_ids": [
+        "complex.adv.analytic",
+        "complex.adv.conformal",
+        "complex.adv.harmonic",
+        "complex.adv.residue",
+        "complex.adv.residue_simple",
+        "complex.adv.schwarz_lemma",
+        "complex.integral.cauchy_goursat",
+        "complex.integral.contour",
+        "complex.series.laurent",
+        "complex.series.power",
+        "complex.topology.domain"
+      ],
+      "concept_count": 11
+    },
+    {
+      "id": "complex_numbers.b11",
+      "title": "Complex Numbers · Stage 12",
+      "domain": "complex_numbers",
+      "band": 11,
+      "depth_min": 33,
+      "depth_max": 35,
+      "subdomains": [
+        "complex_numbers.advanced",
+        "complex_numbers.topology"
+      ],
+      "concept_ids": [
+        "complex.adv.cross_ratio",
+        "complex.adv.mobius",
+        "complex.adv.mobius_fixed",
+        "complex.topology.riemann_sphere"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "differential_equations.b10",
+      "title": "Differential Equations · Stage 11",
+      "domain": "differential_equations",
+      "band": 10,
+      "depth_min": 30,
+      "depth_max": 32,
+      "subdomains": [
+        "differential_equations.basics",
+        "differential_equations.pde"
+      ],
+      "concept_ids": [
+        "ode.basics.concept",
+        "ode.pde.characteristics",
+        "ode.pde.wave"
+      ],
+      "concept_count": 3
+    },
+    {
+      "id": "differential_equations.b11",
+      "title": "Differential Equations · Stage 12",
+      "domain": "differential_equations",
+      "band": 11,
+      "depth_min": 33,
+      "depth_max": 35,
+      "subdomains": [
+        "differential_equations.first_order",
+        "differential_equations.numerical",
+        "differential_equations.pde",
+        "differential_equations.second_order"
+      ],
+      "concept_ids": [
+        "ode.first_order.bernoulli",
+        "ode.first_order.exact",
+        "ode.first_order.linear",
+        "ode.first_order.mixing",
+        "ode.first_order.separable",
+        "ode.ivp.evaluate",
+        "ode.numerical.euler",
+        "ode.numerical.heun",
+        "ode.numerical.rk4",
+        "ode.numerical.steps",
+        "ode.pde.discriminant",
+        "ode.pde.heat",
+        "ode.pde.laplace_eq",
+        "ode.second_order.homogeneous"
+      ],
+      "concept_count": 14
+    },
+    {
+      "id": "differential_equations.b12",
+      "title": "Differential Equations · Stage 13",
+      "domain": "differential_equations",
+      "band": 12,
+      "depth_min": 36,
+      "depth_max": 38,
+      "subdomains": [
+        "differential_equations.second_order",
+        "differential_equations.stability",
+        "differential_equations.systems",
+        "differential_equations.transforms"
+      ],
+      "concept_ids": [
+        "ode.adv.systems",
+        "ode.characteristic.sum",
+        "ode.laplace.value",
+        "ode.second_order.cauchy_euler",
+        "ode.second_order.nonhomogeneous",
+        "ode.second_order.power_series",
+        "ode.second_order.reduction",
+        "ode.second_order.spring",
+        "ode.second_order.variation_params",
+        "ode.stability",
+        "ode.sturm_liouville",
+        "ode.systems.linear_phase",
+        "ode.systems.matrix_exp",
+        "ode.systems.predator_prey",
+        "ode.transforms.convolution",
+        "ode.transforms.laplace",
+        "ode.transforms.step",
+        "ode.wronskian"
+      ],
+      "concept_count": 18
+    },
+    {
+      "id": "differential_equations.b13",
+      "title": "Differential Equations · Stage 14",
+      "domain": "differential_equations",
+      "band": 13,
+      "depth_min": 39,
+      "depth_max": 41,
+      "subdomains": [
+        "differential_equations.boundary",
+        "differential_equations.integral",
+        "differential_equations.nonlinear",
+        "differential_equations.stability",
+        "differential_equations.transforms"
+      ],
+      "concept_ids": [
+        "ode.boundary_value",
+        "ode.equilibrium.nonzero",
+        "ode.green.function",
+        "ode.integral.volterra",
+        "ode.nonlinear.bifurcation",
+        "ode.nonlinear.lyapunov",
+        "ode.transforms.fourier"
+      ],
+      "concept_count": 7
+    },
+    {
+      "id": "discrete_math.b0",
+      "title": "Discrete Math · Stage 1",
+      "domain": "discrete_math",
+      "band": 0,
+      "depth_min": 2,
+      "depth_max": 2,
+      "subdomains": [
+        "discrete_math.combinatorics"
+      ],
+      "concept_ids": [
+        "discrete.combinatorics.counting_principle"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "discrete_math.b1",
+      "title": "Discrete Math · Stage 2",
+      "domain": "discrete_math",
+      "band": 1,
+      "depth_min": 4,
+      "depth_max": 5,
+      "subdomains": [
+        "discrete_math.combinatorics"
+      ],
+      "concept_ids": [
+        "discrete.combinatorics.circular",
+        "discrete.combinatorics.factorial"
+      ],
+      "concept_count": 2
+    },
+    {
+      "id": "discrete_math.b3",
+      "title": "Discrete Math · Stage 4",
+      "domain": "discrete_math",
+      "band": 3,
+      "depth_min": 10,
+      "depth_max": 11,
+      "subdomains": [
+        "discrete_math.combinatorics",
+        "discrete_math.logic"
+      ],
+      "concept_ids": [
+        "discrete.combinatorics.combinations",
+        "discrete.combinatorics.multinomial",
+        "discrete.combinatorics.permutations",
+        "discrete.logic.propositions"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "discrete_math.b4",
+      "title": "Discrete Math · Stage 5",
+      "domain": "discrete_math",
+      "band": 4,
+      "depth_min": 12,
+      "depth_max": 14,
+      "subdomains": [
+        "discrete_math.combinatorics",
+        "discrete_math.graph_theory",
+        "discrete_math.logic",
+        "discrete_math.sets"
+      ],
+      "concept_ids": [
+        "discrete.combinatorics.binomial_theorem",
+        "discrete.combinatorics.complement",
+        "discrete.combinatorics.compositions",
+        "discrete.combinatorics.double_counting",
+        "discrete.combinatorics.lattice_paths",
+        "discrete.combinatorics.pigeonhole",
+        "discrete.combinatorics.stars_bars",
+        "discrete.combinatorics.vandermonde",
+        "discrete.graphs.basics",
+        "discrete.graphs.degree_sequence",
+        "discrete.graphs.paths",
+        "discrete.logic.connectives",
+        "discrete.logic.quantifiers",
+        "discrete.logic.truth_tables",
+        "discrete.sets.operations",
+        "discrete.sets.powerset",
+        "discrete.sets.venn"
+      ],
+      "concept_count": 17
+    },
+    {
+      "id": "discrete_math.b5",
+      "title": "Discrete Math · Stage 6",
+      "domain": "discrete_math",
+      "band": 5,
+      "depth_min": 15,
+      "depth_max": 17,
+      "subdomains": [
+        "discrete_math.combinatorics",
+        "discrete_math.graph_theory",
+        "discrete_math.logic",
+        "discrete_math.proof",
+        "discrete_math.sets"
+      ],
+      "concept_ids": [
+        "discrete.combinatorics.derangement",
+        "discrete.combinatorics.integer_partitions",
+        "discrete.combinatorics.surjections",
+        "discrete.graphs.cayley",
+        "discrete.graphs.coloring",
+        "discrete.graphs.eulerian",
+        "discrete.graphs.planar",
+        "discrete.graphs.trees",
+        "discrete.logic.equivalence",
+        "discrete.logic.inference",
+        "discrete.logic.predicates",
+        "discrete.logic.satisfiability",
+        "discrete.proof.contradiction",
+        "discrete.proof.contrapositive",
+        "discrete.proof.counterexample",
+        "discrete.sets.countable",
+        "discrete.sets.inclusion_exclusion",
+        "discrete.sets.partial_order",
+        "discrete.sets.relations"
+      ],
+      "concept_count": 19
+    },
+    {
+      "id": "discrete_math.b6",
+      "title": "Discrete Math · Stage 7",
+      "domain": "discrete_math",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 19,
+      "subdomains": [
+        "discrete_math.combinatorics",
+        "discrete_math.graph_theory"
+      ],
+      "concept_ids": [
+        "discrete.combinatorics.bell",
+        "discrete.combinatorics.pascal",
+        "discrete.combinatorics.stirling_second",
+        "discrete.graphs.bipartite"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "discrete_math.b7",
+      "title": "Discrete Math · Stage 8",
+      "domain": "discrete_math",
+      "band": 7,
+      "depth_min": 23,
+      "depth_max": 23,
+      "subdomains": [
+        "discrete_math.recurrence"
+      ],
+      "concept_ids": [
+        "discrete.sequences.recurrence"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "discrete_math.b8",
+      "title": "Discrete Math · Stage 9",
+      "domain": "discrete_math",
+      "band": 8,
+      "depth_min": 24,
+      "depth_max": 26,
+      "subdomains": [
+        "discrete_math.combinatorics",
+        "discrete_math.proof",
+        "discrete_math.recurrence"
+      ],
+      "concept_ids": [
+        "discrete.combinatorics.catalan",
+        "discrete.proof.induction",
+        "discrete.proof.strong_induction",
+        "discrete.proof.structural",
+        "discrete.sequences.generating_functions",
+        "discrete.sequences.growth_rates",
+        "discrete.sequences.linear_recurrence"
+      ],
+      "concept_count": 7
+    },
+    {
+      "id": "fractions.b1",
+      "title": "Fractions · Stage 2",
+      "domain": "fractions",
+      "band": 1,
+      "depth_min": 3,
+      "depth_max": 5,
+      "subdomains": [
+        "fractions.addition",
+        "fractions.concept",
+        "fractions.equivalence",
+        "fractions.multiplication"
+      ],
+      "concept_ids": [
+        "frac.add.same",
+        "frac.as_division",
+        "frac.basics.concept",
+        "frac.basics.equivalent",
+        "frac.basics.number_line",
+        "frac.basics.parts",
+        "frac.compare.unit_like",
+        "frac.ops.mult",
+        "frac.ops.to_decimal"
+      ],
+      "concept_count": 9
+    },
+    {
+      "id": "fractions.b2",
+      "title": "Fractions · Stage 3",
+      "domain": "fractions",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "frac.compare",
+        "frac.div",
+        "frac.mult",
+        "fractions.concept",
+        "fractions.division",
+        "fractions.equivalence",
+        "fractions.mixed",
+        "fractions.multiplication",
+        "fractions.subtraction"
+      ],
+      "concept_ids": [
+        "frac.compare.cross",
+        "frac.compare.word",
+        "frac.complex",
+        "frac.div.whole",
+        "frac.div.word",
+        "frac.equivalent.scale",
+        "frac.how_many",
+        "frac.mixed.convert",
+        "frac.mixed.div",
+        "frac.mixed.mult",
+        "frac.mult.cancel",
+        "frac.mult.whole",
+        "frac.mult.word",
+        "frac.of_fraction",
+        "frac.of_number",
+        "frac.of_unit",
+        "frac.ops.benchmark",
+        "frac.ops.compare",
+        "frac.ops.div",
+        "frac.ops.simplify",
+        "frac.order.half",
+        "frac.recipe.scale",
+        "frac.sub.same"
+      ],
+      "concept_count": 23
+    },
+    {
+      "id": "fractions.b3",
+      "title": "Fractions · Stage 4",
+      "domain": "fractions",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 11,
+      "subdomains": [
+        "frac.sub",
+        "fractions.addition",
+        "fractions.concept",
+        "fractions.equivalence",
+        "fractions.mixed",
+        "fractions.subtraction"
+      ],
+      "concept_ids": [
+        "frac.add.diff",
+        "frac.add.three",
+        "frac.add.word",
+        "frac.lcd",
+        "frac.mixed.add",
+        "frac.mixed.sub",
+        "frac.order_ops",
+        "frac.reciprocal",
+        "frac.remaining",
+        "frac.sub.diff",
+        "frac.sub.whole",
+        "frac.sub.word",
+        "frac.unit_decompose"
+      ],
+      "concept_count": 13
+    },
+    {
+      "id": "fractions.b4",
+      "title": "Fractions · Stage 5",
+      "domain": "fractions",
+      "band": 4,
+      "depth_min": 12,
+      "depth_max": 12,
+      "subdomains": [
+        "frac.mixed"
+      ],
+      "concept_ids": [
+        "frac.mixed.word"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "geometry.b0",
+      "title": "Geometry · Stage 1",
+      "domain": "geometry",
+      "band": 0,
+      "depth_min": 0,
+      "depth_max": 2,
+      "subdomains": [
+        "geometry.basics",
+        "geometry.circles",
+        "geometry.coordinate",
+        "geometry.shapes",
+        "geometry.triangles"
+      ],
+      "concept_ids": [
+        "geo.basic.angle_measure",
+        "geo.basic.angles",
+        "geo.basic.points_lines",
+        "geo.circle.inscribed_angle",
+        "geo.circle.parts",
+        "geo.coord.plot",
+        "geo.quad.types",
+        "geo.triangle.types"
+      ],
+      "concept_count": 8
+    },
+    {
+      "id": "geometry.b1",
+      "title": "Geometry · Stage 2",
+      "domain": "geometry",
+      "band": 1,
+      "depth_min": 3,
+      "depth_max": 5,
+      "subdomains": [
+        "geometry.basics",
+        "geometry.circles",
+        "geometry.polygons",
+        "geometry.shapes",
+        "geometry.similar",
+        "geometry.transform",
+        "geometry.triangles"
+      ],
+      "concept_ids": [
+        "geo.basic.complementary",
+        "geo.basic.vertical",
+        "geo.circle.cyclic_quad",
+        "geo.polygon.exterior_angle",
+        "geo.polygon.interior_angles",
+        "geo.quad.area",
+        "geo.quad.perimeter",
+        "geo.similar.area_ratio",
+        "geo.similar.missing_side",
+        "geo.similar.ratio",
+        "geo.transform.dilation",
+        "geo.triangle.angles",
+        "geo.triangle.area",
+        "geo.triangle.exterior_angle",
+        "geo.triangle.inequality",
+        "geo.triangle.isosceles",
+        "geo.triangle.midsegment"
+      ],
+      "concept_count": 17
+    },
+    {
+      "id": "geometry.b2",
+      "title": "Geometry · Stage 3",
+      "domain": "geometry",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "geometry.circles",
+        "geometry.coordinate",
+        "geometry.shapes",
+        "geometry.solid",
+        "geometry.triangles"
+      ],
+      "concept_ids": [
+        "geo.circle.chord",
+        "geo.circle.circumference",
+        "geo.coord.distance",
+        "geo.coord.midpoint",
+        "geo.quad.trapezoid_area",
+        "geo.solid.prism_volume",
+        "geo.solid.pyramid_volume",
+        "geo.solid.similar_volume",
+        "geo.solid.surface_area",
+        "geo.solid.volume_rect",
+        "geo.triangle.pythagorean",
+        "geo.triangle.pythagorean.word",
+        "geo.triangle.special_right"
+      ],
+      "concept_count": 13
+    },
+    {
+      "id": "geometry.b3",
+      "title": "Geometry · Stage 4",
+      "domain": "geometry",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 10,
+      "subdomains": [
+        "geometry.circles",
+        "geometry.coordinate"
+      ],
+      "concept_ids": [
+        "geo.circle.area",
+        "geo.circle.tangent_chord",
+        "geo.circle.tangent_length",
+        "geo.coord.distance_3d",
+        "geo.coord.polar"
+      ],
+      "concept_count": 5
+    },
+    {
+      "id": "geometry.b5",
+      "title": "Geometry · Stage 6",
+      "domain": "geometry",
+      "band": 5,
+      "depth_min": 17,
+      "depth_max": 17,
+      "subdomains": [
+        "geometry.coordinate"
+      ],
+      "concept_ids": [
+        "geo.coord.lines"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "geometry.b6",
+      "title": "Geometry · Stage 7",
+      "domain": "geometry",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 18,
+      "subdomains": [
+        "geometry.coordinate"
+      ],
+      "concept_ids": [
+        "geo.coord.slope"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "graph_theory.b1",
+      "title": "Graph Theory · Stage 2",
+      "domain": "graph_theory",
+      "band": 1,
+      "depth_min": 5,
+      "depth_max": 5,
+      "subdomains": [
+        "graph_theory.spectral"
+      ],
+      "concept_ids": [
+        "graph.adjacency"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "graph_theory.b2",
+      "title": "Graph Theory · Stage 3",
+      "domain": "graph_theory",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "graph_theory.spectral"
+      ],
+      "concept_ids": [
+        "graph.laplacian",
+        "graph.matrix_tree"
+      ],
+      "concept_count": 2
+    },
+    {
+      "id": "graph_theory.b4",
+      "title": "Graph Theory · Stage 5",
+      "domain": "graph_theory",
+      "band": 4,
+      "depth_min": 14,
+      "depth_max": 14,
+      "subdomains": [
+        "graph_theory.basics",
+        "graph_theory.extremal"
+      ],
+      "concept_ids": [
+        "graph.complement",
+        "graph.isomorphism",
+        "graph.mantel",
+        "graph.subgraph"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "graph_theory.b5",
+      "title": "Graph Theory · Stage 6",
+      "domain": "graph_theory",
+      "band": 5,
+      "depth_min": 15,
+      "depth_max": 17,
+      "subdomains": [
+        "graph_theory.basics",
+        "graph_theory.connectivity",
+        "graph_theory.extremal",
+        "graph_theory.flows",
+        "graph_theory.planarity"
+      ],
+      "concept_ids": [
+        "graph.bridge",
+        "graph.connectivity",
+        "graph.cut_vertex",
+        "graph.distance",
+        "graph.genus",
+        "graph.homomorphism",
+        "graph.kuratowski",
+        "graph.menger",
+        "graph.moore_bound",
+        "graph.outerplanar",
+        "graph.product",
+        "graph.random_threshold",
+        "graph.strong_connectivity",
+        "graph.tournament",
+        "graph.turan"
+      ],
+      "concept_count": 15
+    },
+    {
+      "id": "graph_theory.b6",
+      "title": "Graph Theory · Stage 7",
+      "domain": "graph_theory",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 20,
+      "subdomains": [
+        "graph_theory.coloring",
+        "graph_theory.extremal",
+        "graph_theory.flows",
+        "graph_theory.matching",
+        "graph_theory.planarity"
+      ],
+      "concept_ids": [
+        "graph.brooks",
+        "graph.chromatic_polynomial",
+        "graph.dag_paths",
+        "graph.edge_coloring",
+        "graph.independent_set",
+        "graph.list_coloring",
+        "graph.matching",
+        "graph.max_flow",
+        "graph.minor",
+        "graph.perfect_graph",
+        "graph.perfect_matching",
+        "graph.ramsey",
+        "graph.topological_sort",
+        "graph.treewidth",
+        "graph.vertex_cover"
+      ],
+      "concept_count": 15
+    },
+    {
+      "id": "graph_theory.b7",
+      "title": "Graph Theory · Stage 8",
+      "domain": "graph_theory",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 22,
+      "subdomains": [
+        "graph_theory.matching",
+        "graph_theory.spectral"
+      ],
+      "concept_ids": [
+        "graph.spectral_gap",
+        "graph.spectral_radius",
+        "graph.tutte"
+      ],
+      "concept_count": 3
+    },
+    {
+      "id": "linear_algebra.b0",
+      "title": "Linear Algebra · Stage 1",
+      "domain": "linear_algebra",
+      "band": 0,
+      "depth_min": 2,
+      "depth_max": 2,
+      "subdomains": [
+        "linear_algebra.vectors"
+      ],
+      "concept_ids": [
+        "linalg.vector.concept"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "linear_algebra.b1",
+      "title": "Linear Algebra · Stage 2",
+      "domain": "linear_algebra",
+      "band": 1,
+      "depth_min": 3,
+      "depth_max": 5,
+      "subdomains": [
+        "linear_algebra.matrices",
+        "linear_algebra.vectors"
+      ],
+      "concept_ids": [
+        "linalg.matrix.add",
+        "linalg.matrix.concept",
+        "linalg.space.axioms",
+        "linalg.vector.add",
+        "linalg.vector.dot",
+        "linalg.vector.parametric"
+      ],
+      "concept_count": 6
+    },
+    {
+      "id": "linear_algebra.b2",
+      "title": "Linear Algebra · Stage 3",
+      "domain": "linear_algebra",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "linear_algebra.decompositions",
+        "linear_algebra.determinants",
+        "linear_algebra.inner_product",
+        "linear_algebra.matrices",
+        "linear_algebra.vectors"
+      ],
+      "concept_ids": [
+        "linalg.decomp.lu",
+        "linalg.det.2x2",
+        "linalg.det.3x3",
+        "linalg.matrix.identity",
+        "linalg.matrix.inverse_2x2",
+        "linalg.matrix.mult",
+        "linalg.orth.projection_coeff",
+        "linalg.vec.norm_squared",
+        "linalg.vec.span",
+        "linalg.vector.cosine_similarity",
+        "linalg.vector.cross"
+      ],
+      "concept_count": 11
+    },
+    {
+      "id": "linear_algebra.b3",
+      "title": "Linear Algebra · Stage 4",
+      "domain": "linear_algebra",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 11,
+      "subdomains": [
+        "linear_algebra.decompositions",
+        "linear_algebra.inner_product",
+        "linear_algebra.matrices",
+        "linear_algebra.vectors"
+      ],
+      "concept_ids": [
+        "linalg.basis.change",
+        "linalg.decomp.qr",
+        "linalg.independence.count",
+        "linalg.inner_product",
+        "linalg.matrix.rank",
+        "linalg.orth.complement",
+        "linalg.orth.projection_matrix",
+        "linalg.rank.nullity",
+        "linalg.subspace",
+        "linalg.vec.basis"
+      ],
+      "concept_count": 10
+    },
+    {
+      "id": "linear_algebra.b6",
+      "title": "Linear Algebra · Stage 7",
+      "domain": "linear_algebra",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 20,
+      "subdomains": [
+        "linear_algebra.systems",
+        "linear_algebra.transformations"
+      ],
+      "concept_ids": [
+        "linalg.lintrans.concept",
+        "linalg.sys.cramer",
+        "linalg.systems.matrix",
+        "linalg.transform.det_scale",
+        "linalg.transform.invertible",
+        "linalg.transform.kernel"
+      ],
+      "concept_count": 6
+    },
+    {
+      "id": "linear_algebra.b7",
+      "title": "Linear Algebra · Stage 8",
+      "domain": "linear_algebra",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 23,
+      "subdomains": [
+        "linear_algebra.eigenvalues"
+      ],
+      "concept_ids": [
+        "linalg.eigen.compute",
+        "linalg.eigen.concept",
+        "linalg.eigen.det_product",
+        "linalg.eigen.diagonalization",
+        "linalg.eigen.trace"
+      ],
+      "concept_count": 5
+    },
+    {
+      "id": "linear_algebra.b8",
+      "title": "Linear Algebra · Stage 9",
+      "domain": "linear_algebra",
+      "band": 8,
+      "depth_min": 24,
+      "depth_max": 25,
+      "subdomains": [
+        "linear_algebra.decompositions",
+        "linear_algebra.eigenvalues"
+      ],
+      "concept_ids": [
+        "linalg.decomp.jordan",
+        "linalg.decomp.svd",
+        "linalg.eigen.cayley_hamilton",
+        "linalg.matrix.condition",
+        "linalg.quadratic.definite",
+        "linalg.symmetric.spectral"
+      ],
+      "concept_count": 6
+    },
+    {
+      "id": "machine_learning.b2",
+      "title": "Machine Learning · Stage 3",
+      "domain": "machine_learning",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "machine_learning.neural_networks",
+        "machine_learning.regression"
+      ],
+      "concept_ids": [
+        "ml.linreg.least_squares",
+        "ml.linreg.predict",
+        "ml.loss.cross_entropy",
+        "ml.loss.mae",
+        "ml.loss.mse"
+      ],
+      "concept_count": 5
+    },
+    {
+      "id": "machine_learning.b3",
+      "title": "Machine Learning · Stage 4",
+      "domain": "machine_learning",
+      "band": 3,
+      "depth_min": 10,
+      "depth_max": 10,
+      "subdomains": [
+        "machine_learning.data"
+      ],
+      "concept_ids": [
+        "ml.data.scaling"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "machine_learning.b6",
+      "title": "Machine Learning · Stage 7",
+      "domain": "machine_learning",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 20,
+      "subdomains": [
+        "machine_learning.data",
+        "machine_learning.neural_networks",
+        "machine_learning.unsupervised"
+      ],
+      "concept_ids": [
+        "ml.arch.cnn",
+        "ml.data.onehot",
+        "ml.forward_pass",
+        "ml.knn.nearest_distance",
+        "ml.perceptron"
+      ],
+      "concept_count": 5
+    },
+    {
+      "id": "machine_learning.b7",
+      "title": "Machine Learning · Stage 8",
+      "domain": "machine_learning",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 23,
+      "subdomains": [
+        "machine_learning.neural_networks",
+        "machine_learning.nlp",
+        "machine_learning.regression",
+        "machine_learning.reinforcement",
+        "machine_learning.unsupervised"
+      ],
+      "concept_ids": [
+        "ml.activation.sigmoid",
+        "ml.arch.gan",
+        "ml.arch.rnn",
+        "ml.arch.transformer",
+        "ml.cluster.kmeans",
+        "ml.logistic.regression",
+        "ml.nlp.transformer",
+        "ml.pca.variance_percent",
+        "ml.reinforcement.qlearning"
+      ],
+      "concept_count": 9
+    },
+    {
+      "id": "machine_learning.b8",
+      "title": "Machine Learning · Stage 9",
+      "domain": "machine_learning",
+      "band": 8,
+      "depth_min": 24,
+      "depth_max": 25,
+      "subdomains": [
+        "machine_learning.nlp",
+        "machine_learning.reinforcement"
+      ],
+      "concept_ids": [
+        "ml.nlp.bert",
+        "ml.reinforcement.actor_critic",
+        "ml.reinforcement.policy_gradient"
+      ],
+      "concept_count": 3
+    },
+    {
+      "id": "machine_learning.b9",
+      "title": "Machine Learning · Stage 10",
+      "domain": "machine_learning",
+      "band": 9,
+      "depth_min": 28,
+      "depth_max": 29,
+      "subdomains": [
+        "machine_learning.neural_networks"
+      ],
+      "concept_ids": [
+        "ml.gradient_descent",
+        "ml.regularization"
+      ],
+      "concept_count": 2
+    },
+    {
+      "id": "machine_learning.b10",
+      "title": "Machine Learning · Stage 11",
+      "domain": "machine_learning",
+      "band": 10,
+      "depth_min": 30,
+      "depth_max": 32,
+      "subdomains": [
+        "machine_learning.evaluation",
+        "machine_learning.neural_networks",
+        "machine_learning.regression",
+        "machine_learning.trees"
+      ],
+      "concept_ids": [
+        "ml.backpropagation",
+        "ml.data.augmentation",
+        "ml.eval.accuracy",
+        "ml.eval.confusion",
+        "ml.eval.roc",
+        "ml.overfitting",
+        "ml.reg.ridge_penalty",
+        "ml.regularization.dropout",
+        "ml.tree.gini",
+        "ml.validation"
+      ],
+      "concept_count": 10
+    },
+    {
+      "id": "machine_learning.b11",
+      "title": "Machine Learning · Stage 12",
+      "domain": "machine_learning",
+      "band": 11,
+      "depth_min": 33,
+      "depth_max": 34,
+      "subdomains": [
+        "machine_learning.data",
+        "machine_learning.evaluation",
+        "machine_learning.neural_networks",
+        "machine_learning.trees"
+      ],
+      "concept_ids": [
+        "ml.data.imbalance",
+        "ml.eval.calibration",
+        "ml.eval.f1",
+        "ml.eval.precision",
+        "ml.eval.recall",
+        "ml.grad.vanishing",
+        "ml.optim.adam",
+        "ml.optim.batchnorm",
+        "ml.optim.momentum",
+        "ml.tree.ensemble"
+      ],
+      "concept_count": 10
+    },
+    {
+      "id": "number_theory.b1",
+      "title": "Number Theory · Stage 2",
+      "domain": "number_theory",
+      "band": 1,
+      "depth_min": 5,
+      "depth_max": 5,
+      "subdomains": [
+        "number_theory.basics"
+      ],
+      "concept_ids": [
+        "nt.basics.divisibility"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "number_theory.b2",
+      "title": "Number Theory · Stage 3",
+      "domain": "number_theory",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "number_theory.advanced",
+        "number_theory.basics"
+      ],
+      "concept_ids": [
+        "nt.adv.bertrand",
+        "nt.adv.fermat_little",
+        "nt.adv.pisano",
+        "nt.adv.prime_gap",
+        "nt.base.convert",
+        "nt.basics.congruence",
+        "nt.basics.gcd_euclidean",
+        "nt.basics.modular",
+        "nt.basics.prime_inf",
+        "nt.congruence.linear",
+        "nt.divisor.count",
+        "nt.divisor.sum",
+        "nt.prime.exponent"
+      ],
+      "concept_count": 13
+    },
+    {
+      "id": "number_theory.b3",
+      "title": "Number Theory · Stage 4",
+      "domain": "number_theory",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 11,
+      "subdomains": [
+        "number_theory.advanced",
+        "number_theory.analytic",
+        "number_theory.applications",
+        "number_theory.basics"
+      ],
+      "concept_ids": [
+        "nt.adv.carmichael_function",
+        "nt.adv.euler_phi",
+        "nt.adv.jacobi",
+        "nt.adv.legendre",
+        "nt.adv.miller_rabin",
+        "nt.adv.mobius",
+        "nt.adv.quadratic_reciprocity",
+        "nt.adv.wilson",
+        "nt.analytic.prime_number_theorem",
+        "nt.app.crypto",
+        "nt.basics.bezout",
+        "nt.basics.crt",
+        "nt.basics.order_mod",
+        "nt.pythagorean.hypotenuse",
+        "nt.residue.count"
+      ],
+      "concept_count": 15
+    },
+    {
+      "id": "number_theory.b4",
+      "title": "Number Theory · Stage 5",
+      "domain": "number_theory",
+      "band": 4,
+      "depth_min": 12,
+      "depth_max": 14,
+      "subdomains": [
+        "number_theory.advanced",
+        "number_theory.analytic"
+      ],
+      "concept_ids": [
+        "nt.adv.chebyshev",
+        "nt.adv.class_number",
+        "nt.adv.continued_fractions",
+        "nt.adv.dirichlet",
+        "nt.adv.discrete_log",
+        "nt.adv.elliptic_curve",
+        "nt.adv.modular_sqrt",
+        "nt.adv.pell",
+        "nt.adv.primitive_root",
+        "nt.adv.sieve",
+        "nt.adv.two_squares",
+        "nt.analytic.zeta"
+      ],
+      "concept_count": 12
+    },
+    {
+      "id": "number_theory.b5",
+      "title": "Number Theory · Stage 6",
+      "domain": "number_theory",
+      "band": 5,
+      "depth_min": 17,
+      "depth_max": 17,
+      "subdomains": [
+        "number_theory.advanced"
+      ],
+      "concept_ids": [
+        "nt.adv.diophantine"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "numerical_analysis.b0",
+      "title": "Numerical Analysis · Stage 1",
+      "domain": "numerical_analysis",
+      "band": 0,
+      "depth_min": 0,
+      "depth_max": 2,
+      "subdomains": [
+        "numerical_analysis.errors",
+        "numerical_analysis.interp"
+      ],
+      "concept_ids": [
+        "numa.errors.absolute",
+        "numa.errors.cancellation",
+        "numa.errors.conditioning",
+        "numa.errors.roundoff",
+        "numa.errors.stability",
+        "numa.errors.taylor",
+        "numa.interp.divided_differences",
+        "numa.interp.error",
+        "numa.interp.lagrange",
+        "numa.interp.least_squares"
+      ],
+      "concept_count": 10
+    },
+    {
+      "id": "numerical_analysis.b1",
+      "title": "Numerical Analysis · Stage 2",
+      "domain": "numerical_analysis",
+      "band": 1,
+      "depth_min": 3,
+      "depth_max": 3,
+      "subdomains": [
+        "numerical_analysis.interp"
+      ],
+      "concept_ids": [
+        "numa.interp.chebyshev",
+        "numa.interp.extrapolation",
+        "numa.interp.normal_equations",
+        "numa.interp.orthogonal",
+        "numa.interp.splines"
+      ],
+      "concept_count": 5
+    },
+    {
+      "id": "numerical_analysis.b3",
+      "title": "Numerical Analysis · Stage 4",
+      "domain": "numerical_analysis",
+      "band": 3,
+      "depth_min": 11,
+      "depth_max": 11,
+      "subdomains": [
+        "numerical_analysis.linear"
+      ],
+      "concept_ids": [
+        "numa.linear.least_squares_qr"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "numerical_analysis.b6",
+      "title": "Numerical Analysis · Stage 7",
+      "domain": "numerical_analysis",
+      "band": 6,
+      "depth_min": 20,
+      "depth_max": 20,
+      "subdomains": [
+        "numerical_analysis.linear"
+      ],
+      "concept_ids": [
+        "numa.linear.elimination"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "numerical_analysis.b7",
+      "title": "Numerical Analysis · Stage 8",
+      "domain": "numerical_analysis",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 23,
+      "subdomains": [
+        "numerical_analysis.linear"
+      ],
+      "concept_ids": [
+        "numa.linear.gauss_seidel",
+        "numa.linear.jacobi",
+        "numa.linear.lu",
+        "numa.linear.pivoting",
+        "numa.linear.power"
+      ],
+      "concept_count": 5
+    },
+    {
+      "id": "numerical_analysis.b9",
+      "title": "Numerical Analysis · Stage 10",
+      "domain": "numerical_analysis",
+      "band": 9,
+      "depth_min": 27,
+      "depth_max": 29,
+      "subdomains": [
+        "numerical_analysis.roots"
+      ],
+      "concept_ids": [
+        "numa.roots.bisection",
+        "numa.roots.false_position",
+        "numa.roots.fixed_point",
+        "numa.roots.newton"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "numerical_analysis.b10",
+      "title": "Numerical Analysis · Stage 11",
+      "domain": "numerical_analysis",
+      "band": 10,
+      "depth_min": 30,
+      "depth_max": 32,
+      "subdomains": [
+        "numerical_analysis.integration",
+        "numerical_analysis.roots"
+      ],
+      "concept_ids": [
+        "numa.integration.trapezoid",
+        "numa.roots.bracketing",
+        "numa.roots.horner",
+        "numa.roots.multiple",
+        "numa.roots.order",
+        "numa.roots.secant"
+      ],
+      "concept_count": 6
+    },
+    {
+      "id": "numerical_analysis.b11",
+      "title": "Numerical Analysis · Stage 12",
+      "domain": "numerical_analysis",
+      "band": 11,
+      "depth_min": 33,
+      "depth_max": 35,
+      "subdomains": [
+        "numerical_analysis.integration"
+      ],
+      "concept_ids": [
+        "numa.integration.adaptive",
+        "numa.integration.composite",
+        "numa.integration.error",
+        "numa.integration.gauss",
+        "numa.integration.improper",
+        "numa.integration.midpoint",
+        "numa.integration.romberg",
+        "numa.integration.simpson"
+      ],
+      "concept_count": 8
+    },
+    {
+      "id": "prealgebra.b0",
+      "title": "Prealgebra · Stage 1",
+      "domain": "prealgebra",
+      "band": 0,
+      "depth_min": 1,
+      "depth_max": 1,
+      "subdomains": [
+        "prealgebra.negatives"
+      ],
+      "concept_ids": [
+        "arith.neg.abs_value"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "prealgebra.b1",
+      "title": "Prealgebra · Stage 2",
+      "domain": "prealgebra",
+      "band": 1,
+      "depth_min": 5,
+      "depth_max": 5,
+      "subdomains": [
+        "prealgebra.ratios"
+      ],
+      "concept_ids": [
+        "ratio.basics.concept"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "prealgebra.b2",
+      "title": "Prealgebra · Stage 3",
+      "domain": "prealgebra",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "prealgebra.decimals",
+        "prealgebra.exponents",
+        "prealgebra.measurement",
+        "prealgebra.negatives",
+        "prealgebra.percentages",
+        "prealgebra.ratios",
+        "prealgebra.variables"
+      ],
+      "concept_ids": [
+        "arith.exp.neg",
+        "arith.exp.sci_notation",
+        "arith.exp.zero",
+        "arith.neg.order_ops",
+        "dec.basics.compare",
+        "dec.convert.from_frac",
+        "dec.ops.add",
+        "dec.ops.add.word",
+        "dec.ops.div",
+        "dec.ops.mult",
+        "dec.ops.mult.word",
+        "dec.ops.round",
+        "dec.ops.sub",
+        "dec.ops.sub.word",
+        "pct.basics.concept",
+        "pct.convert.from_dec",
+        "pct.convert.to_dec",
+        "pct.ops.of_number",
+        "prealg.measure.metric",
+        "prealg.real.concept",
+        "prealg.types",
+        "ratio.ops.simplify"
+      ],
+      "concept_count": 22
+    },
+    {
+      "id": "prealgebra.b3",
+      "title": "Prealgebra · Stage 4",
+      "domain": "prealgebra",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 11,
+      "subdomains": [
+        "prealgebra.decimals",
+        "prealgebra.exponents",
+        "prealgebra.measurement",
+        "prealgebra.percentages",
+        "prealgebra.ratios",
+        "prealgebra.variables"
+      ],
+      "concept_ids": [
+        "arith.sci_notation.ops",
+        "dec.convert.to_frac",
+        "dec.ops.div.word",
+        "pct.ops.change",
+        "pct.ops.commission",
+        "pct.ops.discount",
+        "pct.ops.error",
+        "pct.ops.find_rate",
+        "pct.ops.increase",
+        "pct.ops.markup",
+        "pct.ops.tax_tip",
+        "prealg.expr.evaluate",
+        "prealg.measure.convert",
+        "prealg.real.properties",
+        "prealg.var.concept",
+        "ratio.ops.better_buy",
+        "ratio.ops.percent_proportion",
+        "ratio.ops.proportion",
+        "ratio.ops.proportion.word",
+        "ratio.ops.rate",
+        "ratio.ops.rate.word",
+        "ratio.ops.scale"
+      ],
+      "concept_count": 22
+    },
+    {
+      "id": "prealgebra.b4",
+      "title": "Prealgebra · Stage 5",
+      "domain": "prealgebra",
+      "band": 4,
+      "depth_min": 12,
+      "depth_max": 14,
+      "subdomains": [
+        "prealgebra.equations",
+        "prealgebra.inequalities",
+        "prealgebra.measurement",
+        "prealgebra.percentages",
+        "prealgebra.variables"
+      ],
+      "concept_ids": [
+        "pct.ops.simple_interest",
+        "prealg.eq.one_step_add",
+        "prealg.eq.one_step_mult",
+        "prealg.eq.two_step",
+        "prealg.expr.distribute",
+        "prealg.expr.formula",
+        "prealg.expr.like_terms",
+        "prealg.expr.translate",
+        "prealg.ineq.one_step",
+        "prealg.measure.temperature"
+      ],
+      "concept_count": 10
+    },
+    {
+      "id": "prealgebra.b5",
+      "title": "Prealgebra · Stage 6",
+      "domain": "prealgebra",
+      "band": 5,
+      "depth_min": 15,
+      "depth_max": 16,
+      "subdomains": [
+        "prealgebra.equations",
+        "prealgebra.inequalities"
+      ],
+      "concept_ids": [
+        "prealg.eq.word",
+        "prealg.ineq.graph",
+        "prealg.ineq.two_step",
+        "prealg.ineq.word"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "precalculus.b2",
+      "title": "Precalculus · Stage 3",
+      "domain": "precalculus",
+      "band": 2,
+      "depth_min": 7,
+      "depth_max": 7,
+      "subdomains": [
+        "precalculus.analytic"
+      ],
+      "concept_ids": [
+        "precalc.analytic.distance"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "precalculus.b3",
+      "title": "Precalculus · Stage 4",
+      "domain": "precalculus",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 11,
+      "subdomains": [
+        "precalculus.polar",
+        "precalculus.vectors"
+      ],
+      "concept_ids": [
+        "precalc.polar.coordinates",
+        "precalc.polar.graph",
+        "precalc.vector.basics",
+        "precalc.vector.dot",
+        "precalc.vector.ops",
+        "precalc.vector.resultant"
+      ],
+      "concept_count": 6
+    },
+    {
+      "id": "precalculus.b5",
+      "title": "Precalculus · Stage 6",
+      "domain": "precalculus",
+      "band": 5,
+      "depth_min": 17,
+      "depth_max": 17,
+      "subdomains": [
+        "precalculus.discrete"
+      ],
+      "concept_ids": [
+        "precalc.binomial_theorem"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "precalculus.b6",
+      "title": "Precalculus · Stage 7",
+      "domain": "precalculus",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 20,
+      "subdomains": [
+        "precalculus.analytic",
+        "precalculus.conics",
+        "precalculus.functions",
+        "precalculus.polynomials",
+        "precalculus.rational"
+      ],
+      "concept_ids": [
+        "precalc.conic.circle_radius",
+        "precalc.func.arith_combine",
+        "precalc.func.floor_ceiling",
+        "precalc.func.inverse_value",
+        "precalc.func.piecewise",
+        "precalc.func.transformations",
+        "precalc.partial_fractions",
+        "precalc.poly.complex_conjugate",
+        "precalc.poly.descartes",
+        "precalc.poly.inequality",
+        "precalc.poly.rational_roots",
+        "precalc.poly.remainder_theorem",
+        "precalc.poly.zeros_multiplicity",
+        "precalc.rational.asymptote"
+      ],
+      "concept_count": 14
+    },
+    {
+      "id": "precalculus.b7",
+      "title": "Precalculus · Stage 8",
+      "domain": "precalculus",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 23,
+      "subdomains": [
+        "precalculus.conics",
+        "precalculus.discrete",
+        "precalculus.exponential",
+        "precalculus.functions",
+        "precalculus.parametric",
+        "precalculus.rational",
+        "precalculus.sequences",
+        "precalculus.systems"
+      ],
+      "concept_ids": [
+        "precalc.conic.ellipse",
+        "precalc.conic.general",
+        "precalc.conic.hyperbola",
+        "precalc.conic.parabola",
+        "precalc.exp.compound_interest",
+        "precalc.exp.cooling",
+        "precalc.exp.equation",
+        "precalc.exp.growth_model",
+        "precalc.func.composition_value",
+        "precalc.func.decomposition",
+        "precalc.func.heaviside",
+        "precalc.induction",
+        "precalc.log.evaluate",
+        "precalc.parametric.equations",
+        "precalc.parametric.graph",
+        "precalc.parametric.projectile",
+        "precalc.rational.holes",
+        "precalc.rational.oblique_asymptote",
+        "precalc.seq.arithmetic",
+        "precalc.seq.geometric",
+        "precalc.seq.summation",
+        "precalc.series.arithmetic",
+        "precalc.series.geometric",
+        "precalc.systems.nonlinear"
+      ],
+      "concept_count": 24
+    },
+    {
+      "id": "precalculus.b8",
+      "title": "Precalculus · Stage 9",
+      "domain": "precalculus",
+      "band": 8,
+      "depth_min": 24,
+      "depth_max": 24,
+      "subdomains": [
+        "precalculus.exponential",
+        "precalculus.sequences"
+      ],
+      "concept_ids": [
+        "precalc.exp.continuous",
+        "precalc.log.equation",
+        "precalc.log.scale",
+        "precalc.series.geom_infinite"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "probability_theory.b2",
+      "title": "Probability Theory · Stage 3",
+      "domain": "probability_theory",
+      "band": 2,
+      "depth_min": 7,
+      "depth_max": 8,
+      "subdomains": [
+        "probability_theory.foundations",
+        "probability_theory.joint",
+        "probability_theory.limits",
+        "probability_theory.random_variables"
+      ],
+      "concept_ids": [
+        "prob.cov.covariance",
+        "prob.limit.chebyshev",
+        "prob.rv.cdf",
+        "prob.rv.definition",
+        "prob.rv.variance",
+        "prob.space.axioms"
+      ],
+      "concept_count": 6
+    },
+    {
+      "id": "probability_theory.b3",
+      "title": "Probability Theory · Stage 4",
+      "domain": "probability_theory",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 11,
+      "subdomains": [
+        "probability_theory.characteristic",
+        "probability_theory.convergence",
+        "probability_theory.distributions",
+        "probability_theory.foundations",
+        "probability_theory.joint",
+        "probability_theory.limits",
+        "probability_theory.random_variables"
+      ],
+      "concept_ids": [
+        "prob.bayes.prior",
+        "prob.chf.definition",
+        "prob.cond.multiplication",
+        "prob.cond.total_probability",
+        "prob.conv.almost_sure",
+        "prob.conv.borel_cantelli",
+        "prob.conv.delta",
+        "prob.conv.in_distribution",
+        "prob.conv.in_probability",
+        "prob.conv.strong_law",
+        "prob.cov.correlation",
+        "prob.dist.exponential_family",
+        "prob.dist.memoryless",
+        "prob.dist.order_stats",
+        "prob.dist.poisson_process",
+        "prob.independence.pairwise",
+        "prob.joint.continuous",
+        "prob.joint.marginal",
+        "prob.limit.clt",
+        "prob.limit.markov",
+        "prob.limit.weak_law",
+        "prob.rv.expectation",
+        "prob.rv.joint",
+        "prob.rv.mgf",
+        "prob.rv.pdf",
+        "prob.rv.pmf",
+        "prob.rv.transform",
+        "prob.space.continuity",
+        "prob.space.inclusion_exclusion",
+        "prob.space.sigma_algebra"
+      ],
+      "concept_count": 30
+    },
+    {
+      "id": "probability_theory.b4",
+      "title": "Probability Theory · Stage 5",
+      "domain": "probability_theory",
+      "band": 4,
+      "depth_min": 12,
+      "depth_max": 14,
+      "subdomains": [
+        "probability_theory.characteristic",
+        "probability_theory.convergence",
+        "probability_theory.joint",
+        "probability_theory.processes"
+      ],
+      "concept_ids": [
+        "prob.chf.clt",
+        "prob.chf.continuity",
+        "prob.chf.independence",
+        "prob.chf.moments",
+        "prob.conv.slutsky",
+        "prob.expect.conditional",
+        "prob.expect.total",
+        "prob.expect.total_variance",
+        "prob.joint.rv_independence",
+        "prob.process.markov_chain",
+        "prob.process.martingale",
+        "prob.process.random_walk",
+        "prob.process.stationary",
+        "prob.process.transition_matrix"
+      ],
+      "concept_count": 14
+    },
+    {
+      "id": "real_analysis.b8",
+      "title": "Real Analysis · Stage 9",
+      "domain": "real_analysis",
+      "band": 8,
+      "depth_min": 25,
+      "depth_max": 26,
+      "subdomains": [
+        "real_analysis.limit",
+        "real_analysis.order",
+        "real_analysis.seq"
+      ],
+      "concept_ids": [
+        "ra.limit.function",
+        "ra.order.completeness",
+        "ra.order.extended",
+        "ra.order.supremum",
+        "ra.seq.convergence"
+      ],
+      "concept_count": 5
+    },
+    {
+      "id": "real_analysis.b9",
+      "title": "Real Analysis · Stage 10",
+      "domain": "real_analysis",
+      "band": 9,
+      "depth_min": 27,
+      "depth_max": 29,
+      "subdomains": [
+        "real_analysis.deriv",
+        "real_analysis.limit",
+        "real_analysis.metric",
+        "real_analysis.order",
+        "real_analysis.seq"
+      ],
+      "concept_ids": [
+        "ra.deriv.lhopital",
+        "ra.deriv.power_series",
+        "ra.deriv.taylor",
+        "ra.deriv.uniform_conv",
+        "ra.limit.compact",
+        "ra.limit.connected",
+        "ra.limit.continuity",
+        "ra.limit.discontinuity",
+        "ra.limit.evt",
+        "ra.limit.ivt",
+        "ra.limit.monotone_fn",
+        "ra.limit.sequential",
+        "ra.limit.uniform",
+        "ra.metric.baire",
+        "ra.metric.complete",
+        "ra.metric.continuity",
+        "ra.metric.contraction",
+        "ra.metric.convergence",
+        "ra.metric.open_closed",
+        "ra.metric.spaces",
+        "ra.order.archimedean",
+        "ra.order.countable",
+        "ra.order.density",
+        "ra.order.nested_intervals",
+        "ra.seq.absolute",
+        "ra.seq.bolzano_weierstrass",
+        "ra.seq.cauchy",
+        "ra.seq.cauchy_criterion",
+        "ra.seq.monotone",
+        "ra.seq.series",
+        "ra.seq.subsequence",
+        "ra.seq.tests"
+      ],
+      "concept_count": 32
+    },
+    {
+      "id": "real_analysis.b10",
+      "title": "Real Analysis · Stage 11",
+      "domain": "real_analysis",
+      "band": 10,
+      "depth_min": 30,
+      "depth_max": 32,
+      "subdomains": [
+        "real_analysis.deriv",
+        "real_analysis.metric",
+        "real_analysis.order",
+        "real_analysis.seq"
+      ],
+      "concept_ids": [
+        "ra.deriv.chain",
+        "ra.deriv.darboux",
+        "ra.deriv.interchange",
+        "ra.deriv.mvt",
+        "ra.metric.closure",
+        "ra.metric.compact",
+        "ra.metric.equivalent",
+        "ra.order.uncountable",
+        "ra.seq.rearrangement"
+      ],
+      "concept_count": 9
+    },
+    {
+      "id": "real_analysis.b11",
+      "title": "Real Analysis · Stage 12",
+      "domain": "real_analysis",
+      "band": 11,
+      "depth_min": 33,
+      "depth_max": 34,
+      "subdomains": [
+        "real_analysis.deriv"
+      ],
+      "concept_ids": [
+        "ra.deriv.ftc",
+        "ra.deriv.improper",
+        "ra.deriv.parts",
+        "ra.deriv.riemann"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "statistics.b0",
+      "title": "Statistics · Stage 1",
+      "domain": "statistics",
+      "band": 0,
+      "depth_min": 1,
+      "depth_max": 2,
+      "subdomains": [
+        "statistics.data_representation"
+      ],
+      "concept_ids": [
+        "stat.data.bar_graph",
+        "stat.data.read_table"
+      ],
+      "concept_count": 2
+    },
+    {
+      "id": "statistics.b1",
+      "title": "Statistics · Stage 2",
+      "domain": "statistics",
+      "band": 1,
+      "depth_min": 3,
+      "depth_max": 5,
+      "subdomains": [
+        "statistics.central_tendency",
+        "statistics.data_representation"
+      ],
+      "concept_ids": [
+        "stat.data.line_plot",
+        "stat.data.mean"
+      ],
+      "concept_count": 2
+    },
+    {
+      "id": "statistics.b2",
+      "title": "Statistics · Stage 3",
+      "domain": "statistics",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "statistics.advanced",
+        "statistics.central_tendency",
+        "statistics.data_representation",
+        "statistics.distributions",
+        "statistics.probability"
+      ],
+      "concept_ids": [
+        "stat.adv.covariance",
+        "stat.adv.geometric_mean",
+        "stat.adv.harmonic_mean",
+        "stat.adv.rms",
+        "stat.adv.variance",
+        "stat.data.histogram",
+        "stat.data.median",
+        "stat.data.mode",
+        "stat.data.range",
+        "stat.dist.bernoulli",
+        "stat.dist.exponential",
+        "stat.dist.normal",
+        "stat.dist.uniform",
+        "stat.prob.basic",
+        "stat.prob.bayes",
+        "stat.prob.complement",
+        "stat.prob.compound",
+        "stat.prob.continuous_rv",
+        "stat.prob.discrete_rv",
+        "stat.prob.expected_value",
+        "stat.prob.sample_space",
+        "stat.quartile.value",
+        "stat.reg.r2",
+        "stat.spread.iqr",
+        "stat.spread.mad",
+        "stat.zscore.value"
+      ],
+      "concept_count": 26
+    },
+    {
+      "id": "statistics.b3",
+      "title": "Statistics · Stage 4",
+      "domain": "statistics",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 11,
+      "subdomains": [
+        "statistics.distributions",
+        "statistics.inference",
+        "statistics.probability"
+      ],
+      "concept_ids": [
+        "stat.dist.beta",
+        "stat.dist.binomial",
+        "stat.dist.chi_square",
+        "stat.dist.gamma",
+        "stat.dist.geometric",
+        "stat.dist.hypergeometric",
+        "stat.dist.poisson",
+        "stat.dist.student_t",
+        "stat.dist.z_table",
+        "stat.infer.confidence",
+        "stat.infer.hypothesis",
+        "stat.infer.margin",
+        "stat.infer.proportion",
+        "stat.infer.sampling",
+        "stat.prob.conditional",
+        "stat.prob.counting",
+        "stat.sampling.se"
+      ],
+      "concept_count": 17
+    },
+    {
+      "id": "statistics.b4",
+      "title": "Statistics · Stage 5",
+      "domain": "statistics",
+      "band": 4,
+      "depth_min": 12,
+      "depth_max": 14,
+      "subdomains": [
+        "statistics.inference"
+      ],
+      "concept_ids": [
+        "stat.infer.nonparametric",
+        "stat.infer.pvalue",
+        "stat.infer.ttest",
+        "stat.infer.type_error",
+        "stat.infer.ztest",
+        "stat.test.anova",
+        "stat.test.chi_square"
+      ],
+      "concept_count": 7
+    },
+    {
+      "id": "statistics.b7",
+      "title": "Statistics · Stage 8",
+      "domain": "statistics",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 21,
+      "subdomains": [
+        "statistics.distributions"
+      ],
+      "concept_ids": [
+        "stat.func.gaussian"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "topology.b9",
+      "title": "Topology · Stage 10",
+      "domain": "topology",
+      "band": 9,
+      "depth_min": 27,
+      "depth_max": 29,
+      "subdomains": [
+        "topology.basics",
+        "topology.connected",
+        "topology.constructions"
+      ],
+      "concept_ids": [
+        "topo.basics.continuous",
+        "topo.basics.metric",
+        "topo.basics.open_closed",
+        "topo.connected",
+        "topo.metric.ball",
+        "topo.metric.basis",
+        "topo.metric.complete",
+        "topo.metric.convergence",
+        "topo.metric.interior",
+        "topo.metric.limit_point",
+        "topo.metric.subspace",
+        "topo.product"
+      ],
+      "concept_count": 12
+    },
+    {
+      "id": "topology.b10",
+      "title": "Topology · Stage 11",
+      "domain": "topology",
+      "band": 10,
+      "depth_min": 30,
+      "depth_max": 32,
+      "subdomains": [
+        "topology.algebraic",
+        "topology.compact",
+        "topology.connected",
+        "topology.constructions",
+        "topology.covering",
+        "topology.invariants",
+        "topology.manifolds",
+        "topology.metrization",
+        "topology.separation"
+      ],
+      "concept_ids": [
+        "topo.compact",
+        "topo.compact.local",
+        "topo.compact.one_point",
+        "topo.connected.local_path",
+        "topo.connected.path",
+        "topo.covering",
+        "topo.hausdorff",
+        "topo.homotopy",
+        "topo.homotopy.fundamental",
+        "topo.invariant.euler",
+        "topo.invariant.homeomorphism",
+        "topo.manifold",
+        "topo.metric.dense",
+        "topo.metrization",
+        "topo.quotient",
+        "topo.separation.tietze",
+        "topo.urysohn"
+      ],
+      "concept_count": 17
+    },
+    {
+      "id": "topology.b11",
+      "title": "Topology · Stage 12",
+      "domain": "topology",
+      "band": 11,
+      "depth_min": 33,
+      "depth_max": 35,
+      "subdomains": [
+        "topology.algebraic",
+        "topology.compact",
+        "topology.dimension",
+        "topology.invariants",
+        "topology.knot",
+        "topology.manifolds",
+        "topology.separation"
+      ],
+      "concept_ids": [
+        "topo.cohomology",
+        "topo.cohomology.de_rham",
+        "topo.compactification.stone_cech",
+        "topo.dimension",
+        "topo.embedding",
+        "topo.fiber_bundle",
+        "topo.fundamental.van_kampen",
+        "topo.homology.cellular",
+        "topo.invariant.betti",
+        "topo.invariant.genus",
+        "topo.knot",
+        "topo.manifold.orientability",
+        "topo.separation.completely_regular"
+      ],
+      "concept_count": 13
+    },
+    {
+      "id": "trigonometry.b1",
+      "title": "Trigonometry · Stage 2",
+      "domain": "trigonometry",
+      "band": 1,
+      "depth_min": 4,
+      "depth_max": 5,
+      "subdomains": [
+        "trigonometry.basics"
+      ],
+      "concept_ids": [
+        "trig.basics.arc_length",
+        "trig.basics.coterminal",
+        "trig.basics.radians",
+        "trig.basics.unit_circle"
+      ],
+      "concept_count": 4
+    },
+    {
+      "id": "trigonometry.b2",
+      "title": "Trigonometry · Stage 3",
+      "domain": "trigonometry",
+      "band": 2,
+      "depth_min": 6,
+      "depth_max": 8,
+      "subdomains": [
+        "trigonometry.basics",
+        "trigonometry.identities"
+      ],
+      "concept_ids": [
+        "trig.basics.angular_velocity",
+        "trig.basics.quadrant",
+        "trig.basics.reference_angle",
+        "trig.basics.sector_area",
+        "trig.basics.sin_cos_def",
+        "trig.basics.special_angles",
+        "trig.ident.cofunction"
+      ],
+      "concept_count": 7
+    },
+    {
+      "id": "trigonometry.b3",
+      "title": "Trigonometry · Stage 4",
+      "domain": "trigonometry",
+      "band": 3,
+      "depth_min": 9,
+      "depth_max": 11,
+      "subdomains": [
+        "trigonometry.advanced",
+        "trigonometry.basics",
+        "trigonometry.hyperbolic",
+        "trigonometry.identities"
+      ],
+      "concept_ids": [
+        "trig.adv.ambiguous_case",
+        "trig.adv.area_sas",
+        "trig.adv.law_sines",
+        "trig.adv.polar",
+        "trig.adv.vector_dot",
+        "trig.adv.vector_magnitude",
+        "trig.basics.bearings",
+        "trig.basics.reciprocal",
+        "trig.basics.right_triangle",
+        "trig.basics.tan_def",
+        "trig.eq.basic",
+        "trig.eq.homogeneous",
+        "trig.eq.linear",
+        "trig.eq.quadratic",
+        "trig.hyperbolic.derivative",
+        "trig.hyperbolic.inverse",
+        "trig.hyperbolic.sinh_cosh",
+        "trig.hyperbolic.tanh_coth",
+        "trig.ineq.basic"
+      ],
+      "concept_count": 19
+    },
+    {
+      "id": "trigonometry.b4",
+      "title": "Trigonometry · Stage 5",
+      "domain": "trigonometry",
+      "band": 4,
+      "depth_min": 12,
+      "depth_max": 12,
+      "subdomains": [
+        "trigonometry.advanced"
+      ],
+      "concept_ids": [
+        "trig.adv.vector_projection"
+      ],
+      "concept_count": 1
+    },
+    {
+      "id": "trigonometry.b6",
+      "title": "Trigonometry · Stage 7",
+      "domain": "trigonometry",
+      "band": 6,
+      "depth_min": 18,
+      "depth_max": 20,
+      "subdomains": [
+        "trigonometry.advanced",
+        "trigonometry.functions",
+        "trigonometry.graphs",
+        "trigonometry.hyperbolic",
+        "trigonometry.identities"
+      ],
+      "concept_ids": [
+        "trig.adv.arctan",
+        "trig.adv.inverse",
+        "trig.func.arcsine",
+        "trig.func.cosecant",
+        "trig.func.cosine",
+        "trig.func.cotangent",
+        "trig.func.secant",
+        "trig.func.sine",
+        "trig.func.tangent",
+        "trig.graph.amplitude",
+        "trig.graph.cos",
+        "trig.graph.period",
+        "trig.graph.sin",
+        "trig.hyperbolic.identities",
+        "trig.ident.double_angle",
+        "trig.ident.half_angle",
+        "trig.ident.identities",
+        "trig.ident.power_reduction",
+        "trig.ident.pythagorean",
+        "trig.ident.sum_diff",
+        "trig.ident.triple_angle",
+        "trig.ineq.advanced"
+      ],
+      "concept_count": 22
+    },
+    {
+      "id": "trigonometry.b7",
+      "title": "Trigonometry · Stage 8",
+      "domain": "trigonometry",
+      "band": 7,
+      "depth_min": 21,
+      "depth_max": 22,
+      "subdomains": [
+        "trigonometry.advanced",
+        "trigonometry.basics",
+        "trigonometry.functions",
+        "trigonometry.graphs",
+        "trigonometry.identities"
+      ],
+      "concept_ids": [
+        "trig.adv.heron_area",
+        "trig.adv.law_cosines",
+        "trig.basics.periodicity",
+        "trig.eq.general_solution",
+        "trig.func.arccosine",
+        "trig.func.arccotangent",
+        "trig.func.arctangent",
+        "trig.graph.inverse",
+        "trig.graph.phase_shift",
+        "trig.graph.reciprocal",
+        "trig.graph.tan",
+        "trig.graph.transformations",
+        "trig.ident.product_to_sum",
+        "trig.ident.pythagorean_variants",
+        "trig.ident.sum_to_product"
+      ],
+      "concept_count": 15
+    }
+  ]
+}

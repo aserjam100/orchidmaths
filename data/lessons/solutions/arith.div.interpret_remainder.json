@@ -1,0 +1,19 @@
+{
+  "concept": "arith.div.interpret_remainder",
+  "setup": "You are dividing [[total]] [[item]] into groups of [[per]].",
+  "steps": [
+    {
+      "fact": "quotient",
+      "say": "[[per]] fits into [[total]] [[quotient]] times."
+    },
+    {
+      "fact": "remainder",
+      "say": "The remainder is [[remainder]] [[item]]."
+    },
+    {
+      "fact": "rule",
+      "say": "[[rule]]"
+    }
+  ],
+  "answer": "The answer is [[answer]]."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The method",
+    "section": "The method",
+    "subgoals": [
+      "Define double counting",
+      "Set two expressions equal",
+      "Say what the equation proves"
+    ]
+  },
+  {
+    "label": "A worked count",
+    "section": "A worked count",
+    "subgoals": [
+      "Count subsets containing a fixed element",
+      "Count (element, subset) pairs",
+      "Recover the binomial identity"
+    ]
+  },
+  {
+    "label": "When to reach for it",
+    "section": "When to reach for it",
+    "subgoals": [
+      "Spot a property question",
+      "Choose the two groupings",
+      "Do the handshake count"
+    ]
+  }
+]

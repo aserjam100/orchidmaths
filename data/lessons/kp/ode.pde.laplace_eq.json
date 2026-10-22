@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: checking u = xy is harmonic",
+    "section": "Worked: checking u = xy is harmonic",
+    "subgoals": [
+      "Differentiate twice in x",
+      "Differentiate twice in y",
+      "Add to get Laplacian zero"
+    ]
+  },
+  {
+    "label": "Worked: the center equals the average",
+    "section": "Worked: the center equals the average",
+    "subgoals": [
+      "Average x^2 - y^2 over the circle",
+      "Apply the mean value property",
+      "Check u(0, 0) directly"
+    ]
+  },
+  {
+    "label": "Maxima live on the boundary",
+    "section": "Maxima live on the boundary",
+    "subgoals": [
+      "State the maximum principle",
+      "Pose the Dirichlet problem",
+      "Claim uniqueness from boundary data"
+    ]
+  }
+]

@@ -1,0 +1,239 @@
+import { describe, it } from 'vitest'
+import { execSync } from 'node:child_process'
+import fs from 'node:fs'
+import path from 'node:path'
+import katex from 'katex'
+import { lessonMacros, prepareLessonMath } from '../lib/lessonMath'
+
+// Corpus gate: every lesson body, exactly as the Go API serves it
+// (canonicalized via cmd/latexdump), is pushed through the frontend math
+// pipeline (prepareLessonMath) and every resulting math span is rendered by
+// KaTeX with throwOnError.
+//
+// Errors are compared against a committed baseline
+// (test/latexCorpusBaseline.json): a file may not GAIN a new error kind, and
+// a file that becomes clean must be dropped from the baseline. Regenerate
+// with UPDATE_BASELINE=1 npx vitest run test/latexCorpus.test.ts.
+//
+// Sibling gates: internal/latex/corpus_test.go (canonicalization idempotence
+// + validator warnings) runs on the Go side.
+const CORPUS_ROOT = path.join(__dirname, '../../../data/lessons')
+const REPO_ROOT = path.join(CORPUS_ROOT, '../..')
+const BASELINE_PATH = path.join(__dirname, 'latexCorpusBaseline.json')
+
+const UPDATE_BASELINE = process.env.UPDATE_BASELINE === '1'
+
+// Normalize a KaTeX error to its stable kind (positions and inputs churn).
+function errorKind(msg: string): string {
+  return msg.replace(/ at position \d+:[\s\S]*$/, '').trim()
+}
+
+function unescapeHtml(s: string): string {
+  // Named entities plus the numeric refs prepareLessonMath uses to keep
+  // spans opaque to markdown (`&#92;` backslash, `&#10;` newline) — the same
+  // decoding rehype-raw performs before KaTeX.
+  return s
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#(\d+);/g, (_, n: string) => String.fromCharCode(Number(n)))
+}
+
+function canonicalBodies(): Record<string, string> {
+  const stdout = execSync('go run ./cmd/latexdump', {
+    cwd: REPO_ROOT,
+    maxBuffer: 256 * 1024 * 1024,
+  })
+  return JSON.parse(stdout.toString())
+}
+
+describe('lesson corpus renders through KaTeX', () => {
+  it(
+    'renders every served math span without new KaTeX errors',
+    { timeout: 300_000 },
+    () => {
+      const bodies = canonicalBodies()
+      const files = Object.keys(bodies)
+      if (files.length < 400) throw new Error(`corpus shrank unexpectedly: ${files.length} files`)
+
+      // file -> set of error kinds
+      const fresh: Record<string, Set<string>> = {}
+      let spans = 0
+      let errorCount = 0
+
+      for (const rel of files) {
+        const prepared = prepareLessonMath(bodies[rel])
+
+        const spanRe = /<span class="math-(display|inline)">([\s\S]*?)<\/span>/g
+        let m: RegExpExecArray | null
+        while ((m = spanRe.exec(prepared)) !== null) {
+          const [, kind, escapedInner] = m
+          spans++
+          const inner = unescapeHtml(escapedInner)
+          try {
+            katex.renderToString(inner, {
+              displayMode: kind === 'display',
+              throwOnError: true,
+              trust: false,
+              macros: lessonMacros,
+            })
+          } catch (err) {
+            errorCount++
+            const msg = err instanceof Error ? err.message : String(err)
+            let set = fresh[rel]
+          if (!set) { set = new Set(); fresh[rel] = set }
+            set.add(errorKind(msg))
+          }
+        }
+      }
+
+      if (UPDATE_BASELINE) {
+        const out: Record<string, string[]> = {}
+        for (const rel of Object.keys(fresh).sort()) {
+          out[rel] = Array.from(fresh[rel]).sort()
+        }
+        fs.writeFileSync(BASELINE_PATH, JSON.stringify(out, null, 2) + '\n')
+        console.log(
+          `baseline rewritten: ${Object.keys(out).length} files with errors, ${errorCount} broken spans`
+        )
+        return
+      }
+
+      let baseline: Record<string, string[]> = {}
+      if (fs.existsSync(BASELINE_PATH)) {
+        baseline = JSON.parse(fs.readFileSync(BASELINE_PATH, 'utf8'))
+      } else {
+        throw new Error('latexCorpusBaseline.json missing; run with UPDATE_BASELINE=1 first')
+      }
+      // Structural-gate entries share this file; they are not KaTeX errors.
+      const katexBaseline: Record<string, string[]> = {}
+      for (const [rel, errs] of Object.entries(baseline)) {
+        const kept = errs.filter((e) => !e.startsWith('struct: '))
+        if (kept.length > 0) katexBaseline[rel] = kept
+      }
+
+      const newErrors: string[] = []
+      for (const rel of Object.keys(fresh).sort()) {
+        const allowed = new Set(katexBaseline[rel] ?? [])
+        if (allowed.size === 0) {
+          for (const k of Array.from(fresh[rel])) newErrors.push(`${rel}: ${k} (file was clean)`)
+        } else {
+          for (const k of Array.from(fresh[rel])) {
+            if (!allowed.has(k)) newErrors.push(`${rel}: ${k} (new kind)`)
+          }
+        }
+      }
+      for (const rel of Object.keys(katexBaseline).sort()) {
+        if (!fresh[rel]) {
+          throw new Error(
+            `${rel} no longer has KaTeX errors — remove it from latexCorpusBaseline.json (UPDATE_BASELINE=1)`
+          )
+        }
+      }
+
+      if (newErrors.length > 0) {
+        throw new Error(
+          `${errorCount} broken spans; ${newErrors.length} NEW error kinds:\n` + newErrors.slice(0, 20).join('\n')
+        )
+      }
+    }
+  )
+
+  it(
+    'keeps raw LaTeX out of prose regions (structural gate)',
+    { timeout: 300_000 },
+    () => {
+      const bodies = canonicalBodies()
+
+      // LaTeX commands that should never survive into rendered prose. Inside
+      // math spans they are fine; between spans they are scrape leaks.
+      const LEAK_RE =
+        /\\amp\b|\\substitute\b|\\divideunder\b|\\begin\s*\{|\\end\s*\{|\\frac\s*\{|\\text\s*\{|\\cdot\b|\\pi\b/
+
+      const violations: Record<string, Set<string>> = {}
+      const add = (rel: string, kind: string) => {
+        let set = violations[rel]
+        if (!set) {
+          set = new Set()
+          violations[rel] = set
+        }
+        set.add(`struct: ${kind}`)
+      }
+
+      for (const rel of Object.keys(bodies)) {
+        const prepared = prepareLessonMath(bodies[rel])
+        const prose = prepared.replace(/<span class="math-(display|inline)">[\s\S]*?<\/span>/g, ' ')
+
+        if (LEAK_RE.test(prose)) add(rel, 'raw latex in prose')
+
+        // An Example heading immediately followed by its Solution marker means
+        // the statement text was lost in ingestion.
+        const lines = bodies[rel].split('\n')
+        for (let i = 0; i < lines.length - 1; i++) {
+          if (/^\*\*Example\*\*\s*$/.test(lines[i]) && /^\*Solution\*\s*$/.test(lines[i + 2] ?? '')) {
+            add(rel, 'empty example statement')
+            break
+          }
+        }
+      }
+
+      if (UPDATE_BASELINE) {
+        const baseline: Record<string, string[]> = JSON.parse(fs.readFileSync(BASELINE_PATH, 'utf8'))
+        for (const rel of Object.keys(violations).sort()) {
+          const merged = new Set([...(baseline[rel] ?? []), ...Array.from(violations[rel])])
+          baseline[rel] = Array.from(merged).sort()
+        }
+        fs.writeFileSync(BASELINE_PATH, JSON.stringify(baseline, null, 2) + '\n')
+        console.log(`structural baseline rewritten: ${Object.keys(violations).length} files with violations`)
+        return
+      }
+
+      let baseline: Record<string, string[]> = {}
+      if (fs.existsSync(BASELINE_PATH)) {
+        baseline = JSON.parse(fs.readFileSync(BASELINE_PATH, 'utf8'))
+      }
+
+      const fresh: string[] = []
+      for (const rel of Object.keys(violations).sort()) {
+        const allowed = new Set(baseline[rel] ?? [])
+        for (const k of Array.from(violations[rel])) {
+          if (!allowed.has(k)) fresh.push(`${rel}: ${k}`)
+        }
+      }
+      if (fresh.length > 0) {
+        throw new Error(`${fresh.length} structural violations:\n` + fresh.slice(0, 20).join('\n'))
+      }
+    }
+  )
+
+  it(
+    'emitted math spans stay opaque to markdown (no literal backslash/newline)',
+    { timeout: 300_000 },
+    () => {
+      // Span HTML is inline raw HTML inside markdown: remark parses it
+      // line-wise and runs backslash-escape processing on anything that
+      // looks like text. A literal `\` or newline inside a span tag means
+      // markdown will mangle the TeX before KaTeX sees it (`\\[6pt]` became
+      // `\[6pt]` and hard-failed; `\,` became a literal comma). Spans must
+      // carry everything entity-encoded (`&#92;`, `&#10;`, `&amp;`).
+      const bodies = canonicalBodies()
+      const bad: string[] = []
+      const spanRe = /<span class="math-(display|inline)">([\s\S]*?)<\/span>/g
+      for (const rel of Object.keys(bodies)) {
+        const prepared = prepareLessonMath(bodies[rel])
+        let m: RegExpExecArray | null
+        while ((m = spanRe.exec(prepared)) !== null) {
+          const inner = m[2]
+          if (inner.includes('\\') || inner.includes('\n')) {
+            bad.push(`${rel}: span leaks ${JSON.stringify(inner.slice(0, 60))}`)
+          }
+        }
+      }
+      if (bad.length > 0) {
+        throw new Error(`${bad.length} markdown-opaque violations:\n` + bad.slice(0, 20).join('\n'))
+      }
+    }
+  )
+})

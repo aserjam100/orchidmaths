@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Compare the tens",
+    "section": "Compare the tens",
+    "subgoals": [
+      "Find the tens digit of each number",
+      "Compare the tens",
+      "The number with more tens is greater"
+    ]
+  },
+  {
+    "label": "When the tens are the same",
+    "section": "When the tens are the same",
+    "subgoals": [
+      "Check if the tens are the same",
+      "Compare the ones",
+      "The number with more ones is greater"
+    ]
+  },
+  {
+    "label": "Order three numbers",
+    "section": "Order three numbers",
+    "subgoals": [
+      "Find the smallest number",
+      "Find the next smallest",
+      "Write them in order with commas"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "concept": "trig.adv.vector_projection",
+  "setup": "You are asked for the scalar projection of the vector $([[u1]], [[u2]])$ onto the vector $(3, 4)$.",
+  "steps": [
+    {
+      "fact": "u1",
+      "say": "The scalar projection is the dot product divided by the length of the target. The dot product is $3 \\times [[u1]] + 4 \\times [[u2]]$."
+    },
+    {
+      "fact": "u2",
+      "say": "The target $(3, 4)$ has length 5, so dividing the dot product by 5 gives the signed length of the shadow: [[answer]]."
+    }
+  ],
+  "answer": "So the scalar projection is [[answer]]."
+}

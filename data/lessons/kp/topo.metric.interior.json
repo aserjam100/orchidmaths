@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The three regions of a set",
+    "section": "The three regions of a set",
+    "subgoals": [
+      "Find the largest open set inside A",
+      "Take the smallest closed set containing A",
+      "Collect the points every ball touches on both sides"
+    ]
+  },
+  {
+    "label": "Worked: the boundary of a closed interval",
+    "section": "Worked: the boundary of a closed interval",
+    "subgoals": [
+      "Test a ball around 0",
+      "Test a ball around 2",
+      "Count the two boundary points"
+    ]
+  },
+  {
+    "label": "Interior points versus limit points",
+    "section": "Interior points versus limit points",
+    "subgoals": [
+      "Require a ball entirely inside A for interior",
+      "Allow the ball to leave A for a limit",
+      "Separate the isolated points"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Only the highest powers matter",
+    "section": "Only the highest powers matter",
+    "subgoals": [
+      "Divide by the highest power",
+      "Read off the leading coefficients",
+      "See the lower terms vanish"
+    ]
+  },
+  {
+    "label": "Comparing the degrees",
+    "section": "Comparing the degrees",
+    "subgoals": [
+      "State the equal-degree case",
+      "State the higher-numerator case",
+      "State the higher-denominator case"
+    ]
+  },
+  {
+    "label": "When the degrees differ",
+    "section": "When the degrees differ",
+    "subgoals": [
+      "Explain divergence to infinity",
+      "Explain the limit of zero",
+      "Identify the finite case"
+    ]
+  }
+]

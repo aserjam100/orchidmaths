@@ -1,0 +1,19 @@
+{
+  "concept": "alg.systems.concept",
+  "setup": "The system is \\(x + y = [[s]]\\) and \\(x - y = [[d]]\\).",
+  "steps": [
+    {
+      "fact": "s",
+      "say": "Adding the equations cancels \\(y\\), because \\((x + y) + (x - y) = [[s]] + [[d]]\\)."
+    },
+    {
+      "fact": "d",
+      "say": "The left side is \\(2x\\), so \\(2x = [[s]] + [[d]]\\)."
+    },
+    {
+      "fact": "answer",
+      "say": "Dividing both sides by 2 gives \\(x = [[answer]]\\)."
+    }
+  ],
+  "answer": "So the value of \\(x\\) is \\([[answer]]\\)."
+}

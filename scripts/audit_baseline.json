@@ -1,0 +1,9 @@
+{
+ "_note": "Ratchet baselines for the content-quality rollout (P0.2). Entries shrink to empty as waves land; NEVER extend with new violations.",
+ "stub_lessons": [],
+ "placeholder_kps": [],
+ "thin_pools_single_answer": [],
+ "thin_pools_yesno_only": [],
+ "cliche_kp_shards": [],
+ "apparatus_lessons": []
+}

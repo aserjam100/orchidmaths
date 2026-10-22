@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: normalize (1,1)",
+    "section": "Worked: normalize (1,1)",
+    "subgoals": [
+      "Compute the norm sqrt(2)",
+      "Divide to unit length",
+      "Bank q_1"
+    ]
+  },
+  {
+    "label": "Worked: count R's entries",
+    "section": "Worked: count R's entries",
+    "subgoals": [
+      "Count 2 diagonal",
+      "Count 1 above",
+      "Trust the structural zeros"
+    ]
+  },
+  {
+    "label": "Back substitution",
+    "section": "Back substitution",
+    "subgoals": [
+      "Form Rx = Q^Tb",
+      "Solve bottom-up",
+      "Prefer Householder for stability"
+    ]
+  }
+]

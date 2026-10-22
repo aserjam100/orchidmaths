@@ -1,0 +1,15 @@
+{
+  "concept": "geo.polygon.exterior_angle",
+  "setup": "The polygon is regular and has \\([[sides]]\\) sides.",
+  "steps": [
+    {
+      "fact": "sides",
+      "say": "Walking once around a convex polygon turns the heading through every exterior angle in turn, and the total turn is one full circle, so the exterior angles always add to 360 degrees."
+    },
+    {
+      "fact": "angle",
+      "say": "A regular polygon has all its exterior angles equal, so each one is 360 divided by \\([[sides]]\\). The answer is a whole number of degrees because the side count divides 360."
+    }
+  ],
+  "answer": "So one exterior angle of the regular polygon is \\([[angle]]\\) degrees."
+}

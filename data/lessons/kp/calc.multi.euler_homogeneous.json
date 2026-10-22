@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Homogeneity and its degree",
+    "section": "Homogeneity and its degree",
+    "subgoals": [
+      "Scale every input",
+      "Read the power as the degree",
+      "Recognise equal-total-degree polynomials"
+    ]
+  },
+  {
+    "label": "Euler's identity",
+    "section": "Euler's identity",
+    "subgoals": [
+      "Differentiate the scaling identity",
+      "Set the scale to one",
+      "Sum inputs times partial derivatives"
+    ]
+  },
+  {
+    "label": "Using the identity",
+    "section": "Using the identity",
+    "subgoals": [
+      "Skip differentiating and use the value",
+      "Read the degree-one economic statement",
+      "Check computed gradients for consistency"
+    ]
+  }
+]

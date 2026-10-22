@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Comparison test",
+    "section": "",
+    "subgoals": [
+      "Dominate f by a known g",
+      "Inherit convergence downward",
+      "Push divergence upward"
+    ]
+  },
+  {
+    "label": "Improper integral setup",
+    "section": "",
+    "subgoals": [
+      "Rewrite as a limit of proper integrals",
+      "Identify unbounded vs singular type",
+      "Check 1/(x^2+1) against 1/x^2"
+    ]
+  },
+  {
+    "label": "Worked comparison",
+    "section": "",
+    "subgoals": [
+      "Bound the worked integrand against 1/sqrt(x)",
+      "Confirm the domination direction",
+      "Conclude divergence from the minorant"
+    ]
+  }
+]

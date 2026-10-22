@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Find the amount of change",
+    "section": "Find the amount of change",
+    "subgoals": [
+      "Subtract the smaller value from the larger",
+      "Keep the change positive",
+      "Decide whether the new value is higher or lower"
+    ]
+  },
+  {
+    "label": "Divide by the original value",
+    "section": "Divide by the original value",
+    "subgoals": [
+      "Use the original value as the denominator",
+      "Multiply the quotient by 100",
+      "Do not divide by the new value"
+    ]
+  },
+  {
+    "label": "Name the direction",
+    "section": "Name the direction",
+    "subgoals": [
+      "Call a rise a percent increase",
+      "Call a fall a percent decrease",
+      "Compare the two percentages when the originals differ"
+    ]
+  }
+]

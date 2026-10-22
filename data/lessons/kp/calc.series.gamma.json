@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The definition and the recurrence",
+    "section": "The definition and the recurrence",
+    "subgoals": [
+      "Integrate by parts once",
+      "Find the shift recurrence",
+      "Get the factorial at the integers"
+    ]
+  },
+  {
+    "label": "Extending past the integers",
+    "section": "Extending past the integers",
+    "subgoals": [
+      "Run the recurrence backwards",
+      "Evaluate at one half",
+      "Use the reflection and duplication formulas"
+    ]
+  },
+  {
+    "label": "Why it appears",
+    "section": "Why it appears",
+    "subgoals": [
+      "Express the beta function as gamma values",
+      "Use it in the volume of a ball",
+      "Extend binomial coefficients to real tops"
+    ]
+  }
+]

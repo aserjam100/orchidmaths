@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one gradient step",
+    "section": "Worked: one gradient step",
+    "subgoals": [
+      "Scale the gradient by the learning rate",
+      "Step opposite the gradient",
+      "Check the loss decreased"
+    ]
+  },
+  {
+    "label": "Worked: stochastic versus batch cost",
+    "section": "Worked: stochastic versus batch cost",
+    "subgoals": [
+      "Count updates per epoch for batch",
+      "Count updates per epoch for mini-batch",
+      "Trade gradient noise for step count"
+    ]
+  },
+  {
+    "label": "When descent diverges",
+    "section": "When descent diverges",
+    "subgoals": [
+      "Spot overshoot from a large rate",
+      "Distinguish crawling from diverging",
+      "Tune the rate between the two"
+    ]
+  }
+]

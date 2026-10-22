@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Disjoint edges",
+    "section": "Disjoint edges",
+    "subgoals": [
+      "Choose edges with no shared endpoint",
+      "Bound the size by floor(n/2)",
+      "Define the matching number"
+    ]
+  },
+  {
+    "label": "Worked: paths, cycles and stars",
+    "section": "Worked: paths, cycles and stars",
+    "subgoals": [
+      "Read 2 for P_4",
+      "Read 3 for C_6",
+      "Read 1 for a star"
+    ]
+  },
+  {
+    "label": "Maximum and perfect matchings",
+    "section": "Maximum and perfect matchings",
+    "subgoals": [
+      "Look for an augmenting path",
+      "Stop when none exists",
+      "Require an even vertex count for perfect"
+    ]
+  }
+]

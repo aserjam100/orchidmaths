@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Comparing observed with expected counts",
+    "section": "Comparing observed with expected counts",
+    "subgoals": [
+      "List observed and expected counts",
+      "Square each difference over its expectation",
+      "Sum the terms"
+    ]
+  },
+  {
+    "label": "Worked: three categories",
+    "section": "Worked: three categories",
+    "subgoals": [
+      "Take 12, 9, 9 against 10, 10, 10",
+      "Compute 4/10, 1/10, 1/10",
+      "Sum to 0.6"
+    ]
+  },
+  {
+    "label": "Degrees of freedom",
+    "section": "Degrees of freedom",
+    "subgoals": [
+      "Count k - 1",
+      "Compare with the critical value",
+      "Inspect the largest terms after rejection"
+    ]
+  }
+]

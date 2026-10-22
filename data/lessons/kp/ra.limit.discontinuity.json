@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The three kinds",
+    "section": "The three kinds",
+    "subgoals": [
+      "Check whether the two-sided limit exists",
+      "Compare the one-sided limits",
+      "Name the kind from the failure"
+    ]
+  },
+  {
+    "label": "Removable and jump examples",
+    "section": "Removable and jump examples",
+    "subgoals": [
+      "Locate the limit and the value",
+      "Reconstruct a removable gap",
+      "Show a jump cannot be repaired"
+    ]
+  },
+  {
+    "label": "Points at infinity and oscillation",
+    "section": "Points at infinity and oscillation",
+    "subgoals": [
+      "Send the function to infinity at the point",
+      "Let the values oscillate without a limit",
+      "Contrast with the monotone case"
+    ]
+  }
+]

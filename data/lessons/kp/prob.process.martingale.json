@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The conditional-mean property",
+    "section": "The conditional-mean property",
+    "subgoals": [
+      "Condition on the past",
+      "Set the conditional mean equal to the present",
+      "Read off the constant mean"
+    ]
+  },
+  {
+    "label": "Examples",
+    "section": "Examples",
+    "subgoals": [
+      "Check the symmetric walk",
+      "Test the square against the definition",
+      "Subtract the compensating drift"
+    ]
+  },
+  {
+    "label": "Optional stopping",
+    "section": "Optional stopping",
+    "subgoals": [
+      "State the optional stopping conclusion",
+      "List the boundedness conditions",
+      "Show a stopping rule that fails without them"
+    ]
+  }
+]

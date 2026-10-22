@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Partial orders",
+    "section": "Partial orders",
+    "subgoals": [
+      "Check reflexive, antisymmetric, transitive",
+      "Distinguish partial from total",
+      "Read a Hasse diagram"
+    ]
+  },
+  {
+    "label": "Comparability",
+    "section": "Comparability",
+    "subgoals": [
+      "Define comparable pairs",
+      "Compare with the total-order count",
+      "Identify incomparable elements"
+    ]
+  },
+  {
+    "label": "Counting comparable pairs",
+    "section": "Counting comparable pairs",
+    "subgoals": [
+      "Enumerate the smaller element",
+      "Count its multiples in the set",
+      "Check the total against C(n,2)"
+    ]
+  }
+]

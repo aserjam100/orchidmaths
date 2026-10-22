@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two ways to be wrong",
+    "section": "Two ways to be wrong",
+    "subgoals": [
+      "Name the Type I error",
+      "Name the Type II error",
+      "Separate alpha from beta"
+    ]
+  },
+  {
+    "label": "Worked: the trade in one table",
+    "section": "Worked: the trade in one table",
+    "subgoals": [
+      "Lower alpha from 0.05 to 0.01",
+      "Watch power fall",
+      "Raise the sample size instead"
+    ]
+  },
+  {
+    "label": "Power and sample size",
+    "section": "Power and sample size",
+    "subgoals": [
+      "Define power as one minus beta",
+      "List effect size, variance, n and alpha",
+      "Shrink the standard error with more data"
+    ]
+  }
+]

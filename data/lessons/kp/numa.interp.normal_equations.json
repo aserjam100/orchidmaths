@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Setting the derivatives to zero",
+    "section": "Setting the derivatives to zero",
+    "subgoals": [
+      "Differentiate the sum of squares",
+      "Set each partial derivative to zero",
+      "Collect the linear system"
+    ]
+  },
+  {
+    "label": "Worked: the intercept",
+    "section": "Worked: the intercept",
+    "subgoals": [
+      "Compute the means of x and y",
+      "Multiply the slope by the mean of x",
+      "Subtract from the mean of y"
+    ]
+  },
+  {
+    "label": "The conditioning warning",
+    "section": "The conditioning warning",
+    "subgoals": [
+      "Compare the condition numbers",
+      "See the squaring",
+      "Choose a more stable route to the same fit"
+    ]
+  }
+]

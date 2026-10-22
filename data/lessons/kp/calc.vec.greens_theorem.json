@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Boundary and interior",
+    "section": "Boundary and interior",
+    "subgoals": [
+      "State Green's theorem",
+      "Identify each side's integral",
+      "Check the orientation convention"
+    ]
+  },
+  {
+    "label": "Area from a boundary integral",
+    "section": "Area from a boundary integral",
+    "subgoals": [
+      "Choose P and Q to make the integrand 1",
+      "Compute a rectangle's area",
+      "Use the boundary of an awkward shape"
+    ]
+  },
+  {
+    "label": "Orientation",
+    "section": "Orientation",
+    "subgoals": [
+      "Show that reversing the path flips the sign",
+      "Orient a region with a hole",
+      "Keep the area positive"
+    ]
+  }
+]

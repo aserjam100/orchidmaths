@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Extrapolating the trapezoid ladder",
+    "section": "Extrapolating the trapezoid ladder",
+    "subgoals": [
+      "Take two estimates with widths in the ratio two",
+      "Combine them to cancel the leading error",
+      "Repeat to raise the order"
+    ]
+  },
+  {
+    "label": "Worked: one extrapolation step",
+    "section": "Worked: one extrapolation step",
+    "subgoals": [
+      "Form the Richardson combination",
+      "Cancel the leading term",
+      "Recognise the higher-order rule"
+    ]
+  },
+  {
+    "label": "When it works and when it does not",
+    "section": "When it works and when it does not",
+    "subgoals": [
+      "Require a smooth integrand",
+      "Note the reuse of samples",
+      "Beware of breaks in the expansion"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "concept": "complex.basics.powers",
+  "setup": "The task is to compute \\([[base]]^{[[exponent]]}\\).",
+  "steps": [
+    {
+      "fact": "base",
+      "say": "Write the base as \\([[base]]\\) and the exponent as [[exponent]]."
+    },
+    {
+      "fact": "method",
+      "say": "[[method]]"
+    },
+    {
+      "fact": "value",
+      "say": "So the value is \\([[value]]\\)."
+    }
+  ],
+  "answer": "So \\([[base]]^{[[exponent]]} = [[value]]\\)."
+}

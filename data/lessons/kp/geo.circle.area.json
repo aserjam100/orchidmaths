@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Where the Formula Comes From",
+    "section": "Where the Formula Comes From",
+    "subgoals": [
+      "Slice the circle into thin pie wedges",
+      "Stack the wedges into an almost-rectangle of height r",
+      "Read width pi-r to get area pi r-squared"
+    ]
+  },
+  {
+    "label": "Area vs. Circumference",
+    "section": "Area vs. Circumference",
+    "subgoals": [
+      "Match C equals 2 pi r with plain lengths",
+      "Match A equals pi r-squared with square units",
+      "Halve a 12 cm diameter before squaring"
+    ]
+  },
+  {
+    "label": "Drill: area of a radius-5 circle",
+    "section": "",
+    "subgoals": [
+      "Square 5 to 25 and keep pi exact",
+      "Multiply 25 by 3.14159 for 78.5398",
+      "Round to 78.5 square meters"
+    ]
+  }
+]

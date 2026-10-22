@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Check deg P < deg Q before splitting",
+      "Factor Q into linear and irreducible quadratic pieces",
+      "Assign one elementary fraction per factor"
+    ]
+  },
+  {
+    "label": "Application to the computation of integrals",
+    "section": "",
+    "subgoals": [
+      "Split (5x+4)/((x-2)(2x+3)) into 2/(x-2) + 1/(2x+3)",
+      "Integrate termwise into 2ln|x-2| + (1/2)ln|2x+3|",
+      "Add the constant c to the antiderivative"
+    ]
+  },
+  {
+    "label": "General structure of partial fraction decomposition",
+    "section": "",
+    "subgoals": [
+      "Write A/(x+a) for each linear factor",
+      "Stack A1/(x+a)+...+Ak/(x+a)^k for multiplicity k",
+      "Write (Bx+C)/(x^2+ax+b) for each irreducible quadratic"
+    ]
+  }
+]

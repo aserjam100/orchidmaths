@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Defining the order",
+    "section": "Defining the order",
+    "subgoals": [
+      "Relate successive errors by a power law",
+      "Identify the exponent as the order",
+      "Compare orders by their speeds"
+    ]
+  },
+  {
+    "label": "Worked: reading the order from errors",
+    "section": "Worked: reading the order from errors",
+    "subgoals": [
+      "Take logarithms of the successive errors",
+      "Form the ratio of their changes",
+      "Read the exponent as the order"
+    ]
+  },
+  {
+    "label": "Estimating the order in practice",
+    "section": "Estimating the order in practice",
+    "subgoals": [
+      "Estimate the order from a run of errors",
+      "Recognise superlinear orders",
+      "Use the estimate to check the theory"
+    ]
+  }
+]

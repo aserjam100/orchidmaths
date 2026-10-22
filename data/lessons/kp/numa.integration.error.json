@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Where the error comes from",
+    "section": "Where the error comes from",
+    "subgoals": [
+      "Identify the degree of exactness",
+      "Find the first uncaptured term",
+      "Multiply the derivative bound by the width power"
+    ]
+  },
+  {
+    "label": "Worked: halving the width",
+    "section": "Worked: halving the width",
+    "subgoals": [
+      "Halve the width",
+      "Raise the ratio to the error order",
+      "Read the reduction"
+    ]
+  },
+  {
+    "label": "Using the bounds in practice",
+    "section": "Using the bounds in practice",
+    "subgoals": [
+      "Bound the derivative if possible",
+      "Otherwise compare two widths",
+      "Use the difference as an estimate"
+    ]
+  }
+]

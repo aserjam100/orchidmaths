@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Masses sum to one",
+    "section": "Masses sum to one",
+    "subgoals": [
+      "List the values",
+      "Add the masses to one",
+      "Normalise a list of weights"
+    ]
+  },
+  {
+    "label": "Worked: normalising weights",
+    "section": "Worked: normalising weights",
+    "subgoals": [
+      "Add the weights",
+      "Divide each weight by the total",
+      "Confirm the masses sum to one"
+    ]
+  },
+  {
+    "label": "From masses to the CDF",
+    "section": "From masses to the CDF",
+    "subgoals": [
+      "Accumulate the masses up to x",
+      "See the jumps carry the masses",
+      "Recover the masses from the jumps"
+    ]
+  }
+]

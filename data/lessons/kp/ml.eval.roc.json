@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one threshold point",
+    "section": "Worked: one threshold point",
+    "subgoals": [
+      "Compute TPR from hits and misses",
+      "Compute FPR from false alarms",
+      "Place the threshold on the curve"
+    ]
+  },
+  {
+    "label": "Worked: reading AUC",
+    "section": "Worked: reading AUC",
+    "subgoals": [
+      "Read AUC as ranking probability",
+      "Name 1 perfect and 0.5 random",
+      "Separate ranking from accuracy"
+    ]
+  },
+  {
+    "label": "When ROC flatters",
+    "section": "When ROC flatters",
+    "subgoals": [
+      "Dilute false positives in negatives",
+      "Check precision on rare positives",
+      "Switch to precision-recall curves"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Changing variables",
+    "section": "Changing variables",
+    "subgoals": [
+      "Invert the transformation",
+      "Evaluate the density at the inverse",
+      "Multiply by the derivative of the inverse"
+    ]
+  },
+  {
+    "label": "Worked: a linear map",
+    "section": "Worked: a linear map",
+    "subgoals": [
+      "Invert the linear map",
+      "See the derivative is constant",
+      "Read the new uniform interval"
+    ]
+  },
+  {
+    "label": "Variance under scaling",
+    "section": "Variance under scaling",
+    "subgoals": [
+      "Shift the mean",
+      "Scale the mean by the multiplier",
+      "Square the multiplier for the variance"
+    ]
+  }
+]

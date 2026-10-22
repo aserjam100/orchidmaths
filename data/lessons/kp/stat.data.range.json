@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Modeling data with two variables",
+    "section": "Modeling data with two variables",
+    "subgoals": [
+      "Plot yearly top-1% shares from the table",
+      "Read the highest and lowest shares off the graph",
+      "Subtract min from max for the range"
+    ]
+  },
+  {
+    "label": "Patterns in Tables",
+    "section": "Patterns in Tables",
+    "subgoals": [
+      "Pair each left entry with its right assignment",
+      "Read the smallest and largest table values",
+      "Subtract min from max for the range"
+    ]
+  },
+  {
+    "label": "Rate of Change",
+    "section": "Rate of Change",
+    "subgoals": [
+      "Subtract 19887 - 17458 into 2429 diagnoses",
+      "Divide 2429 by 10 years into 242.9/year",
+      "Subtract the smallest yearly count from the largest"
+    ]
+  }
+]

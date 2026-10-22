@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A quadratic in a ratio",
+    "section": "A quadratic in disguise",
+    "subgoals": [
+      "Substitute one trigonometric ratio for the unknown",
+      "Keep the shape of the equation in view",
+      "Notice that one term is the square of another"
+    ]
+  },
+  {
+    "label": "Factoring into ratios",
+    "section": "Factoring and the roots",
+    "subgoals": [
+      "Factor the quadratic in the substituted unknown",
+      "Substitute back to get equations in a ratio",
+      "Discard a root outside the sine's range"
+    ]
+  },
+  {
+    "label": "Counting the angles",
+    "section": "Counting the angles in one turn",
+    "subgoals": [
+      "Give the angles in one turn for each root",
+      "See that a turning point gives a single angle",
+      "Add the counts for the roots"
+    ]
+  }
+]

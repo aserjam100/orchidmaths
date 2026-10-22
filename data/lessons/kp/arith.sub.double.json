@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Take away the tens, then the ones",
+    "section": "Take away the tens, then the ones",
+    "subgoals": [
+      "Take away the tens",
+      "Take away the ones",
+      "Say the number that is left"
+    ]
+  },
+  {
+    "label": "When there are not enough ones",
+    "section": "When there are not enough ones",
+    "subgoals": [
+      "Take away the tens",
+      "Count back to the ten below",
+      "Take away the rest of the ones"
+    ]
+  },
+  {
+    "label": "Check with addition",
+    "section": "Check with addition",
+    "subgoals": [
+      "Take the answer",
+      "Add the number you took away",
+      "See if you get the first number"
+    ]
+  }
+]

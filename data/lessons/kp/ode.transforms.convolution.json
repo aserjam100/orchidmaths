@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one convolved with one",
+    "section": "Worked: one convolved with one",
+    "subgoals": [
+      "Set up the integral of 1 over [0, t]",
+      "Evaluate it to t",
+      "Confirm via the 1/s^2 product"
+    ]
+  },
+  {
+    "label": "Worked: Laplace of a convolution",
+    "section": "Worked: Laplace of a convolution",
+    "subgoals": [
+      "Multiply the transforms to 1/s^2",
+      "Invert 1/s^2 to t",
+      "Skip the time-domain integral"
+    ]
+  },
+  {
+    "label": "Worked: one convolved with an exponential",
+    "section": "Worked: one convolved with an exponential",
+    "subgoals": [
+      "Form the product 1/(s(s-1))",
+      "Split into partial fractions",
+      "Invert to e^t - 1 and check directly"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "concept": "geo.similar.area_ratio",
+  "setup": "Two figures are similar with a length ratio of \\([[factor]]\\) to 1.",
+  "steps": [
+    {
+      "fact": "factor",
+      "say": "Every length in the larger figure is \\([[factor]]\\) times the corresponding length in the smaller, and every angle is unchanged."
+    },
+    {
+      "fact": "area_ratio",
+      "say": "Area has two dimensions, so the length ratio is applied once per dimension: \\([[factor]]^2 = [[area_ratio]]\\). A volume would scale by the cube for the same reason."
+    }
+  ],
+  "answer": "So the larger figure's area is \\([[area_ratio]]\\) times the smaller's."
+}

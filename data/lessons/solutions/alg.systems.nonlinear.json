@@ -1,0 +1,15 @@
+{
+  "concept": "alg.systems.nonlinear",
+  "setup": "The system is y = x² and y = [[k]]x.",
+  "steps": [
+    {
+      "fact": "k",
+      "say": "Setting the two expressions equal gives x² = [[k]]x, so x = 0 or x = [[k]]."
+    },
+    {
+      "fact": "answer",
+      "say": "The nonzero solution has y = [[k]]² = [[answer]]."
+    }
+  ],
+  "answer": "So the y-coordinate of the nonzero solution is [[answer]]."
+}

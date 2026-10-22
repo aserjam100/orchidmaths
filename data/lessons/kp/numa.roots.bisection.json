@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Halving a bracket",
+    "section": "Halving a bracket",
+    "subgoals": [
+      "Check the signs at the two endpoints",
+      "Evaluate the midpoint",
+      "Keep the half with the sign change"
+    ]
+  },
+  {
+    "label": "Worked: counting the steps",
+    "section": "Worked: counting the steps",
+    "subgoals": [
+      "Form the ratio of width to tolerance",
+      "Take the logarithm base two",
+      "Round up for the step count"
+    ]
+  },
+  {
+    "label": "Strengths and limits",
+    "section": "Strengths and limits",
+    "subgoals": [
+      "Guarantee convergence from a bracket",
+      "See that only the sign is used",
+      "Accept the linear rate as the price"
+    ]
+  }
+]

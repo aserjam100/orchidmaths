@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The middle half",
+    "section": "The middle half",
+    "subgoals": [
+      "Define the interquartile range",
+      "Name the values it covers",
+      "See that it ignores the extremes"
+    ]
+  },
+  {
+    "label": "Splitting at the median",
+    "section": "Splitting at the median",
+    "subgoals": [
+      "Find the two quartiles",
+      "Subtract them",
+      "Note the even and odd cases"
+    ]
+  },
+  {
+    "label": "Why it resists outliers",
+    "section": "Why it resists outliers",
+    "subgoals": [
+      "Explain why one extreme value does not move it",
+      "Pair it with the median",
+      "Say when it describes data better"
+    ]
+  }
+]

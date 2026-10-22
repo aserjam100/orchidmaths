@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one confident prediction",
+    "section": "Worked: one confident prediction",
+    "subgoals": [
+      "Keep only the true-class term",
+      "Evaluate negative log probability",
+      "Reward sharper correct confidence"
+    ]
+  },
+  {
+    "label": "Worked: confident and wrong",
+    "section": "Worked: confident and wrong",
+    "subgoals": [
+      "Score a confident mistake",
+      "Watch the loss grow without bound",
+      "Contrast with bounded squared error"
+    ]
+  },
+  {
+    "label": "When cross-entropy misleads",
+    "section": "When cross-entropy misleads",
+    "subgoals": [
+      "Price one flipped label",
+      "See the boundary chase noise",
+      "Cap the penalty with smoothing"
+    ]
+  }
+]

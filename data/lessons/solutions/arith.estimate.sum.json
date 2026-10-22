@@ -1,0 +1,19 @@
+{
+  "concept": "arith.estimate.sum",
+  "setup": "You are estimating [[a]] and [[b]] by rounding each to the nearest hundred.",
+  "steps": [
+    {
+      "fact": "rounded_a",
+      "say": "[[a]] rounds to [[rounded_a]]."
+    },
+    {
+      "fact": "rounded_b",
+      "say": "[[b]] rounds to [[rounded_b]]."
+    },
+    {
+      "fact": "estimate",
+      "say": "Using the original operation on the rounded values gives [[estimate]]."
+    }
+  ],
+  "answer": "The estimate is [[estimate]]."
+}

@@ -1,0 +1,11 @@
+{
+  "concept": "alg.conic.classify",
+  "setup": "The conic is \\([[equation]]\\).",
+  "steps": [
+    {
+      "fact": "reason",
+      "say": "[[reason]]"
+    }
+  ],
+  "answer": "So the conic is classified as [[class]]."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Bound tail sums |sum_{k=n}^m a_k| < eps",
+      "Preview harmonic tails failing",
+      "Flag non-Cauchy as divergent"
+    ]
+  },
+  {
+    "label": "Cauchy’s convergence criterion",
+    "section": "",
+    "subgoals": [
+      "Require partial sums form Cauchy sequence",
+      "Test tails of sum 1/n^2 with integral bound",
+      "Certify convergence via completeness"
+    ]
+  },
+  {
+    "label": "Glossary",
+    "section": "",
+    "subgoals": [
+      "Collect partial-sum vs tail-sum terms",
+      "Translate eps-N into tail language",
+      "Point each entry at its series example"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The diagonalization condition",
+    "section": "",
+    "subgoals": [
+      "Stack candidate eigenvectors as columns of P",
+      "Check det(P) != 0 for independence",
+      "Form D = P^-1 A P"
+    ]
+  },
+  {
+    "label": "Eigenvalues and eigenvectors",
+    "section": "",
+    "subgoals": [
+      "Solve det(A - lambda I) = 0 for the spectrum",
+      "Solve (A - lambda I)v = 0 for each vector",
+      "Pair each eigenvalue with its eigenvector"
+    ]
+  },
+  {
+    "label": "Algebraic and geometric multiplicity",
+    "section": "",
+    "subgoals": [
+      "Read algebraic multiplicity off the characteristic polynomial",
+      "Count free variables for the geometric multiplicity",
+      "Compare the two counts to test diagonalizability"
+    ]
+  }
+]

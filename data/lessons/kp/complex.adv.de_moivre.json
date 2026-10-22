@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Motivation for De Moivre’s Theorem",
+    "section": "",
+    "subgoals": [
+      "Square (a+ib) by expanding directly",
+      "Count the cross terms as the power grows",
+      "Switch to r(cos th + i sin th) past power 3"
+    ]
+  },
+  {
+    "label": "De Moivre's theorem and exponential notation for complex numbers",
+    "section": "",
+    "subgoals": [
+      "Raise r to the nth power",
+      "Multiply the angle by n",
+      "Rewrite as r^n(cos nth + i sin nth)"
+    ]
+  },
+  {
+    "label": "A proof by induction",
+    "section": "",
+    "subgoals": [
+      "Anchor the base case at n = 1",
+      "Multiply the n-case by (cos th + i sin th)",
+      "Apply angle-addition to reach n+1"
+    ]
+  }
+]

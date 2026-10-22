@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: output size",
+    "section": "Worked: output size",
+    "subgoals": [
+      "Count filter placements per side",
+      "Apply (in-filter)/stride + 1",
+      "Multiply placements by ops each"
+    ]
+  },
+  {
+    "label": "Worked: why sharing saves parameters",
+    "section": "Worked: why sharing saves parameters",
+    "subgoals": [
+      "Count fully connected weights",
+      "Count one shared filter plus bias",
+      "Trade position freedom for efficiency"
+    ]
+  },
+  {
+    "label": "When convolutions are wrong",
+    "section": "When convolutions are wrong",
+    "subgoals": [
+      "Test whether neighbors correlate",
+      "Drop locality where it buys nothing",
+      "Pick dense or attention layers instead"
+    ]
+  }
+]

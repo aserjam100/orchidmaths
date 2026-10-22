@@ -1,0 +1,15 @@
+{
+  "concept": "pct.ops.markup",
+  "setup": "The cost is $[[cost]] and the markup rate is [[rate]]%.",
+  "steps": [
+    {
+      "fact": "markup",
+      "say": "The markup is [[rate]]% of $[[cost]], which is $[[markup]]."
+    },
+    {
+      "fact": "cost",
+      "say": "Add the markup to the cost: $[[cost]] + $[[markup]]."
+    }
+  ],
+  "answer": "The selling price is $[[price]]."
+}

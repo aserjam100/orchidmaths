@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Handles and holes",
+    "section": "Handles and holes",
+    "subgoals": [
+      "Count the handles",
+      "Lower chi by 2 per handle",
+      "Distinguish genus from informal holes"
+    ]
+  },
+  {
+    "label": "Worked: reading genus from Euler characteristic",
+    "section": "Worked: reading genus from Euler characteristic",
+    "subgoals": [
+      "Solve 2 - 2g = 0",
+      "Solve 2 - 2g = -4",
+      "Evaluate 2 - 2(4)"
+    ]
+  },
+  {
+    "label": "Orientable versus non-orientable",
+    "section": "Orientable versus non-orientable",
+    "subgoals": [
+      "Use chi = 2 - k for crosscaps",
+      "Read the projective plane as k = 1",
+      "Separate torus and Klein bottle by orientability"
+    ]
+  }
+]

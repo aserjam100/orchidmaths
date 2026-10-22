@@ -1,0 +1,120 @@
+'use client'
+
+import { useState } from 'react'
+import Link from 'next/link'
+import type { GoalPlanRes } from '../lib/api'
+import { domainLabel } from '../lib/graphDomains'
+
+
+interface Props {
+  plan: GoalPlanRes
+  onStartPractice?: () => void
+}
+
+export default function DiagnosticResults({ plan, onStartPractice }: Props) {
+  const [expanded, setExpanded] = useState<string | null>(null)
+
+  const domains = new Set([...Object.keys(plan.weak_areas), ...Object.keys(plan.strong_areas)])
+  const readinessPct = Math.round(plan.readiness * 100)
+  const estimates = plan.completion_estimates ? Object.entries(plan.completion_estimates).sort((a, b) => Number(a[0]) - Number(b[0])) : []
+
+  return (
+    <div className="max-w-3xl mx-auto">
+      {(plan.frontier_label || plan.placement_course_id) && (
+        <div className="border border-orchid-blue bg-orchid-surface p-4 mb-6 text-center">
+          {plan.frontier_label && (
+            <p className="font-serif text-lg text-orchid-primary">
+              Start here: {plan.frontier_label}
+              {plan.frontier_conditional && <span className="font-mono text-xs text-orchid-muted"> (provisional)</span>}
+            </p>
+          )}
+          {plan.placement_course_id && (
+            <p className="font-mono text-xs text-orchid-secondary mt-1">Suggested course: {plan.placement_course_id}</p>
+          )}
+          {estimates.length > 0 && (
+            <p className="font-mono text-[12px] text-orchid-muted mt-2">
+              Estimated completion: {estimates.map(([xp, when]) => `${xp} XP → ${when}`).join(' · ')}
+            </p>
+          )}
+          <p className="font-mono text-[11px] text-orchid-muted mt-2">
+            Measured for automaticity — no timeout. Slow answers count as gaps to refresh, not failures.
+          </p>
+          {plan.conditionally_completed && plan.conditionally_completed.length > 0 && (
+            <p className="font-mono text-[11px] text-orchid-muted mt-1">
+              Provisional: {plan.conditionally_completed.length} topic{plan.conditionally_completed.length === 1 ? '' : 's'} assumed known — we fall back on struggle.
+            </p>
+          )}
+        </div>
+      )}
+      <div className="text-center mb-8">
+        <div className="relative inline-flex items-center justify-center">
+          <svg width="140" height="140" className="-rotate-90">
+            <circle cx="70" cy="70" r="60" fill="none" stroke="var(--code-bg)" strokeWidth="10" />
+            <circle cx="70" cy="70" r="60" fill="none" stroke="var(--accent-blue)" strokeWidth="10" strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 60}`} strokeDashoffset={`${2 * Math.PI * 60 * (1 - plan.readiness)}`} className="transition-all duration-1000" />
+          </svg>
+          <span className="absolute text-3xl font-mono font-light text-orchid-primary">{readinessPct}%</span>
+        </div>
+        <p className="text-orchid-secondary text-sm mt-2">diagnostic test score {plan.total_tested > 0 && `(${plan.correct_count}/${plan.total_tested} correct)`}</p>
+      </div>
+
+      <div className="space-y-3 mb-8">
+        {Array.from(domains).sort().map((domain) => {
+          const label = domainLabel(domain)
+          const weak = plan.weak_areas[domain] || []
+          const strong = plan.strong_areas[domain] || []
+          const total = weak.length + strong.length
+          const weakPct = total > 0 ? Math.round((weak.length / total) * 100) : 0
+          const isExpanded = expanded === domain
+          return (
+            <div key={domain} className="border border-orchid-border bg-orchid-surface">
+              <button type="button" onClick={() => setExpanded(isExpanded ? null : domain)} aria-expanded={isExpanded} className="w-full flex items-center justify-between p-3 text-left">
+                <span className="font-mono text-xs text-orchid-primary">{label}</span>
+                <span className="font-mono text-[12px] text-orchid-muted">{weak.length} to review · {strong.length} strong</span>
+              </button>
+              <div className="px-3 pb-2">
+                <div className="h-1.5 bg-orchid-code overflow-hidden">
+                  <div className="h-full bg-orchid-blue transition-all" style={{ width: `${weakPct}%` }} />
+                </div>
+              </div>
+              {isExpanded && (
+                <div className="px-3 pb-3 border-t border-orchid-border mt-1 pt-2">
+                  {weak.length > 0 && (
+                    <div className="mb-2">
+                      <p className="font-mono text-[11px] uppercase text-orchid-red mb-1">Needs review</p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {weak.map((c) => (
+                          <Link key={c.id} href={`/learn?concept=${encodeURIComponent(c.id)}`} className="text-xs font-mono border border-orchid-border px-2 py-1 hover:border-orchid-blue hover:text-orchid-blue">
+                            {c.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  {strong.length > 0 && (
+                    <div>
+                      <p className="font-mono text-[11px] uppercase text-orchid-green mb-1">Strong</p>
+                      <p className="font-mono text-xs text-orchid-secondary">{strong.join(', ')}</p>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
+
+      {onStartPractice && (
+        <div className="text-center">
+          <button type="button" onClick={onStartPractice} className="border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-10 h-12 font-mono text-sm">
+            Start practicing →
+          </button>
+          <div className="mt-3">
+            <Link href="/history" className="font-mono text-xs text-orchid-muted hover:text-orchid-primary">
+              Every question you&apos;ve answered →
+            </Link>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}

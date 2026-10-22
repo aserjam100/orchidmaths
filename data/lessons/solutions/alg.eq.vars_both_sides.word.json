@@ -1,0 +1,19 @@
+{
+  "concept": "alg.eq.vars_both_sides.word",
+  "setup": "[[a]] charges $[[joinA]] to join and $[[perA]] per [[unit]]. [[b]] charges $[[joinB]] to join and $[[perB]] per [[unit]].",
+  "steps": [
+    {
+      "fact": "perA",
+      "say": "With n for the number of [[unit]]s, [[a]] costs $[[joinA]] + [[perA]]n."
+    },
+    {
+      "fact": "perB",
+      "say": "[[b]] costs $[[joinB]] + [[perB]]n, so set the two expressions equal."
+    },
+    {
+      "fact": "gap",
+      "say": "Collecting gives [[diff]]n = [[gap]], and n = [[uses]]."
+    }
+  ],
+  "answer": "After [[uses]] [[unit]]s the two [[thing]]s cost the same."
+}

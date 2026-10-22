@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Measuring to the neighbours",
+    "section": "Measuring to the neighbours",
+    "subgoals": [
+      "Describe the method",
+      "Use Euclidean distance",
+      "Decide the label from neighbours"
+    ]
+  },
+  {
+    "label": "Squared distances",
+    "section": "Squared distances",
+    "subgoals": [
+      "Compare squared distances",
+      "Say why the square root is skipped",
+      "Compute one"
+    ]
+  },
+  {
+    "label": "Choosing k",
+    "section": "Choosing k",
+    "subgoals": [
+      "Explain why k > 1 is smoother",
+      "Choose k by validation",
+      "Note the cost at prediction time"
+    ]
+  }
+]

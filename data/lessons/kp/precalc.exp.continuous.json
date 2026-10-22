@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The limit of more frequent compounding",
+    "section": "The limit of more frequent compounding",
+    "subgoals": [
+      "Take the limit of P(1+r/n)^(nt)",
+      "Recognise e^(rt)",
+      "Read P and r from the problem"
+    ]
+  },
+  {
+    "label": "Worked: doubling with continuous compounding",
+    "section": "Worked: doubling with continuous compounding",
+    "subgoals": [
+      "Take P = 1000 and r = 0.05",
+      "Write A(t) = 1000 e^(0.05t)",
+      "Evaluate at t = 10"
+    ]
+  },
+  {
+    "label": "Why e appears",
+    "section": "Why e appears",
+    "subgoals": [
+      "Use the limit defining e",
+      "Compare annual and continuous growth",
+      "Note continuous is the upper bound"
+    ]
+  }
+]

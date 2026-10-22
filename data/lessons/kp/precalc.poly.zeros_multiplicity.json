@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What multiplicity means",
+    "section": "What multiplicity means",
+    "subgoals": [
+      "Read a multiplicity from a factored form",
+      "Add the multiplicities to get the degree",
+      "Distinguish it from a simple zero"
+    ]
+  },
+  {
+    "label": "Even and odd multiplicities",
+    "section": "Even and odd multiplicities",
+    "subgoals": [
+      "Describe an even-multiplicity touch",
+      "Describe an odd-multiplicity crossing",
+      "Predict the graph's shape at a zero"
+    ]
+  },
+  {
+    "label": "Finding the multiplicity",
+    "section": "Finding the multiplicity",
+    "subgoals": [
+      "Use the exponent when factored",
+      "Differentiate to find it",
+      "Check it against the degree"
+    ]
+  }
+]

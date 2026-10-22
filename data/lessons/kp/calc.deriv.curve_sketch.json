@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Sketching strategy",
+    "section": "",
+    "subgoals": [
+      "Combine intercepts and asymptotes",
+      "Add critical points and concavity",
+      "Assemble the full sketch for x^3-3x"
+    ]
+  },
+  {
+    "label": "Critical points in sketches",
+    "section": "",
+    "subgoals": [
+      "Mark critical points first",
+      "Note increasing vs decreasing intervals",
+      "Check x^2 increases on (0, infinity)"
+    ]
+  },
+  {
+    "label": "Inflection in sketches",
+    "section": "",
+    "subgoals": [
+      "Mark inflection points on the sketch",
+      "Show concavity flips visually",
+      "Confirm 1/x asymptotes x = 0, y = 0"
+    ]
+  }
+]

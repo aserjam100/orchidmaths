@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Measuring from north",
+    "section": "Measuring from north",
+    "subgoals": [
+      "Start the measurement at north",
+      "Turn clockwise for the angle",
+      "Keep the result in the first full turn"
+    ]
+  },
+  {
+    "label": "Converting from a described course",
+    "section": "Converting from a described course",
+    "subgoals": [
+      "Place the course in its quadrant",
+      "Choose the quadrant formula",
+      "Add or subtract from the north or south axis"
+    ]
+  },
+  {
+    "label": "Bearings in triangle problems",
+    "section": "Bearings in triangle problems",
+    "subgoals": [
+      "Draw each leg as a ray",
+      "Find the angle between the legs",
+      "Solve the triangle and reverse the final bearing"
+    ]
+  }
+]

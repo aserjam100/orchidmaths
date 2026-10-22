@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: rank from singular values 5, 2, 0",
+    "section": "Worked: rank from singular values 5, 2, 0",
+    "subgoals": [
+      "Count nonzero: 2",
+      "Truncate to top 1",
+      "Read compressibility"
+    ]
+  },
+  {
+    "label": "Worked: largest singular value from A^TA",
+    "section": "Worked: largest singular value from A^TA",
+    "subgoals": [
+      "Take root-eigenvalues",
+      "Pick sqrt(9) = 3",
+      "Name the top stretch"
+    ]
+  },
+  {
+    "label": "Vectors",
+    "section": "Vectors",
+    "subgoals": [
+      "Pair u_i with v_i",
+      "Check Av_i = s_i u_i",
+      "Align both bases"
+    ]
+  }
+]

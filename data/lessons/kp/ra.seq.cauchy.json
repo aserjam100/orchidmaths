@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The definition",
+    "section": "The definition",
+    "subgoals": [
+      "Fix epsilon",
+      "Compare two later terms directly",
+      "Apply the triangle inequality"
+    ]
+  },
+  {
+    "label": "Cauchy and convergent",
+    "section": "Cauchy and convergent",
+    "subgoals": [
+      "Show Cauchy implies bounded",
+      "Use a convergent subsequence",
+      "Pull the tail to the subsequence limit"
+    ]
+  },
+  {
+    "label": "Worked: the rationals are incomplete",
+    "section": "Worked: the rationals are incomplete",
+    "subgoals": [
+      "Form the truncated expansions",
+      "Show the terms are eventually close",
+      "Show no rational limit exists"
+    ]
+  }
+]

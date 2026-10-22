@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Refining a subgroup chain until the factors are simple",
+    "section": "Refining a subgroup chain until the factors are simple",
+    "subgoals": [
+      "Start from a normal series",
+      "Lift a normal subgroup of a quotient",
+      "Insert it and repeat"
+    ]
+  },
+  {
+    "label": "Worked: the composition factors of Z_12",
+    "section": "Worked: the composition factors of Z_12",
+    "subgoals": [
+      "Build the chain by subgroup orders",
+      "Compute each quotient",
+      "Read off Z_2, Z_2, Z_3"
+    ]
+  },
+  {
+    "label": "Jordan-Holder and solvable groups",
+    "section": "Jordan-Holder and solvable groups",
+    "subgoals": [
+      "Compare two series factor by factor",
+      "State the factor multiset is invariant",
+      "Characterize solvable groups by prime-cyclic factors"
+    ]
+  }
+]

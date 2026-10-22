@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: Whitney's target dimension",
+    "section": "Worked: Whitney's target dimension",
+    "subgoals": [
+      "Map generically into R^2n",
+      "Push apart the double points",
+      "Check the subspace topology matches"
+    ]
+  },
+  {
+    "label": "Worked: the circle in the plane",
+    "section": "Worked: the circle in the plane",
+    "subgoals": [
+      "Parametrize by angle",
+      "Check the derivative never vanishes",
+      "Match the subspace topology"
+    ]
+  },
+  {
+    "label": "Worked: wild versus tame",
+    "section": "Worked: wild versus tame",
+    "subgoals": [
+      "Bound balls on both sides of the round sphere",
+      "Find the non-simply-connected horned complement",
+      "Conclude placement matters"
+    ]
+  }
+]

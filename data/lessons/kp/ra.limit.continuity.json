@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The definition",
+    "section": "The definition",
+    "subgoals": [
+      "Compare the limit with the value",
+      "Remove the punctured condition",
+      "Recognise a discontinuity of the value"
+    ]
+  },
+  {
+    "label": "The algebra of continuity",
+    "section": "The algebra of continuity",
+    "subgoals": [
+      "Add and multiply continuous functions",
+      "Guard the denominator against zero",
+      "Compose continuous functions"
+    ]
+  },
+  {
+    "label": "Elementary functions",
+    "section": "Elementary functions",
+    "subgoals": [
+      "Build polynomials from products and sums",
+      "Locate the rational discontinuities",
+      "State the domain of each elementary function"
+    ]
+  }
+]

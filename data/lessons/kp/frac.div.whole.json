@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Divide fractions",
+    "section": "",
+    "subgoals": [
+      "Rewrite the whole number as a fraction",
+      "Multiply by its reciprocal",
+      "Simplify the result"
+    ]
+  },
+  {
+    "label": "Fraction division rule",
+    "section": "",
+    "subgoals": [
+      "State the division rule",
+      "Apply it with whole divisors",
+      "Check the quotient"
+    ]
+  },
+  {
+    "label": "Find reciprocals",
+    "section": "",
+    "subgoals": [
+      "Find the reciprocal of the whole number",
+      "Verify the product is 1",
+      "Use it in the division"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two coupled populations",
+    "section": "Two coupled populations",
+    "subgoals": [
+      "Read the prey and predator terms",
+      "Set x' = 0 for y = a/b",
+      "Set y' = 0 for x = c/d"
+    ]
+  },
+  {
+    "label": "Worked: the nonzero equilibrium",
+    "section": "Worked: the nonzero equilibrium",
+    "subgoals": [
+      "Take a=2, b=1, c=3, d=1",
+      "Compute x = 3",
+      "Compute y = 2"
+    ]
+  },
+  {
+    "label": "Cycles and linearization",
+    "section": "Cycles and linearization",
+    "subgoals": [
+      "Linearize at the equilibrium",
+      "Find purely imaginary eigenvalues",
+      "Use the conserved quantity for closed orbits"
+    ]
+  }
+]

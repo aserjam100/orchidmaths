@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The equal sides and angles",
+    "section": "The equal sides and angles",
+    "subgoals": [
+      "Define the vertex angle",
+      "State that base angles are equal",
+      "Find the angles from one"
+    ]
+  },
+  {
+    "label": "The symmetry",
+    "section": "The symmetry",
+    "subgoals": [
+      "Name the axis of symmetry",
+      "List what it bisects",
+      "Use it in a problem"
+    ]
+  },
+  {
+    "label": "Working backwards",
+    "section": "Working backwards",
+    "subgoals": [
+      "Use the converse",
+      "Recognise isosceles from angles",
+      "Choose sides or angles"
+    ]
+  }
+]

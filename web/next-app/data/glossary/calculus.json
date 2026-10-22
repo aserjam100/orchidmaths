@@ -1,0 +1,1334 @@
+[
+  {
+    "id": "limit",
+    "symbol": "lim",
+    "latex": "\\lim",
+    "name": "Limit",
+    "aliases": [
+      "limit",
+      "lim",
+      "approaches",
+      "tends to",
+      "one-sided limit"
+    ],
+    "category": "calculus",
+    "definition": "Describes the value a function approaches as its input approaches some point. The function need not attain the limit there; behavior nearby is what counts.",
+    "reading": "“the limit as x approaches a of f of x”.",
+    "examples": [
+      {
+        "tex": "\\lim_{x \\to 2} x^2 = 4",
+        "explanation": "x² gets arbitrarily close to 4 near x = 2."
+      }
+    ],
+    "relatedSymbols": [
+      "mapping-arrow",
+      "epsilon-delta",
+      "infinity",
+      "continuity-note"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "derivative-lagrange",
+    "symbol": "f′(x)",
+    "latex": "f'(x)",
+    "name": "Derivative (Lagrange notation)",
+    "aliases": [
+      "derivative",
+      "f prime",
+      "prime notation",
+      "rate of change",
+      "lagrange notation"
+    ],
+    "category": "calculus",
+    "definition": "Gives the instantaneous rate of change of f at x: the slope of the tangent line. It is itself a function, the limit of average rates over shrinking intervals.",
+    "reading": "“f prime of x”.",
+    "examples": [
+      {
+        "tex": "f(x) = x^2 \\Rightarrow f'(x) = 2x",
+        "explanation": "At x = 3 the graph climbs with slope 6."
+      }
+    ],
+    "relatedSymbols": [
+      "derivative-leibniz",
+      "slope",
+      "limit",
+      "partial-derivative"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "derivative-leibniz",
+    "symbol": "dy/dx",
+    "latex": "\\frac{dy}{dx}",
+    "name": "Derivative (Leibniz notation)",
+    "aliases": [
+      "dy dx",
+      "leibniz notation",
+      "d dx",
+      "differential quotient",
+      "derivative fraction"
+    ],
+    "category": "calculus",
+    "definition": "Writes the derivative as a ratio of differentials: the change in y per change in x. It keeps the variable visible, which helps with the chain rule and related rates.",
+    "reading": "“d y by d x”.",
+    "examples": [
+      {
+        "tex": "\\frac{dy}{dx} = 2x \\quad \\text{for } y = x^2",
+        "explanation": "Same derivative as f′(x), with the variable shown."
+      }
+    ],
+    "relatedSymbols": [
+      "derivative-lagrange",
+      "differential",
+      "delta-difference",
+      "partial-derivative"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "partial-derivative",
+    "symbol": "∂",
+    "latex": "\\partial",
+    "name": "Partial derivative",
+    "aliases": [
+      "partial",
+      "partial derivative",
+      "del",
+      "curly d",
+      "partial differential"
+    ],
+    "category": "calculus",
+    "definition": "Differentiates a function of several variables with respect to one of them, holding the others fixed. The rounded ∂ distinguishes it from the ordinary d.",
+    "reading": "“partial of f with respect to x”.",
+    "examples": [
+      {
+        "tex": "f(x, y) = x^2 y \\Rightarrow \\frac{\\partial f}{\\partial x} = 2xy",
+        "explanation": "Treat y as a constant and differentiate in x."
+      }
+    ],
+    "commonMistakes": [
+      "Reading ∂ as a Greek delta; it is a distinct symbol for partial change."
+    ],
+    "relatedSymbols": [
+      "derivative-leibniz",
+      "differential",
+      "nabla-gradient",
+      "delta-letter"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "differential",
+    "symbol": "dx",
+    "latex": "dx",
+    "name": "Differential",
+    "aliases": [
+      "differential",
+      "dx",
+      "infinitesimal",
+      "dy",
+      "total differential"
+    ],
+    "category": "calculus",
+    "definition": "Denotes an infinitesimal change in a variable. Differentials appear in integrals (dx marks the variable), in derivative ratios, and in linear approximations dy ≈ f′(x)dx.",
+    "reading": "“d x”.",
+    "examples": [
+      {
+        "tex": "dy = 2x\\,dx",
+        "explanation": "For y = x², a small step dx changes y by about 2x·dx."
+      }
+    ],
+    "relatedSymbols": [
+      "derivative-leibniz",
+      "integral",
+      "partial-derivative"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "integral",
+    "symbol": "∫",
+    "latex": "\\int",
+    "name": "Integral",
+    "aliases": [
+      "integral",
+      "antiderivative",
+      "indefinite integral",
+      "definite integral",
+      "area under curve",
+      "long s"
+    ],
+    "category": "calculus",
+    "definition": "Accumulates a quantity: area under a curve, total from a rate, or an antiderivative. A definite integral carries limits and evaluates to a number; an indefinite one carries +C and gives a family of functions.",
+    "reading": "“the integral of f of x d x”.",
+    "examples": [
+      {
+        "tex": "\\int x^2\\,dx = \\frac{x^3}{3} + C",
+        "explanation": "Differentiating x³/3 returns x², so it is an antiderivative."
+      },
+      {
+        "tex": "\\int_0^1 x\\,dx = \\frac{1}{2}",
+        "explanation": "The triangular area under y = x from 0 to 1."
+      }
+    ],
+    "relatedSymbols": [
+      "differential",
+      "derivative-leibniz",
+      "double-integral",
+      "riemann-sum"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "double-integral",
+    "symbol": "∬",
+    "latex": "\\iint",
+    "name": "Double integral",
+    "aliases": [
+      "double integral",
+      "iint",
+      "surface integral flat",
+      "iterated integral"
+    ],
+    "category": "calculus",
+    "definition": "Integrates a function of two variables over a region: volume under a surface, or mass from a density. It is usually evaluated as two nested single integrals.",
+    "reading": "“the double integral over R of f”.",
+    "examples": [
+      {
+        "tex": "\\iint_R 1\\,dA",
+        "explanation": "Integrating 1 over R gives the area of R."
+      }
+    ],
+    "relatedSymbols": [
+      "integral",
+      "triple-integral",
+      "line-integral",
+      "partial-derivative"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "triple-integral",
+    "symbol": "∭",
+    "latex": "\\iiint",
+    "name": "Triple integral",
+    "aliases": [
+      "triple integral",
+      "iiint",
+      "volume integral"
+    ],
+    "category": "calculus",
+    "definition": "Integrates a function of three variables over a solid: hypervolume, or mass from a 3D density. Evaluated as three nested single integrals.",
+    "reading": "“the triple integral over E of f”.",
+    "examples": [
+      {
+        "tex": "\\iiint_E 1\\,dV",
+        "explanation": "Integrating 1 over E gives the volume of E."
+      }
+    ],
+    "relatedSymbols": [
+      "double-integral",
+      "integral",
+      "line-integral"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "line-integral",
+    "symbol": "∫_C",
+    "latex": "\\int_C",
+    "name": "Line integral",
+    "aliases": [
+      "line integral",
+      "path integral",
+      "curve integral",
+      "contour integral open",
+      "work integral"
+    ],
+    "category": "calculus",
+    "definition": "Integrates along a curve C rather than an interval: work done by a force field, or total of a scalar field along a path.",
+    "reading": "“the integral over the curve C”.",
+    "examples": [
+      {
+        "tex": "\\int_C \\mathbf{F} \\cdot d\\mathbf{r}",
+        "explanation": "Work of the force field F along path C."
+      }
+    ],
+    "relatedSymbols": [
+      "integral",
+      "contour-integral",
+      "vector-arrow",
+      "double-integral"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "contour-integral",
+    "symbol": "∮",
+    "latex": "\\oint",
+    "name": "Contour (closed-loop) integral",
+    "aliases": [
+      "contour integral",
+      "oint",
+      "closed loop integral",
+      "circulation",
+      "closed contour"
+    ],
+    "category": "calculus",
+    "definition": "A line integral around a closed loop, marked by the circle on the integral sign. It measures circulation of a field or, in complex analysis, picks up enclosed singularities.",
+    "reading": "“the integral around the closed curve”.",
+    "examples": [
+      {
+        "tex": "\\oint_C \\mathbf{F} \\cdot d\\mathbf{r}",
+        "explanation": "Net circulation of F around the loop C."
+      }
+    ],
+    "relatedSymbols": [
+      "line-integral",
+      "integral",
+      "curl"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "nabla-gradient",
+    "symbol": "∇",
+    "latex": "\\nabla",
+    "name": "Nabla (gradient)",
+    "aliases": [
+      "nabla",
+      "del operator",
+      "gradient",
+      "grad",
+      "upside down delta"
+    ],
+    "category": "calculus",
+    "relatedCategories": [
+      "linear-discrete"
+    ],
+    "definition": "The vector differential operator (∂/∂x, ∂/∂y, ∂/∂z). Applied to a scalar field it gives the gradient: the direction and rate of steepest increase.",
+    "reading": "“del” or “the gradient of f”.",
+    "examples": [
+      {
+        "tex": "\\nabla f = \\left(\\frac{\\partial f}{\\partial x}, \\frac{\\partial f}{\\partial y}\\right)",
+        "explanation": "Gradient of a two-variable function."
+      }
+    ],
+    "relatedSymbols": [
+      "partial-derivative",
+      "divergence",
+      "curl",
+      "laplacian"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "divergence",
+    "symbol": "∇·F",
+    "latex": "\\nabla \\cdot \\mathbf{F}",
+    "name": "Divergence",
+    "aliases": [
+      "divergence",
+      "div F",
+      "del dot",
+      "source density",
+      "flux density"
+    ],
+    "category": "calculus",
+    "definition": "Measures how much a vector field spreads out from each point: positive divergence marks a source, negative a sink. It is a scalar built from partial derivatives.",
+    "reading": "“the divergence of F”.",
+    "examples": [
+      {
+        "tex": "\\nabla \\cdot (x, y) = 2",
+        "explanation": "The field flows outward everywhere at rate 2."
+      }
+    ],
+    "relatedSymbols": [
+      "nabla-gradient",
+      "curl",
+      "laplacian",
+      "partial-derivative"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "curl",
+    "symbol": "∇×F",
+    "latex": "\\nabla \\times \\mathbf{F}",
+    "name": "Curl",
+    "aliases": [
+      "curl",
+      "rotation field",
+      "del cross",
+      "vorticity"
+    ],
+    "category": "calculus",
+    "definition": "Measures the rotation of a vector field at each point: the axis and strength a paddle wheel would spin. Zero curl means locally rotation-free.",
+    "reading": "“the curl of F”.",
+    "examples": [
+      {
+        "tex": "\\nabla \\times (-y, x) = 2\\mathbf{k}",
+        "explanation": "Uniform counterclockwise rotation about the z-axis."
+      }
+    ],
+    "relatedSymbols": [
+      "nabla-gradient",
+      "divergence",
+      "cross-product",
+      "contour-integral"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "laplacian",
+    "symbol": "∇²",
+    "latex": "\\nabla^2",
+    "name": "Laplacian",
+    "aliases": [
+      "laplacian",
+      "del squared",
+      "nabla squared",
+      "laplace operator",
+      "harmonic operator"
+    ],
+    "category": "calculus",
+    "definition": "The divergence of the gradient: the sum of unmixed second partials. It measures how a value differs from its local average, and appears in heat, wave and potential equations.",
+    "reading": "“the Laplacian of f”.",
+    "examples": [
+      {
+        "tex": "\\nabla^2 f = \\frac{\\partial^2 f}{\\partial x^2} + \\frac{\\partial^2 f}{\\partial y^2}",
+        "explanation": "Laplacian in two variables."
+      }
+    ],
+    "relatedSymbols": [
+      "nabla-gradient",
+      "divergence",
+      "partial-derivative"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "epsilon-delta",
+    "symbol": "ε–δ",
+    "latex": "\\epsilon\\text{-}\\delta",
+    "name": "Epsilon-delta definition",
+    "aliases": [
+      "epsilon delta",
+      "rigorous limit",
+      "for every epsilon",
+      "limit definition"
+    ],
+    "category": "calculus",
+    "definition": "Makes “approaches” precise: lim(x→a) f(x) = L means every error tolerance ε around L can be met by keeping x within some distance δ of a.",
+    "reading": "“for every epsilon there exists a delta”.",
+    "examples": [
+      {
+        "tex": "\\forall \\epsilon > 0\\; \\exists \\delta > 0: |x - a| < \\delta \\Rightarrow |f(x) - L| < \\epsilon",
+        "explanation": "Closeness in output is guaranteed by closeness in input."
+      }
+    ],
+    "relatedSymbols": [
+      "epsilon",
+      "delta-letter",
+      "limit",
+      "forall",
+      "exists"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "infinity",
+    "symbol": "∞",
+    "latex": "\\infty",
+    "name": "Infinity",
+    "aliases": [
+      "infinity",
+      "infinite",
+      "lemniscate",
+      "endless"
+    ],
+    "category": "calculus",
+    "definition": "Denotes unboundedness: growth beyond any bound, or a limit taken arbitrarily far out. It is not a number, so it follows special arithmetic rules.",
+    "reading": "“infinity”.",
+    "examples": [
+      {
+        "tex": "\\lim_{x \\to \\infty} \\frac{1}{x} = 0",
+        "explanation": "One over x vanishes as x grows without bound."
+      },
+      {
+        "tex": "[0, \\infty)",
+        "explanation": "All nonnegative numbers; infinity takes a parenthesis."
+      }
+    ],
+    "commonMistakes": [
+      "Treating ∞ − ∞ as 0; it is indeterminate without further analysis."
+    ],
+    "relatedSymbols": [
+      "limit",
+      "interval",
+      "supremum"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "supremum",
+    "symbol": "sup",
+    "latex": "\\sup",
+    "name": "Supremum",
+    "aliases": [
+      "supremum",
+      "sup",
+      "least upper bound",
+      "lub"
+    ],
+    "category": "calculus",
+    "definition": "The least upper bound of a set: no member exceeds it, and any smaller number is exceeded by some member. It need not belong to the set.",
+    "reading": "“the supremum of S”.",
+    "examples": [
+      {
+        "tex": "\\sup (0, 1) = 1",
+        "explanation": "Nothing in the open interval reaches 1, yet nothing smaller bounds it."
+      }
+    ],
+    "relatedSymbols": [
+      "infimum",
+      "infinity",
+      "interval",
+      "limit"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "infimum",
+    "symbol": "inf",
+    "latex": "\\inf",
+    "name": "Infimum",
+    "aliases": [
+      "infimum",
+      "inf",
+      "greatest lower bound",
+      "glb"
+    ],
+    "category": "calculus",
+    "definition": "The greatest lower bound of a set: no member goes below it, and any larger number is undercut by some member.",
+    "reading": "“the infimum of S”.",
+    "examples": [
+      {
+        "tex": "\\inf (0, 1) = 0",
+        "explanation": "Zero bounds the interval below without belonging to it."
+      }
+    ],
+    "relatedSymbols": [
+      "supremum",
+      "infinity",
+      "interval",
+      "limit"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "euler-number",
+    "symbol": "e",
+    "latex": "e",
+    "name": "Euler's number",
+    "aliases": [
+      "euler number",
+      "e constant",
+      "2.71828",
+      "natural base",
+      "exponential base"
+    ],
+    "category": "calculus",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "The base of natural logarithms, about 2.71828. It arises from continuous growth and has the defining property that eˣ is its own derivative.",
+    "reading": "“e”.",
+    "examples": [
+      {
+        "tex": "e = \\lim_{n \\to \\infty} \\left(1 + \\frac{1}{n}\\right)^n",
+        "explanation": "The compound-interest limit defining e."
+      },
+      {
+        "tex": "e^{i\\pi} + 1 = 0",
+        "explanation": "Euler's identity links e, i, pi, 1 and 0."
+      }
+    ],
+    "relatedSymbols": [
+      "exponential-exp",
+      "natural-log",
+      "limit",
+      "euler-identity"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Precalculus 2e",
+        "url": "https://openstax.org/details/books/precalculus-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 4",
+        "url": "https://dlmf.nist.gov/4",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "riemann-sum",
+    "symbol": "Σ f(xᵢ)Δx",
+    "latex": "\\sum f(x_i)\\Delta x",
+    "name": "Riemann sum",
+    "aliases": [
+      "riemann sum",
+      "left endpoint",
+      "right endpoint",
+      "midpoint rule",
+      "trapezoid rule",
+      "rectangle approximation"
+    ],
+    "category": "calculus",
+    "definition": "Approximates an integral by rectangles: sample the function in each subinterval, multiply by the width, and add. Finer subdivisions give better approximations; the limit is the integral.",
+    "reading": "“the sum of f of x-i times delta x”.",
+    "examples": [
+      {
+        "tex": "\\sum_{i=1}^{n} f(x_i)\\,\\Delta x \\to \\int_a^b f(x)\\,dx",
+        "explanation": "As rectangles narrow, the sum tends to the integral."
+      }
+    ],
+    "relatedSymbols": [
+      "summation-sigma",
+      "integral",
+      "delta-difference",
+      "limit"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "continuity-note",
+    "symbol": "continuous",
+    "latex": "\\text{continuous}",
+    "name": "Continuity",
+    "aliases": [
+      "continuous",
+      "continuity",
+      "no jumps",
+      "draw without lifting"
+    ],
+    "category": "calculus",
+    "definition": "A function is continuous at a point when its limit there equals its value: no jump, break or hole. Polynomials, exponentials, sines and cosines are continuous everywhere they are defined.",
+    "reading": "“f is continuous at a”.",
+    "examples": [
+      {
+        "tex": "\\lim_{x \\to a} f(x) = f(a)",
+        "explanation": "The three-part test: defined, limit exists, and they agree."
+      }
+    ],
+    "relatedSymbols": [
+      "limit",
+      "derivative-lagrange",
+      "interval"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ],
+    "notes": "Continuity has no single standard symbol; the entry covers the concept because limits and derivatives depend on it."
+  },
+  {
+    "id": "lhopital-rule",
+    "symbol": "lim f/g",
+    "latex": "\\lim_{x \\to c} \\frac{f(x)}{g(x)}",
+    "name": "L'Hôpital's rule",
+    "aliases": [
+      "lhopital",
+      "lhopital rule",
+      "0/0 limit",
+      "indeterminate form",
+      "hospital rule"
+    ],
+    "category": "calculus",
+    "definition": "For 0/0 or ∞/∞ limits with f and g differentiable near c (and g′ nonzero there), the limit of f/g equals the limit of f′/g′ when the latter exists. Confirm the indeterminate form first; the rule never applies otherwise.",
+    "reading": "“the limit of f over g”.",
+    "examples": [
+      {
+        "tex": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = \\lim_{x \\to 0} \\cos x = 1",
+        "explanation": "Both top and bottom vanish at 0, so differentiate each: cosine at 0 is 1."
+      }
+    ],
+    "commonMistakes": [
+      "Applying the rule to a limit that is not 0/0 or ∞/∞."
+    ],
+    "relatedSymbols": [
+      "limit",
+      "derivative-leibniz",
+      "infinity",
+      "sine"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "chain-rule",
+    "symbol": "dy/dx = dy/du · du/dx",
+    "latex": "\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}",
+    "name": "Chain rule",
+    "aliases": [
+      "chain rule",
+      "composite derivative",
+      "outside inside derivative",
+      "dydu dudx"
+    ],
+    "category": "calculus",
+    "definition": "Differentiates a composition: differentiate the outer function evaluated at the inner value, then multiply by the inner function's derivative.",
+    "reading": "“d y by d x equals d y by d u times d u by d x”.",
+    "examples": [
+      {
+        "tex": "\\frac{d}{dx}(3x+1)^2 = 2(3x+1) \\cdot 3",
+        "explanation": "Outer derivative 2(3x+1) times inner derivative 3."
+      }
+    ],
+    "relatedSymbols": [
+      "derivative-leibniz",
+      "composition",
+      "derivative-lagrange",
+      "power"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "integration-by-parts",
+    "symbol": "∫u dv",
+    "latex": "\\int u\\,dv",
+    "name": "Integration by parts",
+    "aliases": [
+      "integration by parts",
+      "u dv minus v du",
+      "product antiderivative",
+      "IBP",
+      "parts formula"
+    ],
+    "category": "calculus",
+    "definition": "Integrates products by shifting the derivative: ∫u dv = uv − ∫v du. Pick u to simplify under differentiation (logarithms, powers) and dv to integrate easily (exponentials, sines).",
+    "reading": "“the integral of u d v”.",
+    "examples": [
+      {
+        "tex": "\\int x e^x\\,dx = x e^x - e^x + C",
+        "explanation": "With u = x and dv = e^x dx: uv minus the integral of v du."
+      }
+    ],
+    "relatedSymbols": [
+      "integral",
+      "derivative-lagrange",
+      "product-notation",
+      "exponential-exp"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 2",
+        "url": "https://openstax.org/details/books/calculus-volume-2",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "taylor-series",
+    "symbol": "Σ f⁽ⁿ⁾(a)/n! (x−a)ⁿ",
+    "latex": "\\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n",
+    "name": "Taylor series",
+    "aliases": [
+      "taylor series",
+      "maclaurin series",
+      "power series expansion",
+      "polynomial approximation",
+      "taylor polynomial"
+    ],
+    "category": "calculus",
+    "relatedCategories": [
+      "algebra"
+    ],
+    "definition": "Rebuilds a smooth function from its derivatives at one point: matching value, slope, curvature and beyond. Centered at zero it is called a Maclaurin series; stopping after finitely many terms gives polynomial approximations.",
+    "reading": "“the Taylor series of f at a”.",
+    "examples": [
+      {
+        "tex": "e^x = \\sum_{n=0}^{\\infty} \\frac{x^n}{n!}",
+        "explanation": "Every derivative of eˣ at zero is 1, leaving the cleanest series of all."
+      }
+    ],
+    "relatedSymbols": [
+      "summation-sigma",
+      "power",
+      "derivative-lagrange",
+      "euler-number",
+      "factorial"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 2",
+        "url": "https://openstax.org/details/books/calculus-volume-2",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "fundamental-theorem-calculus",
+    "symbol": "∫ₐᵇ f = F(b) − F(a)",
+    "latex": "\\int_a^b f = F(b) - F(a)",
+    "name": "Fundamental theorem of calculus",
+    "aliases": [
+      "fundamental theorem",
+      "FTC",
+      "antiderivative evaluation",
+      "differentiation integration inverse",
+      "net change theorem"
+    ],
+    "category": "calculus",
+    "definition": "Links differentiation and integration in two parts: differentiating an accumulated area recovers the function, and a definite integral equals any antiderivative's net change. It turns area problems into antiderivative evaluations.",
+    "reading": "“the fundamental theorem of calculus”.",
+    "examples": [
+      {
+        "tex": "\\int_0^1 2x\\,dx = 1^2 - 0^2 = 1",
+        "explanation": "An antiderivative is x²; evaluate at the endpoints and subtract."
+      }
+    ],
+    "relatedSymbols": [
+      "integral",
+      "derivative-leibniz",
+      "continuity-note"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "mean-value-theorem",
+    "symbol": "f′(c)",
+    "latex": "f'(c)",
+    "name": "Mean value theorem",
+    "aliases": [
+      "mean value theorem",
+      "MVT",
+      "rolle theorem",
+      "average slope attained",
+      "lagrange MVT"
+    ],
+    "category": "calculus",
+    "definition": "On a smooth interval, the average slope is attained somewhere inside: some c has f′(c) = (f(b) − f(a))/(b − a). It needs continuity on the closed interval and differentiability inside; Rolle's theorem is the flat case.",
+    "reading": "“the mean value theorem”.",
+    "examples": [
+      {
+        "tex": "f(x) = x^2,\\; [0, 2]:\\; 2c = 2",
+        "explanation": "Average slope 2 is attained at c = 1, inside the interval."
+      }
+    ],
+    "relatedSymbols": [
+      "derivative-lagrange",
+      "slope",
+      "limit",
+      "continuity-note"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "improper-integral",
+    "symbol": "∫₁^∞",
+    "latex": "\\int_1^\\infty",
+    "name": "Improper integral",
+    "aliases": [
+      "improper integral",
+      "infinite limit integral",
+      "unbounded integrand",
+      "convergent integral",
+      "divergent integral"
+    ],
+    "category": "calculus",
+    "definition": "An integral over an unbounded interval or of an unbounded function, defined as a limit of proper integrals. It converges when the limit exists finitely — infinite reach does not imply infinite area.",
+    "reading": "“the improper integral from 1 to infinity”.",
+    "examples": [
+      {
+        "tex": "\\int_1^\\infty \\frac{dx}{x^2} = 1",
+        "explanation": "Truncating at b gives 1 − 1/b, which tends to 1: finite area under an endless tail."
+      }
+    ],
+    "commonMistakes": [
+      "Assuming an infinite interval always gives infinity; convergence must be checked."
+    ],
+    "relatedSymbols": [
+      "integral",
+      "limit",
+      "infinity",
+      "riemann-sum"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 2",
+        "url": "https://openstax.org/details/books/calculus-volume-2",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "metric-space",
+    "symbol": "d(x, y)",
+    "latex": "d(x, y)",
+    "name": "Metric space",
+    "aliases": [
+      "metric space",
+      "distance function",
+      "metric",
+      "metrizable",
+      "triangle inequality"
+    ],
+    "category": "calculus",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "A set equipped with a distance function d satisfying: distances are nonnegative, zero only for identical points, symmetric, and obey the triangle inequality d(x,z) ≤ d(x,y) + d(y,z). Metrics turn sets into geometric spaces where convergence makes sense.",
+    "reading": "“the metric space”.",
+    "examples": [
+      {
+        "tex": "d(x, y) = |x - y|",
+        "explanation": "The usual distance on the real line; all four axioms are elementary absolute-value facts."
+      }
+    ],
+    "relatedSymbols": [
+      "absolute-value",
+      "limit",
+      "real-numbers",
+      "cauchy-sequence"
+    ],
+    "sources": [
+      {
+        "label": "UBC Real Analysis notes, metric completeness (Rechnitzer/Martens)",
+        "url": "https://arechnitzer.gitlab.io/m319text/sec_metric_complete.html",
+        "license": "Author/university course notes; consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "cauchy-sequence",
+    "symbol": "∀ε>0",
+    "latex": "\\forall \\varepsilon > 0",
+    "name": "Cauchy sequence",
+    "aliases": [
+      "cauchy sequence",
+      "fundamental sequence",
+      "complete metric space",
+      "cauchy criterion",
+      "terms get close"
+    ],
+    "category": "calculus",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "A sequence whose terms get arbitrarily close to each other: for every ε > 0, all sufficiently late terms lie within ε. Every convergent sequence is Cauchy; a space is complete when the converse holds and every Cauchy sequence has its limit inside.",
+    "reading": "“Cauchy sequence”.",
+    "examples": [
+      {
+        "tex": "a_n = \\frac{1}{n} \\text{ in } (0, 1)",
+        "explanation": "Terms cluster together, but the limit 0 is missing from (0,1): Cauchy without converging there, so (0,1) is incomplete."
+      }
+    ],
+    "relatedSymbols": [
+      "sequence-term",
+      "limit",
+      "metric-space",
+      "real-numbers"
+    ],
+    "sources": [
+      {
+        "label": "UBC Real Analysis notes, metric completeness (Rechnitzer/Martens)",
+        "url": "https://arechnitzer.gitlab.io/m319text/sec_metric_complete.html",
+        "license": "Author/university course notes; consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "ordinary-differential-equation",
+    "symbol": "y′ = f(x, y)",
+    "latex": "y' = f(x, y)",
+    "name": "Ordinary differential equation",
+    "aliases": [
+      "ODE",
+      "ordinary differential equation",
+      "first order ODE",
+      "linear ODE",
+      "homogeneous ODE",
+      "order of equation"
+    ],
+    "category": "calculus",
+    "definition": "An equation for an unknown function of one variable involving its derivatives. The order is the highest derivative present; linear means y and its derivatives appear only to the first power, unmultiplied together.",
+    "reading": "“an O D E”.",
+    "examples": [
+      {
+        "tex": "y' = ky,\\quad y = Ce^{kt}",
+        "explanation": "Differentiating Ce^{kt} gives kCe^{kt}: exponential growth (k > 0) or decay."
+      }
+    ],
+    "relatedSymbols": [
+      "derivative-leibniz",
+      "exponential-exp",
+      "initial-value-problem",
+      "laplace-transform"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Differential Equation Terminology (Huber, IVC)",
+        "url": "https://math.libretexts.org/Courses/Irvine_Valley_College/Introduction_to_Differential_Equations_(IVC_Math_24)/01%3A_First_Order_Differential_Equations/1.02%3A_Basic_Terminology/1.2.02%3A_Differential_Equation_Terminology",
+        "license": "CC BY-NC-SA 4.0 (page footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "partial-differential-equation",
+    "symbol": "∂u/∂t",
+    "latex": "\\frac{\\partial u}{\\partial t}",
+    "name": "Partial differential equation",
+    "aliases": [
+      "PDE",
+      "partial differential equation",
+      "heat equation",
+      "wave equation",
+      "laplace equation"
+    ],
+    "category": "calculus",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "An equation for an unknown function of several variables involving partial derivatives. The heat, wave, and Laplace equations are the canonical examples; boundary conditions pick the physical solution.",
+    "reading": "“a P D E”.",
+    "examples": [
+      {
+        "tex": "\\frac{\\partial u}{\\partial t} = \\alpha\\frac{\\partial^2 u}{\\partial x^2}",
+        "explanation": "The heat equation: temperature u spreads with diffusivity α."
+      }
+    ],
+    "relatedSymbols": [
+      "partial-derivative",
+      "ordinary-differential-equation",
+      "laplacian",
+      "initial-value-problem"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Differential Equation Terminology (Huber, IVC)",
+        "url": "https://math.libretexts.org/Courses/Irvine_Valley_College/Introduction_to_Differential_Equations_(IVC_Math_24)/01%3A_First_Order_Differential_Equations/1.02%3A_Basic_Terminology/1.2.02%3A_Differential_Equation_Terminology",
+        "license": "CC BY-NC-SA 4.0 (page footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "initial-value-problem",
+    "symbol": "y(x₀) = y₀",
+    "latex": "y(x_0) = y_0",
+    "name": "Initial value problem",
+    "aliases": [
+      "initial value problem",
+      "IVP",
+      "initial condition",
+      "boundary condition",
+      "particular solution",
+      "uniqueness"
+    ],
+    "category": "calculus",
+    "definition": "A differential equation plus conditions fixing the solution's value (and derivatives, for higher order) at a point. An nth-order equation needs n conditions; with them, well-behaved problems have exactly one solution.",
+    "reading": "“the initial value problem”.",
+    "examples": [
+      {
+        "tex": "y' = y,\\; y(0) = 2 \\Rightarrow y = 2e^x",
+        "explanation": "General solution Ceˣ with C = 2 from y(0) = 2; check: (2eˣ)′ = 2eˣ."
+      }
+    ],
+    "relatedSymbols": [
+      "ordinary-differential-equation",
+      "exponential-exp",
+      "function-notation",
+      "equals"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Differential Equation Terminology (Huber, IVC)",
+        "url": "https://math.libretexts.org/Courses/Irvine_Valley_College/Introduction_to_Differential_Equations_(IVC_Math_24)/01%3A_First_Order_Differential_Equations/1.02%3A_Basic_Terminology/1.2.02%3A_Differential_Equation_Terminology",
+        "license": "CC BY-NC-SA 4.0 (page footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "equilibrium-stability",
+    "symbol": "y′ = 0",
+    "latex": "y' = 0",
+    "name": "Equilibrium and stability",
+    "aliases": [
+      "equilibrium",
+      "steady state",
+      "stable equilibrium",
+      "unstable equilibrium",
+      "fixed point dynamics",
+      "phase line"
+    ],
+    "category": "calculus",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "Constant solutions where the rate vanishes (y′ = 0). An equilibrium is stable when nearby solutions approach it and unstable when they move away — read off from the sign of the rate around it.",
+    "reading": "“stable equilibrium”.",
+    "examples": [
+      {
+        "tex": "y' = y(1 - y)",
+        "explanation": "Logistic growth: y = 1 attracts nearby solutions (stable); y = 0 repels them (unstable)."
+      }
+    ],
+    "relatedSymbols": [
+      "ordinary-differential-equation",
+      "derivative-lagrange",
+      "limit",
+      "initial-value-problem"
+    ],
+    "sources": [
+      {
+        "label": "LibreTexts, Differential Equation Terminology (Huber, IVC)",
+        "url": "https://math.libretexts.org/Courses/Irvine_Valley_College/Introduction_to_Differential_Equations_(IVC_Math_24)/01%3A_First_Order_Differential_Equations/1.02%3A_Basic_Terminology/1.2.02%3A_Differential_Equation_Terminology",
+        "license": "CC BY-NC-SA 4.0 (page footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "lagrange-multipliers",
+    "symbol": "∇f = λ∇g",
+    "latex": "\\nabla f = \\lambda \\nabla g",
+    "name": "Lagrange multipliers",
+    "aliases": [
+      "lagrange multipliers",
+      "constrained optimization",
+      "lambda constraint",
+      "equality constraint"
+    ],
+    "category": "calculus",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "Finds extrema of f subject to g = c: at the optimum the gradients align, ∇f = λ∇g, so level curves kiss the constraint. Solve this system jointly with the constraint itself.",
+    "reading": "“Lagrange multipliers”.",
+    "examples": [
+      {
+        "tex": "\\max(x + y),\\; x^2 + y^2 = 1",
+        "explanation": "(1,1) = λ(2x,2y) gives x = y = 1/√2, value √2: the support line touches the circle."
+      }
+    ],
+    "relatedSymbols": [
+      "nabla-gradient",
+      "lambda",
+      "argmin-argmax",
+      "partial-derivative"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 3",
+        "url": "https://openstax.org/details/books/calculus-volume-3",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "convex-function",
+    "symbol": "f″ ≥ 0",
+    "latex": "f'' \\ge 0",
+    "name": "Convex function",
+    "aliases": [
+      "convex",
+      "convex function",
+      "concave up",
+      "convex set",
+      "jensen inequality",
+      "cup shaped"
+    ],
+    "category": "calculus",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "A function whose chord always lies above its graph (f″ ≥ 0 where twice differentiable): it cups upward, so any local minimum is global. Flipping the inequality gives concave.",
+    "reading": "“convex”.",
+    "examples": [
+      {
+        "tex": "f(x) = x^2",
+        "explanation": "Second derivative 2 > 0 everywhere: every tangent sits below the parabola."
+      }
+    ],
+    "relatedSymbols": [
+      "derivative-lagrange",
+      "supremum",
+      "argmin-argmax",
+      "interval"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 1",
+        "url": "https://openstax.org/details/books/calculus-volume-1",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  }
+]

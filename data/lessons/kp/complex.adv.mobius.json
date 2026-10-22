@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one over z is the swap map",
+    "section": "Worked: one over z is the swap map",
+    "subgoals": [
+      "Read the coefficients a, b, c, d",
+      "Check the determinant is nonzero",
+      "Track where 0 and infinity go"
+    ]
+  },
+  {
+    "label": "Worked: one over z fixes the unit circle",
+    "section": "Worked: one over z fixes the unit circle",
+    "subgoals": [
+      "Take moduli of w = 1/z",
+      "Impose |z| = 1",
+      "Conclude the circle maps onto itself"
+    ]
+  },
+  {
+    "label": "Worked: pinning three points with z minus one over z plus one",
+    "section": "Worked: pinning three points with z minus one over z plus one",
+    "subgoals": [
+      "Plug in z = 1 to hit 0",
+      "Plug in z = -1 to hit infinity",
+      "Send z to infinity to hit 1"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Isolate a variable",
+    "section": "Isolate one variable",
+    "subgoals": [
+      "Pick the equation with a lone variable",
+      "Solve for it keeping the expression exact",
+      "Prefer coefficient 1 or -1"
+    ]
+  },
+  {
+    "label": "Substitute and solve",
+    "section": "Substitute and solve",
+    "subgoals": [
+      "Replace the variable in the other equation",
+      "Solve the one-variable equation",
+      "Back-substitute for the remaining variable"
+    ]
+  },
+  {
+    "label": "Check the pair",
+    "section": "Check in both equations",
+    "subgoals": [
+      "Test the pair in the first equation",
+      "Test the pair in the second equation",
+      "Rework the same steps on a failed check"
+    ]
+  }
+]

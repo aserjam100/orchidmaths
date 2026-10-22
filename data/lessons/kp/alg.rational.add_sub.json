@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Build the common denominator",
+    "section": "Build the common denominator",
+    "subgoals": [
+      "Multiply the two denominators",
+      "Find the missing factor for each fraction",
+      "Rewrite each numerator over the common denominator"
+    ]
+  },
+  {
+    "label": "Combine the numerators",
+    "section": "Combine the numerators",
+    "subgoals": [
+      "Keep brackets around the second numerator",
+      "Distribute the subtraction",
+      "Collect like terms"
+    ]
+  },
+  {
+    "label": "State the restrictions",
+    "section": "State the restrictions",
+    "subgoals": [
+      "Exclude each original denominator's zero",
+      "Keep the restrictions in the answer",
+      "Check at one allowed value"
+    ]
+  }
+]

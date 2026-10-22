@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Approximating a derivative with two evaluations",
+    "section": "Approximating a derivative with two evaluations",
+    "subgoals": [
+      "Choose forward, backward or central",
+      "State the step h",
+      "Form the secant slope"
+    ]
+  },
+  {
+    "label": "Worked: forward, backward and central",
+    "section": "Worked: forward, backward and central",
+    "subgoals": [
+      "Compute 6.1 forward",
+      "Compute 5.9 backward",
+      "Average for 6 central"
+    ]
+  },
+  {
+    "label": "Error and step size",
+    "section": "Error and step size",
+    "subgoals": [
+      "Compare order h with order h^2",
+      "Halve the error by halving h",
+      "Avoid catastrophic cancellation"
+    ]
+  }
+]

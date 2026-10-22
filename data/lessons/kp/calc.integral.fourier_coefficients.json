@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The coefficients as projections",
+    "section": "The coefficients as projections",
+    "subgoals": [
+      "Multiply by a basis function",
+      "Integrate over the period",
+      "Divide by the basis norm"
+    ]
+  },
+  {
+    "label": "Even and odd functions",
+    "section": "Even and odd functions",
+    "subgoals": [
+      "Check the parity first",
+      "Drop the vanishing family",
+      "Keep only the surviving coefficients"
+    ]
+  },
+  {
+    "label": "Convergence and the series",
+    "section": "Convergence and the series",
+    "subgoals": [
+      "Expect convergence pointwise and in square mean",
+      "Average at a jump",
+      "Recover energy by Parseval"
+    ]
+  }
+]

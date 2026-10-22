@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: integral of z squared over a triangle is zero",
+    "section": "Worked: integral of z squared over a triangle is zero",
+    "subgoals": [
+      "Take the antiderivative z^3/3",
+      "Walk the three edges and telescope",
+      "Close the loop at total zero"
+    ]
+  },
+  {
+    "label": "Worked: one over z breaks the conclusion",
+    "section": "Worked: one over z breaks the conclusion",
+    "subgoals": [
+      "Spot the singularity inside the circle",
+      "Compute the nonzero integral 2 pi i",
+      "Blame the failed analyticity hypothesis"
+    ]
+  },
+  {
+    "label": "Worked: Goursat bisection on a triangle",
+    "section": "Worked: Goursat bisection on a triangle",
+    "subgoals": [
+      "Split the triangle and keep the worst quarter",
+      "Nest the triangles down to a point",
+      "Linearize at the limit point to squeeze to zero"
+    ]
+  }
+]

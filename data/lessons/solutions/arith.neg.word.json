@@ -1,0 +1,15 @@
+{
+  "concept": "arith.neg.word",
+  "setup": "You start at [[start]] [[unit]] and the value [[direction]] by [[magnitude]] [[unit]].",
+  "steps": [
+    {
+      "fact": "change",
+      "say": "The signed change is [[change]] [[unit]]."
+    },
+    {
+      "fact": "result",
+      "say": "Adding the signed change gives [[result]] [[unit]]."
+    }
+  ],
+  "answer": "The new value is [[result]] [[unit]]."
+}

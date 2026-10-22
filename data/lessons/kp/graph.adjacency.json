@@ -1,0 +1,29 @@
+[
+  {
+    "label": "From graph to matrix",
+    "section": "From graph to matrix",
+    "subgoals": [
+      "Write one for each edge",
+      "Sum a row for the degree",
+      "Read symmetry from the graph"
+    ]
+  },
+  {
+    "label": "Worked: walks of length two",
+    "section": "Worked: walks of length two",
+    "subgoals": [
+      "Multiply A by itself",
+      "Count the length-two walks",
+      "Read the degree on the diagonal"
+    ]
+  },
+  {
+    "label": "What the spectrum sees",
+    "section": "What the spectrum sees",
+    "subgoals": [
+      "Sum powers for closed walks",
+      "Test bipartiteness by symmetry",
+      "Meet cospectral non-isomorphic graphs"
+    ]
+  }
+]

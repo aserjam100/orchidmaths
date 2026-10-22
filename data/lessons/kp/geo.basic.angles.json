@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Measuring the \"Opening\" of an Angle",
+    "section": "Measuring the \"Opening\" of an Angle",
+    "subgoals": [
+      "Compare an opening against the square-corner benchmark",
+      "Mark exactly 90 degrees with the square-corner mark",
+      "Name 35, 90, and 125 degrees acute, right, obtuse"
+    ]
+  },
+  {
+    "label": "Drill: straight angles and reflex rejects",
+    "section": "",
+    "subgoals": [
+      "Name a 180-degree opening a straight angle",
+      "Reject 200 degrees as obtuse since it tops 180",
+      "Call anything past a straight line reflex"
+    ]
+  },
+  {
+    "label": "Drill: three-letter angle names",
+    "section": "",
+    "subgoals": [
+      "Name an angle by side-vertex-side points",
+      "Shorten the name to the vertex letter alone",
+      "Split the vertex from the sides when reading angle ABC"
+    ]
+  }
+]

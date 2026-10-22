@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: intervals are path-connected",
+    "section": "Worked: intervals are path-connected",
+    "subgoals": [
+      "Write the straight-line segment",
+      "Check it stays in the interval",
+      "Evaluate at both endpoints"
+    ]
+  },
+  {
+    "label": "Worked: the punctured plane stays path-connected",
+    "section": "Worked: the punctured plane stays path-connected",
+    "subgoals": [
+      "Try the straight segment first",
+      "Detour around the origin if blocked",
+      "Concatenate into one path"
+    ]
+  },
+  {
+    "label": "When connected does not imply path-connected",
+    "section": "When connected does not imply path-connected",
+    "subgoals": [
+      "Exhibit the limit segment",
+      "Rule out paths by oscillation",
+      "Conclude connected but not path-connected"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The definition and the factorial form",
+    "section": "The definition and the factorial form",
+    "subgoals": [
+      "Integrate the argument powers",
+      "Write the factorials",
+      "Note the symmetry in the two arguments"
+    ]
+  },
+  {
+    "label": "The gamma relation",
+    "section": "The gamma relation",
+    "subgoals": [
+      "Express it as a gamma ratio",
+      "Prove it by a change of variables",
+      "Extend it past the integers"
+    ]
+  },
+  {
+    "label": "Where it is used",
+    "section": "Where it is used",
+    "subgoals": [
+      "Evaluate power times complementary power",
+      "Use it to normalise distributions",
+      "Get the sine and cosine powered integrals"
+    ]
+  }
+]

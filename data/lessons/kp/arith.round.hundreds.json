@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Place value of a digit",
+    "section": "",
+    "subgoals": [
+      "Find the rounding digit (hundreds)",
+      "Look at the digit to its right",
+      "Decide to round up or down"
+    ]
+  },
+  {
+    "label": "Model whole numbers",
+    "section": "",
+    "subgoals": [
+      "Locate the number on a number line",
+      "Mark the nearest hundreds",
+      "Pick the closer bound"
+    ]
+  },
+  {
+    "label": "Round whole numbers",
+    "section": "",
+    "subgoals": [
+      "Apply the rounding rule",
+      "Write the rounded number with zeros",
+      "Check against the number line"
+    ]
+  }
+]

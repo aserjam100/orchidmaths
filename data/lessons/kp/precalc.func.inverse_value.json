@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Undoing the function",
+    "section": "Undoing the function",
+    "subgoals": [
+      "Define an inverse",
+      "Solve for the inverse of a linear function",
+      "Evaluate an inverse at a point"
+    ]
+  },
+  {
+    "label": "Undoing in reverse order",
+    "section": "Undoing in reverse order",
+    "subgoals": [
+      "Reverse the order of operations",
+      "Explain why the order matters",
+      "Invert a two-step function"
+    ]
+  },
+  {
+    "label": "Graphs and domains",
+    "section": "Graphs and domains",
+    "subgoals": [
+      "Reflect in the line y = x",
+      "Move a domain restriction",
+      "Say why one-to-one is required"
+    ]
+  }
+]

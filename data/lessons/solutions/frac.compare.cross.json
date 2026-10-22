@@ -1,0 +1,15 @@
+{
+  "concept": "frac.compare.cross",
+  "setup": "You are comparing two fractions by cross-multiplication.",
+  "steps": [
+    {
+      "fact": "left",
+      "say": "Cross-multiplying puts both fractions over a common denominator without writing it out: the first numerator times the second denominator gives \\([[left]]\\)."
+    },
+    {
+      "fact": "difference",
+      "say": "The second product gives \\([[right]]\\), and the difference \\([[difference]]\\) has the same sign as the difference of the fractions themselves. A positive difference means the first fraction is larger."
+    }
+  ],
+  "answer": "So the difference is \\([[difference]]\\)."
+}

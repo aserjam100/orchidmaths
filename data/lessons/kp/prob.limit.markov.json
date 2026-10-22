@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A bound from the mean",
+    "section": "A bound from the mean",
+    "subgoals": [
+      "Compare X with a on the tail event",
+      "Lower-bound the expectation by a times the tail",
+      "Divide by a"
+    ]
+  },
+  {
+    "label": "Worked: an application",
+    "section": "Worked: an application",
+    "subgoals": [
+      "Divide the mean by the threshold",
+      "Read the tail bound",
+      "Apply it without knowing the shape"
+    ]
+  },
+  {
+    "label": "Why it is loose",
+    "section": "Why it is loose",
+    "subgoals": [
+      "Note the bound uses only the mean",
+      "Find a distribution that attains it",
+      "See where it is conservative"
+    ]
+  }
+]

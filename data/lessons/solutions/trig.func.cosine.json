@@ -1,0 +1,19 @@
+{
+  "concept": "trig.func.cosine",
+  "setup": "A right triangle has $\\cos\\theta = [[ratio]]$ and a hypotenuse of $[[given]]$.",
+  "steps": [
+    {
+      "fact": "ratio",
+      "say": "The cosine of an angle is the side adjacent to it divided by the hypotenuse, so the adjacent side is the cosine times the hypotenuse."
+    },
+    {
+      "fact": "given",
+      "say": "The hypotenuse is $[[given]]$."
+    },
+    {
+      "fact": "answer",
+      "say": "Multiplying gives $[[ratio]] \\times [[given]] = [[answer]]$."
+    }
+  ],
+  "answer": "So the side adjacent to the angle is $[[answer]]$."
+}

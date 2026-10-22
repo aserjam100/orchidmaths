@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: Euclidean balls do the job",
+    "section": "Worked: Euclidean balls do the job",
+    "subgoals": [
+      "Take balls as the neighbourhood base",
+      "Join two ball points by a segment",
+      "Conclude each basic neighbourhood is path-connected"
+    ]
+  },
+  {
+    "label": "Worked: the bridge theorem",
+    "section": "Worked: the bridge theorem",
+    "subgoals": [
+      "Open up the reachable set by paths",
+      "Open up its complement the same way",
+      "Conclude reachability is everything"
+    ]
+  },
+  {
+    "label": "When local paths fail",
+    "section": "When local paths fail",
+    "subgoals": [
+      "Zoom in on a baseline neighbourhood",
+      "Find gaps no path can cross",
+      "Conclude path-connected need not be local"
+    ]
+  }
+]

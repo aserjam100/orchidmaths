@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Circulation and flux of curl",
+    "section": "Circulation and flux of curl",
+    "subgoals": [
+      "State Stokes' theorem",
+      "Identify each side",
+      "See Green's theorem as the flat case"
+    ]
+  },
+  {
+    "label": "A flat surface",
+    "section": "A flat surface",
+    "subgoals": [
+      "Compute a curl",
+      "Take its flux through a rectangle",
+      "Recognise the circulation"
+    ]
+  },
+  {
+    "label": "Why the surface does not matter",
+    "section": "Why the surface does not matter",
+    "subgoals": [
+      "Explain the two-surface argument",
+      "Use the divergence theorem",
+      "Name the identity it depends on"
+    ]
+  }
+]

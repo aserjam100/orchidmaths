@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why orthogonality helps",
+    "section": "Why orthogonality helps",
+    "subgoals": [
+      "Choose an orthogonal basis",
+      "Kill the off-diagonal inner products",
+      "Solve each coefficient separately"
+    ]
+  },
+  {
+    "label": "Worked: a coefficient",
+    "section": "Worked: a coefficient",
+    "subgoals": [
+      "Form the inner product with the function",
+      "Divide by the squared norm",
+      "Read the coefficient"
+    ]
+  },
+  {
+    "label": "The classical families",
+    "section": "The classical families",
+    "subgoals": [
+      "Name the weight of Legendre polynomials",
+      "Name the weight of Chebyshev polynomials",
+      "Reject the monomials as ill conditioned"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Parts of a unit",
+    "section": "Parts of a unit",
+    "subgoals": [
+      "Count the unit's parts",
+      "Write the fraction",
+      "Read it as a fraction of the whole"
+    ]
+  },
+  {
+    "label": "Reducing the fraction",
+    "section": "Reducing the fraction",
+    "subgoals": [
+      "Reduce to lowest terms",
+      "Say why reducing helps",
+      "Spot a decimal-friendly unit"
+    ]
+  },
+  {
+    "label": "Units that are not decimal",
+    "section": "Units that are not decimal",
+    "subgoals": [
+      "Give the hour and the day",
+      "Say why tens are irrelevant",
+      "Use the conversion factor first"
+    ]
+  }
+]

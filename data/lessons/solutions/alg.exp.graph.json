@@ -1,0 +1,15 @@
+{
+  "concept": "alg.exp.graph",
+  "setup": "The function is f(x) = [[a]]·[[b]]^x, evaluated at x = [[x]].",
+  "steps": [
+    {
+      "fact": "b",
+      "say": "Raise the base [[b]] to the power [[x]]."
+    },
+    {
+      "fact": "a",
+      "say": "Multiply that power by the leading coefficient [[a]]."
+    }
+  ],
+  "answer": "So f([[x]]) = [[answer]]."
+}

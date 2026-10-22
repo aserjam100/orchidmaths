@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Statement of the integral mean value theorem",
+    "section": "",
+    "subgoals": [
+      "Read integral of f over [a,b] as f(c)(b-a)",
+      "Rewrite as integral of (f(x)-f(c)) = 0",
+      "Flag continuity as the only hypothesis on f"
+    ]
+  },
+  {
+    "label": "The average value of a function",
+    "section": "",
+    "subgoals": [
+      "Divide the integral by (b-a) for the mean mu",
+      "Evaluate integral of sqrt(x) over [0,9] to 18, mean 2",
+      "Solve sqrt(c)=2 to locate c=4"
+    ]
+  },
+  {
+    "label": "Worked averages and weights",
+    "section": "",
+    "subgoals": [
+      "Solve sin c=2/pi for two symmetric points c1, c2",
+      "Weight x^2 by x on [0,2] to shift c to sqrt(2)",
+      "Contrast with unweighted mean 4/3 at c=2/sqrt(3)"
+    ]
+  }
+]

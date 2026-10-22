@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Restricting to a condition",
+    "section": "Restricting to a condition",
+    "subgoals": [
+      "Describe the restriction",
+      "See the sample space shrink",
+      "Divide by the condition's probability"
+    ]
+  },
+  {
+    "label": "The ratio of two probabilities",
+    "section": "The ratio of two probabilities",
+    "subgoals": [
+      "Write the formula",
+      "Identify the numerator",
+      "Explain the rescaling"
+    ]
+  },
+  {
+    "label": "Why the order matters",
+    "section": "Why the order matters",
+    "subgoals": [
+      "Give the rain and wet-ground case",
+      "Say the two are not equal",
+      "Name Bayes' theorem"
+    ]
+  }
+]

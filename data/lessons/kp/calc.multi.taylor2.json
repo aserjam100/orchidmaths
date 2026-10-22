@@ -1,0 +1,29 @@
+[
+  {
+    "label": "From the tangent plane to a quadratic model",
+    "section": "From the tangent plane to a quadratic model",
+    "subgoals": [
+      "Use the gradient for the linear term",
+      "Use the Hessian for the quadratic term",
+      "Add both to f at the point"
+    ]
+  },
+  {
+    "label": "Worked: a quadratic expansion",
+    "section": "Worked: a quadratic expansion",
+    "subgoals": [
+      "Take f = 5 and gradients 2, 4",
+      "Compute the linear term 0.6",
+      "Add the Hessian term 0.02"
+    ]
+  },
+  {
+    "label": "The Hessian decides the shape",
+    "section": "The Hessian decides the shape",
+    "subgoals": [
+      "Check definiteness at a critical point",
+      "Classify minimum, maximum or saddle",
+      "Bound the error at third order"
+    ]
+  }
+]

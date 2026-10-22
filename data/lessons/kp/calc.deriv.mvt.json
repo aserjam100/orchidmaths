@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Statement",
+    "section": "",
+    "subgoals": [
+      "Check continuity on [a,b] plus differentiability inside",
+      "Locate c with f'(c) = [f(b)-f(a)]/(b-a)",
+      "Recover Rolle when f(a) = f(b)"
+    ]
+  },
+  {
+    "label": "A geometric view of Lagrange’s theorem",
+    "section": "",
+    "subgoals": [
+      "Read f'(c) as parallel to the secant chord",
+      "Slide the tangent until it matches the chord slope",
+      "Test f(x) = x^2 on [0,2] to get c = 1"
+    ]
+  },
+  {
+    "label": "Proof",
+    "section": "",
+    "subgoals": [
+      "Build phi(x) = f(x) - secant*x to equalize endpoints",
+      "Invoke Rolle on phi for horizontal tangent",
+      "Translate phi'(c) = 0 back to f'(c)"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "concept": "dec.ops.div.word",
+  "setup": "You pay $[[total]] for [[qty]] [[item]]s, all at the same price.",
+  "steps": [
+    {
+      "fact": "total",
+      "say": "The total cost is $[[total]]."
+    },
+    {
+      "fact": "qty",
+      "say": "That total covers [[qty]] items, so divide by [[qty]]."
+    },
+    {
+      "fact": "unit",
+      "say": "$[[total]] / [[qty]] = $[[unit]]."
+    }
+  ],
+  "answer": "One [[item]] costs $[[unit]]."
+}

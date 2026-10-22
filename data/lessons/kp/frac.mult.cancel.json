@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The same factor in two places",
+    "section": "The same factor in two places",
+    "subgoals": [
+      "Cancel a shared factor",
+      "Say what stays the same",
+      "Keep the numbers small"
+    ]
+  },
+  {
+    "label": "Why it is allowed",
+    "section": "Why it is allowed",
+    "subgoals": [
+      "Divide top and bottom by the same number",
+      "Connect it to reducing",
+      "Call it equivalence rather than a trick"
+    ]
+  },
+  {
+    "label": "Choosing between the routes",
+    "section": "Choosing between the routes",
+    "subgoals": [
+      "Compare cancelling first with reducing after",
+      "Name the risk of large numbers",
+      "Check with an estimate"
+    ]
+  }
+]

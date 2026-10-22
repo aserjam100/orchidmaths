@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The L2 term",
+    "section": "The L2 term",
+    "subgoals": [
+      "Write the penalty",
+      "Compute its value",
+      "Explain lambda's role"
+    ]
+  },
+  {
+    "label": "Why shrink the weights",
+    "section": "Why shrink the weights",
+    "subgoals": [
+      "Connect large weights to sensitivity",
+      "Trade fit for generalisation",
+      "Say why ridge never reaches zero"
+    ]
+  },
+  {
+    "label": "Ridge against lasso",
+    "section": "Ridge against lasso",
+    "subgoals": [
+      "Contrast the two penalties",
+      "Handle correlated inputs",
+      "Choose between them"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cosine as an average",
+    "section": "Cosine as an average",
+    "subgoals": [
+      "Add the two Euler formulas",
+      "Cancel the sine terms",
+      "Divide by two"
+    ]
+  },
+  {
+    "label": "Sine as a difference",
+    "section": "Sine as a difference",
+    "subgoals": [
+      "Subtract the two formulas",
+      "Keep the factor i",
+      "Divide by 2i"
+    ]
+  },
+  {
+    "label": "Euler's formula behind both",
+    "section": "Euler's formula behind both",
+    "subgoals": [
+      "Read the same formula twice",
+      "Convert products to sums",
+      "Note the complex-argument extension"
+    ]
+  }
+]

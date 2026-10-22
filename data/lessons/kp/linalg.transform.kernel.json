@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What maps to zero",
+    "section": "What maps to zero",
+    "subgoals": [
+      "Solve Ax = 0",
+      "Read the kernel as collapsed directions",
+      "Relate a nonzero kernel to non-injectivity"
+    ]
+  },
+  {
+    "label": "Worked: kernel dimension by rank",
+    "section": "Worked: kernel dimension by rank",
+    "subgoals": [
+      "Count the pivots for rank",
+      "Subtract the rank from the domain dimension",
+      "Name a free coordinate"
+    ]
+  },
+  {
+    "label": "Image, rank and injectivity",
+    "section": "Image, rank and injectivity",
+    "subgoals": [
+      "Identify the image with the column space",
+      "Set the kernel to zero for injectivity",
+      "Apply rank-nullity"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two-colourable graphs",
+    "section": "Two-colourable graphs",
+    "subgoals": [
+      "Split the vertices into two parts",
+      "Relate bipartite to 2-colouring",
+      "See odd cycles as the obstruction"
+    ]
+  },
+  {
+    "label": "Matchings",
+    "section": "Matchings",
+    "subgoals": [
+      "Define a matching",
+      "Search a small graph for a maximum",
+      "Read degrees of a complete bipartite graph"
+    ]
+  },
+  {
+    "label": "Hall's condition",
+    "section": "Hall's condition",
+    "subgoals": [
+      "State the neighbourhood condition",
+      "Use it to bound a matching",
+      "Exhibit a deficient set as a certificate"
+    ]
+  }
+]

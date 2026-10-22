@@ -1,0 +1,29 @@
+[
+  {
+    "label": "How many steps fit",
+    "section": "How many steps fit",
+    "subgoals": [
+      "Divide the width by the step",
+      "Say it needs no equation",
+      "Land exactly on the far end"
+    ]
+  },
+  {
+    "label": "Why the step size divides the interval",
+    "section": "Why the step size divides the interval",
+    "subgoals": [
+      "Describe a partial step",
+      "Choose the step to suit the interval",
+      "Say where the step size comes from"
+    ]
+  },
+  {
+    "label": "The cost of a smaller step",
+    "section": "The cost of a smaller step",
+    "subgoals": [
+      "Halve the step, double the count",
+      "Connect the cost to evaluations",
+      "Compare with the error's size"
+    ]
+  }
+]

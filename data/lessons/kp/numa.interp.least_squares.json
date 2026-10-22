@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Fitting without matching",
+    "section": "Fitting without matching",
+    "subgoals": [
+      "Count the data against the free parameters",
+      "Form the sum of squared gaps",
+      "Minimise that sum"
+    ]
+  },
+  {
+    "label": "Worked: the slope of a line",
+    "section": "Worked: the slope of a line",
+    "subgoals": [
+      "Centre the data by subtracting the means",
+      "Form the centred cross sum",
+      "Divide by the centred sum of squares"
+    ]
+  },
+  {
+    "label": "Why least squares is popular",
+    "section": "Why least squares is popular",
+    "subgoals": [
+      "Note the uniqueness",
+      "Connect it to Gaussian errors",
+      "See the effect of an outlier"
+    ]
+  }
+]

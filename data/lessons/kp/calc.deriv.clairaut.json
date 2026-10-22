@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Clairaut-Schwarz statement",
+    "section": "",
+    "subgoals": [
+      "Equate fxy with fyx under continuity",
+      "Name the mixed-partial hypothesis",
+      "Differentiate x^2 y^3 to 6xy^2"
+    ]
+  },
+  {
+    "label": "Mixed partials equality",
+    "section": "",
+    "subgoals": [
+      "Compute fxy directly",
+      "Compute fyx directly",
+      "Confirm both orders agree"
+    ]
+  },
+  {
+    "label": "Worked Clairaut check",
+    "section": "",
+    "subgoals": [
+      "Differentiate the worked polynomial in both orders",
+      "Check continuity justifies equality",
+      "Note polynomials always qualify"
+    ]
+  }
+]

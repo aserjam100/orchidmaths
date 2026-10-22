@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the trefoil is knotted",
+    "section": "Worked: the trefoil is knotted",
+    "subgoals": [
+      "Count crossings in the diagram",
+      "Invoke crossing-number invariance",
+      "Compare against the unknot"
+    ]
+  },
+  {
+    "label": "Worked: the knot group",
+    "section": "Worked: the knot group",
+    "subgoals": [
+      "Retract the unknot complement to a torus",
+      "Present the trefoil complement group",
+      "Compare abelian against nonabelian"
+    ]
+  },
+  {
+    "label": "Worked: polynomials distinguish",
+    "section": "Worked: polynomials distinguish",
+    "subgoals": [
+      "Label the knots 3_1 and 4_1",
+      "Compare their Jones polynomials",
+      "Close with the Gordon-Luecke theorem"
+    ]
+  }
+]

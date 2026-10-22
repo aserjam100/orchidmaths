@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Adding and subtracting like radicals",
+    "section": "Adding and subtracting like radicals",
+    "subgoals": [
+      "Match the radicals before combining",
+      "Add or subtract only the coefficients",
+      "Leave unlike radicals separate"
+    ]
+  },
+  {
+    "label": "Simplifying before combining",
+    "section": "Simplifying before combining",
+    "subgoals": [
+      "Simplify each radical first",
+      "Compare the remaining radicals",
+      "Combine only the terms that now match"
+    ]
+  },
+  {
+    "label": "Multiplying and dividing",
+    "section": "Multiplying and dividing",
+    "subgoals": [
+      "Multiply the numbers under a common root",
+      "Divide under a common root",
+      "Simplify the result at the end"
+    ]
+  }
+]

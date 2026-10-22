@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The yearly factor",
+    "section": "The yearly factor",
+    "subgoals": [
+      "Write the yearly multiplier",
+      "Express a rate as a decimal",
+      "Write the balance after t years"
+    ]
+  },
+  {
+    "label": "Repeated multiplication",
+    "section": "Repeated multiplication",
+    "subgoals": [
+      "Compute a few years",
+      "Explain the accelerating growth",
+      "Note the limit that gives e"
+    ]
+  },
+  {
+    "label": "Why it beats simple interest",
+    "section": "Why it beats simple interest",
+    "subgoals": [
+      "Write the simple-interest formula",
+      "Contrast linear with exponential",
+      "Say when the difference shows"
+    ]
+  }
+]

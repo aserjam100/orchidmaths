@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Invertible coefficients",
+    "section": "Invertible coefficients",
+    "subgoals": [
+      "Multiply by the inverse",
+      "Require coprimality",
+      "Find the inverse by the extended algorithm"
+    ]
+  },
+  {
+    "label": "When the coefficient is not a unit",
+    "section": "When the coefficient is not a unit",
+    "subgoals": [
+      "Describe the solution set",
+      "State the solvability condition",
+      "Note there is no inverse to multiply by"
+    ]
+  },
+  {
+    "label": "Least non-negative solutions",
+    "section": "Least non-negative solutions",
+    "subgoals": [
+      "Choose the smallest residue",
+      "Say why the answer is canonical",
+      "Check by substitution"
+    ]
+  }
+]

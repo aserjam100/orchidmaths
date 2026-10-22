@@ -1,0 +1,15 @@
+{
+  "concept": "arith.place.powers_ten",
+  "setup": "You are shifting the digits of [[n]] using a power of ten.",
+  "steps": [
+    {
+      "fact": "shift",
+      "say": "The power of ten moves each digit [[shift]]."
+    },
+    {
+      "fact": "operation",
+      "say": "A multiplication moves the digits left; a division moves them right."
+    }
+  ],
+  "answer": "The result is [[value]]."
+}

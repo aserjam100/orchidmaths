@@ -1,0 +1,11 @@
+{
+  "concept": "frac.compare.unit_like",
+  "setup": "You are comparing [[a_num]]/[[a_den]] and [[b_num]]/[[b_den]].",
+  "steps": [
+    {
+      "fact": "rule",
+      "say": "[[rule]]"
+    }
+  ],
+  "answer": "[[a_num]]/[[a_den]] [[op]] [[b_num]]/[[b_den]]."
+}

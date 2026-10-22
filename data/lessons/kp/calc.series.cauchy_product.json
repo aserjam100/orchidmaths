@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiplying series",
+    "section": "Multiplying series",
+    "subgoals": [
+      "Pair terms whose indices add to n",
+      "Sum those products into one coefficient",
+      "Extend polynomial multiplication"
+    ]
+  },
+  {
+    "label": "Convergence of the product",
+    "section": "Convergence of the product",
+    "subgoals": [
+      "Require absolute convergence for the clean proof",
+      "Group the double sum by the index sum",
+      "Use Mertens for one-sided absolute convergence"
+    ]
+  },
+  {
+    "label": "The geometric example",
+    "section": "The geometric example",
+    "subgoals": [
+      "Multiply the geometric series by itself",
+      "Count the index pairs",
+      "Read coefficient n plus one"
+    ]
+  }
+]

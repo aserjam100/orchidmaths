@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Name the sides in the story",
+    "section": "",
+    "subgoals": [
+      "Find the right angle in the picture",
+      "Name the side opposite it",
+      "Name the two sides that are known"
+    ]
+  },
+  {
+    "label": "Choose the form of the theorem",
+    "section": "",
+    "subgoals": [
+      "Add the squares when the longest side is missing",
+      "Subtract the squares when a shorter side is missing",
+      "Keep the unit of length through the work"
+    ]
+  },
+  {
+    "label": "Recognise the triangle",
+    "section": "",
+    "subgoals": [
+      "Square the known sides",
+      "Take the square root of the result",
+      "Check the answer against a familiar triple"
+    ]
+  }
+]

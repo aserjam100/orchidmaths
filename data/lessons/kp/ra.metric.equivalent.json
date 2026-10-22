@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Topological equivalence",
+    "section": "Topological equivalence",
+    "subgoals": [
+      "Compare the two collections of open sets",
+      "Inherit sequences and continuity",
+      "Keep the distances out of it"
+    ]
+  },
+  {
+    "label": "Bounded and unbounded metrics",
+    "section": "Bounded and unbounded metrics",
+    "subgoals": [
+      "Make every distance below one",
+      "Notice the open sets are unchanged",
+      "See that Cauchy sequences can change"
+    ]
+  },
+  {
+    "label": "Lipschitz and uniform equivalence",
+    "section": "Lipschitz and uniform equivalence",
+    "subgoals": [
+      "Bound one metric by a constant times the other",
+      "Preserve Cauchy sequences and completeness",
+      "Place uniform equivalence in between"
+    ]
+  }
+]

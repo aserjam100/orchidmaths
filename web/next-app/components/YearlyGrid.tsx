@@ -1,0 +1,223 @@
+'use client'
+
+import { useMemo, useState } from 'react'
+import type { DailyActivity } from '../lib/api'
+import { heatColor } from '../lib/heatColor'
+
+const CELL_W = 12
+const CELL_H = 12
+const GAP = 2
+const LABEL_W = 28
+const COLS = 53
+
+const DAY_LABELS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+const MONTH_LABELS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+function intensityLevel(count: number, max: number): number {
+  if (count === 0 || max === 0) return 0
+  const ratio = count / max
+  if (ratio <= 0.25) return 1
+  if (ratio <= 0.50) return 2
+  if (ratio <= 0.75) return 3
+  return 4
+}
+
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr + 'T00:00:00')
+  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })
+}
+
+interface Props {
+  data: DailyActivity[]
+}
+
+export default function YearlyGrid({ data }: Props) {
+  const [tooltip, setTooltip] = useState<{ date: string; questions: number; correct: number; x: number; y: number } | null>(null)
+
+  const { grid, monthLabels } = useMemo(() => {
+    const activityMap = new Map<string, { questions: number; correct: number }>()
+    let maxQ = 0
+    for (const d of data) {
+      const q = d.questions
+      if (q > maxQ) maxQ = q
+      activityMap.set(d.date, { questions: q, correct: d.correct })
+    }
+
+    const today = new Date()
+    const todayStr = today.toISOString().slice(0, 10)
+    const todayDate = new Date(todayStr + 'T00:00:00')
+
+    const startDate = new Date(todayDate)
+    startDate.setDate(startDate.getDate() - 364)
+    while (startDate.getDay() !== 0) {
+      startDate.setDate(startDate.getDate() - 1)
+    }
+
+    const cells: { date: string; questions: number; correct: number; level: number; row: number; col: number }[] = []
+    const ml: { col: number; label: string }[] = []
+
+    let lastMonth = -1
+    for (let c = 0; c < COLS; c++) {
+      for (let r = 0; r < 7; r++) {
+        const date = new Date(startDate)
+        date.setDate(date.getDate() + c * 7 + r)
+        const dateStr = date.toISOString().slice(0, 10)
+
+        if (date > todayDate) continue
+
+        if (date.getMonth() !== lastMonth && r === 0) {
+          lastMonth = date.getMonth()
+          ml.push({ col: c, label: MONTH_LABELS[date.getMonth()] })
+        }
+
+        const act = activityMap.get(dateStr)
+        cells.push({
+          date: dateStr,
+          questions: act?.questions ?? 0,
+          correct: act?.correct ?? 0,
+          level: 0,
+          row: r,
+          col: c,
+        })
+      }
+    }
+
+    for (const cell of cells) {
+      cell.level = intensityLevel(cell.questions, maxQ)
+    }
+
+    return { grid: cells, monthLabels: ml, maxQuestions: maxQ }
+  }, [data])
+
+  const svgW = LABEL_W + COLS * (CELL_W + GAP)
+  const svgH = 16 + (7 * (CELL_H + GAP)) + GAP + 24
+
+  function handleCellHover(e: React.MouseEvent<SVGRectElement>, cell: { date: string; questions: number; correct: number }) {
+    const rect = (e.target as SVGRectElement).getBoundingClientRect()
+    const vw = window.innerWidth
+    let x = rect.left + rect.width / 2
+    x = Math.max(80, Math.min(vw - 80, x))
+    setTooltip({
+      date: cell.date,
+      questions: cell.questions,
+      correct: cell.correct,
+      x,
+      y: rect.top - 8,
+    })
+  }
+
+  function handleCellClick(e: React.MouseEvent<SVGRectElement>, cell: { date: string; questions: number; correct: number }) {
+    if (window.matchMedia('(hover: none)').matches) {
+      handleCellHover(e, cell)
+    }
+  }
+
+  return (
+    <div className="relative w-[calc(100%+2rem)] -mx-4 px-4 sm:w-full sm:mx-0 sm:px-0 min-w-0 overflow-x-auto overscroll-x-contain flex justify-start sm:justify-center">
+      <svg
+        width={svgW}
+        height={svgH}
+        className="block shrink-0 font-mono"
+        style={{ fontFamily: "var(--font-jetbrains-mono), 'JetBrains Mono', monospace", minWidth: svgW, margin: '0 auto' }}
+      >
+        {monthLabels.map((m) => (
+          <text
+            key={m.col}
+            x={LABEL_W + m.col * (CELL_W + GAP)}
+            y={10}
+            style={{ fontSize: 9, fill: 'var(--text-muted)' }}
+          >
+            {m.label}
+          </text>
+        ))}
+
+        {[1, 3, 5].map((r) => (
+          <text
+            key={r}
+            x={0}
+            y={20 + r * (CELL_H + GAP) + CELL_H / 2 + 4}
+            style={{ fontSize: 9, fill: 'var(--text-muted)' }}
+          >
+            {DAY_LABELS[r].slice(0, 2)}
+          </text>
+        ))}
+
+        {grid.map((cell) => (
+          <rect
+            key={`${cell.col}-${cell.row}`}
+            x={LABEL_W + cell.col * (CELL_W + GAP)}
+            y={16 + cell.row * (CELL_H + GAP) + GAP}
+            width={CELL_W}
+            height={CELL_H}
+            style={{
+              fill: heatColor(cell.level),
+              stroke: 'var(--border)',
+              strokeWidth: 0.5,
+              cursor: 'pointer',
+              shapeRendering: 'crispEdges',
+            }}
+            onMouseEnter={(e) => handleCellHover(e, cell)}
+            onMouseLeave={() => setTooltip(null)}
+            onClick={(e) => handleCellClick(e, cell)}
+            onTouchStart={(e) => {
+              const rect = (e.target as SVGRectElement).getBoundingClientRect()
+              const vw = window.innerWidth
+              let x = rect.left + rect.width / 2
+              x = Math.max(80, Math.min(vw - 80, x))
+              setTooltip({
+                date: cell.date,
+                questions: cell.questions,
+                correct: cell.correct,
+                x,
+                y: rect.top - 8,
+              })
+            }}
+          />
+        ))}
+
+        <text x={svgW - 180} y={svgH - 6} style={{ fontSize: 9, fill: 'var(--text-muted)' }}>
+          Less
+        </text>
+        {[0, 1, 2, 3, 4].map((level) => (
+          <rect
+            key={level}
+            x={svgW - 140 + level * (CELL_W + GAP)}
+            y={svgH - 18}
+            width={CELL_W}
+            height={CELL_H}
+            style={{
+              fill: heatColor(level),
+              stroke: 'var(--border)',
+              strokeWidth: 0.5,
+              shapeRendering: 'crispEdges',
+            }}
+          />
+        ))}
+        <text x={svgW - 64} y={svgH - 6} style={{ fontSize: 9, fill: 'var(--text-muted)' }}>
+          More
+        </text>
+      </svg>
+
+      {tooltip && (
+        <div
+          className="fixed z-[100] border-[0.5px] border-orchid-border-strong bg-orchid-bg px-2 py-1 font-mono text-[12px] text-orchid-primary pointer-events-none whitespace-nowrap max-w-[min(280px,calc(100vw-16px))]"
+          style={{
+            left: tooltip.x,
+            top: tooltip.y,
+            transform: 'translate(-50%, -100%)',
+          }}
+          onClick={() => setTooltip(null)}
+        >
+          <div className="truncate">{formatDate(tooltip.date)}</div>
+          <div>
+            {tooltip.questions} questions ·{' '}
+            {tooltip.questions > 0
+              ? Math.round((tooltip.correct / tooltip.questions) * 100)
+              : 0}
+            % correct
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}

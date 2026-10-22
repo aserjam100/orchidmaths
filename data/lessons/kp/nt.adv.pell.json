@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The smallest nontrivial solution",
+    "section": "The smallest nontrivial solution",
+    "subgoals": [
+      "Require y > 0",
+      "Try x from 2 upward",
+      "Keep the first success"
+    ]
+  },
+  {
+    "label": "Worked: d = 2 and d = 5",
+    "section": "Worked: d = 2 and d = 5",
+    "subgoals": [
+      "Check 3^2 - 2*2^2 = 1",
+      "Check 9^2 - 5*4^2 = 1",
+      "Check 2^2 - 3*1^2 = 1"
+    ]
+  },
+  {
+    "label": "Continued fractions generate the solution",
+    "section": "Continued fractions generate the solution",
+    "subgoals": [
+      "Expand sqrt(d) periodically",
+      "Take the convergent before the repeat",
+      "Multiply the unit to get the next solution"
+    ]
+  }
+]

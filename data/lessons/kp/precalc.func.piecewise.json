@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Evaluate sgn(-7) = -1, sgn(0) = 0, sgn(4) = 1",
+      "Split the graph into two rays plus the origin point",
+      "Check oddness via sgn(-x) = -sgn(x)"
+    ]
+  },
+  {
+    "label": "Properties",
+    "section": "",
+    "subgoals": [
+      "Read the range as {-1, 0, 1}",
+      "Locate the single root at x = 0",
+      "Split the left limit -1 from the right limit 1 at 0"
+    ]
+  },
+  {
+    "label": "Limits at infinity",
+    "section": "",
+    "subgoals": [
+      "Push x to -infinity and read sgn = -1",
+      "Push x to +infinity and read sgn = 1",
+      "Hold the value constant on each side of 0"
+    ]
+  }
+]

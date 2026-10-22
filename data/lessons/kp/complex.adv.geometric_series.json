@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Convergence by modulus",
+    "section": "Convergence by modulus",
+    "subgoals": [
+      "Write the partial sums",
+      "Require |r| < 1",
+      "See rotation does not prevent convergence"
+    ]
+  },
+  {
+    "label": "The sum formula",
+    "section": "The sum formula",
+    "subgoals": [
+      "Use 1/(1-r)",
+      "Substitute the complex ratio",
+      "Keep r not equal to 1"
+    ]
+  },
+  {
+    "label": "Dividing by a conjugate",
+    "section": "Dividing by a conjugate",
+    "subgoals": [
+      "Multiply by the conjugate of 1-r",
+      "Expand the numerator",
+      "Divide by the squared modulus"
+    ]
+  }
+]

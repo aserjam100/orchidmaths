@@ -1,0 +1,15 @@
+{
+  "concept": "geo.coord.distance_3d",
+  "setup": "The two points are the origin and a point in space whose coordinates are given.",
+  "steps": [
+    {
+      "fact": "distance",
+      "say": "The distance formula in space adds the third squared difference to the two in the plane, because the answer is Pythagoras applied twice: first within a face of the box, then across it."
+    },
+    {
+      "fact": "distance",
+      "say": "The three differences here form a Pythagorean quadruple, so the square root is exact and the distance is \\([[distance]]\\). When it is not, the answer is left as a square root rather than rounded."
+    }
+  ],
+  "answer": "So the distance is \\([[distance]]\\) units."
+}

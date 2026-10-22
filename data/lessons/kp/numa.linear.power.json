@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Letting the dominant direction win",
+    "section": "Letting the dominant direction win",
+    "subgoals": [
+      "Express the vector in the eigenbasis",
+      "Multiply repeatedly",
+      "Watch the largest eigenvalue dominate"
+    ]
+  },
+  {
+    "label": "Worked: a symmetric matrix",
+    "section": "Worked: a symmetric matrix",
+    "subgoals": [
+      "Identify the two eigenvalues",
+      "See the larger dominate",
+      "Read the growth ratio as the eigenvalue"
+    ]
+  },
+  {
+    "label": "Rate, limits and variants",
+    "section": "Rate, limits and variants",
+    "subgoals": [
+      "Read the convergence rate",
+      "Require a unique dominant size",
+      "Use shifts to target other eigenvalues"
+    ]
+  }
+]

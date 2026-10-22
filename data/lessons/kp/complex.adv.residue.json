@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: residue of one over z",
+    "section": "Worked: residue of one over z",
+    "subgoals": [
+      "Write 1/z as its Laurent expansion at 0",
+      "Read the z^{-1} coefficient",
+      "Record the residue"
+    ]
+  },
+  {
+    "label": "Worked: residue of one over z squared",
+    "section": "Worked: residue of one over z squared",
+    "subgoals": [
+      "Write 1/z^2 exposing the empty z^{-1} slot",
+      "Read a_{-1} = 0",
+      "Conclude the closed-loop integral vanishes"
+    ]
+  },
+  {
+    "label": "Worked: closing the contour on one over z",
+    "section": "Worked: closing the contour on one over z",
+    "subgoals": [
+      "List the interior pole and its residue",
+      "Sum the enclosed residues",
+      "Multiply by 2 pi i"
+    ]
+  }
+]

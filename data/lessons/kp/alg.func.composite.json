@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What are composite functions",
+    "section": "",
+    "subgoals": [
+      "Order inner f first, outer g second",
+      "Check f(A) subset B before composing",
+      "Write g o f: x -> g(f(x)) with domain A"
+    ]
+  },
+  {
+    "label": "Example",
+    "section": "",
+    "subgoals": [
+      "Plug 2x + 3 into x^2 for (2x + 3)^2",
+      "Evaluate at x = 1 to get 25 as a check",
+      "Note g o f differs from f o g in general"
+    ]
+  },
+  {
+    "label": "Composition with the inverse",
+    "section": "",
+    "subgoals": [
+      "Compose f(f^-1(x)) to recover x",
+      "Require injective plus surjective for invertibility",
+      "Use the identity round-trip to confirm inverses"
+    ]
+  }
+]

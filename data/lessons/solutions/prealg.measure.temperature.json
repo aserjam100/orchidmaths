@@ -1,0 +1,15 @@
+{
+  "concept": "prealg.measure.temperature",
+  "setup": "Convert [[value]] degrees [[from_unit]] to degrees [[to_unit]].",
+  "steps": [
+    {
+      "fact": "formula",
+      "say": "Use the formula \\([[formula]]\\)."
+    },
+    {
+      "fact": "substituted",
+      "say": "Substitute the value: \\([[substituted]]\\)."
+    }
+  ],
+  "answer": "The result is [[answer]] degrees [[to_unit]]."
+}

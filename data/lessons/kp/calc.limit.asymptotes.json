@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Horizontal asymptotes",
+    "section": "",
+    "subgoals": [
+      "Compute lim(x to +inf) vs lim(x to -inf)",
+      "Read y = L as horizontal line",
+      "Check 1/x to 0 both ends"
+    ]
+  },
+  {
+    "label": "Vertical asymptotes",
+    "section": "",
+    "subgoals": [
+      "Solve denominator = 0 for candidates",
+      "Take one-sided limits at each candidate",
+      "Confirm x = 2 pole of 1/(x-2)"
+    ]
+  },
+  {
+    "label": "Oblique asymptotes",
+    "section": "",
+    "subgoals": [
+      "Divide to get mx+b remainder",
+      "Take the linear part as slant line",
+      "Check (x^2+1)/x toward y = x"
+    ]
+  }
+]

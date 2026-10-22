@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one REINFORCE step",
+    "section": "Worked: one REINFORCE step",
+    "subgoals": [
+      "Weight the score gradient by return",
+      "Scale by the learning rate",
+      "Raise the good action's probability"
+    ]
+  },
+  {
+    "label": "Worked: subtracting a baseline",
+    "section": "Worked: subtracting a baseline",
+    "subgoals": [
+      "Compute advantage as Q minus V",
+      "Push above-average up, below down",
+      "Cut variance without adding bias"
+    ]
+  },
+  {
+    "label": "When gradients need structure",
+    "section": "When gradients need structure",
+    "subgoals": [
+      "Learn the baseline with a critic",
+      "Clip updates to stay on-policy",
+      "Bonus entropy to keep exploring"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A product of many derivatives",
+    "section": "A product of many derivatives",
+    "subgoals": [
+      "Multiply one derivative per layer",
+      "Compare factors below and above 1",
+      "Compute 0.25 to the tenth power"
+    ]
+  },
+  {
+    "label": "Worked: a stack of sigmoids",
+    "section": "Worked: a stack of sigmoids",
+    "subgoals": [
+      "Bound each sigmoid derivative by 0.25",
+      "Raise the bound to five layers",
+      "Explain the silent early layers"
+    ]
+  },
+  {
+    "label": "Remedies: activations, initialization, clipping",
+    "section": "Remedies: activations, initialization, clipping",
+    "subgoals": [
+      "Choose ReLU for a unit derivative",
+      "Add residual connections",
+      "Clip the gradient norm"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Find the constant",
+    "section": "Find the constant",
+    "subgoals": [
+      "Use k = y/x for direct variation",
+      "Use k = xy for inverse variation",
+      "Keep the given pair together"
+    ]
+  },
+  {
+    "label": "Apply it to the new value",
+    "section": "Apply it to the new value",
+    "subgoals": [
+      "Multiply for direct variation",
+      "Divide for inverse variation",
+      "Do not swap the two formulas"
+    ]
+  },
+  {
+    "label": "Two different relationships",
+    "section": "Two different relationships",
+    "subgoals": [
+      "Doubling x doubles y when direct",
+      "Doubling x halves y when inverse",
+      "Check the constant on both pairs"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Vertices with no edges between them",
+    "section": "Vertices with no edges between them",
+    "subgoals": [
+      "Avoid edges inside the set",
+      "Complement a vertex cover",
+      "Define alpha"
+    ]
+  },
+  {
+    "label": "Worked: paths and complete bipartite",
+    "section": "Worked: paths and complete bipartite",
+    "subgoals": [
+      "Take alternate vertices of P_4",
+      "Take all leaves of a star",
+      "Take the larger side of K_{2,3}"
+    ]
+  },
+  {
+    "label": "Complement of a cover",
+    "section": "Complement of a cover",
+    "subgoals": [
+      "Show V minus a cover is independent",
+      "Show the complement of an independent set covers",
+      "Use tau = n - alpha"
+    ]
+  }
+]

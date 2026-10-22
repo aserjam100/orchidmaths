@@ -1,0 +1,41 @@
+<svg width="460px" height="150px" viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg">
+<rect width="460" height="150" fill="white"/>
+<rect x="44" y="95" width="9" height="9" fill="#E6E6E6" stroke="#333333" stroke-width="1"/>
+<rect x="150" y="95" width="90" height="9" fill="#E6E6E6" stroke="#333333" stroke-width="1"/>
+<line x1="159" y1="95" x2="159" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="168" y1="95" x2="168" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="177" y1="95" x2="177" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="186" y1="95" x2="186" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="195" y1="95" x2="195" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="204" y1="95" x2="204" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="213" y1="95" x2="213" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="222" y1="95" x2="222" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="231" y1="95" x2="231" y2="104" stroke="#333333" stroke-width="1"/>
+<rect x="340" y="14" width="90" height="90" fill="#E6E6E6" stroke="#333333" stroke-width="1"/>
+<line x1="349" y1="14" x2="349" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="358" y1="14" x2="358" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="367" y1="14" x2="367" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="376" y1="14" x2="376" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="385" y1="14" x2="385" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="394" y1="14" x2="394" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="403" y1="14" x2="403" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="412" y1="14" x2="412" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="421" y1="14" x2="421" y2="104" stroke="#333333" stroke-width="1"/>
+<line x1="340" y1="23" x2="430" y2="23" stroke="#333333" stroke-width="1"/>
+<line x1="340" y1="32" x2="430" y2="32" stroke="#333333" stroke-width="1"/>
+<line x1="340" y1="41" x2="430" y2="41" stroke="#333333" stroke-width="1"/>
+<line x1="340" y1="50" x2="430" y2="50" stroke="#333333" stroke-width="1"/>
+<line x1="340" y1="59" x2="430" y2="59" stroke="#333333" stroke-width="1"/>
+<line x1="340" y1="68" x2="430" y2="68" stroke="#333333" stroke-width="1"/>
+<line x1="340" y1="77" x2="430" y2="77" stroke="#333333" stroke-width="1"/>
+<line x1="340" y1="86" x2="430" y2="86" stroke="#333333" stroke-width="1"/>
+<line x1="340" y1="95" x2="430" y2="95" stroke="#333333" stroke-width="1"/>
+<g font-size="11" fill="#636363" text-anchor="middle">
+<text x="49" y="126">A single block</text>
+<text x="49" y="142">represents 1</text>
+<text x="195" y="126">A rod</text>
+<text x="195" y="142">represents 10</text>
+<text x="385" y="126">A square</text>
+<text x="385" y="142">represents 100</text>
+</g>
+</svg>

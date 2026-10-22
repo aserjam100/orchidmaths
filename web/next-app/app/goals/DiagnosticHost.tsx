@@ -1,0 +1,513 @@
+'use client'
+
+import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
+import { toast } from 'sonner'
+import KatexContent from '../../components/KatexContent'
+import SectionHeader from '../../components/SectionHeader'
+import ProgressBar from '../../components/ProgressBar'
+import ReportButton from '../../components/ReportButton'
+import {
+  startGoalDiagnostic,
+  submitGoalAnswer,
+  resumeGoalDiagnostic,
+  getGoalPlan,
+  skipGoalQuestion,
+  retryGoalQuestion,
+  type GoalPlanRes,
+  type DiagnosticProgress,
+} from '../../lib/api'
+import { getErrorMessage } from '../../lib/api'
+import { formatForGradingType, formatForQuestion, type AnswerFormat, type QuestionFormatFields } from '../../lib/answerFormat'
+import ChoiceOptions from '../../components/ChoiceOptions'
+import SubmitErrorBlock, {
+  MAX_SKIPS,
+  toSubmitError,
+  type SubmitError,
+} from '../../components/SubmitErrorBlock'
+import { GOALS_DIAG_KEY } from './constants'
+import { MathAnswerInput, type MathFocusHandle } from '@/components/math/MathInput'
+
+const EMPTY_PLAN: GoalPlanRes = {
+  readiness: 1,
+  total_tested: 0,
+  correct_count: 0,
+  weak_areas: {},
+  strong_areas: {},
+}
+
+// Goals diagnostic (CAT): select → answer loop → plan. Self-contained so the
+// goals page only mounts it; owns its session + resume key.
+export default function DiagnosticHost({
+  startIds,
+  resumeId,
+  onComplete,
+  onResumeExpired,
+}: {
+  startIds: string[] | null
+  resumeId: string | null
+  onComplete: (plan: GoalPlanRes) => void
+  onResumeExpired: () => void
+}) {
+  const [loading, setLoading] = useState(false)
+  const sessionId = useRef('')
+  const conceptId = useRef('')
+  const diagGradingType = useRef('')
+  const goalsInputRef = useRef<MathFocusHandle | null>(null)
+  const startedRef = useRef(false)
+
+  const [question, setQuestion] = useState('')
+  const [conceptName, setConceptName] = useState('')
+  // Next question staged from the submit response — revealed by goNext(),
+  // never fetched. Cleared on advance, so double-press is a no-op.
+  const pendingNext = useRef<{
+    question: string
+    conceptId: string
+    conceptName: string
+    gradingType: string
+    answerHint?: string
+    answerInputMode?: string
+  } | null>(null)
+  const [questionCount, setQuestionCount] = useState(0)
+  const [estimatedTotal, setEstimatedTotal] = useState(0)
+  const [progress, setProgress] = useState<DiagnosticProgress | null>(null)
+  const [answerInput, setAnswerInput] = useState('')
+  // Verdict only. A diagnostic measures prior knowledge, so the response no longer carries the
+  // worked solution and this holds no field for one. `conceptId` is the concept just answered,
+  // so a miss can route to Learn — the only surface that explains.
+  //
+  // `dontKnow` is what the learner did, not what they scored: the engine still records an admitted
+  // unknown as negative evidence, but the verdict must not read as "you were close and wrong".
+  const [lastResult, setLastResult] = useState<{ correct: boolean; feedback: string; conceptId: string; dontKnow?: boolean } | null>(null)
+  const [accuracy, setAccuracy] = useState<{ correct: number; total: number }>({ correct: 0, total: 0 })
+  const [submitError, setSubmitError] = useState<SubmitError | null>(null)
+  const [planError, setPlanError] = useState('')
+  const [finished, setFinished] = useState(false)
+  const [skipCount, setSkipCount] = useState(0)
+  const [retryAvailable, setRetryAvailable] = useState(false)
+  // Concept the visible feedback belongs to — the retry call must name it,
+  // since conceptId.current already advanced to the staged next question.
+  const [retryConcept, setRetryConcept] = useState('')
+  const [answerFormat, setAnswerFormat] = useState<AnswerFormat>(() => formatForGradingType())
+
+  async function start() {
+    setLoading(true)
+    try {
+      const ids = startIds ?? []
+      const res = await startGoalDiagnostic(ids)
+      if (res.done) {
+        onComplete(EMPTY_PLAN)
+        return
+      }
+      sessionId.current = res.session_id
+      try {
+        sessionStorage.setItem(GOALS_DIAG_KEY, res.session_id)
+      } catch { /* storage unavailable — session simply won't resume */ }
+      setQuestion(res.question || '')
+      conceptId.current = res.concept_id || ''
+      setConceptName(res.concept_name || '')
+      setAnswerFormat(formatForQuestion(res))
+    diagGradingType.current = res.grading_type
+      setQuestionCount(1)
+      // Backend truth first; frontend estimate as fallback for older servers.
+      if (res.progress && res.progress.cover_size > 0) {
+        setProgress(res.progress)
+        setEstimatedTotal(res.progress.cover_size)
+      } else {
+        // Fallback cover size: ~10 + log2(selected concepts)
+        const est = Math.min(10 + Math.ceil(Math.log2(Math.max(ids.length, 1)) * 5), 50)
+        setEstimatedTotal(est)
+        setProgress(null)
+      }
+      setAccuracy({ correct: 0, total: 0 })
+      setLastResult(null)
+      setAnswerInput('')
+      pendingNext.current = null
+      setSubmitError(null)
+      setPlanError('')
+      setFinished(false)
+      setSkipCount(0)
+      setRetryAvailable(false)
+    } catch {
+      toast.error("Something went wrong, but we're working on it.")
+      onResumeExpired()
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  async function resume() {
+    const sid = resumeId ?? ''
+    if (!sid) {
+      onResumeExpired()
+      return
+    }
+    setLoading(true)
+    try {
+      const data = await resumeGoalDiagnostic(sid)
+      if (data.done) {
+        try {
+          sessionStorage.removeItem(GOALS_DIAG_KEY)
+        } catch { /* ignore */ }
+        toast.error('That diagnostic already finished — start a fresh one below.')
+        onResumeExpired()
+        return
+      }
+      sessionId.current = sid
+      setQuestion(data.question || '')
+      conceptId.current = data.concept_id || ''
+      setConceptName(data.concept_name || '')
+      setAnswerFormat(formatForQuestion(data))
+    diagGradingType.current = data.grading_type
+      if (data.progress) {
+        setProgress(data.progress)
+        setEstimatedTotal(data.progress.cover_size)
+        setQuestionCount(data.progress.answered + 1)
+      }
+      setLastResult(null)
+      setAnswerInput('')
+      pendingNext.current = null
+      setSubmitError(null)
+      setPlanError('')
+      setFinished(false)
+      setSkipCount(0)
+      setRetryAvailable(false)
+    } catch {
+      try {
+        sessionStorage.removeItem(GOALS_DIAG_KEY)
+      } catch { /* ignore */ }
+      toast.error('Could not resume — that session expired. Start a fresh diagnostic.')
+      onResumeExpired()
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    if (startedRef.current) return
+    startedRef.current = true
+    if (resumeId) void resume()
+    else void start()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // Keyboard flow: the answer form unmounts while feedback shows, so the
+  // cursor is restored here — whenever a fresh question is revealed.
+  useEffect(() => {
+    if (!lastResult && question) goalsInputRef.current?.focus()
+  }, [lastResult, question])
+
+  async function submitAnswer(dontKnow = false) {
+    if (!dontKnow && !answerInput.trim()) return
+    setLoading(true)
+    setSubmitError(null)
+    try {
+      const answer = dontKnow ? '' : answerInput.trim()
+      const elapsed = 5.0
+      const data = await submitGoalAnswer(sessionId.current, conceptId.current, answer, elapsed, dontKnow)
+      const correct = data.correct || false
+      // An admitted unknown is not a wrong answer, so it does not get the wrong answer's words.
+      // Empty here, because the verdict line states it; the engine's accounting is untouched.
+      const feedback = dontKnow ? '' : data.feedback || (correct ? 'Correct!' : 'Not quite.')
+      setAccuracy(prev => ({
+        correct: prev.correct + (correct ? 1 : 0),
+        total: prev.total + 1,
+      }))
+      setLastResult({ correct, feedback, conceptId: conceptId.current, dontKnow })
+      setRetryAvailable(data.done ? false : data.retry_available === true)
+      setRetryConcept(data.done ? '' : conceptId.current)
+      if (data.progress && data.progress.cover_size > 0) {
+        setProgress(data.progress)
+        setEstimatedTotal(data.progress.cover_size)
+      }
+
+      if (data.done) {
+        setFinished(true)
+        setTimeout(() => {
+          void fetchPlan()
+        }, 800)
+        return
+      }
+
+      // Manual advance: stage the prefetched next question, reveal on Next.
+      pendingNext.current = {
+        question: data.question || '',
+        conceptId: data.concept_id || '',
+        conceptName: data.concept_name || '',
+        gradingType: data.grading_type || '',
+        answerHint: data.answer_hint,
+        answerInputMode: data.answer_input_mode,
+      }
+      setLoading(false)
+    } catch (e) {
+      setSubmitError(toSubmitError(e, 'Failed to submit answer.'))
+      setLoading(false)
+    }
+  }
+
+  async function fetchPlan() {
+    setPlanError('')
+    try {
+      const planRes = await getGoalPlan(sessionId.current)
+      try {
+        sessionStorage.removeItem(GOALS_DIAG_KEY)
+      } catch { /* ignore */ }
+      onComplete(planRes)
+    } catch (e) {
+      setPlanError(getErrorMessage(e) || 'Could not generate plan.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  function applyQuestion(question: string, cid: string, name: string, gradingType: string, format?: QuestionFormatFields) {
+    setQuestion(question)
+    conceptId.current = cid
+    setConceptName(name)
+    setAnswerFormat(format ? formatForQuestion(format) : formatForGradingType(gradingType))
+    diagGradingType.current = gradingType
+    setQuestionCount(prev => prev + 1)
+    setLastResult(null)
+    setAnswerInput('')
+    setSubmitError(null)
+    setRetryAvailable(false)
+    setRetryConcept('')
+  }
+
+  async function skipAnswer() {
+    if (skipCount >= MAX_SKIPS || loading) return
+    setLoading(true)
+    setSubmitError(null)
+    try {
+      const data = await skipGoalQuestion(sessionId.current)
+      setSkipCount(c => c + 1)
+      if (data.done) {
+        setFinished(true)
+        setLastResult({ correct: false, feedback: 'Skipped — no evidence recorded.', conceptId: conceptId.current })
+        setTimeout(() => {
+          void fetchPlan()
+        }, 800)
+        return
+      }
+      if (data.progress && data.progress.cover_size > 0) {
+        setProgress(data.progress)
+        setEstimatedTotal(data.progress.cover_size)
+      }
+      applyQuestion(data.question || '', data.concept_id || '', data.concept_name || '', data.grading_type || '', data)
+    } catch (e) {
+      setSubmitError(toSubmitError(e, 'Failed to skip question.'))
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  function restartDiagnostic() {
+    setSubmitError(null)
+    setPlanError('')
+    setSkipCount(0)
+    setRetryAvailable(false)
+    setRetryConcept('')
+    setFinished(false)
+    void start()
+  }
+
+  async function retryQuestion() {
+    if (loading || !retryConcept) return
+    setLoading(true)
+    setSubmitError(null)
+    try {
+      const data = await retryGoalQuestion(sessionId.current, retryConcept)
+      setRetryAvailable(false)
+      setRetryConcept('')
+      pendingNext.current = null
+      setQuestion(data.question || '')
+      conceptId.current = data.concept_id || ''
+      setConceptName(data.concept_name || '')
+      setAnswerFormat(formatForQuestion(data))
+    diagGradingType.current = data.grading_type || ''
+      setLastResult(null)
+      setAnswerInput('')
+    } catch (e) {
+      setSubmitError(toSubmitError(e, 'Failed to retry question.'))
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  function goNext() {
+    const staged = pendingNext.current
+    if (!staged) return
+    pendingNext.current = null
+    applyQuestion(staged.question, staged.conceptId, staged.conceptName, staged.gradingType, {
+      grading_type: staged.gradingType,
+      answer_hint: staged.answerHint,
+      answer_input_mode: staged.answerInputMode,
+    })
+  }
+
+  return (
+    <>
+      <SectionHeader label={`Question ${progress ? progress.answered + 1 : questionCount}`} title={conceptName} />
+      <div className="max-w-2xl mx-auto min-w-0 overflow-hidden px-2 sm:px-0">
+        <ProgressBar
+          answered={progress ? progress.answered + 1 : questionCount}
+          coverDone={progress ? progress.cover_done : 0}
+          coverSize={progress ? progress.cover_size : estimatedTotal}
+        />
+
+        {/* Accuracy display */}
+        {accuracy.total > 0 && (
+          <div className="mb-4 flex items-center gap-2 text-xs font-mono text-orchid-muted justify-center">
+            <span className={accuracy.correct / accuracy.total >= 0.7 ? 'text-orchid-green' : accuracy.correct / accuracy.total < 0.4 ? 'text-orchid-red' : ''}>
+              {accuracy.correct}/{accuracy.total}
+            </span>
+            <span>correct</span>
+            <div className="w-20 h-1 bg-orchid-code rounded-full overflow-hidden">
+              <div
+                className="h-full bg-orchid-blue rounded-full transition-all"
+                style={{ width: `${(accuracy.correct / Math.max(accuracy.total, 1)) * 100}%` }}
+              />
+            </div>
+          </div>
+        )}
+
+        <div className={`bg-orchid-surface border rounded-none p-4 sm:p-6 mb-6 transition-colors duration-200 w-full max-w-full min-w-0 overflow-hidden ${lastResult ? (lastResult.correct ? 'border-orchid-green' : 'border-orchid-red') : 'border-orchid-border'}`}>
+          <div className="bg-orchid-code border border-orchid-border rounded-none p-4 sm:p-6 text-center mb-4 w-full max-w-full min-w-0 overflow-hidden">
+            <div className="w-full max-w-full min-w-0 overflow-hidden">
+              <KatexContent className="text-orchid-primary text-lg font-mono font-light whitespace-pre-wrap break-words">{question}</KatexContent>
+            </div>
+          </div>
+          <ChoiceOptions question={question} value={answerInput} onPick={setAnswerInput} disabled={loading} />
+          {!lastResult ? (
+            <>
+              <form
+                onSubmit={e => { e.preventDefault(); void submitAnswer(false) }}
+                className="flex flex-col sm:flex-row gap-3 min-w-0"
+              >
+                <label htmlFor="goals-answer" className="sr-only">Your answer</label>
+                <MathAnswerInput
+                  id="goals-answer"
+                  value={answerInput}
+                  onChange={setAnswerInput}
+                  onSubmit={() => void submitAnswer(false)}
+                  gradingType={diagGradingType.current}
+                  conceptId={conceptId.current}
+                  disabled={loading}
+                  status={lastResult ? (lastResult.correct ? 'correct' : 'incorrect') : 'default'}
+                  inputMode={answerFormat.inputMode}
+              placeholder="Your answer..."
+                  className="sm:flex-1"
+                  focusRef={goalsInputRef}
+                />
+                <button
+                  type="submit"
+                  disabled={!answerInput.trim() || loading}
+                  className="border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint rounded-none h-12 px-6 font-medium text-sm disabled:opacity-50 shrink-0 w-auto self-end sm:self-auto"
+                >
+                  Check Answer
+                </button>
+              </form>
+              <div className="mt-2 flex items-center justify-between gap-2">
+                <p className="font-mono text-[12px] text-orchid-muted">{answerFormat.hint}</p>
+                <button
+                  type="button"
+                  onClick={() => { void submitAnswer(true) }}
+                  disabled={loading}
+                  className="shrink-0 font-mono text-[12px] text-orchid-muted hover:text-orchid-red underline underline-offset-2 disabled:opacity-50"
+                >
+                  I don&apos;t know
+                </button>
+              </div>
+              <div className="mt-2 flex justify-end">
+                <ReportButton
+                  key={question}
+                  conceptId={conceptId.current}
+                  kind="question"
+                  question={question}
+                  source="diagnostic"
+                  sessionId={sessionId.current}
+                  answerGiven={answerInput}
+                  gradingType={diagGradingType.current || undefined}
+                  answerHint={answerFormat.hint}
+                  answerInputMode={answerFormat.inputMode}
+                />
+              </div>
+            </>
+          ) : (
+            <div className="animate-fadeIn text-center">
+              <p className={`text-base font-medium mb-2 ${lastResult.correct ? 'text-orchid-green' : 'text-orchid-red'}`}>
+                {lastResult.dontKnow ? 'No answer' : lastResult.correct ? '✓ Correct!' : '✗ Not quite'}
+              </p>
+              <KatexContent className="text-orchid-secondary text-sm">{lastResult.feedback}</KatexContent>
+              {/* A miss offers the teaching surface as a deliberate next step, not as the answer.
+                  The feedback above is a verdict; this is the only route to an explanation, and it
+                  leaves the assessment rather than injecting instruction into it. */}
+              {!lastResult.correct && !finished && lastResult.conceptId && (
+                <Link
+                  href={`/learn?concept=${encodeURIComponent(lastResult.conceptId)}`}
+                  className="mt-2 inline-flex items-center border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-4 py-2 font-mono text-[12px] uppercase tracking-[0.18em]"
+                >
+                  Learn this concept →
+                </Link>
+              )}
+              {!lastResult.correct && !finished && retryAvailable && (
+                <button
+                  type="button"
+                  onClick={() => { void retryQuestion() }}
+                  disabled={loading}
+                  className="mt-2 font-mono text-[12px] text-orchid-muted hover:text-orchid-blue underline underline-offset-2 disabled:opacity-50"
+                >
+                  I made a silly mistake — retry
+                </button>
+              )}
+            </div>
+          )}
+        </div>
+
+        {submitError ? (
+          <div className="mb-6">
+            <SubmitErrorBlock
+              error={submitError}
+              onRetry={() => { void submitAnswer(false) }}
+              onSkip={skipAnswer}
+              skipsLeft={MAX_SKIPS - skipCount}
+              onRestart={restartDiagnostic}
+              restartLabel="Restart diagnostic"
+              retrying={loading}
+            />
+          </div>
+        ) : lastResult && !finished ? (
+          <div className="mb-6 text-center">
+            <button
+              type="button"
+              autoFocus
+              onClick={goNext}
+              className="border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint rounded-none h-12 px-8 font-medium text-sm shrink-0"
+            >
+              Next →
+            </button>
+          </div>
+        ) : lastResult && finished && planError ? (
+          <div className="mb-6 border border-orchid-red bg-orchid-surface p-4 text-left" role="alert">
+            <p className="font-mono text-xs text-orchid-red">Couldn&apos;t load your plan.</p>
+            <p className="mt-1 font-mono text-[12px] text-orchid-muted break-words [overflow-wrap:anywhere]">{planError}</p>
+            <div className="mt-3">
+              <button
+                type="button"
+                onClick={() => { setLoading(true); void fetchPlan() }}
+                disabled={loading}
+                className="border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-4 h-10 font-mono text-xs disabled:opacity-50"
+              >
+                {loading ? 'Loading…' : 'Load plan'}
+              </button>
+            </div>
+          </div>
+        ) : lastResult && finished ? (
+          <div className="mb-6 text-center text-orchid-muted text-xs font-mono">
+            Preparing your plan…
+          </div>
+        ) : null}
+      </div>
+    </>
+  )
+}

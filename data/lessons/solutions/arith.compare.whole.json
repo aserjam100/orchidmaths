@@ -1,0 +1,11 @@
+{
+  "concept": "arith.compare.whole",
+  "setup": "You are ordering [[numbers]] from least to greatest.",
+  "steps": [
+    {
+      "fact": "numbers",
+      "say": "Compare the digits from the leftmost place; the first place where the digits differ decides the larger number."
+    }
+  ],
+  "answer": "Least to greatest: [[ordered]]."
+}

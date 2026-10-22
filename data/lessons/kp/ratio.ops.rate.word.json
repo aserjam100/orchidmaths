@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Write the rate from the story",
+    "section": "",
+    "subgoals": [
+      "Find the two amounts the story compares",
+      "Keep them in the order the question asks for",
+      "Write the comparison as a fraction"
+    ]
+  },
+  {
+    "label": "Find the rate for one unit",
+    "section": "",
+    "subgoals": [
+      "Divide the amount by the time or the count",
+      "Write the answer as an amount per one",
+      "Carry the units through the division"
+    ]
+  },
+  {
+    "label": "Answer the question in its units",
+    "section": "",
+    "subgoals": [
+      "Return to the words of the story",
+      "Attach the unit the question asked for",
+      "Check the rate is sensible for the story"
+    ]
+  }
+]

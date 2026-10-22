@@ -1,0 +1,23 @@
+{
+  "concept": "complex.adv.geometric_series",
+  "setup": "The ratio is \\(r = [[ratio]]\\), and the series is \\(1 + r + r^2 + \\cdots\\).",
+  "steps": [
+    {
+      "fact": "ratio",
+      "say": "The modulus of the ratio is \\(1/[[k]] < 1\\), so the series converges."
+    },
+    {
+      "fact": "den",
+      "say": "The sum is \\(1/(1 - [[ratio]])\\), whose denominator has squared modulus [[den]]."
+    },
+    {
+      "fact": "real_num",
+      "say": "Multiplying by the conjugate puts the real part over [[den]] as [[real_num]] and the imaginary part as [[imag_num]]."
+    },
+    {
+      "fact": "value",
+      "say": "So the sum is \\([[value]]\\)."
+    }
+  ],
+  "answer": "So the sum is \\([[value]]\\)."
+}

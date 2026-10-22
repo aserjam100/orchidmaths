@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Count the squared terms",
+    "section": "Count the squared terms",
+    "subgoals": [
+      "Check whether both variables are squared",
+      "One squared variable means a parabola",
+      "Two squared variables narrow it to three conics"
+    ]
+  },
+  {
+    "label": "Compare the coefficients",
+    "section": "Compare the coefficients",
+    "subgoals": [
+      "Equal coefficients mean a circle",
+      "Unequal coefficients with the same sign mean an ellipse",
+      "Do not confuse a scaled circle with an ellipse"
+    ]
+  },
+  {
+    "label": "Check the signs",
+    "section": "Check the signs",
+    "subgoals": [
+      "Opposite signs mean a hyperbola",
+      "Same signs rule out a hyperbola",
+      "Classify without completing the square"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sg-moe-primary",
+    "name": "Singapore Primary Mathematics (MOE)",
+    "description": "Primary 1 to 6, mapped to the MOE 2021 Primary Mathematics syllabus.",
+    "courses": [
+      "sg-p1",
+      "sg-p2",
+      "sg-p3",
+      "sg-p4",
+      "sg-p5",
+      "sg-p6"
+    ]
+  },
+  {
+    "id": "math-for-ml",
+    "name": "Mathematics for Machine Learning",
+    "description": "Calculus, linear algebra, and probability/statistics foundations for ML, with prerequisites pulled in automatically.",
+    "courses": [
+      "calc1",
+      "linalg",
+      "probstat"
+    ]
+  },
+  {
+    "id": "calculus",
+    "name": "Calculus",
+    "description": "Single and multivariable calculus path (Calculus I + II).",
+    "courses": [
+      "calc1",
+      "calc2"
+    ]
+  },
+  {
+    "id": "linear-algebra",
+    "name": "Linear Algebra",
+    "description": "Vectors, matrices, and transformations.",
+    "courses": [
+      "linalg"
+    ]
+  },
+  {
+    "id": "probability-stats",
+    "name": "Probability & Statistics",
+    "description": "Descriptive statistics, probability, distributions, and inference.",
+    "courses": [
+      "probstat"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "One index for the whole domain",
+    "section": "One index for the whole domain",
+    "subgoals": [
+      "Bound the whole sup of the error",
+      "Use one index for every point",
+      "Contrast with pointwise convergence"
+    ]
+  },
+  {
+    "label": "The sup norm criterion",
+    "section": "The sup norm criterion",
+    "subgoals": [
+      "Form the sup of the error",
+      "Send the sup to zero",
+      "Recover the definition at every point"
+    ]
+  },
+  {
+    "label": "What uniformity buys",
+    "section": "What uniformity buys",
+    "subgoals": [
+      "Get continuity of the limit",
+      "Interchange the limit with the integral",
+      "Apply it term by term to a series"
+    ]
+  }
+]

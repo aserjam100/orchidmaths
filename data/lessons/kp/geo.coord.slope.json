@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Rise over run",
+    "section": "Rise over run",
+    "subgoals": [
+      "Define slope as rise over run",
+      "Subtract in a consistent order",
+      "Compute a slope"
+    ]
+  },
+  {
+    "label": "From two points",
+    "section": "From two points",
+    "subgoals": [
+      "Use any two points on the line",
+      "Recognise a vertical line's missing slope",
+      "Check the sign"
+    ]
+  },
+  {
+    "label": "What the slope tells you",
+    "section": "What the slope tells you",
+    "subgoals": [
+      "Read the sign",
+      "Compare steepness",
+      "Identify parallel lines"
+    ]
+  }
+]

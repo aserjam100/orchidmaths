@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Groups whose order is a power of a prime",
+    "section": "Groups whose order is a power of a prime",
+    "subgoals": [
+      "Read the single prime off the order",
+      "Use Cauchy to forbid other prime orders",
+      "Treat the trivial case"
+    ]
+  },
+  {
+    "label": "The center cannot be trivial",
+    "section": "The center cannot be trivial",
+    "subgoals": [
+      "Apply the class equation",
+      "See each noncentral class size divisible by p",
+      "Conclude p divides |Z(G)|"
+    ]
+  },
+  {
+    "label": "Worked: centers of Q_8 and D_4",
+    "section": "Worked: centers of Q_8 and D_4",
+    "subgoals": [
+      "Find the center of Q_8 as the scalars",
+      "Find the center of D_4 as e and r^2",
+      "Compare both orders to the least value p"
+    ]
+  }
+]

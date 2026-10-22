@@ -1,0 +1,15 @@
+{
+  "concept": "trig.basics.coterminal",
+  "setup": "You are given an angle of [[given]]° and asked for the angle in [0°, 360°) that shares its terminal side.",
+  "steps": [
+    {
+      "fact": "turns",
+      "say": "Coterminal angles share a terminal side, so they differ by whole turns: adding or subtracting 360° repeatedly carries the angle around the circle without changing where it stops. The given angle and the reduced one differ by [[turns]] full turn(s)."
+    },
+    {
+      "fact": "value",
+      "say": "Reducing [[given]] into [0°, 360°) leaves [[value]]°, and that is the only coterminal angle in that range."
+    }
+  ],
+  "answer": "So the coterminal angle is [[value]]°."
+}

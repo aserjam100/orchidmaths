@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "State the Dirichlet function",
+      "Classify inputs by rationality",
+      "Evaluate it at points"
+    ]
+  },
+  {
+    "label": "Non-integrability",
+    "section": "",
+    "subgoals": [
+      "Explain why Riemann integration fails",
+      "See the density of both sets",
+      "Conclude non-integrability"
+    ]
+  },
+  {
+    "label": "The Thomae function",
+    "section": "",
+    "subgoals": [
+      "Define the Thomae function",
+      "Compare with Dirichlet",
+      "Note its continuity at irrationals"
+    ]
+  }
+]

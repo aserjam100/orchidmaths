@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Necessary condition",
+    "section": "",
+    "subgoals": [
+      "State a(n) → 0 is required",
+      "Reject n/(n+1) via limit 1",
+      "Stress necessary, not sufficient"
+    ]
+  },
+  {
+    "label": "What series are",
+    "section": "",
+    "subgoals": [
+      "Define series via partial sums",
+      "Separate terms from sums",
+      "Preview convergence tests"
+    ]
+  },
+  {
+    "label": "Harmonic warning",
+    "section": "",
+    "subgoals": [
+      "Show 1/n → 0 yet diverges",
+      "Use harmonic as counterexample",
+      "Demand a real test after nth-term"
+    ]
+  }
+]

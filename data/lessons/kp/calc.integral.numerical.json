@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Integrals without elementary antiderivatives",
+    "section": "",
+    "subgoals": [
+      "Flag e^(-x^2) as non-elementary",
+      "Replace integral of f by weighted sum of w_i f(x_i)",
+      "Preview midpoint vs Simpson on integral of x^2 over [0,1]"
+    ]
+  },
+  {
+    "label": "General principle of a quadrature formula",
+    "section": "",
+    "subgoals": [
+      "Pick nodes x_i and weights w_i",
+      "Sum w_i f(x_i) for the estimate",
+      "Refine by doubling n"
+    ]
+  },
+  {
+    "label": "The rectangle and midpoint rules",
+    "section": "",
+    "subgoals": [
+      "Multiply width dx by midpoint heights",
+      "Sum left vs midpoint on integral of x^2 over [0,1]",
+      "Compare errors at n = 4"
+    ]
+  }
+]

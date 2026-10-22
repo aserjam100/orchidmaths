@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Contrast Cauchy form with single-function Lagrange",
+      "Name the g'(x) != 0 hypothesis",
+      "Preview the (f(b)-f(a))/(g(b)-g(a)) ratio"
+    ]
+  },
+  {
+    "label": "Statement",
+    "section": "",
+    "subgoals": [
+      "Check f,g continuous on [a,b] and differentiable inside",
+      "Locate c with f'(c)/g'(c) equal to the secant ratio",
+      "Recover Lagrange by setting g(x) = x"
+    ]
+  },
+  {
+    "label": "Proof of Cauchy’s theorem",
+    "section": "",
+    "subgoals": [
+      "Build h(x) = f(x) - k*g(x) with k the ratio",
+      "Force h(a) = h(b) then invoke Rolle",
+      "Solve h'(c) = 0 for the Cauchy quotient"
+    ]
+  }
+]

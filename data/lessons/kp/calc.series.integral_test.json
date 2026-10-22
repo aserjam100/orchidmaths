@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is the integral test",
+    "section": "",
+    "subgoals": [
+      "Check positive decreasing f(n) = a_n",
+      "Compare sum a_n with integral of f",
+      "Test sum 1/n^2 via integral dx/x^2"
+    ]
+  },
+  {
+    "label": "Proof",
+    "section": "",
+    "subgoals": [
+      "Sandwich S_N between integrals 1..N and 1..N+1",
+      "Push N to inf on both sides",
+      "Transfer convergence either way"
+    ]
+  },
+  {
+    "label": "Example",
+    "section": "",
+    "subgoals": [
+      "Check 1/x^2 decreasing positive",
+      "Integrate dx/x^2 over [1,inf) = 1",
+      "Conclude sum 1/n^2 converges"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Row stochastic matrices",
+    "section": "Row stochastic matrices",
+    "subgoals": [
+      "Check nonnegativity",
+      "Check that each row sums to one",
+      "See that probability vectors stay probability vectors"
+    ]
+  },
+  {
+    "label": "Worked: one step forward",
+    "section": "Worked: one step forward",
+    "subgoals": [
+      "Write the two contributions to state one",
+      "Weight by the starting distribution",
+      "Add for the new probability"
+    ]
+  },
+  {
+    "label": "Powers give multi-step probabilities",
+    "section": "Powers give multi-step probabilities",
+    "subgoals": [
+      "Multiply the matrix by itself",
+      "Read the entry for the required step count",
+      "Interpret it as a sum over routes"
+    ]
+  }
+]

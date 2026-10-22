@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The speed integral",
+    "section": "The speed integral",
+    "subgoals": [
+      "State the arc length integral",
+      "Identify the integrand as a speed",
+      "Explain why reparametrising does not change it"
+    ]
+  },
+  {
+    "label": "Straight parametrisations",
+    "section": "Straight parametrisations",
+    "subgoals": [
+      "Compute the velocity of a straight path",
+      "Use a Pythagorean direction",
+      "Check the answer against the endpoints"
+    ]
+  },
+  {
+    "label": "Why the formula works",
+    "section": "Why the formula works",
+    "subgoals": [
+      "Approximate a curve by straight pieces",
+      "Turn the sum into a Riemann sum",
+      "Recover the graph formula as a special case"
+    ]
+  }
+]

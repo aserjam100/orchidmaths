@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Where the candidates come from",
+    "section": "Where the candidates come from",
+    "subgoals": [
+      "State the form of a rational root",
+      "Explain the numerator's constraint",
+      "Explain the denominator's constraint"
+    ]
+  },
+  {
+    "label": "Counting the candidates",
+    "section": "Counting the candidates",
+    "subgoals": [
+      "Count divisors of the constant term",
+      "Multiply by the leading coefficient's divisors",
+      "Double for the signs"
+    ]
+  },
+  {
+    "label": "What it is and is not",
+    "section": "What it is and is not",
+    "subgoals": [
+      "Distinguish candidates from roots",
+      "Give a case with no rational root",
+      "Say what it ignores"
+    ]
+  }
+]

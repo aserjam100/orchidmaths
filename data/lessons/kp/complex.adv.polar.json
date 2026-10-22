@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Compute r = sqrt(a^2 + b^2)",
+      "Solve cos th = a/r and sin th = b/r",
+      "Write z = r(cos th + i sin th)"
+    ]
+  },
+  {
+    "label": "Operations",
+    "section": "",
+    "subgoals": [
+      "Multiply moduli and add angles",
+      "Divide moduli and subtract angles",
+      "Raise to powers via r^n and n th"
+    ]
+  },
+  {
+    "label": "Modulus and argument",
+    "section": "",
+    "subgoals": [
+      "Measure r as distance from the origin",
+      "Read th from the positive real axis",
+      "Normalize th into (-pi,pi]"
+    ]
+  }
+]

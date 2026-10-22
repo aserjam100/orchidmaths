@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two kinds of improperness",
+    "section": "Two kinds of improperness",
+    "subgoals": [
+      "Replace the unbounded end by a parameter",
+      "Integrate up to it",
+      "Take the limit and test finiteness"
+    ]
+  },
+  {
+    "label": "Power functions and the p-test",
+    "section": "Power functions and the p-test",
+    "subgoals": [
+      "Integrate the reciprocal power",
+      "Check the exponent against one",
+      "Read convergence and the value"
+    ]
+  },
+  {
+    "label": "Comparison and absolute convergence",
+    "section": "Comparison and absolute convergence",
+    "subgoals": [
+      "Bound by a known convergent integral",
+      "Transfer convergence term by term",
+      "Test the absolute value for cancellation"
+    ]
+  }
+]

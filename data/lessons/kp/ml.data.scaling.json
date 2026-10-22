@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Standardization and the z-score",
+    "section": "Standardization and the z-score",
+    "subgoals": [
+      "Subtract the training mean",
+      "Divide by the training standard deviation",
+      "Read the z-score as standard deviations from the mean"
+    ]
+  },
+  {
+    "label": "Worked: standardizing three values",
+    "section": "Worked: standardizing three values",
+    "subgoals": [
+      "Standardize 10 with mean 4 and sd 2",
+      "Standardize 4 to zero",
+      "Standardize 2 to minus one"
+    ]
+  },
+  {
+    "label": "Why unscaled features distort distance",
+    "section": "Why unscaled features distort distance",
+    "subgoals": [
+      "Sum squared differences across features",
+      "See the large-unit feature dominate",
+      "Fit the transform on the training split only"
+    ]
+  }
+]

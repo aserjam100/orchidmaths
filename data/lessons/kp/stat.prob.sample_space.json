@@ -1,0 +1,29 @@
+[
+  {
+    "label": "5.5 Averages and Probability",
+    "section": "",
+    "subgoals": [
+      "List every possible outcome once",
+      "Count the listed outcomes into the total",
+      "Check each trial lands inside the list"
+    ]
+  },
+  {
+    "label": "Calculate the Mean of a Set of Numbers",
+    "section": "",
+    "subgoals": [
+      "Add 85+88+94 into 267",
+      "Divide 267 by 3 into 89",
+      "Report Ethan's mean as 89 points"
+    ]
+  },
+  {
+    "label": "The Mean",
+    "section": "",
+    "subgoals": [
+      "Divide the data sum by n",
+      "Pair each outcome with its probability",
+      "Check the outcome probabilities sum to 1"
+    ]
+  }
+]

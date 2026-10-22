@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why the pivot size matters",
+    "section": "Why the pivot size matters",
+    "subgoals": [
+      "Look at the current column",
+      "Choose the largest entry",
+      "Swap its row into the pivot position"
+    ]
+  },
+  {
+    "label": "Worked: avoiding a small pivot",
+    "section": "Worked: avoiding a small pivot",
+    "subgoals": [
+      "Spot the tiny candidate pivot",
+      "Swap the rows",
+      "Recompute with a healthy pivot"
+    ]
+  },
+  {
+    "label": "The guarantee and its limits",
+    "section": "The guarantee and its limits",
+    "subgoals": [
+      "State the bound on the multipliers",
+      "Mention the constructed counterexamples",
+      "Recognise the singular case"
+    ]
+  }
+]

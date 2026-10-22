@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition and inheritance",
+    "section": "Definition and inheritance",
+    "subgoals": [
+      "Choose strictly increasing positions",
+      "Use the original threshold",
+      "Conclude the same limit"
+    ]
+  },
+  {
+    "label": "Convergence through subsequences",
+    "section": "Convergence through subsequences",
+    "subgoals": [
+      "Assume every subsequence converges",
+      "Pick a subsequence avoiding the limit",
+      "Reach the contradiction"
+    ]
+  },
+  {
+    "label": "Limits and cluster points",
+    "section": "Limits and cluster points",
+    "subgoals": [
+      "Collect the subsequential limits",
+      "Note the convergent case has one",
+      "Read the extremes as lim sup and lim inf"
+    ]
+  }
+]

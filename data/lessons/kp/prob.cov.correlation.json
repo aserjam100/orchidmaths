@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Standardising the covariance",
+    "section": "Standardising the covariance",
+    "subgoals": [
+      "Divide the covariance by the two standard deviations",
+      "Check that the result is dimensionless",
+      "Read the value between the two bounds"
+    ]
+  },
+  {
+    "label": "Worked: from covariance and scales",
+    "section": "Worked: from covariance and scales",
+    "subgoals": [
+      "Multiply the two standard deviations",
+      "Divide the covariance by the product",
+      "Interpret the sign and size"
+    ]
+  },
+  {
+    "label": "Interpreting the sign and size",
+    "section": "Interpreting the sign and size",
+    "subgoals": [
+      "Read the extremes as exact linearity",
+      "Treat near-zero as weak linear association",
+      "Recall that nonlinear dependence can hide"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Write the cost of each offer",
+    "section": "Solving Two-Step Equations",
+    "subgoals": [
+      "Name the unknown as the number of uses",
+      "Write each offer as a flat fee plus a rate times the unknown",
+      "Keep the units of each offer straight"
+    ]
+  },
+  {
+    "label": "Set the two cost expressions equal",
+    "section": "Solving Multistep Linear Equations",
+    "subgoals": [
+      "Collect the variable terms on one side",
+      "Collect the numbers on the other",
+      "Divide by the coefficient of the unknown"
+    ]
+  },
+  {
+    "label": "Answer the question",
+    "section": "Revisiting Applications",
+    "subgoals": [
+      "Say what the number of uses means in the story",
+      "Check both offers really cost the same there",
+      "Answer in whole uses"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is a function",
+    "section": "",
+    "subgoals": [
+      "Assign each x in A exactly one f(x) in B",
+      "Tag A the domain and B the codomain",
+      "Test x1 != x2 implies f(x1) != f(x2)"
+    ]
+  },
+  {
+    "label": "What is not a function",
+    "section": "",
+    "subgoals": [
+      "Flag x = -3 mapping to both 7 and 10",
+      "Enforce one y per x via unique-existence",
+      "Run the vertical-line test on the graph"
+    ]
+  },
+  {
+    "label": "Difference between codomain and range",
+    "section": "",
+    "subgoals": [
+      "Read the codomain B off the f: A -> B declaration",
+      "Collect attained f(x) values into the range",
+      "Fit the range inside the codomain as a subset"
+    ]
+  }
+]

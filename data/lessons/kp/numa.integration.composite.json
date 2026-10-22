@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Many small pieces",
+    "section": "Many small pieces",
+    "subgoals": [
+      "Divide the interval into subintervals",
+      "Apply the rule on each piece",
+      "Add, halving the shared end weights"
+    ]
+  },
+  {
+    "label": "Worked: a few subintervals",
+    "section": "Worked: a few subintervals",
+    "subgoals": [
+      "List the sample points",
+      "Apply the half weights at the two ends",
+      "Multiply the sum by the width"
+    ]
+  },
+  {
+    "label": "The convergence rate",
+    "section": "The convergence rate",
+    "subgoals": [
+      "Sum the local errors",
+      "Read the global order",
+      "See the gain from a higher-order basic rule"
+    ]
+  }
+]

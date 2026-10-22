@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The three products",
+    "section": "The three products",
+    "subgoals": [
+      "Add or subtract the sum and difference formulas",
+      "Collect the product term",
+      "Divide by two"
+    ]
+  },
+  {
+    "label": "Reading the formulas",
+    "section": "Reading the formulas",
+    "subgoals": [
+      "Match the factors to one of the three",
+      "Use the sum and the difference as arguments",
+      "Track the sign of the subtraction"
+    ]
+  },
+  {
+    "label": "Where they are used",
+    "section": "Where they are used",
+    "subgoals": [
+      "Convert a product before integrating",
+      "Sum the two elementary integrals",
+      "Read the slow factor as a beat"
+    ]
+  }
+]

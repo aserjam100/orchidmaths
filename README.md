@@ -1,0 +1,248 @@
+<div align="center">
+
+<img src="web/next-app/public/icons/icon-192.png" width="72" alt="" />
+
+# Orchid
+
+**Adaptive primary maths practice, mapped to the Singapore MOE syllabus**
+
+[![Go](https://img.shields.io/badge/Go-1.26+-00ADD8?style=flat-square&logo=go&logoColor=white)](https://golang.org)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
+[![License](https://img.shields.io/badge/license-MIT-d98cbc?style=flat-square)](LICENSE)
+
+</div>
+
+---
+
+Orchid is an adaptive maths practice app for Primary 1 to 6 students in Singapore. It never moves a
+child on until they are both accurate and quick on the prerequisite, it brings mastered topics back
+before they fade, and it generates every question fresh, so there is nothing to memorise.
+
+**Curriculum.** Every learning outcome in the MOE 2021 Primary Mathematics syllabus (Primary 1 to 6,
+Standard; updated October 2025) is mapped to the Orchid concepts that practise it, in
+[`data/curricula/sg-moe-primary-2021.json`](data/curricula/sg-moe-primary-2021.json). Each outcome is
+marked `full`, `partial` or `none`, and the courses `sg-p1` to `sg-p6` are built from the mapping. The
+[coverage report](docs/curriculum/sg-moe-primary.md) lists every outcome, gaps included. Regenerate it
+with `make curriculum`. Orchid is independent and is not affiliated with or endorsed by the Ministry of
+Education, Singapore.
+
+**Upstream.** Orchid is a fork of [Mathua](https://github.com/chuma-beep/mathua) by Wisdom Chukwuemeka
+(MIT). The engine, the concept graph of 1250 concepts at the time of the fork and most of the documentation come from Mathua.
+Mathua's non-commercial lesson content (Algebrica, OpenStax) and its unlicensed artwork were removed at
+the fork; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+---
+
+## What makes it different
+
+- **You cannot advance until you have mastered the prerequisite.** The concept graph enforces this — if you cannot reliably add fractions with different denominators, the system will not show you mixed number addition.
+- **Speed matters, not just accuracy.** A correct answer that took 45 seconds on a concept with a 12-second threshold counts as weak mastery. You need to be both right and fast.
+- **Nothing is forgotten.** Concepts resurface automatically through per-topic spaced repetition (SM-2 scaled by your learning speed). A concept mastered three weeks ago will reappear before it decays.
+- **Problems are generated, not stored.** Every problem is produced on demand by a parameterised generator. The same concept gives you a different problem every time. There is nothing to memorise.
+- **Weekly leagues and shareable progress.** Bronze → Diamond leagues promote the top 2 each Monday, and any student can generate a read-only share link (Settings → Share) for a parent or teacher. Pauses, accommodated timing and a 50 XP mastery-check quiz are built in.
+
+---
+
+## Getting started
+
+### Build from source
+```bash
+git clone https://github.com/aserjam100/orchid.git
+cd orchid
+
+go build -o bin/orchid ./cmd/orchid
+
+# SQLite (zero-config, local)
+./bin/orchid --serve --port 8080
+# Or with DATABASE_URL explicitly
+DATABASE_URL=sqlite:orchid.db ./bin/orchid --serve --port 8080
+# Postgres for multi-user (via pgx/v5, implemented internal/storage/postgres.go:7)
+DATABASE_URL=postgres://user:pass@host/orchid ./bin/orchid --serve --port 8080
+# Or copy env file first
+cp .env.example .env  # edit JWT_SECRET / CORS_ALLOWED_ORIGINS if needed
+```
+
+### Create the first owner
+
+Every account is a learner until an administrator promotes it. Roles are `owner`, `admin` and
+`moderator`; `owner` is the top role and the only one that can grant another owner. Sign up
+through the app first.
+
+```bash
+./bin/orchid admin promote you@example.com
+```
+
+Run this on the machine that holds the database. The command needs no flag, no token and no
+env var. Do not add a role field to a signup request. A client cannot choose its own role.
+
+The command refuses to create an account, and it grants `owner` — the first promotion must be
+able to create the rest. Everyone after that is added from `/admin/contributors`: an owner or
+admin issues an invitation bound to an email, and accepting it assigns the role. No deployment
+secret is involved, because a shared password cannot say which person used it.
+
+One administrator can demote nobody, including themselves. Promote a second administrator first.
+
+> **Requirements:** Go 1.26+ (module targets `go 1.26.6`; CI/Docker build with 1.27). Python 3.11+ with `sympy` (pinned in `grading/requirements.txt`) grades `symbolic`/`polynomial`/`expression`/`complex` answers — **required for those ~32% of concepts**; the production Docker image installs it and fails the build if grading is unavailable. Runs without Python only for the pure-Go grading types.
+>
+> **Env:** `DATABASE_URL` (`sqlite:orchid.db` default, or `postgres://` for production via `pgx` `postgres.go:21` / `main.go:69`), `PORT` (default `8080`), `JWT_SECRET` (hex 32 bytes or raw ≥32 chars — **required in production**, else random per run and tokens invalidate on restart `internal/auth/auth.go:45`), `CORS_ALLOWED_ORIGINS` (comma-separated allowlist, empty = allow all dev; supports `*` wildcard suffix like `https://*.vercel.app` for previews `internal/server/server.go:32`), On Fly: `fly secrets set JWT_SECRET=$(openssl rand -hex 32) CORS_ALLOWED_ORIGINS=https://orchid.vercel.app,https://*.vercel.app`. See `.env.example`.
+
+---
+
+## How it works
+
+### The concept graph
+
+All math knowledge in Orchid is a directed acyclic graph. Each node is an atomic concept — something small enough to fail independently. Each edge is a prerequisite relationship.
+
+The graph contains **1257 concepts** across **21 domains** (1257 KP shard files × 3 = 3771 KPs). The scheduler reads your progress and the graph structure to decide what to show next — it will never surface a concept whose prerequisites you have not mastered.
+
+### Mastery gating
+
+Every concept has two thresholds: a **streak** (consecutive correct answers required) and a **time limit** (maximum acceptable average response time in seconds). Both must be met simultaneously.
+
+A concept moves through five states:
+
+```
+UNSEEN → LEARNING → PRACTICING → MASTERED → DECAYING
+```
+
+`DECAYING` means you mastered the concept but have not seen it in over 14 days. The scheduler treats decaying concepts as urgent — they appear before new material until you demonstrate you still know them.
+
+### The scheduler
+
+```
+priority = 0.5×days_since_last_seen + 0.2×(1-mastery) + 0.3×weakness
+         + 5  if DECAYING
+         + 2  if encompasses a weak prerequisite (layering)
+         − 3  if sharing an InterferenceGroup with recent practice
+interleaving: no two consecutive questions share a subdomain
+top-3 dissimilar candidates → 70/30 new/review balance
+```
+
+Three hard rules apply: never surface a concept whose prerequisites are not mastered, never show the same concept twice in a row, maintain roughly 70% new/practicing and 30% review.
+
+### Spaced repetition
+
+When a concept reaches MASTERED, Orchid schedules its next review using SM-2 scaled by your per-topic learning speed (0.5 slow → 2.0 fast). The interval grows with each successful review (1 day → 6 days → previous × easiness factor × your speed) and resets on failure. Reviews are woven into normal sessions; every 50 XP a mastery-check quiz surfaces at 80% difficulty. Diagnostic reports include a frontier placement, gaps by domain and completion estimates for accreditation.
+
+---
+
+## Content
+
+| Domain | Concepts |
+|--------|----------|
+| Arithmetic | 66 |
+| Fractions | 46 |
+| Pre-Algebra | 60 |
+| Algebra | 124 |
+| Geometry | 45 |
+| Trigonometry | 68 |
+| Precalculus | 50 |
+| Calculus | 205 |
+| Statistics | 55 |
+| Linear Algebra | 45 |
+| Discrete Math | 55 |
+| Complex Numbers | 42 |
+| Number Theory | 42 |
+| Differential Equations | 42 |
+| Abstract Algebra | 45 |
+| Machine Learning | 45 |
+| Topology | 42 |
+| Graph Theory | 40 |
+| Probability Theory | 50 |
+| Numerical Analysis | 40 |
+| Real Analysis | 50 |
+| **Total** | **1257** |
+
+---
+
+## Architecture
+
+Orchid is a single Go binary with one delivery method. The engine core is identical — only the UI delivery layer differs.
+
+```
+Web (React + Next.js) ═══ REST API ═══ Core Engine ── Grading ── Storage
+```
+
+The five-layer architecture — UI, API, Core Engine, Grading, Storage — is fully documented at **[`docs/architecture.md`](docs/architecture.md)** and in the interactive **[web docs](/docs/architecture)** with React Flow diagrams and pre-rendered D2 SVGs.
+
+---
+
+## Courses and transcripts
+
+34 courses from 4th grade to university are wired through the DAG — including Calculus I/II, Linear Algebra, Discrete Math I/II, Probability & Statistics, Differential Equations, Abstract Algebra I/II, Topology and Machine Learning. Each course shows mastered/total, percent and an estimate of days remaining at your daily XP goal. Transcripts export as CSV via `GET /api/transcript?format=csv` and the read-only share link (Settings → Share) lets a parent or teacher follow along.
+
+## Contributing
+
+The most impactful contributions are new concepts and improved generators. Adding a concept requires exactly three things: a JSON entry in the concept graph, a Go generator function and a fuzz test. Adding a lesson shard requires exactly 3 KPs per concept (`data/lessons/kp/<id>.json`) with verified section refs. See **[`CONTRIBUTING.md`](CONTRIBUTING.md)** for the quick-start guide and the full **[contributing docs](/docs/contributing)** for the detailed walkthrough with code examples and field schemas.
+
+---
+
+## Running tests
+
+```bash
+# All tests
+go test ./...
+
+# Validate the concept graph (no cycles, no orphans)
+go run scripts/validate_graph.go
+python3 scripts/audit_lessons.py  # lessons + KP shards + diagrams + course targets (1257 files ×3 =3771 KPs)
+python3 scripts/counts.py --check # docs counts match the data (run --write after a content wave)
+
+# Generator fuzz — 1000 local (make fuzz), 100 lightweight in CI (.github/workflows/ci.yml:27)
+go test ./internal/generator/... -run TestFuzz -count 1000  # local full; CI runs -count 100 for speed
+```
+
+---
+
+## Self-hosting
+
+```bash
+# Build for Linux
+GOOS=linux GOARCH=amd64 go build -o orchid ./cmd/orchid
+
+# Run (SQLite — local)
+./orchid --serve --port 8080
+# Or Postgres for production (implemented via pgx internal/storage/postgres.go:7)
+DATABASE_URL=postgres://user:pass@host/orchid PORT=8080 ./orchid --serve
+
+# Or with Docker Compose (SQLite default, Postgres supported via DATABASE_URL)
+docker compose up
+# Or with env file
+cp .env.example .env && docker compose up
+```
+
+The server is available at `http://localhost:8080`. A `Dockerfile` and `docker-compose.yml` are included in the repo.
+
+### Repairing grading data
+
+If a grader fault or parser gap recorded correct answers as misses, re-grade the persisted attempts and rebuild the affected progress:
+
+```bash
+./orchid -repair-grading-dry-run   # report what would change (writes nothing)
+./orchid -repair-grading           # flip false negatives + rebuild progress
+```
+
+It re-grades every incorrect attempt with the canonical grader (`Engine.GradeAnswer`), flips those that now grade correct, and replays each affected concept's history into `concept_progress`. Attempts the grader cannot decide are left untouched, and XP is not rewritten. Requires Python + SymPy (see above) for the symbolic/expression types.
+
+---
+
+## Acknowledgements
+
+Orchid's sequencing philosophy is directly inspired by [Math Academy](https://mathacademy.com) — a commercial product that demonstrated what mastery-gated, dependency-aware math learning can achieve. Orchid uses none of their content or code — it is an independent open implementation of similar ideas, built openly.
+
+Lesson content and diagrams are adapted from [OpenStax](https://openstax.org) textbooks (Prealgebra, Precalculus 2e and Calculus Volume 1), used under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), and from [Algebrica](https://algebrica.org) by Antonio Lupetti, used under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Algebrica provides a free, ad-free university-level mathematics knowledge base. Both licenses carry the NonCommercial term, so Orchid's MIT license does not extend to the adapted lesson content.
+
+[MIT OpenCourseWare](https://ocw.mit.edu) (curriculum structure) and [Art of Problem Solving](https://artofproblemsolving.com) (problem quality) were consulted as references; no content is taken from either.
+
+Profile characters served by [DiceBear](https://www.dicebear.com) (individual avatar styles carry their own licenses, see their [license overview](https://www.dicebear.com/licenses/)).
+
+Mathematical answers are entered through [MathLive](https://mathlive.io/mathfield/) (MIT) — used as published, not forked. See [docs/math-input.md](docs/math-input.md) for how an answer reaches a verdict, [docs/mobile-device-checklist.md](docs/mobile-device-checklist.md) for what still needs a real phone and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for license obligations.
+
+---
+
+<div align="center">
+
+MIT License
+
+</div>

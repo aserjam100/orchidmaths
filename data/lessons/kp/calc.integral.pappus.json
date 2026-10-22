@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Revolving a region about an external axis",
+    "section": "Revolving a region about an external axis",
+    "subgoals": [
+      "Find the centroid distance d",
+      "Multiply 2 pi d A",
+      "Use the curve form for surface area"
+    ]
+  },
+  {
+    "label": "Worked: a rectangle and a triangle",
+    "section": "Worked: a rectangle and a triangle",
+    "subgoals": [
+      "Multiply 2 pi 5 6 for 60 pi",
+      "Multiply 2 pi 3 4 for 24 pi",
+      "Multiply 2 pi 1 10 for 20 pi"
+    ]
+  },
+  {
+    "label": "The conditions that make it valid",
+    "section": "The conditions that make it valid",
+    "subgoals": [
+      "Keep the axis external",
+      "Keep the axis in the plane",
+      "Avoid self-intersection"
+    ]
+  }
+]

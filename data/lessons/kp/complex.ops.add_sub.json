@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Split each z into a + bi",
+      "Read Re(z) = a and Im(z) = b",
+      "Embed real a as a + 0i"
+    ]
+  },
+  {
+    "label": "Sum and difference of complex numbers",
+    "section": "",
+    "subgoals": [
+      "Add real parts a + c",
+      "Add imaginary parts b + d",
+      "Combine into (a+c) + (b+d)i"
+    ]
+  },
+  {
+    "label": "Product of complex numbers",
+    "section": "",
+    "subgoals": [
+      "Expand (a+bi)(c+di) term by term",
+      "Replace i^2 by -1",
+      "Collect into (ac-bd) + (ad+bc)i"
+    ]
+  }
+]

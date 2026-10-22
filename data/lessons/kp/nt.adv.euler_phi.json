@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Count from 0 along equally spaced points",
+      "Extend left to negatives only via Z",
+      "Separate discrete N from dense Q and R"
+    ]
+  },
+  {
+    "label": "The Peano axioms",
+    "section": "",
+    "subgoals": [
+      "Seed with 0 via axiom P1",
+      "Close under successor S(n) via P2",
+      "Force minimality through the induction axiom P5"
+    ]
+  },
+  {
+    "label": "Set-theoretic construction",
+    "section": "",
+    "subgoals": [
+      "Identify 0 with the empty set",
+      "Build S(n) = n u {n} for 1 = {0}, 2 = {0, 1}",
+      "Test the von Neumann model against P1-P5"
+    ]
+  }
+]

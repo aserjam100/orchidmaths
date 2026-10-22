@@ -1,0 +1,19 @@
+{
+  "concept": "alg.rational.simplify",
+  "setup": "You are simplifying \\(\\frac{[[numerator]]}{[[denominator]]}\\).",
+  "steps": [
+    {
+      "fact": "factored",
+      "say": "Factor the numerator as \\([[factored]]\\)."
+    },
+    {
+      "fact": "cancelled",
+      "say": "Cancel the common factor \\([[cancelled]]\\)."
+    },
+    {
+      "fact": "valid_for",
+      "say": "The cancellation requires \\([[valid_for]]\\), so that restriction stays with the answer."
+    }
+  ],
+  "answer": "The simplified expression is \\([[remaining]]\\), valid for \\([[valid_for]]\\)."
+}

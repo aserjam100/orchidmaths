@@ -1,0 +1,15 @@
+{
+  "concept": "dec.ops.add.word",
+  "setup": "You are buying [[n]] things: [[items]].",
+  "steps": [
+    {
+      "fact": "list",
+      "say": "Add the prices, lining up the decimal points first: [[list]]."
+    },
+    {
+      "fact": "total",
+      "say": "Adding them gives $[[total]], which is the total cost to two decimal places."
+    }
+  ],
+  "answer": "The total cost is $[[total]]."
+}

@@ -1,0 +1,19 @@
+{
+  "concept": "alg.factor.grouping",
+  "setup": "You are factoring \\([[poly]]\\) by grouping.",
+  "steps": [
+    {
+      "fact": "first_group",
+      "say": "The first two terms give \\([[first_group]]\\)."
+    },
+    {
+      "fact": "second_group",
+      "say": "The last two terms give \\([[second_group]]\\)."
+    },
+    {
+      "fact": "binomial",
+      "say": "Both groups contain \\([[binomial]]\\), so the factorization is \\(([[binomial]])([[quadratic]])\\)."
+    }
+  ],
+  "answer": "The shared binomial is \\([[binomial]]\\)."
+}

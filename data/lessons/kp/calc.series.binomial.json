@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The generalised coefficients",
+    "section": "The generalised coefficients",
+    "subgoals": [
+      "Form the falling product of the exponent",
+      "Divide by k factorial",
+      "Terminate for a nonnegative integer exponent"
+    ]
+  },
+  {
+    "label": "Convergence and the radius",
+    "section": "Convergence and the radius",
+    "subgoals": [
+      "Apply the ratio test to the coefficients",
+      "Find radius one",
+      "Settle the endpoints by the exponent"
+    ]
+  },
+  {
+    "label": "Where it is used",
+    "section": "Where it is used",
+    "subgoals": [
+      "Expand fractional powers",
+      "Quote the first few terms",
+      "Bound the remainder by the next term"
+    ]
+  }
+]

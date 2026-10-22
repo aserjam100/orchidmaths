@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The comparison test",
+    "section": "The comparison test",
+    "subgoals": [
+      "Bound the terms from above",
+      "Compare the partial sums",
+      "Transfer convergence or divergence"
+    ]
+  },
+  {
+    "label": "The ratio test",
+    "section": "The ratio test",
+    "subgoals": [
+      "Form the ratio of successive terms",
+      "Take its limit",
+      "Read convergence, divergence or the boundary"
+    ]
+  },
+  {
+    "label": "The root test and the boundary",
+    "section": "The root test and the boundary",
+    "subgoals": [
+      "Take the n-th root of the term",
+      "Apply the same thresholds",
+      "Settle the boundary with a p-series"
+    ]
+  }
+]

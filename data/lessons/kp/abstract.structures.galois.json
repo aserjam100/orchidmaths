@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: subfields of the x^3 - 2 splitting field",
+    "section": "Worked: subfields of the x^3 - 2 splitting field",
+    "subgoals": [
+      "List subgroups of S_3",
+      "Match order-2 to cubics",
+      "Match A_3 to the quadratic"
+    ]
+  },
+  {
+    "label": "Worked: fixed-field degrees",
+    "section": "Worked: fixed-field degrees",
+    "subgoals": [
+      "Divide |G| by |H|",
+      "Get 3 for the transposition case",
+      "Skip field arithmetic"
+    ]
+  },
+  {
+    "label": "Solvability link",
+    "section": "Solvability link",
+    "subgoals": [
+      "Check the Galois group is solvable",
+      "Allow radicals for x^3 - 2",
+      "Block generic quintics via S_5"
+    ]
+  }
+]

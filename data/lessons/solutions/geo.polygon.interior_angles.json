@@ -1,0 +1,15 @@
+{
+  "concept": "geo.polygon.interior_angles",
+  "setup": "You are summing the interior angles of a polygon with \\([[sides]]\\) sides.",
+  "steps": [
+    {
+      "fact": "sides",
+      "say": "Drawing the diagonals from one vertex cuts the polygon into \\([[sides]] - 2\\) triangles, and together they account for every interior angle exactly once."
+    },
+    {
+      "fact": "sum",
+      "say": "Each triangle contributes 180 degrees, so the sum is \\(180 \\times ([[sides]] - 2)\\), which is a single multiplication once the triangle count is known."
+    }
+  ],
+  "answer": "So the interior angles of the polygon sum to \\([[sum]]\\) degrees."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: doubling CIFAR-10",
+    "section": "Worked: doubling CIFAR-10",
+    "subgoals": [
+      "Vary crops so pixels never repeat",
+      "Count flipped views per epoch",
+      "Convert variety into generalization"
+    ]
+  },
+  {
+    "label": "Worked: one mixup pair",
+    "section": "Worked: one mixup pair",
+    "subgoals": [
+      "Blend the two inputs by lambda",
+      "Blend the labels identically",
+      "Train on the soft in-between target"
+    ]
+  },
+  {
+    "label": "When augmentation breaks labels",
+    "section": "When augmentation breaks labels",
+    "subgoals": [
+      "Check the transform preserves meaning",
+      "Reject label-breaking rotations",
+      "Augment only within task invariance"
+    ]
+  }
+]

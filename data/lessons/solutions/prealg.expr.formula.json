@@ -1,0 +1,15 @@
+{
+  "concept": "prealg.expr.formula",
+  "setup": "Evaluate [[formula]] for [[v1_name]] = [[v1]] and [[v2_name]] = [[v2]].",
+  "steps": [
+    {
+      "fact": "substituted",
+      "say": "Substitute the values: [[substituted]]."
+    },
+    {
+      "fact": "result",
+      "say": "Follow the order of operations: [[result]]."
+    }
+  ],
+  "answer": "[[quantity]] = [[result]]."
+}

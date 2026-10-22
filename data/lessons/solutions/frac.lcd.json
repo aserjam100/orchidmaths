@@ -1,0 +1,15 @@
+{
+  "concept": "frac.lcd",
+  "setup": "The two fractions are \\(\\frac{1}{[[left_den]]}\\) and \\(\\frac{1}{[[right_den]]}\\), and you want their least common denominator.",
+  "steps": [
+    {
+      "fact": "left_den",
+      "say": "A common denominator of \\([[left_den]]\\) and \\([[right_den]]\\) is any number both divide, and the least one is their least common multiple."
+    },
+    {
+      "fact": "out_num",
+      "say": "That multiple is \\([[out_num]]\\). Multiplying the two denominators always gives a common denominator too, but not the smallest, and using it means more reducing afterwards."
+    }
+  ],
+  "answer": "So the least common denominator is \\([[out_num]]\\)."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Vertical asymptotes",
+    "section": "Vertical asymptotes",
+    "subgoals": [
+      "Find where the denominator vanishes",
+      "Distinguish an asymptote from a hole",
+      "Solve a denominator for zero"
+    ]
+  },
+  {
+    "label": "Horizontal asymptotes",
+    "section": "Horizontal asymptotes",
+    "subgoals": [
+      "Compare the degrees",
+      "Use the ratio when they are equal",
+      "Recognise when there is none"
+    ]
+  },
+  {
+    "label": "Sketching",
+    "section": "Sketching",
+    "subgoals": [
+      "Use the asymptotes and intercepts",
+      "Determine the branch signs",
+      "Cross a horizontal asymptote"
+    ]
+  }
+]

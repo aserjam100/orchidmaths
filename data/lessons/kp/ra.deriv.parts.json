@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The rule and its origin",
+    "section": "The rule and its origin",
+    "subgoals": [
+      "Start from the product rule",
+      "Rearrange to isolate the integral",
+      "Move the derivative between the factors"
+    ]
+  },
+  {
+    "label": "Worked: a polynomial times an exponential",
+    "section": "Worked: a polynomial times an exponential",
+    "subgoals": [
+      "Choose the polynomial to differentiate",
+      "Integrate the exponential",
+      "Evaluate the boundary and finish the residual integral"
+    ]
+  },
+  {
+    "label": "Repeated and tabular use",
+    "section": "Repeated and tabular use",
+    "subgoals": [
+      "Apply the rule to lower the degree",
+      "Track the signs in a table",
+      "Stop when the derivative vanishes"
+    ]
+  }
+]

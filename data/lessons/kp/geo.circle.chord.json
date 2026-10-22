@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The perpendicular bisects the chord",
+    "section": "The perpendicular bisects the chord",
+    "subgoals": [
+      "State the bisection",
+      "Justify it by congruent triangles",
+      "Find the centre from a chord"
+    ]
+  },
+  {
+    "label": "Using the right triangle",
+    "section": "Using the right triangle",
+    "subgoals": [
+      "Name the triangle's three sides",
+      "Apply Pythagoras",
+      "Compute a chord's length"
+    ]
+  },
+  {
+    "label": "Equal chords and equal distances",
+    "section": "Equal chords and equal distances",
+    "subgoals": [
+      "Relate chord length to distance",
+      "Name the longest chord",
+      "Derive both from the triangle"
+    ]
+  }
+]

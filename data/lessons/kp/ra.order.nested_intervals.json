@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The property",
+    "section": "The property",
+    "subgoals": [
+      "Order the intervals by inclusion",
+      "Take the supremum of the left endpoints",
+      "Show it lies in every interval"
+    ]
+  },
+  {
+    "label": "Why closedness matters",
+    "section": "Why closedness matters",
+    "subgoals": [
+      "Compare the open nested intervals",
+      "Watch the limiting point escape",
+      "Check where boundedness is used"
+    ]
+  },
+  {
+    "label": "The bisection method",
+    "section": "The bisection method",
+    "subgoals": [
+      "Halve the interval",
+      "Keep the half that retains the property",
+      "Take the common point as the answer"
+    ]
+  }
+]

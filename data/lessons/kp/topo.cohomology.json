@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the torus",
+    "section": "Worked: the torus",
+    "subgoals": [
+      "Count the connected components",
+      "Read two 1-cycles off the factors",
+      "Cup the generators into H^2"
+    ]
+  },
+  {
+    "label": "Worked: de Rham on the circle",
+    "section": "Worked: de Rham on the circle",
+    "subgoals": [
+      "Write closed 1-forms as multiples of dt",
+      "Integrate exact forms to zero",
+      "Count one class per hole"
+    ]
+  },
+  {
+    "label": "Worked: homotopy invariance",
+    "section": "Worked: homotopy invariance",
+    "subgoals": [
+      "Retract the punctured plane to the circle",
+      "Carry cohomology along the retraction",
+      "Read H^1 off the circle"
+    ]
+  }
+]

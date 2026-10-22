@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why the domain is restricted",
+    "section": "Why the domain is restricted",
+    "subgoals": [
+      "Note the repetition",
+      "Choose a strictly monotone interval",
+      "Define the inverse on that range"
+    ]
+  },
+  {
+    "label": "Reading the three graphs",
+    "section": "Reading the three graphs",
+    "subgoals": [
+      "Read domain and range for each",
+      "Notice the decreasing inverse cosine",
+      "Place the asymptotes of the inverse tangent"
+    ]
+  },
+  {
+    "label": "Composition and caution",
+    "section": "Composition and caution",
+    "subgoals": [
+      "Compose inside the restricted range",
+      "Expect a reduction outside it",
+      "Check the returned angle lies in the range"
+    ]
+  }
+]

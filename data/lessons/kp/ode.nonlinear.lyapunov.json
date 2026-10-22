@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: V = x^2 for x' = -3x",
+    "section": "Worked: V = x^2 for x' = -3x",
+    "subgoals": [
+      "Check V > 0 away from zero",
+      "Chain-rule dV/dt to -6x^2",
+      "Evaluate -24 at x = 2"
+    ]
+  },
+  {
+    "label": "Worked: stable but not asymptotic",
+    "section": "Worked: stable but not asymptotic",
+    "subgoals": [
+      "Compute dV/dt = 0 for x' = 0",
+      "Show freezing implies stability",
+      "Show no convergence occurs"
+    ]
+  },
+  {
+    "label": "Stability without solving",
+    "section": "Stability without solving",
+    "subgoals": [
+      "State LaSalle for dV/dt <= 0",
+      "State the converse existence claim",
+      "Certify stability from decay"
+    ]
+  }
+]

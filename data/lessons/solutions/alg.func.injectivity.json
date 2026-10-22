@@ -1,0 +1,15 @@
+{
+  "concept": "alg.func.injectivity",
+  "setup": "The three functions are [[functions]].",
+  "steps": [
+    {
+      "fact": "functions",
+      "say": "A function is injective when no two different inputs share an output. A non-constant line is injective, \\(x^3\\) is injective, and even powers or \\(|x|\\) are not, because they send both signs of an input to the same value."
+    },
+    {
+      "fact": "answer",
+      "say": "Counting the injective ones among [[functions]] gives \\([[answer]]\\)."
+    }
+  ],
+  "answer": "So \\([[answer]]\\) of the three are injective."
+}

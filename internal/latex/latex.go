@@ -1,0 +1,535 @@
+// Package latex normalizes mathematics notation from heterogeneous content
+// sources into a single KaTeX-friendly dialect ($ inline, $$ display) at
+// ingestion time, so neither storage nor the frontend ever sees a source's
+// quirks.
+//
+// The pipeline is region-based: latexnorm.Scan segments the text into Prose
+// and math regions with full contextual rules (escapes, text groups,
+// line-anchored blocks), and normalization is applied where it is valid —
+// inside math — while Prose dollars are escaped so downstream markdown
+// parsers never mistake prices for delimiters. Validation reports structural
+// problems as warnings attached to the canonicalized output; callers decide
+// whether to reject, quarantine, or serve with logging.
+package latex
+
+import (
+	"fmt"
+	"regexp"
+	"strings"
+
+	"github.com/chuma-beep/latexnorm"
+)
+
+// Adapter absorbs surface-syntax quirks specific to one content source.
+type Adapter struct {
+	Name       string
+	Preprocess func(string) string
+}
+
+var entityReplacer = strings.NewReplacer(
+	"&amp;", "&",
+	"&lt;", "<",
+	"&gt;", ">",
+	"&quot;", "\"",
+	"&#39;", "'",
+	"&nbsp;", " ",
+)
+
+var leakedSpanRe = regexp.MustCompile(`(?s)<span class="math-(display|inline)">([\s\S]*?)</span>`)
+
+func stripSpanWrappers(s string) string {
+	return leakedSpanRe.ReplaceAllString(s, "$2")
+}
+
+var doubledPunctRe = regexp.MustCompile(`\\\\([{},;|])`)
+var doubledBeginEndRe = regexp.MustCompile(`\\\\(begin|end)\{`)
+var brokenSqrtRe = regexp.MustCompile(`\\sqrt\}\{`)
+
+// collapseDoubled normalizes the Algebrica scraping dialect where command
+// backslashes were themselves escaped: \\{ -> \{, \\, -> \,, \\begin -> \begin.
+// Row-break spacing like \\[6pt] is intentionally NOT touched here ([ and ]
+// are excluded), and display delimiters \\[ \\] are consumed later by the
+// delimiter pass after this collapse makes them single-form.
+func collapseDoubled(s string) string {
+	s = doubledBeginEndRe.ReplaceAllString(s, "\\$1{")
+	s = doubledPunctRe.ReplaceAllString(s, "\\$1")
+	return s
+}
+
+// normalizeDoubledDelims converts the doubled delimiter forms \\[ \\]
+// \\( \\) into their single-backslash equivalents. Run AFTER row-break
+// protection and BEFORE the standard single-form passes; safe because any
+// bracket preceded by 2+ backslashes at this point is a real delimiter.
+func normalizeDoubledDelims(s string) string {
+	s = doubledDisplayDelimOpen.ReplaceAllString(s, "\\[")
+	s = doubledDisplayDelimClose.ReplaceAllString(s, "\\]")
+	s = doubledInlineDelim.ReplaceAllString(s, "\\$1")
+	return s
+}
+
+var (
+	doubledDisplayDelimOpen  = regexp.MustCompile(`\\\\\[`)
+	doubledDisplayDelimClose = regexp.MustCompile(`\\\\\]`)
+	doubledInlineDelim       = regexp.MustCompile(`\\\\([()])`)
+)
+
+// repairBrokenSqrt fixes the scraper artifact \sqrt}{x}} -> \sqrt{x}}.
+func repairBrokenSqrt(s string) string {
+	return brokenSqrtRe.ReplaceAllString(s, `\sqrt{`)
+}
+
+var rbProtectRe = regexp.MustCompile(`\\{2,}(\[[0-9]+(?:\.[0-9]+)?\s?(?:pt|em|ex|mm|cm)\])`)
+var rbRestoreRe = regexp.MustCompile(`%%MUARB:(\[[0-9]+(?:\.[0-9]+)?\s?(?:pt|em|ex|mm|cm)\])%%`)
+
+const rbToken = "%%MUARB:%s%%"
+
+// protectRowbreaks freezes LaTeX row-break spacing (e.g. \\[6pt], written
+// with 2-4 leading backslashes in scraped sources) behind inert tokens so
+// the doubled-delimiter normalization cannot mistake their brackets for
+// display math delimiters. restoreRowbreaks runs at the end of Canonicalize.
+func protectRowbreaks(s string) string {
+	return rbProtectRe.ReplaceAllStringFunc(s, func(m string) string {
+		sub := rbProtectRe.FindStringSubmatch(m)
+		if sub == nil {
+			return m
+		}
+		return strings.Replace(rbToken, "%s", sub[1], 1)
+	})
+}
+
+func restoreRowbreaks(s string) string {
+	return rbRestoreRe.ReplaceAllString(s, "\\\\$1")
+}
+
+// pureCurrencyRe matches content that is a price or measurement — digits,
+// separators, optional ÷/× chains, trailing punctuation — and nothing else.
+var pureCurrencyRe = regexp.MustCompile(`^[\d.,]+([ \t]?[÷×][ \t]?\d[\d.,]*)*[.,;:!?]?$`)
+
+// Brace-corruption repairs for scrape artifacts where an argument's opening
+// brace was written as a closing one: \frac}{a}}{b}}, \sqrt{}{x}},
+// e^}{x^2}, \mathrm}{d}. Each pass handles one shape; run via
+// repairBraces until stable.
+var (
+	fracCorruptRe   = regexp.MustCompile(`\\([dt]?frac)\}\{([^{}]*)\}\{([^{}]*)\}\}`)
+	sqrtCorruptRe   = regexp.MustCompile(`\\sqrt\{\}\{([^{}]*)\}\}`)
+	scriptCorruptRe = regexp.MustCompile(`([_^])\}\{`)
+	argCorruptRe    = regexp.MustCompile(`\\(mathrm|text|mbox|mathbf|mathit|mathsf|mathtt|textrm|textbf|textit|textup|textnormal|operatorname)\}\{`)
+	punctEscapeRe   = regexp.MustCompile(`\\([+.=])`)
+	// Scrape artifacts: a dangling backslash at the end of math content, and
+	// row-break spacing in px (KaTeX only knows pt/em/ex/mm/cm).
+	danglingBackslashRe = regexp.MustCompile(`\\+$`)
+	pxRowbreakRe        = regexp.MustCompile(`(\\{1,2}\[[0-9]+(?:\.[0-9]+)?)px(\])`)
+)
+
+func repairBraces(s string) string {
+	for i := 0; i < 5; i++ {
+		prev := s
+		s = fracCorruptRe.ReplaceAllString(s, `\$1{$2}{$3}`)
+		s = sqrtCorruptRe.ReplaceAllString(s, `\sqrt{$1}`)
+		s = scriptCorruptRe.ReplaceAllString(s, `$1{`)
+		s = argCorruptRe.ReplaceAllString(s, `\$1{`)
+		if s == prev {
+			break
+		}
+	}
+	s = pxRowbreakRe.ReplaceAllString(s, "${1}pt${2}")
+	// Triple-plus backslash runs before a space are over-escaped row breaks:
+	// \\\ → \\ (KaTeX array rows). Loop handles longer runs.
+	for i := 0; i < 3; i++ {
+		s = strings.ReplaceAll(s, `\\\ `, `\\ `)
+	}
+	// A dangling backslash before the region end (optionally with trailing
+	// whitespace) is a scrape artifact; KaTeX rejects a lone '\'.
+	return strings.TrimRight(s, " \\")
+}
+
+// rawDollarRe finds a dollar not already escaped (no backslash before it).
+var rawDollarRe = regexp.MustCompile(`(^|[^\\])\$`)
+
+// hasDigitRe / proseMathMarkerRe / hasLetterRe support the Inline prose-shape
+// rule. `!` is a marker because factorials (7!) are math, never currency —
+// the worst case for an excited price ($5!) is rendering as math "5!", which
+// is visually identical, instead of leaking literal "$5!$" text.
+var (
+	hasDigitRe        = regexp.MustCompile(`\d`)
+	proseMathMarkerRe = regexp.MustCompile(`[\\^_{}\[\]+\-=*/<>()!]`)
+	hasLetterRe       = regexp.MustCompile(`[A-Za-z]`)
+)
+
+// escapeDollars escapes every unescaped dollar in a Prose region. Already
+// escaped ones (from earlier fixed-point passes) are left alone.
+func escapeDollars(s string) string {
+	return rawDollarRe.ReplaceAllStringFunc(s, func(m string) string {
+		return m[:len(m)-1] + `\$`
+	})
+}
+
+// preprocessGeneric runs for every source: HTML entity cleanup, leaked
+// wrapper spans, row-break protection, and doubled-backslash dialect
+// collapse (the doubled dialect is not Algebrica-exclusive — authored
+// lessons use it too).
+func preprocessGeneric(s string) string {
+	s = entityReplacer.Replace(s)
+	s = strings.ReplaceAll(s, `\amp`, "&")
+	s = stripSpanWrappers(s)
+	s = protectRowbreaks(s)
+	s = collapseDoubled(s)
+	s = normalizeDoubledDelims(s)
+	return s
+}
+
+var tikzRe = regexp.MustCompile(`(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}`)
+
+// mathNorm normalizes the content of a math region. Prose rules never apply
+// here; this is the only place dialect rewrites are valid. align is
+// rewritten to aligned because KaTeX renders align only at the top of a
+// display block, while the corpus nests it inside $$...$$. TikZ diagrams
+// cannot render in KaTeX and are stripped.
+var textCmdRe = regexp.MustCompile(`\\text\{\\([a-zA-Z]+)\}`)
+var textPunctRe = regexp.MustCompile(`\\text\{([/\\-])\}`)
+
+func mathNorm(s string) string {
+	s = protectRowbreaks(s)
+	s = collapseDoubled(s)
+	s = repairBraces(s)
+	// Scrape artifact: \( and \) inside math content are literal parentheses
+	// (KaTeX rejects them as delimiters-in-math).
+	s = strings.ReplaceAll(s, `\(`, "(")
+	s = strings.ReplaceAll(s, `\)`, ")")
+	// Scrape artifact: \text{\pm}, \text{\sin} etc. inside math — unwrap the
+	// command (KaTeX rejects \pm inside \text).
+	s = textCmdRe.ReplaceAllString(s, `\$1`)
+	s = textCmdRe.ReplaceAllString(s, `\$1`)
+	s = textPunctRe.ReplaceAllString(s, `$1`)
+	// Mangled set-builder highlights: \highlight{{}\mid{}} is a corrupted
+	// \highlight{\{} x \mid ... \highlight{\}} — render the divider.
+	s = strings.ReplaceAll(s, `\highlight{{}\mid{}}`, `\mid`)
+	s = strings.ReplaceAll(s, `\begin{align}`, `\begin{aligned}`)
+	s = strings.ReplaceAll(s, `\end{align}`, `\end{aligned}`)
+	s = tikzRe.ReplaceAllString(s, "")
+	s = punctEscapeRe.ReplaceAllString(s, "$1")
+	return restoreRowbreaks(s)
+}
+
+var mathTagRe = regexp.MustCompile(`(?s)<math[^>]*>(.*?)</math>`)
+
+// Canonicalize normalizes LEGACY corpora only. Sources produced by the
+// structured-ingestion pipelines (ORCCA via pretext-tools, OpenStax via
+// pandoc, and the authored geometry lessons) already carry unambiguous
+// $...$/$$...$$ math with escaped currency; rewriting them here corrupted
+// valid input (brace "repairs" ate real closers). Those pass through
+// untouched — validation still runs via Validate.
+//
+// The Algebrica scraper dialect (doubled backslashes, broken \sqrt}{, raw
+// <math> wrappers) predates the structured pipeline and still needs its
+// region-based cleanup; it keeps the historical behavior, warts included.
+func Canonicalize(s string, a Adapter) string {
+	if a.Name == "structured" {
+		return s
+	}
+	prev := s
+	for i := 0; i < maxCanonPasses; i++ {
+		next := canonicalizeOnce(prev, a)
+		if next == prev {
+			return next
+		}
+		prev = next
+	}
+	return prev
+}
+
+const maxCanonPasses = 8
+
+func canonicalizeOnce(s string, a Adapter) string {
+	if a.Preprocess != nil {
+		s = a.Preprocess(s)
+	}
+
+	// Legacy wiki content: unwrap raw <math> wrappers into display math
+	// before scanning.
+	for {
+		m := mathTagRe.FindStringSubmatchIndex(s)
+		if m == nil {
+			break
+		}
+		inner := s[m[2]:m[3]]
+		s = s[:m[0]] + "$$" + inner + "$$" + s[m[1]:]
+	}
+
+	var b strings.Builder
+	// lastRawDollar tracks whether the emitted output ends with an unescaped
+	// $ (a math region's closer). Two adjacent math regions then fuse their
+	// delimiters into $$ — a display opener — so a separator is inserted.
+	lastRawDollar := false
+	for _, r := range latexnorm.Scan(s) {
+		// Mismatched-delimiter defense: a math region whose content contains
+		// an unescaped $ has a broken closer (e.g. $$... opened, $ closed),
+		// so the scanner paired it with a distant delimiter and the region
+		// swallows prose. Degrade the whole region to escaped text — honest
+		// literal dollars beat swallowed headings and red render errors.
+		if r.Kind != latexnorm.Prose && rawDollarRe.MatchString(r.Content) {
+			b.WriteString(escapeDollars(r.Opener + r.Content + r.Closer))
+			lastRawDollar = false
+			continue
+		}
+		// Every non-Prose, non-Env math region is emitted with a leading and
+		// trailing $; two adjacent ones would fuse their delimiters into $$.
+		startsWithDollar := r.Kind != latexnorm.Env && r.Kind != latexnorm.Prose
+		if lastRawDollar && startsWithDollar {
+			b.WriteByte(' ')
+		}
+		switch r.Kind {
+		case latexnorm.Prose:
+			// Dollars in prose are prices or punctuation, never delimiters.
+			// Escaped dollars end in $ but are inert (the frontend honors
+			// the escape), so they do not set lastRawDollar. Stray \( and \)
+			// here are unmatched scrape leftovers — literal parens.
+			prose := escapeDollars(r.Content)
+			prose = strings.ReplaceAll(prose, `\(`, "(")
+			prose = strings.ReplaceAll(prose, `\)`, ")")
+			b.WriteString(prose)
+		case latexnorm.Inline:
+			// A scanner-validated pair can still be prose: word-problem
+			// prices ($5, saves $10) pair on one line but carry no math
+			// markers. Digits + no markers + pure numeric means
+			// currency/prose; a space only counts when the span also has a
+			// letter, so letterless lists (1, 2, 3) and factorial-adjacent
+			// text stay math. Anything else is math.
+			content := r.Content
+			if hasDigitRe.MatchString(content) &&
+				!proseMathMarkerRe.MatchString(content) &&
+				(pureCurrencyRe.MatchString(content) ||
+					(strings.Contains(content, " ") && hasLetterRe.MatchString(content))) {
+				b.WriteString(`\$` + content + `\$`)
+				continue
+			}
+			b.WriteString("$" + mathNorm(content) + "$")
+		case latexnorm.InlineBlock:
+			// Single-$ display dialect (line-anchored). ORCCA also wraps
+			// entire worked solutions — prose paragraphs with alignment
+			// markers — in this form. Blank lines inside mean prose: degrade
+			// to escaped text rather than rendering mush.
+			if strings.Contains(r.Content, "\n\n") {
+				b.WriteString(escapeDollars(r.Opener + r.Content + r.Closer))
+				continue
+			}
+			b.WriteString("$$\n" + strings.TrimSpace(mathNorm(r.Content)) + "\n$$")
+		case latexnorm.Display:
+			b.WriteString("$$" + mathNorm(r.Content) + "$$")
+		case latexnorm.Paren:
+			b.WriteString("$" + mathNorm(r.Content) + "$")
+		case latexnorm.Bracket:
+			b.WriteString("$$\n" + strings.TrimSpace(mathNorm(r.Content)) + "\n$$")
+		case latexnorm.Env:
+			b.WriteString(envOutput(r))
+		}
+		lastRawDollar = r.Kind != latexnorm.Env && r.Kind != latexnorm.Prose
+	}
+	return restoreRowbreaks(b.String())
+}
+
+// envOutput rewrites environment regions. Equation environments become
+// display math; align environments become aligned blocks (the corpus's align
+// envs conventionally sit inside display delimiters, so no $$ is added);
+// tikzpicture diagrams cannot render in KaTeX and are stripped; everything
+// else passes through with normalized content.
+func envOutput(r latexnorm.Region) string {
+	name := r.Opener
+	name = strings.TrimPrefix(name, `\begin{`)
+	name = strings.TrimSuffix(name, `}`)
+	inner := strings.TrimSpace(r.Content)
+	switch name {
+	case "tikzpicture":
+		return ""
+	case "equation", "equation*":
+		return "$$" + mathNorm(inner) + "$$"
+	case "align", "align*":
+		inner = mathNorm(inner)
+		inner = strings.Replace(inner, `\begin{aligned}`, "", 1)
+		inner = strings.Replace(inner, `\end{aligned}`, "", 1)
+		return "\n\\begin{aligned}\n" + strings.TrimSpace(inner) + "\n\\end{aligned}\n"
+	default:
+		return r.Opener + mathNorm(r.Content) + r.Closer
+	}
+}
+
+// overescapedNumberRe flags paired `\$N\$` in canonical output: the
+// fixed-point loop over-escapes explicit `\(N\)` math on rescan
+// (`\(1\)` -> `$1$` -> `\$1\$`), which the frontend honors as literal `$1$`
+// text. Bare numerals must be plain text. Single `\$5` prices (no closer)
+// are legitimate and never match.
+var overescapedNumberRe = regexp.MustCompile(`\\\$[0-9][0-9.,]*\\\$`)
+
+func checkOverescapedNumbers(s string) string {
+	for _, loc := range overescapedNumberRe.FindAllStringIndex(s, -1) {
+		if loc[1] < len(s) && s[loc[1]] == '$' {
+			continue // `\$5$$`: the "closer" is a display `$$`, not a pair
+		}
+		return "over-escaped number renders literal dollars (write bare numerals as text): " + s[loc[0]:loc[1]]
+	}
+	return ""
+}
+
+// structuredArtifactRe flags dialect leftovers that must never survive the
+// structured ingestion pipelines.
+var structuredArtifactRe = regexp.MustCompile(`\\amp\b|<span class="math-|\\begin\{align\}|\\begin\{equation`)
+
+// displayBlockRe matches $$...$$ display spans.
+var displayBlockRe = regexp.MustCompile(`(?s)\$\$(..[^$]*?)\$\$`)
+
+// inlineSpanRe matches single-line $...$ spans (escapes honored loosely).
+var inlineSpanRe = regexp.MustCompile(`(?:^|[^\\$])\$((?:[^$\n\\]|\\.)*)\$`)
+
+// validateStructured checks pipeline-produced bodies with dialect-appropriate
+// rules: balanced braces per math span and stale-artifact scan. The legacy
+// line-scanner misreads multi-span lines in clean markdown.
+func validateStructured(s string) []string {
+	var warnings []string
+	if loc := structuredArtifactRe.FindString(s); loc != "" {
+		warnings = append(warnings, "stale artifact survived ingestion: "+loc)
+	}
+	for _, m := range displayBlockRe.FindAllStringSubmatch(s, -1) {
+		if msg := checkBraces(m[1]); msg != "" {
+			warnings = append(warnings, "display math: "+msg)
+		}
+	}
+	stripped := displayBlockRe.ReplaceAllString(s, " ")
+	for _, m := range inlineSpanRe.FindAllStringSubmatch(stripped, -1) {
+		if msg := checkBraces(m[1]); msg != "" {
+			warnings = append(warnings, "inline math: "+msg)
+		}
+	}
+	if msg := checkOverescapedNumbers(s); msg != "" {
+		warnings = append(warnings, msg)
+	}
+	return warnings
+}
+
+// Validate checks lesson content for structural problems. It returns
+// human-readable warnings; empty slice means clean.
+func Validate(canonical string, a Adapter) []string {
+	if a.Name == "structured" {
+		return validateStructured(canonical)
+	}
+	var warnings []string
+	for _, r := range latexnorm.Scan(canonical) {
+		switch r.Kind {
+		case latexnorm.Prose:
+			if n := len(rawDollarRe.FindAllString(r.Content, -1)); n > 0 {
+				warnings = append(warnings, fmt.Sprintf("odd number of inline delimiters (%d) — possible unpaired '$'", n))
+			}
+		case latexnorm.Inline, latexnorm.Paren:
+			if msg := checkBraces(r.Content); msg != "" {
+				warnings = append(warnings, "inline math: "+msg)
+			}
+		case latexnorm.InlineBlock, latexnorm.Display, latexnorm.Bracket, latexnorm.Env:
+			if msg := checkBraces(r.Content); msg != "" {
+				warnings = append(warnings, "display math: "+msg)
+			}
+		}
+	}
+	if msg := checkOverescapedNumbers(canonical); msg != "" {
+		warnings = append(warnings, msg)
+	}
+	return warnings
+}
+
+func checkBraces(segment string) string {
+	depth := 0
+	inEscape := false
+	for _, r := range segment {
+		switch {
+		case inEscape:
+			inEscape = false
+		case r == '\\':
+			inEscape = true
+		case r == '{':
+			depth++
+		case r == '}':
+			depth--
+			if depth < 0 {
+				return "unbalanced '}' (extra closing brace)"
+			}
+		}
+	}
+	if depth > 0 {
+		return fmt.Sprintf("%d unclosed '{'", depth)
+	}
+	if inEscape {
+		return "dangling backslash"
+	}
+	return ""
+}
+
+// Adapters for the known content sources.
+var (
+	// Algebrica: row-break protection and broken \sqrt}{ artifacts; the
+	// doubled-backslash collapse runs for every source (preprocessGeneric).
+	Algebrica = Adapter{Name: "algebrica", Preprocess: func(s string) string {
+		return repairBrokenSqrt(preprocessGeneric(s))
+	}}
+
+	// Authored: hand-written lessons already use $ / $$ conventions.
+	Authored = Adapter{Name: "authored", Preprocess: preprocessGeneric}
+
+	// Generators: live-generated problem text.
+	Generators = Adapter{Name: "generators", Preprocess: preprocessGeneric}
+
+	// Levin extracts: PreTeXt HTML → markdown keeps \begin{equation*} blocks,
+	// \amp alignment markers, and full exercise sections.
+	Levin = Adapter{Name: "levin", Preprocess: func(s string) string {
+		return stripSections(preprocessGeneric(s), "Exercises")
+	}}
+
+	// OpenStax extracts: html2text flattens tables.
+	OpenStax = Adapter{Name: "openstax", Preprocess: preprocessGeneric}
+
+	// ORCCA-derived teaching extracts (same family as Algebrica styling).
+	ORCCA = Adapter{Name: "orcca", Preprocess: func(s string) string {
+		return repairBrokenSqrt(preprocessGeneric(s))
+	}}
+)
+
+func stripSections(s, heading string) string {
+	idx := strings.Index(s, "# "+heading)
+	if idx < 0 {
+		idx = strings.Index(s, "## "+heading)
+	}
+	if idx < 0 {
+		return s
+	}
+	return s[:idx]
+}
+
+// ForSource picks the adapter for a registered lesson source path, sniffing
+// the attribution header that extractors prepend to teaching/ files.
+func ForSource(sourcePath, content string) Adapter {
+	switch {
+	case strings.HasPrefix(sourcePath, "algebrica/"):
+		return Algebrica
+	case strings.HasPrefix(sourcePath, "authored/"):
+		return Authored
+	case strings.HasPrefix(sourcePath, "teaching/"):
+		// Structured pipeline output carries its attribution header.
+		lower := strings.ToLower(content)
+		if strings.Contains(lower, "orcca") ||
+			strings.Contains(lower, "openstax") ||
+			strings.Contains(lower, "hand-authored") {
+			return Structured
+		}
+		// Legacy extracts living in teaching/ (Levin, Hefferon, ...) keep
+		// their dialect handling.
+		if strings.Contains(content, "Oscar Levin") || strings.Contains(content, "Open Introduction") {
+			return Levin
+		}
+		return ORCCA
+	case strings.Contains(content, "Oscar Levin") || strings.Contains(content, "Open Introduction"):
+		return Levin
+	default:
+		return ORCCA
+	}
+}
+
+// Structured marks corpus produced by the official converters; it must not
+// be rewritten.
+var Structured = Adapter{Name: "structured"}

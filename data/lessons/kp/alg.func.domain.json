@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Systematic method",
+    "section": "",
+    "subgoals": [
+      "Exclude division by zero",
+      "Exclude negative radicands of even roots",
+      "Exclude invalid logarithms"
+    ]
+  },
+  {
+    "label": "Types of intervals",
+    "section": "",
+    "subgoals": [
+      "Use open and closed intervals",
+      "Write union notation",
+      "Express the domain"
+    ]
+  },
+  {
+    "label": "Elementary functions",
+    "section": "",
+    "subgoals": [
+      "State standard domains",
+      "Compose the constraints",
+      "Write the final domain"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Force along a path",
+    "section": "Force along a path",
+    "subgoals": [
+      "Define work as a line integral",
+      "Explain the dot product",
+      "Say which component contributes"
+    ]
+  },
+  {
+    "label": "A constant force",
+    "section": "A constant force",
+    "subgoals": [
+      "Compute work along a straight path",
+      "Dot the force with the displacement",
+      "Say when the path matters"
+    ]
+  },
+  {
+    "label": "Conservative forces",
+    "section": "Conservative forces",
+    "subgoals": [
+      "State when work is path independent",
+      "Name a conservative force",
+      "Explain the zero loop"
+    ]
+  }
+]

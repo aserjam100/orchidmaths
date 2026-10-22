@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Counting independent holes",
+    "section": "Counting independent holes",
+    "subgoals": [
+      "Count connected components for b0",
+      "Count independent loops for b1",
+      "Ignore loops that bound a disk"
+    ]
+  },
+  {
+    "label": "Worked: the torus and the sphere",
+    "section": "Worked: the torus and the sphere",
+    "subgoals": [
+      "Read b1 = 1 for the circle",
+      "Read b1 = 2 and b2 = 1 for the torus",
+      "Read b1 = 0 and b2 = 1 for the sphere"
+    ]
+  },
+  {
+    "label": "Betti numbers and Euler characteristic",
+    "section": "Betti numbers and Euler characteristic",
+    "subgoals": [
+      "Sum the alternating Betti numbers",
+      "Recover chi = 0 for the torus",
+      "Recover chi = 2 for the sphere"
+    ]
+  }
+]

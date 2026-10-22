@@ -1,0 +1,29 @@
+[
+  {
+    "label": "How a curve leaves its osculating plane",
+    "section": "How a curve leaves its osculating plane",
+    "subgoals": [
+      "Compute r' x r''",
+      "Normalise for the binormal",
+      "Measure the turn of B"
+    ]
+  },
+  {
+    "label": "Worked: the twisted cubic and the helix",
+    "section": "Worked: the twisted cubic and the helix",
+    "subgoals": [
+      "Evaluate the derivatives at t = 0",
+      "Dot the cross product with r'''",
+      "Divide by the squared norm"
+    ]
+  },
+  {
+    "label": "Torsion versus curvature",
+    "section": "Torsion versus curvature",
+    "subgoals": [
+      "Compare signed torsion with nonnegative curvature",
+      "Read zero torsion as planar",
+      "Use (kappa, tau) to determine the curve"
+    ]
+  }
+]

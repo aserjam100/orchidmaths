@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why rotations are the same",
+    "section": "Why rotations are the same",
+    "subgoals": [
+      "Contrast a row with a circle",
+      "Explain why n rotations collapse to one",
+      "Count the row orders that give one seating"
+    ]
+  },
+  {
+    "label": "The (n-1)! rule",
+    "section": "The (n-1)! rule",
+    "subgoals": [
+      "Apply the rule to 4 people",
+      "Count necklaces on all-different beads",
+      "Explain where the division by n comes from"
+    ]
+  },
+  {
+    "label": "Reversals and reflections",
+    "section": "Reversals and reflections",
+    "subgoals": [
+      "Decide when a reflection is a new seating",
+      "Divide by 2 and check the small case",
+      "Count seatings with reflections identified"
+    ]
+  }
+]

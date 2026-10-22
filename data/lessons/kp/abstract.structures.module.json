@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Add vectors in the abelian group (M,+)",
+      "Scale by r.(u+v) = r.u + r.v",
+      "Split (r+s).v into r.v + s.v"
+    ]
+  },
+  {
+    "label": "Properties",
+    "section": "",
+    "subgoals": [
+      "Multiply 0_R against v to get 0_M",
+      "Negate via (-r).v",
+      "Slide ring elements past the action"
+    ]
+  },
+  {
+    "label": "Algebraic hierarchy",
+    "section": "",
+    "subgoals": [
+      "Replace field scalars by ring scalars",
+      "Recover vector spaces when R is a field",
+      "Read Z-modules as abelian groups"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Add and subtract decimals",
+    "section": "",
+    "subgoals": [
+      "Align the decimal points",
+      "Fill missing places with zeros",
+      "Add the columns"
+    ]
+  },
+  {
+    "label": "Add or subtract decimals",
+    "section": "",
+    "subgoals": [
+      "Write the numbers vertically",
+      "Add right to left",
+      "Carry when needed"
+    ]
+  },
+  {
+    "label": "Multiply decimals",
+    "section": "",
+    "subgoals": [
+      "Multiply as whole numbers",
+      "Count the decimal places",
+      "Place the decimal point"
+    ]
+  }
+]

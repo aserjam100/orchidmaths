@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Reading the area",
+    "section": "Reading the area",
+    "subgoals": [
+      "Find the quantity where demand equals price",
+      "Integrate the demand curve",
+      "Subtract the rectangle actually paid"
+    ]
+  },
+  {
+    "label": "A linear demand example",
+    "section": "A linear demand example",
+    "subgoals": [
+      "Set the quantity from the price",
+      "See the surplus as a triangle",
+      "Write it as half the square over the slope"
+    ]
+  },
+  {
+    "label": "Producer surplus and welfare",
+    "section": "Producer surplus and welfare",
+    "subgoals": [
+      "Mirror the area for producers",
+      "Add the two for welfare",
+      "Measure the lost area from a distortion"
+    ]
+  }
+]

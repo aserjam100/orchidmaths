@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Line up the columns",
+    "section": "Line up the columns",
+    "subgoals": [
+      "Write hundreds under hundreds",
+      "Write tens under tens and ones under ones",
+      "Start at the ones column"
+    ]
+  },
+  {
+    "label": "Regroup when a column makes 10 or more",
+    "section": "Regroup when a column makes 10 or more",
+    "subgoals": [
+      "Add the ones and carry if needed",
+      "Add the tens with any carried ten",
+      "Carry 1 hundred if the tens make 10 or more"
+    ]
+  },
+  {
+    "label": "Add the hundreds",
+    "section": "Add the hundreds",
+    "subgoals": [
+      "Add the hundreds with any carried hundred",
+      "Read the answer from the bottom row",
+      "Check the answer is about the right size"
+    ]
+  }
+]

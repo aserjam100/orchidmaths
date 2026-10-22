@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Pulling out perfect squares",
+    "section": "Pulling out perfect squares",
+    "subgoals": [
+      "Factor out the largest perfect square",
+      "Split the root of the product",
+      "Leave a squarefree number under the radical"
+    ]
+  },
+  {
+    "label": "An example by hand",
+    "section": "An example by hand",
+    "subgoals": [
+      "Write the number as a square times a squarefree part",
+      "Take the root of the square",
+      "Keep the squarefree factor under the radical"
+    ]
+  },
+  {
+    "label": "Radicals in algebra",
+    "section": "Radicals in algebra",
+    "subgoals": [
+      "Split even powers of variables out of the radical",
+      "Halve the exponent of each even power",
+      "Keep one copy of each odd power inside"
+    ]
+  }
+]

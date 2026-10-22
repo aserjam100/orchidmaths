@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Squaring pairs the residues",
+    "section": "Squaring pairs the residues",
+    "subgoals": [
+      "Pair a residue with its negative",
+      "See the shared square",
+      "Count the pairs"
+    ]
+  },
+  {
+    "label": "Why exactly half",
+    "section": "Why exactly half",
+    "subgoals": [
+      "Argue no square is shared twice",
+      "Divide the count by two",
+      "Note the composite failure"
+    ]
+  },
+  {
+    "label": "The Legendre symbol",
+    "section": "The Legendre symbol",
+    "subgoals": [
+      "Define the symbol",
+      "Distinguish local from global",
+      "Name its multiplicativity"
+    ]
+  }
+]

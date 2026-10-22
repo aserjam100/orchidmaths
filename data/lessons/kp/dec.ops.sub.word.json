@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Subtract the price",
+    "section": "",
+    "subgoals": [
+      "Line up the decimal points",
+      "Subtract the digits column by column",
+      "Place the decimal point in the difference"
+    ]
+  },
+  {
+    "label": "Write the change problem",
+    "section": "",
+    "subgoals": [
+      "Name the amount paid",
+      "Name the price of the item",
+      "Subtract the price from the amount paid"
+    ]
+  },
+  {
+    "label": "Answer in dollars",
+    "section": "",
+    "subgoals": [
+      "Subtract in cents",
+      "Give the answer to two decimal places",
+      "Label the answer in dollars"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one over z swaps zero and infinity",
+    "section": "Worked: one over z swaps zero and infinity",
+    "subgoals": [
+      "Send z to 0 and watch 1/z blow up",
+      "Send |z| to infinity and watch 1/z tend to 0",
+      "Read the swap of the two poles"
+    ]
+  },
+  {
+    "label": "Worked: the unit circle lifts to the equator",
+    "section": "Worked: the unit circle lifts to the equator",
+    "subgoals": [
+      "Impose |z| = 1 in sphere coordinates",
+      "Combine with the sphere equation to force Z = 0",
+      "Read the equator as the lifted circle"
+    ]
+  },
+  {
+    "label": "Worked: z squared has a double pole at infinity",
+    "section": "Worked: z squared has a double pole at infinity",
+    "subgoals": [
+      "Change chart with w = 1/z",
+      "Read the pole order of w^{-2} at 0",
+      "Transfer the order back to infinity"
+    ]
+  }
+]

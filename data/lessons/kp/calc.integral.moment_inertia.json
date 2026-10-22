@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Resistance to rotation",
+    "section": "Resistance to rotation",
+    "subgoals": [
+      "Write I = integral r^2 dm",
+      "Use the sum for point masses",
+      "Square the distance"
+    ]
+  },
+  {
+    "label": "Worked: a rod, a disk and point masses",
+    "section": "Worked: a rod, a disk and point masses",
+    "subgoals": [
+      "Use ML^2/12 about the centre",
+      "Use ML^2/3 about an end",
+      "Use (1/2)MR^2 for the disk"
+    ]
+  },
+  {
+    "label": "Choosing the axis",
+    "section": "Choosing the axis",
+    "subgoals": [
+      "State the axis with the problem",
+      "Apply the parallel-axis theorem",
+      "Compare centre and end for a rod"
+    ]
+  }
+]

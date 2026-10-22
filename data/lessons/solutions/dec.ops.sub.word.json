@@ -1,0 +1,19 @@
+{
+  "concept": "dec.ops.sub.word",
+  "setup": "The [[item]] costs $[[price]] and you pay with a $[[paid]] bill.",
+  "steps": [
+    {
+      "fact": "price",
+      "say": "The price to take away is $[[price]]."
+    },
+    {
+      "fact": "paid",
+      "say": "You handed over $[[paid]], so the change is the amount paid minus the price."
+    },
+    {
+      "fact": "change",
+      "say": "$[[paid]] - $[[price]] = $[[change]]."
+    }
+  ],
+  "answer": "Your change is $[[change]]."
+}

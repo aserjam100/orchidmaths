@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Clustering toward the ends",
+    "section": "Clustering toward the ends",
+    "subgoals": [
+      "Note where equally spaced nodes are sparse",
+      "Apply the cosine spacing rule",
+      "Cluster the nodes at the ends"
+    ]
+  },
+  {
+    "label": "Worked: a bounded error",
+    "section": "Worked: a bounded error",
+    "subgoals": [
+      "Minimise the maximum of the node product",
+      "Recognise the minimax polynomial",
+      "Get a bounded error"
+    ]
+  },
+  {
+    "label": "From theory to practice",
+    "section": "From theory to practice",
+    "subgoals": [
+      "Place sample points with the cosine rule",
+      "Reuse them for quadrature",
+      "Approximate smooth functions accurately"
+    ]
+  }
+]

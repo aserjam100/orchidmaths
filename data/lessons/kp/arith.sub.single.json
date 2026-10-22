@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Take away",
+    "section": "Take away",
+    "subgoals": [
+      "Show the first number as counters",
+      "Take away the second number",
+      "Count what is left"
+    ]
+  },
+  {
+    "label": "Count back",
+    "section": "Count back",
+    "subgoals": [
+      "Start at the first number",
+      "Count back by the second number",
+      "Say the last number as the answer"
+    ]
+  },
+  {
+    "label": "Use an addition fact",
+    "section": "Use an addition fact",
+    "subgoals": [
+      "Ask what adds to the smaller number",
+      "Find the missing number",
+      "Check by adding back"
+    ]
+  }
+]

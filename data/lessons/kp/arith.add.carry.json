@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Write the numbers in columns",
+    "section": "Write the numbers in columns",
+    "subgoals": [
+      "Write tens under tens",
+      "Write ones under ones",
+      "Start at the ones column"
+    ]
+  },
+  {
+    "label": "Regroup 10 ones as 1 ten",
+    "section": "Regroup 10 ones as 1 ten",
+    "subgoals": [
+      "Add the ones",
+      "Write the ones digit of the total",
+      "Carry 1 ten to the tens column"
+    ]
+  },
+  {
+    "label": "Add the tens",
+    "section": "Add the tens",
+    "subgoals": [
+      "Add the carried ten",
+      "Add the other tens",
+      "Read the answer from the bottom row"
+    ]
+  }
+]

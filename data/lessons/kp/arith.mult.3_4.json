@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Count in threes",
+    "section": "Count in threes",
+    "subgoals": [
+      "Count in threes",
+      "Stop after the right number of steps",
+      "Say the last number"
+    ]
+  },
+  {
+    "label": "Count in fours by doubling",
+    "section": "Count in fours by doubling",
+    "subgoals": [
+      "Find the 2 times fact",
+      "Double the answer",
+      "Say the 4 times fact"
+    ]
+  },
+  {
+    "label": "Use a fact you know",
+    "section": "Use a fact you know",
+    "subgoals": [
+      "Start from a fact you know",
+      "Add or take away the extra groups",
+      "Say the new fact"
+    ]
+  }
+]

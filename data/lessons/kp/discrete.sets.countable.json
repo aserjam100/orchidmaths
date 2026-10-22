@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cardinality as a bijection",
+    "section": "Cardinality as a bijection",
+    "subgoals": [
+      "Match sets by a bijection",
+      "Accept a proper subset of the same size",
+      "Read a list as a bijection with N"
+    ]
+  },
+  {
+    "label": "Countable sets",
+    "section": "Countable sets",
+    "subgoals": [
+      "List the integers",
+      "List the rationals diagonally",
+      "See algebraic numbers are countable"
+    ]
+  },
+  {
+    "label": "Cantor's diagonal argument",
+    "section": "Cantor's diagonal argument",
+    "subgoals": [
+      "Assume a complete list",
+      "Build the escaping number",
+      "Conclude the reals are uncountable"
+    ]
+  }
+]

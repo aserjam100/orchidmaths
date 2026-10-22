@@ -1,0 +1,784 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+    /* Top spacing mobile pages use to clear the sticky header. The header is in
+       flow and collapses when the chrome hides (see components/Header.tsx), so
+       this has to collapse with it or the page keeps an 80px hole. Desktop
+       overrides it back to 0 with `lg:pt-0`. */
+    --chrome-top: 80px;
+    --bg: oklch(1 0 0);
+    --surface: oklch(0.95 0 0);
+    --surface-elevated: oklch(0.92 0 0);
+    --surface-highlight: oklch(0.89 0 0);
+    --text-primary: oklch(0.16 0.004 264);
+    --text-secondary: oklch(0.54 0 0);
+    --text-muted: oklch(0.54 0 0);
+    --accent-teal: oklch(0.68 0.13 300);
+    --accent-blue: oklch(0.55 0.17 330);
+    --accent-blue-hover: oklch(0.48 0.18 330);
+    --accent-green: #059669;
+    --accent-red: #dc2626;
+    --heat-0: #EBEFF4;
+    --heat-1: #C0DAFC;
+    --heat-2: #7DAEEC;
+    --heat-3: #2D74CA;
+    --heat-4: #0C54A0;
+    --heat-fg-1: #1F2328;
+    --heat-fg-2: #1F2328;
+    --heat-fg-3: #FFFFFF;
+    --heat-fg-4: #FFFFFF;
+    --border: oklch(0.85 0.02 264);
+    --border-strong: oklch(0.75 0.03 264);
+    --code-bg: oklch(0.95 0 0);
+    --division: oklch(0.85 0.02 264 / 0.45);
+    --graph-surface: oklch(0.95 0 0 / 0.7);
+    /* Sidebar (shadcn ui/sidebar) — Orchid skin: square, mono, hairline borders */
+    --sidebar-width: 16rem;
+    --sidebar-width-mobile: 18rem;
+    --sidebar-width-icon: 3rem;
+    --sidebar-background: var(--surface);
+    --sidebar-foreground: var(--text-muted);
+    --sidebar-primary: var(--accent-blue);
+    --sidebar-primary-foreground: oklch(1 0 0);
+    --sidebar-accent: var(--surface-elevated);
+    --sidebar-accent-foreground: var(--text-primary);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--accent-blue);
+  }
+
+  /* Set on <html> by lib/chrome.ts. Hidden chrome reclaims the top spacing the
+     pages were reserving for the header. */
+  [data-chrome='hidden'] {
+    --chrome-top: 0px;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --bg: oklch(0.16 0.004 264);
+    --surface: oklch(0.21 0 0 / 0.8);
+    --surface-elevated: oklch(0.24 0 0);
+    --surface-highlight: oklch(0.27 0 0);
+    --text-primary: oklch(1 0 0);
+    --text-secondary: oklch(0.66 0 0);
+    --text-muted: oklch(0.66 0 0);
+    --accent-teal: oklch(0.68 0.13 300);
+    --accent-blue: oklch(0.72 0.14 330);
+    --accent-blue-hover: oklch(0.79 0.12 330);
+    --accent-green: #10b981;
+    --accent-red: #ef4444;
+    --heat-0: #191B1D;
+    --heat-1: #06384B;
+    --heat-2: #005E82;
+    --heat-3: #008DC3;
+    --heat-4: #4BC6FA;
+    --heat-fg-1: #FFFFFF;
+    --heat-fg-2: #FFFFFF;
+    --heat-fg-3: #0D1117;
+    --heat-fg-4: #0D1117;
+    --border: oklch(0.35 0.02 264);
+    --border-strong: oklch(0.45 0.03 264);
+    --code-bg: oklch(0.21 0 0 / 0.8);
+    --division: oklch(0.35 0.02 264 / 0.45);
+    --graph-surface: oklch(0.21 0 0 / 0.65);
+    /* Sidebar (shadcn ui/sidebar) — Orchid skin: square, mono, hairline borders */
+    --sidebar-width: 16rem;
+    --sidebar-width-mobile: 18rem;
+    --sidebar-width-icon: 3rem;
+    --sidebar-background: var(--surface);
+    --sidebar-foreground: var(--text-muted);
+    --sidebar-primary: var(--accent-blue);
+    --sidebar-primary-foreground: oklch(1 0 0);
+    --sidebar-accent: var(--surface-elevated);
+    --sidebar-accent-foreground: var(--text-primary);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--accent-blue);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text-secondary);
+    font-family: var(--font-space-grotesk), 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  @media (max-width: 640px) {
+    body {
+      font-size: 17px;
+    }
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-space-grotesk), 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--accent-blue);
+  }
+}
+
+@layer components {
+  .ascii-text {
+    font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+    color: var(--accent-blue);
+    white-space: pre;
+    overflow-x: auto;
+    line-height: 1.6;
+    font-size: 13px;
+  }
+
+  .ascii-divider {
+    font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: center;
+    user-select: none;
+  }
+}
+
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: var(--accent-blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
+
+footer .link-underline {
+  transition: color 0.2s ease;
+}
+
+footer .link-underline:hover {
+  color: var(--accent-blue);
+}
+
+.react-flow svg {
+  display: unset;
+}
+
+/* Landing: blueprint-sheet section labels */
+.section-label {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Landing hero label: white over the artwork on phones, themed beside it on
+   desktop. A plain rule rather than a `text-white/70` utility, because
+   `.section-label` above is unlayered and unlayered CSS beats Tailwind's layered
+   color utilities — the utility would silently lose and the label would stay
+   muted on the art. */
+.hero-label {
+  color: rgb(255 255 255 / 0.7);
+}
+@media (min-width: 1024px) {
+  .hero-label {
+    color: var(--text-muted);
+  }
+}
+
+/* Landing: staggered entrance for hero copy */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.reveal {
+  animation: reveal-up 0.5s ease-out both;
+}
+
+/* Landing hero art: fade-and-settle entrance. This lives on the art *wrapper*,
+   not the img, on purpose: a filled (`both`) animation keeps winning over later
+   transforms on the same element, which would silently pin the img and kill its
+   hover zoom. Separate elements, no conflict. */
+@keyframes hero-art-in {
+  from {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero-art-in {
+  animation: hero-art-in 1.2s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+  .hero-art-in {
+    animation: none;
+  }
+}
+
+/* Landing: scroll-triggered reveal for below-the-fold sections */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+[data-sonner-toaster] {
+  --normal-bg: var(--surface);
+  --normal-border: var(--border);
+  --normal-text: var(--text-primary);
+  --success-bg: var(--surface);
+  --success-border: var(--accent-green);
+  --success-text: var(--accent-green);
+  --error-bg: var(--surface);
+  --error-border: var(--accent-red);
+  --error-text: var(--accent-red);
+  --info-bg: var(--surface);
+  --info-border: var(--accent-blue);
+  --info-text: var(--accent-blue);
+}
+
+[data-sonner-toaster][data-theme="dark"] {
+  --normal-bg: var(--surface);
+  --normal-border: var(--border);
+  --normal-text: var(--text-primary);
+}
+
+[data-sonner-toast] {
+  border-radius: 0 !important;
+  border-width: 0.5px !important;
+  font-family: var(--font-jetbrains-mono) !important;
+  font-size: 14px !important;
+  color: var(--text-primary) !important;
+  background: var(--surface) !important;
+  box-shadow: none !important;
+}
+
+/* Concept graph edge flow animations */
+.react-flow__edge-path.edge-flow {
+  stroke-dasharray: 6 8;
+  animation: dashflow 0.9s linear infinite;
+}
+
+@keyframes dashflow {
+  to {
+    stroke-dashoffset: -56;
+  }
+}
+
+.react-flow__edge-path.edge-ambient {
+  stroke-dasharray: 2 10;
+  animation: dashcrawl 7s linear infinite;
+}
+
+@keyframes dashcrawl {
+  to {
+    stroke-dashoffset: -120;
+  }
+}
+
+.graph-flow-paused .react-flow__edge-path,
+.graph-flow-paused .concept-node::after {
+  animation-play-state: paused !important;
+}
+
+.concept-node.node-pulse-mastered::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  pointer-events: none;
+  animation: nodeglow 2.4s ease-in-out infinite;
+}
+
+@keyframes nodeglow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+  50% {
+    box-shadow: 0 0 10px 1px rgba(16, 185, 129, 0.45);
+  }
+}
+
+.concept-node.node-breathe-learning::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  pointer-events: none;
+  animation: nodebreathe 3.6s ease-in-out infinite;
+}
+
+@keyframes nodebreathe {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+  50% {
+    box-shadow: 0 0 8px 1px rgba(245, 158, 11, 0.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .react-flow__edge-path.edge-flow,
+  .react-flow__edge-path.edge-ambient,
+  .concept-node.node-pulse-mastered::after,
+  .concept-node.node-breathe-learning::after {
+    animation: none !important;
+  }
+}
+
+/* Keyboard access: visible ring when a concept node receives focus */
+.concept-node:focus-visible,
+.react-flow__node:focus-visible .concept-node {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+.react-flow__node:focus-visible {
+  outline: none;
+}
+
+/* Progress tooltip below a concept node; revealed on hover or keyboard focus */
+.concept-node .node-progress-tip {
+  display: none;
+}
+.concept-node:hover .node-progress-tip,
+.concept-node:focus-visible .node-progress-tip {
+  display: block;
+}
+
+/* Keyboard access: 3D hero concept map container */
+.concept-graph-3d:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: -2px;
+}
+
+/* Skip link: hidden until keyboard focus, then pinned top-left. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  padding: 8px 12px;
+  background: var(--bg);
+  color: var(--text-primary);
+  border: 0.5px solid var(--border-strong);
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 8px;
+  top: 8px;
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 0;
+}
+
+/* Landing graph labels: one pointer-events-none overlay, positioned
+   imperatively from the render loop (no per-label React elements). */
+.graph-label-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.graph-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  transform-origin: 0 0;
+  will-change: transform;
+  pointer-events: none;
+  user-select: none;
+}
+
+.graph-label--node {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary);
+  text-shadow: 0 0 3px var(--graph-surface), 0 0 3px var(--graph-surface);
+}
+
+.graph-label--node.is-active {
+  color: var(--text-primary);
+  font-size: 11px;
+}
+
+/* Footer. A plain band on the theme's colours, sized by its text alone. It used to carry the
+   orchid artwork as an <img> that set the row height, which at desktop width was about 550px
+   under a few lines of links. The artwork moved behind the home page's body (.orchid-backdrop). */
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem 1.25rem;
+}
+
+.footer-content-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    padding: 2rem 2.5rem 1.5rem;
+  }
+
+  .footer-content-row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+/* The orchid artwork behind a page body. It fills its positioned ancestor and is cropped by
+   `cover` rather than setting the height, anchored to the bottom so the flowers stay in view.
+   The top fades into the page so the print's grid does not start at a hard edge under the
+   header. */
+.orchid-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 35%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 35%);
+}
+
+.orchid-backdrop-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+/* The prints are pale. In the dark theme they are inverted, with the hue turned back so the
+   orchids stay pink, and dimmed so they sit behind the content rather than glow. */
+.dark .orchid-backdrop-img {
+  filter: invert(1) hue-rotate(180deg) brightness(0.7);
+}
+
+.footer-credits {
+  color: var(--text-muted);
+  border-color: var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.75rem;
+  row-gap: 0.25rem;
+}
+
+/* The mobile tab bar is `fixed`, `h-[56px]`, at `bottom: max(12px, safe-area)`,
+   and the footer is the last element on the page, so the footer's bottom edge is
+   the document's bottom edge and the bar floats over it. That would hide the
+   credits line. This margin ends the footer exactly where the bar begins. Zero from lg up,
+   where there is no bar. */
+@media (max-width: 1023px) {
+  .footer {
+    margin-bottom: max(68px, calc(56px + env(safe-area-inset-bottom)));
+  }
+}
+
+.graph-label.is-dim {
+  opacity: 0.18;
+}
+
+/* Lesson body typography: scraped extracts emit their own headings;
+   clamp them so section titles never compete with page titles. */
+.orchid-lesson h1 {
+  font-size: 1.25rem !important;
+  line-height: 1.35;
+}
+.orchid-lesson h2 {
+  font-size: 1.05rem !important;
+  line-height: 1.4;
+}
+.orchid-lesson h3,
+.orchid-lesson h4,
+.orchid-lesson h5,
+.orchid-lesson h6 {
+  font-size: 0.95rem !important;
+  line-height: 1.4;
+}
+
+/* Lesson diagrams (recolor policy: works in light AND dark mode).
+   Vendored/legacy assets are never retouched: the surface card supplies a
+   controlled backdrop so transparent-background strokes and light PNG boxes
+   read correctly in both themes. New local SVGs should paint with
+   currentColor where possible so they adapt automatically. */
+.lesson-diagram {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  padding: 12px;
+  max-width: 100%;
+}
+/* The height bound lives on the SVG, so a tall figure scales down to fit. Putting it on the
+   box above and hiding the overflow clipped the figure instead: the arithmetic diagrams are
+   360x200 and most mapped SVGs are taller than the 180px default, so the bottom of nearly
+   every diagram was cut off at any width that did not force a scale. */
+.lesson-diagram svg {
+  display: block;
+  max-width: 100%;
+  max-height: var(--lesson-diagram-max-height, 180px);
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.lesson-diagram text {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+}
+
+/* ==========================================================================
+   MathLive answer editor — components/math/
+   --------------------------------------------------------------------------
+   MathLive deliberately does not style the <math-field> host box (its own
+   stylesheet is `:host { display: block }`), so the field is dressed here with
+   the same tokens as every other Orchid input: square corners, a hairline
+   border, mono text, and a border-colour focus state rather than a ring.
+
+   Light and dark need no separate rules. Every colour below is a Orchid CSS
+   variable that the `.dark` block already redefines, so the editor follows the
+   theme for free — which is the whole reason the theming is done this way.
+   ========================================================================== */
+
+.orchid-math-input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+/* The header is sticky, so it paints over whatever scrolls beneath it. Focusing an
+   element scrolls it into view, and on a page tall enough to allow it the browser
+   puts the element flush to the top of the viewport — exactly where the header
+   sits. The answer field was landing under it: focused, and impossible to click.
+
+   scroll-padding-top on the scrollport is the fix. It is the canonical one for a
+   sticky header, and it is the only one that covers focus-driven scrolling, which
+   is how the browser brings a field into view here. scroll-margin-top on the
+   element does not: the field is scrolled into view while the plain input is still
+   mounted and MathLive is still loading, and by the time the real field exists the
+   bad scroll has already happened.
+
+   It needs no tie to the header's height. That height is not a fact anyone should
+   have to keep in step — it moves with the type scale and the collapsed state.
+   This is breathing room, not a measurement, and 7rem is the margin the anchored
+   sections on the profile page already use.
+
+   Desktop only, and that boundary is load-bearing. On a phone the answer field is
+   driven through MathLive's virtual keypad, which measures against the viewport:
+   reserving 7rem at the top moved the keypad's own scroll anchoring and four
+   mobile-math and mobile specs failed against it. The overlap being fixed here is
+   the desktop header beside the form, and below lg there is no such overlap. */
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 7rem;
+  }
+}
+
+math-field.orchid-math-field {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  /* 3rem, not the 2.75rem this used to carry. The 48px floor belongs to the control,
+     and `e2e/mobile.spec.ts` asserts the field itself is at least 48px — it only
+     reached that via `min-h-12` on the wrapper that no longer draws a box. */
+  min-height: 3rem;
+  margin: 0;
+  /* Matches `Input`'s `px-4`. The wrapper used to add `px-3 py-2` on top of this, so
+     the effective inset was 24px/16px and the field visibly reflowed when the plain
+     input replaced it while the chunk loaded. */
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background: var(--code-bg);
+  color: var(--text-primary);
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.4;
+  transition: border-color 0.15s ease;
+}
+
+/* One focus colour, on the one box. The wrapper used to declare its own
+   `focus-within:border-orchid-blue` around this border, so focusing the answer drew two
+   blue rectangles 24px apart — the same token twice, which reads as two states rather
+   than one. */
+math-field.orchid-math-field:focus-within {
+  border-color: var(--accent-blue);
+}
+
+/* The verdict colours the field's own border, not a ring around it. They used to land
+   on the wrapper, outside this element's opaque background, so `correct` drew a green
+   outline around a still-grey box.
+   These have to be attributes rather than utility classes: this selector is more
+   specific than any Tailwind class, so `border-orchid-green` passed to the element
+   would lose to the `border-color` above. */
+math-field.orchid-math-field[data-status='correct'] {
+  border-color: var(--accent-green);
+}
+
+math-field.orchid-math-field[data-status='incorrect'] {
+  border-color: var(--accent-red);
+}
+
+math-field.orchid-math-field[readonly] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* The selection and caret are MathLive's own variables. Orchid's accent at
+   partial alpha keeps a selection legible without inverting the text. */
+math-field.orchid-math-field {
+  --caret-color: var(--accent-blue);
+  --primary-color: var(--accent-blue);
+  --selection-background-color: color-mix(in srgb, var(--accent-blue) 22%, transparent);
+  --selection-color: var(--text-primary);
+  --smart-fence-color: var(--accent-blue);
+  --placeholder-color: var(--text-muted);
+  --placeholder-opacity: 0.7;
+  --contains-highlight-background-color: color-mix(in srgb, var(--accent-blue) 12%, transparent);
+  --correct-color: var(--accent-green);
+  --incorrect-color: var(--accent-red);
+  --tooltip-background-color: var(--surface-elevated);
+  --tooltip-border: var(--border-strong);
+  --tooltip-color: var(--text-primary);
+}
+
+/* The virtual keyboard is a page-level singleton appended to <body>, so its
+   variables have to be set at that level. Same tokens again: dense, square,
+   hairline — a Orchid panel rather than MathLive's rounded default. */
+body {
+  --keyboard-zindex: 3000;
+  --keyboard-background: var(--bg);
+  --keyboard-border: var(--border);
+  --keyboard-accent-color: var(--accent-blue);
+  --keyboard-toolbar-text: var(--text-muted);
+  --keyboard-toolbar-text-active: var(--accent-blue);
+  --keyboard-toolbar-background: var(--surface);
+  --keyboard-toolbar-background-hover: var(--surface-elevated);
+  --keyboard-toolbar-background-selected: var(--surface-highlight);
+  --keyboard-padding-horizontal: 6px;
+  --keyboard-padding-top: 4px;
+  --keyboard-padding-bottom: 4px;
+  --keycap-background: var(--surface);
+  --keycap-background-hover: var(--surface-elevated);
+  --keycap-background-active: var(--surface-highlight);
+  --keycap-background-pressed: var(--surface-highlight);
+  --keycap-border: var(--border);
+  --keycap-border-bottom: var(--border-strong);
+  --keycap-text: var(--text-primary);
+  --keycap-text-hover: var(--text-primary);
+  --keycap-text-active: var(--accent-blue);
+  --keycap-text-pressed: var(--text-primary);
+  --keycap-shift-text: var(--text-muted);
+  --keycap-shift-color: var(--text-muted);
+  --keycap-primary-background: var(--surface-elevated);
+  --keycap-primary-text: var(--accent-blue);
+  --keycap-secondary-background: var(--surface);
+  --keycap-secondary-text: var(--text-secondary);
+  --variant-panel-background: var(--surface-elevated);
+  --variant-keycap-text: var(--text-primary);
+}
+
+/* Touch targets. MathLive's defaults are already touch-shaped; 44px is pinned
+   here so the Playwright mobile suite can assert a floor rather than a guess,
+   and so the density does not drift when the default changes. Keycap glyphs stay
+   small — a 44px target does not need a 44px letter. */
+@media (pointer: coarse) {
+  body {
+    --keycap-height: 44px;
+    --keycap-gap: 3px;
+    --keycap-font-size: 18px;
+    --keyboard-toolbar-font-size: 14px;
+    /* MathLive derives keycap width from `10cqw` — 10% of the keyboard panel —
+       which lands around 37px on a 412px phone. Pinning it is what actually clears
+       the 44px touch-target floor; height alone was never the binding constraint. */
+    --keycap-width: 48px;
+  }
+}
+
+/* Desktop: the keyboard is available but not loud. Keep MathLive's toggle
+   visible so a physical-keyboard user can still reach the symbolic keys, and
+   let the field keep a single-line height until the panel opens. */
+@media not (pointer: coarse) {
+  body {
+    --keycap-height: 40px;
+    --keycap-font-size: 15px;
+    --keyboard-toolbar-font-size: 13px;
+  }
+  math-field.orchid-math-field {
+    --caret-color: var(--accent-blue);
+  }
+  math-field.orchid-math-field::part(virtual-keyboard-toggle) {
+    color: var(--text-muted);
+    opacity: 0.7;
+  }
+  math-field.orchid-math-field:focus-within::part(virtual-keyboard-toggle) {
+    color: var(--accent-blue);
+    opacity: 1;
+  }
+}

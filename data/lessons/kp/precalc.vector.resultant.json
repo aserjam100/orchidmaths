@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Adding perpendicular components",
+    "section": "Adding perpendicular components",
+    "subgoals": [
+      "Square both components",
+      "Add the squares",
+      "Take the square root"
+    ]
+  },
+  {
+    "label": "Worked: the 3-4-5 resultant",
+    "section": "Worked: the 3-4-5 resultant",
+    "subgoals": [
+      "Square 3 and 4",
+      "Add for 25",
+      "Take the root for 5"
+    ]
+  },
+  {
+    "label": "Components in general",
+    "section": "Components in general",
+    "subgoals": [
+      "Resolve each vector",
+      "Add horizontal and vertical parts",
+      "Recompute magnitude and angle"
+    ]
+  }
+]

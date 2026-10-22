@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the interval is metrizable",
+    "section": "Worked: the interval is metrizable",
+    "subgoals": [
+      "Separate points by subintervals",
+      "Separate points from closed sets",
+      "Exhibit the rational-endpoint base"
+    ]
+  },
+  {
+    "label": "Worked: embedding into Hilbert space",
+    "section": "Worked: embedding into Hilbert space",
+    "subgoals": [
+      "Collect countably many Urysohn functions",
+      "Assemble them into the cube map",
+      "Pull the metric back along the embedding"
+    ]
+  },
+  {
+    "label": "When metrizability fails",
+    "section": "When metrizability fails",
+    "subgoals": [
+      "Confirm regularity and Hausdorff",
+      "Count the forced basic opens",
+      "Conclude no metric fits"
+    ]
+  }
+]

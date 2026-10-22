@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A bound from the variance",
+    "section": "A bound from the variance",
+    "subgoals": [
+      "Square the deviation",
+      "Apply Markov's inequality",
+      "Simplify to one over k squared"
+    ]
+  },
+  {
+    "label": "Worked: two standard deviations",
+    "section": "Worked: two standard deviations",
+    "subgoals": [
+      "Substitute k equal to two",
+      "Convert to the distance form",
+      "Evaluate at a larger k"
+    ]
+  },
+  {
+    "label": "Toward the law of large numbers",
+    "section": "Toward the law of large numbers",
+    "subgoals": [
+      "Compute the variance of the sample mean",
+      "Bound the deviation probability",
+      "Let n grow to get the law"
+    ]
+  }
+]

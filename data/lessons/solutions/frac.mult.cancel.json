@@ -1,0 +1,15 @@
+{
+  "concept": "frac.mult.cancel",
+  "setup": "You are multiplying two fractions where a numerator and a denominator share a factor.",
+  "steps": [
+    {
+      "fact": "out_num",
+      "say": "Cancelling a common factor from a numerator and a denominator before multiplying keeps the numbers small and gives the same product as multiplying first."
+    },
+    {
+      "fact": "out_den",
+      "say": "After cancelling, the product is \\(\\frac{[[out_num]]}{[[out_den]]}\\). Cancelling afterwards would reach the same fraction, so the choice is about how large the intermediate numbers get."
+    }
+  ],
+  "answer": "So the product is \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

@@ -1,0 +1,15 @@
+{
+  "concept": "geo.triangle.inequality",
+  "setup": "Two sides of a triangle are \\([[given_a]]\\) and \\([[given_b]]\\), and you are asked for the extreme whole number the third side can take.",
+  "steps": [
+    {
+      "fact": "bound",
+      "say": "The triangle inequality says each side is shorter than the other two added, so the third side must be strictly below \\([[bound]]\\)."
+    },
+    {
+      "fact": "difference",
+      "say": "It also says each side is longer than the difference of the other two, which is \\([[difference]]\\) here. Both bounds come from the same inequality, read in opposite directions."
+    }
+  ],
+  "answer": "So the third side is \\([[side]]\\) units long."
+}

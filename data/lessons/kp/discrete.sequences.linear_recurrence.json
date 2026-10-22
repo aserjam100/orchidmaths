@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The characteristic equation",
+    "section": "The characteristic equation",
+    "subgoals": [
+      "Substitute r^n",
+      "Form the quadratic",
+      "Read the two roots"
+    ]
+  },
+  {
+    "label": "Initial conditions",
+    "section": "Initial conditions",
+    "subgoals": [
+      "Write the two equations",
+      "Solve for the coefficients",
+      "State the closed form"
+    ]
+  },
+  {
+    "label": "Checking the closed form",
+    "section": "Checking the closed form",
+    "subgoals": [
+      "Substitute n = 0 and n = 1",
+      "See equivalent forms as equal",
+      "Reject right roots with wrong coefficients"
+    ]
+  }
+]

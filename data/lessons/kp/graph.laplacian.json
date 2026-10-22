@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Degrees on the diagonal",
+    "section": "Degrees on the diagonal",
+    "subgoals": [
+      "Place the degrees on the diagonal",
+      "Put -1 on each edge entry",
+      "Verify the row sums are zero"
+    ]
+  },
+  {
+    "label": "Worked: zero eigenvalues",
+    "section": "Worked: zero eigenvalues",
+    "subgoals": [
+      "Build the kernel from component indicators",
+      "Count the connected components",
+      "Match the multiplicity to the count"
+    ]
+  },
+  {
+    "label": "Using the Laplacian",
+    "section": "Using the Laplacian",
+    "subgoals": [
+      "Read a spanning-tree count from a cofactor",
+      "Order the Laplacian eigenvalues",
+      "Use the second one as connectivity"
+    ]
+  }
+]

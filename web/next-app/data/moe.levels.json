@@ -1,0 +1,1666 @@
+[
+  {
+    "level": "P1",
+    "name": "Primary 1",
+    "courseId": "sg-p1",
+    "targets": [
+      "arith.add.carry",
+      "arith.add.double",
+      "arith.add.single",
+      "arith.add.word",
+      "arith.compare.within100",
+      "arith.div.concept",
+      "arith.mult.concept",
+      "arith.place.tens",
+      "arith.sub.borrow",
+      "arith.sub.double",
+      "arith.sub.single",
+      "arith.sub.word"
+    ],
+    "topics": [
+      {
+        "topic": "Numbers up to 100",
+        "strand": "Whole Numbers",
+        "full": 2,
+        "partial": 0,
+        "none": 5,
+        "concepts": [
+          {
+            "id": "arith.place.tens",
+            "label": "Tens and units place value"
+          },
+          {
+            "id": "arith.compare.within100",
+            "label": "Compare and order numbers to 100"
+          }
+        ]
+      },
+      {
+        "topic": "Addition and Subtraction",
+        "strand": "Whole Numbers",
+        "full": 4,
+        "partial": 1,
+        "none": 2,
+        "concepts": [
+          {
+            "id": "arith.add.single",
+            "label": "Single-digit addition"
+          },
+          {
+            "id": "arith.sub.single",
+            "label": "Single-digit subtraction"
+          },
+          {
+            "id": "arith.add.double",
+            "label": "Two-digit addition"
+          },
+          {
+            "id": "arith.sub.double",
+            "label": "Two-digit subtraction"
+          },
+          {
+            "id": "arith.add.word",
+            "label": "Addition word problems"
+          },
+          {
+            "id": "arith.sub.word",
+            "label": "Subtraction word problems"
+          },
+          {
+            "id": "arith.add.carry",
+            "label": "Addition with carrying"
+          },
+          {
+            "id": "arith.sub.borrow",
+            "label": "Subtraction with borrowing"
+          }
+        ]
+      },
+      {
+        "topic": "Multiplication and Division",
+        "strand": "Whole Numbers",
+        "full": 4,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.mult.concept",
+            "label": "Multiplication as repeated addition"
+          },
+          {
+            "id": "arith.div.concept",
+            "label": "Division as equal sharing"
+          }
+        ]
+      },
+      {
+        "topic": "Money",
+        "strand": "Money",
+        "full": 0,
+        "partial": 0,
+        "none": 1,
+        "concepts": []
+      },
+      {
+        "topic": "Length",
+        "strand": "Measurement",
+        "full": 0,
+        "partial": 0,
+        "none": 4,
+        "concepts": []
+      },
+      {
+        "topic": "Time",
+        "strand": "Measurement",
+        "full": 0,
+        "partial": 0,
+        "none": 4,
+        "concepts": []
+      },
+      {
+        "topic": "2D Shapes",
+        "strand": "Geometry",
+        "full": 0,
+        "partial": 0,
+        "none": 4,
+        "concepts": []
+      },
+      {
+        "topic": "Picture Graphs",
+        "strand": "Data Representation and Interpretation",
+        "full": 0,
+        "partial": 0,
+        "none": 1,
+        "concepts": []
+      }
+    ]
+  },
+  {
+    "level": "P2",
+    "name": "Primary 2",
+    "courseId": "sg-p2",
+    "targets": [
+      "arith.add.carry",
+      "arith.add.double",
+      "arith.add.single",
+      "arith.add.triple",
+      "arith.add.word",
+      "arith.compare.within100",
+      "arith.compare.within1000",
+      "arith.div.concept",
+      "arith.div.tables",
+      "arith.div.word_tables",
+      "arith.mult.2_5_10",
+      "arith.mult.3_4",
+      "arith.mult.concept",
+      "arith.mult.word_tables",
+      "arith.place.hundreds",
+      "arith.place.tens",
+      "arith.sub.borrow",
+      "arith.sub.double",
+      "arith.sub.single",
+      "arith.sub.word",
+      "frac.add.same",
+      "frac.basics.concept",
+      "frac.basics.parts",
+      "frac.compare.unit_like",
+      "frac.sub.same"
+    ],
+    "topics": [
+      {
+        "topic": "Numbers up to 1000",
+        "strand": "Whole Numbers",
+        "full": 2,
+        "partial": 0,
+        "none": 4,
+        "concepts": [
+          {
+            "id": "arith.place.hundreds",
+            "label": "Hundreds place value"
+          },
+          {
+            "id": "arith.compare.within1000",
+            "label": "Compare and order numbers to 1000"
+          }
+        ]
+      },
+      {
+        "topic": "Addition and Subtraction",
+        "strand": "Whole Numbers",
+        "full": 1,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.add.triple",
+            "label": "Three-digit addition"
+          },
+          {
+            "id": "arith.add.carry",
+            "label": "Addition with carrying"
+          },
+          {
+            "id": "arith.sub.borrow",
+            "label": "Subtraction with borrowing"
+          }
+        ]
+      },
+      {
+        "topic": "Multiplication and Division",
+        "strand": "Whole Numbers",
+        "full": 4,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.mult.2_5_10",
+            "label": "Times tables 2, 5 and 10"
+          },
+          {
+            "id": "arith.mult.3_4",
+            "label": "Times tables 3 and 4"
+          },
+          {
+            "id": "arith.div.tables",
+            "label": "Divide within the 2, 3, 4, 5 and 10 tables"
+          },
+          {
+            "id": "arith.mult.word_tables",
+            "label": "Multiplication word problems within the tables"
+          },
+          {
+            "id": "arith.div.word_tables",
+            "label": "Division word problems within the tables"
+          }
+        ]
+      },
+      {
+        "topic": "Fraction of a Whole",
+        "strand": "Fractions",
+        "full": 3,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.basics.concept",
+            "label": "What is a fraction"
+          },
+          {
+            "id": "frac.basics.parts",
+            "label": "Numerator and denominator"
+          },
+          {
+            "id": "frac.compare.unit_like",
+            "label": "Compare unit fractions and like fractions"
+          }
+        ]
+      },
+      {
+        "topic": "Addition and Subtraction",
+        "strand": "Fractions",
+        "full": 1,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.add.same",
+            "label": "Add fractions with same denominator"
+          },
+          {
+            "id": "frac.sub.same",
+            "label": "Subtract fractions with same denominator"
+          }
+        ]
+      },
+      {
+        "topic": "Money",
+        "strand": "Money",
+        "full": 0,
+        "partial": 0,
+        "none": 4,
+        "concepts": []
+      },
+      {
+        "topic": "Length, Mass and Volume",
+        "strand": "Measurement",
+        "full": 0,
+        "partial": 0,
+        "none": 3,
+        "concepts": []
+      },
+      {
+        "topic": "Time",
+        "strand": "Measurement",
+        "full": 0,
+        "partial": 0,
+        "none": 3,
+        "concepts": []
+      },
+      {
+        "topic": "2D Shapes",
+        "strand": "Geometry",
+        "full": 0,
+        "partial": 0,
+        "none": 1,
+        "concepts": []
+      },
+      {
+        "topic": "3D Shapes",
+        "strand": "Geometry",
+        "full": 0,
+        "partial": 0,
+        "none": 1,
+        "concepts": []
+      },
+      {
+        "topic": "Picture Graphs with Scales",
+        "strand": "Data Representation and Interpretation",
+        "full": 0,
+        "partial": 0,
+        "none": 1,
+        "concepts": []
+      }
+    ]
+  },
+  {
+    "level": "P3",
+    "name": "Primary 3",
+    "courseId": "sg-p3",
+    "targets": [
+      "arith.add.carry",
+      "arith.add.double",
+      "arith.add.single",
+      "arith.add.triple",
+      "arith.add.word",
+      "arith.compare.whole",
+      "arith.compare.within100",
+      "arith.compare.within1000",
+      "arith.div.basic",
+      "arith.div.concept",
+      "arith.div.interpret_remainder",
+      "arith.div.remainder",
+      "arith.div.tables",
+      "arith.div.word",
+      "arith.div.word_tables",
+      "arith.mult.2_5_10",
+      "arith.mult.3_4",
+      "arith.mult.concept",
+      "arith.mult.tables",
+      "arith.mult.word_tables",
+      "arith.place.hundreds",
+      "arith.place.tens",
+      "arith.place.thousands",
+      "arith.sub.borrow",
+      "arith.sub.double",
+      "arith.sub.single",
+      "arith.sub.word",
+      "frac.add.same",
+      "frac.basics.concept",
+      "frac.basics.equivalent",
+      "frac.basics.parts",
+      "frac.compare.cross",
+      "frac.compare.unit_like",
+      "frac.compare.word",
+      "frac.equivalent.scale",
+      "frac.ops.compare",
+      "frac.sub.same",
+      "geo.basic.angles",
+      "geo.basic.points_lines"
+    ],
+    "topics": [
+      {
+        "topic": "Numbers up to 10 000",
+        "strand": "Whole Numbers",
+        "full": 2,
+        "partial": 0,
+        "none": 3,
+        "concepts": [
+          {
+            "id": "arith.place.thousands",
+            "label": "Thousands place value"
+          },
+          {
+            "id": "arith.compare.whole",
+            "label": "Compare and order whole numbers"
+          }
+        ]
+      },
+      {
+        "topic": "Addition and Subtraction",
+        "strand": "Whole Numbers",
+        "full": 2,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.add.carry",
+            "label": "Addition with carrying"
+          },
+          {
+            "id": "arith.sub.borrow",
+            "label": "Subtraction with borrowing"
+          },
+          {
+            "id": "arith.add.word",
+            "label": "Addition word problems"
+          },
+          {
+            "id": "arith.sub.word",
+            "label": "Subtraction word problems"
+          },
+          {
+            "id": "arith.add.double",
+            "label": "Two-digit addition"
+          },
+          {
+            "id": "arith.sub.double",
+            "label": "Two-digit subtraction"
+          }
+        ]
+      },
+      {
+        "topic": "Multiplication and Division",
+        "strand": "Whole Numbers",
+        "full": 5,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.mult.tables",
+            "label": "Times tables 1 to 12"
+          },
+          {
+            "id": "arith.div.basic",
+            "label": "Basic division without remainder"
+          },
+          {
+            "id": "arith.div.remainder",
+            "label": "Division with remainders"
+          },
+          {
+            "id": "arith.div.interpret_remainder",
+            "label": "Interpret a remainder in context"
+          },
+          {
+            "id": "arith.mult.triple",
+            "label": "Multiply three-digit by one-digit"
+          },
+          {
+            "id": "arith.div.long",
+            "label": "Long division"
+          },
+          {
+            "id": "arith.mult.word",
+            "label": "Multiplication word problems"
+          },
+          {
+            "id": "arith.div.word",
+            "label": "Division word problems"
+          }
+        ]
+      },
+      {
+        "topic": "Equivalent Fractions",
+        "strand": "Fractions",
+        "full": 4,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.basics.equivalent",
+            "label": "Find equivalent fractions"
+          },
+          {
+            "id": "frac.ops.simplify",
+            "label": "Reduce fraction to lowest terms"
+          },
+          {
+            "id": "frac.ops.compare",
+            "label": "Compare fractions: which is larger"
+          },
+          {
+            "id": "frac.compare.cross",
+            "label": "Comparing fractions by cross-multiplication"
+          },
+          {
+            "id": "frac.compare.word",
+            "label": "Fraction comparison word problems"
+          },
+          {
+            "id": "frac.equivalent.scale",
+            "label": "Equivalent fractions by scaling"
+          }
+        ]
+      },
+      {
+        "topic": "Addition and Subtraction",
+        "strand": "Fractions",
+        "full": 0,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.add.diff",
+            "label": "Add fractions with different denominators"
+          },
+          {
+            "id": "frac.sub.diff",
+            "label": "Subtract fractions with different denominators"
+          }
+        ]
+      },
+      {
+        "topic": "Money",
+        "strand": "Money",
+        "full": 1,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "dec.ops.add.word",
+            "label": "Money: total cost"
+          },
+          {
+            "id": "dec.ops.sub.word",
+            "label": "Money: change from a purchase"
+          }
+        ]
+      },
+      {
+        "topic": "Length, Mass and Volume",
+        "strand": "Measurement",
+        "full": 0,
+        "partial": 1,
+        "none": 2,
+        "concepts": [
+          {
+            "id": "prealg.measure.metric",
+            "label": "Convert metric units"
+          }
+        ]
+      },
+      {
+        "topic": "Time",
+        "strand": "Measurement",
+        "full": 0,
+        "partial": 0,
+        "none": 3,
+        "concepts": []
+      },
+      {
+        "topic": "Area and Perimeter",
+        "strand": "Area and Volume",
+        "full": 3,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "geo.quad.area",
+            "label": "Area of rectangles and parallelograms"
+          },
+          {
+            "id": "geo.quad.perimeter",
+            "label": "Perimeter of polygons"
+          }
+        ]
+      },
+      {
+        "topic": "Angles",
+        "strand": "Geometry",
+        "full": 2,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "geo.basic.angles",
+            "label": "Types of angles: acute, right, obtuse"
+          }
+        ]
+      },
+      {
+        "topic": "Perpendicular and Parallel Lines",
+        "strand": "Geometry",
+        "full": 0,
+        "partial": 1,
+        "none": 1,
+        "concepts": [
+          {
+            "id": "geo.basic.points_lines",
+            "label": "Points, lines, and planes"
+          }
+        ]
+      },
+      {
+        "topic": "Bar Graphs",
+        "strand": "Data Representation and Interpretation",
+        "full": 1,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "stat.data.bar_graph",
+            "label": "Read and create bar graphs"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "P4",
+    "name": "Primary 4",
+    "courseId": "sg-p4",
+    "targets": [
+      "arith.add.carry",
+      "arith.add.double",
+      "arith.add.single",
+      "arith.add.triple",
+      "arith.add.word",
+      "arith.compare.whole",
+      "arith.compare.within100",
+      "arith.compare.within1000",
+      "arith.dec.intro",
+      "arith.div.basic",
+      "arith.div.concept",
+      "arith.div.interpret_remainder",
+      "arith.div.long",
+      "arith.div.remainder",
+      "arith.div.tables",
+      "arith.div.word",
+      "arith.div.word_tables",
+      "arith.estimate.sum",
+      "arith.factor.find",
+      "arith.factor.gcf",
+      "arith.factor.lcm",
+      "arith.mult.2_5_10",
+      "arith.mult.3_4",
+      "arith.mult.concept",
+      "arith.mult.double",
+      "arith.mult.tables",
+      "arith.mult.triple",
+      "arith.mult.word",
+      "arith.mult.word_tables",
+      "arith.place.expanded",
+      "arith.place.hundreds",
+      "arith.place.tens",
+      "arith.place.thousands",
+      "arith.round.hundreds",
+      "arith.round.tens",
+      "arith.round.thousands",
+      "arith.sub.borrow",
+      "arith.sub.double",
+      "arith.sub.single",
+      "arith.sub.word",
+      "arith.word.multi_step",
+      "dec.basics.compare",
+      "dec.convert.from_frac",
+      "dec.convert.to_frac",
+      "dec.ops.add",
+      "dec.ops.add.word",
+      "dec.ops.div",
+      "dec.ops.mult",
+      "dec.ops.mult.word",
+      "dec.ops.round",
+      "dec.ops.sub",
+      "dec.ops.sub.word",
+      "frac.add.diff",
+      "frac.add.same",
+      "frac.add.word",
+      "frac.basics.concept",
+      "frac.basics.equivalent",
+      "frac.basics.parts",
+      "frac.compare.cross",
+      "frac.compare.unit_like",
+      "frac.compare.word",
+      "frac.equivalent.scale",
+      "frac.lcd",
+      "frac.mixed.convert",
+      "frac.ops.compare",
+      "frac.ops.simplify",
+      "frac.ops.to_decimal",
+      "frac.remaining",
+      "frac.sub.diff",
+      "frac.sub.same",
+      "frac.sub.whole",
+      "frac.sub.word",
+      "geo.basic.angle_measure",
+      "geo.basic.angles",
+      "geo.basic.points_lines",
+      "geo.quad.area",
+      "geo.quad.perimeter",
+      "geo.quad.types",
+      "stat.data.bar_graph",
+      "stat.data.read_table"
+    ],
+    "topics": [
+      {
+        "topic": "Numbers up to 100 000",
+        "strand": "Whole Numbers",
+        "full": 3,
+        "partial": 1,
+        "none": 2,
+        "concepts": [
+          {
+            "id": "arith.place.expanded",
+            "label": "Expanded form of whole numbers"
+          },
+          {
+            "id": "arith.compare.whole",
+            "label": "Compare and order whole numbers"
+          },
+          {
+            "id": "arith.round.tens",
+            "label": "Round to nearest 10"
+          },
+          {
+            "id": "arith.round.hundreds",
+            "label": "Round to nearest 100"
+          },
+          {
+            "id": "arith.round.thousands",
+            "label": "Round to nearest 1000"
+          },
+          {
+            "id": "arith.estimate.sum",
+            "label": "Estimate sums and differences"
+          },
+          {
+            "id": "arith.estimate.product",
+            "label": "Estimate products by rounding"
+          }
+        ]
+      },
+      {
+        "topic": "Factors and Multiples",
+        "strand": "Whole Numbers",
+        "full": 2,
+        "partial": 3,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.factor.find",
+            "label": "Find factors of a number"
+          },
+          {
+            "id": "arith.factor.gcf",
+            "label": "Greatest common factor"
+          },
+          {
+            "id": "arith.factor.lcm",
+            "label": "Least common multiple"
+          }
+        ]
+      },
+      {
+        "topic": "Four Operations",
+        "strand": "Whole Numbers",
+        "full": 2,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.mult.triple",
+            "label": "Multiply three-digit by one-digit"
+          },
+          {
+            "id": "arith.mult.double",
+            "label": "Multiply two-digit numbers"
+          },
+          {
+            "id": "arith.div.long",
+            "label": "Long division"
+          },
+          {
+            "id": "arith.word.multi_step",
+            "label": "Multi-step whole-number word problems"
+          }
+        ]
+      },
+      {
+        "topic": "Mixed Numbers and Improper Fractions",
+        "strand": "Fractions",
+        "full": 1,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.mixed.convert",
+            "label": "Convert mixed number to improper fraction"
+          }
+        ]
+      },
+      {
+        "topic": "Fraction of a Set",
+        "strand": "Fractions",
+        "full": 1,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.of_number",
+            "label": "A fraction of a whole number"
+          },
+          {
+            "id": "frac.remaining",
+            "label": "The fraction remaining"
+          }
+        ]
+      },
+      {
+        "topic": "Addition and Subtraction",
+        "strand": "Fractions",
+        "full": 1,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.add.diff",
+            "label": "Add fractions with different denominators"
+          },
+          {
+            "id": "frac.sub.diff",
+            "label": "Subtract fractions with different denominators"
+          },
+          {
+            "id": "frac.lcd",
+            "label": "The least common denominator"
+          },
+          {
+            "id": "frac.add.word",
+            "label": "Fraction addition word problems"
+          },
+          {
+            "id": "frac.sub.word",
+            "label": "Fraction subtraction word problems"
+          },
+          {
+            "id": "frac.sub.whole",
+            "label": "Subtracting a fraction from a whole number"
+          }
+        ]
+      },
+      {
+        "topic": "Decimals up to 3 Decimal Places",
+        "strand": "Decimals",
+        "full": 4,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.dec.intro",
+            "label": "Read and write decimals to hundredths"
+          },
+          {
+            "id": "dec.basics.compare",
+            "label": "Compare decimal values"
+          },
+          {
+            "id": "dec.convert.to_frac",
+            "label": "Convert terminating decimal to fraction"
+          },
+          {
+            "id": "frac.ops.to_decimal",
+            "label": "Convert fraction to decimal"
+          },
+          {
+            "id": "dec.ops.round",
+            "label": "Round decimals to given place"
+          }
+        ]
+      },
+      {
+        "topic": "Addition and Subtraction",
+        "strand": "Decimals",
+        "full": 1,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "dec.ops.add",
+            "label": "Add decimals"
+          },
+          {
+            "id": "dec.ops.sub",
+            "label": "Subtract decimals"
+          }
+        ]
+      },
+      {
+        "topic": "Multiplication and Division",
+        "strand": "Decimals",
+        "full": 0,
+        "partial": 3,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "dec.ops.mult",
+            "label": "Multiply decimals"
+          },
+          {
+            "id": "dec.ops.div",
+            "label": "Divide decimals"
+          },
+          {
+            "id": "dec.ops.mult.word",
+            "label": "Money: cost of several items"
+          },
+          {
+            "id": "dec.convert.from_frac",
+            "label": "Convert fraction to decimal by division"
+          },
+          {
+            "id": "dec.ops.round",
+            "label": "Round decimals to given place"
+          }
+        ]
+      },
+      {
+        "topic": "Area and Perimeter",
+        "strand": "Area and Volume",
+        "full": 0,
+        "partial": 0,
+        "none": 3,
+        "concepts": []
+      },
+      {
+        "topic": "Angles",
+        "strand": "Geometry",
+        "full": 1,
+        "partial": 0,
+        "none": 2,
+        "concepts": [
+          {
+            "id": "geo.basic.angle_measure",
+            "label": "Measuring angles in degrees"
+          }
+        ]
+      },
+      {
+        "topic": "Rectangle and Square",
+        "strand": "Geometry",
+        "full": 0,
+        "partial": 1,
+        "none": 1,
+        "concepts": [
+          {
+            "id": "geo.quad.types",
+            "label": "Types of quadrilaterals"
+          }
+        ]
+      },
+      {
+        "topic": "Line Symmetry",
+        "strand": "Geometry",
+        "full": 0,
+        "partial": 0,
+        "none": 3,
+        "concepts": []
+      },
+      {
+        "topic": "Nets",
+        "strand": "Geometry",
+        "full": 0,
+        "partial": 0,
+        "none": 4,
+        "concepts": []
+      },
+      {
+        "topic": "Tables, Line Graphs and Pie Charts",
+        "strand": "Data Representation and Interpretation",
+        "full": 0,
+        "partial": 2,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "stat.data.read_table",
+            "label": "Read data from tables and charts"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "P5",
+    "name": "Primary 5",
+    "courseId": "sg-p5",
+    "targets": [
+      "arith.add.carry",
+      "arith.add.double",
+      "arith.add.single",
+      "arith.add.triple",
+      "arith.add.word",
+      "arith.compare.whole",
+      "arith.compare.within100",
+      "arith.compare.within1000",
+      "arith.dec.intro",
+      "arith.div.basic",
+      "arith.div.concept",
+      "arith.div.interpret_remainder",
+      "arith.div.long",
+      "arith.div.remainder",
+      "arith.div.tables",
+      "arith.div.word",
+      "arith.div.word_tables",
+      "arith.estimate.product",
+      "arith.estimate.sum",
+      "arith.factor.find",
+      "arith.factor.gcf",
+      "arith.factor.lcm",
+      "arith.mult.2_5_10",
+      "arith.mult.3_4",
+      "arith.mult.concept",
+      "arith.mult.double",
+      "arith.mult.tables",
+      "arith.mult.triple",
+      "arith.mult.word",
+      "arith.mult.word_tables",
+      "arith.order_ops.basic",
+      "arith.order_ops.nested",
+      "arith.place.expanded",
+      "arith.place.hundreds",
+      "arith.place.powers_ten",
+      "arith.place.tens",
+      "arith.place.thousands",
+      "arith.round.hundreds",
+      "arith.round.tens",
+      "arith.round.thousands",
+      "arith.sub.borrow",
+      "arith.sub.double",
+      "arith.sub.single",
+      "arith.sub.word",
+      "arith.word.multi_step",
+      "dec.basics.compare",
+      "dec.convert.from_frac",
+      "dec.convert.to_frac",
+      "dec.ops.add",
+      "dec.ops.add.word",
+      "dec.ops.div",
+      "dec.ops.mult",
+      "dec.ops.mult.word",
+      "dec.ops.round",
+      "dec.ops.sub",
+      "dec.ops.sub.word",
+      "frac.add.diff",
+      "frac.add.same",
+      "frac.add.word",
+      "frac.as_division",
+      "frac.basics.concept",
+      "frac.basics.equivalent",
+      "frac.basics.parts",
+      "frac.compare.cross",
+      "frac.compare.unit_like",
+      "frac.compare.word",
+      "frac.equivalent.scale",
+      "frac.lcd",
+      "frac.mixed.add",
+      "frac.mixed.convert",
+      "frac.mixed.mult",
+      "frac.mixed.sub",
+      "frac.mixed.word",
+      "frac.mult.cancel",
+      "frac.mult.whole",
+      "frac.mult.word",
+      "frac.of_fraction",
+      "frac.of_number",
+      "frac.ops.compare",
+      "frac.ops.mult",
+      "frac.ops.simplify",
+      "frac.ops.to_decimal",
+      "frac.remaining",
+      "frac.sub.diff",
+      "frac.sub.same",
+      "frac.sub.whole",
+      "frac.sub.word",
+      "geo.basic.angle_measure",
+      "geo.basic.angles",
+      "geo.basic.complementary",
+      "geo.basic.points_lines",
+      "geo.basic.vertical",
+      "geo.quad.area",
+      "geo.quad.perimeter",
+      "geo.quad.types",
+      "geo.solid.volume_rect",
+      "geo.triangle.angles",
+      "geo.triangle.area",
+      "geo.triangle.isosceles",
+      "geo.triangle.types",
+      "pct.basics.concept",
+      "pct.convert.from_dec",
+      "pct.convert.to_dec",
+      "pct.ops.find_rate",
+      "pct.ops.of_number",
+      "prealg.measure.metric",
+      "stat.data.bar_graph",
+      "stat.data.read_table"
+    ],
+    "topics": [
+      {
+        "topic": "Numbers up to 10 million",
+        "strand": "Whole Numbers",
+        "full": 0,
+        "partial": 0,
+        "none": 1,
+        "concepts": []
+      },
+      {
+        "topic": "Four Operations",
+        "strand": "Whole Numbers",
+        "full": 3,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.place.powers_ten",
+            "label": "Multiply and divide by powers of ten"
+          },
+          {
+            "id": "arith.order_ops.basic",
+            "label": "Order of operations without exponents"
+          },
+          {
+            "id": "arith.order_ops.nested",
+            "label": "Nested parentheses in order of operations"
+          }
+        ]
+      },
+      {
+        "topic": "Fraction and Division",
+        "strand": "Fractions",
+        "full": 2,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.as_division",
+            "label": "A fraction as a division"
+          },
+          {
+            "id": "frac.ops.to_decimal",
+            "label": "Convert fraction to decimal"
+          },
+          {
+            "id": "dec.convert.from_frac",
+            "label": "Convert fraction to decimal by division"
+          }
+        ]
+      },
+      {
+        "topic": "Four Operations",
+        "strand": "Fractions",
+        "full": 4,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.mixed.add",
+            "label": "Add mixed numbers"
+          },
+          {
+            "id": "frac.mixed.sub",
+            "label": "Subtract mixed numbers"
+          },
+          {
+            "id": "frac.mixed.word",
+            "label": "Mixed number word problems"
+          },
+          {
+            "id": "frac.mult.whole",
+            "label": "Multiply fraction by a whole number"
+          },
+          {
+            "id": "frac.ops.mult",
+            "label": "Multiply fractions"
+          },
+          {
+            "id": "frac.of_fraction",
+            "label": "A fraction of a fraction"
+          },
+          {
+            "id": "frac.mult.cancel",
+            "label": "Cancelling before multiplying"
+          },
+          {
+            "id": "frac.mixed.mult",
+            "label": "Multiply mixed numbers"
+          },
+          {
+            "id": "frac.mult.word",
+            "label": "Fraction multiplication word problems"
+          }
+        ]
+      },
+      {
+        "topic": "Four Operations",
+        "strand": "Decimals",
+        "full": 1,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "arith.place.powers_ten",
+            "label": "Multiply and divide by powers of ten"
+          },
+          {
+            "id": "prealg.measure.metric",
+            "label": "Convert metric units"
+          }
+        ]
+      },
+      {
+        "topic": "Percentage",
+        "strand": "Percentage",
+        "full": 3,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "pct.ops.find_rate",
+            "label": "What percentage is A of B"
+          },
+          {
+            "id": "pct.basics.concept",
+            "label": "Percentage as parts per hundred"
+          },
+          {
+            "id": "pct.convert.to_dec",
+            "label": "Convert percentage to decimal"
+          },
+          {
+            "id": "pct.convert.from_dec",
+            "label": "Convert decimal to percentage"
+          },
+          {
+            "id": "pct.ops.of_number",
+            "label": "Find X percent of a number"
+          },
+          {
+            "id": "pct.ops.discount",
+            "label": "Calculate discounts and sale prices"
+          },
+          {
+            "id": "pct.ops.tax_tip",
+            "label": "Tax and tip calculations"
+          },
+          {
+            "id": "pct.ops.simple_interest",
+            "label": "Simple interest"
+          }
+        ]
+      },
+      {
+        "topic": "Rate",
+        "strand": "Rate",
+        "full": 2,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "ratio.ops.rate",
+            "label": "Unit rates"
+          },
+          {
+            "id": "ratio.ops.rate.word",
+            "label": "Rate word problems"
+          }
+        ]
+      },
+      {
+        "topic": "Area of Triangle",
+        "strand": "Area and Volume",
+        "full": 2,
+        "partial": 0,
+        "none": 1,
+        "concepts": [
+          {
+            "id": "geo.triangle.area",
+            "label": "Area of a triangle"
+          }
+        ]
+      },
+      {
+        "topic": "Volume of Cube and Cuboid",
+        "strand": "Area and Volume",
+        "full": 1,
+        "partial": 2,
+        "none": 3,
+        "concepts": [
+          {
+            "id": "geo.solid.volume_rect",
+            "label": "Volume of rectangular prism"
+          }
+        ]
+      },
+      {
+        "topic": "Angles",
+        "strand": "Geometry",
+        "full": 2,
+        "partial": 1,
+        "none": 1,
+        "concepts": [
+          {
+            "id": "geo.basic.complementary",
+            "label": "Complementary and supplementary angles"
+          },
+          {
+            "id": "geo.basic.vertical",
+            "label": "Vertical angles and parallel lines"
+          }
+        ]
+      },
+      {
+        "topic": "Triangle",
+        "strand": "Geometry",
+        "full": 3,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "geo.triangle.types",
+            "label": "Types of triangles"
+          },
+          {
+            "id": "geo.triangle.isosceles",
+            "label": "Isosceles triangles"
+          },
+          {
+            "id": "geo.triangle.angles",
+            "label": "Triangle angle sum is 180 degrees"
+          }
+        ]
+      },
+      {
+        "topic": "Parallelogram, Rhombus and Trapezium",
+        "strand": "Geometry",
+        "full": 0,
+        "partial": 1,
+        "none": 1,
+        "concepts": [
+          {
+            "id": "geo.quad.types",
+            "label": "Types of quadrilaterals"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "P6",
+    "name": "Primary 6",
+    "courseId": "sg-p6",
+    "targets": [
+      "arith.add.carry",
+      "arith.add.double",
+      "arith.add.single",
+      "arith.add.triple",
+      "arith.add.word",
+      "arith.compare.whole",
+      "arith.compare.within100",
+      "arith.compare.within1000",
+      "arith.dec.intro",
+      "arith.div.basic",
+      "arith.div.concept",
+      "arith.div.interpret_remainder",
+      "arith.div.long",
+      "arith.div.remainder",
+      "arith.div.tables",
+      "arith.div.word",
+      "arith.div.word_tables",
+      "arith.estimate.product",
+      "arith.estimate.sum",
+      "arith.factor.find",
+      "arith.factor.gcf",
+      "arith.factor.lcm",
+      "arith.mult.2_5_10",
+      "arith.mult.3_4",
+      "arith.mult.concept",
+      "arith.mult.double",
+      "arith.mult.tables",
+      "arith.mult.triple",
+      "arith.mult.word",
+      "arith.mult.word_tables",
+      "arith.order_ops.basic",
+      "arith.order_ops.nested",
+      "arith.place.expanded",
+      "arith.place.hundreds",
+      "arith.place.powers_ten",
+      "arith.place.tens",
+      "arith.place.thousands",
+      "arith.round.hundreds",
+      "arith.round.tens",
+      "arith.round.thousands",
+      "arith.sqrt.cube",
+      "arith.sqrt.perfect",
+      "arith.sub.borrow",
+      "arith.sub.double",
+      "arith.sub.single",
+      "arith.sub.word",
+      "arith.word.multi_step",
+      "dec.basics.compare",
+      "dec.convert.from_frac",
+      "dec.convert.to_frac",
+      "dec.ops.add",
+      "dec.ops.add.word",
+      "dec.ops.div",
+      "dec.ops.mult",
+      "dec.ops.mult.word",
+      "dec.ops.round",
+      "dec.ops.sub",
+      "dec.ops.sub.word",
+      "frac.add.diff",
+      "frac.add.same",
+      "frac.add.word",
+      "frac.as_division",
+      "frac.basics.concept",
+      "frac.basics.equivalent",
+      "frac.basics.parts",
+      "frac.compare.cross",
+      "frac.compare.unit_like",
+      "frac.compare.word",
+      "frac.div.whole",
+      "frac.div.word",
+      "frac.equivalent.scale",
+      "frac.lcd",
+      "frac.mixed.add",
+      "frac.mixed.convert",
+      "frac.mixed.mult",
+      "frac.mixed.sub",
+      "frac.mixed.word",
+      "frac.mult.cancel",
+      "frac.mult.whole",
+      "frac.mult.word",
+      "frac.of_fraction",
+      "frac.of_number",
+      "frac.ops.compare",
+      "frac.ops.div",
+      "frac.ops.mult",
+      "frac.ops.simplify",
+      "frac.ops.to_decimal",
+      "frac.remaining",
+      "frac.sub.diff",
+      "frac.sub.same",
+      "frac.sub.whole",
+      "frac.sub.word",
+      "geo.basic.angle_measure",
+      "geo.basic.angles",
+      "geo.basic.complementary",
+      "geo.basic.points_lines",
+      "geo.basic.vertical",
+      "geo.circle.area",
+      "geo.circle.circumference",
+      "geo.circle.parts",
+      "geo.quad.area",
+      "geo.quad.perimeter",
+      "geo.quad.types",
+      "geo.solid.volume_rect",
+      "geo.triangle.angles",
+      "geo.triangle.area",
+      "geo.triangle.isosceles",
+      "geo.triangle.types",
+      "pct.basics.concept",
+      "pct.convert.from_dec",
+      "pct.convert.to_dec",
+      "pct.ops.change",
+      "pct.ops.discount",
+      "pct.ops.find_rate",
+      "pct.ops.increase",
+      "pct.ops.of_number",
+      "pct.ops.simple_interest",
+      "pct.ops.tax_tip",
+      "prealg.eq.one_step_add",
+      "prealg.eq.one_step_mult",
+      "prealg.eq.two_step",
+      "prealg.expr.evaluate",
+      "prealg.expr.like_terms",
+      "prealg.expr.translate",
+      "prealg.measure.metric",
+      "prealg.var.concept",
+      "ratio.basics.concept",
+      "ratio.ops.percent_proportion",
+      "ratio.ops.proportion",
+      "ratio.ops.proportion.word",
+      "ratio.ops.rate",
+      "ratio.ops.rate.word",
+      "ratio.ops.simplify",
+      "stat.data.bar_graph",
+      "stat.data.mean",
+      "stat.data.read_table"
+    ],
+    "topics": [
+      {
+        "topic": "Four Operations",
+        "strand": "Fractions",
+        "full": 1,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "frac.ops.div",
+            "label": "Divide fractions by multiplying by reciprocal"
+          },
+          {
+            "id": "frac.div.whole",
+            "label": "Divide a whole number by a fraction"
+          },
+          {
+            "id": "frac.div.word",
+            "label": "Fraction division word problems"
+          }
+        ]
+      },
+      {
+        "topic": "Percentage",
+        "strand": "Percentage",
+        "full": 1,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "ratio.ops.percent_proportion",
+            "label": "Solve percent problems with a proportion"
+          },
+          {
+            "id": "pct.ops.increase",
+            "label": "Percentage increase and decrease"
+          },
+          {
+            "id": "pct.ops.change",
+            "label": "Percent change from old and new values"
+          }
+        ]
+      },
+      {
+        "topic": "Ratio",
+        "strand": "Ratio",
+        "full": 2,
+        "partial": 3,
+        "none": 2,
+        "concepts": [
+          {
+            "id": "ratio.basics.concept",
+            "label": "What is a ratio"
+          },
+          {
+            "id": "ratio.ops.simplify",
+            "label": "Simplify a ratio"
+          },
+          {
+            "id": "ratio.ops.proportion",
+            "label": "Solve a proportion"
+          },
+          {
+            "id": "ratio.ops.proportion.word",
+            "label": "Proportion word problems"
+          }
+        ]
+      },
+      {
+        "topic": "Algebra",
+        "strand": "Algebra",
+        "full": 5,
+        "partial": 0,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "prealg.var.concept",
+            "label": "What is a variable"
+          },
+          {
+            "id": "prealg.expr.translate",
+            "label": "Translate words into algebraic expressions"
+          },
+          {
+            "id": "prealg.expr.like_terms",
+            "label": "Identify and collect like terms"
+          },
+          {
+            "id": "prealg.expr.evaluate",
+            "label": "Evaluate expression at given value of x"
+          },
+          {
+            "id": "prealg.eq.one_step_add",
+            "label": "Solve x + b = c"
+          },
+          {
+            "id": "prealg.eq.one_step_mult",
+            "label": "Solve ax = c"
+          },
+          {
+            "id": "prealg.eq.two_step",
+            "label": "Solve ax + b = c"
+          }
+        ]
+      },
+      {
+        "topic": "Area and Circumference of Circle",
+        "strand": "Area and Volume",
+        "full": 1,
+        "partial": 0,
+        "none": 2,
+        "concepts": [
+          {
+            "id": "geo.circle.parts",
+            "label": "Parts of a circle: radius, diameter, chord"
+          },
+          {
+            "id": "geo.circle.circumference",
+            "label": "Circumference of a circle"
+          },
+          {
+            "id": "geo.circle.area",
+            "label": "Area of a circle"
+          }
+        ]
+      },
+      {
+        "topic": "Volume of Cube and Cuboid",
+        "strand": "Area and Volume",
+        "full": 0,
+        "partial": 5,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "geo.solid.volume_rect",
+            "label": "Volume of rectangular prism"
+          },
+          {
+            "id": "arith.sqrt.cube",
+            "label": "Cube roots of perfect cubes"
+          },
+          {
+            "id": "arith.sqrt.perfect",
+            "label": "Square roots of perfect squares"
+          }
+        ]
+      },
+      {
+        "topic": "Special Quadrilaterals",
+        "strand": "Geometry",
+        "full": 0,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "geo.triangle.angles",
+            "label": "Triangle angle sum is 180 degrees"
+          },
+          {
+            "id": "geo.quad.types",
+            "label": "Types of quadrilaterals"
+          }
+        ]
+      },
+      {
+        "topic": "Average of a Set of Data",
+        "strand": "Data Analysis",
+        "full": 1,
+        "partial": 1,
+        "none": 0,
+        "concepts": [
+          {
+            "id": "stat.data.mean",
+            "label": "Calculate the mean"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Rearranging the terms",
+    "section": "Rearranging the terms",
+    "subgoals": [
+      "Describe the reordering as a bijection",
+      "Compare partial sums through different finite sets",
+      "Ask whether the limit is unchanged"
+    ]
+  },
+  {
+    "label": "Absolutely convergent series are order-blind",
+    "section": "Absolutely convergent series are order-blind",
+    "subgoals": [
+      "Use the convergence of the absolute series",
+      "Bound the displaced mass",
+      "Show both partial sums meet at the same limit"
+    ]
+  },
+  {
+    "label": "Riemann's rearrangement theorem",
+    "section": "Riemann's rearrangement theorem",
+    "subgoals": [
+      "Split into positive and negative parts",
+      "Push the sum above the target",
+      "Pull it back below it"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiplying top and bottom",
+    "section": "Multiplying top and bottom",
+    "subgoals": [
+      "Multiply both by the same factor",
+      "Give an equivalent fraction",
+      "See it as multiplying by one"
+    ]
+  },
+  {
+    "label": "Choosing the factor",
+    "section": "Choosing the factor",
+    "subgoals": [
+      "Divide to find the factor",
+      "Require an exact division",
+      "Reject a non-multiple denominator"
+    ]
+  },
+  {
+    "label": "Why the value stays the same",
+    "section": "Why the value stays the same",
+    "subgoals": [
+      "Justify with multiplication by one",
+      "Run the operation backwards",
+      "Connect it to reducing"
+    ]
+  }
+]

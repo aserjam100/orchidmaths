@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The area element",
+    "section": "The area element",
+    "subgoals": [
+      "Describe the region by radius and angle",
+      "Insert the radius in the area element",
+      "Check against a known area"
+    ]
+  },
+  {
+    "label": "The disk and other regions",
+    "section": "The disk and other regions",
+    "subgoals": [
+      "Separate the disk into radius and angle",
+      "Use the curves as radial limits",
+      "Choose the order that simplifies the limits"
+    ]
+  },
+  {
+    "label": "When to choose polar",
+    "section": "When to choose polar",
+    "subgoals": [
+      "Look for rotational symmetry",
+      "Turn the distance into the radius",
+      "Match coordinates to the symmetry"
+    ]
+  }
+]

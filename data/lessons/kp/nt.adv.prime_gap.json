@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The distance between consecutive primes",
+    "section": "The distance between consecutive primes",
+    "subgoals": [
+      "Test candidates above p",
+      "Stop at the first prime",
+      "Subtract p for the gap"
+    ]
+  },
+  {
+    "label": "Worked: gaps around 23 and 89",
+    "section": "Worked: gaps around 23 and 89",
+    "subgoals": [
+      "Find 29 after 23",
+      "Find 97 after 89",
+      "Find 101 above 100"
+    ]
+  },
+  {
+    "label": "Large gaps and the prime number theorem",
+    "section": "Large gaps and the prime number theorem",
+    "subgoals": [
+      "Build n!+2 through n!+n",
+      "Compare average gap with log x",
+      "Distinguish average from individual gaps"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A derivative-free Newton",
+    "section": "A derivative-free Newton",
+    "subgoals": [
+      "Take two recent points",
+      "Form the slope of their secant line",
+      "Use it in place of the derivative"
+    ]
+  },
+  {
+    "label": "Worked: one secant step",
+    "section": "Worked: one secant step",
+    "subgoals": [
+      "Evaluate the function at both guesses",
+      "Form the secant slope",
+      "Apply the update"
+    ]
+  },
+  {
+    "label": "Order and robustness",
+    "section": "Order and robustness",
+    "subgoals": [
+      "State the order of convergence",
+      "Note the absence of a bracket",
+      "Use it as a cheap fallback"
+    ]
+  }
+]

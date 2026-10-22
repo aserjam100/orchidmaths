@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Comparing without a common denominator",
+    "section": "Comparing without a common denominator",
+    "subgoals": [
+      "State the doubling rule",
+      "Apply it to a fraction",
+      "Compare two whole numbers"
+    ]
+  },
+  {
+    "label": "Why twice the numerator",
+    "section": "Why twice the numerator",
+    "subgoals": [
+      "Cross-multiply against a half",
+      "Derive the rule",
+      "See it as the comparison rule"
+    ]
+  },
+  {
+    "label": "Choosing the benchmark",
+    "section": "Choosing the benchmark",
+    "subgoals": [
+      "Name the useful benchmarks",
+      "Estimate against a half",
+      "Place a fraction on a number line"
+    ]
+  }
+]

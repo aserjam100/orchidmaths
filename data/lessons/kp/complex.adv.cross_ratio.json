@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition and order",
+    "section": "Definition and order",
+    "subgoals": [
+      "Write the four differences",
+      "Keep the stated order",
+      "See how swapping changes the value"
+    ]
+  },
+  {
+    "label": "Why real values matter",
+    "section": "Why real values matter",
+    "subgoals": [
+      "Real exactly for collinear or concyclic points",
+      "Use it as a circle test",
+      "Treat a line as a circle through infinity"
+    ]
+  },
+  {
+    "label": "Computing one",
+    "section": "Computing one",
+    "subgoals": [
+      "Substitute the four points",
+      "Reduce the fraction",
+      "Sanity-check that the value is real"
+    ]
+  }
+]

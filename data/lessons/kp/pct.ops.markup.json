@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Markup is added to cost",
+    "section": "Markup is added to cost",
+    "subgoals": [
+      "Identify the cost as the whole",
+      "Identify the markup rate",
+      "State that selling price equals cost plus markup"
+    ]
+  },
+  {
+    "label": "Find the markup",
+    "section": "Find the markup",
+    "subgoals": [
+      "Multiply the rate by the cost",
+      "Keep the markup in the same money units",
+      "Do not apply the rate to the selling price"
+    ]
+  },
+  {
+    "label": "Add to get the selling price",
+    "section": "Add to get the selling price",
+    "subgoals": [
+      "Add the markup to the cost",
+      "Check that the price exceeds the cost",
+      "Recover the markup by subtracting the cost"
+    ]
+  }
+]

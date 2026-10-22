@@ -1,0 +1,309 @@
+import { describe, it, expect, beforeAll, beforeEach, vi } from 'vitest'
+import { render, screen, fireEvent, within } from '@testing-library/react'
+import { deriveStatuses } from '../lib/graphStatus'
+
+const reactFlowMocks = vi.hoisted(() => ({
+  zoomIn: vi.fn(),
+  zoomOut: vi.fn(),
+  fitView: vi.fn(),
+  getViewport: vi.fn(() => ({ x: 0, y: 0, zoom: 1 })),
+  setViewport: vi.fn(),
+  setCenter: vi.fn(),
+}))
+
+vi.mock('@xyflow/react', async importOriginal => {
+  const actual = await importOriginal<typeof import('@xyflow/react')>()
+  return {
+    ...actual,
+    useReactFlow: () => reactFlowMocks,
+  }
+})
+
+import ConceptGraphFlow from '../components/ConceptGraphFlow'
+
+class ResizeObserverMock {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+}
+
+beforeAll(() => {
+  Object.defineProperty(globalThis, 'ResizeObserver', {
+    writable: true,
+    value: ResizeObserverMock,
+  })
+  Object.defineProperty(globalThis, 'DOMMatrixReadOnly', {
+    writable: true,
+    value: class {
+      m22 = 1
+      constructor(_transform?: string) {}
+    },
+  })
+})
+
+const concepts = [
+  { id: 'count', label: 'Counting', domain: 'counting', prerequisites: [] },
+  { id: 'add', label: 'Addition', domain: 'arithmetic', prerequisites: ['count'] },
+  { id: 'mul', label: 'Multiplication', domain: 'arithmetic', prerequisites: ['add'] },
+]
+
+describe('ConceptGraphFlow', () => {
+  it('renders without crashing and shows the search box', () => {
+    render(<ConceptGraphFlow concepts={concepts} />)
+    expect(screen.getByPlaceholderText('Search concepts…')).toBeInTheDocument()
+  })
+
+  it('renders the empty state when there are no concepts', () => {
+    render(<ConceptGraphFlow concepts={[]} />)
+    expect(screen.getByText('No concepts to display')).toBeInTheDocument()
+  })
+
+  it('draws no bordered box rounded, because the house style is square', () => {
+    // app/docs/contributing states the aesthetic outright: "no rounded corners". This
+    // component was the only place in the app that broke it — the node card, the search
+    // box, the results dropdown, the legend toggle, two filter chips and two inner
+    // panels — while a button a few lines away used `rounded-none` and the page
+    // contradicted itself.
+    //
+    // The rule is deliberately the user's own: a *bordered* box may not be rounded. That
+    // exempts the things that are round because they are shapes, not corners — status
+    // dots, avatars, progress bars, switch knobs — without listing them and going stale.
+    //
+    // Both mechanisms have to be checked. jsdom resolves an inline `borderRadius` but has
+    // no stylesheet, so a Tailwind `rounded-[4px]` is invisible to `getComputedStyle`
+    // and a computed-style-only assertion passes vacuously over six of the eight boxes
+    // this replaced. Hence the class check as well.
+    const { container } = render(<ConceptGraphFlow concepts={concepts} />)
+
+    const offenders = Array.from(container.querySelectorAll<HTMLElement>('*'))
+      .map(el => {
+        const cls = el.getAttribute('class') ?? ''
+        const inline = el.getAttribute('style') ?? ''
+        const hasBorder = /\bborder/.test(cls) || /\bborder(?:Top|Right|Bottom|Left)?\s*:/.test(inline)
+        const roundedClass = /(?:^|\s)rounded-(?!none\b)[\w[\]-]*/.test(cls)
+        const roundedInline = parseFloat(getComputedStyle(el).borderRadius) > 0
+        return hasBorder && (roundedClass || roundedInline)
+          ? `${el.tagName.toLowerCase()}.${cls || '(inline)'}`
+          : null
+      })
+      .filter((v): v is string => v !== null)
+
+    expect(offenders, `rounded bordered boxes: ${JSON.stringify(offenders)}`).toEqual([])
+  })
+
+  it('search finds a concept and selecting it calls onSelectionChange', async () => {
+    const onSelectionChange = vi.fn()
+    render(<ConceptGraphFlow concepts={concepts} onSelectionChange={onSelectionChange} />)
+    const input = screen.getByPlaceholderText('Search concepts…')
+    fireEvent.change(input, { target: { value: 'multipl' } })
+    const hits = await screen.findAllByText('Multiplication')
+    fireEvent.click(hits[0])
+    expect(onSelectionChange).toHaveBeenCalledWith('mul')
+  })
+
+  it('shows a progress bar and mastery percentage on nodes with progress', () => {
+    const { container } = render(
+      <ConceptGraphFlow concepts={concepts} conceptProgress={{ count: 0.4 }} />
+    )
+    expect(container.querySelector('[data-progress="40"]')).toBeInTheDocument()
+    // getByRole would compute an empty accessible name here: jsdom gives the
+    // React Flow node wrapper no dimensions, so RF hides it with display:none.
+    // Match the aria-label directly instead.
+    const node = container.querySelector('.concept-node[aria-label*="40% toward mastery"]')
+    expect(node).not.toBeNull()
+    expect(node!.querySelector('.node-progress-tip')!.textContent).toBe('40% toward mastery')
+  })
+
+  it('shows a not-started tooltip on nodes without progress', () => {
+    const { container } = render(
+      <ConceptGraphFlow concepts={concepts} conceptProgress={{ count: 0.4 }} />
+    )
+    const node = container.querySelector('.concept-node[aria-label*="Addition"]')
+    expect(node).not.toBeNull()
+    expect(node!.querySelector('.node-progress-tip')!.textContent).toBe('Not started')
+  })
+
+  it('gives a decaying concept the same full bar as a mastered one, and says why', () => {
+    // The brief: bar length is attainment, colour is state. A decayed concept keeps the
+    // exact geometry of a mastered one — full bar, same track — so "full bar" keeps
+    // meaning "I learned this", and decay is carried entirely by the node colour and the
+    // hover text. No second bar, no pattern, no icon, no badge, no shorter fill.
+    const barWidth = (el: Element | null) =>
+      (el as HTMLElement | null)?.style.width ?? ''
+
+    const { container: freshC } = render(
+      <ConceptGraphFlow concepts={concepts} conceptStatuses={{ add: 'mastered' }} conceptProgress={{ add: 1 }} />,
+    )
+    const { container: staleC } = render(
+      <ConceptGraphFlow concepts={concepts} conceptStatuses={{ add: 'decaying' }} conceptProgress={{ add: 1 }} />,
+    )
+
+    // `data-progress` is on the 4px track; the fill is its child and carries the width.
+    const fillOf = (c: HTMLElement) =>
+      c.querySelector('.concept-node[aria-label*="Addition"] [data-progress] > div') as HTMLElement
+
+    expect(barWidth(fillOf(freshC))).toBe('100%')
+    expect(barWidth(fillOf(staleC))).toBe('100%')
+
+    // Identical geometry: same track, same fill height, not a shortened or second bar.
+    const trackOf = (c: HTMLElement) =>
+      c.querySelector('.concept-node[aria-label*="Addition"] [data-progress]') as HTMLElement
+    expect(trackOf(freshC).getAttribute('style')).toBe(trackOf(staleC).getAttribute('style'))
+
+    // Same words about attainment, different words about what is outstanding.
+    const tipOf = (c: HTMLElement) =>
+      c.querySelector('.concept-node[aria-label*="Addition"] .node-progress-tip')!.textContent
+    expect(tipOf(freshC)).toBe('100% toward mastery')
+    expect(tipOf(staleC)).toBe('Due for review')
+
+    // And the accessible label distinguishes them, so the state is not colour-only for
+    // anyone who cannot see the hue.
+    expect(staleC.querySelector('.concept-node[aria-label*="Addition"]')!.getAttribute('aria-label'))
+      .toContain('Due for review')
+  })
+
+  it('derives locked statuses that flow into node colors', () => {
+    const statuses = deriveStatuses(concepts)
+    expect(statuses['count']).toBe('unseen')
+    expect(statuses['add']).toBe('locked')
+    expect(statuses['mul']).toBe('locked')
+  })
+
+  it('opens the list view and selects a concept via its buttons', () => {
+    const onSelectionChange = vi.fn()
+    render(<ConceptGraphFlow concepts={concepts} onSelectionChange={onSelectionChange} />)
+    fireEvent.click(screen.getByRole('button', { name: 'Open concept list' }))
+    const dialog = screen.getByRole('dialog', { name: 'Concept list' })
+    expect(dialog).toBeInTheDocument()
+    fireEvent.click(within(dialog).getByRole('button', { name: /Addition/ }))
+    expect(onSelectionChange).toHaveBeenCalledWith('add')
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+  })
+
+  it('filters the list view and reports no matches for junk queries', () => {
+    render(<ConceptGraphFlow concepts={concepts} />)
+    fireEvent.click(screen.getByRole('button', { name: 'Open concept list' }))
+    const dialog = screen.getByRole('dialog', { name: 'Concept list' })
+    fireEvent.change(within(dialog).getByLabelText('Filter concepts'), {
+      target: { value: 'zzzz' },
+    })
+    expect(within(dialog).getByText('No matching concepts')).toBeInTheDocument()
+    fireEvent.keyDown(within(dialog).getByLabelText('Filter concepts'), {
+      key: 'Escape',
+    })
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+  })
+})
+
+describe('ConceptGraphFlow domain focus', () => {
+  const many = [
+    { id: 'a1', label: 'Alpha One', domain: 'domA', prerequisites: [] },
+    { id: 'a2', label: 'Alpha Two', domain: 'domA', prerequisites: ['a1'] },
+    { id: 'b1', label: 'Beta One', domain: 'domB', prerequisites: ['a1'] },
+    { id: 'b2', label: 'Beta Two', domain: 'domB', prerequisites: ['b1'] },
+    { id: 'c1', label: 'Gamma One', domain: 'domC', prerequisites: [] },
+  ]
+
+  function renderedLabels(container: HTMLElement): string[] {
+    return Array.from(container.querySelectorAll('.concept-node')).map(n =>
+      n.getAttribute('aria-label') ?? ''
+    )
+  }
+
+  it('mounts only the focused domain plus its one-hop neighbourhood', () => {
+    const { container } = render(<ConceptGraphFlow concepts={many} focusDomain="domA" />)
+    const labels = renderedLabels(container)
+    expect(labels.some(l => l.startsWith('Alpha One'))).toBe(true)
+    expect(labels.some(l => l.startsWith('Alpha Two'))).toBe(true)
+    expect(labels.some(l => l.startsWith('Beta One'))).toBe(true) // dependent of a1
+    expect(labels.some(l => l.startsWith('Beta Two'))).toBe(false) // two hops out
+    expect(labels.some(l => l.startsWith('Gamma One'))).toBe(false)
+  })
+
+  it('keeps a selected concept visible even outside the focused domain', () => {
+    const { container } = render(
+      <ConceptGraphFlow concepts={many} focusDomain="domA" selectedId="c1" />
+    )
+    const labels = renderedLabels(container)
+    expect(labels.some(l => l.startsWith('Gamma One'))).toBe(true)
+    expect(labels.some(l => l.startsWith('Beta Two'))).toBe(false)
+  })
+})
+
+describe('ConceptGraphFlow keyboard controls', () => {
+  beforeEach(() => {
+    reactFlowMocks.zoomIn.mockClear()
+    reactFlowMocks.zoomOut.mockClear()
+    reactFlowMocks.fitView.mockClear()
+    reactFlowMocks.setViewport.mockClear()
+    reactFlowMocks.getViewport.mockClear()
+    reactFlowMocks.getViewport.mockImplementation(() => ({ x: 0, y: 0, zoom: 1 }))
+  })
+
+  function renderEngaged(props = {}) {
+    const utils = render(<ConceptGraphFlow concepts={concepts} {...props} />)
+    fireEvent.mouseEnter(screen.getByTestId('graph-wrapper'))
+    return utils
+  }
+
+  it('zooms with plus and minus and fits with 0 when the graph is engaged', () => {
+    renderEngaged()
+    const wrapper = screen.getByTestId('graph-wrapper')
+    fireEvent.keyDown(wrapper, { key: '+' })
+    expect(reactFlowMocks.zoomIn).toHaveBeenCalledWith({ duration: 200 })
+    fireEvent.keyDown(wrapper, { key: '-' })
+    expect(reactFlowMocks.zoomOut).toHaveBeenCalledWith({ duration: 200 })
+    fireEvent.keyDown(wrapper, { key: '0' })
+    expect(reactFlowMocks.fitView).toHaveBeenCalledWith({
+      padding: 0.15,
+      maxZoom: 1,
+      duration: 300,
+    })
+  })
+
+  it('pans with arrow keys using the map camera convention', () => {
+    renderEngaged()
+    const wrapper = screen.getByTestId('graph-wrapper')
+    fireEvent.keyDown(wrapper, { key: 'ArrowLeft' })
+    expect(reactFlowMocks.setViewport).toHaveBeenCalledWith(
+      { x: 90, y: 0, zoom: 1 },
+      { duration: 200 }
+    )
+    fireEvent.keyDown(wrapper, { key: 'ArrowRight' })
+    expect(reactFlowMocks.setViewport).toHaveBeenCalledWith(
+      { x: -90, y: 0, zoom: 1 },
+      { duration: 200 }
+    )
+  })
+
+  it('ignores shortcuts while typing in the search input', () => {
+    renderEngaged()
+    fireEvent.keyDown(screen.getByPlaceholderText('Search concepts…'), { key: '+' })
+    expect(reactFlowMocks.zoomIn).not.toHaveBeenCalled()
+  })
+
+  it('ignores shortcuts when the graph is neither focused nor hovered', () => {
+    render(<ConceptGraphFlow concepts={concepts} />)
+    fireEvent.keyDown(window, { key: '+' })
+    expect(reactFlowMocks.zoomIn).not.toHaveBeenCalled()
+  })
+
+  it('Escape clears the selection when the list view is closed', () => {
+    const onSelectionChange = vi.fn()
+    renderEngaged({ selectedId: 'mul', onSelectionChange })
+    fireEvent.keyDown(screen.getByTestId('graph-wrapper'), { key: 'Escape' })
+    expect(onSelectionChange).toHaveBeenCalledWith(null)
+  })
+
+  it('Escape closes the list view before clearing the selection', () => {
+    const onSelectionChange = vi.fn()
+    renderEngaged({ selectedId: 'mul', onSelectionChange })
+    fireEvent.click(screen.getByRole('button', { name: 'Open concept list' }))
+    expect(screen.getByRole('dialog', { name: 'Concept list' })).toBeInTheDocument()
+    // isolate from React Flow's mount-time empty-selection callback
+    onSelectionChange.mockClear()
+    fireEvent.keyDown(window, { key: 'Escape' })
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+    expect(onSelectionChange).not.toHaveBeenCalledWith(null)
+  })
+})

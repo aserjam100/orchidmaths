@@ -1,0 +1,15 @@
+{
+  "concept": "trig.basics.bearings",
+  "setup": "A course is described as [[theta]] degrees from the nearest north-south axis, and you are asked for its bearing, measured clockwise from north.",
+  "steps": [
+    {
+      "fact": "quadrant",
+      "say": "The described course lies in quadrant [[quadrant]] of the compass, counting from the north-east quadrant as zero. The quadrant decides which of the four conversions applies."
+    },
+    {
+      "fact": "answer",
+      "say": "Measuring clockwise from north places the course at a bearing of [[answer]] degrees, which lies between 0 and 360."
+    }
+  ],
+  "answer": "So the bearing is [[answer]] degrees."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cauchy definition",
+    "section": "",
+    "subgoals": [
+      "State |a_n - a_m| < ε for n,m past N",
+      "Test 1/n by squeezing tail differences",
+      "Conclude stability without naming the limit"
+    ]
+  },
+  {
+    "label": "Convergent implies Cauchy",
+    "section": "",
+    "subgoals": [
+      "Split ε into halves around the limit L",
+      "Apply the triangle inequality",
+      "Conclude every convergent sequence is Cauchy"
+    ]
+  },
+  {
+    "label": "Cauchy implies bounded",
+    "section": "",
+    "subgoals": [
+      "Freeze ε = 1 past the threshold N",
+      "Bound the tail by |x_N| + 1",
+      "Cap the head with a finite maximum"
+    ]
+  }
+]

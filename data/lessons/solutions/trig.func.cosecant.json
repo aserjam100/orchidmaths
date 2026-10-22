@@ -1,0 +1,19 @@
+{
+  "concept": "trig.func.cosecant",
+  "setup": "A right triangle has $\\csc\\theta = [[ratio]]$ and a side opposite $\\theta$ of $[[given]]$.",
+  "steps": [
+    {
+      "fact": "ratio",
+      "say": "The cosecant is the reciprocal of the sine, so it is the hypotenuse divided by the opposite side. The hypotenuse is therefore the cosecant times the opposite side."
+    },
+    {
+      "fact": "given",
+      "say": "The opposite side is $[[given]]$."
+    },
+    {
+      "fact": "answer",
+      "say": "Multiplying gives $[[ratio]] \\times [[given]] = [[answer]]$."
+    }
+  ],
+  "answer": "So the hypotenuse is $[[answer]]$."
+}

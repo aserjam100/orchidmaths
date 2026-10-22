@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The cycle of i",
+    "section": "The cycle of i",
+    "subgoals": [
+      "List i, -1, -i, 1",
+      "Reduce the exponent modulo 4",
+      "Read the value off the remainder"
+    ]
+  },
+  {
+    "label": "Squaring an expression",
+    "section": "Squaring an expression",
+    "subgoals": [
+      "Expand with the cross term",
+      "Replace i^2 by -1",
+      "Collect the parts"
+    ]
+  },
+  {
+    "label": "Beyond squares",
+    "section": "Beyond squares",
+    "subgoals": [
+      "Use the binomial expansion",
+      "Collapse every i^2",
+      "Check the modulus grows or stays"
+    ]
+  }
+]

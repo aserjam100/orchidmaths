@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What are quadratic inequalities",
+    "section": "",
+    "subgoals": [
+      "Identify the quadratic inequality",
+      "Move everything to one side",
+      "Prepare to analyze sign"
+    ]
+  },
+  {
+    "label": "Nature of solutions",
+    "section": "",
+    "subgoals": [
+      "Classify by the discriminant",
+      "Expect intervals or empty sets",
+      "Predict the shape"
+    ]
+  },
+  {
+    "label": "Sign analysis",
+    "section": "",
+    "subgoals": [
+      "Find the roots",
+      "Test each interval",
+      "Pick the sign that satisfies"
+    ]
+  }
+]

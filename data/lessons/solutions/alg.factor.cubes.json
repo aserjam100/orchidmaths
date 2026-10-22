@@ -1,0 +1,19 @@
+{
+  "concept": "alg.factor.cubes",
+  "setup": "You are factoring the [[kind]] of cubes \\([[poly]]\\).",
+  "steps": [
+    {
+      "fact": "n",
+      "say": "The constant term is \\([[cube]] = [[n]]^3\\)."
+    },
+    {
+      "fact": "linear",
+      "say": "The linear factor is \\([[linear]]\\)."
+    },
+    {
+      "fact": "quadratic",
+      "say": "The quadratic factor is \\([[quadratic]]\\)."
+    }
+  ],
+  "answer": "Since \\([[poly]] = ([[linear]])([[quadratic]])\\), the quadratic factor is \\([[quadratic]]\\)."
+}

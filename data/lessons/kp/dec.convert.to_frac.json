@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Convert fractions to decimals",
+    "section": "",
+    "subgoals": [
+      "Read the decimal places",
+      "Write the decimal over a power of 10",
+      "Simplify the fraction"
+    ]
+  },
+  {
+    "label": "Repeating decimals",
+    "section": "",
+    "subgoals": [
+      "Distinguish terminating from repeating",
+      "Convert a terminating decimal exactly",
+      "Round repeating values when needed"
+    ]
+  },
+  {
+    "label": "Order decimals and fractions",
+    "section": "",
+    "subgoals": [
+      "Convert both to the same form",
+      "Compare the values",
+      "Order the set"
+    ]
+  }
+]

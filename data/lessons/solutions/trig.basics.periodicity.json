@@ -1,0 +1,15 @@
+{
+  "concept": "trig.basics.periodicity",
+  "setup": "The graph of $y = \\sin([[b]]x)$ is one period of a repeating wave, and you are asked for its period in degrees.",
+  "steps": [
+    {
+      "fact": "b",
+      "say": "A coefficient inside the angle compresses the graph horizontally. One full cycle happens when the argument $[[b]]x$ advances by a full turn, so the input advances by a full turn divided by [[b]]."
+    },
+    {
+      "fact": "answer",
+      "say": "Dividing 360 degrees by [[b]] gives [[answer]] degrees, and that is the smallest positive angle after which the values repeat."
+    }
+  ],
+  "answer": "So the period is [[answer]] degrees."
+}

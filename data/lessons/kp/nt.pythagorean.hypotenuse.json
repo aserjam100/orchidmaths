@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Euclid's formula",
+    "section": "Euclid's formula",
+    "subgoals": [
+      "Name the three expressions",
+      "Say every primitive triple arises",
+      "Avoid searching"
+    ]
+  },
+  {
+    "label": "Why coprime and opposite parity",
+    "section": "Why coprime and opposite parity",
+    "subgoals": [
+      "Explain the shared-factor case",
+      "Explain the equal-parity case",
+      "Say what the conditions divide out"
+    ]
+  },
+  {
+    "label": "Checking a triple",
+    "section": "Checking a triple",
+    "subgoals": [
+      "Square and add",
+      "Recognise a primitive triple",
+      "Name the parity pattern"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Fibonacci modulo n",
+    "section": "Fibonacci modulo n",
+    "subgoals": [
+      "Track the pair (F_k, F_{k+1})",
+      "Update to (b, a+b)",
+      "Recognise (0,1) as the start"
+    ]
+  },
+  {
+    "label": "Worked: periods modulo 2, 5 and 6",
+    "section": "Worked: periods modulo 2, 5 and 6",
+    "subgoals": [
+      "Count 3 steps mod 2",
+      "Count 20 steps mod 5",
+      "Take lcm(3,8) for 24 mod 6"
+    ]
+  },
+  {
+    "label": "Why the period exists",
+    "section": "Why the period exists",
+    "subgoals": [
+      "Use finitely many pairs",
+      "Note the transition is invertible",
+      "Bound the period by n squared"
+    ]
+  }
+]

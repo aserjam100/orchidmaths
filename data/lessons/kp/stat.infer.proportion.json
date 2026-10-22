@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The variability of a proportion",
+    "section": "The variability of a proportion",
+    "subgoals": [
+      "Write a proportion as a mean of zeros and ones",
+      "Compute p-hat(1 - p-hat)/n",
+      "Maximise the factor at one half"
+    ]
+  },
+  {
+    "label": "Worked: a poll of 400",
+    "section": "Worked: a poll of 400",
+    "subgoals": [
+      "Take p-hat = 0.5 and n = 400",
+      "Compute 0.25/400",
+      "Take the square root for 0.025"
+    ]
+  },
+  {
+    "label": "From standard error to margin",
+    "section": "From standard error to margin",
+    "subgoals": [
+      "Multiply by the critical value",
+      "Read 1.96 for 95 percent",
+      "State the independence assumption"
+    ]
+  }
+]

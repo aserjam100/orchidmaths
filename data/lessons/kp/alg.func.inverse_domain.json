@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Swapping domain and range",
+    "section": "Swapping domain and range",
+    "subgoals": [
+      "Read the original's range as the inverse's domain",
+      "Read the original's domain as the inverse's range",
+      "Keep the two sets matched by the swap"
+    ]
+  },
+  {
+    "label": "One-to-one and how to fix it",
+    "section": "One-to-one and how to fix it",
+    "subgoals": [
+      "Test whether distinct inputs give distinct outputs",
+      "Restrict the domain until they do",
+      "Name the branch chosen by the restriction"
+    ]
+  },
+  {
+    "label": "Reading a graph",
+    "section": "Reading a graph",
+    "subgoals": [
+      "Reflect the graph across the diagonal",
+      "Use the horizontal-line test for one-to-one",
+      "See the axes exchange as domain and range swap"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Contrast d(eps) global vs d(eps,a) pointwise",
+      "Preview x^2 failing on R",
+      "Flag 1/x on (0,1) as non-uniform"
+    ]
+  },
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Write forall eps exists d independent of x",
+      "Test d = eps/L for Lipschitz maps",
+      "Check sin x with d = eps"
+    ]
+  },
+  {
+    "label": "Heine–Cantor Theorem",
+    "section": "",
+    "subgoals": [
+      "Require continuity on closed [a,b]",
+      "Promote to uniform via compactness",
+      "Apply to x^2 on [0,1]"
+    ]
+  }
+]

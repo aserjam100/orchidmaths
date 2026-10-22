@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: pinning down y'' = 0",
+    "section": "Worked: pinning down y'' = 0",
+    "subgoals": [
+      "Integrate twice to get Cx + D",
+      "Apply y(0) = 0 to kill D",
+      "Apply y(1) = 3 to fix C"
+    ]
+  },
+  {
+    "label": "Worked: same ODE, different pins",
+    "section": "Worked: same ODE, different pins",
+    "subgoals": [
+      "Integrate twice to get Cx + D",
+      "Apply y(0) = 1 to fix D",
+      "Apply y(1) = 1 to force C = 0"
+    ]
+  },
+  {
+    "label": "IVP always answers, BVP sometimes",
+    "section": "IVP always answers, BVP sometimes",
+    "subgoals": [
+      "Contrast Picard uniqueness with BVP counts",
+      "Describe the shooting iteration",
+      "State the Green/Fredholm solvability role"
+    ]
+  }
+]

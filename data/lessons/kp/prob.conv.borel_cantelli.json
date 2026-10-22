@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The first lemma",
+    "section": "The first lemma",
+    "subgoals": [
+      "Sum the probabilities",
+      "Note that the expected count is finite",
+      "Conclude that only finitely many occur"
+    ]
+  },
+  {
+    "label": "The second lemma",
+    "section": "The second lemma",
+    "subgoals": [
+      "Require independence",
+      "Require a divergent sum",
+      "Conclude that infinitely many occur"
+    ]
+  },
+  {
+    "label": "Proving almost-sure results",
+    "section": "Proving almost-sure results",
+    "subgoals": [
+      "Bound the error probabilities",
+      "Sum the bounds",
+      "Apply the first lemma for almost-sure convergence"
+    ]
+  }
+]

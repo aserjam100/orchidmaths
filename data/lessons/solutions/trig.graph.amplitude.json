@@ -1,0 +1,15 @@
+{
+  "concept": "trig.graph.amplitude",
+  "setup": "The graph is $y = [[a]]\\,[[fnmath]](x)$, a sine or cosine wave.",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "The amplitude is the distance from the midline to a peak or a trough, which is the absolute value of the coefficient in front of the function. It is never negative, because it measures a distance."
+    },
+    {
+      "fact": "value",
+      "say": "The coefficient here is [[a]], and its absolute value is [[value]]. The sign reflects the wave over the axis rather than changing how far it swings, and the multiplier on $x$ — not the coefficient — is what changes the period."
+    }
+  ],
+  "answer": "So the amplitude is [[value]]."
+}

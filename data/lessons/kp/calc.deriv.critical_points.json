@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Local maxima and minima",
+    "section": "",
+    "subgoals": [
+      "Pin local extrema via neighborhoods",
+      "Connect extrema to flat tangents",
+      "Preview the critical-point hunt"
+    ]
+  },
+  {
+    "label": "Finding critical points",
+    "section": "",
+    "subgoals": [
+      "Solve f'(x) = 0",
+      "Include points where f' is undefined",
+      "Check x^3-3x gives x = -1, 1"
+    ]
+  },
+  {
+    "label": "Worked classification",
+    "section": "",
+    "subgoals": [
+      "Solve f'(x) = 0 for the worked cubic",
+      "List all candidates before classifying",
+      "Confirm none are missed"
+    ]
+  }
+]

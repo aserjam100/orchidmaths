@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Triangle-free graphs",
+    "section": "Triangle-free graphs",
+    "subgoals": [
+      "Exclude a K_3",
+      "Observe bipartite implies triangle-free",
+      "Remember C_5 is triangle-free but not bipartite"
+    ]
+  },
+  {
+    "label": "Worked: five vertices",
+    "section": "Worked: five vertices",
+    "subgoals": [
+      "Compute floor of n squared over four",
+      "Choose parts 2 and 3",
+      "Count 6 edges in K_{2,3}"
+    ]
+  },
+  {
+    "label": "The extremal example and a proof sketch",
+    "section": "The extremal example and a proof sketch",
+    "subgoals": [
+      "Make the parts as equal as possible",
+      "Note neighbours of a vertex are independent",
+      "Sum the degree bound"
+    ]
+  }
+]

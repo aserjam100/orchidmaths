@@ -1,0 +1,15 @@
+{
+  "concept": "frac.of_number",
+  "setup": "You are taking \\(\\frac{[[in_num]]}{[[in_den]]}\\) of \\([[of]]\\).",
+  "steps": [
+    {
+      "fact": "of",
+      "say": "A fraction of a number means the fraction times the number, so multiply \\([[of]]\\) by \\(\\frac{[[in_num]]}{[[in_den]]}\\)."
+    },
+    {
+      "fact": "out_num",
+      "say": "The denominator divides the whole number here, so the answer is a whole number rather than a fraction: \\([[out_num]]\\). Sharing \\([[of]]\\) into \\([[in_den]]\\) equal parts and taking \\([[in_num]]\\) of them gives the same value."
+    }
+  ],
+  "answer": "So the answer is \\([[out_num]]\\)."
+}

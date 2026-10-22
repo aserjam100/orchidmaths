@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "List elements by enumeration {a1..a4}",
+      "Describe membership by {x | P(x)}",
+      "Test x IN A versus x NOTIN A"
+    ]
+  },
+  {
+    "label": "The universal set",
+    "section": "",
+    "subgoals": [
+      "Fix U for the ambient context",
+      "Complement A inside U",
+      "Check A UNION A^c equals U"
+    ]
+  },
+  {
+    "label": "Cardinality of finite sets",
+    "section": "",
+    "subgoals": [
+      "Count elements for |A|",
+      "Apply |A UNION B| = |A| + |B| - |A INTERSECT B|",
+      "Compare sizes to test equinumerosity"
+    ]
+  }
+]

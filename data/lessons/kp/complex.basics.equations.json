@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Isolating z",
+    "section": "Isolating z",
+    "subgoals": [
+      "Divide both sides by the coefficient",
+      "Keep the division exact",
+      "Watch for a zero coefficient"
+    ]
+  },
+  {
+    "label": "Dividing by a complex number",
+    "section": "Dividing by a complex number",
+    "subgoals": [
+      "Multiply by the conjugate",
+      "Expand the numerator",
+      "Divide both parts by the modulus squared"
+    ]
+  },
+  {
+    "label": "Checking the answer",
+    "section": "Checking the answer",
+    "subgoals": [
+      "Multiply back",
+      "Check both parts",
+      "Rule out two solutions"
+    ]
+  }
+]

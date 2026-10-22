@@ -1,0 +1,15 @@
+{
+  "concept": "discrete.graphs.bipartite",
+  "setup": "The bipartite graph has left vertices [[left]], right vertices [[right]], and edges [[edges]].",
+  "steps": [
+    {
+      "fact": "edges",
+      "say": "A matching pairs left and right vertices along edges, using each vertex at most once, so the search is over assignments rather than over edges."
+    },
+    {
+      "fact": "value",
+      "say": "Pairing as many as possible gives [[value]] pairs, and no matching of size one more exists because it would need more distinct right vertices than the edges allow."
+    }
+  ],
+  "answer": "So the maximum matching has size [[value]]."
+}

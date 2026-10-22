@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the circle from an interval",
+    "section": "Worked: the circle from an interval",
+    "subgoals": [
+      "Collapse the endpoint class to one point",
+      "Pull neighbourhoods back to both ends",
+      "Match the quotient against the circle"
+    ]
+  },
+  {
+    "label": "Worked: the quotient map is continuous",
+    "section": "Worked: the quotient map is continuous",
+    "subgoals": [
+      "Take an open set in the quotient",
+      "Read openness off the preimage rule",
+      "Conclude continuity by construction"
+    ]
+  },
+  {
+    "label": "When the quotient is not Hausdorff",
+    "section": "When the quotient is not Hausdorff",
+    "subgoals": [
+      "Collapse a non-closed set to a point",
+      "Show every neighbourhood reaches the missing limit",
+      "Conclude separation fails"
+    ]
+  }
+]

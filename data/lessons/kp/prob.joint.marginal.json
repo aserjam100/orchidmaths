@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Summing out a variable",
+    "section": "Summing out a variable",
+    "subgoals": [
+      "Sum the joint over the other coordinate",
+      "Read a row or column total",
+      "Recognise the margin as a one-variable law"
+    ]
+  },
+  {
+    "label": "Worked: a joint table",
+    "section": "Worked: a joint table",
+    "subgoals": [
+      "Add the weights with X equal to one",
+      "Divide by the total",
+      "Report the marginal probability"
+    ]
+  },
+  {
+    "label": "Marginals do not determine the joint",
+    "section": "Marginals do not determine the joint",
+    "subgoals": [
+      "Produce two joints with the same margins",
+      "Compare their off-diagonal mass",
+      "Conclude that the joint is not recoverable from the margins"
+    ]
+  }
+]

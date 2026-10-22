@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why pairs appear",
+    "section": "Why pairs appear",
+    "subgoals": [
+      "Conjugation commutes with real arithmetic",
+      "Conjugate both sides of p(z)=0",
+      "Conclude the pair"
+    ]
+  },
+  {
+    "label": "Multiplicity and degree",
+    "section": "Multiplicity and degree",
+    "subgoals": [
+      "Pair the factors",
+      "Multiply the pair into a real quadratic",
+      "State the real factorisation"
+    ]
+  },
+  {
+    "label": "Counting roots",
+    "section": "Counting roots",
+    "subgoals": [
+      "Count non-real roots twice",
+      "Deduct from the degree",
+      "Conclude an odd degree has a real root"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The series definition",
+    "section": "The series definition",
+    "subgoals": [
+      "Sum (At)^n/n!",
+      "Exponentiate diagonal entries",
+      "Terminate early for nilpotent matrices"
+    ]
+  },
+  {
+    "label": "Worked: diagonal and nilpotent matrices",
+    "section": "Worked: diagonal and nilpotent matrices",
+    "subgoals": [
+      "Compute diag(e^2, e^3)",
+      "Compute I + A when A^2 = 0",
+      "Check the initial condition"
+    ]
+  },
+  {
+    "label": "Solving x' = Ax",
+    "section": "Solving x' = Ax",
+    "subgoals": [
+      "Differentiate the series",
+      "Use x(0) = I",
+      "Diagonalize when possible"
+    ]
+  }
+]

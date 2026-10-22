@@ -1,0 +1,23 @@
+{
+  "concept": "trig.graph.phase_shift",
+  "setup": "The function is $y = [[a]]\\sin([[inner]])$.",
+  "steps": [
+    {
+      "fact": "b",
+      "say": "The coefficient on $x$ is [[b]] and the constant inside is $[[c_signed]]^{\\circ}$, so the shift is found by asking where the argument reaches zero."
+    },
+    {
+      "fact": "inner",
+      "say": "Setting the argument to zero, $[[inner]] = 0$, leaves $[[b]]x = [[c_signed]]^{\\circ}$."
+    },
+    {
+      "fact": "shift",
+      "say": "Dividing by the coefficient gives $x = [[value]]^{\\circ}$, so the wave begins there: it is shifted [[shift]] degrees to the [[dir]]."
+    },
+    {
+      "fact": "dir",
+      "say": "A shift to the right counts as positive and a shift to the left as negative, so the signed phase shift is [[value]]."
+    }
+  ],
+  "answer": "So the phase shift is [[value]] degrees."
+}

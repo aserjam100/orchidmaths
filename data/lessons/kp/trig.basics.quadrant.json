@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The four quadrants",
+    "section": "Four quarter-turns",
+    "subgoals": [
+      "Count the quadrants counterclockwise from the x-axis",
+      "Give the degree span of each quadrant",
+      "Say that an axis angle belongs to no quadrant"
+    ]
+  },
+  {
+    "label": "Locating an angle",
+    "section": "Reading an angle's quadrant",
+    "subgoals": [
+      "Count the 90 degree boundaries the angle has passed",
+      "Place the angle between two boundaries",
+      "Name the quadrant from that interval"
+    ]
+  },
+  {
+    "label": "Angles past one turn",
+    "section": "Angles beyond the first turn",
+    "subgoals": [
+      "Reduce an angle larger than 360 degrees first",
+      "Reuse the coterminal partner in the first turn",
+      "Read the quadrant from the direction, not the count"
+    ]
+  }
+]

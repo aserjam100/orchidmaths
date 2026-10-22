@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Meet sine and cosine on the unit circle",
+      "Set radius 1 so coordinates equal sin and cos",
+      "Allow theta + 2k*pi to revisit each point"
+    ]
+  },
+  {
+    "label": "Definition of sine and cosine",
+    "section": "",
+    "subgoals": [
+      "Drop perpendiculars from P to both axes",
+      "Read the y-leg as sin(theta), the x-leg as cos(theta)",
+      "Divide each leg by hypotenuse 1"
+    ]
+  },
+  {
+    "label": "Fundamental trigonometric identity",
+    "section": "",
+    "subgoals": [
+      "Add squared legs for sin^2(theta) + cos^2(theta) = 1",
+      "Use the circle equation x^2 + y^2 = 1 as the proof",
+      "Carry the identity into double-angle forms"
+    ]
+  }
+]

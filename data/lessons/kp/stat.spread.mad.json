@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Distance from the mean",
+    "section": "Distance from the mean",
+    "subgoals": [
+      "Take each distance without a sign",
+      "Average the distances",
+      "Read a small value as clustered"
+    ]
+  },
+  {
+    "label": "Why absolute values",
+    "section": "Why absolute values",
+    "subgoals": [
+      "Explain why squares overweight outliers",
+      "Compare with the variance",
+      "Name the algebraic trade"
+    ]
+  },
+  {
+    "label": "Comparing with the standard deviation",
+    "section": "Comparing with the standard deviation",
+    "subgoals": [
+      "Say both describe spread",
+      "Note the units",
+      "Choose one deliberately"
+    ]
+  }
+]

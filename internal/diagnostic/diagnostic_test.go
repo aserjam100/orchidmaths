@@ -1,0 +1,413 @@
+package diagnostic
+
+import (
+	"testing"
+
+	"github.com/aserjam100/orchid/internal/concepts"
+	"github.com/aserjam100/orchid/internal/generator"
+)
+
+type fakeGen struct{}
+
+func (f *fakeGen) Generate(ctx generator.GeneratorContext) generator.Problem {
+	return generator.Problem{
+		Question:    "test?",
+		Answer:      "test",
+		Explanation: "test",
+	}
+}
+
+func testDAG(t *testing.T) *concepts.DAG {
+	t.Helper()
+	raw := make([]concepts.Concept, 10)
+	for i := range raw {
+		raw[i] = concepts.Concept{
+			ID:               idFor(i),
+			Label:            "Concept " + idFor(i),
+			Domain:           "d",
+			Subdomain:        "s-" + idFor(i),
+			Prerequisites:    prereqsFor(i),
+			MasteryThreshold: concepts.MasteryThreshold{Streak: 3, AvgTimeSeconds: 10},
+		}
+	}
+	d, err := concepts.Build(raw)
+	if err != nil {
+		t.Fatalf("build DAG: %v", err)
+	}
+	return d
+}
+
+func idFor(i int) string {
+	letters := "abcdefghij"
+	return string(letters[i])
+}
+
+func prereqsFor(i int) []string {
+	if i == 0 {
+		return nil
+	}
+	return []string{idFor(i - 1)}
+}
+
+func mustRegistry(t *testing.T) *generator.Registry {
+	t.Helper()
+	r := generator.NewRegistry()
+	for i := 0; i < 10; i++ {
+		if err := r.Register(idFor(i), &fakeGen{}); err != nil {
+			t.Fatalf("register: %v", err)
+		}
+	}
+	return r
+}
+
+func TestEngine_Start(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	if s.State != StateProbing {
+		t.Errorf("expected probing, got %q", s.State)
+	}
+}
+
+func TestEngine_NextQuestion(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	p, cid, err := e.NextQuestion(s)
+	if err != nil {
+		t.Fatalf("next question: %v", err)
+	}
+	if p.Question == "" || cid == "" {
+		t.Error("expected non-empty question and concept ID")
+	}
+	if s.LastConceptID != cid {
+		t.Errorf("expected LastConceptID=%q, got %q", cid, s.LastConceptID)
+	}
+}
+
+func TestEngine_CompressedCover(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	cover := e.compressedCover(s)
+	if len(cover) == 0 {
+		t.Fatal("expected non-empty covering set")
+	}
+	if cover[0].ID != "a" {
+		t.Errorf("expected root a first in cover, got %s", cover[0].ID)
+	}
+}
+
+func TestEngine_InfoGain_UncertaintyFirst(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	// Settle concept "f" with a high belief (2 correct probes).
+	s.beliefs["f"] = 0.9
+	s.probeCounts["f"] = 2
+	s.confidence["f"] = 1.0
+	s.doneSet["f"] = true
+	cid := e.pickByInfoGain(s)
+	if cid == "" {
+		t.Fatal("expected a candidate after settling f")
+	}
+	if cid == "f" {
+		t.Error("settled concept f should not be re-picked")
+	}
+	if s.beliefs[cid] == 0.9 {
+		t.Errorf("expected an unsettled (0.5-belief) concept to win info gain, got %s", cid)
+	}
+}
+
+func TestEngine_EvidencePropagation_CorrectBoostsPrereqs(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	// "e" depends on "d" (prereq chain a<-b<-c<-d<-e). Correct on e should
+	// raise belief on its prerequisite d.
+	e.RecordAnswer(s, "e", true, false)
+	if s.beliefs["e"] < 0.6 {
+		t.Errorf("expected e belief up after correct, got %f", s.beliefs["e"])
+	}
+	if s.beliefs["d"] <= 0.5 {
+		t.Errorf("expected prereq d belief boosted above 0.5, got %f", s.beliefs["d"])
+	}
+}
+
+func TestEngine_EvidencePropagation_WrongLowersDependents(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	// Wrong on "d" should lower belief on dependent "e".
+	e.RecordAnswer(s, "d", false, false)
+	if s.beliefs["d"] >= 0.5 {
+		t.Errorf("expected d belief below 0.5 after wrong, got %f", s.beliefs["d"])
+	}
+	if s.beliefs["e"] >= 0.5 {
+		t.Errorf("expected dependent e belief lowered, got %f", s.beliefs["e"])
+	}
+}
+
+// answer answers the session's current question via the real Next→Record flow.
+func answer(t *testing.T, e *Engine, s *Session, correct, fast bool) string {
+	t.Helper()
+	_, cid, err := e.NextQuestion(s)
+	if err != nil {
+		t.Fatalf("next: %v", err)
+	}
+	if cid == "" {
+		return ""
+	}
+	e.RecordAnswer(s, cid, correct, fast)
+	return cid
+}
+
+func TestEngine_Frontier_StrongStudent(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	// Strong student: everything correct+fast through the real flow.
+	for i := 0; i < 60 && !e.IsComplete(s); i++ {
+		if answer(t, e, s, true, true) == "" {
+			break
+		}
+	}
+	rep := e.Report(s)
+	if rep.FrontierIdx < 8 {
+		t.Errorf("expected strong student frontier near top (>=8), got %d", rep.FrontierIdx)
+	}
+}
+
+func TestEngine_Frontier_WeakStudent(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	for i := 0; i < 60 && !e.IsComplete(s); i++ {
+		if answer(t, e, s, false, false) == "" {
+			break
+		}
+	}
+	rep := e.Report(s)
+	if rep.FrontierIdx > 3 {
+		t.Errorf("expected weak student frontier low (<=3), got %d", rep.FrontierIdx)
+	}
+	if len(rep.GapsByDomain["d"]) == 0 {
+		t.Error("expected gaps recorded for weak student")
+	}
+}
+
+func TestEngine_Report_Fields(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	answer(t, e, s, true, true)
+	answer(t, e, s, true, true)
+	rep := e.Report(s)
+	if rep.TotalQuestions != 2 {
+		t.Errorf("expected total_questions 2, got %d", rep.TotalQuestions)
+	}
+	if rep.MasteryLevels[s.LastConceptID] < 0.6 {
+		t.Errorf("expected mastery of answered concept high, got %f", rep.MasteryLevels[s.LastConceptID])
+	}
+	if rep.Confidence[s.LastConceptID] < 0.5 {
+		t.Errorf("expected confidence >= 0.5 after probing, got %f", rep.Confidence[s.LastConceptID])
+	}
+	// The CAT cannot estimate completion: it has no destination, so there is no
+	// honest denominator. The handler fills these in from the planner when the
+	// learner has saved a plan. What matters here is that nothing is asserted
+	// rather than computed.
+	if len(rep.CompletionEstimates) != 0 {
+		t.Errorf("expected no estimates without a destination, got %v", rep.CompletionEstimates)
+	}
+}
+
+func TestEngine_Supplemental_LowConfidenceExtends(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	// Answer only 1 probe per concept -> confidence 0.5 (< 0.7) -> not done
+	// until min questions met and all settled.
+	for i := 0; i < 10; i++ {
+		e.RecordAnswer(s, idFor(i), true, true)
+	}
+	if e.IsComplete(s) {
+		t.Error("expected not complete with only 1 probe per concept (low confidence)")
+	}
+	// Second probe per concept settles them; 25-question floor needs 5 more.
+	for i := 0; i < 10; i++ {
+		e.RecordAnswer(s, idFor(i), true, true)
+	}
+	if e.IsComplete(s) {
+		t.Error("expected not complete before the 25-question floor")
+	}
+	for i := 0; i < 5; i++ {
+		e.RecordAnswer(s, idFor(i), true, true)
+	}
+	if !e.IsComplete(s) {
+		t.Error("expected complete after 2 probes per concept + floor met")
+	}
+}
+
+func TestEngine_AllProbedCompletes(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	for i := 0; i < len(s.order) && !e.IsComplete(s); i++ {
+		cid := idFor(i)
+		if s.totalCount[cid] < 2 {
+			e.RecordAnswer(s, cid, true, true)
+			e.RecordAnswer(s, cid, true, true)
+		}
+	}
+	// 10 concepts × 2 probes = 20 < 25-question floor: top up round-robin.
+	for i := 0; !e.IsComplete(s) && i < 60; i++ {
+		e.RecordAnswer(s, idFor(i%len(s.order)), true, true)
+	}
+	if !e.IsComplete(s) {
+		t.Errorf("expected complete after all probed, state=%s asked=%d", s.State, s.totalAsked)
+	}
+}
+
+func TestEngine_Timed_SlowCorrectDiminished(t *testing.T) {
+	fastEng := NewEngine(testDAG(t), mustRegistry(t))
+	slowEng := NewEngine(testDAG(t), mustRegistry(t))
+	fastS := fastEng.Start()
+	slowS := slowEng.Start()
+	// Same correct answers; fast is well under thresh, slow is >2x thresh.
+	for i := 0; i < 6; i++ {
+		_, cid, err := fastEng.NextQuestion(fastS)
+		if err != nil || cid == "" {
+			break
+		}
+		fastEng.RecordAnswerTimed(fastS, cid, true, 2.0, 10.0)
+		_, scid, err := slowEng.NextQuestion(slowS)
+		if err != nil || scid == "" {
+			break
+		}
+		slowEng.RecordAnswerTimed(slowS, scid, true, 30.0, 10.0)
+	}
+	fastRep := fastEng.Report(fastS)
+	slowRep := slowEng.Report(slowS)
+	if slowRep.FrontierIdx >= fastRep.FrontierIdx && fastRep.FrontierIdx >= 0 {
+		t.Errorf("expected slow-correct frontier below fast-correct: slow=%d fast=%d",
+			slowRep.FrontierIdx, fastRep.FrontierIdx)
+	}
+	// Legacy fast-bool path still works (no elapsed).
+	legacy := NewEngine(testDAG(t), mustRegistry(t))
+	ls := legacy.Start()
+	legacy.RecordAnswer(ls, "a", true, true)
+	if ls.beliefs["a"] <= 0.5 {
+		t.Errorf("expected legacy fast-correct belief boost, got %f", ls.beliefs["a"])
+	}
+}
+
+// The report must not carry dates that nothing computed. This test previously
+// asserted the hardcoded {50, 100, 300} literal, which is how a fabricated
+// number survived a report rewrite. The replacement asserts the opposite: the CAT
+// layer stays empty and the server decides what can honestly be said.
+func TestEngine_Report_CompletionEstimatesAreNotFabricated(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	answer(t, e, s, true, true)
+	rep := e.Report(s)
+	if rep.CompletionEstimates != nil {
+		t.Errorf("report invented completion estimates: %v", rep.CompletionEstimates)
+	}
+}
+
+func TestEngine_Progress_BoundsAndMonotonic(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	prevCover := -1
+	for i := 0; i < 60 && !e.IsComplete(s); i++ {
+		p := e.Progress(s)
+		if p.EstimatedTotal < 25 || p.EstimatedTotal > 45 {
+			t.Fatalf("estimated_total out of [25,45]: %+v", p)
+		}
+		if p.Answered != s.totalAsked {
+			t.Fatalf("answered mismatch: progress=%d asked=%d", p.Answered, s.totalAsked)
+		}
+		if p.CoverSize <= 0 {
+			t.Fatalf("expected positive cover size: %+v", p)
+		}
+		if p.CoverDone < prevCover {
+			t.Fatalf("cover done decreased (bar would regress): prev=%d cur=%+v", prevCover, p)
+		}
+		prevCover = p.CoverDone
+		if answer(t, e, s, true, true) == "" {
+			break
+		}
+	}
+	final := e.Progress(s)
+	if !final.Done {
+		t.Error("expected done progress after completion")
+	}
+	if final.CoverDone != final.CoverSize {
+		t.Errorf("expected full cover at done: %+v", final)
+	}
+}
+
+func TestEngine_Report_ConditionallyCompleted(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	// Real flow: one correct (not fast) probe → belief ~0.675 lands in the
+	// conditional band [0.6, 0.75) with confidence > 0.
+	_, cid, err := e.NextQuestion(s)
+	if err != nil || cid == "" {
+		t.Fatalf("next: %v %q", err, cid)
+	}
+	e.RecordAnswer(s, cid, true, false)
+	rep := e.Report(s)
+	if len(rep.ConditionallyCompleted) == 0 {
+		t.Fatal("expected barely-passed concept flagged conditionally completed")
+	}
+	// Fall-back: missing its dependent strips the conditional credit.
+	deps := e.dag.DependentsOf(cid)
+	if len(deps) == 0 {
+		t.Fatalf("expected dependent of %q in chain DAG", cid)
+	}
+	before := s.beliefs[cid]
+	e.RecordAnswer(s, deps[0].ID, false, false)
+	if s.beliefs[cid] >= before {
+		t.Errorf("expected fall-back decay on conditional prereq: before=%f after=%f", before, s.beliefs[cid])
+	}
+}
+
+// Batch 2: supplementalDiagnostic re-probes settled low-confidence concepts
+// once each (legacy path: answers recorded without question probes leave
+// confidence at 0), then reports complete.
+
+func TestEngine_SupplementalDiagnostic_NamedPath(t *testing.T) {
+	e := NewEngine(testDAG(t), mustRegistry(t))
+	s := e.Start()
+	// Settle every concept with 2 probes each, no question probes asked.
+	for i := 0; i < 10; i++ {
+		e.RecordAnswer(s, idFor(i), true, true)
+		e.RecordAnswer(s, idFor(i), true, true)
+	}
+	for _, c := range s.order {
+		if !s.doneSet[c.ID] {
+			t.Fatalf("expected %s settled, doneSet=%v", c.ID, s.doneSet)
+		}
+	}
+	s.Lock()
+	first := e.supplementalDiagnostic(s)
+	s.Unlock()
+	if first == "" {
+		t.Fatal("expected supplemental target at confidence 0")
+	}
+	if s.supplementalCount[first] != 1 {
+		t.Errorf("expected supplemental count 1, got %d", s.supplementalCount[first])
+	}
+	if s.doneSet[first] {
+		t.Errorf("expected %s unsettled for re-probe", first)
+	}
+	// Cap: second call for the same concept moves on, never loops forever.
+	answered := map[string]bool{first: true}
+	for i := 0; i < 60; i++ {
+		s.Lock()
+		next := e.supplementalDiagnostic(s)
+		s.Unlock()
+		if next == "" {
+			break
+		}
+		if answered[next] {
+			t.Fatalf("concept %s re-probed twice, cap broken", next)
+		}
+		answered[next] = true
+	}
+	s.Lock()
+	if tail := e.supplementalDiagnostic(s); tail != "" {
+		t.Errorf("expected supplemental exhaustion, got %q", tail)
+	}
+	s.Unlock()
+}

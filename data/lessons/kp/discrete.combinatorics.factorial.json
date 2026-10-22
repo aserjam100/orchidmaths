@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "Definition",
+    "subgoals": [
+      "Read a factorial as a product",
+      "Compute a small factorial",
+      "Use the empty product 0! = 1"
+    ]
+  },
+  {
+    "label": "Counting arrangements",
+    "section": "Counting arrangements",
+    "subgoals": [
+      "Arrange n distinct objects in a row",
+      "Multiply the choices step by step",
+      "Predict how adding one object changes the count"
+    ]
+  },
+  {
+    "label": "Growth",
+    "section": "Growth",
+    "subgoals": [
+      "Compare a factorial with an exponential",
+      "Explain why formulas divide by factorials",
+      "Cancel a ratio of factorials before multiplying"
+    ]
+  }
+]

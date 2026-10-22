@@ -1,0 +1,1390 @@
+[
+  {
+    "id": "plus",
+    "symbol": "+",
+    "latex": "+",
+    "name": "Plus sign",
+    "aliases": [
+      "plus",
+      "addition",
+      "add",
+      "positive"
+    ],
+    "category": "arithmetic",
+    "definition": "Denotes addition of two numbers, or marks a number as positive. Placed between two values it combines them; placed before one value it asserts positivity.",
+    "reading": "“plus”.",
+    "examples": [
+      {
+        "tex": "3 + 4 = 7",
+        "explanation": "Three plus four equals seven."
+      },
+      {
+        "tex": "+5",
+        "explanation": "Positive five."
+      }
+    ],
+    "relatedSymbols": [
+      "minus",
+      "plus-minus",
+      "summation-sigma"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "minus",
+    "symbol": "−",
+    "latex": "-",
+    "name": "Minus sign",
+    "aliases": [
+      "minus",
+      "subtraction",
+      "subtract",
+      "negative",
+      "hyphen-minus"
+    ],
+    "category": "arithmetic",
+    "definition": "Denotes subtraction of one number from another, or marks a number as negative. The typographic minus (−) differs from the keyboard hyphen (-), though both are read the same way.",
+    "reading": "“minus”.",
+    "examples": [
+      {
+        "tex": "9 - 4 = 5",
+        "explanation": "Nine minus four equals five."
+      },
+      {
+        "tex": "-3",
+        "explanation": "Negative three."
+      }
+    ],
+    "relatedSymbols": [
+      "plus",
+      "plus-minus",
+      "set-difference"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "multiply",
+    "symbol": "×",
+    "latex": "\\times",
+    "name": "Multiplication sign",
+    "aliases": [
+      "times",
+      "multiplication",
+      "multiply",
+      "cross",
+      "dot product asterisk"
+    ],
+    "category": "arithmetic",
+    "definition": "Denotes multiplication of two numbers. A centered dot (·) or parentheses are common alternatives; in algebra the sign is usually dropped entirely.",
+    "reading": "“times”.",
+    "examples": [
+      {
+        "tex": "6 \\times 7 = 42",
+        "explanation": "Six times seven equals forty-two."
+      },
+      {
+        "tex": "3(4 + 1) = 15",
+        "explanation": "Parentheses alone can denote multiplication."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing × with the letter x in handwriting; the dot or parentheses avoid this."
+    ],
+    "relatedSymbols": [
+      "divide",
+      "dot-product-note",
+      "cross-product"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "divide",
+    "symbol": "÷",
+    "latex": "\\div",
+    "name": "Division sign",
+    "aliases": [
+      "divide",
+      "division",
+      "divided by",
+      "obelus"
+    ],
+    "category": "arithmetic",
+    "definition": "Denotes division of one number by another. Fractions and the slash are more common in algebra and beyond.",
+    "reading": "“divided by”.",
+    "examples": [
+      {
+        "tex": "20 \\div 4 = 5",
+        "explanation": "Twenty divided by four equals five."
+      }
+    ],
+    "relatedSymbols": [
+      "multiply",
+      "fraction",
+      "divides"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "plus-minus",
+    "symbol": "±",
+    "latex": "\\pm",
+    "name": "Plus-minus sign",
+    "aliases": [
+      "plus-minus",
+      "plus or minus",
+      "pm"
+    ],
+    "category": "arithmetic",
+    "definition": "Gives two values at once: one with plus, one with minus. It commonly expresses a tolerance or lists both square roots.",
+    "reading": "“plus or minus”.",
+    "examples": [
+      {
+        "tex": "x = \\pm 3",
+        "explanation": "x equals 3 or x equals negative 3."
+      },
+      {
+        "tex": "5.0 \\pm 0.1",
+        "explanation": "A measurement of 5.0 with tolerance 0.1 either way."
+      }
+    ],
+    "relatedSymbols": [
+      "minus-plus",
+      "plus",
+      "square-root"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Elementary Algebra 2e",
+        "url": "https://openstax.org/details/books/elementary-algebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "minus-plus",
+    "symbol": "∓",
+    "latex": "\\mp",
+    "name": "Minus-plus sign",
+    "aliases": [
+      "minus-plus",
+      "minus or plus",
+      "mp"
+    ],
+    "category": "arithmetic",
+    "definition": "The mirror of plus-minus: it takes the opposite sign to a paired ± in the same expression, so both combinations are covered exactly once.",
+    "reading": "“minus or plus”.",
+    "examples": [
+      {
+        "tex": "\\sin(x \\pm y) = \\sin x \\cos y \\pm \\cos x \\sin y",
+        "explanation": "The two signs stay in step: upper with upper, lower with lower."
+      }
+    ],
+    "relatedSymbols": [
+      "plus-minus"
+    ],
+    "sources": [
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "equals",
+    "symbol": "=",
+    "latex": "=",
+    "name": "Equals sign",
+    "aliases": [
+      "equals",
+      "equal",
+      "equality",
+      "is equal to"
+    ],
+    "category": "arithmetic",
+    "definition": "Asserts that the two sides have exactly the same value. An equation is a statement using this sign.",
+    "reading": "“equals”.",
+    "examples": [
+      {
+        "tex": "2 + 3 = 5",
+        "explanation": "The left side and the right side are the same number."
+      }
+    ],
+    "commonMistakes": [
+      "Reading = as “do the next step”; it states equality, so 2 + 3 = 5 + 1 is false."
+    ],
+    "relatedSymbols": [
+      "not-equals",
+      "identical-to",
+      "equivalent-iff"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "not-equals",
+    "symbol": "≠",
+    "latex": "\\neq",
+    "name": "Not equal to",
+    "aliases": [
+      "not equal",
+      "not equals",
+      "inequality sign",
+      "neq"
+    ],
+    "category": "arithmetic",
+    "definition": "Asserts that the two sides have different values. It is the negation of the equals sign.",
+    "reading": "“is not equal to”.",
+    "examples": [
+      {
+        "tex": "4 \\neq 5",
+        "explanation": "Four is not equal to five."
+      }
+    ],
+    "relatedSymbols": [
+      "equals",
+      "less-than",
+      "greater-than"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "approx",
+    "symbol": "≈",
+    "latex": "\\approx",
+    "name": "Approximately equal to",
+    "aliases": [
+      "approximately",
+      "approx",
+      "about equal",
+      "tilde equals"
+    ],
+    "category": "arithmetic",
+    "definition": "States that two values are close but not exactly equal, typically after rounding or measurement.",
+    "reading": "“is approximately equal to”.",
+    "examples": [
+      {
+        "tex": "\\pi \\approx 3.14",
+        "explanation": "Pi rounded to two decimals is about 3.14."
+      }
+    ],
+    "commonMistakes": [
+      "Using ≈ where = belongs after exact simplification."
+    ],
+    "relatedSymbols": [
+      "equals",
+      "asymptotic",
+      "pi-constant"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "identical-to",
+    "symbol": "≡",
+    "latex": "\\equiv",
+    "name": "Identically equal to",
+    "aliases": [
+      "identical",
+      "equivalent to",
+      "equiv",
+      "triple bar",
+      "congruent modulo"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "algebra",
+      "advanced"
+    ],
+    "definition": "A triple bar with several related uses: an identity true for all values, a definition, or congruence modulo n in number theory. The surrounding context decides.",
+    "reading": "“is identically equal to” or “is congruent to”.",
+    "examples": [
+      {
+        "tex": "(x + 1)^2 \\equiv x^2 + 2x + 1",
+        "explanation": "An identity: true for every x."
+      },
+      {
+        "tex": "17 \\equiv 5 \\pmod{12}",
+        "explanation": "17 and 5 leave the same remainder on division by 12."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Algebra",
+        "meaning": "An identity holding for all values of the variables."
+      },
+      {
+        "context": "Number theory",
+        "meaning": "Modular congruence: equal remainders after division."
+      },
+      {
+        "context": "Geometry",
+        "meaning": "Sometimes used for congruence of figures; ≅ is more standard."
+      }
+    ],
+    "relatedSymbols": [
+      "equals",
+      "congruent",
+      "congruence-mod",
+      "equivalent-iff"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Elementary Algebra 2e",
+        "url": "https://openstax.org/details/books/elementary-algebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 27",
+        "url": "https://dlmf.nist.gov/27",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "less-than",
+    "symbol": "<",
+    "latex": "<",
+    "name": "Less than",
+    "aliases": [
+      "less than",
+      "lt",
+      "strictly less"
+    ],
+    "category": "arithmetic",
+    "definition": "States that the left value is strictly smaller than the right value. The open end of the symbol faces the larger side.",
+    "reading": "“is less than”.",
+    "examples": [
+      {
+        "tex": "3 < 7",
+        "explanation": "Three is less than seven."
+      }
+    ],
+    "relatedSymbols": [
+      "greater-than",
+      "less-equal",
+      "not-equals"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "greater-than",
+    "symbol": ">",
+    "latex": ">",
+    "name": "Greater than",
+    "aliases": [
+      "greater than",
+      "gt",
+      "strictly greater"
+    ],
+    "category": "arithmetic",
+    "definition": "States that the left value is strictly larger than the right value.",
+    "reading": "“is greater than”.",
+    "examples": [
+      {
+        "tex": "9 > 2",
+        "explanation": "Nine is greater than two."
+      }
+    ],
+    "relatedSymbols": [
+      "less-than",
+      "greater-equal",
+      "not-equals"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "less-equal",
+    "symbol": "≤",
+    "latex": "\\leq",
+    "name": "Less than or equal to",
+    "aliases": [
+      "less than or equal",
+      "less equal",
+      "leq",
+      "at most"
+    ],
+    "category": "arithmetic",
+    "definition": "States that the left value is smaller than or equal to the right value. Includes the endpoint, unlike strict <.",
+    "reading": "“is less than or equal to”.",
+    "examples": [
+      {
+        "tex": "x \\leq 5",
+        "explanation": "x is at most 5; 5 itself is allowed."
+      }
+    ],
+    "relatedSymbols": [
+      "less-than",
+      "greater-equal",
+      "interval"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "greater-equal",
+    "symbol": "≥",
+    "latex": "\\geq",
+    "name": "Greater than or equal to",
+    "aliases": [
+      "greater than or equal",
+      "greater equal",
+      "geq",
+      "at least"
+    ],
+    "category": "arithmetic",
+    "definition": "States that the left value is larger than or equal to the right value. Includes the endpoint.",
+    "reading": "“is greater than or equal to”.",
+    "examples": [
+      {
+        "tex": "n \\geq 1",
+        "explanation": "n is at least 1."
+      }
+    ],
+    "relatedSymbols": [
+      "greater-than",
+      "less-equal",
+      "interval"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "fraction",
+    "symbol": "a/b",
+    "latex": "\\frac{a}{b}",
+    "name": "Fraction",
+    "aliases": [
+      "fraction",
+      "numerator denominator",
+      "slash",
+      "divide slash",
+      "rational"
+    ],
+    "category": "arithmetic",
+    "definition": "Writes division of a numerator by a nonzero denominator. The value is the quotient; the denominator can never be zero.",
+    "reading": "“a over b”.",
+    "examples": [
+      {
+        "tex": "\\frac{3}{4} = 0.75",
+        "explanation": "Three quarters equals 0.75."
+      }
+    ],
+    "commonMistakes": [
+      "Dividing by zero, which is undefined, not zero."
+    ],
+    "relatedSymbols": [
+      "divide",
+      "decimal-point",
+      "ratio"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "decimal-point",
+    "symbol": ".",
+    "latex": ".",
+    "name": "Decimal point",
+    "aliases": [
+      "decimal point",
+      "decimal",
+      "point",
+      "place value"
+    ],
+    "category": "arithmetic",
+    "definition": "Separates the whole part of a decimal number from its fractional part. Each position after the point is a further division by ten.",
+    "reading": "“point”.",
+    "examples": [
+      {
+        "tex": "2.5 = 2 + \\frac{5}{10}",
+        "explanation": "The 5 sits in the tenths place."
+      }
+    ],
+    "relatedSymbols": [
+      "fraction",
+      "percent",
+      "scientific-notation"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "percent",
+    "symbol": "%",
+    "latex": "\\%",
+    "name": "Percent",
+    "aliases": [
+      "percent",
+      "percentage",
+      "per cent",
+      "pct"
+    ],
+    "category": "arithmetic",
+    "definition": "Means parts per hundred. x% equals x divided by 100, so it converts directly between ratios and decimals.",
+    "reading": "“percent”.",
+    "examples": [
+      {
+        "tex": "25\\% = \\frac{25}{100} = 0.25",
+        "explanation": "Twenty-five percent is a quarter."
+      }
+    ],
+    "relatedSymbols": [
+      "decimal-point",
+      "ratio",
+      "fraction"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "ratio",
+    "symbol": ":",
+    "latex": ":",
+    "name": "Ratio",
+    "aliases": [
+      "ratio",
+      "colon",
+      "to",
+      "odds"
+    ],
+    "category": "arithmetic",
+    "definition": "Compares two quantities by division. a:b states how many of a come with each b, keeping the same units relationship.",
+    "reading": "“a to b”.",
+    "examples": [
+      {
+        "tex": "2:3",
+        "explanation": "Two parts to three parts, e.g. in a mixture."
+      }
+    ],
+    "relatedSymbols": [
+      "proportion",
+      "fraction",
+      "percent"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "proportion",
+    "symbol": "::",
+    "latex": "::",
+    "name": "Proportion",
+    "aliases": [
+      "proportion",
+      "proportional equality",
+      "as is to"
+    ],
+    "category": "arithmetic",
+    "definition": "States that two ratios are equal. Solving a proportion usually means cross-multiplying to find the unknown term.",
+    "reading": "“a is to b as c is to d”.",
+    "examples": [
+      {
+        "tex": "\\frac{1}{2} = \\frac{2}{4}",
+        "explanation": "One half equals two quarters; the ratios match."
+      }
+    ],
+    "relatedSymbols": [
+      "ratio",
+      "fraction",
+      "proportional-to"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "power",
+    "symbol": "xⁿ",
+    "latex": "x^n",
+    "name": "Power (exponentiation)",
+    "aliases": [
+      "power",
+      "exponent",
+      "caret",
+      "to the power",
+      "superscript power"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "algebra"
+    ],
+    "definition": "Raises a base to an exponent: x to the n means x multiplied by itself n times. Special cases include squares, cubes, zero exponents and negative exponents.",
+    "reading": "“x to the n”.",
+    "examples": [
+      {
+        "tex": "2^3 = 8",
+        "explanation": "Two cubed: 2 times 2 times 2."
+      },
+      {
+        "tex": "x^{-1} = \\frac{1}{x}",
+        "explanation": "A negative exponent takes the reciprocal, for nonzero x."
+      }
+    ],
+    "commonMistakes": [
+      "Writing 2x cubed as 2x^3 when (2x)^3 is meant; the exponent binds to x alone."
+    ],
+    "relatedSymbols": [
+      "square-root",
+      "nth-root",
+      "exponential-exp",
+      "scientific-notation"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Elementary Algebra 2e",
+        "url": "https://openstax.org/details/books/elementary-algebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "square-root",
+    "symbol": "√",
+    "latex": "\\sqrt{x}",
+    "name": "Square root",
+    "aliases": [
+      "square root",
+      "sqrt",
+      "radical",
+      "root symbol"
+    ],
+    "category": "arithmetic",
+    "definition": "Asks which nonnegative number squares to give x. Every positive number has two square roots, ±; the radical sign alone means the principal (nonnegative) one.",
+    "reading": "“the square root of x”.",
+    "examples": [
+      {
+        "tex": "\\sqrt{49} = 7",
+        "explanation": "Seven squared is 49, and the sign gives the positive root."
+      }
+    ],
+    "commonMistakes": [
+      "Writing sqrt(49) = ±7; the ± appears when solving x^2 = 49, not from the radical alone."
+    ],
+    "relatedSymbols": [
+      "nth-root",
+      "power",
+      "plus-minus"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Elementary Algebra 2e",
+        "url": "https://openstax.org/details/books/elementary-algebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "nth-root",
+    "symbol": "∛",
+    "latex": "\\sqrt[n]{x}",
+    "name": "nth root",
+    "aliases": [
+      "nth root",
+      "cube root",
+      "cbrt",
+      "radical index"
+    ],
+    "category": "arithmetic",
+    "definition": "Asks which number raised to the nth power gives x. The small index n names the root; with n = 2 it is the ordinary square root, with n = 3 the cube root.",
+    "reading": "“the nth root of x”.",
+    "examples": [
+      {
+        "tex": "\\sqrt[3]{27} = 3",
+        "explanation": "Three cubed is 27."
+      },
+      {
+        "tex": "\\sqrt[n]{x} = x^{1/n}",
+        "explanation": "Roots are fractional exponents, where defined (for even n, x must be nonnegative for a real root)."
+      }
+    ],
+    "relatedSymbols": [
+      "square-root",
+      "power",
+      "fraction"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Intermediate Algebra 2e",
+        "url": "https://openstax.org/details/books/intermediate-algebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "absolute-value",
+    "symbol": "|x|",
+    "latex": "|x|",
+    "name": "Absolute value",
+    "aliases": [
+      "absolute value",
+      "abs",
+      "modulus number",
+      "vertical bars"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "algebra",
+      "advanced"
+    ],
+    "definition": "Gives the distance of x from zero, always nonnegative. Vertical bars mean different operations in other contexts (determinants, cardinality, divisibility), so read the setting.",
+    "reading": "“the absolute value of x”.",
+    "examples": [
+      {
+        "tex": "|-4| = 4",
+        "explanation": "Negative four is four units from zero."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Arithmetic",
+        "meaning": "Distance from zero on the number line."
+      },
+      {
+        "context": "Linear algebra",
+        "meaning": "Bars around a matrix mean its determinant."
+      },
+      {
+        "context": "Set theory",
+        "meaning": "Bars around a set mean its size (cardinality)."
+      }
+    ],
+    "relatedSymbols": [
+      "determinant",
+      "cardinality",
+      "modulus-complex"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Elementary Algebra 2e",
+        "url": "https://openstax.org/details/books/elementary-algebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "factorial",
+    "symbol": "n!",
+    "latex": "n!",
+    "name": "Factorial",
+    "aliases": [
+      "factorial",
+      "bang",
+      "exclamation"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "linear-discrete",
+      "advanced"
+    ],
+    "definition": "Multiplies all positive integers up to n. It counts orderings: n! is the number of ways to arrange n distinct objects. By convention 0! = 1.",
+    "reading": "“n factorial”.",
+    "examples": [
+      {
+        "tex": "5! = 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 = 120",
+        "explanation": "Five objects can be ordered in 120 ways."
+      },
+      {
+        "tex": "0! = 1",
+        "explanation": "Empty product convention: there is one way to order nothing."
+      }
+    ],
+    "relatedSymbols": [
+      "permutation",
+      "combination",
+      "gamma-function"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 5",
+        "url": "https://dlmf.nist.gov/5",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "divides",
+    "symbol": "∣",
+    "latex": "\\mid",
+    "name": "Divides",
+    "aliases": [
+      "divides",
+      "divisibility",
+      "pipe divides",
+      "mid"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "States that one integer divides another with no remainder. a ∣ b means some integer k exists with b = a·k.",
+    "reading": "“a divides b”.",
+    "examples": [
+      {
+        "tex": "3 \\mid 12",
+        "explanation": "Twelve equals 3 times 4, so 3 divides 12."
+      }
+    ],
+    "commonMistakes": [
+      "Reading the bar as a fraction or absolute value; here it is a relation between integers."
+    ],
+    "relatedSymbols": [
+      "divide",
+      "congruence-mod",
+      "gcd"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "grouping",
+    "symbol": "() [] {}",
+    "latex": "( ) [ ] \\{ \\}",
+    "name": "Grouping symbols",
+    "aliases": [
+      "parentheses",
+      "brackets",
+      "braces",
+      "grouping",
+      "order of operations",
+      "pemdas",
+      "bodmas"
+    ],
+    "category": "arithmetic",
+    "definition": "Parentheses, square brackets and braces group parts of an expression to be evaluated first. They override the default order of operations.",
+    "reading": "“open parenthesis… close parenthesis”, naming each symbol.",
+    "examples": [
+      {
+        "tex": "2 \\times (3 + 4) = 14",
+        "explanation": "The grouped sum is computed before multiplying."
+      }
+    ],
+    "relatedSymbols": [
+      "interval",
+      "set-builder",
+      "floor-ceiling"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "interval",
+    "symbol": "[a, b]",
+    "latex": "[a, b]",
+    "name": "Interval notation",
+    "aliases": [
+      "interval",
+      "interval notation",
+      "open interval",
+      "closed interval",
+      "half open"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Describes a continuous range of numbers. Square brackets include the endpoint; round parentheses exclude it. Infinity always takes a round parenthesis.",
+    "reading": "“the interval from a to b”.",
+    "examples": [
+      {
+        "tex": "[2, 5)",
+        "explanation": "All x with 2 ≤ x < 5: 2 included, 5 excluded."
+      },
+      {
+        "tex": "(-\\infty, 3]",
+        "explanation": "All numbers up to and including 3."
+      }
+    ],
+    "commonMistakes": [
+      "Writing [2, ∞]; infinity is not a number and always takes a parenthesis."
+    ],
+    "relatedSymbols": [
+      "less-equal",
+      "grouping",
+      "infinity",
+      "supremum"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax College Algebra 2e",
+        "url": "https://openstax.org/details/books/college-algebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "overline-repeat",
+    "symbol": "x̄",
+    "latex": "\\bar{x}",
+    "name": "Overline (repeating decimal)",
+    "aliases": [
+      "overline",
+      "repeating decimal",
+      "vinculum",
+      "bar",
+      "recurring"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "probability"
+    ],
+    "definition": "A bar over digits marks them as repeating forever in a decimal expansion. In statistics the same bar on x denotes a sample mean instead — context decides.",
+    "reading": "“x recurring” or, in statistics, “x bar”.",
+    "examples": [
+      {
+        "tex": "0.\\bar{3} = \\frac{1}{3}",
+        "explanation": "The digit 3 repeats forever: 0.333…."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Arithmetic",
+        "meaning": "Repeating digits in a decimal expansion."
+      },
+      {
+        "context": "Statistics",
+        "meaning": "Sample mean of observed x values."
+      }
+    ],
+    "relatedSymbols": [
+      "decimal-point",
+      "sample-mean",
+      "fraction"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "scientific-notation",
+    "symbol": "×10ⁿ",
+    "latex": "\\times 10^n",
+    "name": "Scientific notation",
+    "aliases": [
+      "scientific notation",
+      "standard form",
+      "times ten to the",
+      "engineering notation"
+    ],
+    "category": "arithmetic",
+    "definition": "Writes very large or small numbers as a coefficient times a power of ten, with the coefficient usually between 1 and 10.",
+    "reading": "“times ten to the n”.",
+    "examples": [
+      {
+        "tex": "3.2 \\times 10^4 = 32000",
+        "explanation": "Move the decimal point 4 places right."
+      }
+    ],
+    "relatedSymbols": [
+      "power",
+      "decimal-point",
+      "multiply"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "mixed-number",
+    "symbol": "a b/c",
+    "latex": "a\\frac{b}{c}",
+    "name": "Mixed number",
+    "aliases": [
+      "mixed number",
+      "mixed fraction",
+      "whole and fraction"
+    ],
+    "category": "arithmetic",
+    "definition": "Writes a whole number together with a proper fraction, meaning their sum. The juxtaposition means addition here, not multiplication.",
+    "reading": "“a and b over c”.",
+    "examples": [
+      {
+        "tex": "2\\frac{1}{2} = 2 + \\frac{1}{2} = \\frac{5}{2}",
+        "explanation": "Two and a half equals five halves."
+      }
+    ],
+    "commonMistakes": [
+      "Reading 2½ as 2 times ½; in mixed numbers the juxtaposition means plus."
+    ],
+    "relatedSymbols": [
+      "fraction",
+      "plus",
+      "decimal-point"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "asymptotic",
+    "symbol": "~",
+    "latex": "\\sim",
+    "name": "Asymptotically equal (tilde)",
+    "aliases": [
+      "tilde",
+      "asymptotic",
+      "asymptotically equal",
+      "similar order"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "calculus",
+      "advanced"
+    ],
+    "definition": "States that two quantities become relatively equal in some limit: their ratio tends to 1. Weaker than ≈ in that it describes growth, not closeness.",
+    "reading": "“is asymptotic to”.",
+    "examples": [
+      {
+        "tex": "n! \\sim \\sqrt{2\\pi n}\\, (n/e)^n",
+        "explanation": "Stirling's formula: the ratio of the sides tends to 1 as n grows."
+      }
+    ],
+    "relatedSymbols": [
+      "approx",
+      "similar",
+      "big-o-notation"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 2",
+        "url": "https://dlmf.nist.gov/2",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      },
+      {
+        "label": "Unicode Mathematical Operators code chart",
+        "url": "https://www.unicode.org/charts/PDF/U2200.pdf",
+        "license": "Unicode License Agreement; glyph identity"
+      }
+    ]
+  },
+  {
+    "id": "continued-fraction",
+    "symbol": "[a₀; a₁, a₂, …]",
+    "latex": "[a_0; a_1, a_2, \\dots]",
+    "name": "Continued fraction",
+    "aliases": [
+      "continued fraction",
+      "convergents",
+      "cf notation",
+      "simple continued fraction",
+      "bracket semicolon notation"
+    ],
+    "category": "arithmetic",
+    "definition": "Writes a number as a tower of fractions: [a₀; a₁, a₂, …] means a₀ + 1/(a₁ + 1/(a₂ + …)). Cutting the tower off gives convergents: exceptionally good rational approximations.",
+    "reading": "“the continued fraction 3 semicolon 7, 15, 1, 292”.",
+    "examples": [
+      {
+        "tex": "\\pi = [3; 7, 15, 1, 292, \\dots]",
+        "explanation": "The simple continued fraction of pi begins 3; 7, 15, 1, 292."
+      },
+      {
+        "tex": "\\frac{22}{7} \\approx 3.1429",
+        "explanation": "Stopping after the 7 gives the familiar 22/7 approximation."
+      }
+    ],
+    "relatedSymbols": [
+      "fraction",
+      "approx",
+      "pi-constant",
+      "divide"
+    ],
+    "sources": [
+      {
+        "label": "MathWorld, Pi Continued Fraction",
+        "url": "https://mathworld.wolfram.com/PiContinuedFraction.html",
+        "license": "© Wolfram Research (MathWorld); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "irrational-numbers",
+    "symbol": "∉ ℚ",
+    "latex": "\\notin \\mathbb{Q}",
+    "name": "Irrational numbers",
+    "aliases": [
+      "irrational",
+      "irrational numbers",
+      "non-repeating decimal",
+      "not rational",
+      "surds"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "Real numbers that are not ratios of integers: their decimals never terminate or repeat. Square roots of non-square integers, π and e are irrational.",
+    "reading": "“x is irrational”.",
+    "examples": [
+      {
+        "tex": "\\sqrt{2} \\notin \\mathbb{Q}",
+        "explanation": "No fraction squares to 2 (classic proof by contradiction: a lowest-terms p/q would force both even)."
+      }
+    ],
+    "relatedSymbols": [
+      "rationals",
+      "real-numbers",
+      "square-root",
+      "decimal-point",
+      "pi-constant"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "absolute-relative-error",
+    "symbol": "|x − x̂|",
+    "latex": "|x - \\hat{x}|",
+    "name": "Absolute and relative error",
+    "aliases": [
+      "absolute error",
+      "relative error",
+      "approximation error",
+      "tolerance",
+      "significant digits",
+      "error bound"
+    ],
+    "category": "arithmetic",
+    "definition": "Absolute error is |true − approximate|; relative error divides by the true size, measuring error in context. A 1 cm miss on a pencil versus a bridge are different stories the relative error tells.",
+    "reading": "“absolute error”.",
+    "examples": [
+      {
+        "tex": "|\\pi - 3.14| \\approx 0.0016",
+        "explanation": "Absolute miss about 0.0016; relative miss about 0.05%."
+      }
+    ],
+    "relatedSymbols": [
+      "absolute-value",
+      "approx",
+      "decimal-point",
+      "scientific-notation"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "trapezoid-rule",
+    "symbol": "Tₙ",
+    "latex": "T_n",
+    "name": "Trapezoid rule",
+    "aliases": [
+      "trapezoid rule",
+      "trapezoidal rule",
+      "numerical integration",
+      "quadrature",
+      "Tn approximation"
+    ],
+    "category": "arithmetic",
+    "relatedCategories": [
+      "calculus"
+    ],
+    "definition": "Approximates a definite integral with trapezoids instead of rectangles: average the endpoint heights on each slice. Exact for linear functions; the error shrinks quadratically as slices narrow.",
+    "reading": "“the trapezoid rule”.",
+    "examples": [
+      {
+        "tex": "T_1 = \\frac{f(0) + f(1)}{2} = 0.5",
+        "explanation": "For ∫₀¹x²dx the single trapezoid gives 0.5 against the exact 1/3 — an overestimate, as convexity predicts."
+      }
+    ],
+    "relatedSymbols": [
+      "integral",
+      "riemann-sum",
+      "fraction",
+      "convex-function"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Calculus Volume 2",
+        "url": "https://openstax.org/details/books/calculus-volume-2",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  }
+]

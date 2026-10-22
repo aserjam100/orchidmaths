@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Round each factor",
+    "section": "Round each factor",
+    "subgoals": [
+      "Round both factors to the nearest ten",
+      "Leave multiples of ten unchanged",
+      "Write the rounded factors"
+    ]
+  },
+  {
+    "label": "Multiply the estimates",
+    "section": "Multiply the estimates",
+    "subgoals": [
+      "Multiply the nonzero digits",
+      "Count the zeros",
+      "Attach the zeros to the product"
+    ]
+  },
+  {
+    "label": "Check the size",
+    "section": "Check the size",
+    "subgoals": [
+      "Compare with the original factors",
+      "Decide whether the exact product is above or below",
+      "Reject answers with the wrong number of places"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "concept": "geo.circle.cyclic_quad",
+  "setup": "A quadrilateral is inscribed in a circle, so every vertex lies on it, and one angle is \\([[angle]]\\) degrees.",
+  "steps": [
+    {
+      "fact": "angle",
+      "say": "Each angle of the quadrilateral is inscribed, so it is half the arc it subtends. The angle of \\([[angle]]\\) degrees stands on its own arc of the circle."
+    },
+    {
+      "fact": "opposite",
+      "say": "The opposite angle stands on the complementary arc, and the two arcs together are the whole circle, so the two angles add to half of 360: they are supplementary, and the opposite angle is \\([[opposite]]\\) degrees."
+    }
+  ],
+  "answer": "So the opposite angle is \\([[opposite]]\\) degrees."
+}

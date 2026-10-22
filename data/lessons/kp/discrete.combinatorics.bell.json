@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Partitions of a set",
+    "section": "Partitions of a set",
+    "subgoals": [
+      "Define the Bell number",
+      "List the partitions of three items",
+      "State the first values"
+    ]
+  },
+  {
+    "label": "Summing the Stirling numbers",
+    "section": "Summing the Stirling numbers",
+    "subgoals": [
+      "Relate B(n) to the Stirling numbers",
+      "Say why no closed form is used",
+      "Tabulate a small value"
+    ]
+  },
+  {
+    "label": "Why it grows so fast",
+    "section": "Why it grows so fast",
+    "subgoals": [
+      "Compare its growth with exponentials",
+      "Count partitions of eight items",
+      "Connect partitions to equivalence relations"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Evenly covered neighborhoods",
+    "section": "Evenly Covered Neighborhoods",
+    "subgoals": [
+      "State the sheet condition over a neighborhood U",
+      "Trace the sheets of the exponential covering over an arc",
+      "Count the sheets of z-map-z-squared over the circle"
+    ]
+  },
+  {
+    "label": "Path lifting",
+    "section": "Path Lifting",
+    "subgoals": [
+      "Lift a path from a chosen starting sheet",
+      "Decide if a lifted loop closes via its homotopy class",
+      "Conclude pi_1 of the circle is Z from the winding lifts"
+    ]
+  },
+  {
+    "label": "Deck transformations and classification",
+    "section": "Deck Transformations and Classification",
+    "subgoals": [
+      "List the deck transformations of the exponential covering",
+      "Match a subgroup of pi_1 to its covering",
+      "Explain why every covering of S-squared is trivial"
+    ]
+  }
+]

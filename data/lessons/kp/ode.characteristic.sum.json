@@ -1,0 +1,29 @@
+[
+  {
+    "label": "From the equation to the polynomial",
+    "section": "From the equation to the polynomial",
+    "subgoals": [
+      "Replace derivatives by powers",
+      "Name the characteristic equation",
+      "Say why the substitution works"
+    ]
+  },
+  {
+    "label": "The coefficients as sums and products",
+    "section": "The coefficients as sums and products",
+    "subgoals": [
+      "State the sum of the roots",
+      "State the product",
+      "Read them without solving"
+    ]
+  },
+  {
+    "label": "Why the sum matters",
+    "section": "Why the sum matters",
+    "subgoals": [
+      "Connect the sum to stability",
+      "Connect the product to the shape",
+      "Answer a stability question"
+    ]
+  }
+]

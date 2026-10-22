@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Building the augmented matrix",
+    "section": "Building the augmented matrix",
+    "subgoals": [
+      "Give each equation a row",
+      "Give each variable a column",
+      "Place the constants in the augmented column"
+    ]
+  },
+  {
+    "label": "Row operations",
+    "section": "Row operations",
+    "subgoals": [
+      "Swap rows to move a pivot into place",
+      "Scale a row without changing its solutions",
+      "Add multiples to clear entries below a pivot"
+    ]
+  },
+  {
+    "label": "Reading the outcome",
+    "section": "Reading the outcome",
+    "subgoals": [
+      "Count the pivots to number the solutions",
+      "Spot an impossible row for no solution",
+      "Find a free variable for infinitely many"
+    ]
+  }
+]

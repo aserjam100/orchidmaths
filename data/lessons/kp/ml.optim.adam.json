@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the first update",
+    "section": "Worked: the first update",
+    "subgoals": [
+      "Accumulate the first and second moments",
+      "Divide out the initialization bias",
+      "Step with the corrected moments"
+    ]
+  },
+  {
+    "label": "Worked: why moments adapt",
+    "section": "Worked: why moments adapt",
+    "subgoals": [
+      "Average oscillations with momentum",
+      "Scale each weight by its variance",
+      "Read direction from m, size from v"
+    ]
+  },
+  {
+    "label": "When Adam is not the answer",
+    "section": "When Adam is not the answer",
+    "subgoals": [
+      "Compare final generalization with SGD",
+      "Weigh prototyping speed against accuracy",
+      "Switch optimizers where it matters"
+    ]
+  }
+]

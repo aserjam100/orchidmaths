@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction to derivatives",
+    "section": "",
+    "subgoals": [
+      "Read f'(a) as the tangent slope at a",
+      "Form the limit of [f(a+h)-f(a)]/h",
+      "Evaluate the quotient for x^2 at x = 1 to get 2"
+    ]
+  },
+  {
+    "label": "Right-hand and left-hand derivatives",
+    "section": "",
+    "subgoals": [
+      "Compute left and right difference quotients separately",
+      "Compare both one-sided limits at the kink",
+      "Declare non-differentiable when the sides disagree"
+    ]
+  },
+  {
+    "label": "Fundamental derivatives",
+    "section": "",
+    "subgoals": [
+      "Differentiate x^n to n*x^(n-1)",
+      "Differentiate sin to cos and cos to -sin",
+      "Differentiate e^x to e^x and ln x to 1/x"
+    ]
+  }
+]

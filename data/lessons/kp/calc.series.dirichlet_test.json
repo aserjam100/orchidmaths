@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The two hypotheses",
+    "section": "The two hypotheses",
+    "subgoals": [
+      "Bound the partial sums of one factor",
+      "Shrink the other monotonically to zero",
+      "Combine them for convergence"
+    ]
+  },
+  {
+    "label": "The sine example",
+    "section": "The sine example",
+    "subgoals": [
+      "Sum sines by a half-angle identity",
+      "Bound the partial sums",
+      "Settle a case no other test reaches"
+    ]
+  },
+  {
+    "label": "Abel's test and the family",
+    "section": "Abel's test and the family",
+    "subgoals": [
+      "Subtract the positive limit",
+      "Reduce Abel's test to Dirichlet's",
+      "Pick the test by the limit of the shrinking factor"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Degree decides the ends",
+    "section": "Degree decides the ends",
+    "subgoals": [
+      "Classify the degree as even or odd",
+      "Even degree: both ends match",
+      "Odd degree: the ends oppose"
+    ]
+  },
+  {
+    "label": "The leading sign flips them",
+    "section": "The leading sign flips them",
+    "subgoals": [
+      "Read the sign of the leading coefficient",
+      "The right end follows that sign",
+      "Flip both directions for a negative sign"
+    ]
+  },
+  {
+    "label": "The four cases",
+    "section": "The four cases",
+    "subgoals": [
+      "Combine parity with sign",
+      "Choose one of four descriptions",
+      "Ignore the lower-order terms"
+    ]
+  }
+]

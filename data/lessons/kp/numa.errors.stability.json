@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Pushing the error back into the data",
+    "section": "Pushing the error back into the data",
+    "subgoals": [
+      "Define the nearby problem",
+      "Measure the perturbation of the data",
+      "Bound it by a small multiple of epsilon"
+    ]
+  },
+  {
+    "label": "Worked: an accumulation of roundoff",
+    "section": "Worked: an accumulation of roundoff",
+    "subgoals": [
+      "Regroup the sum",
+      "Describe the perturbed data behind each result",
+      "Attribute the difference to the condition number"
+    ]
+  },
+  {
+    "label": "Why it is the right standard",
+    "section": "Why it is the right standard",
+    "subgoals": [
+      "State the guarantee on a good problem",
+      "State the limit on a bad problem",
+      "Assign the blame correctly"
+    ]
+  }
+]

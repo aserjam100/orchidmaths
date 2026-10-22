@@ -1,0 +1,11 @@
+{
+  "concept": "arith.compare.within1000",
+  "setup": "You are ordering [[numbers]] from smallest to greatest.",
+  "steps": [
+    {
+      "fact": "numbers",
+      "say": "Look at the hundreds digits first. If they are the same, look at the tens, and then the ones. The first place where the digits differ decides which number is greater."
+    }
+  ],
+  "answer": "Smallest to greatest: [[ordered]]."
+}

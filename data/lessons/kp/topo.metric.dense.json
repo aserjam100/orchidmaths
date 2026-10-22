@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Meeting every open set",
+    "section": "Meeting every open set",
+    "subgoals": [
+      "Show every nonempty open set meets D",
+      "Relate density to the closure",
+      "Allow D to be open or closed"
+    ]
+  },
+  {
+    "label": "Worked: the rationals are dense",
+    "section": "Worked: the rationals are dense",
+    "subgoals": [
+      "Take an interval (a,b)",
+      "Place a rational between a and b",
+      "Conclude every interval meets Q"
+    ]
+  },
+  {
+    "label": "Separable spaces",
+    "section": "Separable spaces",
+    "subgoals": [
+      "Find a countable dense subset",
+      "Use rational coordinates in R^n",
+      "Contrast an uncountable discrete space"
+    ]
+  }
+]

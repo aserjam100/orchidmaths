@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is a linear system?",
+    "section": "",
+    "subgoals": [
+      "Write the m-by-n system in standard coefficient form",
+      "Read a_ij as the x_j multiplier in row i",
+      "Check every variable appears to the first power"
+    ]
+  },
+  {
+    "label": "Omogeneous systems",
+    "section": "",
+    "subgoals": [
+      "Set every b_i = 0 for the homogeneous form",
+      "Plug the all-zero vector into every row",
+      "Separate homogeneous from non-homogeneous systems"
+    ]
+  },
+  {
+    "label": "Why is the matrix form important?",
+    "section": "",
+    "subgoals": [
+      "Compress the system into matrix-times-vector form",
+      "Shrink m equations into one row stack",
+      "Run elimination on the compact matrix form"
+    ]
+  }
+]

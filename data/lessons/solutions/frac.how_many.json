@@ -1,0 +1,15 @@
+{
+  "concept": "frac.how_many",
+  "setup": "You are counting how many copies of \\(\\frac{[[in_num]]}{[[in_den]]}\\) fit into \\([[of]]\\).",
+  "steps": [
+    {
+      "fact": "of",
+      "say": "Counting how many times a fraction fits into a whole number is a division: \\([[of]]\\) divided by \\(\\frac{[[in_num]]}{[[in_den]]}\\)."
+    },
+    {
+      "fact": "out_num",
+      "say": "Dividing by a fraction multiplies by its reciprocal, so the count is \\([[of]] \\times [[in_den]] / [[in_num]] = [[out_num]]\\), a whole number because the fractions line up."
+    }
+  ],
+  "answer": "So the fraction fits \\([[out_num]]\\) times."
+}

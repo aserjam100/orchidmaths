@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one Bellman update",
+    "section": "Worked: one Bellman update",
+    "subgoals": [
+      "Add reward to discounted best future",
+      "Subtract the current estimate",
+      "Step Q toward the target"
+    ]
+  },
+  {
+    "label": "Worked: reading the greedy policy",
+    "section": "Worked: reading the greedy policy",
+    "subgoals": [
+      "Take argmax over action values",
+      "Explore epsilon-greedy while learning greedy",
+      "Converge the policy with the values"
+    ]
+  },
+  {
+    "label": "When the max bites back",
+    "section": "When the max bites back",
+    "subgoals": [
+      "Trace optimistic noise through max",
+      "Split selection from evaluation",
+      "Reach for Double Q-learning"
+    ]
+  }
+]

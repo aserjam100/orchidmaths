@@ -1,0 +1,19 @@
+{
+  "concept": "alg.radical.rationalize",
+  "setup": "Rationalize \\(\\frac{[[k]]}{\\sqrt{[[radicand]]}}\\).",
+  "steps": [
+    {
+      "fact": "radicand",
+      "say": "Multiply numerator and denominator by \\(\\sqrt{[[radicand]]}\\); the denominator becomes [[radicand]]."
+    },
+    {
+      "fact": "a",
+      "say": "The numerator becomes \\([[k]]\\sqrt{[[radicand]]}\\), and \\(\\frac{[[k]]}{[[radicand]]} = [[a]]\\)."
+    },
+    {
+      "fact": "k",
+      "say": "So the result is \\([[a]]\\sqrt{[[radicand]]}\\), giving \\(a = [[a]]\\) and \\(b = [[radicand]]\\)."
+    }
+  ],
+  "answer": "The pair is \\([[a]],[[radicand]]\\)."
+}

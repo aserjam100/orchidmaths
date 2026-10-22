@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Every neighbourhood meets the set again",
+    "section": "Every neighbourhood meets the set again",
+    "subgoals": [
+      "Test every neighbourhood of x",
+      "Exclude x itself from the meeting",
+      "Separate isolated points from limits"
+    ]
+  },
+  {
+    "label": "Worked: the limit point of 1/n",
+    "section": "Worked: the limit point of 1/n",
+    "subgoals": [
+      "Choose a ball of radius r around 0",
+      "Find 1/n inside it for large n",
+      "Show no 1/n is a limit point"
+    ]
+  },
+  {
+    "label": "Closed sets contain their limit points",
+    "section": "Closed sets contain their limit points",
+    "subgoals": [
+      "List the limits of sequences in the set",
+      "Check each limit belongs to the set",
+      "Use the omitted limit to refute closedness"
+    ]
+  }
+]

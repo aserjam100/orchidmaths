@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "note": "Candidates considered for the v1 glossary but excluded from the published dataset. Nothing here ships with the app. Exclusion reasons: the definition or the reuse terms could not be verified against an appropriate source, so per the brief these were left out rather than published with invented attribution.",
+  "excluded": [
+    {
+      "candidate": "Aleph-null (cardinality of naturals)",
+      "reason": "Notation is standard but the entry needs a careful treatment of infinite cardinals beyond one line; deferred to a later set-theory pass with a dedicated source."
+    },
+    {
+      "candidate": "Nabla as a standalone 'del' operator entry separate from gradient/divergence/curl",
+      "reason": "Duplicate of the gradient entry in different wording; excluded under the no-duplicates rule."
+    },
+    {
+      "candidate": "Division slash vs fraction bar as separate entries",
+      "reason": "Duplicate of the fraction entry in different wording; excluded under the no-duplicates rule."
+    },
+    {
+      "candidate": "/jpeg-style per-letter Greek variant entries (e.g. varepsilon as its own entry)",
+      "reason": "Typographical variants are grouped inside their letter's entry by design; counting them separately would inflate the total without adding reference value."
+    },
+    {
+      "candidate": "Stirling's approximation as a standalone entry",
+      "reason": "Covered inside the asymptotic-tilde entry's example; a standalone entry would duplicate it."
+    },
+    {
+      "candidate": "Big-Theta / Big-Omega complexity bounds",
+      "reason": "Could not verify concise, source-appropriate definitions distinct enough from big-O within the v1 budget; deferred rather than published thin."
+    },
+    {
+      "candidate": "Sheaf / scheme / cohomology notation",
+      "reason": "Beyond the v1 advanced band and not verifiable from the consulted references at the needed depth; excluded, not marked as covered."
+    }
+  ]
+}

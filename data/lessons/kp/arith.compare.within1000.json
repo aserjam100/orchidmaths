@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Compare the hundreds",
+    "section": "Compare the hundreds",
+    "subgoals": [
+      "Find the hundreds digit of each number",
+      "Compare the hundreds",
+      "The number with more hundreds is greater"
+    ]
+  },
+  {
+    "label": "When the hundreds are the same",
+    "section": "When the hundreds are the same",
+    "subgoals": [
+      "Check if the hundreds are the same",
+      "Compare the tens",
+      "Compare the ones if the tens are the same too"
+    ]
+  },
+  {
+    "label": "Order three numbers",
+    "section": "Order three numbers",
+    "subgoals": [
+      "Compare the first place where the digits differ",
+      "Find the smallest, then the next",
+      "Write them in order with commas"
+    ]
+  }
+]

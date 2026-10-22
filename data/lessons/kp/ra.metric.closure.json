@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The closure",
+    "section": "The closure",
+    "subgoals": [
+      "Add the limit points to the set",
+      "Characterise by balls meeting the set",
+      "Use a convergent sequence instead"
+    ]
+  },
+  {
+    "label": "The interior",
+    "section": "The interior",
+    "subgoals": [
+      "Collect the points with a ball inside",
+      "Dualise it against the closure",
+      "Equate openness with the set being its interior"
+    ]
+  },
+  {
+    "label": "The boundary",
+    "section": "The boundary",
+    "subgoals": [
+      "Meet both the set and its complement",
+      "Subtract the interior from the closure",
+      "Read closedness as containing the boundary"
+    ]
+  }
+]

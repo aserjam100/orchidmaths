@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The definition and uniqueness",
+    "section": "The definition and uniqueness",
+    "subgoals": [
+      "Compare distances to the candidate limit",
+      "Find an index for every epsilon",
+      "Separate two distinct limits by disjoint balls"
+    ]
+  },
+  {
+    "label": "Cauchy sequences",
+    "section": "Cauchy sequences",
+    "subgoals": [
+      "Define closeness of the terms to each other",
+      "Derive Cauchy from convergence",
+      "Find a Cauchy sequence with no limit"
+    ]
+  },
+  {
+    "label": "Subsequences and boundedness",
+    "section": "Subsequences and boundedness",
+    "subgoals": [
+      "Bound the tail and the finite head",
+      "Pass the index threshold to a subsequence",
+      "Get the same limit in both"
+    ]
+  }
+]

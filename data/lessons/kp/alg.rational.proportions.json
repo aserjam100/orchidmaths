@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cross-multiplication",
+    "section": "Cross-multiplication",
+    "subgoals": [
+      "Multiply both sides by the two denominators",
+      "Equate the two cross products",
+      "Divide to isolate the unknown"
+    ]
+  },
+  {
+    "label": "Setting up the proportion",
+    "section": "Setting up the proportion",
+    "subgoals": [
+      "Compare the same pair of quantities in each ratio",
+      "Keep the units in matching positions",
+      "Check the units of each ratio first"
+    ]
+  },
+  {
+    "label": "Direct and inverse variation",
+    "section": "Direct and inverse variation",
+    "subgoals": [
+      "Recognise a constant ratio as direct variation",
+      "Recognise a constant product as inverse variation",
+      "Choose the setup to match the situation"
+    ]
+  }
+]

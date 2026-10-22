@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The system of equations",
+    "section": "The system of equations",
+    "subgoals": [
+      "Introduce one multiplier per constraint",
+      "Set the gradients in one equation",
+      "Count the unknowns against the equations"
+    ]
+  },
+  {
+    "label": "The geometry of two constraints",
+    "section": "The geometry of two constraints",
+    "subgoals": [
+      "Move along the constraint curve",
+      "Require a zero directional derivative",
+      "Watch for parallel constraint gradients"
+    ]
+  },
+  {
+    "label": "Solving and checking",
+    "section": "Solving and checking",
+    "subgoals": [
+      "Eliminate the multipliers",
+      "Collect every candidate",
+      "Compare the values on the list"
+    ]
+  }
+]

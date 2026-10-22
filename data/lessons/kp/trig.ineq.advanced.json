@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Solving on one period",
+    "section": "Solving on one period",
+    "subgoals": [
+      "Find where the sides are equal",
+      "Cut the period at those angles",
+      "Test one point in each arc"
+    ]
+  },
+  {
+    "label": "Reading the arcs",
+    "section": "Reading the arcs",
+    "subgoals": [
+      "Mark the boundary angles",
+      "Choose the arcs that satisfy the sign",
+      "Exclude points where the function is undefined"
+    ]
+  },
+  {
+    "label": "Extending and restricting",
+    "section": "Extending and restricting",
+    "subgoals": [
+      "Repeat by the period",
+      "Intersect with the stated interval",
+      "Choose open or closed endpoints"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Arrivals as a Poisson count",
+    "section": "Arrivals as a Poisson count",
+    "subgoals": [
+      "Multiply the rate by the interval length",
+      "Use the Poisson mass formula",
+      "Treat only the product as the parameter"
+    ]
+  },
+  {
+    "label": "Worked: a rate over an interval",
+    "section": "Worked: a rate over an interval",
+    "subgoals": [
+      "Substitute the mean",
+      "Evaluate the mass at a count",
+      "Round to six places"
+    ]
+  },
+  {
+    "label": "Waiting times are exponential",
+    "section": "Waiting times are exponential",
+    "subgoals": [
+      "Describe the gap as exponential",
+      "Apply the memoryless property",
+      "Contrast it with the geometric wait"
+    ]
+  }
+]

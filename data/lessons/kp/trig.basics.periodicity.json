@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What a period is",
+    "section": "What a period is",
+    "subgoals": [
+      "Name the smallest repeating angle",
+      "Add it to the input without changing the output",
+      "Separate the tangent from sine and cosine"
+    ]
+  },
+  {
+    "label": "Period from the coefficient",
+    "section": "Period from the coefficient",
+    "subgoals": [
+      "Read the coefficient of the angle",
+      "Set the argument equal to one full turn",
+      "Divide 360 by the coefficient"
+    ]
+  },
+  {
+    "label": "Using the period",
+    "section": "Using the period",
+    "subgoals": [
+      "Repeat one cycle by whole periods",
+      "Write general solutions as a shift",
+      "Restrict the domain before inverting"
+    ]
+  }
+]

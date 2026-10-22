@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Set Av equal to lambda v with v nonzero",
+      "Rearrange into (A - lambda I)v = 0",
+      "Require det(A - lambda I) = 0 for a nontrivial v"
+    ]
+  },
+  {
+    "label": "The characteristic equation",
+    "section": "",
+    "subgoals": [
+      "Subtract lambda down the diagonal of A",
+      "Expand det(A - lambda I) into a polynomial",
+      "Solve the polynomial roots for lambda"
+    ]
+  },
+  {
+    "label": "Eigenspaces",
+    "section": "",
+    "subgoals": [
+      "Plug each lambda back into (A - lambda I)v = 0",
+      "Row-reduce to read the free variables",
+      "Write the basis vectors spanning the null space"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Test whether A maps v onto its own line",
+      "Write the scaling relation Av = lambda v",
+      "Reject the zero vector as an eigenvector"
+    ]
+  },
+  {
+    "label": "The characteristic equation",
+    "section": "",
+    "subgoals": [
+      "Subtract lambda down the diagonal of A",
+      "Expand det(A - lambda I) into the characteristic polynomial",
+      "Solve for the lambdas scaling each direction"
+    ]
+  },
+  {
+    "label": "Eigenspaces",
+    "section": "",
+    "subgoals": [
+      "Plug each lambda into (A - lambda I)v = 0",
+      "Parametrize the solution set for v",
+      "Collect the lines fixed by A"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition and existence",
+    "section": "Definition and existence",
+    "subgoals": [
+      "Take the expectation of the complex exponential",
+      "Note that the modulus is one",
+      "See that it always exists"
+    ]
+  },
+  {
+    "label": "Reading off familiar laws",
+    "section": "Reading off familiar laws",
+    "subgoals": [
+      "Expand the expectation for a two-point law",
+      "Recognise the normal transform",
+      "Match a transform to a law"
+    ]
+  },
+  {
+    "label": "Why they are used",
+    "section": "Why they are used",
+    "subgoals": [
+      "Use the product rule for sums",
+      "Take the power for many terms",
+      "Take logarithms to linearise"
+    ]
+  }
+]

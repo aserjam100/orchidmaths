@@ -1,0 +1,71 @@
+FROM node:24-bookworm AS webbuilder
+
+WORKDIR /app
+COPY web/next-app/package.json web/next-app/package-lock.json ./web/next-app/
+RUN cd web/next-app && npm ci
+
+COPY web/next-app ./web/next-app
+# Stamp a unique service-worker version per image build so every deploy
+# migrates clients off older caches (see public/sw.js). Without this, a
+# static SW version lets browsers keep serving stale hashed JS forever.
+# The grep guard fails the build loudly if the stamp pattern drifts.
+RUN STAMP="build-$(date -u +%Y%m%dT%H%M%SZ)" && \
+    sed -i "s/^const VERSION = '[^']*'/const VERSION = 'v2-${STAMP}'/" ./web/next-app/public/sw.js && \
+    grep -q "^const VERSION = 'v2-build-[0-9]\{8\}T" ./web/next-app/public/sw.js
+# Single-binary: same origin => relative fetches. Empty API base bakes fetch('/api/...') 
+# which works on any Fly hostname (orchid.fly.dev, orchid-xxx.fly.dev). For split Vercel+Fly,
+# set build arg NEXT_PUBLIC_API_URL=https://orchid.fly.dev
+ARG NEXT_PUBLIC_API_URL=""
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+RUN cd web/next-app && npm run build
+
+FROM golang:1.27-bookworm AS builder
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc libc6-dev libsqlite3-dev && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY . .
+RUN CGO_ENABLED=1 go build -o /orchid ./cmd/orchid
+
+FROM debian:bookworm-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libsqlite3-0 ca-certificates curl python3 python3-venv && rm -rf /var/lib/apt/lists/*
+
+# SymPy grading runtime. findSymPyService resolves ./grading/sympy_service.py
+# from WORKDIR /app, and execs `python3`, so the venv must be first on PATH.
+COPY grading/requirements.txt /app/grading/requirements.txt
+RUN python3 -m venv /opt/venv \
+    && /opt/venv/bin/pip install --no-cache-dir --disable-pip-version-check \
+        -r /app/grading/requirements.txt
+ENV PATH=/opt/venv/bin:$PATH
+
+COPY --from=builder /orchid /orchid
+COPY data/concepts/ /app/data/concepts/
+COPY data/lessons/ /app/data/lessons/
+COPY data/courses.json /app/data/courses.json
+COPY data/destinations.json /app/data/destinations.json
+COPY --from=webbuilder /app/web/next-app/out /app/web/next-app/out
+COPY grading/sympy_service.py /app/grading/sympy_service.py
+
+# Build-time grading self-test: if SymPy cannot grade, the image does not build,
+# so a broken grading runtime can never be deployed. `5^4` and `625` are
+# equivalent but not string-equal, so this exercises the real equivalence path.
+RUN printf '%s\n' '{"id":"1","expected":"5^4","answer":"625"}' \
+      | python3 /app/grading/sympy_service.py \
+      | grep -q '"correct": true'
+
+WORKDIR /app
+ENV PORT=8080
+ENV DATABASE_URL=/data/orchid.db
+
+EXPOSE 8080
+
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+    CMD curl -fsS http://localhost:8080/api/health || exit 1
+
+CMD ["/orchid", "-serve", "-port", "8080"]

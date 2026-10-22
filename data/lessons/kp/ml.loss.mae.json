@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The average absolute residual",
+    "section": "The average absolute residual",
+    "subgoals": [
+      "Take absolute values of residuals",
+      "Sum and divide by the count",
+      "Read the result in target units"
+    ]
+  },
+  {
+    "label": "Worked: MAE of four residuals",
+    "section": "Worked: MAE of four residuals",
+    "subgoals": [
+      "List 1, -2, 3, 0",
+      "Sum the absolute values to 6",
+      "Divide by 4 for 1.5"
+    ]
+  },
+  {
+    "label": "When MAE beats MSE",
+    "section": "When MAE beats MSE",
+    "subgoals": [
+      "Compare linear and squared growth",
+      "See one outlier dominate MSE",
+      "Accept the kink at zero"
+    ]
+  }
+]

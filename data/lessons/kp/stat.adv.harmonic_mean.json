@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is the harmonic mean?",
+    "section": "",
+    "subgoals": [
+      "Define harmonic mean via reciprocals",
+      "Write the M_{-1} formula",
+      "Decide when rate data calls for it"
+    ]
+  },
+  {
+    "label": "Example 1 — average speed over equal segments",
+    "section": "",
+    "subgoals": [
+      "Name the slower speed as the weight driver",
+      "Compute 2/(1/60 + 1/90)",
+      "Confirm against the arithmetic mean"
+    ]
+  },
+  {
+    "label": "Example 2 — average rate over equal periods",
+    "section": "",
+    "subgoals": [
+      "List the five period rates",
+      "Sum the five reciprocals and divide into 5",
+      "Compare with the naive average"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Radial–angular description of a point",
+    "section": "",
+    "subgoals": [
+      "Mark the pole O and the polar axis on the plane",
+      "Plot (rho,theta) by walking rho out along angle theta",
+      "Convert plotted points via x = rho*cos(theta), y = rho*sin(theta)"
+    ]
+  },
+  {
+    "label": "Determining the angle \\\\(\\theta\\\\)",
+    "section": "",
+    "subgoals": [
+      "Resolve tan(theta) = y/x into the correct quadrant",
+      "Read theta off the plotted point's quadrant",
+      "Collapse the plotted origin to rho = 0"
+    ]
+  },
+  {
+    "label": "Non-uniqueness of polar representation",
+    "section": "",
+    "subgoals": [
+      "Land on the same plotted dot via (rho,theta+2*pi*k)",
+      "Land on it via (-rho,theta+pi)",
+      "Canonicalize plotted points to rho >= 0, theta in [0,2*pi)"
+    ]
+  }
+]

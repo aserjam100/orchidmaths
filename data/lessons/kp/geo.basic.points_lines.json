@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The Basic Objects",
+    "section": "The Basic Objects",
+    "subgoals": [
+      "Draw a point as a sizeless dot labeled A",
+      "Extend two points forever both ways for a line",
+      "Stop at one endpoint for a ray and two for a segment"
+    ]
+  },
+  {
+    "label": "How Points and Lines Interact",
+    "section": "How Points and Lines Interact",
+    "subgoals": [
+      "Test points for lying on one line (collinear)",
+      "Cross two lines at exactly one intersection point",
+      "Keep parallel lines apart forever"
+    ]
+  },
+  {
+    "label": "Drill: segment to ray to line",
+    "section": "",
+    "subgoals": [
+      "Stretch segment AB past B for ray AB",
+      "Stretch past both ends for line AB",
+      "Count three noncollinear points fixing one plane"
+    ]
+  }
+]

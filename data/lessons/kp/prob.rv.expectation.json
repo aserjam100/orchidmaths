@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The law of the unconscious statistician",
+    "section": "The law of the unconscious statistician",
+    "subgoals": [
+      "Weight x by its probability",
+      "Apply g at the same time",
+      "Avoid a separate distribution for g(X)"
+    ]
+  },
+  {
+    "label": "Worked: the second moment",
+    "section": "Worked: the second moment",
+    "subgoals": [
+      "Square each value",
+      "Weight by the probability",
+      "Add the weighted squares"
+    ]
+  },
+  {
+    "label": "Linearity and moments",
+    "section": "Linearity and moments",
+    "subgoals": [
+      "Apply linearity to aX plus b",
+      "Add expectations without independence",
+      "Compute a higher moment"
+    ]
+  }
+]

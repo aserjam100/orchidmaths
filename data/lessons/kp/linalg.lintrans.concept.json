@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Scale each vector by its coefficient ci",
+      "Add the scaled vectors tip to tail",
+      "Read the result as c1 v1 + ... + ck vk"
+    ]
+  },
+  {
+    "label": "Coordinate representation",
+    "section": "",
+    "subgoals": [
+      "Fix the standard basis e1..en",
+      "Read off the coordinates of v in that basis",
+      "Stack the coordinates into a column"
+    ]
+  },
+  {
+    "label": "Matrix–Vector interpretation",
+    "section": "",
+    "subgoals": [
+      "Multiply A times x row by column",
+      "Read each output entry as a row-dot-column sum",
+      "Match Ax against the combination of A's columns"
+    ]
+  }
+]

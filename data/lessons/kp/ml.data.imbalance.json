@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why accuracy hides the minority",
+    "section": "Why accuracy hides the minority",
+    "subgoals": [
+      "Compare the class frequencies",
+      "See the majority dominate the count",
+      "Name the error the average hides"
+    ]
+  },
+  {
+    "label": "Worked: a 99 percent majority classifier",
+    "section": "Worked: a 99 percent majority classifier",
+    "subgoals": [
+      "Count 990 negatives and 10 positives",
+      "Compute 990/1000",
+      "Note the zero positive recall"
+    ]
+  },
+  {
+    "label": "Resampling and class weights",
+    "section": "Resampling and class weights",
+    "subgoals": [
+      "Oversample the minority or undersample the majority",
+      "Weight the loss by inverse frequency",
+      "Evaluate on the original distribution"
+    ]
+  }
+]

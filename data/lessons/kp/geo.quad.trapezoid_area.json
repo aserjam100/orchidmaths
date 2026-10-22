@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The average of the parallel sides",
+    "section": "The average of the parallel sides",
+    "subgoals": [
+      "State the formula",
+      "Compute an average width",
+      "Apply it to a trapezoid"
+    ]
+  },
+  {
+    "label": "Why the average",
+    "section": "Why the average",
+    "subgoals": [
+      "Fit two copies into a parallelogram",
+      "Halve it",
+      "Recover the triangle case"
+    ]
+  },
+  {
+    "label": "Special cases",
+    "section": "Special cases",
+    "subgoals": [
+      "Show a parallelogram is a special case",
+      "Show a triangle is a special case",
+      "Use the perpendicular height"
+    ]
+  }
+]

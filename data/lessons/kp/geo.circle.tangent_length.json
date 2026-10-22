@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The tangent is perpendicular to the radius",
+    "section": "The tangent is perpendicular to the radius",
+    "subgoals": [
+      "State the right angle",
+      "See why an inside point cannot work",
+      "Recognise the one-point contact"
+    ]
+  },
+  {
+    "label": "Using the right triangle",
+    "section": "Using the right triangle",
+    "subgoals": [
+      "Name the triangle's sides",
+      "Apply Pythagoras",
+      "Answer the converse question"
+    ]
+  },
+  {
+    "label": "Two tangents from one point",
+    "section": "Two tangents from one point",
+    "subgoals": [
+      "Show the two segments are equal",
+      "Justify it by congruence",
+      "Use the symmetry to measure"
+    ]
+  }
+]

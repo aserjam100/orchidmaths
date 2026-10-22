@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Read convex as cup-up, concave as cup-down",
+      "Link f''>0 to convex and f''<0 to concave",
+      "Preview x^2 convex vs -x^2 concave"
+    ]
+  },
+  {
+    "label": "Convexity",
+    "section": "",
+    "subgoals": [
+      "Compute f'' and test f''>0 on the interval",
+      "Check x^2 gives f'' = 2 > 0",
+      "Confirm chords lie above the graph"
+    ]
+  },
+  {
+    "label": "Concavity",
+    "section": "",
+    "subgoals": [
+      "Compute f'' and test f''<0 on the interval",
+      "Check -x^3 on x > 0 gives f''<0",
+      "Confirm chords lie below the graph"
+    ]
+  }
+]

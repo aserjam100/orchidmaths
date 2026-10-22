@@ -1,0 +1,29 @@
+[
+  {
+    "label": "First fundamental theorem",
+    "section": "",
+    "subgoals": [
+      "State ∫_a^b f' = f(b) - f(a)",
+      "Recognize rates integrating to net change",
+      "Check velocity 3t^2 over [0,2] gives 8"
+    ]
+  },
+  {
+    "label": "Net change worked examples",
+    "section": "",
+    "subgoals": [
+      "Evaluate 3x^2 over [0,1] via x^3",
+      "Check H(1)=0 on the log accumulation",
+      "Recover H'(x)=ln x from FTC1"
+    ]
+  },
+  {
+    "label": "FTC introduction",
+    "section": "",
+    "subgoals": [
+      "State differentiation and integration as inverse processes",
+      "Link accumulation to net change",
+      "Carry the accumulation idea to variable limits"
+    ]
+  }
+]

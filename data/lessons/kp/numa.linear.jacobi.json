@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Iterating instead of eliminating",
+    "section": "Iterating instead of eliminating",
+    "subgoals": [
+      "Solve each equation for its own unknown",
+      "Use only the previous sweep's values",
+      "Repeat until convergence"
+    ]
+  },
+  {
+    "label": "Worked: one sweep step",
+    "section": "Worked: one sweep step",
+    "subgoals": [
+      "Substitute the previous values",
+      "Solve for the unknown",
+      "Hold the results until the sweep ends"
+    ]
+  },
+  {
+    "label": "Convergence and its condition",
+    "section": "Convergence and its condition",
+    "subgoals": [
+      "Check diagonal dominance",
+      "Conclude convergence",
+      "Note the failure otherwise"
+    ]
+  }
+]

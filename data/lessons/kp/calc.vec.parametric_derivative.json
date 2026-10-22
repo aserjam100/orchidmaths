@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Dividing the derivatives",
+    "section": "Dividing the derivatives",
+    "subgoals": [
+      "Read the chain rule backwards",
+      "Compute both derivatives in t",
+      "Divide them to get the slope"
+    ]
+  },
+  {
+    "label": "The slope at a point",
+    "section": "The slope at a point",
+    "subgoals": [
+      "Evaluate dy/dx at a given t",
+      "Compare two parameter values at one point",
+      "Detect a vertical tangent"
+    ]
+  },
+  {
+    "label": "Curves a graph cannot carry",
+    "section": "Curves a graph cannot carry",
+    "subgoals": [
+      "Parametrise a circle",
+      "Find where the slope is undefined",
+      "Explain why the path is still smooth"
+    ]
+  }
+]

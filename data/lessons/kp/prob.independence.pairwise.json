@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The product rule",
+    "section": "The product rule",
+    "subgoals": [
+      "Write the product rule",
+      "Divide to get the conditional form",
+      "Interpret it as no change under conditioning"
+    ]
+  },
+  {
+    "label": "Worked: pairwise is not mutual",
+    "section": "Worked: pairwise is not mutual",
+    "subgoals": [
+      "Check each pair's product rule",
+      "Show the triple product fails",
+      "Conclude the two notions differ"
+    ]
+  },
+  {
+    "label": "Independence and disjointness",
+    "section": "Independence and disjointness",
+    "subgoals": [
+      "Distinguish disjoint from independent",
+      "Compute the conditional probability of a disjoint event",
+      "Recognise the dependence"
+    ]
+  }
+]

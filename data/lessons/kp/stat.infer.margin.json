@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Half the interval's width",
+    "section": "Half the interval's width",
+    "subgoals": [
+      "Define the margin",
+      "Relate it to the interval",
+      "Say what a larger margin means"
+    ]
+  },
+  {
+    "label": "The critical value",
+    "section": "The critical value",
+    "subgoals": [
+      "Choose from the confidence level",
+      "Give the 95 and 99 values",
+      "Note the confidence-precision trade"
+    ]
+  },
+  {
+    "label": "What it does not say",
+    "section": "What it does not say",
+    "subgoals": [
+      "Name the no-bias assumption",
+      "Explain why bias is fatal",
+      "Say what to read with the interval"
+    ]
+  }
+]

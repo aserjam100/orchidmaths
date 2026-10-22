@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Rates multiply",
+    "section": "Rates multiply",
+    "subgoals": [
+      "Write the composition as two links",
+      "Insert the intermediate change",
+      "Multiply the two rates"
+    ]
+  },
+  {
+    "label": "Worked: a power of a linear function",
+    "section": "Worked: a power of a linear function",
+    "subgoals": [
+      "Identify the inner linear expression",
+      "Differentiate the outer power",
+      "Multiply by the inner slope"
+    ]
+  },
+  {
+    "label": "Chains of three and more",
+    "section": "Chains of three and more",
+    "subgoals": [
+      "Extend the product to three links",
+      "Evaluate each derivative where it applies",
+      "Cancel the intermediate differentials formally"
+    ]
+  }
+]

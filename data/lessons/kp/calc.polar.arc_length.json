@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The polar arc element",
+    "section": "The polar arc element",
+    "subgoals": [
+      "Write ds = sqrt(r^2 + r'^2) dtheta",
+      "Use perpendicular radial and angular parts",
+      "Integrate between the given angles"
+    ]
+  },
+  {
+    "label": "Worked: a secant curve and a cardioid",
+    "section": "Worked: a secant curve and a cardioid",
+    "subgoals": [
+      "Simplify the sec integrand to sec^2",
+      "Integrate tan from 0 to pi/4",
+      "Double the half-cardioid for 8"
+    ]
+  },
+  {
+    "label": "When the integral is elementary",
+    "section": "When the integral is elementary",
+    "subgoals": [
+      "Look for a trigonometric identity",
+      "Use symmetry to halve the work",
+      "Fall back to numerical integration"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Elements that satisfy a polynomial",
+    "section": "Elements that satisfy a polynomial",
+    "subgoals": [
+      "Exhibit one vanishing polynomial",
+      "Handle rational and radical examples",
+      "Recognize transcendence as the negation"
+    ]
+  },
+  {
+    "label": "Worked: sqrt(2) is algebraic, pi is not",
+    "section": "Worked: sqrt(2) is algebraic, pi is not",
+    "subgoals": [
+      "Solve x^2 - 2 = 0",
+      "Solve x^2 - 3 = 0",
+      "Cite pi as having no rational polynomial"
+    ]
+  },
+  {
+    "label": "The minimal polynomial sets the degree",
+    "section": "The minimal polynomial sets the degree",
+    "subgoals": [
+      "Choose the monic least-degree polynomial",
+      "Check irreducibility",
+      "Read the extension degree off its degree"
+    ]
+  }
+]

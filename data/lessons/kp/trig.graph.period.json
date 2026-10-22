@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Determining the Period of Sinusoidal Functions",
+    "section": "",
+    "subgoals": [
+      "Read the coefficient B in y = A sin(Bx)",
+      "Divide 360 degrees by the absolute value of B",
+      "Count the x-distance from one peak to the next"
+    ]
+  },
+  {
+    "label": "Determining Amplitude",
+    "section": "",
+    "subgoals": [
+      "Read A as the factor in front of the sine or cosine",
+      "Drop the sign when A is negative",
+      "Halve the vertical distance between trough and peak"
+    ]
+  },
+  {
+    "label": "Identifying the Phase Shift of a Function",
+    "section": "",
+    "subgoals": [
+      "Write the inside as Bx minus C, not as B times (x minus C)",
+      "Set Bx minus C to zero to find where one cycle starts",
+      "Shift right by C/B when C is positive"
+    ]
+  }
+]

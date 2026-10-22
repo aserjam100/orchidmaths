@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Conic sections intro",
+    "section": "",
+    "subgoals": [
+      "Recognize the circle as a conic section",
+      "Identify the standard form",
+      "Locate center and radius"
+    ]
+  },
+  {
+    "label": "What is a circumference",
+    "section": "",
+    "subgoals": [
+      "Relate circumference to the radius",
+      "Use the circumference formula",
+      "Connect to the circle equation"
+    ]
+  },
+  {
+    "label": "Center and radius from general form",
+    "section": "",
+    "subgoals": [
+      "Complete the square",
+      "Rewrite in standard form",
+      "Read off the center and radius"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Test integers under addition for closure",
+      "Check nonzero reals under multiplication",
+      "Verify invertible matrices under multiplication"
+    ]
+  },
+  {
+    "label": "Properties",
+    "section": "",
+    "subgoals": [
+      "Compute a.a^-1 to reach e",
+      "Iterate powers to find the order of an element",
+      "Separate abelian examples from nonabelian ones"
+    ]
+  },
+  {
+    "label": "Algebraic hierarchy",
+    "section": "",
+    "subgoals": [
+      "Climb from monoid to group by adjoining inverses",
+      "Climb from group to ring with a second operation",
+      "Locate each example in the hierarchy"
+    ]
+  }
+]

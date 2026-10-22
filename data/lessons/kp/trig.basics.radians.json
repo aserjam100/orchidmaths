@@ -1,0 +1,29 @@
+[
+  {
+    "label": "5.1 Angles",
+    "section": "",
+    "subgoals": [
+      "Spin the terminal side from the fixed initial ray",
+      "Convert degrees to radians via pi/180",
+      "Add or subtract 360 deg for coterminal angles"
+    ]
+  },
+  {
+    "label": "Drawing Angles in Standard Position",
+    "section": "",
+    "subgoals": [
+      "Anchor the vertex at the origin on the +x-axis",
+      "Divide the degree measure by 360 deg for the fraction turned",
+      "Mark positive for counterclockwise, negative for clockwise"
+    ]
+  },
+  {
+    "label": "Quadrantal Angles",
+    "section": "",
+    "subgoals": [
+      "Spot terminal sides landing on an axis",
+      "List quadrantal measures 0, 90, 180, 270, 360 deg",
+      "Measure arc length s = r*theta and sector area (1/2)r^2*theta"
+    ]
+  }
+]

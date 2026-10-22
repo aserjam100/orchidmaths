@@ -1,0 +1,15 @@
+{
+  "concept": "trig.ident.power_reduction",
+  "setup": "You are given $\\cos 2t = [[cos_num]]/[[cos_den]]$ and asked for $\\sin^{2} t$.",
+  "steps": [
+    {
+      "fact": "cos_num",
+      "say": "The double-angle formula reads $\\cos 2t = 1 - 2\\sin^{2} t$, so the square of the sine is half of one minus the given cosine."
+    },
+    {
+      "fact": "cos_den",
+      "say": "Subtracting $[[cos_num]]/[[cos_den]]$ from one leaves a fraction over [[cos_den]], and halving it gives [[answer]]."
+    }
+  ],
+  "answer": "So $\\sin^{2} t = [[answer]]$."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Tree decompositions",
+    "section": "Tree decompositions",
+    "subgoals": [
+      "Place each vertex in a connected set of bags",
+      "Place each edge in one bag",
+      "Read the width from the largest bag"
+    ]
+  },
+  {
+    "label": "Worked: the cycle C_6",
+    "section": "Worked: the cycle C_6",
+    "subgoals": [
+      "Use the edges as bags on a path",
+      "Notice a cycle is not a forest",
+      "Conclude treewidth two"
+    ]
+  },
+  {
+    "label": "Bounded treewidth and algorithms",
+    "section": "Bounded treewidth and algorithms",
+    "subgoals": [
+      "Choose a bounded-width decomposition",
+      "Dynamic-program over the bags",
+      "Compute min(r,c) for the grid"
+    ]
+  }
+]

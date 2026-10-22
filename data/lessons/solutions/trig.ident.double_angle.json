@@ -1,0 +1,19 @@
+{
+  "concept": "trig.ident.double_angle",
+  "setup": "You are given $\\sin\\theta = [[sin_num]]/[[sin_den]]$ with $\\theta$ acute, and asked for the sine or cosine of the doubled angle.",
+  "steps": [
+    {
+      "fact": "sin_num",
+      "say": "The ratio fixes a right triangle — opposite [[sin_num]] and hypotenuse [[sin_den]] — so the adjacent side is whatever the Pythagorean theorem supplies. The double-angle formulas are $\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta$ and $\\cos(2\\theta) = \\cos^{2}\\theta - \\sin^{2}\\theta$."
+    },
+    {
+      "fact": "den",
+      "say": "Substituting the two ratios first gives a fraction whose denominator is the square of the hypotenuse."
+    },
+    {
+      "fact": "num",
+      "say": "Reduced by their common factor, the numerator is [[num]] and the denominator is [[den]]."
+    }
+  ],
+  "answer": "So the value is [[num]]/[[den]]."
+}

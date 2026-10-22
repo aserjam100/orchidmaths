@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Find the first quantity",
+    "section": "Find the first quantity",
+    "subgoals": [
+      "Identify equal groups and the size of each",
+      "Multiply to build the first quantity",
+      "Name the unit of that quantity"
+    ]
+  },
+  {
+    "label": "Use it in the next step",
+    "section": "Use it in the next step",
+    "subgoals": [
+      "Read what happens to the first quantity",
+      "Choose addition or subtraction",
+      "Keep the units consistent"
+    ]
+  },
+  {
+    "label": "Answer the question asked",
+    "section": "Answer the question asked",
+    "subgoals": [
+      "Reread the final sentence",
+      "Match the answer to the requested quantity",
+      "Work backward to check"
+    ]
+  }
+]

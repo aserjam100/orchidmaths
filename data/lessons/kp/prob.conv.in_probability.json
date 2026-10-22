@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The epsilon condition",
+    "section": "The epsilon condition",
+    "subgoals": [
+      "Fix a tolerance",
+      "Send the tail probability to zero",
+      "Take the index large enough"
+    ]
+  },
+  {
+    "label": "Relation to distributional convergence",
+    "section": "Relation to distributional convergence",
+    "subgoals": [
+      "Show the implication",
+      "Give a counterexample to the converse",
+      "Note the exception at a constant limit"
+    ]
+  },
+  {
+    "label": "The weak law as its home",
+    "section": "The weak law as its home",
+    "subgoals": [
+      "Identify the sample mean as the sequence",
+      "Apply the epsilon condition",
+      "Connect it to the finite-variance proof"
+    ]
+  }
+]

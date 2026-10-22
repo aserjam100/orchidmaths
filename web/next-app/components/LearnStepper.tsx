@@ -1,0 +1,820 @@
+'use client'
+
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import Link from 'next/link'
+import KatexContent from './KatexContent'
+import LessonDiagram from './LessonDiagram'
+import LessonAssets from './LessonAssets'
+import ChoiceOptions from './ChoiceOptions'
+import ConceptReference, { isPlaceholderSlice } from './ConceptReference'
+import PrerequisitePanel from './PrerequisitePanel'
+import { getLessonKPs, getLessonPractice, getLessonReadiness, submitStudyAnswer, getProgress, getErrorStatus, type EligibilityPrereq, type KpInfo, type PracticeQuestion, type ReadinessRes, type ConceptProgress } from '../lib/api'
+import { getUserInfo } from '../lib/auth'
+import { upcomingLocked, hrefConceptId, type Shelf, type LockedSuccessor } from '../lib/nextUp'
+import { backTarget, learnConceptPath, pushReturn, studyConceptPath, withReturnStack, type ReturnEntry } from '../lib/learnReturn'
+import { fetchShelf } from '../lib/recommendations'
+import { REQUIRED_IN_A_ROW } from '../lib/progression'
+import { formatForGradingType, type AnswerFormat } from '../lib/answerFormat'
+import { countsAsMastered } from '../lib/progress'
+import { MathAnswerInput } from './math/MathInput'
+import { findWarmUp, type WarmUp } from '../lib/warmUp'
+import { concepts } from '../lib/conceptData'
+
+// Append-only learning feed: intro once, then each submit locks its card and
+// the next question opens below. Scrollback IS the performance history —
+// there are no gating buttons between questions and no pre-answer hints.
+// Post-mistake explanations render inline in the locked card.
+interface QEntry {
+  key: number
+  kind: 'q'
+  kpIndex: number
+  q: PracticeQuestion
+  answer: string
+  checking: boolean
+  servedAt: number
+  feedback: { correct: boolean; text: string; diagnosis?: string; xp: number } | null
+}
+
+type Entry =
+  | { key: number; kind: 'intro'; kpIndex: number }
+  | QEntry
+  | { key: number; kind: 'kpdiv'; kpIndex: number }
+  | { key: number; kind: 'halt' }
+  | { key: number; kind: 'done'; note?: string }
+
+interface Props {
+  conceptId: string
+  /**
+   * The chain of pages the learner came through, most-recent-first (`/learn?concept=X`,
+   * `/study?concept=Y`). Carried in the URL so a navigation does not strand it.
+   */
+  returnStack?: ReturnEntry[]
+}
+
+let keySeq = 1
+const nextKey = () => keySeq++
+
+// The scheduler's state word for a stored status, used only by the legacy fallback below. An
+// unrecognised or missing status becomes '', which `PrerequisitePanel` renders as "Not started".
+function prereqStateFromStatus(status: string | undefined): string {
+  switch ((status ?? '').toUpperCase()) {
+    case 'UNSEEN':
+      return 'unlocked'
+    case 'LEARNING':
+    case 'PRACTICING':
+      return 'in_progress'
+    case 'MASTERED':
+      return 'mastered'
+    case 'DECAYING':
+      return 'due_for_review'
+    default:
+      return ''
+  }
+}
+
+// Shelf re-fetch budget on the done card: past this the failure branch
+// (Practice again + Back to Profile) renders instead of a stale spinner.
+const SHELF_TIMEOUT_MS = 8000
+
+function catalogEntries() {
+  return concepts.map(c => ({ id: c.id, label: c.label, prerequisites: c.prerequisites ?? [], avgTimeSeconds: c.mastery_threshold?.avg_time_seconds }))
+}
+
+// The done guard compares concept ids, never raw href strings: live URLs may
+// carry &seed=/&difficulty=/&exclude= while the stepper still won't reset,
+// so only a real concept change may render a navigating <Link>. Shared with
+// Profile dedupe via lib/nextUp; re-exported under the guard's name for tests.
+export { hrefConceptId as headConceptId }
+
+export default function LearnStepper({ conceptId, returnStack = [] }: Props) {
+  const [entries, setEntries] = useState<Entry[]>([])
+  const [kps, setKps] = useState<KpInfo[]>([])
+  // The concept's own diagram. The KP endpoint has always returned it and the client has
+  // always dropped it, so the one figure guaranteed to be relevant to the concept being
+  // studied was the one figure /learn never showed.
+  const [diagram, setDiagram] = useState<string | null>(null)
+  const [kpIndex, setKpIndex] = useState(0)
+  const [readiness, setReadiness] = useState<ReadinessRes | null>(null)
+  // The server refused this topic because its prerequisites are unmet. The
+  // practice endpoint enforces this; the UI renders the explanation so a locked
+  // topic never looks like a broken page or an empty question set.
+  const [ineligible, setIneligible] = useState<ReadinessRes | null>(null)
+  // The first prerequisite the server will serve, offered as a one-tap warm-up in place of the
+  // locked topic. Null when none was found, which falls back to the prerequisite list.
+  const [warmUp, setWarmUp] = useState<WarmUp | null>(null)
+  const [bannerDismissed, setBannerDismissed] = useState(false)
+  const [buffer, setBuffer] = useState<PracticeQuestion[]>([])
+  // Counts for the header, per *concept*. Not per knowledge point: this used to reset on
+  // every KP advance, so a learner three questions in with two correct saw "1/2 correct"
+  // sitting next to "+3 XP" — the XP sums every card in the feed while the count summed only
+  // the current section. Two scopes on one line, and the count was the one that looked wrong.
+  // Two numbers rather than an array because nothing else needed the answers themselves.
+  const [answeredCount, setAnsweredCount] = useState(0)
+  const [correctCount, setCorrectCount] = useState(0)
+  // Plain-language progress reading, computed server-side by mastery.EvidenceBand from
+  // the same evidence the ladder decides on. The client used to compute its own score
+  // and its own bands here; see test/masteryAuthority.test.ts.
+  const [band, setBand] = useState('')
+  const [difficulty, setDifficulty] = useState(0.4)
+  const [consecutive, setConsecutive] = useState(0)
+  const [misses, setMisses] = useState(0)
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(true)
+  // Next head for the done state: re-fetched on entering done (after the
+  // scheduler ingests the last answer), so Continue names what will load.
+  // No navigation until the click — learner disposes via the alternatives.
+  const [nextShelf, setNextShelf] = useState<Shelf | null>(null)
+  const [nextLoading, setNextLoading] = useState(false)
+  const [shelfProgress, setShelfProgress] = useState<Record<string, ConceptProgress>>({})
+  const nextFetchedRef = useRef(false)
+  const seenRef = useRef<string[]>([])
+  const bottomRef = useRef<HTMLDivElement>(null)
+  const reduceMotion = useRef(false)
+  const conceptGradingType = concepts.find(c => c.id === conceptId)?.grading_type
+  // The served question carries the format its answer actually needs. The
+  // concept record only names the grading type, which is why a numeric concept
+  // whose answer is "5 R 2" used to get a digits-only keypad.
+  const [servedFormat, setServedFormat] = useState<AnswerFormat | null>(null)
+  const format = servedFormat ?? formatForGradingType(conceptGradingType)
+  // Where "back" goes, and the label a learner reads. The label is resolved from the concept the
+  // return path names, never printed as the raw id a storage key would show.
+  const back = backTarget(returnStack)
+  const returnTo = returnStack.length > 0 ? hrefConceptId(returnStack[0]) : null
+  // A learner reading "← Back to frac.add.diff" is reading a storage key.
+  const returnToLabel = returnTo ? (concepts.find(c => c.id === returnTo)?.label ?? returnTo) : null
+  // The stack to put on any link that leaves this page, so this page is reachable again.
+  const currentPath = learnConceptPath(conceptId)
+  const prereqStack = pushReturn(returnStack, currentPath)
+
+  useEffect(() => {
+    reduceMotion.current = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+  }, [])
+
+  const scrollToBottom = useCallback(() => {
+    bottomRef.current?.scrollIntoView({ behavior: reduceMotion.current ? 'auto' : 'smooth', block: 'nearest' })
+  }, [])
+
+  const refill = useCallback(async (diff: number, exclude: string[]): Promise<PracticeQuestion[]> => {
+    const pr = await getLessonPractice(conceptId, 3, { seed: Date.now() % 100000, exclude, difficulty: diff })
+    const fresh = pr.questions.filter(q => !exclude.includes(q.question))
+    const answerable = fresh.length > 0 ? fresh : pr.questions
+    const first = answerable[0]
+    if (first?.answer_hint) {
+      setServedFormat({ hint: first.answer_hint, inputMode: first.answer_input_mode === 'numeric' ? 'numeric' : 'text' })
+    }
+    return answerable
+  }, [conceptId])
+
+  const load = useCallback(async () => {
+    setLoading(true)
+    setError('')
+    setIneligible(null)
+    setWarmUp(null)
+    try {
+      const [kpRes, readyRes] = await Promise.all([getLessonKPs(conceptId), getLessonReadiness(conceptId)])
+      setKps(kpRes.kps ?? [])
+      setDiagram(kpRes.diagram ?? null)
+      setReadiness(readyRes)
+      // The server is the authority: if it says the topic's prerequisites are
+      // unmet, do not fetch questions it would refuse. Show the path instead.
+      if (readyRes.eligible === false) {
+        setWarmUp(await findWarmUp(readyRes).catch(() => null))
+        setIneligible(readyRes)
+        return
+      }
+      const pr = await getLessonPractice(conceptId, 3, { seed: Date.now() % 100000, difficulty: 0.4 })
+      seenRef.current = pr.questions.map(q => q.question)
+      setBuffer(pr.questions)
+      const first = pr.questions[0]
+      if (first?.answer_hint) {
+        setServedFormat({ hint: first.answer_hint, inputMode: first.answer_input_mode === 'numeric' ? 'numeric' : 'text' })
+      }
+      setEntries([{ key: nextKey(), kind: 'intro', kpIndex: 0 }])
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Failed to load lesson')
+    } finally {
+      setLoading(false)
+    }
+  }, [conceptId])
+
+  useEffect(() => {
+    setEntries([])
+    setKpIndex(0)
+    setAnsweredCount(0)
+    setCorrectCount(0)
+    setDifficulty(0.4)
+    setConsecutive(0)
+    setMisses(0)
+    setBannerDismissed(false)
+    setNextShelf(null)
+    setNextLoading(false)
+    nextFetchedRef.current = false
+    load()
+  }, [load])
+
+  // Deliberate same-concept restart with fresh variants. Rendered as the
+  // secondary action on the done card — never a silent fallback.
+  const practiceAgain = useCallback(() => {
+    setEntries([])
+    setKpIndex(0)
+    setAnsweredCount(0)
+    setCorrectCount(0)
+    setDifficulty(0.4)
+    setConsecutive(0)
+    setMisses(0)
+    setBannerDismissed(false)
+    setError('')
+    seenRef.current = []
+    setNextShelf(null)
+    setNextLoading(false)
+    nextFetchedRef.current = false
+    load()
+  }, [load])
+
+  // Re-fetch the ranked head on entering done: the scheduler has just
+  // ingested the last answer, so the head may have moved. Fetch in place —
+  // navigation waits for the Continue click (deterministic for e2e).
+  // A slow network must not strand the card: past the timeout the failure
+  // branch (Practice again + Back to Profile) renders instead of a stale
+  // spinner, and never a self-link.
+  const hasDone = entries.some(e => e.kind === 'done')
+  useEffect(() => {
+    if (!hasDone || nextFetchedRef.current) return
+    nextFetchedRef.current = true
+    setNextLoading(true)
+    const info = getUserInfo()
+    const sid = info?.student_id ?? ''
+    const timeout = new Promise<never>((_, reject) => {
+      window.setTimeout(() => reject(new Error('shelf-timeout')), SHELF_TIMEOUT_MS)
+    })
+    Promise.race([
+      Promise.all([
+        fetchShelf([conceptId]),
+        // Progress is still needed here, for "Coming up": the successors this concept will
+        // unlock once it is mastered.
+        sid ? getProgress(sid).catch(() => ({} as Record<string, ConceptProgress>)) : Promise.resolve({} as Record<string, ConceptProgress>),
+      ]),
+      timeout,
+    ]).then(([next, progress]) => {
+      setShelfProgress(progress)
+      // The concept just finished is excluded server-side. It is unmastered by definition
+      // here, so without that it would head itself and the Continue link would point at the
+      // current page — a scroll-to-top dead end. That argument moved to the engine with the
+      // rest of the decision.
+      setNextShelf(next)
+    }).catch(() => {
+      nextFetchedRef.current = false
+    }).finally(() => setNextLoading(false))
+  }, [hasDone])
+
+  // Take the next question: buffer first, fetching when empty.
+  async function takeNext(diff: number): Promise<PracticeQuestion | null> {
+    if (buffer.length > 0) {
+      const [head, ...rest] = buffer
+      setBuffer(rest)
+      if (rest.length < 2) {
+        refill(diff, seenRef.current).then(fresh => {
+          seenRef.current = [...seenRef.current, ...fresh.map(q => q.question)].slice(-20)
+          setBuffer(prev => [...prev, ...fresh].slice(0, 6))
+        }).catch(() => {})
+      }
+      return head
+    }
+    try {
+      const fresh = await refill(diff, seenRef.current)
+      seenRef.current = [...seenRef.current, ...fresh.map(q => q.question)].slice(-20)
+      const [head, ...rest] = fresh
+      setBuffer(rest)
+      return head ?? null
+    } catch {
+      return null
+    }
+  }
+
+  function appendAfter(ms: number, fn: () => void) {
+    window.setTimeout(() => {
+      fn()
+      scrollToBottom()
+    }, ms)
+  }
+
+  async function startPracticing() {
+    const q = await takeNext(difficulty)
+    if (!q) {
+      setError('Could not load a question — check your connection and reload.')
+      return
+    }
+    const entry: QEntry = { key: nextKey(), kind: 'q', kpIndex, q, answer: '', checking: false, servedAt: Date.now(), feedback: null }
+    setEntries(prev => [...prev, entry])
+    scrollToBottom()
+  }
+
+  function setEntry(key: number, patch: Partial<QEntry>) {
+    setEntries(prev => prev.map(e => (e.key === key && e.kind === 'q' ? { ...e, ...patch } : e)))
+  }
+
+  /**
+   * Move to the next knowledge point, or finish the concept.
+   *
+   * Shared by the 2-in-a-row rule and by question exhaustion, because "this section is
+   * over" means the same thing whichever caused it.
+   */
+  async function advanceSection(from: QEntry, why: 'complete' | 'exhausted') {
+    const total = Math.max(kps.length, 1)
+    const note = why === 'exhausted'
+      ? 'This topic ran out of new questions, so the section ended here.'
+      : undefined
+    if (from.kpIndex + 1 >= total) {
+      setEntries(prev => [...prev, { key: nextKey(), kind: 'done', note }])
+      return
+    }
+    const ni = from.kpIndex + 1
+    setKpIndex(ni)
+    setConsecutive(0)
+    setMisses(0)
+    setDifficulty(0.4)
+    // Ask for the next section's question before announcing the section, so a concept with
+    // nothing left anywhere goes straight to the completion card instead of showing a
+    // heading and then nothing under it.
+    const nq = await takeNext(0.4)
+    setEntries(prev => [...prev, { key: nextKey(), kind: 'kpdiv', kpIndex: ni }])
+    if (nq) {
+      setEntries(prev => [
+        ...prev,
+        { key: nextKey(), kind: 'q', kpIndex: ni, q: nq, answer: '', checking: false, servedAt: Date.now(), feedback: null },
+      ])
+    } else {
+      setEntries(prev => [
+        ...prev,
+        {
+          key: nextKey(),
+          kind: 'done',
+          note: note ?? 'This topic ran out of new questions, so there was nothing left to work through.',
+        },
+      ])
+    }
+  }
+
+  /**
+   * Append the next question in this section, or move on if there isn't one.
+   *
+   * This is the fix for the dead end. `takeNext` returns null when the buffer is empty and
+   * the refill yields nothing, which used to hit `if (!nq) return` at three sites: no card,
+   * no message, no way forward, and the last verdict became the end of the page. A learner
+   * hit this on `geo.basic.points_lines`, a concept whose generator has exactly four
+   * distinct question texts, so it was guaranteed on the fourth answer rather than an edge
+   * case.
+   *
+   * The practice endpoint now falls back to repeats rather than returning an empty 200, so
+   * this is the second line of defence rather than the only one — but a client that can be
+   * stranded by a 200 with an empty array has no business relying on the server not to.
+   */
+  async function continueInSection(from: QEntry, diff: number) {
+    const nq = await takeNext(diff)
+    if (nq) {
+      setEntries(prev => [
+        ...prev,
+        { key: nextKey(), kind: 'q', kpIndex: from.kpIndex, q: nq, answer: '', checking: false, servedAt: Date.now(), feedback: null },
+      ])
+      return
+    }
+    await advanceSection(from, 'exhausted')
+  }
+
+  async function handleCheck(key: number) {
+    const entry = entries.find(e => e.key === key && e.kind === 'q') as QEntry | undefined
+    if (!entry || !entry.answer.trim() || entry.checking || entry.feedback) return
+    setEntry(key, { checking: true })
+    const elapsed = Math.max(0.5, (Date.now() - entry.servedAt) / 1000)
+    try {
+      const res = await submitStudyAnswer(conceptId, entry.answer.trim(), elapsed, entry.q.question)
+      if (res.ungraded) {
+        setEntry(key, { checking: false })
+        return
+      }
+      setAnsweredCount(n => n + 1)
+      if (res.correct) setCorrectCount(n => n + 1)
+      if (res.evidence_band) setBand(res.evidence_band)
+      if (res.correct) {
+        const next = consecutive + 1
+        const nextDiff = Math.min(1.0, difficulty + 0.15)
+        setConsecutive(next)
+        setMisses(0)
+        setDifficulty(nextDiff)
+        setEntry(key, {
+          checking: false,
+          feedback: {
+            correct: true,
+            text: res.explanation ?? entry.q.explanation,
+            diagnosis: res.diagnosis,
+            xp: res.xp ?? 0,
+          },
+        })
+        // 2-in-a-row, and nothing else. This used to read
+        //   `est.decision === 'advance' || next >= REQUIRED_IN_A_ROW`
+        // where `est` came from a second, client-side copy of the mastery evidence model.
+        // The first operand was dead: `decision === 'advance'` required the last two
+        // attempts correct, which is the same fact as `next >= REQUIRED_IN_A_ROW`, so it
+        // could never be the deciding half. Proven exhaustively in
+        // test/masteryAuthority.test.ts. The model is gone; this rule is the whole gate.
+        const advance = next >= REQUIRED_IN_A_ROW
+        appendAfter(350, async () => {
+          if (advance) {
+            await advanceSection(entry, 'complete')
+          } else {
+            await continueInSection(entry, nextDiff)
+          }
+        })
+      } else {
+        const m = misses + 1
+        const nextDiff = Math.max(0.3, difficulty - 0.15)
+        setConsecutive(0)
+        setMisses(m)
+        setDifficulty(nextDiff)
+        setEntry(key, {
+          checking: false,
+          feedback: {
+            correct: false,
+            text: res.explanation || entry.q.explanation,
+            diagnosis: res.diagnosis,
+            xp: 0,
+          },
+        })
+        appendAfter(350, async () => {
+          if (m >= 3) {
+            // Safety net only: note + easier question below, prereq links.
+            const nq = await takeNext(Math.max(0.3, nextDiff - 0.1))
+            if (nq) {
+              setEntries(prev => [
+                ...prev,
+                { key: nextKey(), kind: 'halt' },
+                { key: nextKey(), kind: 'q', kpIndex: entry.kpIndex, q: nq, answer: '', checking: false, servedAt: Date.now(), feedback: null } as QEntry,
+              ])
+            } else {
+              // The halt note still belongs even with no question to put under it, and the
+              // section still has to end somewhere the learner can move on from.
+              setEntries(prev => [...prev, { key: nextKey(), kind: 'halt' }])
+              await advanceSection(entry, 'exhausted')
+            }
+            setMisses(0)
+          } else {
+            await continueInSection(entry, nextDiff)
+          }
+        })
+      }
+    } catch (e) {
+      // The server is the only grader. This never decides whether the answer
+      // was right — a network fault or an expired server-side record is not a
+      // miss, and grading locally would have made it one.
+      //
+      // 409 means the server has no record of this question, so resubmitting
+      // it could never succeed: re-serve instead, which writes a fresh record
+      // and leaves the learner with a question they can actually answer. Any
+      // other failure keeps the question and the learner's answer so a retry
+      // can succeed. Nothing was recorded either way — no attempt, streak,
+      // weakness or XP moved.
+      if (getErrorStatus(e) === 409) {
+        const fresh = await refill(difficulty, seenRef.current)
+        if (fresh.length > 0) {
+          seenRef.current = [...seenRef.current, fresh[0].question].slice(-20)
+          setEntry(key, { checking: false, q: fresh[0], answer: '', servedAt: Date.now() })
+          setBuffer(prev => [...prev, ...fresh.slice(1)].slice(0, 6))
+          setError('That question had expired on the server, so it could not be graded. Here is a fresh one — nothing was recorded.')
+          return
+        }
+        setError('That question had expired and no replacement could be loaded. Reload to continue.')
+        setEntry(key, { checking: false })
+        return
+      }
+      setEntry(key, { checking: false })
+      setError('Could not reach the server to grade that answer. Check your connection and submit again — nothing was recorded.')
+    }
+  }
+
+  // Which sections have been attempted, meaning answered rather than served. A 'q' entry
+  // exists from the moment the question is put on screen, so keying on the entry alone would
+  // reveal the steps at the very moment the learner is about to try the question unaided.
+  // Derived from the feed, which is append-only, so no state to keep in sync.
+  const answeredSections = useMemo(() => {
+    const seen = new Set<number>()
+    for (const e of entries) if (e.kind === 'q' && e.feedback) seen.add(e.kpIndex)
+    return seen
+  }, [entries])
+
+  if (loading && entries.length === 0) {
+    return <div className="p-6 border border-orchid-border bg-orchid-surface"><p className="font-mono text-xs text-orchid-muted">Loading lesson…</p></div>
+  }
+
+  // A locked topic is never started. The server refused the questions, so the page offers the
+  // first prerequisite it will serve as a warm-up, one tap away, and keeps the full prerequisite
+  // list behind a disclosure for a learner who wants the reason. With no warm-up found, the list
+  // is the page.
+  if (ineligible && entries.length === 0) {
+    const title = concepts.find(c => c.id === conceptId)?.label ?? conceptId
+    const panel = (
+      <PrerequisitePanel
+        topicTitle={title}
+        prerequisites={ineligible.prerequisites ?? []}
+        returnStack={prereqStack}
+      />
+    )
+    return (
+      <div className="max-w-2xl mx-auto">
+        {warmUp ? (
+          <>
+            <section aria-label="Warm up first" className="border-2 border-orchid-blue bg-orchid-surface p-5 min-w-0">
+              <h2 className="font-serif text-xl text-orchid-primary">Warm up first</h2>
+              <p className="mt-2 text-sm text-orchid-secondary break-words [overflow-wrap:anywhere]">
+                {title} builds on {warmUp.title}. Practise that first, and {title} opens up once you have it.
+              </p>
+              <Link
+                href={withReturnStack(learnConceptPath(warmUp.conceptId), prereqStack)}
+                className="mt-4 flex items-center justify-between gap-3 bg-orchid-blue px-5 py-4 min-h-[56px] text-white hover:bg-orchid-blue-hover min-w-0"
+              >
+                <span className="min-w-0 font-mono text-[13px] break-words [overflow-wrap:anywhere]">Start warm-up: {warmUp.title}</span>
+                <span aria-hidden="true" className="shrink-0">→</span>
+              </Link>
+            </section>
+            <details className="mt-3">
+              <summary className="cursor-pointer font-mono text-[12px] text-orchid-muted hover:text-orchid-blue">Why is {title} locked?</summary>
+              {panel}
+            </details>
+          </>
+        ) : panel}
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link href="/levels" className="border border-orchid-border px-4 py-2 font-mono text-[12px] text-orchid-secondary hover:border-orchid-blue hover:text-orchid-blue">
+            ← Choose another topic
+          </Link>
+          <Link href="/learn" className="border border-orchid-border px-4 py-2 font-mono text-[12px] text-orchid-secondary hover:border-orchid-blue hover:text-orchid-blue">
+            Back to practice
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
+  // The server's authoritative prerequisite list, with a fallback to the older `missing`/`weak`
+  // buckets for a payload that predates `prerequisites`. Every entry is openable: a prerequisite's
+  // mastery never gates access to its reference material (ADR-054). Review routing for a mastered
+  // concept happens on the study page's Practise control, not by withholding a link here.
+  const prerequisites: EligibilityPrereq[] = (() => {
+    if (!readiness) return []
+    if (readiness.prerequisites && readiness.prerequisites.length > 0) return readiness.prerequisites
+    return [...(readiness.missing ?? []), ...(readiness.weak ?? [])].map(p => ({
+      conceptId: p.id,
+      title: p.label,
+      state: prereqStateFromStatus(p.status),
+      met: countsAsMastered({ status: p.status }),
+    }))
+  })()
+  const unmetPrereqs = prerequisites.filter(p => !p.met)
+  const dueReviewPrereqs = prerequisites.filter(p => p.met && p.state === 'due_for_review')
+  const prereqIntro = (() => {
+    const names = (unmetPrereqs.length > 0 ? unmetPrereqs : dueReviewPrereqs)
+      .slice(0, 3).map(p => p.title).join(', ')
+    if (unmetPrereqs.length === 0 && dueReviewPrereqs.length > 0) {
+      return `You have already learned ${names} — a short check is due, or continue anyway.`
+    }
+    if (unmetPrereqs.length === 0) {
+      return 'You have already learned what this builds on. You can revisit it any time.'
+    }
+    return `This builds on ${names}. A quick study helps — or continue anyway.`
+  })()
+  const totalAnswered = answeredCount
+  const totalCorrect = correctCount
+  const totalXP = entries.reduce((s, e) => s + (e.kind === 'q' && e.feedback?.correct ? e.feedback.xp : 0), 0)
+
+  return (
+    <div className="max-w-2xl mx-auto">
+      <div className="sticky top-0 z-10 bg-orchid-bg backdrop-blur py-2 mb-4 flex items-center gap-2 font-mono text-[12px] text-orchid-muted border-b border-orchid-border">
+        <span>Section {Math.min(kpIndex + 1, Math.max(kps.length, 1))} of {Math.max(kps.length, 1)}</span>
+        {totalAnswered > 0 && <span>· {totalCorrect}/{totalAnswered} correct</span>}
+        {totalXP > 0 && <span className="text-yellow-400">· +{totalXP} XP</span>}
+        {band && (
+          <span title="How you're doing on this concept, from your recent answers. Progress only — mastery is decided separately.">
+            · {band}
+          </span>
+        )}
+      </div>
+
+      {prerequisites.length > 0 && !bannerDismissed && (
+        <PrerequisitePanel
+          prerequisites={prerequisites}
+          returnStack={prereqStack}
+          heading={`Prerequisites (${prerequisites.length})`}
+          intro={prereqIntro}
+          onDismiss={() => setBannerDismissed(true)}
+        />
+      )}
+
+      {error && <p className="mb-4 font-mono text-xs text-red-400">{error}</p>}
+
+      {/* The reference layer, in the flow.
+          This replaces the "Reference" link the done card used to carry to `/study`: the same
+          material, reachable without leaving the questions, and impossible to wander off in —
+          there is nothing in it that navigates. Collapsed by default, so it never stands between
+          a learner and the first question; the worked example above it is the intended first
+          read. It renders no mastery state and awards nothing, which is the point: reading
+          explains, and only an answer moves the concept. */}
+      <ConceptReference conceptId={conceptId} />
+
+      <div className="space-y-4">
+        {entries.map(e => {
+          if (e.kind === 'intro') {
+            const ikp = kps[e.kpIndex]
+            // No written explanation: the step's name, its figures and the button, nothing else.
+            const noExample = !ikp?.worked_example || isPlaceholderSlice(ikp.worked_example)
+            return (
+              <div key={e.key} className="border border-orchid-border bg-orchid-surface p-6">
+                <p className="font-mono text-[12px] uppercase tracking-wider text-orchid-muted">{ikp?.label || 'Learn'}</p>
+                {!noExample && <KatexContent className="mt-3 text-sm text-orchid-primary whitespace-pre-wrap">{ikp.worked_example}</KatexContent>}
+                {/* Figures for this knowledge point, plus the concept's own diagram. The
+                    worked example is text lifted out of the lesson body, so its figures do
+                    not come with it; selecting them per knowledge point is what keeps the
+                    shorter surface shorter without discarding instruction. */}
+                <LessonAssets assets={ikp?.assets} />
+                {diagram && (
+                  <figure className="mt-4">
+                    <LessonDiagram src={diagram} alt={`Diagram for ${ikp?.label || 'this topic'}`} />
+                  </figure>
+                )}
+                {/* Steps appear once this section has been attempted. Listed before the
+                    question they are a syllabus the learner has not chosen yet, and the
+                    effect was to read the steps and skip the work they were meant to
+                    support. Derived from the feed, which is append-only, so no state to keep
+                    in sync and no way for the two to disagree. */}
+                {ikp?.subgoals && ikp.subgoals.length > 0 && answeredSections.has(e.kpIndex) && (
+                  <details className="mt-3">
+                    <summary className="font-mono text-[12px] text-orchid-muted cursor-pointer hover:text-orchid-blue">Steps ({ikp.subgoals.length})</summary>
+                    <ol className="mt-2 space-y-1.5">
+                      {ikp.subgoals.map((s, i) => <li key={i} className="font-mono text-xs text-orchid-secondary">Step {i + 1}: <KatexContent>{s}</KatexContent></li>)}
+                    </ol>
+                  </details>
+                )}
+                {/* Progression, not a waiver: the feed is append-only, so the
+                    example stays on screen as scrollback — nothing is skipped.
+                    Matches the kpdiv "Next: … (worked example)" label below, and
+                    MA has no skip affordance at all: the worked example is the
+                    scaffolding for the question that follows (example-problem
+                    pair), so the label must not invite bypassing it. */}
+                <button type="button" onClick={startPracticing} className="mt-5 border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-6 py-2.5 font-mono text-xs min-h-[44px]">{noExample ? 'Start →' : 'Next →'}</button>
+              </div>
+            )
+          }
+          if (e.kind === 'kpdiv') {
+            const ikp = kps[e.kpIndex]
+            return (
+              <div key={e.key} className="border-t-2 border-orchid-blue pt-4">
+                <details>
+                  <summary className="font-mono text-[12px] uppercase tracking-wider text-orchid-blue cursor-pointer">Next: {ikp?.label || `Knowledge point ${e.kpIndex + 1}`} (worked example)</summary>
+                  <KatexContent className="mt-2 text-sm text-orchid-primary whitespace-pre-wrap">{ikp?.worked_example || ''}</KatexContent>
+                  <LessonAssets assets={ikp?.assets} />
+                </details>
+              </div>
+            )
+          }
+          if (e.kind === 'halt') {
+            return (
+              <div key={e.key} className="border border-orchid-red-faint bg-orchid-surface p-5">
+                <p className="font-mono text-xs text-red-400">Stepping down a level — easier question below.</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {/* A prerequisite is reference here too: study the material rather than being
+                      sent to a tutorial under the name of a check. Practising it is a separate,
+                      eligibility-gated step on that concept's own page. */}
+                  {prerequisites.slice(0, 2).map(p => (
+                    <Link key={p.conceptId} href={withReturnStack(studyConceptPath(p.conceptId), prereqStack)} className="border border-orchid-border px-4 py-2 font-mono text-[12px] text-orchid-secondary hover:border-orchid-blue hover:text-orchid-blue inline-flex items-center">Study {p.title}</Link>
+                  ))}
+                  <Link href="/profile" className="border border-orchid-border px-4 py-2 font-mono text-[12px] text-orchid-secondary hover:border-orchid-blue hover:text-orchid-blue inline-flex items-center">Other task →</Link>
+                </div>
+              </div>
+            )
+          }
+          if (e.kind === 'done') {
+            const headId = nextShelf ? hrefConceptId(nextShelf.next.href) : null
+            // Only a real concept change may render a navigating <Link>: the
+            // stepper keys everything off conceptId, so a same-concept href
+            // (however many query params it carries) would scroll to top and
+            // strand the learner.
+            const canContinue = !nextLoading && nextShelf && headId !== null && headId !== conceptId
+            const upcoming: LockedSuccessor[] = upcomingLocked(catalogEntries(), shelfProgress, conceptId)
+            return (
+              <div key={e.key} className="border border-orchid-green-faint bg-orchid-surface p-6">
+                <p className="font-mono text-xs text-green-400">✓ Complete — {totalCorrect}/{totalAnswered} correct · +{totalXP} XP · {band}</p>
+                {e.note && <p role="status" className="mt-2 font-mono text-[12px] text-orchid-secondary">{e.note}</p>}
+                <p className="mt-2 font-mono text-[12px] text-orchid-secondary">Scroll up to review anything. Reviews are scheduled automatically.</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {back && <Link href={back.href} className="border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-5 py-2 font-mono text-xs inline-flex items-center min-h-[40px]">← Back to {returnToLabel}</Link>}
+                  {nextLoading && <span className="font-mono text-xs text-orchid-muted inline-flex items-center min-h-[40px]">Finding what&apos;s next…</span>}
+                  {canContinue && nextShelf && (
+                    <Link href={nextShelf.next.href} className="border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-5 py-2 font-mono text-xs inline-flex items-center min-h-[40px]">{nextShelf.next.badge}: {nextShelf.next.title} →</Link>
+                  )}
+                  {!nextLoading && !nextShelf && (
+                    <Link href="/profile" className="border border-orchid-border px-5 py-2 font-mono text-xs text-orchid-secondary hover:border-orchid-blue hover:text-orchid-blue inline-flex items-center min-h-[40px]">Back to Profile</Link>
+                  )}
+                  <button type="button" onClick={practiceAgain} className="border border-orchid-border px-5 py-2 font-mono text-xs text-orchid-secondary hover:border-orchid-blue hover:text-orchid-blue inline-flex items-center min-h-[40px]">Practice again</button>
+                </div>
+                {!nextLoading && nextShelf && nextShelf.alternatives.length > 0 && (
+                  <details className="mt-3 border border-orchid-border">
+                    <summary className="font-mono text-[12px] text-orchid-secondary cursor-pointer px-4 py-2.5">
+                      Or pick something else ({nextShelf.alternatives.length})
+                    </summary>
+                    <div className="px-4 pb-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {nextShelf.alternatives.map((it, i) => (
+                        <Link
+                          key={`${it.kind}:${it.href}:${i}`}
+                          href={it.href}
+                          className="border border-orchid-border p-3 hover:border-orchid-blue transition-colors block min-w-0"
+                        >
+                          <div className="font-mono text-xs text-orchid-primary truncate">{it.title}</div>
+                          <div className="mt-1 font-mono text-[12px] text-orchid-blue">{it.cta}</div>
+                        </Link>
+                      ))}
+                    </div>
+                  </details>
+                )}
+                {upcoming.length > 0 && (
+                  <div className="mt-3 border border-orchid-border">
+                    <p className="font-mono text-[12px] text-orchid-secondary px-4 py-2.5">
+                      Coming up — unlocks once this concept is mastered
+                    </p>
+                    <div className="px-4 pb-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {upcoming.map(u => (
+                        <Link
+                          key={u.id}
+                          href={`/learn?concept=${encodeURIComponent(u.id)}`}
+                          className="border border-orchid-border p-3 hover:border-orchid-blue transition-colors block min-w-0"
+                        >
+                          <div className="font-mono text-xs text-orchid-primary truncate">{u.label}</div>
+                          <div className="mt-1 font-mono text-[12px] text-orchid-muted">Needs: {u.missing.join(', ')}</div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )
+          }
+          const qe = e as QEntry
+          const locked = qe.feedback !== null
+          return (
+            <div key={qe.key} className={`border bg-orchid-surface p-6 ${qe.feedback?.correct ? 'border-orchid-green-faint' : qe.feedback ? 'border-orchid-red-faint' : 'border-orchid-border'}`}>
+              <KatexContent className="text-sm text-orchid-primary font-mono whitespace-pre-wrap">{qe.q.question}</KatexContent>
+              <ChoiceOptions question={qe.q.question} value={qe.answer} onPick={v => setEntry(qe.key, { answer: v })} disabled={locked || qe.checking} />
+              {!locked && (
+                <form onSubmit={ev => { ev.preventDefault(); handleCheck(qe.key) }} className="mt-3 flex flex-col sm:flex-row gap-2">
+                  <label htmlFor={`learn-answer-${qe.key}`} className="sr-only">Your answer</label>
+                  <MathAnswerInput
+                    id={`learn-answer-${qe.key}`}
+                    value={qe.answer}
+                    onChange={v => setEntry(qe.key, { answer: v })}
+                    onSubmit={() => handleCheck(qe.key)}
+                    gradingType={conceptGradingType}
+                    conceptId={conceptId}
+                    disabled={qe.checking}
+                    status={qe.feedback ? (qe.feedback.correct ? 'correct' : 'incorrect') : 'default'}
+                    inputMode={format.inputMode}
+                  placeholder="Your answer"
+                    className="sm:flex-1"
+                  />
+                  <button type="submit" disabled={qe.checking || !qe.answer.trim()} className="border border-orchid-blue text-orchid-blue hover:bg-orchid-blue-faint px-6 h-12 text-sm font-mono disabled:opacity-50 w-auto self-end sm:self-auto shrink-0">Check</button>
+                </form>
+              )}
+              {!locked && <p className="mt-2 font-mono text-[12px] text-orchid-muted">{format.hint}</p>}
+              {locked && qe.feedback && (
+                <div className="mt-3">
+                  <p className={`font-mono text-xs ${qe.feedback.correct ? 'text-green-400' : 'text-red-400'}`}>
+                    {qe.feedback.correct ? `✓ ${qe.feedback.xp ? `+${qe.feedback.xp} XP` : 'Correct'}` : '✗ Not quite.'}{' '}
+                    <span className="text-orchid-muted">you answered “{qe.answer}”</span>
+                  </p>
+                  <p className="mt-1.5 font-mono text-xs text-orchid-primary">
+                    Answer: <KatexContent>{qe.q.answer}</KatexContent>
+                  </p>
+                  {/* The explanation is the solution for *this* instance, shown
+                      on both verdicts: a correct answer still needs the
+                      reasoning that made it right. Guarded on a non-empty
+                      string so a server that returns nothing leaves no empty
+                      section behind. */}
+                  {/* The mistake, when it can be named with certainty. It is
+                      a description of what happened, never a hint about what
+                      to do, and it is empty far more often than not. */}
+                  {qe.feedback.diagnosis && (
+                    <p data-diagnosis className="mt-2 font-mono text-[12px] text-orchid-muted">{qe.feedback.diagnosis}</p>
+                  )}
+                  {qe.feedback.text && (
+                    <div className="mt-1.5">
+                      <p className="font-mono text-[12px] uppercase tracking-wider text-orchid-muted">
+                        {qe.feedback.correct ? 'Why' : 'How'}
+                      </p>
+                      <KatexContent className="mt-1 text-xs font-mono text-orchid-secondary whitespace-pre-wrap">{qe.feedback.text}</KatexContent>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          )
+        })}
+        <div ref={bottomRef} aria-hidden="true" />
+      </div>
+    </div>
+  )
+}

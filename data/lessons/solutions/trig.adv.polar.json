@@ -1,0 +1,15 @@
+{
+  "concept": "trig.adv.polar",
+  "setup": "A point has polar coordinates with radius [[r]] and angle [[theta]] degrees, and you are asked for its horizontal Cartesian coordinate.",
+  "steps": [
+    {
+      "fact": "cos_num",
+      "say": "The horizontal coordinate is the radius times the cosine of the angle, and the cosine of [[theta]] degrees is the exact fraction $[[cos_num]]/[[cos_den]]$."
+    },
+    {
+      "fact": "r",
+      "say": "Multiplying the radius [[r]] by that fraction gives $[[r]] \\times [[cos_num]]/[[cos_den]] = [[answer]]$, which is exact because the denominator divides the product."
+    }
+  ],
+  "answer": "So the horizontal coordinate is [[answer]]."
+}

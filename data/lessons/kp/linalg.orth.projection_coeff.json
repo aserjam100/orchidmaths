@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Projecting a vector",
+    "section": "Projecting a vector",
+    "subgoals": [
+      "Describe the split",
+      "Recognise the projection as a multiple",
+      "Name the orthogonal part"
+    ]
+  },
+  {
+    "label": "The formula",
+    "section": "The formula",
+    "subgoals": [
+      "Write the coefficient",
+      "Explain the denominator",
+      "Work with a non-unit direction"
+    ]
+  },
+  {
+    "label": "What the coefficient means",
+    "section": "What the coefficient means",
+    "subgoals": [
+      "Read it as a length in units of the direction",
+      "Distinguish it from the length",
+      "Choose a unit direction"
+    ]
+  }
+]

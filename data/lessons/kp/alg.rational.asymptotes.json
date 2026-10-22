@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Vertical asymptotes",
+    "section": "Vertical asymptotes",
+    "subgoals": [
+      "Factor the denominator",
+      "Find its zeros",
+      "Discard any zero that cancels with the numerator"
+    ]
+  },
+  {
+    "label": "Horizontal asymptotes",
+    "section": "Horizontal asymptotes",
+    "subgoals": [
+      "Compare the two degrees",
+      "For equal degrees take the ratio of leading coefficients",
+      "For a larger denominator the axis is the asymptote"
+    ]
+  },
+  {
+    "label": "Sketching the graph",
+    "section": "Sketching the graph",
+    "subgoals": [
+      "Draw the asymptotes as guides",
+      "Place points and intercepts in each region",
+      "Follow the sign near each vertical asymptote"
+    ]
+  }
+]

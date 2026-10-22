@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why the pairs appear",
+    "section": "Why the pairs appear",
+    "subgoals": [
+      "State the conjugate-root theorem",
+      "Explain why conjugation preserves it",
+      "Say why the coefficients must be real"
+    ]
+  },
+  {
+    "label": "Building the quadratic factor",
+    "section": "Building the quadratic factor",
+    "subgoals": [
+      "Multiply the conjugate pair",
+      "Recover the coefficient of x",
+      "Recognise an irreducible factor"
+    ]
+  },
+  {
+    "label": "What it implies for odd degrees",
+    "section": "What it implies for odd degrees",
+    "subgoals": [
+      "Guarantee a real root",
+      "See why even degrees have no guarantee",
+      "Give an example with no real root"
+    ]
+  }
+]

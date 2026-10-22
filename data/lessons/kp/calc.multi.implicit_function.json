@@ -1,0 +1,29 @@
+[
+  {
+    "label": "When the equation gives a function",
+    "section": "When the equation gives a function",
+    "subgoals": [
+      "Look at a contour of the equation",
+      "Require a nonzero partial in the dependent variable",
+      "Get a local single-valued branch"
+    ]
+  },
+  {
+    "label": "The derivative formula",
+    "section": "The derivative formula",
+    "subgoals": [
+      "Differentiate the equation as an identity",
+      "Solve for the slope",
+      "Take the ratio of the two partials with a minus sign"
+    ]
+  },
+  {
+    "label": "Consequences and uses",
+    "section": "Consequences and uses",
+    "subgoals": [
+      "Describe level sets as graphs",
+      "Support the tangent plane and the inverse theorem",
+      "Keep the conclusion local"
+    ]
+  }
+]

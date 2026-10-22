@@ -1,0 +1,15 @@
+{
+  "concept": "frac.equivalent.scale",
+  "setup": "You are writing a fraction with a chosen denominator and want the numerator it needs.",
+  "steps": [
+    {
+      "fact": "factor",
+      "say": "The denominator was multiplied by \\([[factor]]\\), and the numerator must be multiplied by the same number or the value changes."
+    },
+    {
+      "fact": "numerator",
+      "say": "That gives a numerator of \\([[numerator]]\\). Multiplying the top and bottom by the same factor is exactly what makes an equivalent fraction rather than a different one."
+    }
+  ],
+  "answer": "So the numerator is \\([[numerator]]\\)."
+}

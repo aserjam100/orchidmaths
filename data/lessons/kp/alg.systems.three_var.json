@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Elimination in three variables",
+    "section": "Elimination in three variables",
+    "subgoals": [
+      "Choose a variable to eliminate",
+      "Combine two pairs to remove it",
+      "Solve the two-by-two system that remains"
+    ]
+  },
+  {
+    "label": "Back-substitution",
+    "section": "Back-substitution",
+    "subgoals": [
+      "Substitute the first value into the smaller system",
+      "Find the second unknown",
+      "Use an original equation for the third"
+    ]
+  },
+  {
+    "label": "What the solution means",
+    "section": "What the solution means",
+    "subgoals": [
+      "Read a solution as a common point of three planes",
+      "Match one solution to a single intersection",
+      "Match no solution to planes that miss"
+    ]
+  }
+]

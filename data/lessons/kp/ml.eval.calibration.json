@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one ECE computation",
+    "section": "Worked: one ECE computation",
+    "subgoals": [
+      "Weight each bin by its share",
+      "Multiply share by the gap",
+      "Sum into expected calibration error"
+    ]
+  },
+  {
+    "label": "Worked: overconfident by twenty points",
+    "section": "Worked: overconfident by twenty points",
+    "subgoals": [
+      "Subtract accuracy from confidence",
+      "Convert the gap into ECE",
+      "Close it with temperature scaling"
+    ]
+  },
+  {
+    "label": "When calibration misleads",
+    "section": "When calibration misleads",
+    "subgoals": [
+      "Calibrate a useless base-rate model",
+      "Separate trust from discrimination",
+      "Report ECE beside accuracy and AUC"
+    ]
+  }
+]

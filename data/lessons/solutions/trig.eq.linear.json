@@ -1,0 +1,15 @@
+{
+  "concept": "trig.eq.linear",
+  "setup": "You are asked for the smallest nonnegative solution in degrees of $[[a]]\\sin x = [[b]]$.",
+  "steps": [
+    {
+      "fact": "ratio",
+      "say": "Dividing both sides by [[a]] isolates the sine, giving $\\sin x = [[ratio]]$, so the equation is now a statement about one trigonometric value."
+    },
+    {
+      "fact": "answer",
+      "say": "The reference angle with that sine is read from the unit circle, and the sign places it in the correct quadrant. The smallest nonnegative angle with the required sine is [[answer]] degrees."
+    }
+  ],
+  "answer": "So the smallest nonnegative solution is [[answer]] degrees."
+}

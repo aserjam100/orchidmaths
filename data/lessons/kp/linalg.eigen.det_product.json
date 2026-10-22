@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The determinant",
+    "section": "The determinant",
+    "subgoals": [
+      "Define the determinant",
+      "Read it off a triangular matrix",
+      "State it as a product of eigenvalues"
+    ]
+  },
+  {
+    "label": "Why it is the product",
+    "section": "Why it is the product",
+    "subgoals": [
+      "Use the constant term",
+      "Connect it to the roots",
+      "Check the triangular case"
+    ]
+  },
+  {
+    "label": "Both invariants together",
+    "section": "Both invariants together",
+    "subgoals": [
+      "Use the sum and the product",
+      "Recover an eigenvalue",
+      "Interpret a zero determinant"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Measuring spread on a set",
+    "section": "Measuring spread on a set",
+    "subgoals": [
+      "Take the supremum over the set",
+      "Subtract the infimum",
+      "Read the spread as one number"
+    ]
+  },
+  {
+    "label": "Continuity through oscillation",
+    "section": "Continuity through oscillation",
+    "subgoals": [
+      "Shrink the neighbourhood to the point",
+      "Send the oscillation to zero",
+      "Turn discontinuity into positive oscillation"
+    ]
+  },
+  {
+    "label": "The oscillating example",
+    "section": "The oscillating example",
+    "subgoals": [
+      "Look at sine of one over the input",
+      "Find spread two on every small interval",
+      "Contrast with the monotone case"
+    ]
+  }
+]

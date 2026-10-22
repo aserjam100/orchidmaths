@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one property can fail",
+    "section": "Worked: one property can fail",
+    "subgoals": [
+      "Verify both loops for reflexivity",
+      "Spot the missing (2,1) breaking symmetry",
+      "Reject the equivalence claim on one failure"
+    ]
+  },
+  {
+    "label": "Worked: congruence mod 3",
+    "section": "Worked: congruence mod 3",
+    "subgoals": [
+      "Check a - a = 0 for reflexivity",
+      "Negate the multiple for symmetry",
+      "Add multiples for transitivity"
+    ]
+  },
+  {
+    "label": "Counting partitions with Bell numbers",
+    "section": "Counting partitions with Bell numbers",
+    "subgoals": [
+      "Group mutually related elements into blocks",
+      "List all 5 partitions of a 3-element set",
+      "Read the count as Bell number B_3 = 5"
+    ]
+  }
+]

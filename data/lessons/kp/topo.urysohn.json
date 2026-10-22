@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: separating two points on the line",
+    "section": "Worked: separating two points on the line",
+    "subgoals": [
+      "Set f(x) = x between the points",
+      "Extend constantly outside",
+      "Check continuity at the joints"
+    ]
+  },
+  {
+    "label": "Worked: the metric formula",
+    "section": "Worked: the metric formula",
+    "subgoals": [
+      "Form the distance ratio",
+      "Evaluate it on A and on B",
+      "Conclude continuity on all of X"
+    ]
+  },
+  {
+    "label": "When separation fails",
+    "section": "When separation fails",
+    "subgoals": [
+      "Locate the missing disjoint neighbourhoods",
+      "See there is no room for transition values",
+      "Conclude normality is sharp"
+    ]
+  }
+]

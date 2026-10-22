@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Repeatedly adding the identity",
+    "section": "Repeatedly adding the identity",
+    "subgoals": [
+      "Sum copies of 1",
+      "Detect the least zero sum",
+      "Split a composite into smaller factors"
+    ]
+  },
+  {
+    "label": "Prime fields and their characteristic",
+    "section": "Prime fields and their characteristic",
+    "subgoals": [
+      "Embed Z_p by sending k to k times 1",
+      "Embed Q when no sum vanishes",
+      "Conclude the characteristic is 0 or prime"
+    ]
+  },
+  {
+    "label": "Worked: F_9 has characteristic 3, not 9",
+    "section": "Worked: F_9 has characteristic 3, not 9",
+    "subgoals": [
+      "Locate F_3 inside F_9",
+      "Check 1 + 1 + 1 = 0",
+      "Separate order from characteristic"
+    ]
+  }
+]

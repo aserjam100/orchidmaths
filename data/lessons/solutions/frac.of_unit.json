@@ -1,0 +1,15 @@
+{
+  "concept": "frac.of_unit",
+  "setup": "You are writing a number of parts of a unit as a fraction of the whole unit.",
+  "steps": [
+    {
+      "fact": "total",
+      "say": "The unit has \\([[total]]\\) parts in all, so the fraction is the parts taken over that total."
+    },
+    {
+      "fact": "out_num",
+      "say": "Reducing gives \\(\\frac{[[out_num]]}{[[out_den]]}\\). Reducing matters for units whose part count is not a power of ten, such as an hour or a day."
+    }
+  ],
+  "answer": "So the fraction of the unit is \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

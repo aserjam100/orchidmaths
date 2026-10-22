@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: riding the transport equation",
+    "section": "Worked: riding the transport equation",
+    "subgoals": [
+      "Write dx/dt = 2 for the characteristics",
+      "Hold u constant along x - 2t",
+      "Evaluate u(5, 1) from the shifted data"
+    ]
+  },
+  {
+    "label": "Worked: reading char ODEs",
+    "section": "Worked: reading char ODEs",
+    "subgoals": [
+      "Form dx/a = dy/b for the curves",
+      "Write u = f(x - 3y) from constancy",
+      "Verify by differentiating back"
+    ]
+  },
+  {
+    "label": "When characteristics cross",
+    "section": "When characteristics cross",
+    "subgoals": [
+      "Explain the multi-valued shock mechanism",
+      "Identify quasi-linear feedback as the cause",
+      "Contrast with linear transport"
+    ]
+  }
+]

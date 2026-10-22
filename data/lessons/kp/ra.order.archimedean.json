@@ -1,0 +1,29 @@
+[
+  {
+    "label": "No infinitely small positives",
+    "section": "No infinitely small positives",
+    "subgoals": [
+      "Choose a real bound",
+      "Find an integer larger than it",
+      "Rewrite as a bound on a reciprocal"
+    ]
+  },
+  {
+    "label": "Worked: finding N",
+    "section": "Worked: finding N",
+    "subgoals": [
+      "Invert the inequality",
+      "Compute the reciprocal of epsilon",
+      "Round up to the next integer"
+    ]
+  },
+  {
+    "label": "Consequences",
+    "section": "Consequences",
+    "subgoals": [
+      "Show the reciprocal sequence goes to zero",
+      "Use the grid to approximate a real",
+      "See where an infinitesimal would be needed"
+    ]
+  }
+]

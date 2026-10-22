@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Statement",
+    "section": "",
+    "subgoals": [
+      "Check continuity plus closed bounded [a,b]",
+      "Conclude max and min attained",
+      "Test x^3-3x on [-2,2]"
+    ]
+  },
+  {
+    "label": "Why closed and bounded matters",
+    "section": "",
+    "subgoals": [
+      "Drop closed: (0,1] counterexample",
+      "Drop bounded: [0,inf) counterexample",
+      "Drop continuity: step-function counterexample"
+    ]
+  },
+  {
+    "label": "The range of a continuous function",
+    "section": "",
+    "subgoals": [
+      "Image f([a,b]) is compact interval",
+      "Read off [m,M] as the range",
+      "Confirm sin on [0,2 pi] spans [-1,1]"
+    ]
+  }
+]

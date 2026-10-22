@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Expanding the log transform",
+    "section": "Expanding the log transform",
+    "subgoals": [
+      "Expand the log transform near zero",
+      "Keep the quadratic term",
+      "Discard the higher-order remainder"
+    ]
+  },
+  {
+    "label": "Multiplying and taking the limit",
+    "section": "Multiplying and taking the limit",
+    "subgoals": [
+      "Multiply the transforms of the summands",
+      "Sum their logarithms",
+      "Exponentiate the limit"
+    ]
+  },
+  {
+    "label": "Identifying the limit law",
+    "section": "Identifying the limit law",
+    "subgoals": [
+      "Recognise the limit transform",
+      "Apply the continuity theorem",
+      "Conclude weak convergence to the normal"
+    ]
+  }
+]

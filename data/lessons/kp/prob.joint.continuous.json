@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Density over a region",
+    "section": "Density over a region",
+    "subgoals": [
+      "Integrate the density over the region",
+      "Check that the total integral is one",
+      "Treat probabilities as areas"
+    ]
+  },
+  {
+    "label": "Worked: the uniform rectangle",
+    "section": "Worked: the uniform rectangle",
+    "subgoals": [
+      "Compute the area of the sub-rectangle",
+      "Divide by the area of the whole",
+      "Report the probability"
+    ]
+  },
+  {
+    "label": "Independence and the product",
+    "section": "Independence and the product",
+    "subgoals": [
+      "Multiply the two marginal densities",
+      "Test the factorisation",
+      "See a non-separating density as a sign of dependence"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Reading the notation",
+    "section": "Reading the notation",
+    "subgoals": [
+      "Identify the index and its limits",
+      "Substitute each integer in turn",
+      "Add the resulting terms"
+    ]
+  },
+  {
+    "label": "Sums of simple terms",
+    "section": "Sums of simple terms",
+    "subgoals": [
+      "Use the triangular sum for the integers",
+      "Multiply a constant by the number of terms",
+      "Split a linear term into two known sums"
+    ]
+  },
+  {
+    "label": "Changing the index",
+    "section": "Changing the index",
+    "subgoals": [
+      "Shift the start and adjust the term",
+      "Pull constant factors outside the sigma",
+      "Split a sum into simpler pieces"
+    ]
+  }
+]

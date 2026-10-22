@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Reading the double-angle formula backwards",
+    "section": "Halving an angle",
+    "subgoals": [
+      "See the half-angle formulas as the double-angle formula solved",
+      "Name an angle with no exact value of its own",
+      "Reach it from an angle that does have one"
+    ]
+  },
+  {
+    "label": "The root and its sign",
+    "section": "The two formulas and their roots",
+    "subgoals": [
+      "Write both half-angle formulas",
+      "Choose the root from the quadrant the half angle lies in",
+      "Halve a first-quadrant angle without leaving the quadrant"
+    ]
+  },
+  {
+    "label": "A triple makes the root exact",
+    "section": "When the root comes out exact",
+    "subgoals": [
+      "Take the cosine from a right triangle",
+      "See the radicand become a perfect square over a perfect square",
+      "Read both answers out of the triple"
+    ]
+  }
+]

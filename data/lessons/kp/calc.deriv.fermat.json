@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Link interior extrema to flat tangents",
+      "Solve f'(x) = 0 for stationary candidates",
+      "Preview x^2 minimum at x = 0"
+    ]
+  },
+  {
+    "label": "Statement",
+    "section": "",
+    "subgoals": [
+      "Require c interior with local max or min",
+      "Conclude f'(c) = 0 at the extremum",
+      "Test x^3 at 0 as non-extremum counterpoint"
+    ]
+  },
+  {
+    "label": "Proof",
+    "section": "",
+    "subgoals": [
+      "Squeeze both one-sided quotients toward 0",
+      "Force left >= 0 and right <= 0 at a max",
+      "Pin f'(c) = 0 between the sides"
+    ]
+  }
+]

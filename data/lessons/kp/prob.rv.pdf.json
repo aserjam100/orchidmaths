@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Probability as area",
+    "section": "Probability as area",
+    "subgoals": [
+      "Read probability as an integral",
+      "Notice a density may exceed one",
+      "Keep the units straight"
+    ]
+  },
+  {
+    "label": "Worked: integrating a density",
+    "section": "Worked: integrating a density",
+    "subgoals": [
+      "Integrate the density to a",
+      "Evaluate at a named point",
+      "Check the total integral is one"
+    ]
+  },
+  {
+    "label": "Points have probability zero",
+    "section": "Points have probability zero",
+    "subgoals": [
+      "Integrate over a single point",
+      "Conclude every point has probability zero",
+      "See a density can be changed at points"
+    ]
+  }
+]

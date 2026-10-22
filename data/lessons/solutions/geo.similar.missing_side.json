@@ -1,0 +1,15 @@
+{
+  "concept": "geo.similar.missing_side",
+  "setup": "Two similar triangles have corresponding sides in the ratio \\([[factor]]\\) to 1, and a side of the smaller one is \\([[given]]\\).",
+  "steps": [
+    {
+      "fact": "factor",
+      "say": "Write the corresponding sides as a proportion with the known ratio \\([[factor]]\\) on one side; the unknown then sits alone in the other fraction."
+    },
+    {
+      "fact": "side",
+      "say": "Check the answer's size before trusting it: with a factor above 1 the image side must be longer than \\([[given]]\\), and an answer shorter than that means the proportion was written upside down."
+    }
+  ],
+  "answer": "So the side corresponding to \\([[given]]\\) in the larger triangle is \\([[side]]\\)."
+}

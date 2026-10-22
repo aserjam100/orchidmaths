@@ -1,0 +1,154 @@
+# Build outputs
+bin/
+dist/
+*.exe
+/orchid
+/orchid.exe
+
+# Go
+*.test
+coverage.txt
+*.out
+
+# Environment
+#
+# `.env*` rather than a list of specific names. The old rules covered `.env`, `.env.local` and
+# `.env.*.local` but NOT `.env.production`, `.env.staging` or `.env.test` — and those are exactly
+# the filenames that hold real credentials. A list of extensions goes stale the first time
+# someone adds one; a glob plus an explicit exception for the template does not.
+.env*
+!.env.example
+!.env.*.example
+
+# Tracked on purpose: a public API origin, not a secret. Next.js inlines NEXT_PUBLIC_* at build
+# time, so this file is build configuration rather than a credential. It is listed here so the
+# `.env*` glob above does not read as an accident.
+!web/next-app/.env.production
+
+# Private keys, certificates and credential files. `.crt` is included because a self-signed
+# deployment certificate still identifies the deployment; `*.pub` is excluded below so public
+# keys and certificates can still be committed.
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.der
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+*.pub
+!*.pub
+
+# Deployment and infrastructure credentials
+.envrc
+.terraform/
+*.tfvars
+*.tfstate
+*.tfstate.*
+fly/
+.vercel/
+.netlify/
+
+# OS keychains and credential stores
+*.kdbx
+security/
+*.agilekeychain
+*.keychain
+
+# Auto-generated local JWT signing secret (0600, created on first boot next
+# to the DB file; explicit JWT_SECRET env always wins). Never commit —
+# whoever holds it can forge auth tokens.
+.jwt_secret
+.jwt_secret.bad.*
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+# WAL sidecars: the -wal file holds recent writes that have not been checkpointed, so it can
+# contain data the .db file no longer shows. `*.sqlite*` above does not cover these names.
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.db-wal
+*.db-shm
+*.db-journal
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node
+node_modules/
+web/next-app/.next/
+web/next-app/out/
+web/desktop-embed/dist/
+web/next-app/node_modules/
+# Next.js writes its build trace to <cwd>/.next. Building from the repository root
+# by mistake leaves one here, and it is never source: the file records a failed
+# build's timings. The app's own output is the web/next-app/.next/ entry above.
+/.next/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+*.egg-info/
+dist/
+build/
+
+# Test outputs
+testlog.txt
+*_test_dump/
+
+# Misc
+*.log
+tmp/
+temp/orchid.db*
+orchid.db*
+
+# Artwork working files, outside public/ on purpose.
+#
+# Anything in web/next-app/public/ is copied into out/ and deployed whether or not
+# the app links to it. The layered GIMP source and the lossless intermediate were
+# sitting in there alongside the flattened JPEG the login page actually uses, which
+# put 3.9 MB of unreferenced files in every build. They live in design/ now.
+design/
+
+# GIMP working files. Kept in case one is opened inside public/ again rather than
+# dragged out of it: it is the layered source at several megabytes, and committing
+# it would put a binary source file in the tree next to the export the app serves.
+*.xcf
+
+# Local analysis artifacts
+.understand-anything/
+
+# aislop local run history / agent sessions (config.yml IS tracked)
+.aislop/history.jsonl
+.aislop/agent/
+
+# Local skills marketplace (vendored, has own .git)
+skills/
+
+# TypeSafe ingestion-QA eval — throwaway, never commit (may hold API key)
+eval/
+
+# Figure display fonts (fetched via figures/fetch_fonts.py, never committed)
+figures/fonts/
+
+# MathLive fetches KaTeX webfonts from /fonts at runtime;
+# scripts/copy-mathlive-fonts.mjs regenerates them on predev/prebuild out of
+# node_modules, so they are build output rather than source.
+web/next-app/public/fonts/

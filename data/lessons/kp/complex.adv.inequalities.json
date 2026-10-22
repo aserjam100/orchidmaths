@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Drop the ordering z1 < z2 as meaningless",
+      "Replace size by the modulus |z|",
+      "Compare |z| values on the real line"
+    ]
+  },
+  {
+    "label": "Inequalities involving real and imaginary parts",
+    "section": "",
+    "subgoals": [
+      "Bound Re(z) by |z|",
+      "Bound Im(z) by |z|",
+      "Squeeze |Re(z)|,|Im(z)| <= |z|"
+    ]
+  },
+  {
+    "label": "Triangle inequality",
+    "section": "",
+    "subgoals": [
+      "Add vectors tip to tail in the plane",
+      "Bound |z+w| by |z| + |w|",
+      "Confirm equality only for same-direction pairs"
+    ]
+  }
+]

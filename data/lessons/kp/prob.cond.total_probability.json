@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Partitioning the sample space",
+    "section": "Partitioning the sample space",
+    "subgoals": [
+      "Require the parts to be disjoint and cover the space",
+      "Split the event into one piece per part",
+      "Add the pieces with countable additivity"
+    ]
+  },
+  {
+    "label": "Worked: two boxes",
+    "section": "Worked: two boxes",
+    "subgoals": [
+      "Write each prior",
+      "Weight each conditional probability",
+      "Add the weighted terms"
+    ]
+  },
+  {
+    "label": "The denominator of Bayes",
+    "section": "The denominator of Bayes",
+    "subgoals": [
+      "Identify the denominator",
+      "Compute the unconditional evidence probability",
+      "Divide each weighted likelihood by it"
+    ]
+  }
+]

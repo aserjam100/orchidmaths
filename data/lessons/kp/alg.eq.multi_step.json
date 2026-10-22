@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What are equations",
+    "section": "",
+    "subgoals": [
+      "Identify an equation",
+      "Recognize the unknown",
+      "Prepare to solve"
+    ]
+  },
+  {
+    "label": "Solution to an equation",
+    "section": "",
+    "subgoals": [
+      "Apply equivalent operations",
+      "Isolate the variable",
+      "State the solution"
+    ]
+  },
+  {
+    "label": "Equivalent equations",
+    "section": "",
+    "subgoals": [
+      "Add or subtract both sides",
+      "Multiply or divide both sides",
+      "Preserve equivalence"
+    ]
+  }
+]

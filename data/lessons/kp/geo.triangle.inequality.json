@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The inequality",
+    "section": "The inequality",
+    "subgoals": [
+      "State the triangle inequality",
+      "Test three lengths",
+      "Recognise the degenerate case"
+    ]
+  },
+  {
+    "label": "The smallest and largest sides",
+    "section": "The smallest and largest sides",
+    "subgoals": [
+      "Bound the third side from above",
+      "Bound it from below",
+      "Find the extreme whole numbers"
+    ]
+  },
+  {
+    "label": "Why it holds",
+    "section": "Why it holds",
+    "subgoals": [
+      "Argue from the shortest path",
+      "See why the inequality is strict",
+      "Connect it to the distance formula"
+    ]
+  }
+]

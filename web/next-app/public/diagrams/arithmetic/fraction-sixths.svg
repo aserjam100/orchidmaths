@@ -1,0 +1,19 @@
+<svg width="420px" height="180px" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg">
+<rect width="420" height="180" fill="white"/>
+<rect x="30" y="46" width="360" height="46" fill="#E6E6E6" stroke="#333333" stroke-width="1"/>
+<rect x="30" y="92" width="360" height="46" fill="#E6E6E6" stroke="#333333" stroke-width="1"/>
+<text x="210" y="65.0" font-size="12" fill="#333333" text-anchor="middle">1</text>
+<line x1="202.6" y1="69.0" x2="217.4" y2="69.0" stroke="#333333" stroke-width="1"/>
+<text x="210" y="81.0" font-size="12" fill="#333333" text-anchor="middle">2</text>
+<line x1="150.0" y1="92" x2="150.0" y2="138" stroke="#333333" stroke-width="1"/>
+<line x1="270.0" y1="92" x2="270.0" y2="138" stroke="#333333" stroke-width="1"/>
+<text x="90.0" y="111.0" font-size="12" fill="#333333" text-anchor="middle">1</text>
+<line x1="82.6" y1="115.0" x2="97.4" y2="115.0" stroke="#333333" stroke-width="1"/>
+<text x="90.0" y="127.0" font-size="12" fill="#333333" text-anchor="middle">6</text>
+<text x="210.0" y="111.0" font-size="12" fill="#333333" text-anchor="middle">1</text>
+<line x1="202.6" y1="115.0" x2="217.4" y2="115.0" stroke="#333333" stroke-width="1"/>
+<text x="210.0" y="127.0" font-size="12" fill="#333333" text-anchor="middle">6</text>
+<text x="330.0" y="111.0" font-size="12" fill="#333333" text-anchor="middle">1</text>
+<line x1="322.6" y1="115.0" x2="337.4" y2="115.0" stroke="#333333" stroke-width="1"/>
+<text x="330.0" y="127.0" font-size="12" fill="#333333" text-anchor="middle">6</text>
+</svg>

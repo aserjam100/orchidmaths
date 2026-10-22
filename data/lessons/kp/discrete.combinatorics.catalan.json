@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Balanced parentheses",
+    "section": "Balanced parentheses",
+    "subgoals": [
+      "Define a balanced string",
+      "Count all strings of 3 pairs",
+      "List the 5 balanced ones"
+    ]
+  },
+  {
+    "label": "The recurrence",
+    "section": "The recurrence",
+    "subgoals": [
+      "State the Catalan recurrence",
+      "Explain the split at a first return",
+      "Evaluate C4 from the closed form"
+    ]
+  },
+  {
+    "label": "Where they appear",
+    "section": "Where they appear",
+    "subgoals": [
+      "Match a polygon triangulation to Cn",
+      "Count full binary trees with n+1 leaves",
+      "Choose the formula for a new shape"
+    ]
+  }
+]

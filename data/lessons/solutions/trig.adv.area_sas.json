@@ -1,0 +1,23 @@
+{
+  "concept": "trig.adv.area_sas",
+  "setup": "A triangle has two sides of length $[[a]]$ and $[[b]]$ with an included angle of $[[angle]]^{\\circ}$.",
+  "steps": [
+    {
+      "fact": "a",
+      "say": "Two sides and the angle between them are enough because that angle fixes the height: $A = \\tfrac{1}{2}ab\\sin C$, half the product of the two sides times the sine of the included angle."
+    },
+    {
+      "fact": "sin_val",
+      "say": "The sine of $[[angle]]^{\\circ}$ is $[[sin_val]]$."
+    },
+    {
+      "fact": "b",
+      "say": "So the area is $\\tfrac{1}{2} \\cdot [[a]] \\cdot [[b]] \\cdot [[sin_val]]$, which is [[value]]."
+    },
+    {
+      "fact": "value",
+      "say": "The third side and the other two angles never enter, which is what makes this the shortest route when a triangle is described by two sides and the angle between them."
+    }
+  ],
+  "answer": "So the area is [[value]]."
+}

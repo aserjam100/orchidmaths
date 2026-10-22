@@ -1,0 +1,29 @@
+[
+  {
+    "label": "How hard a graph is to disconnect",
+    "section": "How hard a graph is to disconnect",
+    "subgoals": [
+      "Minimise a vertex cut",
+      "Minimise an edge cut",
+      "Set 0 for a disconnected graph"
+    ]
+  },
+  {
+    "label": "Worked: complete, cycle and bipartite",
+    "section": "Worked: complete, cycle and bipartite",
+    "subgoals": [
+      "Read n-1 for K_n",
+      "Read 2 for a cycle",
+      "Read the smaller side for K_{a,b}"
+    ]
+  },
+  {
+    "label": "The inequality chain",
+    "section": "The inequality chain",
+    "subgoals": [
+      "Order kappa, lambda and delta",
+      "Build a vertex cut from edges at a vertex",
+      "Note that equality can fail"
+    ]
+  }
+]

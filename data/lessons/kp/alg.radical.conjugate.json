@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The conjugate and the difference of squares",
+    "section": "The conjugate and the difference of squares",
+    "subgoals": [
+      "Reverse the sign between the two terms",
+      "Multiply the pair to get a difference of squares",
+      "Watch the radicals disappear"
+    ]
+  },
+  {
+    "label": "Rationalizing a denominator",
+    "section": "Rationalizing a denominator",
+    "subgoals": [
+      "Multiply above and below by the conjugate",
+      "Simplify the rational denominator",
+      "Keep the value equal by multiplying by one"
+    ]
+  },
+  {
+    "label": "Working an example",
+    "section": "Working an example",
+    "subgoals": [
+      "Form the conjugate of the denominator",
+      "Multiply to get the difference of the squares",
+      "Divide by the whole number that remains"
+    ]
+  }
+]

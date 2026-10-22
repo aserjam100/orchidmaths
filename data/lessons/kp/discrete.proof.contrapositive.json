@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The contrapositive",
+    "section": "The contrapositive",
+    "subgoals": [
+      "Form not-q implies not-p",
+      "Cite the equivalence",
+      "Assume the negated conclusion"
+    ]
+  },
+  {
+    "label": "Converse and inverse",
+    "section": "Converse and inverse",
+    "subgoals": [
+      "Tell the three statements apart",
+      "See that converse and inverse are equivalent",
+      "Avoid proving the converse by mistake"
+    ]
+  },
+  {
+    "label": "When to prove it instead",
+    "section": "When to prove it instead",
+    "subgoals": [
+      "Prefer it when the hypothesis is negative",
+      "Compute with the negated conclusion",
+      "Reserve contradiction for impossibilities"
+    ]
+  }
+]

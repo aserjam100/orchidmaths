@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The two tangent vectors",
+    "section": "The two tangent vectors",
+    "subgoals": [
+      "Hold each parameter fixed",
+      "Take the two velocity vectors",
+      "Span the tangent plane"
+    ]
+  },
+  {
+    "label": "The area element and integration",
+    "section": "The area element and integration",
+    "subgoals": [
+      "Integrate the cross product length",
+      "Factor it out when the tangents are constant",
+      "Keep the normal for the flux"
+    ]
+  },
+  {
+    "label": "Choosing a parametrisation",
+    "section": "Choosing a parametrisation",
+    "subgoals": [
+      "Specialise to a graph of a function",
+      "Parametrise by angles when symmetric",
+      "Prefer orthogonal parameters"
+    ]
+  }
+]

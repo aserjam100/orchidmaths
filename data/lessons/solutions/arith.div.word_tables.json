@@ -1,0 +1,15 @@
+{
+  "concept": "arith.div.word_tables",
+  "setup": "[[total]] [[item]] are put into equal groups.",
+  "steps": [
+    {
+      "fact": "divisor",
+      "say": "Equal groups from a total mean divide: [[total]] ÷ [[divisor]]."
+    },
+    {
+      "fact": "quotient",
+      "say": "[[divisor]] × [[quotient]] = [[total]], so [[total]] ÷ [[divisor]] = [[quotient]]."
+    }
+  ],
+  "answer": "The answer is [[quotient]]."
+}

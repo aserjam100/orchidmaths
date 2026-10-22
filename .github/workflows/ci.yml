@@ -1,0 +1,188 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.27'
+          cache: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r grading/requirements.txt latex2sympy2 antlr4-python3-runtime==4.7.2
+      - run: go mod tidy
+      - run: go build ./...
+      - run: go test ./...
+      - run: make lint-go
+      - run: go run scripts/validate_graph.go
+      # These two run in `make validate` and were absent here, which is how a
+      # solution schema outside the six learner domains sat dead in the corpus
+      # (`topo.dimension`) while main stayed green. Both read the corpus rather
+      # than a copy of it, so neither needs updating when content grows.
+      - run: go run ./cmd/validate-mastery-units
+      - run: python3 scripts/audit_lessons.py
+      - run: python3 scripts/audit_solutions.py
+      - run: python3 scripts/counts.py --check
+      - run: python3 scripts/check_docs.py
+      - run: python3 scripts/check_ste.py
+      - run: go test ./internal/generator/... -run TestFuzz -count 100 -timeout 120s
+      - run: python scripts/verify_examples.py
+      - run: python scripts/lint_prose_display.py
+      - run: python scripts/lint_hypothesis.py
+      - run: python scripts/lint_notation.py
+      - run: python3 scripts/lint_math_layout.py
+      # Reports, does not gate. The corpus currently has ~517 malformed spans
+      # (mostly Unicode apostrophes where LaTeX wants ASCII), so a hard gate would
+      # block main on pre-existing content rather than on a regression. Flip
+      # continue-on-error to false once that count reaches zero.
+      - name: LaTeX corpus check (report only)
+        continue-on-error: true
+        run: cd web/next-app && node scripts/normalize-latex.mjs --quiet
+      - name: Fail on verifier FAILs
+        run: |
+          python -c "
+          import json
+          r=json.load(open('scripts/verify_report.json'))
+          fails=[e for e in r if e['verdict']=='FAIL']
+          assert not fails, f'{len(fails)} verifier FAILs:\n' + '\n'.join(f\"{e['file']}:{e['line']} {e['latex'][:80]}\" for e in fails[:5])
+          "
+          python -c "
+          import json
+          r=json.load(open('scripts/prose_display_report.json'))
+          assert not r, f'{len(r)} prose-display mismatches'
+          r=json.load(open('scripts/hypothesis_report.json'))
+          assert not r, f'{len(r)} hypothesis issues'
+          # notation report is informational (log/ln intentional)
+          "
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web/next-app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: web/next-app/package-lock.json
+      - run: npm ci
+      # The docs pages render content/docs.generated.json, built from docs/*.md. This fails if a
+      # repo doc changed without regenerating it, so the published page cannot silently drift
+      # from its source. Runs before tsc because the module is imported by typed components.
+      - run: npm run docs:check
+      - run: npx tsc --noEmit
+      - run: npm run lint
+      - run: npm run lint:antislop
+      - run: npm test
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      # Sharded single-worker e2e: the graph and 3D suites crash
+      # Chromium ("session closed") when two heavy specs share a runner.
+      - run: npx playwright test --shard=1/2
+        env:
+          PW_WORKERS: 1
+      - run: npx playwright test --shard=2/2
+        env:
+          PW_WORKERS: 1
+      # Repo-root: aislop reads .aislop/config.yml (excludes vendored/generated).
+      #
+      # This runs last on purpose. It exits 1 on any error, and a failed step skips
+      # every step after it: on two consecutive pushes a single finding here meant
+      # npm test, npm run build and both Playwright shards never ran, so the commit
+      # was neither tested nor deployed. The step used to be named "soft gate -
+      # reports, never fails", which was false in the same way. It is a hard gate
+      # and it is now placed where being hard costs only itself.
+      - name: aislop security scan (fails on error)
+        working-directory: ${{ github.workspace }}
+        run: npx --yes aislop@0.16.1 ci --human
+      # A failing e2e run used to leave nothing behind: the config retains a trace and writes an HTML
+      # report, and this job uploaded neither, so the only evidence was the assertion text in the log.
+      # The trace has the DOM snapshot, the network log and the screenshots.
+      - name: Upload the Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            web/next-app/playwright-report
+            web/next-app/test-results
+          retention-days: 7
+          if-no-files-found: ignore
+
+  docker:
+    name: Build production image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # The Dockerfile's grading self-test fails the build if SymPy cannot
+      # grade, so this gates deploy on a working production grading runtime.
+      - run: docker build -t orchid:ci .
+
+  postgres:
+    name: Postgres parity
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: pg
+          POSTGRES_PASSWORD: pg
+          POSTGRES_DB: orchid
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.27'
+          cache: false
+      - name: Postgres parity and AI usage
+        run: go test ./internal/storage/... -run 'TestParity|TestAIUsage' -v
+        env:
+          TEST_POSTGRES_DSN: postgres://pg:pg@localhost:5432/orchid?sslmode=disable
+      # The AI quota is concurrent by design — the whole point of reserving both
+      # counters in one transaction is that two requests racing for the last slot
+      # cannot both win — so the quota and failover tests run under the race
+      # detector too, and the storage ones run against Postgres, where the row
+      # locks and the rollback that make the reserve atomic actually exist.
+      - name: AI concurrency under the race detector
+        run: go test -race ./internal/ai/... ./internal/storage/... ./internal/server/... -run 'TestAIUsage|Quota|AI|RateLimit|TrustedIP' -count=1
+        env:
+          TEST_POSTGRES_DSN: postgres://pg:pg@localhost:5432/orchid?sslmode=disable
+
+  deploy:
+    name: Deploy to Fly.io
+    needs: [test, web, docker, postgres]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push' && vars.DEPLOY_ENABLED == 'true'
+    # One deploy at a time. Two pushes in quick succession each trigger a deploy, and two flyctl
+    # deploys race for the same machine's lease: the loser dies with "Failed to acquire lease for
+    # VM ... lease currently held by ...", which reads as a red run on a commit whose tests all
+    # passed. Queuing rather than cancelling keeps the newer commit as the one left running.
+    concurrency:
+      group: fly-deploy
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy --remote-only --wait-timeout 300
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}

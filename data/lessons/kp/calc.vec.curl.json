@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The cross-partial difference",
+    "section": "The cross-partial difference",
+    "subgoals": [
+      "Write the scalar curl",
+      "Compute it for a linear field",
+      "Explain why a plane needs only a scalar"
+    ]
+  },
+  {
+    "label": "What non-zero curl means",
+    "section": "What non-zero curl means",
+    "subgoals": [
+      "Recognise a gradient field",
+      "Compute the curl of a rotation",
+      "Distinguish a shear from a turn"
+    ]
+  },
+  {
+    "label": "Curl and circulation",
+    "section": "Curl and circulation",
+    "subgoals": [
+      "Integrate curl over a region",
+      "Relate it to the boundary integral",
+      "Explain the paddle-wheel picture"
+    ]
+  }
+]

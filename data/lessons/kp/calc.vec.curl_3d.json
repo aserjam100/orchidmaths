@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Three cross-partial differences",
+    "section": "Three cross-partial differences",
+    "subgoals": [
+      "Write the curl in three dimensions",
+      "Identify the cyclic pattern",
+      "Explain why each component is planar"
+    ]
+  },
+  {
+    "label": "Reading one component",
+    "section": "Reading one component",
+    "subgoals": [
+      "Compute one component",
+      "Check it against the planar formula",
+      "Notice which derivatives pair up"
+    ]
+  },
+  {
+    "label": "What the curl measures",
+    "section": "What the curl measures",
+    "subgoals": [
+      "Describe the local rotation",
+      "Contrast zero curl with zero divergence",
+      "Explain why direction matters"
+    ]
+  }
+]

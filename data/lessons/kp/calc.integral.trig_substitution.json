@@ -1,0 +1,29 @@
+[
+  {
+    "label": "How trigonometric substitution works",
+    "section": "",
+    "subgoals": [
+      "Match sqrt(a^2-x^2) to x = a sin th",
+      "Match sqrt(x^2+a^2) to x = a tan th",
+      "Match sqrt(x^2-a^2) to x = a sec th"
+    ]
+  },
+  {
+    "label": "From substitutions to geometry",
+    "section": "",
+    "subgoals": [
+      "Draw the right triangle for x vs th",
+      "Read dx and radical off the triangle",
+      "Convert back via th = arcsin(x/a)"
+    ]
+  },
+  {
+    "label": "The form \\\\(\\sqrt{a^2-x^2}\\\\)",
+    "section": "",
+    "subgoals": [
+      "Set x = a sin th, dx = a cos th dth",
+      "Cancel the radical to a cos th",
+      "Evaluate integral of sqrt(1-x^2) via th"
+    ]
+  }
+]

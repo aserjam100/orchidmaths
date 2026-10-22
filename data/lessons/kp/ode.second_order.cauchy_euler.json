@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Powers of x as solutions",
+    "section": "Powers of x as solutions",
+    "subgoals": [
+      "Substitute y = x^m",
+      "Collect the powers of x",
+      "Read m(m-1) + a m + b = 0"
+    ]
+  },
+  {
+    "label": "Worked: three characteristic cases",
+    "section": "Worked: three characteristic cases",
+    "subgoals": [
+      "Solve m^2 - 3m + 2 for roots 1, 2",
+      "Use ln x for the double root",
+      "Use ln x inside cosine and sine"
+    ]
+  },
+  {
+    "label": "Why the substitution works",
+    "section": "Why the substitution works",
+    "subgoals": [
+      "Note the scaling invariance",
+      "Compare with constant coefficients",
+      "Avoid the singular point x = 0"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Nested multiplication",
+    "section": "Nested multiplication",
+    "subgoals": [
+      "Nest the powers of x",
+      "Start from the leading coefficient",
+      "Multiply and add at each step"
+    ]
+  },
+  {
+    "label": "Worked: a small evaluation",
+    "section": "Worked: a small evaluation",
+    "subgoals": [
+      "Write the coefficients in order",
+      "Carry the running value through the nesting",
+      "Read the final value"
+    ]
+  },
+  {
+    "label": "From evaluation to roots",
+    "section": "From evaluation to roots",
+    "subgoals": [
+      "Divide out a known root",
+      "Get the derivative from the same scheme",
+      "Feed both into Newton's step"
+    ]
+  }
+]

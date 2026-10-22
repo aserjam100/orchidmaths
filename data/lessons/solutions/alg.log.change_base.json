@@ -1,0 +1,15 @@
+{
+  "concept": "alg.log.change_base",
+  "setup": "You are evaluating \\(\\log_{[[base]]}([[argument]])\\).",
+  "steps": [
+    {
+      "fact": "m",
+      "say": "Both numbers are powers of [[a]]: \\([[base]] = [[a]]^{[[m]]}\\) and \\([[argument]] = [[a]]^{[[n]]}\\)."
+    },
+    {
+      "fact": "value",
+      "say": "Changing the base gives \\(\\frac{\\log([[argument]])}{\\log([[base]])} = \\frac{[[n]]}{[[m]]} = [[value]]\\)."
+    }
+  ],
+  "answer": "So \\(\\log_{[[base]]}([[argument]]) = [[value]]\\)."
+}

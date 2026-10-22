@@ -1,0 +1,15 @@
+{
+  "concept": "arith.div.tables",
+  "setup": "You need [[dividend]] ÷ [[divisor]].",
+  "steps": [
+    {
+      "fact": "divisor",
+      "say": "Ask: [[divisor]] times what number makes [[dividend]]?"
+    },
+    {
+      "fact": "quotient",
+      "say": "[[divisor]] × [[quotient]] = [[dividend]], so [[dividend]] ÷ [[divisor]] = [[quotient]]."
+    }
+  ],
+  "answer": "[[dividend]] ÷ [[divisor]] = [[quotient]]."
+}

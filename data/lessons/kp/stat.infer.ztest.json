@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A signal measured in standard errors",
+    "section": "A signal measured in standard errors",
+    "subgoals": [
+      "Compute the standard error sigma/sqrt(n)",
+      "Subtract the null mean",
+      "Divide the gap by the standard error"
+    ]
+  },
+  {
+    "label": "Worked: computing z",
+    "section": "Worked: computing z",
+    "subgoals": [
+      "Take xbar = 48 and mu = 50",
+      "Compute the standard error 4/sqrt(16)",
+      "Divide -2 by 1"
+    ]
+  },
+  {
+    "label": "When the z statistic applies",
+    "section": "When the z statistic applies",
+    "subgoals": [
+      "Require a known sigma",
+      "Invoke the central limit theorem",
+      "Switch to t when sigma is estimated"
+    ]
+  }
+]

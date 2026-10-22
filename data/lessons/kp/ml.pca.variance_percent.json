@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Eigenvalues as variances",
+    "section": "Eigenvalues as variances",
+    "subgoals": [
+      "Read an eigenvalue as a variance",
+      "Rank the components",
+      "Compute a share"
+    ]
+  },
+  {
+    "label": "The share of the total",
+    "section": "The share of the total",
+    "subgoals": [
+      "Divide by the sum",
+      "See the shares partition one",
+      "Connect it to compression"
+    ]
+  },
+  {
+    "label": "Choosing how many components",
+    "section": "Choosing how many components",
+    "subgoals": [
+      "State the 90 percent convention",
+      "Call it a convention",
+      "Name where it was thrown away"
+    ]
+  }
+]

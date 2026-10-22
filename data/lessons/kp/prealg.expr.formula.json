@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Substitute the given values",
+    "section": "Substitute the given values",
+    "subgoals": [
+      "Replace each variable with its value",
+      "Use parentheses around substituted values",
+      "Keep the structure of the formula"
+    ]
+  },
+  {
+    "label": "Follow the order of operations",
+    "section": "Follow the order of operations",
+    "subgoals": [
+      "Multiply before adding",
+      "Divide after multiplying in a fraction",
+      "Compute the result step by step"
+    ]
+  },
+  {
+    "label": "Keep the units and the meaning",
+    "section": "Keep the units and the meaning",
+    "subgoals": [
+      "Attach the unit of the quantity",
+      "Check the size of the result",
+      "Read the formula as a relationship"
+    ]
+  }
+]

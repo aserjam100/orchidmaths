@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Scaling about a point",
+    "section": "Scaling about a point",
+    "subgoals": [
+      "Define a dilation",
+      "Apply a factor to a length",
+      "Explain why the centre is fixed"
+    ]
+  },
+  {
+    "label": "Factors below one",
+    "section": "Factors below one",
+    "subgoals": [
+      "Shrink with a fraction factor",
+      "Reflect with a negative factor",
+      "Keep the shape either way"
+    ]
+  },
+  {
+    "label": "Dilations and similar figures",
+    "section": "Dilations and similar figures",
+    "subgoals": [
+      "Relate similarity to a dilation",
+      "Name the rigid motion allowed with it",
+      "Derive the area scaling"
+    ]
+  }
+]

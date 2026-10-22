@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction to the Poisson distribution",
+    "section": "",
+    "subgoals": [
+      "Count events x in a fixed interval",
+      "Plug lambda and x into e^-lambda*lambda^x/x!",
+      "Fix lambda > 0 as the mean rate"
+    ]
+  },
+  {
+    "label": "The Poisson process",
+    "section": "",
+    "subgoals": [
+      "Rule out simultaneous events",
+      "Hold the rate lambda constant over time",
+      "Scale lambda*t for intervals of length t"
+    ]
+  },
+  {
+    "label": "Key features",
+    "section": "",
+    "subgoals": [
+      "Write P(X=x) = lambda^x*e^-lambda/x!",
+      "Read mu = lambda and sigma^2 = lambda off the rate",
+      "Root lambda into sigma = sqrt(lambda)"
+    ]
+  }
+]

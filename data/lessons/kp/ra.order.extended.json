@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Adjoining two symbols",
+    "section": "Adjoining two symbols",
+    "subgoals": [
+      "Adjoin the two symbols",
+      "Extend the order to place them",
+      "Leave the indeterminate combinations undefined"
+    ]
+  },
+  {
+    "label": "Order completeness",
+    "section": "Order completeness",
+    "subgoals": [
+      "Take an unbounded set",
+      "Assign it the infinite bound",
+      "State the empty-set convention"
+    ]
+  },
+  {
+    "label": "Where it is used",
+    "section": "Where it is used",
+    "subgoals": [
+      "Write an unbounded limit as plus infinity",
+      "Allow infinite measure",
+      "Note where the conventions fail"
+    ]
+  }
+]

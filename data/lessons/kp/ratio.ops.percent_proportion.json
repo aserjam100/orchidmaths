@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Write the proportion",
+    "section": "Write the proportion",
+    "subgoals": [
+      "Put the part over the whole",
+      "Put the percent over 100",
+      "Keep the same order on both sides"
+    ]
+  },
+  {
+    "label": "Cross-multiply",
+    "section": "Cross-multiply",
+    "subgoals": [
+      "Multiply the numerator of one side by the denominator of the other",
+      "Write the resulting equation",
+      "Keep the unknown in its position"
+    ]
+  },
+  {
+    "label": "Solve for the missing value",
+    "section": "Solve for the missing value",
+    "subgoals": [
+      "Divide both sides by the coefficient",
+      "Check by finding the percent of the whole",
+      "Return the value with its meaning"
+    ]
+  }
+]

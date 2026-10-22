@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The closest point in a subspace",
+    "section": "The closest point in a subspace",
+    "subgoals": [
+      "Require v - p orthogonal to U",
+      "Use Pythagoras for minimal distance",
+      "Connect least squares to projection"
+    ]
+  },
+  {
+    "label": "Worked: projecting onto a line",
+    "section": "Worked: projecting onto a line",
+    "subgoals": [
+      "Compute the scalar coefficient",
+      "Multiply the direction by the coefficient",
+      "Check the residual is orthogonal"
+    ]
+  },
+  {
+    "label": "Projection matrices",
+    "section": "Projection matrices",
+    "subgoals": [
+      "Write Q Q transpose for an orthonormal basis",
+      "Use A(A^T A)^-1 A^T in general",
+      "Verify P squared equals P"
+    ]
+  }
+]

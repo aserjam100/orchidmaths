@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Add the tens, then the ones",
+    "section": "Add the tens, then the ones",
+    "subgoals": [
+      "Add the tens",
+      "Add the ones",
+      "Put the tens and ones together"
+    ]
+  },
+  {
+    "label": "When the ones make a new ten",
+    "section": "When the ones make a new ten",
+    "subgoals": [
+      "Add the tens",
+      "Add the ones and see if they make 10 or more",
+      "Add the extra ten to the tens"
+    ]
+  },
+  {
+    "label": "Check by counting on",
+    "section": "Check by counting on",
+    "subgoals": [
+      "Start at the first number",
+      "Count on the tens of the second number",
+      "Count on the ones and compare"
+    ]
+  }
+]

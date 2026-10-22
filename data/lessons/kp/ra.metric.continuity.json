@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The epsilon-delta and open-set forms",
+    "section": "The epsilon-delta and open-set forms",
+    "subgoals": [
+      "Compare the two metrics point by point",
+      "Choose delta after epsilon",
+      "Pull open sets back to open sets"
+    ]
+  },
+  {
+    "label": "Equivalences and composition",
+    "section": "Equivalences and composition",
+    "subgoals": [
+      "Convert to sequences",
+      "Close the composition",
+      "Add compactness for the uniform version"
+    ]
+  },
+  {
+    "label": "Homeomorphisms",
+    "section": "Homeomorphisms",
+    "subgoals": [
+      "Require the inverse to be continuous too",
+      "Preserve open-set properties",
+      "Distinguish it from a mere continuous bijection"
+    ]
+  }
+]

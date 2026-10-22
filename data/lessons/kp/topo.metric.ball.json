@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Distance first, then the ball",
+    "section": "Distance first, then the ball",
+    "subgoals": [
+      "Compute the Euclidean distance",
+      "Solve center minus radius",
+      "Solve center plus radius"
+    ]
+  },
+  {
+    "label": "Worked: balls in the line and the plane",
+    "section": "Worked: balls in the line and the plane",
+    "subgoals": [
+      "Evaluate the square root of squared differences",
+      "Place (3,4) on the radius-5 circle",
+      "Read the open interval endpoints"
+    ]
+  },
+  {
+    "label": "Why balls generate the topology",
+    "section": "Why balls generate the topology",
+    "subgoals": [
+      "Take a ball at each point",
+      "Keep the ball inside the open set",
+      "Write the open set as a union"
+    ]
+  }
+]

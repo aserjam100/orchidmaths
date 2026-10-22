@@ -1,0 +1,19 @@
+{
+  "concept": "trig.func.tangent",
+  "setup": "A right triangle has $\\tan\\theta = [[ratio]]$ and a side adjacent to $\\theta$ of $[[given]]$.",
+  "steps": [
+    {
+      "fact": "ratio",
+      "say": "The tangent of an angle is the side opposite it divided by the side adjacent to it, so the opposite side is the tangent times the adjacent side."
+    },
+    {
+      "fact": "given",
+      "say": "The adjacent side is $[[given]]$."
+    },
+    {
+      "fact": "answer",
+      "say": "Multiplying gives $[[ratio]] \\times [[given]] = [[answer]]$."
+    }
+  ],
+  "answer": "So the side opposite the angle is $[[answer]]$."
+}

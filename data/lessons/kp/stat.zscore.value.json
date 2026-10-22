@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Standard deviations from the mean",
+    "section": "Standard deviations from the mean",
+    "subgoals": [
+      "Define a z-score",
+      "Compute one",
+      "Say why it makes values comparable"
+    ]
+  },
+  {
+    "label": "Standardising",
+    "section": "Standardising",
+    "subgoals": [
+      "Describe the transformation",
+      "Name its result",
+      "Connect it to the normal table"
+    ]
+  },
+  {
+    "label": "What the sign and size mean",
+    "section": "What the sign and size mean",
+    "subgoals": [
+      "Read the sign",
+      "Read the magnitude",
+      "Give the two-thirds rule"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Equal groups",
+    "section": "Equal groups",
+    "subgoals": [
+      "Check that every group is the same size",
+      "Count the groups",
+      "Count how many are in one group"
+    ]
+  },
+  {
+    "label": "Add the groups",
+    "section": "Add the groups",
+    "subgoals": [
+      "Write one number for each group",
+      "Add or count in equal steps",
+      "Say the total"
+    ]
+  },
+  {
+    "label": "The multiplication sign",
+    "section": "The multiplication sign",
+    "subgoals": [
+      "Write the number of groups first",
+      "Write × and the group size",
+      "Write the total after ="
+    ]
+  }
+]

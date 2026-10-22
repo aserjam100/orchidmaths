@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Counting the overlap twice",
+    "section": "Counting the overlap twice",
+    "subgoals": [
+      "Add the two probabilities",
+      "Notice the intersection is counted twice",
+      "Subtract the intersection once"
+    ]
+  },
+  {
+    "label": "Worked: two events",
+    "section": "Worked: two events",
+    "subgoals": [
+      "Count the union outcomes",
+      "Divide by the sample space size",
+      "Verify with the complement"
+    ]
+  },
+  {
+    "label": "Three events and beyond",
+    "section": "Three events and beyond",
+    "subgoals": [
+      "Alternate the signs over singles, pairs and the triple",
+      "State the general alternating sum",
+      "Drop negative terms for the union bound"
+    ]
+  }
+]

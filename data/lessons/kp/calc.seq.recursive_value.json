@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Defined by what each term does",
+    "section": "Defined by what each term does",
+    "subgoals": [
+      "State a first term and a rule",
+      "Recognise it as complete",
+      "Read the next-index notation"
+    ]
+  },
+  {
+    "label": "Iterating",
+    "section": "Iterating",
+    "subgoals": [
+      "Apply the rule repeatedly",
+      "Record the terms in a table",
+      "Note the fast growth"
+    ]
+  },
+  {
+    "label": "Closed forms and recursion",
+    "section": "Closed forms and recursion",
+    "subgoals": [
+      "Contrast a closed form",
+      "Say not every recursion has one",
+      "Note where recursion is still useful"
+    ]
+  }
+]

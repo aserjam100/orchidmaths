@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Dividing by the width",
+    "section": "Dividing by the width",
+    "subgoals": [
+      "State the average-value formula",
+      "Divide the integral by the width",
+      "Check it on a line"
+    ]
+  },
+  {
+    "label": "What average means here",
+    "section": "What average means here",
+    "subgoals": [
+      "Read the integral as an area",
+      "Turn area into a height",
+      "See why shape disappears"
+    ]
+  },
+  {
+    "label": "Using it",
+    "section": "Using it",
+    "subgoals": [
+      "State the mean value theorem for integrals",
+      "Give it a physical reading",
+      "Say why the average is attained"
+    ]
+  }
+]

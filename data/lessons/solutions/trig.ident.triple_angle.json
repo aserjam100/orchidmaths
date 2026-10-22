@@ -1,0 +1,15 @@
+{
+  "concept": "trig.ident.triple_angle",
+  "setup": "An angle has sine $[[opp]]/[[hyp]]$ from a right triangle, and you are asked for the sine of three times the angle.",
+  "steps": [
+    {
+      "fact": "opp",
+      "say": "The triple-angle formula for the sine is $\\sin 3t = 3\\sin t - 4\\sin^{3} t$, so it needs only the sine of the original angle, which is $[[opp]]/[[hyp]]$."
+    },
+    {
+      "fact": "hyp",
+      "say": "Substituting gives $3 \\cdot [[opp]]/[[hyp]] - 4 \\cdot ([[opp]]/[[hyp]])^{3}$, and combining over the common denominator $[[hyp]]^{3}$ leaves [[answer]]."
+    }
+  ],
+  "answer": "So the sine of three times the angle is [[answer]]."
+}

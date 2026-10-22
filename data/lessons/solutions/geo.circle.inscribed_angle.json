@@ -1,0 +1,15 @@
+{
+  "concept": "geo.circle.inscribed_angle",
+  "setup": "An arc of the circle subtends a central angle of \\([[central]]\\) degrees, and an inscribed angle subtends the same arc.",
+  "steps": [
+    {
+      "fact": "central",
+      "say": "The inscribed-angle theorem relates the two: an angle with its vertex on the circle is half the central angle standing on the same arc."
+    },
+    {
+      "fact": "angle",
+      "say": "Halving \\([[central]]\\) gives \\([[angle]]\\). The same theorem is why an angle inscribed in a semicircle is a right angle, since the central angle there is 180 degrees."
+    }
+  ],
+  "answer": "So the inscribed angle is \\([[angle]]\\) degrees."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Count on from the bigger number",
+    "section": "Count on from the bigger number",
+    "subgoals": [
+      "Start at the bigger number",
+      "Count on by the smaller number",
+      "Say the last number as the answer"
+    ]
+  },
+  {
+    "label": "Make ten",
+    "section": "Make ten",
+    "subgoals": [
+      "Find how many more make 10",
+      "Break the other number into two parts",
+      "Add the leftover part to 10"
+    ]
+  },
+  {
+    "label": "Use doubles",
+    "section": "Use doubles",
+    "subgoals": [
+      "Find a double that is close",
+      "Say the double fact",
+      "Add one more for the extra"
+    ]
+  }
+]

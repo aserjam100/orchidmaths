@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The canonical form",
+    "section": "The canonical form",
+    "subgoals": [
+      "Identify the x-only factor",
+      "Name the sufficient statistic",
+      "Read the natural parameter and the normaliser"
+    ]
+  },
+  {
+    "label": "Worked: reading a Bernoulli",
+    "section": "Worked: reading a Bernoulli",
+    "subgoals": [
+      "Write the mass on the two values",
+      "Factor out the x-only term",
+      "Read the statistic, parameter and normaliser"
+    ]
+  },
+  {
+    "label": "Members and non-members",
+    "section": "Members and non-members",
+    "subgoals": [
+      "List families that fit the form",
+      "Show where the Cauchy fails to separate",
+      "Recognise a parameter-dependent support as outside the family"
+    ]
+  }
+]

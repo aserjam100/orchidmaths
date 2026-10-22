@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The second-smallest eigenvalue",
+    "section": "The second-smallest eigenvalue",
+    "subgoals": [
+      "Order the Laplacian eigenvalues",
+      "Use lambda2 positive to mean connected",
+      "Read a bottleneck from a small lambda2"
+    ]
+  },
+  {
+    "label": "Worked: the cycle C_6",
+    "section": "Worked: the cycle C_6",
+    "subgoals": [
+      "Use the cosine formula",
+      "Evaluate at n equal to 6",
+      "Evaluate at n equal to 4"
+    ]
+  },
+  {
+    "label": "Connectivity and expansion",
+    "section": "Connectivity and expansion",
+    "subgoals": [
+      "Recall lambda2 of K_n",
+      "Recall lambda2 of K_{a,b}",
+      "Partition by the Fiedler vector"
+    ]
+  }
+]

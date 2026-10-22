@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Successive slopes",
+    "section": "Successive slopes",
+    "subgoals": [
+      "Form the slope of each neighbouring pair",
+      "Divide differences by the outer spacing",
+      "Build the table of differences"
+    ]
+  },
+  {
+    "label": "Worked: a first difference",
+    "section": "Worked: a first difference",
+    "subgoals": [
+      "Subtract the values",
+      "Divide by the spacing",
+      "Read the coefficient"
+    ]
+  },
+  {
+    "label": "The Newton form",
+    "section": "The Newton form",
+    "subgoals": [
+      "Write the value plus difference times distance",
+      "Append a term for each new node",
+      "Keep the existing terms unchanged"
+    ]
+  }
+]

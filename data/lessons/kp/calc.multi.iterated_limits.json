@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two ways to take a limit",
+    "section": "Two ways to take a limit",
+    "subgoals": [
+      "Compare the double limit and the two iterated limits",
+      "Let the double limit be the strongest",
+      "Have it force the iterated limits"
+    ]
+  },
+  {
+    "label": "The classic counterexample",
+    "section": "The classic counterexample",
+    "subgoals": [
+      "Set one variable to zero first",
+      "Get zero along both axes",
+      "Try the diagonal and find a different value"
+    ]
+  },
+  {
+    "label": "The order of integration",
+    "section": "The order of integration",
+    "subgoals": [
+      "Compare the two orders of integration",
+      "Invoke Fubini under absolute integrability",
+      "Treat disagreement as a failure of integrability"
+    ]
+  }
+]

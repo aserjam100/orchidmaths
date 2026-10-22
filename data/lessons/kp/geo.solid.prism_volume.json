@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Base area times height",
+    "section": "Base area times height",
+    "subgoals": [
+      "State the formula",
+      "Compute a volume",
+      "Note that the base shape does not matter"
+    ]
+  },
+  {
+    "label": "Any base shape",
+    "section": "Any base shape",
+    "subgoals": [
+      "Work from the base area",
+      "Contrast it with a pyramid",
+      "See the average cross-section"
+    ]
+  },
+  {
+    "label": "Composite solids",
+    "section": "Composite solids",
+    "subgoals": [
+      "Split a solid at its join",
+      "Add two volumes",
+      "Subtract a hole"
+    ]
+  }
+]

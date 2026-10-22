@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is a series with positive terms?",
+    "section": "",
+    "subgoals": [
+      "Confirm a_n >= 0 for all n",
+      "Preview comparison vs p-series",
+      "Flag sum 1/(n^2+1) as testable"
+    ]
+  },
+  {
+    "label": "Comparison test",
+    "section": "",
+    "subgoals": [
+      "Dominate a_n <= b_n with sum b_n convergent",
+      "Minorize a_n >= d_n with sum d_n divergent",
+      "Test 1/(n^2+1) <= 1/n^2"
+    ]
+  },
+  {
+    "label": "Example",
+    "section": "",
+    "subgoals": [
+      "Bound the worked terms explicitly",
+      "Name the benchmark p-series",
+      "Conclude converge or diverge"
+    ]
+  }
+]

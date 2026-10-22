@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Slope first",
+    "section": "Slope first",
+    "subgoals": [
+      "Subtract y-coordinates in the numerator",
+      "Subtract x-coordinates in the same order",
+      "Reduce the difference quotient"
+    ]
+  },
+  {
+    "label": "Point into the equation",
+    "section": "Point into the equation",
+    "subgoals": [
+      "Substitute one known point",
+      "Solve for the intercept",
+      "Write y = mx + b"
+    ]
+  },
+  {
+    "label": "Checking the line",
+    "section": "Checking the line",
+    "subgoals": [
+      "Substitute the second point",
+      "Confirm both sides are equal",
+      "Enter only the right-hand side"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is the exponential probability distribution",
+    "section": "",
+    "subgoals": [
+      "Write f(x;lambda) = lambda*e^(-lambda*x) for x > 0",
+      "Raise the rate lambda to shorten waits",
+      "Integrate lambda*e^(-lambda*x) over [0,inf) into 1"
+    ]
+  },
+  {
+    "label": "Key features",
+    "section": "",
+    "subgoals": [
+      "Write f(x) = lambda*e^(-lambda*x) for x >= 0",
+      "Read mu = 1/lambda off the rate",
+      "Square into sigma^2 = 1/lambda^2 with sigma = 1/lambda"
+    ]
+  },
+  {
+    "label": "Expected value and variance of the exponential distribution",
+    "section": "",
+    "subgoals": [
+      "Integrate x*lambda*e^(-lambda*x) into 1/lambda",
+      "Evaluate E(X^2) = 2/lambda^2 by parts",
+      "Subtract 2/lambda^2 - 1/lambda^2 into sigma^2"
+    ]
+  }
+]

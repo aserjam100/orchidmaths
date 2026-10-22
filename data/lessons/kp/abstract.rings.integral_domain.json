@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A commutative ring with no zero divisors",
+    "section": "A commutative ring with no zero divisors",
+    "subgoals": [
+      "Require commutativity with identity",
+      "Rule out ab = 0 for nonzero a and b",
+      "Inherit the property in polynomial rings"
+    ]
+  },
+  {
+    "label": "Worked: Z_7 is a domain, M_2(R) is not",
+    "section": "Worked: Z_7 is a domain, M_2(R) is not",
+    "subgoals": [
+      "Invert a nonzero element of a field",
+      "Multiply complementary corner matrices",
+      "Name nonzero factors with zero product"
+    ]
+  },
+  {
+    "label": "Finite domains are fields",
+    "section": "Finite domains are fields",
+    "subgoals": [
+      "Show x to ax is injective",
+      "Use finiteness for surjectivity",
+      "Solve ax = 1 for a unit"
+    ]
+  }
+]

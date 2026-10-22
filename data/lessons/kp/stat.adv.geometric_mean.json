@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is the geometric mean?",
+    "section": "",
+    "subgoals": [
+      "Multiply x1..xn into one product",
+      "Take the n-th root of the product",
+      "Restrict to positive-product data sets"
+    ]
+  },
+  {
+    "label": "Geometric mean logarithmic form",
+    "section": "",
+    "subgoals": [
+      "Log each xi and average the ln(xi)",
+      "Exponentiate the log-average back into Mg",
+      "Damp multi-order-magnitude overflow via logs"
+    ]
+  },
+  {
+    "label": "Weighted geometric mean",
+    "section": "",
+    "subgoals": [
+      "Raise each xi to its weight wi",
+      "Divide the exponent by the weight total",
+      "Collapse equal weights into the plain Mg"
+    ]
+  }
+]

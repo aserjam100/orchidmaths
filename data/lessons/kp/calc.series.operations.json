@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Adding and scaling",
+    "section": "Adding and scaling",
+    "subgoals": [
+      "Add term by term",
+      "Scale every term",
+      "Sum the two limits"
+    ]
+  },
+  {
+    "label": "Grouping",
+    "section": "Grouping",
+    "subgoals": [
+      "Group terms to form a subsequence",
+      "Keep the same limit",
+      "Do not ungroup without absolute convergence"
+    ]
+  },
+  {
+    "label": "Products and rearrangement",
+    "section": "Products and rearrangement",
+    "subgoals": [
+      "Rearrange freely only when absolute",
+      "Multiply with the Cauchy product",
+      "Guard against conditional rearrangement"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Surface of revolution formula",
+    "section": "",
+    "subgoals": [
+      "Replace each curve chord by a cone frustum",
+      "Apply the mean value theorem to the chord length",
+      "Take the limit to S = 2pi times the integral of f times sqrt(1+(f')^2)"
+    ]
+  },
+  {
+    "label": "Slant correction",
+    "section": "",
+    "subgoals": [
+      "Split dS into 2pi times r times ds",
+      "Read the radius r from the axis of revolution",
+      "Pick ds for a graph versus a parametric curve"
+    ]
+  },
+  {
+    "label": "Sphere check",
+    "section": "",
+    "subgoals": [
+      "Differentiate sqrt(r^2-x^2) on the open interval",
+      "Cancel the radical against the ordinate to the constant r",
+      "Integrate the constant over [-r,r] to 4pi times r^2"
+    ]
+  }
+]

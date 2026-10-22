@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Set the other variable to zero",
+    "section": "Set the other variable to zero",
+    "subgoals": [
+      "Set y = 0 for the x-intercept",
+      "Set x = 0 for the y-intercept",
+      "Keep the remaining one-variable equation"
+    ]
+  },
+  {
+    "label": "Solve each one-variable equation",
+    "section": "Solve each one-variable equation",
+    "subgoals": [
+      "Divide by the remaining coefficient",
+      "Keep the sign of the intercept",
+      "Accept negative intercepts"
+    ]
+  },
+  {
+    "label": "Read the pair in order",
+    "section": "Read the pair in order",
+    "subgoals": [
+      "Put x before y",
+      "Separate with a comma",
+      "Substitute both points to check"
+    ]
+  }
+]

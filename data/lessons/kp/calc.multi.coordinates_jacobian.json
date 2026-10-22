@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cylindrical",
+    "section": "Cylindrical",
+    "subgoals": [
+      "Write the cylindrical volume element",
+      "Explain the r factor",
+      "Evaluate it at a radius"
+    ]
+  },
+  {
+    "label": "Spherical",
+    "section": "Spherical",
+    "subgoals": [
+      "Write the spherical volume element",
+      "Explain the sine",
+      "Evaluate it at a radius and angle"
+    ]
+  },
+  {
+    "label": "Choosing coordinates",
+    "section": "Choosing coordinates",
+    "subgoals": [
+      "Match a region to a coordinate system",
+      "State why the region's limits matter",
+      "Name the usual mistake"
+    ]
+  }
+]

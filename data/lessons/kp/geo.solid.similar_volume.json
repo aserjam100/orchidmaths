@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Volumes scale by the cube",
+    "section": "Volumes scale by the cube",
+    "subgoals": [
+      "State the volume ratio",
+      "Apply it to a scale model",
+      "Explain the three dimensions"
+    ]
+  },
+  {
+    "label": "Area and volume together",
+    "section": "Area and volume together",
+    "subgoals": [
+      "State the area ratio",
+      "Compare the two powers",
+      "Connect surface-to-volume to size"
+    ]
+  },
+  {
+    "label": "Checking a claim",
+    "section": "Checking a claim",
+    "subgoals": [
+      "Test a volume answer",
+      "Reject the square or the ratio",
+      "Name the common mistake"
+    ]
+  }
+]

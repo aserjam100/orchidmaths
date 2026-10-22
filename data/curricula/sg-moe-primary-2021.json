@@ -1,0 +1,2569 @@
+{
+  "id": "sg-moe-primary-2021",
+  "name": "Singapore Primary Mathematics (MOE 2021 syllabus, Standard)",
+  "source": {
+    "title": "Mathematics Syllabus, Primary One to Six (2021 syllabus, updated October 2025), Ministry of Education Singapore",
+    "url": "https://www.moe.gov.sg/api/media/92bff26d-b2b4-4535-b868-b8415c744b91/2021-Primary-Mathematics-Syllabus-P1-to-P6-Updated-October-2025.pdf",
+    "section": "Section 5, Content by Level (Primary One to Six; Standard Mathematics for P5 and P6)",
+    "retrieved": "2026-10-22"
+  },
+  "disclaimer": "Orchid is independent and is not affiliated with or endorsed by the Ministry of Education, Singapore. This mapping is Orchid's own reading of the published syllabus.",
+  "coverage_levels": {
+    "full": "An Orchid concept practises the outcome as the syllabus states it.",
+    "partial": "An Orchid concept practises part of the outcome, or practises it without the syllabus's restrictions (number range, kind of fraction, and so on). The note says which.",
+    "none": "Nothing in Orchid practises this outcome yet."
+  },
+  "outcomes": [
+    {
+      "id": "P1.WN1.1",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100",
+      "outcome": "counting to tell the number of objects in a given set",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.WN1.2",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100",
+      "outcome": "number notation, representations and place values (tens, ones)",
+      "coverage": "full",
+      "concepts": [
+        "arith.place.tens"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.WN1.3",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100",
+      "outcome": "reading and writing numbers in numerals and in words",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.WN1.4",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100",
+      "outcome": "comparing the number of objects in two or more sets",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.WN1.5",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100",
+      "outcome": "comparing and ordering numbers",
+      "coverage": "full",
+      "concepts": [
+        "arith.compare.within100"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.WN1.6",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100",
+      "outcome": "patterns in number sequences",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.WN1.7",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100",
+      "outcome": "ordinal numbers (first, second, up to tenth) and symbols (1st, 2nd, 3rd, etc.)",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.WN2.1",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "concepts of addition and subtraction",
+      "coverage": "full",
+      "concepts": [
+        "arith.add.single",
+        "arith.sub.single"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.WN2.2",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "use of +, – and =",
+      "coverage": "full",
+      "concepts": [
+        "arith.add.single",
+        "arith.sub.single"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.WN2.3",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "relationship between addition and subtraction",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.WN2.4",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "adding more than two 1-digit numbers",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.WN2.5",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "adding and subtracting within 100",
+      "coverage": "full",
+      "concepts": [
+        "arith.add.double",
+        "arith.sub.double",
+        "arith.add.word",
+        "arith.sub.word"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.WN2.6",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "adding and subtracting using algorithms",
+      "coverage": "full",
+      "concepts": [
+        "arith.add.carry",
+        "arith.sub.borrow"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.WN2.7",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "mental calculation involving addition and subtraction (within 20; of a 2-digit number and ones without renaming; of a 2-digit number and tens)",
+      "coverage": "partial",
+      "concepts": [
+        "arith.add.single",
+        "arith.sub.single"
+      ],
+      "note": "Single-digit facts are speed-gated, which builds recall; 2-digit mental cases are not generated separately."
+    },
+    {
+      "id": "P1.WN3.1",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "concepts of multiplication and division",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.concept",
+        "arith.div.concept"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.WN3.2",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "use of x",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.concept"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.WN3.3",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "multiplying within 40",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.concept"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.WN3.4",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "dividing within 20",
+      "coverage": "full",
+      "concepts": [
+        "arith.div.concept"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P1.MO1.1",
+      "level": "P1",
+      "strand": "Number and Algebra",
+      "sub_strand": "Money",
+      "topic": "Money",
+      "outcome": "counting amount of money (in cents up to $1; in dollars up to $100)",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.ME1.1",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length",
+      "outcome": "measuring length in centimetres",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.ME1.2",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length",
+      "outcome": "use of abbreviation cm",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.ME1.3",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length",
+      "outcome": "comparing and ordering lengths in cm",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.ME1.4",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length",
+      "outcome": "measuring and drawing a line segment to the nearest cm",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.ME2.1",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "telling time to 5 minutes",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.ME2.2",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "use of ‘am’ and ‘pm’",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.ME2.3",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "use of abbreviations h and min",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.ME2.4",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "duration of one hour/half hour",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.GE1.1",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "2D Shapes",
+      "outcome": "identifying, naming, describing and classifying 2D shapes (rectangle, square, triangle, circle, half circle, quarter circle)",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.GE1.2",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "2D Shapes",
+      "outcome": "forming different 2D figures with rectangle, square, triangle, half circle, quarter circle",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.GE1.3",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "2D Shapes",
+      "outcome": "identifying the 2D shapes that make up a given figure",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.GE1.4",
+      "level": "P1",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "2D Shapes",
+      "outcome": "copying figures on dot grid or square grid",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P1.DR1.1",
+      "level": "P1",
+      "strand": "Statistics",
+      "sub_strand": "Data Representation and Interpretation",
+      "topic": "Picture Graphs",
+      "outcome": "reading and interpreting data from picture graphs",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.WN1.1",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 1000",
+      "outcome": "counting in tens/hundreds",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.WN1.2",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 1000",
+      "outcome": "number notation, representations and place values (hundreds, tens, ones)",
+      "coverage": "full",
+      "concepts": [
+        "arith.place.hundreds"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.WN1.3",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 1000",
+      "outcome": "reading and writing numbers in numerals and in words",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.WN1.4",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 1000",
+      "outcome": "comparing and ordering numbers",
+      "coverage": "full",
+      "concepts": [
+        "arith.compare.within1000"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.WN1.5",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 1000",
+      "outcome": "patterns in number sequences",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.WN1.6",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 1000",
+      "outcome": "odd and even numbers",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.WN2.1",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "addition and subtraction algorithms (up to 3 digits)",
+      "coverage": "full",
+      "concepts": [
+        "arith.add.triple",
+        "arith.add.carry",
+        "arith.sub.borrow"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.WN2.2",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "mental calculation involving addition and subtraction of a 3-digit number and ones/tens/hundreds",
+      "coverage": "partial",
+      "concepts": [
+        "arith.add.triple"
+      ],
+      "note": "Practised as written addition; no dedicated mental-calculation generator."
+    },
+    {
+      "id": "P2.WN3.1",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "multiplication tables of 2, 3, 4, 5 and 10",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.2_5_10",
+        "arith.mult.3_4"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.WN3.2",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "use of ÷",
+      "coverage": "full",
+      "concepts": [
+        "arith.div.tables"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.WN3.3",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "relationship between multiplication and division",
+      "coverage": "partial",
+      "concepts": [
+        "arith.div.tables"
+      ],
+      "note": "Division is checked by multiplying back; fact families are not practised on their own yet."
+    },
+    {
+      "id": "P2.WN3.4",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "multiplying and dividing within the multiplication tables",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.2_5_10",
+        "arith.mult.3_4",
+        "arith.div.tables",
+        "arith.mult.word_tables",
+        "arith.div.word_tables"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.WN3.5",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "mental calculation involving multiplication and division within multiplication tables of 2, 3, 4, 5 and 10",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.2_5_10",
+        "arith.mult.3_4",
+        "arith.div.tables"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.FR1.1",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Fraction of a Whole",
+      "outcome": "fraction as part of a whole",
+      "coverage": "full",
+      "concepts": [
+        "frac.basics.concept"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.FR1.2",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Fraction of a Whole",
+      "outcome": "notation and representations of fractions",
+      "coverage": "full",
+      "concepts": [
+        "frac.basics.concept",
+        "frac.basics.parts"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.FR1.3",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Fraction of a Whole",
+      "outcome": "comparing and ordering fractions with denominators of given fractions not exceeding 12 (unit fractions; like fractions)",
+      "coverage": "full",
+      "concepts": [
+        "frac.compare.unit_like"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.FR2.1",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Addition and Subtraction",
+      "outcome": "adding and subtracting like fractions within one whole with denominators of given fractions not exceeding 12",
+      "coverage": "full",
+      "concepts": [
+        "frac.add.same",
+        "frac.sub.same"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P2.MO1.1",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Money",
+      "topic": "Money",
+      "outcome": "counting amount of money in dollars and cents",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.MO1.2",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Money",
+      "topic": "Money",
+      "outcome": "reading and writing money in decimal notation",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.MO1.3",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Money",
+      "topic": "Money",
+      "outcome": "comparing two or three amounts of money",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.MO1.4",
+      "level": "P2",
+      "strand": "Number and Algebra",
+      "sub_strand": "Money",
+      "topic": "Money",
+      "outcome": "converting an amount of money in decimal notation to cents only, and vice versa",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.ME1.1",
+      "level": "P2",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length, Mass and Volume",
+      "outcome": "measuring length in metres, mass in kilograms/grams, volume of liquid in litres",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.ME1.2",
+      "level": "P2",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length, Mass and Volume",
+      "outcome": "using appropriate units of measurement and their abbreviations m, g, kg, ℓ",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.ME1.3",
+      "level": "P2",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length, Mass and Volume",
+      "outcome": "comparing and ordering lengths, masses, volumes",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.ME2.1",
+      "level": "P2",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "telling time to the minute",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.ME2.2",
+      "level": "P2",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "measuring time in hours and minutes",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.ME2.3",
+      "level": "P2",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "converting time in hours and minutes to minutes only, and vice versa",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.GE1.1",
+      "level": "P2",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "2D Shapes",
+      "outcome": "making/completing patterns with 2D shapes according to one or two of the following attributes: size, shape, colour, orientation",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.GE2.1",
+      "level": "P2",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "3D Shapes",
+      "outcome": "identifying, naming, describing and classifying 3D shapes (cube, cuboid, cone, cylinder, sphere)",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P2.DR1.1",
+      "level": "P2",
+      "strand": "Statistics",
+      "sub_strand": "Data Representation and Interpretation",
+      "topic": "Picture Graphs with Scales",
+      "outcome": "reading and interpreting data from picture graphs with scales",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.WN1.1",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 10 000",
+      "outcome": "counting in hundreds/thousands",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.WN1.2",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 10 000",
+      "outcome": "number notation, representations and place values (thousands, hundreds, tens, ones)",
+      "coverage": "full",
+      "concepts": [
+        "arith.place.thousands"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.WN1.3",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 10 000",
+      "outcome": "reading and writing numbers in numerals and in words",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.WN1.4",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 10 000",
+      "outcome": "comparing and ordering numbers",
+      "coverage": "full",
+      "concepts": [
+        "arith.compare.whole"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.WN1.5",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 10 000",
+      "outcome": "patterns in number sequences",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.WN2.1",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "addition and subtraction algorithms (up to 4 digits)",
+      "coverage": "full",
+      "concepts": [
+        "arith.add.carry",
+        "arith.sub.borrow",
+        "arith.add.word",
+        "arith.sub.word"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.WN2.2",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Addition and Subtraction",
+      "outcome": "mental calculation involving addition and subtraction of two 2-digit numbers",
+      "coverage": "full",
+      "concepts": [
+        "arith.add.double",
+        "arith.sub.double"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.WN3.1",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "multiplication tables of 6, 7, 8 and 9",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.tables"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.WN3.2",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "multiplying and dividing within the multiplication tables",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.tables",
+        "arith.div.basic"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.WN3.3",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "division with remainder",
+      "coverage": "full",
+      "concepts": [
+        "arith.div.remainder",
+        "arith.div.interpret_remainder"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.WN3.4",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "multiplication and division algorithms (up to 3 digits by 1 digit)",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.triple",
+        "arith.div.long",
+        "arith.mult.word",
+        "arith.div.word"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.WN3.5",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Multiplication and Division",
+      "outcome": "mental calculation involving multiplication and division within multiplication tables",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.tables"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.FR1.1",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Equivalent Fractions",
+      "outcome": "equivalent fractions",
+      "coverage": "full",
+      "concepts": [
+        "frac.basics.equivalent"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.FR1.2",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Equivalent Fractions",
+      "outcome": "expressing a fraction in its simplest form",
+      "coverage": "full",
+      "concepts": [
+        "frac.ops.simplify"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.FR1.3",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Equivalent Fractions",
+      "outcome": "comparing and ordering unlike fractions with denominators of given fractions not exceeding 12",
+      "coverage": "full",
+      "concepts": [
+        "frac.ops.compare",
+        "frac.compare.cross",
+        "frac.compare.word"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.FR1.4",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Equivalent Fractions",
+      "outcome": "writing the equivalent fraction of a fraction given the denominator or the numerator",
+      "coverage": "full",
+      "concepts": [
+        "frac.equivalent.scale"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.FR2.1",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Addition and Subtraction",
+      "outcome": "adding and subtracting two related fractions within one whole with denominators of given fractions not exceeding 12",
+      "coverage": "partial",
+      "concepts": [
+        "frac.add.diff",
+        "frac.sub.diff"
+      ],
+      "note": "Denominators are not restricted to related fractions."
+    },
+    {
+      "id": "P3.MO1.1",
+      "level": "P3",
+      "strand": "Number and Algebra",
+      "sub_strand": "Money",
+      "topic": "Money",
+      "outcome": "adding and subtracting money in decimal notation",
+      "coverage": "full",
+      "concepts": [
+        "dec.ops.add.word",
+        "dec.ops.sub.word"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.ME1.1",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length, Mass and Volume",
+      "outcome": "measuring length in kilometres (km), volume of liquid in millilitres (ml)",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.ME1.2",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length, Mass and Volume",
+      "outcome": "measuring length/mass/volume (of liquid) in compound units",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.ME1.3",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Length, Mass and Volume",
+      "outcome": "converting a measurement in compound units to the smaller unit, and vice versa (km and m; m and cm; kg and g; ℓ and ml)",
+      "coverage": "partial",
+      "concepts": [
+        "prealg.measure.metric"
+      ],
+      "note": "Metric conversion is practised in single units, not compound units such as 2 km 300 m."
+    },
+    {
+      "id": "P3.ME2.1",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "measuring time in seconds",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.ME2.2",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "finding the starting time, finishing time or duration given the other two quantities",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.ME2.3",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Measurement",
+      "topic": "Time",
+      "outcome": "24-hour clock",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.AV1.1",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Perimeter",
+      "outcome": "concepts of area and perimeter of a plane figure",
+      "coverage": "full",
+      "concepts": [
+        "geo.quad.area",
+        "geo.quad.perimeter"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.AV1.2",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Perimeter",
+      "outcome": "measuring area in square units, cm2 and m2, excluding conversion between cm2 and m2",
+      "coverage": "partial",
+      "concepts": [
+        "geo.quad.area"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.AV1.3",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Perimeter",
+      "outcome": "perimeter of rectilinear figure, rectangle, square",
+      "coverage": "full",
+      "concepts": [
+        "geo.quad.perimeter"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.AV1.4",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Perimeter",
+      "outcome": "area of rectangle/square",
+      "coverage": "full",
+      "concepts": [
+        "geo.quad.area"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.GE1.1",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Angles",
+      "outcome": "concepts of angle",
+      "coverage": "full",
+      "concepts": [
+        "geo.basic.angles"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.GE1.2",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Angles",
+      "outcome": "right angles, angles greater than/smaller than a right angle",
+      "coverage": "full",
+      "concepts": [
+        "geo.basic.angles"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.GE2.1",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Perpendicular and Parallel Lines",
+      "outcome": "perpendicular and parallel lines",
+      "coverage": "partial",
+      "concepts": [
+        "geo.basic.points_lines"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.GE2.2",
+      "level": "P3",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Perpendicular and Parallel Lines",
+      "outcome": "drawing perpendicular and parallel lines",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P3.DR1.1",
+      "level": "P3",
+      "strand": "Statistics",
+      "sub_strand": "Data Representation and Interpretation",
+      "topic": "Bar Graphs",
+      "outcome": "reading and interpreting data from bar graphs",
+      "coverage": "full",
+      "concepts": [
+        "stat.data.bar_graph"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P3.DR1.2",
+      "level": "P3",
+      "strand": "Statistics",
+      "sub_strand": "Data Representation and Interpretation",
+      "topic": "Bar Graphs",
+      "outcome": "using different scales on axis",
+      "coverage": "partial",
+      "concepts": [
+        "stat.data.bar_graph"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.WN1.1",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100 000",
+      "outcome": "number notation, representations and place values (ten thousands, thousands, hundreds, tens, ones)",
+      "coverage": "partial",
+      "concepts": [
+        "arith.place.expanded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.WN1.2",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100 000",
+      "outcome": "reading and writing numbers in numerals and in words",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.WN1.3",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100 000",
+      "outcome": "comparing and ordering numbers",
+      "coverage": "full",
+      "concepts": [
+        "arith.compare.whole"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.WN1.4",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100 000",
+      "outcome": "patterns in number sequences",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.WN1.5",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100 000",
+      "outcome": "rounding numbers to the nearest 10, 100 or 1000",
+      "coverage": "full",
+      "concepts": [
+        "arith.round.tens",
+        "arith.round.hundreds",
+        "arith.round.thousands"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.WN1.6",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 100 000",
+      "outcome": "use of ≈",
+      "coverage": "full",
+      "concepts": [
+        "arith.estimate.sum",
+        "arith.estimate.product"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.WN2.1",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Factors and Multiples",
+      "outcome": "factors, multiples and their relationship",
+      "coverage": "full",
+      "concepts": [
+        "arith.factor.find"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.WN2.2",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Factors and Multiples",
+      "outcome": "determining if a 1-digit number is a factor of a given number within 100",
+      "coverage": "full",
+      "concepts": [
+        "arith.factor.find"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.WN2.3",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Factors and Multiples",
+      "outcome": "finding the common factors of two given numbers",
+      "coverage": "partial",
+      "concepts": [
+        "arith.factor.gcf"
+      ],
+      "note": "Practised through the highest common factor."
+    },
+    {
+      "id": "P4.WN2.4",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Factors and Multiples",
+      "outcome": "determining if a number is a multiple of a given 1-digit number",
+      "coverage": "partial",
+      "concepts": [
+        "arith.factor.find"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.WN2.5",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Factors and Multiples",
+      "outcome": "finding the common multiples of two given 1-digit numbers",
+      "coverage": "partial",
+      "concepts": [
+        "arith.factor.lcm"
+      ],
+      "note": "Practised through the lowest common multiple."
+    },
+    {
+      "id": "P4.WN3.1",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Four Operations",
+      "outcome": "multiplication algorithm (up to 4 digits by 1 digit; up to 3 digits by 2 digits)",
+      "coverage": "full",
+      "concepts": [
+        "arith.mult.triple",
+        "arith.mult.double"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.WN3.2",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Four Operations",
+      "outcome": "division algorithm (up to 4 digits by 1 digit)",
+      "coverage": "full",
+      "concepts": [
+        "arith.div.long",
+        "arith.word.multi_step"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.FR1.1",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Mixed Numbers and Improper Fractions",
+      "outcome": "mixed numbers, improper fractions and their relationship",
+      "coverage": "full",
+      "concepts": [
+        "frac.mixed.convert"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.FR2.1",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Fraction of a Set",
+      "outcome": "fraction as part of a set",
+      "coverage": "full",
+      "concepts": [
+        "frac.of_number",
+        "frac.remaining"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.FR3.1",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Addition and Subtraction",
+      "outcome": "adding and subtracting fractions with denominators of given fractions not exceeding 12 and not more than two different denominators",
+      "coverage": "full",
+      "concepts": [
+        "frac.add.diff",
+        "frac.sub.diff",
+        "frac.lcd",
+        "frac.add.word",
+        "frac.sub.word",
+        "frac.sub.whole"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.DE1.1",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Decimals up to 3 Decimal Places",
+      "outcome": "notation, representations and place values (tenths, hundredths, thousandths)",
+      "coverage": "partial",
+      "concepts": [
+        "arith.dec.intro"
+      ],
+      "note": "Covers tenths and hundredths; thousandths are not generated."
+    },
+    {
+      "id": "P4.DE1.2",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Decimals up to 3 Decimal Places",
+      "outcome": "comparing and ordering decimals",
+      "coverage": "full",
+      "concepts": [
+        "dec.basics.compare"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.DE1.3",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Decimals up to 3 Decimal Places",
+      "outcome": "expressing decimals as fractions",
+      "coverage": "full",
+      "concepts": [
+        "dec.convert.to_frac"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.DE1.4",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Decimals up to 3 Decimal Places",
+      "outcome": "expressing fractions as decimals when the denominator is a factor of 10 or 100",
+      "coverage": "full",
+      "concepts": [
+        "frac.ops.to_decimal"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.DE1.5",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Decimals up to 3 Decimal Places",
+      "outcome": "rounding decimals to the nearest whole number, 1 decimal place, 2 decimal places",
+      "coverage": "full",
+      "concepts": [
+        "dec.ops.round"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.DE2.1",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Addition and Subtraction",
+      "outcome": "adding and subtracting decimals (up to 2 decimal places)",
+      "coverage": "full",
+      "concepts": [
+        "dec.ops.add",
+        "dec.ops.sub"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.DE3.1",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Multiplication and Division",
+      "outcome": "multiplying and dividing decimals (up to 2 decimal places) by a 1-digit whole number",
+      "coverage": "partial",
+      "concepts": [
+        "dec.ops.mult",
+        "dec.ops.div",
+        "dec.ops.mult.word"
+      ],
+      "note": "Generators multiply and divide decimals in general, not only by a 1-digit whole number."
+    },
+    {
+      "id": "P4.DE3.2",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Multiplication and Division",
+      "outcome": "dividing a whole number by a whole number with quotient as a decimal",
+      "coverage": "partial",
+      "concepts": [
+        "dec.convert.from_frac"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.DE3.3",
+      "level": "P4",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Multiplication and Division",
+      "outcome": "rounding answers to a specified degree of accuracy",
+      "coverage": "partial",
+      "concepts": [
+        "dec.ops.round"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.AV1.1",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Perimeter",
+      "outcome": "finding one dimension of a rectangle given the other dimension and its area/perimeter",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.AV1.2",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Perimeter",
+      "outcome": "finding the length of one side of a square given its area/perimeter",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.AV1.3",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Perimeter",
+      "outcome": "finding the area and perimeter of composite figures made up of rectangles and squares",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE1.1",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Angles",
+      "outcome": "using notation such as ∠ABC and ∠a to name angles",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE1.2",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Angles",
+      "outcome": "measuring angles in degrees",
+      "coverage": "full",
+      "concepts": [
+        "geo.basic.angle_measure"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.GE1.3",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Angles",
+      "outcome": "drawing an angle of given size",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE2.1",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Rectangle and Square",
+      "outcome": "properties of rectangle and square, excluding diagonal properties",
+      "coverage": "partial",
+      "concepts": [
+        "geo.quad.types"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.GE2.2",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Rectangle and Square",
+      "outcome": "drawing rectangles and squares",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE3.1",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Line Symmetry",
+      "outcome": "identifying symmetric figures",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE3.2",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Line Symmetry",
+      "outcome": "determining whether a straight line is a line of symmetry of a symmetric figure",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE3.3",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Line Symmetry",
+      "outcome": "completing a symmetric figure with respect to a given line of symmetry on square grid",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE4.1",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Nets",
+      "outcome": "identifying 2D representations of cube, cuboid, cone, cylinder, prism, pyramid",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE4.2",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Nets",
+      "outcome": "drawing 2D representations of cube, cuboid, prism, pyramid",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE4.3",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Nets",
+      "outcome": "identifying the nets of 3D solids (cube, cuboid, prism, pyramid)",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.GE4.4",
+      "level": "P4",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Nets",
+      "outcome": "identifying the solid which can be formed by a given net",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P4.DR1.1",
+      "level": "P4",
+      "strand": "Statistics",
+      "sub_strand": "Data Representation and Interpretation",
+      "topic": "Tables, Line Graphs and Pie Charts",
+      "outcome": "completing a table from given data",
+      "coverage": "partial",
+      "concepts": [
+        "stat.data.read_table"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P4.DR1.2",
+      "level": "P4",
+      "strand": "Statistics",
+      "sub_strand": "Data Representation and Interpretation",
+      "topic": "Tables, Line Graphs and Pie Charts",
+      "outcome": "reading and interpreting data from tables/line graphs/pie charts",
+      "coverage": "partial",
+      "concepts": [
+        "stat.data.read_table"
+      ],
+      "note": "Tables only; line graphs and pie charts are not generated."
+    },
+    {
+      "id": "P5.WN1.1",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Numbers up to 10 million",
+      "outcome": "reading and writing numbers in numerals and in words",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P5.WN2.1",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Four Operations",
+      "outcome": "multiplying and dividing by 10, 100, 1000 and their multiples without calculator",
+      "coverage": "full",
+      "concepts": [
+        "arith.place.powers_ten"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.WN2.2",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Four Operations",
+      "outcome": "order of operations without calculator",
+      "coverage": "full",
+      "concepts": [
+        "arith.order_ops.basic"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.WN2.3",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Whole Numbers",
+      "topic": "Four Operations",
+      "outcome": "use of brackets without calculator",
+      "coverage": "full",
+      "concepts": [
+        "arith.order_ops.nested"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.FR1.1",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Fraction and Division",
+      "outcome": "dividing a whole number by a whole number with quotient as a fraction",
+      "coverage": "full",
+      "concepts": [
+        "frac.as_division"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.FR1.2",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Fraction and Division",
+      "outcome": "expressing fractions as decimals",
+      "coverage": "full",
+      "concepts": [
+        "frac.ops.to_decimal",
+        "dec.convert.from_frac"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.FR2.1",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Four Operations",
+      "outcome": "adding and subtracting mixed numbers",
+      "coverage": "full",
+      "concepts": [
+        "frac.mixed.add",
+        "frac.mixed.sub",
+        "frac.mixed.word"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.FR2.2",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Four Operations",
+      "outcome": "multiplying a proper/improper fraction and a whole number without calculator",
+      "coverage": "full",
+      "concepts": [
+        "frac.mult.whole"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.FR2.3",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Four Operations",
+      "outcome": "multiplying a proper fraction and a proper/improper fraction without calculator",
+      "coverage": "full",
+      "concepts": [
+        "frac.ops.mult",
+        "frac.of_fraction",
+        "frac.mult.cancel"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.FR2.4",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Four Operations",
+      "outcome": "multiplying two improper fractions",
+      "coverage": "full",
+      "concepts": [
+        "frac.ops.mult"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.FR2.5",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Four Operations",
+      "outcome": "multiplying a mixed number and a whole number",
+      "coverage": "partial",
+      "concepts": [
+        "frac.mixed.mult",
+        "frac.mult.word"
+      ],
+      "note": "Generator multiplies mixed numbers in general."
+    },
+    {
+      "id": "P5.DE1.1",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Four Operations",
+      "outcome": "multiplying and dividing decimals (up to 3 decimal places) by 10, 100, 1000 and their multiples without calculator",
+      "coverage": "partial",
+      "concepts": [
+        "arith.place.powers_ten"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.DE1.2",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Decimals",
+      "topic": "Four Operations",
+      "outcome": "converting a measurement from a smaller unit to a larger unit in decimal form, and vice versa (km and m; m and cm; kg and g; ℓ and ml)",
+      "coverage": "full",
+      "concepts": [
+        "prealg.measure.metric"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.PE1.1",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Percentage",
+      "topic": "Percentage",
+      "outcome": "expressing a part of a whole as a percentage",
+      "coverage": "full",
+      "concepts": [
+        "pct.ops.find_rate"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.PE1.2",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Percentage",
+      "topic": "Percentage",
+      "outcome": "use of %",
+      "coverage": "full",
+      "concepts": [
+        "pct.basics.concept",
+        "pct.convert.to_dec",
+        "pct.convert.from_dec"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.PE1.3",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Percentage",
+      "topic": "Percentage",
+      "outcome": "finding a percentage part of a whole",
+      "coverage": "full",
+      "concepts": [
+        "pct.ops.of_number"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.PE1.4",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Percentage",
+      "topic": "Percentage",
+      "outcome": "finding discount, GST and annual interest",
+      "coverage": "partial",
+      "concepts": [
+        "pct.ops.discount",
+        "pct.ops.tax_tip",
+        "pct.ops.simple_interest"
+      ],
+      "note": "Discount is covered; tax problems are not GST-specific and the tax generator also produces tips."
+    },
+    {
+      "id": "P5.RA1.1",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Rate",
+      "topic": "Rate",
+      "outcome": "rate as the amount of a quantity per unit of another quantity",
+      "coverage": "full",
+      "concepts": [
+        "ratio.ops.rate"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.RA1.2",
+      "level": "P5",
+      "strand": "Number and Algebra",
+      "sub_strand": "Rate",
+      "topic": "Rate",
+      "outcome": "finding rate, total amount or number of units given the other two quantities",
+      "coverage": "full",
+      "concepts": [
+        "ratio.ops.rate.word"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.AV1.1",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area of Triangle",
+      "outcome": "concepts of base and height of a triangle",
+      "coverage": "full",
+      "concepts": [
+        "geo.triangle.area"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.AV1.2",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area of Triangle",
+      "outcome": "area of triangle",
+      "coverage": "full",
+      "concepts": [
+        "geo.triangle.area"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.AV1.3",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area of Triangle",
+      "outcome": "finding the area of composite figures made up of rectangles, squares and triangles",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P5.AV2.1",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "building solids with unit cubes",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P5.AV2.2",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "measuring volume in cubic units, cm3/m3, excluding conversion between cm3 and m3",
+      "coverage": "partial",
+      "concepts": [
+        "geo.solid.volume_rect"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.AV2.3",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "drawing cubes and cuboids on isometric grid",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P5.AV2.4",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "volume of a cube/cuboid",
+      "coverage": "full",
+      "concepts": [
+        "geo.solid.volume_rect"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.AV2.5",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "finding the volume of liquid in a rectangular tank",
+      "coverage": "partial",
+      "concepts": [
+        "geo.solid.volume_rect"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.AV2.6",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "relationship between ℓ (or ml) with cm3",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P5.GE1.1",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Angles",
+      "outcome": "angles on a straight line",
+      "coverage": "full",
+      "concepts": [
+        "geo.basic.complementary"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.GE1.2",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Angles",
+      "outcome": "angles at a point",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P5.GE1.3",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Angles",
+      "outcome": "vertically opposite angles",
+      "coverage": "full",
+      "concepts": [
+        "geo.basic.vertical"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.GE1.4",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Angles",
+      "outcome": "finding unknown angles",
+      "coverage": "partial",
+      "concepts": [
+        "geo.basic.complementary",
+        "geo.basic.vertical"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.GE2.1",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Triangle",
+      "outcome": "properties of isosceles triangle, equilateral triangle, right-angled triangle",
+      "coverage": "full",
+      "concepts": [
+        "geo.triangle.types",
+        "geo.triangle.isosceles"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.GE2.2",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Triangle",
+      "outcome": "angle sum of a triangle",
+      "coverage": "full",
+      "concepts": [
+        "geo.triangle.angles"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.GE2.3",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Triangle",
+      "outcome": "finding unknown angles without additional construction of lines",
+      "coverage": "full",
+      "concepts": [
+        "geo.triangle.angles",
+        "geo.triangle.isosceles"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.GE3.1",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Parallelogram, Rhombus and Trapezium",
+      "outcome": "properties of parallelogram, rhombus, trapezium",
+      "coverage": "partial",
+      "concepts": [
+        "geo.quad.types"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P5.GE3.2",
+      "level": "P5",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Parallelogram, Rhombus and Trapezium",
+      "outcome": "finding unknown angles without additional construction of lines",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P6.FR1.1",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Four Operations",
+      "outcome": "dividing a proper fraction by a whole number without calculator",
+      "coverage": "partial",
+      "concepts": [
+        "frac.ops.div"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.FR1.2",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Fractions",
+      "topic": "Four Operations",
+      "outcome": "dividing a whole number/proper fraction by a proper fraction without calculator",
+      "coverage": "full",
+      "concepts": [
+        "frac.div.whole",
+        "frac.ops.div",
+        "frac.div.word"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.PE1.1",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Percentage",
+      "topic": "Percentage",
+      "outcome": "finding the whole given a part and the percentage",
+      "coverage": "partial",
+      "concepts": [
+        "ratio.ops.percent_proportion"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.PE1.2",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Percentage",
+      "topic": "Percentage",
+      "outcome": "finding percentage increase/decrease",
+      "coverage": "full",
+      "concepts": [
+        "pct.ops.increase",
+        "pct.ops.change"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.RT1.1",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Ratio",
+      "topic": "Ratio",
+      "outcome": "notation, representations and interpretation of a:b and a:b:c, where a, b and c are whole numbers, excluding ratios involving fractions and decimals",
+      "coverage": "partial",
+      "concepts": [
+        "ratio.basics.concept"
+      ],
+      "note": "Two-term ratios only; a:b:c is not generated."
+    },
+    {
+      "id": "P6.RT1.2",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Ratio",
+      "topic": "Ratio",
+      "outcome": "equivalent ratios",
+      "coverage": "partial",
+      "concepts": [
+        "ratio.ops.simplify"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.RT1.3",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Ratio",
+      "topic": "Ratio",
+      "outcome": "dividing a quantity in a given ratio",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P6.RT1.4",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Ratio",
+      "topic": "Ratio",
+      "outcome": "expressing a ratio in its simplest form",
+      "coverage": "full",
+      "concepts": [
+        "ratio.ops.simplify"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.RT1.5",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Ratio",
+      "topic": "Ratio",
+      "outcome": "finding the ratio of two or three given quantities",
+      "coverage": "partial",
+      "concepts": [
+        "ratio.basics.concept"
+      ],
+      "note": "Two quantities only."
+    },
+    {
+      "id": "P6.RT1.6",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Ratio",
+      "topic": "Ratio",
+      "outcome": "finding the missing term in a pair of equivalent ratios",
+      "coverage": "full",
+      "concepts": [
+        "ratio.ops.proportion",
+        "ratio.ops.proportion.word"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.RT1.7",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Ratio",
+      "topic": "Ratio",
+      "outcome": "relationship between fraction and ratio",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P6.AL1.1",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Algebra",
+      "topic": "Algebra",
+      "outcome": "using a letter to represent an unknown number",
+      "coverage": "full",
+      "concepts": [
+        "prealg.var.concept"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AL1.2",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Algebra",
+      "topic": "Algebra",
+      "outcome": "notation, representations and interpretation of simple algebraic expressions such as a ± 3, a × 3 or 3a, a ÷ 3 or a/3",
+      "coverage": "full",
+      "concepts": [
+        "prealg.expr.translate"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AL1.3",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Algebra",
+      "topic": "Algebra",
+      "outcome": "simplifying simple linear expressions excluding brackets",
+      "coverage": "full",
+      "concepts": [
+        "prealg.expr.like_terms"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AL1.4",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Algebra",
+      "topic": "Algebra",
+      "outcome": "evaluating simple linear expressions by substitution",
+      "coverage": "full",
+      "concepts": [
+        "prealg.expr.evaluate"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AL1.5",
+      "level": "P6",
+      "strand": "Number and Algebra",
+      "sub_strand": "Algebra",
+      "topic": "Algebra",
+      "outcome": "simple linear equations involving whole number coefficient only",
+      "coverage": "full",
+      "concepts": [
+        "prealg.eq.one_step_add",
+        "prealg.eq.one_step_mult",
+        "prealg.eq.two_step"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AV1.1",
+      "level": "P6",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Circumference of Circle",
+      "outcome": "area and circumference of circle",
+      "coverage": "full",
+      "concepts": [
+        "geo.circle.parts",
+        "geo.circle.circumference",
+        "geo.circle.area"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AV1.2",
+      "level": "P6",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Circumference of Circle",
+      "outcome": "finding the area and perimeter of semicircle, quarter circle",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P6.AV1.3",
+      "level": "P6",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Area and Circumference of Circle",
+      "outcome": "finding the area and perimeter of composite figures made up of square, rectangle, triangle, semicircle and quarter circle",
+      "coverage": "none",
+      "concepts": [],
+      "note": ""
+    },
+    {
+      "id": "P6.AV2.1",
+      "level": "P6",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "finding one dimension of a cuboid given its volume and the other dimensions",
+      "coverage": "partial",
+      "concepts": [
+        "geo.solid.volume_rect"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AV2.2",
+      "level": "P6",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "finding the length of one edge of a cube given its volume",
+      "coverage": "partial",
+      "concepts": [
+        "geo.solid.volume_rect",
+        "arith.sqrt.cube"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AV2.3",
+      "level": "P6",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "finding the height of a cuboid given its volume and base area",
+      "coverage": "partial",
+      "concepts": [
+        "geo.solid.volume_rect"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AV2.4",
+      "level": "P6",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "finding the area of a face of a cuboid given its volume and one dimension",
+      "coverage": "partial",
+      "concepts": [
+        "geo.solid.volume_rect"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.AV2.5",
+      "level": "P6",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Area and Volume",
+      "topic": "Volume of Cube and Cuboid",
+      "outcome": "use of √ and ∛",
+      "coverage": "partial",
+      "concepts": [
+        "arith.sqrt.perfect",
+        "arith.sqrt.cube"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.GE1.1",
+      "level": "P6",
+      "strand": "Measurement and Geometry",
+      "sub_strand": "Geometry",
+      "topic": "Special Quadrilaterals",
+      "outcome": "finding unknown angles, without additional construction of lines, in composite geometric figures involving square, rectangle, triangle, parallelogram, rhombus, trapezium",
+      "coverage": "partial",
+      "concepts": [
+        "geo.triangle.angles",
+        "geo.quad.types"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.DA1.1",
+      "level": "P6",
+      "strand": "Statistics",
+      "sub_strand": "Data Analysis",
+      "topic": "Average of a Set of Data",
+      "outcome": "average as ‘total value ÷ number of data’",
+      "coverage": "full",
+      "concepts": [
+        "stat.data.mean"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P6.DA1.2",
+      "level": "P6",
+      "strand": "Statistics",
+      "sub_strand": "Data Analysis",
+      "topic": "Average of a Set of Data",
+      "outcome": "relationship between average, total value and number of data",
+      "coverage": "partial",
+      "concepts": [
+        "stat.data.mean"
+      ],
+      "note": ""
+    }
+  ]
+}

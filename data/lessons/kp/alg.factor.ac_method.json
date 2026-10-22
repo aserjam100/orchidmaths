@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "Identify the a, b, c coefficients",
+      "Compute the product ac",
+      "Prepare the split"
+    ]
+  },
+  {
+    "label": "The method",
+    "section": "",
+    "subgoals": [
+      "Find factors of ac summing to b",
+      "Split the middle term",
+      "Factor by grouping"
+    ]
+  },
+  {
+    "label": "Relation to Vieta",
+    "section": "",
+    "subgoals": [
+      "Connect the factors to the roots",
+      "Verify with Vieta",
+      "Check the factorization"
+    ]
+  }
+]

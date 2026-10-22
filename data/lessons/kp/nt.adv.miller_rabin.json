@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Strong probable primes",
+    "section": "Strong probable primes",
+    "subgoals": [
+      "Write n-1 = 2^s d",
+      "Compute a^d mod n",
+      "Square toward -1"
+    ]
+  },
+  {
+    "label": "Worked: a base that exposes 9",
+    "section": "Worked: a base that exposes 9",
+    "subgoals": [
+      "Set s = 3 and d = 1",
+      "Compute 2, 4, 7 mod 9",
+      "Call 2 a witness"
+    ]
+  },
+  {
+    "label": "Error control and witnesses",
+    "section": "Error control and witnesses",
+    "subgoals": [
+      "Bound liars by one quarter",
+      "Test k independent bases",
+      "Defeat Carmichael numbers"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Unit fractions",
+    "section": "Unit fractions",
+    "subgoals": [
+      "Check both numerators are 1",
+      "Compare the denominators",
+      "The smaller denominator is the bigger fraction"
+    ]
+  },
+  {
+    "label": "Like fractions",
+    "section": "Like fractions",
+    "subgoals": [
+      "Check the denominators are the same",
+      "Compare the numerators",
+      "The bigger numerator is the bigger fraction"
+    ]
+  },
+  {
+    "label": "Use the signs",
+    "section": "Use the signs",
+    "subgoals": [
+      "Decide which fraction is bigger",
+      "Point the open side at the bigger fraction",
+      "Type only the sign"
+    ]
+  }
+]

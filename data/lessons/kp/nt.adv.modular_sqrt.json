@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two roots when one exists",
+    "section": "Two roots when one exists",
+    "subgoals": [
+      "Check a is a quadratic residue",
+      "Find one root by search or Tonelli",
+      "Pair it with p - x"
+    ]
+  },
+  {
+    "label": "Worked: roots modulo 11 and 13",
+    "section": "Worked: roots modulo 11 and 13",
+    "subgoals": [
+      "Find 4 and 7 for 5 mod 11",
+      "Find 4 and 9 for 3 mod 13",
+      "Take the smaller root"
+    ]
+  },
+  {
+    "label": "Finding a root in practice",
+    "section": "Finding a root in practice",
+    "subgoals": [
+      "Use a^((p+1)/4) when p is 3 mod 4",
+      "Use Tonelli-Shanks when p is 1 mod 4",
+      "Find a nonresidue first"
+    ]
+  }
+]

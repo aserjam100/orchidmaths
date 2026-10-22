@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the torus",
+    "section": "Worked: the torus",
+    "subgoals": [
+      "Split a torus loop into factor loops",
+      "Read a winding number per factor",
+      "Add pairs componentwise"
+    ]
+  },
+  {
+    "label": "Worked: the twice-punctured plane",
+    "section": "Worked: the twice-punctured plane",
+    "subgoals": [
+      "Loop once around each puncture",
+      "Apply Van Kampen with no relation",
+      "Spell loops as words in two generators"
+    ]
+  },
+  {
+    "label": "Worked: detecting simple connectivity",
+    "section": "Worked: detecting simple connectivity",
+    "subgoals": [
+      "Push the loop off a point",
+      "Contract it in the plane chart",
+      "Conclude the group is trivial"
+    ]
+  }
+]

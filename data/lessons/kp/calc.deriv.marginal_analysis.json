@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Marginals as derivatives",
+    "section": "Marginals as derivatives",
+    "subgoals": [
+      "Differentiate the total cost and total revenue",
+      "Read the marginals as per-unit rates",
+      "Maximise profit where the marginals agree"
+    ]
+  },
+  {
+    "label": "Reading the cost curve",
+    "section": "Reading the cost curve",
+    "subgoals": [
+      "Differentiate once and evaluate",
+      "Separate average from marginal",
+      "Minimise average where the two meet"
+    ]
+  },
+  {
+    "label": "Elasticity and decisions",
+    "section": "Elasticity and decisions",
+    "subgoals": [
+      "Build elasticity from a derivative",
+      "Decide by comparing marginals",
+      "Check the endpoints as well"
+    ]
+  }
+]

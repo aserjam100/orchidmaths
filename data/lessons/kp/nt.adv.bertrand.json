@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A prime in every interval (n, 2n)",
+    "section": "A prime in every interval (n, 2n)",
+    "subgoals": [
+      "Apply n < p < 2n",
+      "Check pi(2n) > pi(n)",
+      "Compare with the prime number theorem"
+    ]
+  },
+  {
+    "label": "Worked: checking n = 100",
+    "section": "Worked: checking n = 100",
+    "subgoals": [
+      "Apply the postulate to 100",
+      "Exhibit 101",
+      "Check n = 2 with 3"
+    ]
+  },
+  {
+    "label": "From Bertrand to the prime number theorem",
+    "section": "From Bertrand to the prime number theorem",
+    "subgoals": [
+      "Credit Chebyshev in 1850",
+      "Credit Erdos in 1932",
+      "Derive Bertrand for large n from PNT"
+    ]
+  }
+]

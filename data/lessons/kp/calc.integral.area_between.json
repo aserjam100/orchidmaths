@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Area between two curves using definite integrals",
+    "section": "",
+    "subgoals": [
+      "Subtract lower curve from upper: integral of (f-g)",
+      "Split at intersection x-values",
+      "Integrate x^2 vs x on [0,1] to get 1/6"
+    ]
+  },
+  {
+    "label": "Areas between intersecting curves",
+    "section": "",
+    "subgoals": [
+      "Solve f(x) = g(x) for crossing points",
+      "Test which curve sits on top per interval",
+      "Add signed pieces separately"
+    ]
+  },
+  {
+    "label": "Flowchart",
+    "section": "",
+    "subgoals": [
+      "Decide dx vs dy from curve layout",
+      "Branch on intersect vs enclose",
+      "Route to split-at-crossings"
+    ]
+  }
+]

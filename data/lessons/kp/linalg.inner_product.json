@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: (1,2)·(3,4) = 11",
+    "section": "Worked: (1,2)·(3,4) = 11",
+    "subgoals": [
+      "Multiply componentwise",
+      "Add to 11",
+      "Check the norm 5"
+    ]
+  },
+  {
+    "label": "Worked: weighted inner product on R^2",
+    "section": "Worked: weighted inner product on R^2",
+    "subgoals": [
+      "Verify bilinearity and symmetry",
+      "Check positive definiteness",
+      "Keep weights positive"
+    ]
+  },
+  {
+    "label": "Cauchy-Schwarz",
+    "section": "Cauchy-Schwarz",
+    "subgoals": [
+      "Bound the inner product",
+      "Read the cosine range",
+      "Apply universally"
+    ]
+  }
+]

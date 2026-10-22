@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Shape and period",
+    "section": "Shape and period",
+    "subgoals": [
+      "Divide sine by cosine",
+      "Watch the rise to the asymptote",
+      "Repeat every half turn"
+    ]
+  },
+  {
+    "label": "Asymptotes and zeros",
+    "section": "Asymptotes and zeros",
+    "subgoals": [
+      "Place asymptotes where cosine is zero",
+      "Place zeros where sine is zero",
+      "Keep each branch monotone"
+    ]
+  },
+  {
+    "label": "Transformations",
+    "section": "Transformations",
+    "subgoals": [
+      "Compress the period by the inner coefficient",
+      "Stretch vertically without moving asymptotes",
+      "Read the phase shift from a zero"
+    ]
+  }
+]

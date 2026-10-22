@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Steps and partial sums",
+    "section": "Steps and partial sums",
+    "subgoals": [
+      "Take one step's mean and variance",
+      "Add the contributions across steps",
+      "See the linear growth"
+    ]
+  },
+  {
+    "label": "Worked: variance after several steps",
+    "section": "Worked: variance after several steps",
+    "subgoals": [
+      "Compute the per-step variance",
+      "Multiply by the number of steps",
+      "Report the variance of the sum"
+    ]
+  },
+  {
+    "label": "Recurrence and transience",
+    "section": "Recurrence and transience",
+    "subgoals": [
+      "State recurrence in one dimension",
+      "Note recurrence in two",
+      "Note transience in three"
+    ]
+  }
+]

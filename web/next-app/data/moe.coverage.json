@@ -1,0 +1,54 @@
+{
+  "outcomeCount": 202,
+  "conceptCount": 136,
+  "levels": [
+    {
+      "level": "P1",
+      "name": "Primary 1",
+      "outcomes": 32,
+      "full": 10,
+      "partial": 1,
+      "none": 21
+    },
+    {
+      "level": "P2",
+      "name": "Primary 2",
+      "outcomes": 30,
+      "full": 11,
+      "partial": 2,
+      "none": 17
+    },
+    {
+      "level": "P3",
+      "name": "Primary 3",
+      "outcomes": 34,
+      "full": 20,
+      "partial": 5,
+      "none": 9
+    },
+    {
+      "level": "P4",
+      "name": "Primary 4",
+      "outcomes": 42,
+      "full": 16,
+      "partial": 11,
+      "none": 15
+    },
+    {
+      "level": "P5",
+      "name": "Primary 5",
+      "outcomes": 37,
+      "full": 23,
+      "partial": 7,
+      "none": 7
+    },
+    {
+      "level": "P6",
+      "name": "Primary 6",
+      "outcomes": 27,
+      "full": 11,
+      "partial": 12,
+      "none": 4
+    }
+  ]
+}

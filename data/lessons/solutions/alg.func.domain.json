@@ -1,0 +1,15 @@
+{
+  "concept": "alg.func.domain",
+  "setup": "The function is \\(f(x) = \\sqrt{x - [[k]]}\\).",
+  "steps": [
+    {
+      "fact": "k",
+      "say": "A square root is defined over the reals when its radicand is not negative, so the domain needs \\(x - [[k]] \\ge 0\\)."
+    },
+    {
+      "fact": "answer",
+      "say": "That is \\(x \\ge [[k]]\\), and the smallest integer that satisfies it is \\([[answer]]\\)."
+    }
+  ],
+  "answer": "So the domain begins at \\(x = [[answer]]\\)."
+}

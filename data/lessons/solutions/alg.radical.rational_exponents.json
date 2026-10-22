@@ -1,0 +1,19 @@
+{
+  "concept": "alg.radical.rational_exponents",
+  "setup": "You are evaluating \\([[base]]^{[[exponent]]}\\).",
+  "steps": [
+    {
+      "fact": "root",
+      "say": "Write the base as a power: \\([[base]] = [[root]]^{[[index]]}\\)."
+    },
+    {
+      "fact": "magnitude",
+      "say": "Then \\([[base]]^{[[power]]/[[index]]} = [[root]]^{[[power]]} = [[magnitude]]\\)."
+    },
+    {
+      "fact": "value",
+      "say": "With the exponent \\([[exponent]]\\), the value is [[value]]."
+    }
+  ],
+  "answer": "So \\([[base]]^{[[exponent]]} = [[value]]\\)."
+}

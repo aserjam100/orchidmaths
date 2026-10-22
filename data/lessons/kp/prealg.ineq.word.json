@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Choose the inequality symbol",
+    "section": "Choose the inequality symbol",
+    "subgoals": [
+      "Read 'at most' as less than or equal",
+      "Read 'at least' as greater than or equal",
+      "Keep the direction of the comparison"
+    ]
+  },
+  {
+    "label": "Write the inequality",
+    "section": "Write the inequality",
+    "subgoals": [
+      "Let the unknown be x",
+      "Write the fixed plus repeated amount",
+      "Compare the expression with the limit"
+    ]
+  },
+  {
+    "label": "Solve and interpret the whole-number answer",
+    "section": "Solve and interpret the whole-number answer",
+    "subgoals": [
+      "Subtract the fixed amount",
+      "Divide by the rate",
+      "Choose the greatest or least whole number"
+    ]
+  }
+]

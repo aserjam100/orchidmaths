@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The Family of Quadrilaterals",
+    "section": "The Family of Quadrilaterals",
+    "subgoals": [
+      "Count parallel pairs: one for trapezoid, two for parallelogram",
+      "Demand four right angles for a rectangle",
+      "Demand four equal sides for a rhombus"
+    ]
+  },
+  {
+    "label": "The Hierarchy",
+    "section": "The Hierarchy",
+    "subgoals": [
+      "Nest every square inside rectangle and rhombus",
+      "Carry parallelogram properties down to all children",
+      "Total every quadrilateral at 360 degrees"
+    ]
+  },
+  {
+    "label": "Drill: rhombus-or-trapezoid calls",
+    "section": "",
+    "subgoals": [
+      "Call four equal sides without right angles a rhombus",
+      "Reject 9-and-5 opposite sides as a parallelogram",
+      "File the 9-and-5 shape as a trapezoid"
+    ]
+  }
+]

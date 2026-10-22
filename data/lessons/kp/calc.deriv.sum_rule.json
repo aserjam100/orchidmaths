@@ -1,0 +1,29 @@
+[
+  {
+    "label": "3.3 Differentiation Rules",
+    "section": "",
+    "subgoals": [
+      "Split (f+-g)' into f'+-g'",
+      "Differentiate 4x^3+2x^2-x term by term",
+      "Factor constants out first"
+    ]
+  },
+  {
+    "label": "The Basic Rules",
+    "section": "",
+    "subgoals": [
+      "Differentiate c*f to c*f' with constants factored out",
+      "Add derivatives term-by-term for sums",
+      "Combine on 3x^2+2x to 6x+2"
+    ]
+  },
+  {
+    "label": "The Constant Rule",
+    "section": "",
+    "subgoals": [
+      "Pull constants out before differentiating",
+      "Differentiate 4x^3 to 12x^2",
+      "Confirm constant functions give 0"
+    ]
+  }
+]

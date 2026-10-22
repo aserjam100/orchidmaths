@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Ordered sums",
+    "section": "Ordered sums",
+    "subgoals": [
+      "Define a composition",
+      "Contrast it with a partition",
+      "Count compositions into two parts"
+    ]
+  },
+  {
+    "label": "Stars and bars with a twist",
+    "section": "Stars and bars with a twist",
+    "subgoals": [
+      "Derive the binomial coefficient",
+      "Compare with non-negative solutions",
+      "See why positive parts remove freedom"
+    ]
+  },
+  {
+    "label": "Counting all of them",
+    "section": "Counting all of them",
+    "subgoals": [
+      "Sum over the number of parts",
+      "Recover the power of two",
+      "Check the formula at n = 4"
+    ]
+  }
+]

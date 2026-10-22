@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Model subtraction of mixed numbers",
+    "section": "",
+    "subgoals": [
+      "Model the first mixed number",
+      "Remove the second amount",
+      "Count what remains"
+    ]
+  },
+  {
+    "label": "Subtract mixed numbers with a common denominator",
+    "section": "",
+    "subgoals": [
+      "Subtract the fractions",
+      "Borrow from the whole when needed",
+      "Subtract the whole numbers"
+    ]
+  },
+  {
+    "label": "Subtract as improper fractions",
+    "section": "",
+    "subgoals": [
+      "Convert to improper fractions",
+      "Subtract the numerators",
+      "Convert the result back"
+    ]
+  }
+]

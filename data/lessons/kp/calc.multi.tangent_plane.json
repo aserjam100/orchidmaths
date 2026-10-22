@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The plane that matches the surface",
+    "section": "The plane that matches the surface",
+    "subgoals": [
+      "Write the tangent plane",
+      "Explain the two partial derivatives",
+      "Compute one"
+    ]
+  },
+  {
+    "label": "Linear approximation",
+    "section": "Linear approximation",
+    "subgoals": [
+      "Drop the higher-order terms",
+      "Estimate a small change",
+      "Read it as error propagation"
+    ]
+  },
+  {
+    "label": "Where the approximation is exact",
+    "section": "Where the approximation is exact",
+    "subgoals": [
+      "For a quadratic step of one",
+      "Say when the plane is good",
+      "Compare with the one-variable case"
+    ]
+  }
+]

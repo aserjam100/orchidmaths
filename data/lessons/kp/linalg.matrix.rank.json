@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Count the independent rows of A",
+      "Bound the rank by min(m,n)",
+      "Split rank from nullity via rank + nullity = n"
+    ]
+  },
+  {
+    "label": "Submatrices and minors",
+    "section": "",
+    "subgoals": [
+      "Delete rows and columns to form a submatrix",
+      "Take the determinant of each square submatrix",
+      "Name each determinant a minor"
+    ]
+  },
+  {
+    "label": "Definition via minors",
+    "section": "",
+    "subgoals": [
+      "Search for the largest nonzero minor",
+      "Read its order as the rank",
+      "Confirm all larger minors vanish"
+    ]
+  }
+]

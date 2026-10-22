@@ -1,0 +1,599 @@
+[
+  {
+    "id": "nt.basics.divisibility",
+    "label": "Divisibility rules",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "arith.factor.find"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 10.0
+    }
+  },
+  {
+    "id": "nt.basics.gcd_euclidean",
+    "label": "Euclidean algorithm for GCD",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "arith.factor.gcf",
+      "arith.div.remainder"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 18.0
+    }
+  },
+  {
+    "id": "nt.basics.modular",
+    "label": "Modular arithmetic",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.divisibility",
+      "arith.neg.mult_div"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "nt.basics.congruence",
+    "label": "Congruence relations",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.basics.modular"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "nt.adv.fermat_little",
+    "label": "Fermat's little theorem",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.congruence",
+      "arith.exp.evaluate"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "nt.adv.euler_phi",
+    "label": "Euler's totient function",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.adv.fermat_little",
+      "arith.factor.prime_fact"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "nt.adv.diophantine",
+    "label": "Linear Diophantine equations",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.basics.gcd_euclidean",
+      "alg.eq.vars_both_sides"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "nt.app.crypto",
+    "label": "Introduction to RSA cryptography",
+    "domain": "number_theory",
+    "subdomain": "number_theory.applications",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.adv.euler_phi"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 35.0
+    }
+  },
+  {
+    "id": "nt.basics.bezout",
+    "label": "B\u00e9zout's identity",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.gcd_euclidean"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "nt.basics.crt",
+    "label": "Chinese remainder theorem",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.congruence",
+      "nt.basics.bezout"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 25.0
+    }
+  },
+  {
+    "id": "nt.adv.wilson",
+    "label": "Wilson's theorem",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.adv.fermat_little"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "nt.basics.prime_inf",
+    "label": "Infinitude of primes",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.basics.divisibility"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 15.0
+    }
+  },
+  {
+    "id": "nt.adv.legendre",
+    "label": "Legendre symbol",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.adv.wilson"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "nt.adv.quadratic_reciprocity",
+    "label": "Quadratic reciprocity",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.adv.legendre"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "nt.basics.order_mod",
+    "label": "Order modulo n",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.basics.crt"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 20.0
+    }
+  },
+  {
+    "id": "nt.adv.primitive_root",
+    "label": "Primitive roots",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.basics.order_mod",
+      "nt.adv.euler_phi"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.adv.mobius",
+    "label": "M\u00f6bius function and inversion",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.adv.euler_phi"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.analytic.prime_number_theorem",
+    "label": "Prime number theorem",
+    "domain": "number_theory",
+    "subdomain": "number_theory.analytic",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.adv.mobius",
+      "nt.basics.prime_inf"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "nt.adv.dirichlet",
+    "label": "Dirichlet's theorem on arithmetic progressions",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.adv.primitive_root",
+      "nt.adv.legendre"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "nt.adv.sieve",
+    "label": "Sieve of Eratosthenes and Brun's sieve",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.analytic.prime_number_theorem"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.analytic.zeta",
+    "label": "Riemann zeta function",
+    "domain": "number_theory",
+    "subdomain": "number_theory.analytic",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.analytic.prime_number_theorem"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "nt.adv.chebyshev",
+    "label": "Chebyshev functions",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.analytic.zeta"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "nt.adv.elliptic_curve",
+    "label": "Elliptic curves and BSD",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.adv.dirichlet"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 30.0
+    }
+  },
+  {
+    "id": "nt.adv.continued_fractions",
+    "label": "Continued fractions",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.basics.order_mod"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "nt.adv.class_number",
+    "label": "Class numbers",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.adv.chebyshev"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "nt.divisor.count",
+    "label": "Counting divisors",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.divisibility"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.divisor.sum",
+    "label": "The sum of the divisors",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.divisor.count"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.prime.exponent",
+    "label": "The exponent of a prime in a factorial",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.divisibility"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.congruence.linear",
+    "label": "Linear congruences",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.congruence"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.pythagorean.hypotenuse",
+    "label": "Primitive Pythagorean triples",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.gcd_euclidean"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.residue.count",
+    "label": "Quadratic residues",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.adv.legendre"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.base.convert",
+    "label": "Writing a number in another base",
+    "domain": "number_theory",
+    "subdomain": "number_theory.basics",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.divisibility"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.adv.jacobi",
+    "label": "The Jacobi symbol",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.adv.legendre"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "nt.adv.discrete_log",
+    "label": "Discrete logarithms",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.adv.primitive_root"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "nt.adv.modular_sqrt",
+    "label": "Square roots modulo a prime",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.residue.count"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  },
+  {
+    "id": "nt.adv.two_squares",
+    "label": "Sums of two squares",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.residue.count"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "nt.adv.pell",
+    "label": "Pell's equation",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.adv.continued_fractions"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 28.0
+    }
+  },
+  {
+    "id": "nt.adv.pisano",
+    "label": "Pisano periods",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.modular"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "nt.adv.carmichael_function",
+    "label": "The Carmichael function",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.adv.euler_phi"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "nt.adv.miller_rabin",
+    "label": "The Miller-Rabin test",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.adv.fermat_little"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 26.0
+    }
+  },
+  {
+    "id": "nt.adv.prime_gap",
+    "label": "Prime gaps and the next prime",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "numeric",
+    "prerequisites": [
+      "nt.basics.prime_inf"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 22.0
+    }
+  },
+  {
+    "id": "nt.adv.bertrand",
+    "label": "Bertrand's postulate",
+    "domain": "number_theory",
+    "subdomain": "number_theory.advanced",
+    "grading_type": "multiple_choice",
+    "prerequisites": [
+      "nt.basics.prime_inf"
+    ],
+    "mastery_threshold": {
+      "streak": 10,
+      "avg_time_seconds": 24.0
+    }
+  }
+]

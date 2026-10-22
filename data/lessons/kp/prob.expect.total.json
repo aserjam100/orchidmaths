@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Averaging the conditional means",
+    "section": "Averaging the conditional means",
+    "subgoals": [
+      "Compute a conditional mean per slice",
+      "Weight by the slice probabilities",
+      "Add the weighted means"
+    ]
+  },
+  {
+    "label": "Worked: two groups",
+    "section": "Worked: two groups",
+    "subgoals": [
+      "Write the two conditional means",
+      "Weight them by their probabilities",
+      "Add"
+    ]
+  },
+  {
+    "label": "The tower property",
+    "section": "The tower property",
+    "subgoals": [
+      "State the tower identity",
+      "Apply it twice",
+      "See conditioning as a projection"
+    ]
+  }
+]

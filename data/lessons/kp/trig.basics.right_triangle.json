@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Understanding the sides of a right triangle",
+    "section": "",
+    "subgoals": [
+      "Name hypotenuse h, opposite y, adjacent x for theta",
+      "Scale similar triangles to fix ratios by angle alone",
+      "Isolate the right angle to find the two legs"
+    ]
+  },
+  {
+    "label": "SOH-CAH-TOA method",
+    "section": "",
+    "subgoals": [
+      "Read sin(theta) = y/h with csc(theta) = h/y",
+      "Read cos(theta) = x/h with sec(theta) = h/x",
+      "Read tan(theta) = y/x with cot(theta) = x/y"
+    ]
+  },
+  {
+    "label": "The Pythagorean identity",
+    "section": "",
+    "subgoals": [
+      "Divide x^2 + y^2 = h^2 by h^2 for sin^2 + cos^2 = 1",
+      "Map (cos(theta), sin(theta)) onto the unit circle",
+      "Solve one function from the other with quadrant signs"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The eventual envelope",
+    "section": "The eventual envelope",
+    "subgoals": [
+      "Take the supremum of each tail",
+      "Take the infimum over the tails",
+      "Match it with the limit inferior"
+    ]
+  },
+  {
+    "label": "Convergence and the two limits",
+    "section": "Convergence and the two limits",
+    "subgoals": [
+      "Compare the two eventual bounds",
+      "Squeeze the tail when they agree",
+      "Read oscillation when they differ"
+    ]
+  },
+  {
+    "label": "Uses and comparison",
+    "section": "Uses and comparison",
+    "subgoals": [
+      "Use them when the limit may not exist",
+      "State the ratio and root tests with them",
+      "Recover the Bolzano-Weierstrass theorem"
+    ]
+  }
+]

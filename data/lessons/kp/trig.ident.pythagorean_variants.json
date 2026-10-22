@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The three forms",
+    "section": "The three forms",
+    "subgoals": [
+      "Divide the basic identity by a square",
+      "Read the tangent and secant form",
+      "Read the cotangent and cosecant form"
+    ]
+  },
+  {
+    "label": "Choosing a form",
+    "section": "Choosing a form",
+    "subgoals": [
+      "List the functions present",
+      "Pick the variant that names them",
+      "Substitute and simplify"
+    ]
+  },
+  {
+    "label": "Domain caveats",
+    "section": "Domain caveats",
+    "subgoals": [
+      "Note where the cosine vanishes",
+      "Note where the sine vanishes",
+      "Check excluded angles separately"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Writing the whole as a fraction",
+    "section": "Writing the whole as a fraction",
+    "subgoals": [
+      "Write a whole number over any denominator",
+      "Choose the matching denominator",
+      "Convert before subtracting"
+    ]
+  },
+  {
+    "label": "Over a common denominator",
+    "section": "Over a common denominator",
+    "subgoals": [
+      "Subtract the numerators",
+      "Say where the larger numerator comes from",
+      "Reduce the result"
+    ]
+  },
+  {
+    "label": "Checking the answer",
+    "section": "Checking the answer",
+    "subgoals": [
+      "Predict the size",
+      "Reject a negative answer",
+      "Catch a wrong conversion"
+    ]
+  }
+]

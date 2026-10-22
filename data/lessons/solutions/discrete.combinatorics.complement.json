@@ -1,0 +1,19 @@
+{
+  "concept": "discrete.combinatorics.complement",
+  "setup": "The strings have length \\([[length]]\\) over an alphabet of \\([[letters]]\\) letters, one of which is \\(a\\).",
+  "steps": [
+    {
+      "fact": "total",
+      "say": "Counting all strings first: \\([[letters]]^{[[length]]} = [[total]]\\)."
+    },
+    {
+      "fact": "none",
+      "say": "Counting the complement, the strings with no \\(a\\): each position may use only the other \\([[letters]] - 1\\) letters, so there are \\(([[letters]]-1)^{[[length]]} = [[none]]\\)."
+    },
+    {
+      "fact": "value",
+      "say": "The wanted strings are the rest: \\([[total]] - [[none]] = [[value]]\\)."
+    }
+  ],
+  "answer": "So there are [[value]] such strings."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "When the degree is one higher",
+    "section": "When the degree is one higher",
+    "subgoals": [
+      "State the degree condition",
+      "Distinguish it from the horizontal case",
+      "Say what happens at a larger difference"
+    ]
+  },
+  {
+    "label": "Finding the slope",
+    "section": "Finding the slope",
+    "subgoals": [
+      "Divide the numerator by the denominator",
+      "Read the slope from the quotient",
+      "Work a small example"
+    ]
+  },
+  {
+    "label": "The polynomial division behind it",
+    "section": "The polynomial division behind it",
+    "subgoals": [
+      "Write the division identity",
+      "See why the remainder vanishes",
+      "Explain the horizontal case the same way"
+    ]
+  }
+]

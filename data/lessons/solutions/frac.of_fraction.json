@@ -1,0 +1,15 @@
+{
+  "concept": "frac.of_fraction",
+  "setup": "You are taking a fraction of another fraction.",
+  "steps": [
+    {
+      "fact": "out_num",
+      "say": "The word of means multiply, so the two fractions are multiplied: the numerators together and the denominators together."
+    },
+    {
+      "fact": "out_den",
+      "say": "The product reduces to \\(\\frac{[[out_num]]}{[[out_den]]}\\). The answer is smaller than either fraction, which is the check worth making: a fraction of a fraction is less than both."
+    }
+  ],
+  "answer": "So the answer is \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

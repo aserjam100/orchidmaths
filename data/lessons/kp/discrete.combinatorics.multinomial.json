@@ -1,0 +1,29 @@
+[
+  {
+    "label": "When letters repeat",
+    "section": "When letters repeat",
+    "subgoals": [
+      "Explain why identical items overcount",
+      "Count the arrangements of AAB",
+      "Tally the repeated letters of a word"
+    ]
+  },
+  {
+    "label": "The multinomial formula",
+    "section": "The multinomial formula",
+    "subgoals": [
+      "Write the multinomial coefficient",
+      "Check the two extreme cases",
+      "Evaluate a multinomial coefficient"
+    ]
+  },
+  {
+    "label": "Worked example",
+    "section": "Worked example",
+    "subgoals": [
+      "Tally a word's letters",
+      "Apply the formula to LEVEL",
+      "Check the result against the group order"
+    ]
+  }
+]

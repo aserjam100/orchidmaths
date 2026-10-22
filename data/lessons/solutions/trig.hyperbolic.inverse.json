@@ -1,0 +1,15 @@
+{
+  "concept": "trig.hyperbolic.inverse",
+  "setup": "You are given $\\sinh x = [[opp]]/[[adj]]$ and asked for $\\cosh x$.",
+  "steps": [
+    {
+      "fact": "opp",
+      "say": "The basic hyperbolic identity is $\\cosh^{2} x - \\sinh^{2} x = 1$, so the square of the hyperbolic cosine is one more than the square of the given value."
+    },
+    {
+      "fact": "adj",
+      "say": "With $\\sinh x = [[opp]]/[[adj]]$ and hypotenuse [[hyp]], the square root of one plus $[[opp]]^{2}/[[adj]]^{2}$ is $[[hyp]]/[[adj]]$, which is [[answer]]."
+    }
+  ],
+  "answer": "So $\\cosh x = [[answer]]$."
+}

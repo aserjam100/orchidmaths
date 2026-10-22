@@ -1,0 +1,28 @@
+<svg width="460px" height="130px" viewBox="0 0 460 130" xmlns="http://www.w3.org/2000/svg">
+<rect width="460" height="130" fill="white"/>
+<line x1="40" y1="76" x2="440" y2="76" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="40,76 32.63,72.885 32.63,79.115" fill="#BABABA"/>
+<polygon points="440,76 447.37,72.885 447.37,79.115" fill="#BABABA"/>
+<line x1="60.0" y1="69" x2="60.0" y2="83" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+<text x="60.0" y="101" font-size="13" fill="#636363" text-anchor="middle">0</text>
+<line x1="132.0" y1="69" x2="132.0" y2="83" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+<text x="132.0" y="101" font-size="13" fill="#636363" text-anchor="middle">0.2</text>
+<line x1="204.0" y1="69" x2="204.0" y2="83" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+<text x="204.0" y="101" font-size="13" fill="#636363" text-anchor="middle">0.4</text>
+<line x1="276.0" y1="69" x2="276.0" y2="83" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+<text x="276.0" y="101" font-size="13" fill="#636363" text-anchor="middle">0.6</text>
+<line x1="348.0" y1="69" x2="348.0" y2="83" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+<text x="348.0" y="101" font-size="13" fill="#636363" text-anchor="middle">0.8</text>
+<line x1="420.0" y1="69" x2="420.0" y2="83" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+<text x="420.0" y="101" font-size="13" fill="#636363" text-anchor="middle">1</text>
+<path d="M 60.0,60 L 60.0,50 L 92.0,50 L 96.0,45 L 100.0,50 L 132.0,50 L 132.0,60" fill="none" stroke="#636363" stroke-width="1"/>
+<text x="96.0" y="40" font-size="12" fill="#333333" text-anchor="middle">0.2</text>
+<path d="M 132.0,60 L 132.0,50 L 164.0,50 L 168.0,45 L 172.0,50 L 204.0,50 L 204.0,60" fill="none" stroke="#636363" stroke-width="1"/>
+<text x="168.0" y="40" font-size="12" fill="#333333" text-anchor="middle">0.2</text>
+<path d="M 204.0,60 L 204.0,50 L 236.0,50 L 240.0,45 L 244.0,50 L 276.0,50 L 276.0,60" fill="none" stroke="#636363" stroke-width="1"/>
+<text x="240.0" y="40" font-size="12" fill="#333333" text-anchor="middle">0.2</text>
+<path d="M 276.0,60 L 276.0,50 L 308.0,50 L 312.0,45 L 316.0,50 L 348.0,50 L 348.0,60" fill="none" stroke="#636363" stroke-width="1"/>
+<text x="312.0" y="40" font-size="12" fill="#333333" text-anchor="middle">0.2</text>
+<path d="M 348.0,60 L 348.0,50 L 380.0,50 L 384.0,45 L 388.0,50 L 420.0,50 L 420.0,60" fill="none" stroke="#636363" stroke-width="1"/>
+<text x="384.0" y="40" font-size="12" fill="#333333" text-anchor="middle">0.2</text>
+</svg>

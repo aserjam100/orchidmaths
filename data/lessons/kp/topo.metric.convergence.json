@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Eventually inside every ball",
+    "section": "Eventually inside every ball",
+    "subgoals": [
+      "Bound the distance to the limit",
+      "Choose N past the tolerance",
+      "Keep only the tail"
+    ]
+  },
+  {
+    "label": "Worked: three limits",
+    "section": "Worked: three limits",
+    "subgoals": [
+      "Solve 1/n below epsilon",
+      "Drop the vanishing correction in 3 + 1/n",
+      "Divide 7n/(2n+1) by n"
+    ]
+  },
+  {
+    "label": "Limits are unique",
+    "section": "Limits are unique",
+    "subgoals": [
+      "Assume two distinct limits",
+      "Draw disjoint balls of half the distance",
+      "Force the tail into both"
+    ]
+  }
+]

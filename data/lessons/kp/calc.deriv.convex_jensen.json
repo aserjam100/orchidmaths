@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two faces of convexity",
+    "section": "Two faces of convexity",
+    "subgoals": [
+      "Draw a chord above the graph",
+      "Equate it with a nonnegative second derivative",
+      "Keep convexity under positive combinations"
+    ]
+  },
+  {
+    "label": "Jensen's inequality",
+    "section": "Jensen's inequality",
+    "subgoals": [
+      "Average the inputs with weights",
+      "Compare the value of the average with the average of the values",
+      "Reverse it for concave functions"
+    ]
+  },
+  {
+    "label": "Subgradients and uses",
+    "section": "Subgradients and uses",
+    "subgoals": [
+      "Allow corners, keep continuity",
+      "Use the increasing derivative",
+      "Find the global minimum at a flat point"
+    ]
+  }
+]

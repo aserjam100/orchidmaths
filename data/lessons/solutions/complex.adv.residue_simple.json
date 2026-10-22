@@ -1,0 +1,23 @@
+{
+  "concept": "complex.adv.residue_simple",
+  "setup": "The function is \\(f(z) = [[fz]]\\), with a simple pole at \\(z = [[z0]]\\).",
+  "steps": [
+    {
+      "fact": "z0",
+      "say": "At a simple pole the residue is the limit of \\((z - z_0)f(z)\\) as \\(z \\to z_0\\)."
+    },
+    {
+      "fact": "a",
+      "say": "The numerator is \\([[a]]z [[constant]]\\), and multiplying by \\(z - [[z0]]\\) leaves exactly that."
+    },
+    {
+      "fact": "real",
+      "say": "Evaluating at \\(z = [[z0]]\\) gives real part [[real]] and imaginary part [[imag]]."
+    },
+    {
+      "fact": "value",
+      "say": "So the residue is \\([[value]]\\)."
+    }
+  ],
+  "answer": "So the residue is \\([[value]]\\)."
+}

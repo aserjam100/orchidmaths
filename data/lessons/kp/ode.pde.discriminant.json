@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The discriminant of a second-order equation",
+    "section": "The discriminant of a second-order equation",
+    "subgoals": [
+      "Name the three coefficients",
+      "Write the discriminant",
+      "Say only the sign matters"
+    ]
+  },
+  {
+    "label": "The three types",
+    "section": "The three types",
+    "subgoals": [
+      "Name hyperbolic, parabolic and elliptic",
+      "Give each type's character",
+      "Say which data each needs"
+    ]
+  },
+  {
+    "label": "Comparing with the classical equations",
+    "section": "Comparing with the classical equations",
+    "subgoals": [
+      "Place the wave equation",
+      "Place the heat equation",
+      "Place Laplace's equation"
+    ]
+  }
+]

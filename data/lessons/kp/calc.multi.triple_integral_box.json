@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Three nested integrals",
+    "section": "Three nested integrals",
+    "subgoals": [
+      "Read a triple integral as three",
+      "Integrate the innermost variable first",
+      "Evaluate over a box"
+    ]
+  },
+  {
+    "label": "Separating the integrand",
+    "section": "Separating the integrand",
+    "subgoals": [
+      "Skip a variable the integrand ignores",
+      "Factor a product integrand",
+      "Evaluate a box integral"
+    ]
+  },
+  {
+    "label": "Volumes from the constant integrand",
+    "section": "Volumes from the constant integrand",
+    "subgoals": [
+      "Integrate 1 for a volume",
+      "Interpret density as a weight",
+      "Locate a centre of mass"
+    ]
+  }
+]

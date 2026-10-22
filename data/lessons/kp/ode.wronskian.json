@@ -1,0 +1,29 @@
+[
+  {
+    "label": "A determinant that tests independence",
+    "section": "A determinant that tests independence",
+    "subgoals": [
+      "Define the Wronskian",
+      "See it as a determinant",
+      "Say what non-zero means"
+    ]
+  },
+  {
+    "label": "The two powers case",
+    "section": "The two powers case",
+    "subgoals": [
+      "Compute one by hand",
+      "See the collapse to one term",
+      "Say why the algebra cancels"
+    ]
+  },
+  {
+    "label": "A non-zero value",
+    "section": "A non-zero value",
+    "subgoals": [
+      "Evaluate at a point",
+      "State the all-or-nothing property",
+      "Note it is a property of linear equations"
+    ]
+  }
+]

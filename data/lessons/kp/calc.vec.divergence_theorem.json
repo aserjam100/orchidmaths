@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Flux out of a closed surface",
+    "section": "Flux out of a closed surface",
+    "subgoals": [
+      "State the divergence theorem",
+      "Match it to Green's theorem",
+      "Identify what each side measures"
+    ]
+  },
+  {
+    "label": "A box",
+    "section": "A box",
+    "subgoals": [
+      "Compute a constant divergence",
+      "Multiply it by the volume",
+      "Solve a flux without the faces"
+    ]
+  },
+  {
+    "label": "What the theorem says",
+    "section": "What the theorem says",
+    "subgoals": [
+      "Explain the cancellation",
+      "Read divergence as flux per volume",
+      "See why only the boundary survives"
+    ]
+  }
+]

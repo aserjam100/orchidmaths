@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Order does not matter",
+    "section": "Order does not matter",
+    "subgoals": [
+      "Define a partition",
+      "Contrast it with a composition",
+      "Count the partitions of 5"
+    ]
+  },
+  {
+    "label": "No closed form",
+    "section": "No closed form",
+    "subgoals": [
+      "Say why tabulation is used",
+      "Name the recurrence's shape",
+      "See the asymptotic as a bound"
+    ]
+  },
+  {
+    "label": "Counting by largest part",
+    "section": "Counting by largest part",
+    "subgoals": [
+      "State the transposition theorem",
+      "Draw the diagram",
+      "Explain why it is a bijection"
+    ]
+  }
+]

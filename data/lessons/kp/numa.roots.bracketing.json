@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The two families",
+    "section": "The two families",
+    "subgoals": [
+      "Start from a sign change for a bracketing method",
+      "Start from guesses for an open method",
+      "Contrast the guarantee"
+    ]
+  },
+  {
+    "label": "Worked: a failure of the open method",
+    "section": "Worked: a failure of the open method",
+    "subgoals": [
+      "Find a guess with a small derivative",
+      "Watch the step blow up",
+      "Compare with the bracketed alternative"
+    ]
+  },
+  {
+    "label": "Choosing a method",
+    "section": "Choosing a method",
+    "subgoals": [
+      "Locate a root with a bracket",
+      "Polish it with an open method",
+      "Fall back to the guarantee when needed"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "What is Cramer’s rule?",
+    "section": "",
+    "subgoals": [
+      "Write x_i as det(A_i)/det(A)",
+      "Check the denominator is nonzero",
+      "Apply to a 2x2 system"
+    ]
+  },
+  {
+    "label": "Applying Cramer’s Rule",
+    "section": "",
+    "subgoals": [
+      "Replace one column with b",
+      "Take the determinant ratio",
+      "Verify in the original equations"
+    ]
+  },
+  {
+    "label": "Cramer's rule — practice 3",
+    "section": "",
+    "subgoals": [
+      "Spot when det(A) is zero",
+      "Fall back to elimination",
+      "Confirm the solution"
+    ]
+  }
+]

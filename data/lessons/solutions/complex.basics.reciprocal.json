@@ -1,0 +1,23 @@
+{
+  "concept": "complex.basics.reciprocal",
+  "setup": "The number is \\(z = [[z]]\\), and the question asks for \\(1/z\\).",
+  "steps": [
+    {
+      "fact": "conjugate",
+      "say": "Multiply above and below by the conjugate \\([[conjugate]]\\), which leaves the value unchanged."
+    },
+    {
+      "fact": "den",
+      "say": "The denominator becomes \\([[z]] \\cdot [[conjugate]] = [[den]]\\), a positive real number."
+    },
+    {
+      "fact": "real_num",
+      "say": "The numerator's real part is [[real_num]] and its imaginary part is [[imag_num]], both over [[den]]."
+    },
+    {
+      "fact": "value",
+      "say": "So \\(1/[[z]] = [[value]]\\)."
+    }
+  ],
+  "answer": "So \\(1/[[z]] = [[value]]\\)."
+}

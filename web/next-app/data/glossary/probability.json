@@ -1,0 +1,872 @@
+[
+  {
+    "id": "probability-of-event",
+    "symbol": "P(A)",
+    "latex": "P(A)",
+    "name": "Probability of an event",
+    "aliases": [
+      "probability",
+      "P of A",
+      "chance",
+      "likelihood event",
+      "omega sample space"
+    ],
+    "category": "probability",
+    "definition": "Measures how likely an event A is, from 0 (impossible) to 1 (certain). For equally likely outcomes it is the ratio of favorable to total outcomes.",
+    "reading": "“the probability of A”.",
+    "examples": [
+      {
+        "tex": "P(\\text{six}) = \\frac{1}{6}",
+        "explanation": "One face in six on a fair die."
+      }
+    ],
+    "relatedSymbols": [
+      "conditional-probability",
+      "omega",
+      "random-variable"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "conditional-probability",
+    "symbol": "P(A|B)",
+    "latex": "P(A \\mid B)",
+    "name": "Conditional probability",
+    "aliases": [
+      "conditional probability",
+      "given",
+      "P A given B",
+      "bayes",
+      "posterior"
+    ],
+    "category": "probability",
+    "definition": "The probability of A given that B occurred: restrict attention to B's outcomes and measure A's share. Bayes' theorem reverses the conditioning.",
+    "reading": "“the probability of A given B”.",
+    "examples": [
+      {
+        "tex": "P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}",
+        "explanation": "A's share among B outcomes."
+      }
+    ],
+    "relatedSymbols": [
+      "probability-of-event",
+      "intersection",
+      "random-variable"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "random-variable",
+    "symbol": "X",
+    "latex": "X",
+    "name": "Random variable",
+    "aliases": [
+      "random variable",
+      "capital X random",
+      "rv",
+      "distribution variable",
+      "iid"
+    ],
+    "category": "probability",
+    "definition": "A variable whose value is the outcome of chance. Uppercase X names the variable; lowercase x names an observed value. Its distribution lists each value's probability.",
+    "reading": "“random variable X”.",
+    "examples": [
+      {
+        "tex": "P(X = 6) = \\frac{1}{6}",
+        "explanation": "The die-roll variable equals six with probability one sixth."
+      }
+    ],
+    "relatedSymbols": [
+      "probability-of-event",
+      "expectation",
+      "normal-distribution",
+      "similar"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "expectation",
+    "symbol": "E[X]",
+    "latex": "E[X]",
+    "name": "Expected value",
+    "aliases": [
+      "expected value",
+      "expectation",
+      "mean random",
+      "E X",
+      "population mean",
+      "mu expectation"
+    ],
+    "category": "probability",
+    "definition": "The long-run average of a random variable: each value weighted by its probability. For a population it is denoted μ.",
+    "reading": "“the expected value of X”.",
+    "examples": [
+      {
+        "tex": "E[X] = 3.5 \\text{ for a fair die}",
+        "explanation": "Average of 1 through 6."
+      }
+    ],
+    "relatedSymbols": [
+      "random-variable",
+      "population-mean",
+      "variance",
+      "mu"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "population-mean",
+    "symbol": "μ",
+    "latex": "\\mu",
+    "name": "Population mean",
+    "aliases": [
+      "population mean",
+      "mu mean",
+      "true mean",
+      "parameter mean"
+    ],
+    "category": "probability",
+    "definition": "The mean of an entire population, as opposed to a sample mean x̄. It is a fixed (usually unknown) parameter that samples estimate.",
+    "reading": "“myoo”.",
+    "examples": [
+      {
+        "tex": "\\mu = E[X]",
+        "explanation": "The population mean is the expected value."
+      }
+    ],
+    "relatedSymbols": [
+      "mu",
+      "expectation",
+      "sample-mean",
+      "standard-deviation"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "variance",
+    "symbol": "Var(X)",
+    "latex": "\\operatorname{Var}(X)",
+    "name": "Variance",
+    "aliases": [
+      "variance",
+      "Var",
+      "sigma squared",
+      "spread",
+      "dispersion"
+    ],
+    "category": "probability",
+    "definition": "Measures spread as the average squared distance from the mean: E[(X − μ)²]. Squaring keeps units squared; the standard deviation restores original units.",
+    "reading": "“the variance of X”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{Var}(X) = E[X^2] - E[X]^2",
+        "explanation": "Mean of squares minus square of the mean."
+      }
+    ],
+    "relatedSymbols": [
+      "standard-deviation",
+      "expectation",
+      "covariance"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "standard-deviation",
+    "symbol": "σ",
+    "latex": "\\sigma",
+    "name": "Standard deviation",
+    "aliases": [
+      "standard deviation",
+      "sigma std",
+      "std dev",
+      "sample s",
+      "spread measure",
+      "68 95 99 rule"
+    ],
+    "category": "probability",
+    "definition": "The square root of variance: typical distance from the mean in original units. σ denotes the population value; s denotes a sample's. About 68-95-99.7% of normal data falls within 1-2-3 standard deviations.",
+    "reading": "“sigma”.",
+    "examples": [
+      {
+        "tex": "\\sigma = \\sqrt{\\operatorname{Var}(X)}",
+        "explanation": "Root of variance restores the original units."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Population",
+        "meaning": "σ is the fixed population standard deviation."
+      },
+      {
+        "context": "Sample",
+        "meaning": "s estimates σ from observed data."
+      }
+    ],
+    "relatedSymbols": [
+      "sigma-letter",
+      "variance",
+      "normal-distribution",
+      "z-score"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "covariance",
+    "symbol": "Cov(X, Y)",
+    "latex": "\\operatorname{Cov}(X, Y)",
+    "name": "Covariance",
+    "aliases": [
+      "covariance",
+      "Cov",
+      "joint variability",
+      "co-movement"
+    ],
+    "category": "probability",
+    "definition": "Measures how two variables move together: positive when both run above or below their means simultaneously, negative when they oppose. Its size depends on units, so correlation standardizes it.",
+    "reading": "“the covariance of X and Y”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{Cov}(X, Y) = E[(X - \\mu_X)(Y - \\mu_Y)]",
+        "explanation": "Average product of joint deviations."
+      }
+    ],
+    "relatedSymbols": [
+      "variance",
+      "correlation",
+      "expectation"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "correlation",
+    "symbol": "ρ r",
+    "latex": "\\rho, r",
+    "name": "Correlation",
+    "aliases": [
+      "correlation",
+      "rho correlation",
+      "pearson r",
+      "linear association",
+      "negative correlation"
+    ],
+    "category": "probability",
+    "definition": "Standardized covariance between −1 and 1. ρ denotes the population value, r the sample value. Near ±1 means a tight linear relationship; near 0 means little linear link (other patterns may exist).",
+    "reading": "“rho” (population) or “r” (sample).",
+    "examples": [
+      {
+        "tex": "r = 0.9",
+        "explanation": "A strong positive linear association in the sample."
+      }
+    ],
+    "commonMistakes": [
+      "Reading correlation as causation; it measures linear association only."
+    ],
+    "relatedSymbols": [
+      "rho",
+      "covariance",
+      "regression-note"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "normal-distribution",
+    "symbol": "N(μ, σ²)",
+    "latex": "N(\\mu, \\sigma^2)",
+    "name": "Normal distribution",
+    "aliases": [
+      "normal distribution",
+      "gaussian",
+      "bell curve",
+      "N mu sigma",
+      "standard normal",
+      "z distribution"
+    ],
+    "category": "probability",
+    "definition": "The bell-shaped distribution set by its mean μ and variance σ². Sums and averages of many small effects are approximately normal (central limit theorem); the standard normal N(0,1) is the tabulated reference.",
+    "reading": "“N of mu sigma-squared”.",
+    "examples": [
+      {
+        "tex": "X \\sim N(0, 1)",
+        "explanation": "X follows the standard normal distribution."
+      }
+    ],
+    "relatedSymbols": [
+      "population-mean",
+      "standard-deviation",
+      "z-score",
+      "similar",
+      "discrete-distributions"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ],
+    "notes": "Convention split: probability theory usually writes N(mu, sigma-squared) with the variance, while some textbooks (including OpenStax) write N(mu, sigma) with the standard deviation. Check which the local text uses."
+  },
+  {
+    "id": "discrete-distributions",
+    "symbol": "Bin(n, p)",
+    "latex": "\\operatorname{Bin}(n, p)",
+    "name": "Binomial and Poisson distributions",
+    "aliases": [
+      "binomial distribution",
+      "Bin",
+      "poisson",
+      "bernoulli",
+      "chi squared distribution",
+      "count data"
+    ],
+    "category": "probability",
+    "definition": "Models for counts: Bin(n,p) counts successes in n trials with success chance p; Poisson(λ) counts events in a fixed window at rate λ. The chi-squared (χ²) distribution separately models sums of squared normals in tests.",
+    "reading": "“Binomial n p” or “Poisson lambda”.",
+    "examples": [
+      {
+        "tex": "X \\sim \\operatorname{Bin}(10, 0.5)",
+        "explanation": "Heads in 10 fair coin flips."
+      },
+      {
+        "tex": "P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k}",
+        "explanation": "Choose the successful trials, then weight by chance."
+      }
+    ],
+    "relatedSymbols": [
+      "binomial-coefficient",
+      "random-variable",
+      "expectation",
+      "chi"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "z-score",
+    "symbol": "z",
+    "latex": "z",
+    "name": "z-score",
+    "aliases": [
+      "z-score",
+      "z score",
+      "standardized value",
+      "standard score",
+      "normal deviate"
+    ],
+    "category": "probability",
+    "definition": "Counts how many standard deviations a value sits from the mean: z = (x − μ)/σ. It puts different datasets on one scale for normal tables and tests.",
+    "reading": "“zed-score” or “zee-score”.",
+    "examples": [
+      {
+        "tex": "z = \\frac{70 - 60}{5} = 2",
+        "explanation": "Seventy sits two standard deviations above the mean."
+      }
+    ],
+    "relatedSymbols": [
+      "standard-deviation",
+      "normal-distribution",
+      "population-mean"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "sample-mean",
+    "symbol": "x̄",
+    "latex": "\\bar{x}",
+    "name": "Sample mean",
+    "aliases": [
+      "sample mean",
+      "x bar",
+      "average sample",
+      "mean estimator"
+    ],
+    "category": "probability",
+    "definition": "Averages observed values to estimate the population mean μ. It varies from sample to sample; larger samples cluster tighter around μ.",
+    "reading": "“x bar”.",
+    "examples": [
+      {
+        "tex": "\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i",
+        "explanation": "Add the observations, divide by how many there are."
+      }
+    ],
+    "relatedSymbols": [
+      "overline-repeat",
+      "population-mean",
+      "estimator-hat"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "proportion-phat",
+    "symbol": "p̂",
+    "latex": "\\hat{p}",
+    "name": "Sample proportion",
+    "aliases": [
+      "p-hat",
+      "sample proportion",
+      "phat",
+      "observed proportion"
+    ],
+    "category": "probability",
+    "definition": "The fraction of successes in a sample, estimating the population proportion p. The hat marks it as computed from data.",
+    "reading": "“p hat”.",
+    "examples": [
+      {
+        "tex": "\\hat{p} = \\frac{60}{100} = 0.6",
+        "explanation": "Sixty successes in a hundred trials."
+      }
+    ],
+    "relatedSymbols": [
+      "estimator-hat",
+      "sample-mean",
+      "normal-distribution"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "estimator-hat",
+    "symbol": "θ̂",
+    "latex": "\\hat{\\theta}",
+    "name": "Estimator (hat notation)",
+    "aliases": [
+      "estimator",
+      "hat notation",
+      "theta hat",
+      "estimate",
+      "statistic"
+    ],
+    "category": "probability",
+    "definition": "A hat marks an estimate computed from data: θ̂ estimates the unknown parameter θ. Good estimators center on the target (unbiased) and tighten with more data.",
+    "reading": "“theta hat”.",
+    "examples": [
+      {
+        "tex": "\\hat{\\theta} = \\bar{x}",
+        "explanation": "The sample mean estimates the population mean."
+      }
+    ],
+    "relatedSymbols": [
+      "sample-mean",
+      "proportion-phat",
+      "theta"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "hypothesis-h0",
+    "symbol": "H₀ H₁",
+    "latex": "H_0, H_1",
+    "name": "Null and alternative hypotheses",
+    "aliases": [
+      "null hypothesis",
+      "H0",
+      "H naught",
+      "alternative hypothesis",
+      "H1",
+      "significance level alpha",
+      "hypothesis test"
+    ],
+    "category": "probability",
+    "definition": "Frames a test: H₀ states the default (no effect), H₁ the claim under investigation. Evidence against H₀ is measured by the p-value at a preset significance level α.",
+    "reading": "“H naught” and “H one”.",
+    "examples": [
+      {
+        "tex": "H_0: \\mu = 0,\\quad H_1: \\mu > 0",
+        "explanation": "Testing whether a mean is positive."
+      }
+    ],
+    "relatedSymbols": [
+      "p-value",
+      "alpha",
+      "estimator-hat"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "p-value",
+    "symbol": "p",
+    "latex": "p",
+    "name": "p-value",
+    "aliases": [
+      "p-value",
+      "p value",
+      "significance probability",
+      "observed significance"
+    ],
+    "category": "probability",
+    "definition": "The chance of data this extreme if the null hypothesis held. A small p-value (below α, often 0.05) counts as evidence against H₀; it is not the chance H₀ is true.",
+    "reading": "“pee value”.",
+    "examples": [
+      {
+        "tex": "p = 0.03 < 0.05",
+        "explanation": "Reject H₀ at the 5% level."
+      }
+    ],
+    "commonMistakes": [
+      "Reading p as the probability the null is true; it assumes the null."
+    ],
+    "relatedSymbols": [
+      "hypothesis-h0",
+      "alpha",
+      "normal-distribution"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "regression-note",
+    "symbol": "ŷ",
+    "latex": "\\hat{y}",
+    "name": "Regression prediction (y-hat)",
+    "aliases": [
+      "y-hat",
+      "predicted y",
+      "regression line",
+      "least squares",
+      "fitted value",
+      "residual"
+    ],
+    "category": "probability",
+    "definition": "The value a regression line predicts at a given x. Residuals (observed minus predicted) diagnose the fit; the least-squares line minimizes their squares.",
+    "reading": "“y hat”.",
+    "examples": [
+      {
+        "tex": "\\hat{y} = 2 + 3x",
+        "explanation": "At x = 4 the line predicts 14."
+      }
+    ],
+    "relatedSymbols": [
+      "estimator-hat",
+      "correlation",
+      "slope-intercept",
+      "beta"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "bayes-theorem",
+    "symbol": "P(A|B) = P(B|A)P(A)/P(B)",
+    "latex": "P(A \\mid B)",
+    "name": "Bayes' theorem",
+    "aliases": [
+      "bayes theorem",
+      "bayes rule",
+      "posterior",
+      "invert conditional",
+      "base rate",
+      "prior posterior"
+    ],
+    "category": "probability",
+    "definition": "Reverses conditioning: P(A|B) = P(B|A)·P(A)/P(B). The prior P(A) updates with evidence B into the posterior; ignoring the base rate is the classic error.",
+    "reading": "“Bayes' theorem”.",
+    "examples": [
+      {
+        "tex": "P(D|+) = \\frac{0.99 \\cdot 0.01}{0.99 \\cdot 0.01 + 0.05 \\cdot 0.99} \\approx 0.17",
+        "explanation": "A 99%-sensitive, 95%-specific test for a 1% condition: most positives are healthy because the disease is rare."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing P(A|B) with P(B|A); the theorem exists because they differ."
+    ],
+    "relatedSymbols": [
+      "conditional-probability",
+      "probability-of-event",
+      "random-variable",
+      "p-value"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "independence-events",
+    "symbol": "P(A∩B)",
+    "latex": "P(A \\cap B)",
+    "name": "Independent events",
+    "aliases": [
+      "independence",
+      "independent events",
+      "multiply probabilities",
+      "P A and B",
+      "disjoint vs independent"
+    ],
+    "category": "probability",
+    "definition": "Two events are independent when neither gives information about the other: P(A∩B) = P(A)·P(B). Separate fair-coin tosses qualify; drawing cards without replacement does not.",
+    "reading": "“A and B are independent”.",
+    "examples": [
+      {
+        "tex": "P(\\text{six then six}) = \\frac{1}{6} \\cdot \\frac{1}{6} = \\frac{1}{36}",
+        "explanation": "The second die ignores the first, so the probabilities multiply."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing independent with mutually exclusive; disjoint events with positive probability are never independent."
+    ],
+    "relatedSymbols": [
+      "probability-of-event",
+      "conditional-probability",
+      "intersection",
+      "multiply"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "standard-error",
+    "symbol": "SE = σ/√n",
+    "latex": "\\frac{\\sigma}{\\sqrt{n}}",
+    "name": "Standard error",
+    "aliases": [
+      "standard error",
+      "SE",
+      "sampling variability",
+      "sigma root n",
+      "error of the mean"
+    ],
+    "category": "probability",
+    "definition": "The standard deviation of a sample mean: σ/√n. Averages of larger samples vary less; quadrupling the sample size halves the error.",
+    "reading": "“the standard error”.",
+    "examples": [
+      {
+        "tex": "\\frac{15}{\\sqrt{100}} = 1.5",
+        "explanation": "With σ = 15 and n = 100, sample means typically fall within 1.5 of μ."
+      }
+    ],
+    "relatedSymbols": [
+      "standard-deviation",
+      "sample-mean",
+      "variance",
+      "confidence-interval"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "confidence-interval",
+    "symbol": "x̄ ± z*·σ/√n",
+    "latex": "\\bar{x} \\pm z^*\\frac{\\sigma}{\\sqrt{n}}",
+    "name": "Confidence interval",
+    "aliases": [
+      "confidence interval",
+      "CI",
+      "margin of error",
+      "95 percent interval",
+      "z star",
+      "plus minus interval"
+    ],
+    "category": "probability",
+    "definition": "A range plausibly containing the parameter: estimate ± margin. A 95% interval comes from a procedure capturing the truth in 95% of samples — not a 95% chance this particular interval holds it.",
+    "reading": "“x bar plus or minus the margin”.",
+    "examples": [
+      {
+        "tex": "\\bar{x} \\pm 1.96\\frac{10}{\\sqrt{100}} = 50 \\pm 1.96",
+        "explanation": "With x̄ = 50, σ = 10, n = 100: the interval (48.04, 51.96)."
+      }
+    ],
+    "commonMistakes": [
+      "Reading 95% as the chance the parameter sits inside this interval; it describes the procedure."
+    ],
+    "relatedSymbols": [
+      "sample-mean",
+      "standard-error",
+      "estimator-hat",
+      "z-score",
+      "p-value"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "central-limit-theorem",
+    "symbol": "X̄ₙ → N",
+    "latex": "\\bar{X}_n \\to N",
+    "name": "Central limit theorem",
+    "aliases": [
+      "central limit theorem",
+      "CLT",
+      "normal approximation",
+      "sampling distribution",
+      "averages are normal"
+    ],
+    "category": "probability",
+    "definition": "Averages of many independent, identically distributed observations are approximately normal — whatever the original distribution. This is why normal models and z-procedures work so widely.",
+    "reading": "“the central limit theorem”.",
+    "examples": [
+      {
+        "tex": "\\bar{X}_n \\approx N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)",
+        "explanation": "Averaging n die rolls clusters around 3.5 with spread shrinking like 1/√n."
+      }
+    ],
+    "relatedSymbols": [
+      "normal-distribution",
+      "sample-mean",
+      "standard-error",
+      "z-score",
+      "expectation"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "law-of-large-numbers",
+    "symbol": "X̄ₙ → μ",
+    "latex": "\\bar{X}_n \\to \\mu",
+    "name": "Law of large numbers",
+    "aliases": [
+      "law of large numbers",
+      "LLN",
+      "averages converge",
+      "long-run average",
+      "gambler fallacy antidote"
+    ],
+    "category": "probability",
+    "definition": "Sample averages converge to the expected value as samples grow: X̄ₙ → μ. It justifies learning probabilities from frequencies — but gives no timetable, so short runs still surprise.",
+    "reading": "“the law of large numbers”.",
+    "examples": [
+      {
+        "tex": "\\hat{p}_n \\to \\frac{1}{2}",
+        "explanation": "Heads proportions approach one half over many fair flips, however streaky the start."
+      }
+    ],
+    "commonMistakes": [
+      "Expecting small samples to self-correct (the gambler's fallacy); convergence has no deadline."
+    ],
+    "relatedSymbols": [
+      "sample-mean",
+      "expectation",
+      "proportion-phat",
+      "central-limit-theorem",
+      "infinity"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Introductory Statistics",
+        "url": "https://openstax.org/details/books/introductory-statistics",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  }
+]

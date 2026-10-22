@@ -1,0 +1,19 @@
+{
+  "concept": "trig.func.sine",
+  "setup": "A right triangle has $\\sin\\theta = [[ratio]]$ and a hypotenuse of $[[given]]$.",
+  "steps": [
+    {
+      "fact": "ratio",
+      "say": "The sine of an angle is the side opposite it divided by the hypotenuse, so the opposite side is the sine times the hypotenuse."
+    },
+    {
+      "fact": "given",
+      "say": "The hypotenuse is $[[given]]$."
+    },
+    {
+      "fact": "answer",
+      "say": "Multiplying gives $[[ratio]] \\times [[given]] = [[answer]]$."
+    }
+  ],
+  "answer": "So the side opposite the angle is $[[answer]]$."
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: {0,1,2} fails in Z_6",
+    "section": "Worked: {0,1,2} fails in Z_6",
+    "subgoals": [
+      "Compute 2+2 mod 6",
+      "Find 4 outside the set",
+      "Disproof complete"
+    ]
+  },
+  {
+    "label": "Worked: 3Z passes in Z",
+    "section": "Worked: 3Z passes in Z",
+    "subgoals": [
+      "Check closure under addition",
+      "Check absorption",
+      "Read the quotient Z/3Z"
+    ]
+  },
+  {
+    "label": "The zero-constant-term ideal",
+    "section": "The zero-constant-term ideal",
+    "subgoals": [
+      "Evaluate at 0 for the kernel",
+      "Verify sums and multiples stay",
+      "Quotient back to R"
+    ]
+  }
+]

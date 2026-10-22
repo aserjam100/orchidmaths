@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Why the triple is open",
+    "section": "Why side-side-angle is not enough",
+    "subgoals": [
+      "Contrast a side-side-angle triple with a side-angle-side one",
+      "Use that an angle and its supplement share a sine",
+      "Name the two candidate angles"
+    ]
+  },
+  {
+    "label": "The height as the test",
+    "section": "The height decides",
+    "subgoals": [
+      "Compute the height as the side times the sine of the angle",
+      "Compare the side opposite the angle with the height",
+      "Compare it with the other given side as well"
+    ]
+  },
+  {
+    "label": "The boundary case",
+    "section": "Counting the triangles",
+    "subgoals": [
+      "Count zero, one or two triangles from the comparisons",
+      "Notice that a side equal to the height is the boundary",
+      "Answer the count without solving for an angle"
+    ]
+  }
+]

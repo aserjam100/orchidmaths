@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Flux as a flow rate",
+    "section": "Flux as a flow rate",
+    "subgoals": [
+      "Define flux",
+      "Explain the perpendicular case",
+      "Compute flux for a constant field"
+    ]
+  },
+  {
+    "label": "A uniform field",
+    "section": "A uniform field",
+    "subgoals": [
+      "Use the field strength and the area",
+      "Handle only the faces the field meets",
+      "Sign the answer by direction"
+    ]
+  },
+  {
+    "label": "Orientation",
+    "section": "Orientation",
+    "subgoals": [
+      "Explain why a surface needs a side",
+      "State the closed-surface convention",
+      "Relate a sign flip to line integrals"
+    ]
+  }
+]

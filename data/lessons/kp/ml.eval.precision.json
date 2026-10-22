@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Of the positives predicted",
+    "section": "Of the positives predicted",
+    "subgoals": [
+      "Write the formula",
+      "Compute a precision",
+      "Say what it answers"
+    ]
+  },
+  {
+    "label": "The cost it measures",
+    "section": "The cost it measures",
+    "subgoals": [
+      "Name the expensive error",
+      "Give a case where it matters",
+      "See how raising it lowers recall"
+    ]
+  },
+  {
+    "label": "Trading against recall",
+    "section": "Trading against recall",
+    "subgoals": [
+      "Describe the threshold trade",
+      "Introduce the F1 score",
+      "Say why one alone misleads"
+    ]
+  }
+]

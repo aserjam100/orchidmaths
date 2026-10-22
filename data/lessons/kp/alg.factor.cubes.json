@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Recognize the cubes",
+    "section": "Recognize the cubes",
+    "subgoals": [
+      "Write the number as a cube",
+      "Identify a sum or a difference",
+      "Keep the constant n^2 positive"
+    ]
+  },
+  {
+    "label": "Apply the pattern",
+    "section": "Apply the pattern",
+    "subgoals": [
+      "Keep the linear factor's sign",
+      "Flip the middle sign in the quadratic",
+      "Multiply back to check"
+    ]
+  },
+  {
+    "label": "Which factor the question wants",
+    "section": "Which factor the question wants",
+    "subgoals": [
+      "Read whether it asks for the quadratic or linear factor",
+      "Enter only that factor",
+      "Do not enter the whole factorization"
+    ]
+  }
+]

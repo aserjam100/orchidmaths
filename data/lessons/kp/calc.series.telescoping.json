@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Telescoping mechanism",
+    "section": "",
+    "subgoals": [
+      "Split terms into differences",
+      "Cancel interior terms",
+      "Sum 1/n - 1/(n+1) to 1"
+    ]
+  },
+  {
+    "label": "Partial fractions setup",
+    "section": "",
+    "subgoals": [
+      "Decompose 1/(n(n+1))",
+      "Expose the telescoping form",
+      "Take the limit of partial sums"
+    ]
+  },
+  {
+    "label": "Series glossary",
+    "section": "",
+    "subgoals": [
+      "Define telescoping as interior cancellation",
+      "Distinguish from geometric series",
+      "File the pattern for reuse"
+    ]
+  }
+]

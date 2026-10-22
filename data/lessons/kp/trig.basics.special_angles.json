@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Using reference angles to rewrite angles",
+    "section": "",
+    "subgoals": [
+      "Measure theta against the nearest horizontal axis",
+      "Reduce theta modulo 2pi to a base form",
+      "Assign the quadrant sign to each function"
+    ]
+  },
+  {
+    "label": "Reduction formulas for \\\\( \\pi/2 + \\alpha \\\\)",
+    "section": "",
+    "subgoals": [
+      "Locate pi/2 + alpha in the second quadrant",
+      "Exchange sine with cosine across the vertical axis",
+      "Negate the cosine while sine stays positive"
+    ]
+  },
+  {
+    "label": "Reduction formulas for \\\\( \\pi/2 - \\alpha \\\\)",
+    "section": "",
+    "subgoals": [
+      "Locate pi/2 - alpha in the first quadrant",
+      "Exchange sine with cosine with no sign change",
+      "Carry tan/cot along via the sine-cosine swap"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Embedding surfaces",
+    "section": "Embedding surfaces",
+    "subgoals": [
+      "Draw the graph without crossings",
+      "Add one handle per obstruction",
+      "Read the genus from the surface"
+    ]
+  },
+  {
+    "label": "Worked: K_5 on the torus",
+    "section": "Worked: K_5 on the torus",
+    "subgoals": [
+      "Check $K_5$ is nonplanar",
+      "Use Euler's formula with g equal to one",
+      "Solve for five faces"
+    ]
+  },
+  {
+    "label": "Genus formulas",
+    "section": "Genus formulas",
+    "subgoals": [
+      "Apply the complete-graph formula",
+      "Apply the bipartite formula",
+      "Use the surface edge bound"
+    ]
+  }
+]

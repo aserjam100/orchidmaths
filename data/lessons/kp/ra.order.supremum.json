@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The least upper bound",
+    "section": "The least upper bound",
+    "subgoals": [
+      "State what it means to be an upper bound",
+      "Compare the candidate upper bounds",
+      "Take the smallest of them as the supremum"
+    ]
+  },
+  {
+    "label": "Worked: a half-open interval",
+    "section": "Worked: a half-open interval",
+    "subgoals": [
+      "Test a candidate bound against the set",
+      "Decide whether the bound belongs to the set",
+      "Read off whether a maximum exists"
+    ]
+  },
+  {
+    "label": "Supremum versus maximum",
+    "section": "Supremum versus maximum",
+    "subgoals": [
+      "Require the maximum to lie in the set",
+      "Allow the supremum to lie outside",
+      "Send an unbounded set to the extended line"
+    ]
+  }
+]

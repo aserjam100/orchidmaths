@@ -1,0 +1,15 @@
+{
+  "concept": "trig.basics.arc_length",
+  "setup": "A circle has radius [[r]] and a central angle of $[[frac]]$.",
+  "steps": [
+    {
+      "fact": "frac",
+      "say": "In radians the angle already measures the arc it cuts on a unit circle, so arc length is the radius times the angle: $s = r\\theta$. That is the reason arc length is stated in radians — in degrees the formula would carry a factor of $\\pi/180$."
+    },
+    {
+      "fact": "value",
+      "say": "Here $s = [[r]] \\times [[frac]] = [[value]]\\pi$, so the arc length is $[[value]]\\pi$ and the multiplier written in front of $\\pi$ is [[value]]."
+    }
+  ],
+  "answer": "So the arc length is $[[value]]\\pi$."
+}

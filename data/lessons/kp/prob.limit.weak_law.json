@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Convergence in probability",
+    "section": "Convergence in probability",
+    "subgoals": [
+      "State the epsilon condition",
+      "Send the tail probability to zero",
+      "Distinguish it from almost-sure convergence"
+    ]
+  },
+  {
+    "label": "Worked: Chebyshev's bound",
+    "section": "Worked: Chebyshev's bound",
+    "subgoals": [
+      "Compute the variance of the sample mean",
+      "Apply Chebyshev's inequality",
+      "Let the sample size grow"
+    ]
+  },
+  {
+    "label": "Weak versus strong",
+    "section": "Weak versus strong",
+    "subgoals": [
+      "Order the two modes",
+      "See which hypotheses each needs",
+      "Infer the weak law from the strong one"
+    ]
+  }
+]

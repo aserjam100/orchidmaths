@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Derivatives cannot jump",
+    "section": "Derivatives cannot jump",
+    "subgoals": [
+      "State the intermediate value property",
+      "Apply it to the derivative",
+      "Forbid a jump in the derivative"
+    ]
+  },
+  {
+    "label": "Proof idea",
+    "section": "Proof idea",
+    "subgoals": [
+      "Subtract the linear function of the target slope",
+      "Show the difference is not monotone",
+      "Find its critical point"
+    ]
+  },
+  {
+    "label": "The oscillation example",
+    "section": "The oscillation example",
+    "subgoals": [
+      "Differentiate the oscillating product",
+      "Watch the derivative have no limit",
+      "Check it still takes intermediate values"
+    ]
+  }
+]

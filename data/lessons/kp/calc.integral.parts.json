@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The method of integration by parts",
+    "section": "",
+    "subgoals": [
+      "Split integral of u dv into uv - integral of v du",
+      "Choose u by LIATE priority",
+      "Integrate x e^x to (x-1)e^x + C"
+    ]
+  },
+  {
+    "label": "Derivation of the formula",
+    "section": "",
+    "subgoals": [
+      "Derive from (uv)' = u'v + uv'",
+      "Integrate both sides then rearrange",
+      "Read the boundary term uv"
+    ]
+  },
+  {
+    "label": "Most common mistakes",
+    "section": "",
+    "subgoals": [
+      "Flag wrong u-choice looping forever",
+      "Differentiate the chosen u to check simplification",
+      "Re-pick u when integral of v du gets harder"
+    ]
+  }
+]

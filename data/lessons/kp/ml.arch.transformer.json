@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: one attention computation",
+    "section": "Worked: one attention computation",
+    "subgoals": [
+      "Score the query against each key",
+      "Normalize scores into weights",
+      "Mix values by the weights"
+    ]
+  },
+  {
+    "label": "Worked: dimensions and cost",
+    "section": "Worked: dimensions and cost",
+    "subgoals": [
+      "Size the n-by-n score matrix",
+      "Split width across heads",
+      "Add encodings for order"
+    ]
+  },
+  {
+    "label": "When attention is too expensive",
+    "section": "When attention is too expensive",
+    "subgoals": [
+      "Price quadratic cost at long n",
+      "Mask the future for generation",
+      "Swap in sparse or linear variants"
+    ]
+  }
+]

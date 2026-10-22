@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The place-value shift",
+    "section": "The place-value shift",
+    "subgoals": [
+      "Count the zeros in the power of ten",
+      "Move each digit one place per zero",
+      "Keep the digits in the same order"
+    ]
+  },
+  {
+    "label": "Multiplying",
+    "section": "Multiplying",
+    "subgoals": [
+      "Move the digits left",
+      "Fill empty places with zeros",
+      "Compare the result with the original number"
+    ]
+  },
+  {
+    "label": "Dividing",
+    "section": "Dividing",
+    "subgoals": [
+      "Move the digits right",
+      "Remove the trailing zeros that were shifted",
+      "Multiply back to check"
+    ]
+  }
+]

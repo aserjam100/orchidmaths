@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Walks, Trails, and Paths",
+    "section": "Walks, Trails, and Paths",
+    "subgoals": [
+      "Tell walks, trails, and paths apart",
+      "Spot repeated vertices and edges",
+      "Name the length of a walk"
+    ]
+  },
+  {
+    "label": "Connected Graphs and Components",
+    "section": "Connected Graphs and Components",
+    "subgoals": [
+      "Test whether a graph is connected",
+      "Split a graph into components",
+      "Find isolated vertices"
+    ]
+  },
+  {
+    "label": "Distance and Shortest Paths",
+    "section": "Distance and Shortest Paths",
+    "subgoals": [
+      "Measure distance as shortest length",
+      "Say none when no path exists",
+      "Trace a shortest path"
+    ]
+  }
+]

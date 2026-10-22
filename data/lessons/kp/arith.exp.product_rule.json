@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction to powers",
+    "section": "",
+    "subgoals": [
+      "Recognize a product of powers",
+      "Identify the common base",
+      "Count the factors"
+    ]
+  },
+  {
+    "label": "Fundamental rules of powers",
+    "section": "",
+    "subgoals": [
+      "Add the exponents of the same base",
+      "Keep the base unchanged",
+      "Apply to a product of three powers"
+    ]
+  },
+  {
+    "label": "Powers with real exponents",
+    "section": "",
+    "subgoals": [
+      "Extend the rule to larger exponents",
+      "Verify by expanding",
+      "Apply the rule in expressions"
+    ]
+  }
+]

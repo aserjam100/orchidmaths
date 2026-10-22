@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The error formula",
+    "section": "The error formula",
+    "subgoals": [
+      "Form the product of the distances to the nodes",
+      "Insert the next derivative at an unknown point",
+      "Divide by the factorial"
+    ]
+  },
+  {
+    "label": "Worked: the node product",
+    "section": "Worked: the node product",
+    "subgoals": [
+      "Evaluate the product at a node",
+      "Evaluate it between nodes",
+      "See where the error peaks"
+    ]
+  },
+  {
+    "label": "Runge's phenomenon",
+    "section": "Runge's phenomenon",
+    "subgoals": [
+      "Add equally spaced nodes",
+      "Watch the ends oscillate",
+      "Choose a better node set or a spline"
+    ]
+  }
+]

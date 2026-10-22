@@ -1,0 +1,29 @@
+[
+  {
+    "label": "An arrow with components",
+    "section": "A vector as an arrow",
+    "subgoals": [
+      "Read the components as displacements along two axes",
+      "Keep the order of the pair",
+      "State what the magnitude measures"
+    ]
+  },
+  {
+    "label": "The hypotenuse of the components",
+    "section": "The length from the components",
+    "subgoals": [
+      "Square each component",
+      "Add the squares and take the root",
+      "See the distance formula behind the magnitude"
+    ]
+  },
+  {
+    "label": "Why the signs drop out",
+    "section": "Signed components do not change it",
+    "subgoals": [
+      "Square a negative component",
+      "Compare vectors that point into different quadrants",
+      "See why a triple gives an exact length"
+    ]
+  }
+]

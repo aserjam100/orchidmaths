@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Infinite intervals",
+    "section": "Infinite intervals",
+    "subgoals": [
+      "Map the infinite interval to a finite one",
+      "Apply an ordinary rule there",
+      "Or use weights that decay in the tail"
+    ]
+  },
+  {
+    "label": "Worked: the danger of truncation",
+    "section": "Worked: the danger of truncation",
+    "subgoals": [
+      "Cut the tail at some point",
+      "Estimate the neglected mass",
+      "See why the error is hidden"
+    ]
+  },
+  {
+    "label": "Unbounded integrands",
+    "section": "Unbounded integrands",
+    "subgoals": [
+      "Find where the integrand blows up",
+      "Substitute to remove the singularity",
+      "Or cluster the nodes there"
+    ]
+  }
+]

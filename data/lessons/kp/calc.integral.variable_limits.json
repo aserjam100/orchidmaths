@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Variable limits of integration",
+    "section": "",
+    "subgoals": [
+      "Apply FTC1 to d/dx ∫_0^x",
+      "Chain-rule through x^2 limits",
+      "Negate for lower-limit variables"
+    ]
+  },
+  {
+    "label": "First theorem refresher",
+    "section": "",
+    "subgoals": [
+      "Recall accumulation differentiates back",
+      "Fix the lower limit as constant",
+      "Check sin and t^2 cases"
+    ]
+  },
+  {
+    "label": "Worked variable-limit examples",
+    "section": "",
+    "subgoals": [
+      "Verify 2x^3 for the x^2 cap",
+      "Verify -e^x for the flipped limit",
+      "Name the entering/leaving boundary terms"
+    ]
+  }
+]

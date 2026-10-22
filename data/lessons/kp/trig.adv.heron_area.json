@@ -1,0 +1,29 @@
+[
+  {
+    "label": "An area without a height",
+    "section": "An area without a height",
+    "subgoals": [
+      "Note that three sides fix the triangle",
+      "Say that no base and height pair is needed",
+      "Name the law of cosines as the bridge"
+    ]
+  },
+  {
+    "label": "The semiperimeter",
+    "section": "The semiperimeter",
+    "subgoals": [
+      "Halve the perimeter to get the semiperimeter",
+      "Write Heron's formula with the four factors",
+      "Take the square root of their product"
+    ]
+  },
+  {
+    "label": "Where it comes from",
+    "section": "Where the formula comes from",
+    "subgoals": [
+      "Read each factor as a semiperimeter excess",
+      "Watch a factor go to zero as the triangle flattens",
+      "Treat the product as the room the triangle has"
+    ]
+  }
+]

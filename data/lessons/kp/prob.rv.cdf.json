@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Accumulating probability",
+    "section": "Accumulating probability",
+    "subgoals": [
+      "Grow the events as x increases",
+      "Attach the probability to each threshold",
+      "Check the two endpoint limits"
+    ]
+  },
+  {
+    "label": "Worked: an interval",
+    "section": "Worked: an interval",
+    "subgoals": [
+      "Subtract the two accumulated probabilities",
+      "Read a jump as the probability of a point",
+      "Note that a continuous variable has no jumps"
+    ]
+  },
+  {
+    "label": "Jumps and densities",
+    "section": "Jumps and densities",
+    "subgoals": [
+      "Recognise a step function as discrete",
+      "Recognise an integral as continuous",
+      "Read a mixed distribution"
+    ]
+  }
+]

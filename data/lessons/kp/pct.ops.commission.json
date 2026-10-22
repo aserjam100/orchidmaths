@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Commission is a percent of sales",
+    "section": "Commission is a percent of sales",
+    "subgoals": [
+      "Identify the sales amount as the whole",
+      "Identify the commission rate as the percent",
+      "Multiply the rate by the sales"
+    ]
+  },
+  {
+    "label": "Convert the rate to a decimal",
+    "section": "Convert the rate to a decimal",
+    "subgoals": [
+      "Write the percent over 100",
+      "Multiply by the sales amount",
+      "Place the decimal point in the money"
+    ]
+  },
+  {
+    "label": "Check the amount",
+    "section": "Check the amount",
+    "subgoals": [
+      "Keep the commission below the sales",
+      "Check the decimal place",
+      "Read the commission as cents per dollar of sales"
+    ]
+  }
+]

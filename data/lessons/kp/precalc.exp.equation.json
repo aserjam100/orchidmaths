@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Equal bases",
+    "section": "Equal bases",
+    "subgoals": [
+      "Rewrite a constant as a power",
+      "Equate the exponents",
+      "Solve a small case"
+    ]
+  },
+  {
+    "label": "Logarithms as the general tool",
+    "section": "Logarithms as the general tool",
+    "subgoals": [
+      "Take a logarithm of both sides",
+      "Isolate the exponent",
+      "Explain why the step is safe"
+    ]
+  },
+  {
+    "label": "Combining the rules",
+    "section": "Combining the rules",
+    "subgoals": [
+      "Rewrite both sides with one base",
+      "Reduce to a linear equation",
+      "Choose between the two methods"
+    ]
+  }
+]

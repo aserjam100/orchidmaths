@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The direction an angle names",
+    "section": "Turning past a full circle",
+    "subgoals": [
+      "Separate the direction from the number of turns",
+      "Name two angles that share a terminal side",
+      "State that coterminal angles differ by whole turns"
+    ]
+  },
+  {
+    "label": "Reducing to the first turn",
+    "section": "Reducing an angle to one turn",
+    "subgoals": [
+      "Divide the angle by 360 degrees",
+      "Keep the remainder as the reduced angle",
+      "Check that the remainder lies in [0, 360)"
+    ]
+  },
+  {
+    "label": "Angles below zero",
+    "section": "Negative angles",
+    "subgoals": [
+      "Read a negative angle as a clockwise sweep",
+      "Add 360 degrees to bring it into the window",
+      "Give the coterminal partner of a negative angle"
+    ]
+  }
+]

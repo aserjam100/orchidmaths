@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Complements in a triangle",
+    "section": "Complements in a right triangle",
+    "subgoals": [
+      "Subtract the acute angles from 90 degrees",
+      "Say that the two angles see the same three sides",
+      "Swap opposite and adjacent between them"
+    ]
+  },
+  {
+    "label": "Sine and cosine swap",
+    "section": "Sine and cosine swap",
+    "subgoals": [
+      "Write sin theta as cos of the complement",
+      "Write cos theta as sin of the complement",
+      "Apply the same swap to tangent and secant"
+    ]
+  },
+  {
+    "label": "The name co-sine",
+    "section": "Why the name co-sine",
+    "subgoals": [
+      "Read the co as complement",
+      "See the identity as a definition, not a coincidence",
+      "Use it to shrink an angle above 45 degrees"
+    ]
+  }
+]

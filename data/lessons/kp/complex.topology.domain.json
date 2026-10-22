@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Openness",
+    "section": "Openness",
+    "subgoals": [
+      "Every point has a disk inside",
+      "Punctured plane still open",
+      "Real axis not open in C"
+    ]
+  },
+  {
+    "label": "Connectedness",
+    "section": "Connectedness",
+    "subgoals": [
+      "No split into two open pieces",
+      "Paths inside the set",
+      "Punctured plane is connected"
+    ]
+  },
+  {
+    "label": "Both at once",
+    "section": "Both at once",
+    "subgoals": [
+      "Require open and connected",
+      "Name two failure modes",
+      "Check standard examples"
+    ]
+  }
+]

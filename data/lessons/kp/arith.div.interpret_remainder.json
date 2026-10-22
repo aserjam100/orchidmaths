@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Divide and name the remainder",
+    "section": "Divide and name the remainder",
+    "subgoals": [
+      "Divide the total by the group size",
+      "Write the whole-number quotient",
+      "Check that the remainder is smaller than the divisor"
+    ]
+  },
+  {
+    "label": "Drop the remainder for full groups",
+    "section": "Drop the remainder for full groups",
+    "subgoals": [
+      "Read whether only complete groups count",
+      "Keep the quotient",
+      "Explain why the leftover does not add a group"
+    ]
+  },
+  {
+    "label": "Round up when every item must fit",
+    "section": "Round up when every item must fit",
+    "subgoals": [
+      "Check whether the remainder is nonzero",
+      "Add one to the quotient",
+      "State what the extra group holds"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Differences as displacements",
+    "section": "Differences as displacements",
+    "subgoals": [
+      "Subtract the parts",
+      "Read the difference as a vector",
+      "See it is independent of the origin"
+    ]
+  },
+  {
+    "label": "The modulus of a difference",
+    "section": "The modulus of a difference",
+    "subgoals": [
+      "Apply the distance formula",
+      "Relate it to the midpoint",
+      "Use the modulus of z-w"
+    ]
+  },
+  {
+    "label": "Recognising triples",
+    "section": "Recognising triples",
+    "subgoals": [
+      "Spot a Pythagorean triple",
+      "Ignore the signs",
+      "State the exact integer distance"
+    ]
+  }
+]

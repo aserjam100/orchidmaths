@@ -1,0 +1,19 @@
+{
+  "concept": "dec.ops.mult.word",
+  "setup": "One [[item]] costs $[[unit]] and you buy [[qty]] of them.",
+  "steps": [
+    {
+      "fact": "unit",
+      "say": "The unit price is $[[unit]]."
+    },
+    {
+      "fact": "qty",
+      "say": "You buy [[qty]], so multiply the unit price by [[qty]]."
+    },
+    {
+      "fact": "total",
+      "say": "$[[unit]] x [[qty]] = $[[total]]."
+    }
+  ],
+  "answer": "The cost is $[[total]]."
+}

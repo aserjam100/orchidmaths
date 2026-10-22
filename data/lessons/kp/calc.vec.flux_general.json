@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Normal components",
+    "section": "Normal components",
+    "subgoals": [
+      "Project the field onto the normal",
+      "Integrate over the surface",
+      "Fix the orientation"
+    ]
+  },
+  {
+    "label": "Constant fields and flat surfaces",
+    "section": "Constant fields and flat surfaces",
+    "subgoals": [
+      "Take the normal to be constant",
+      "Keep only the normal component",
+      "Multiply by the area"
+    ]
+  },
+  {
+    "label": "The divergence theorem",
+    "section": "The divergence theorem",
+    "subgoals": [
+      "Close the surface and integrate the divergence",
+      "Read zero divergence as incompressible flow",
+      "Convert between surface and volume"
+    ]
+  }
+]

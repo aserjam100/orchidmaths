@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Pieces joined smoothly",
+    "section": "Pieces joined smoothly",
+    "subgoals": [
+      "Fit a cubic on each interval",
+      "Match values at the knots",
+      "Match the first two derivatives across them"
+    ]
+  },
+  {
+    "label": "Worked: the boundary conditions",
+    "section": "Worked: the boundary conditions",
+    "subgoals": [
+      "Count the unknowns and the matching equations",
+      "Apply the two boundary conditions",
+      "Obtain a unique spline"
+    ]
+  },
+  {
+    "label": "Why splines beat one polynomial",
+    "section": "Why splines beat one polynomial",
+    "subgoals": [
+      "Compare the oscillation of a single polynomial",
+      "Bound the error by the knot spacing",
+      "Use splines as the default"
+    ]
+  }
+]

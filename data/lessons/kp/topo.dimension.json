@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: the line has dimension 1",
+    "section": "Worked: the line has dimension 1",
+    "subgoals": [
+      "Refine to pairwise-overlapping intervals",
+      "Show order 1 always suffices",
+      "Rule out order 0 by connectedness"
+    ]
+  },
+  {
+    "label": "Worked: the Cantor set has dimension 0",
+    "section": "Worked: the Cantor set has dimension 0",
+    "subgoals": [
+      "Split into clopen stage pieces",
+      "Refine any cover disjointly",
+      "Conclude multiplicity 1 suffices"
+    ]
+  },
+  {
+    "label": "Worked: dimension is topological",
+    "section": "Worked: dimension is topological",
+    "subgoals": [
+      "Carry covers along the homeomorphism",
+      "Match minimal orders both ways",
+      "Invoke Brouwer for Euclidean spaces"
+    ]
+  }
+]

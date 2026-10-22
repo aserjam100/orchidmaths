@@ -1,0 +1,15 @@
+{
+  "concept": "frac.order_ops",
+  "setup": "The expression is a sum with a fraction multiplied by a whole number inside it.",
+  "steps": [
+    {
+      "fact": "out_num",
+      "say": "Multiplication comes before addition, so do the product first and only then add. The order matters here: adding before multiplying gives a different value."
+    },
+    {
+      "fact": "out_den",
+      "say": "After the product, the two fractions are added over a common denominator, and the result \\(\\frac{[[out_num]]}{[[out_den]]}\\) is reduced to lowest terms."
+    }
+  ],
+  "answer": "So the expression evaluates to \\(\\frac{[[out_num]]}{[[out_den]]}\\)."
+}

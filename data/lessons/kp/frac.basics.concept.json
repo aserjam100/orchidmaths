@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Equal parts",
+    "section": "Equal parts",
+    "subgoals": [
+      "Check that the parts are the same size",
+      "Count how many equal parts make the whole",
+      "Name one part"
+    ]
+  },
+  {
+    "label": "Count the parts",
+    "section": "Count the parts",
+    "subgoals": [
+      "Count all the parts",
+      "Count the filled parts",
+      "Keep the two numbers apart"
+    ]
+  },
+  {
+    "label": "Write the fraction",
+    "section": "Write the fraction",
+    "subgoals": [
+      "Write the filled parts on top",
+      "Write all the parts below",
+      "Type the fraction with a /"
+    ]
+  }
+]

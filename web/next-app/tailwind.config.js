@@ -1,0 +1,108 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        orchid: {
+          bg: 'var(--bg)',
+          surface: 'var(--surface)',
+          'surface-elevated': 'var(--surface-elevated)',
+          'surface-highlight': 'var(--surface-highlight)',
+          primary: 'var(--text-primary)',
+          secondary: 'var(--text-secondary)',
+          muted: 'var(--text-muted)',
+
+          blue: 'var(--accent-blue)',
+          'blue-hover': 'var(--accent-blue-hover)',
+          // Faint blue fill for badges, chips, and hover states. Declared
+          // explicitly because opacity modifiers (/10, /50, …) emit no CSS
+          // for var()-based colors in this Tailwind build — classes like
+          // bg-orchid-blue/10 silently do nothing (transparent bg, dead
+          // hover). color-mix shares the baseline of the oklch tokens above.
+          'blue-faint': 'color-mix(in srgb, var(--accent-blue) 10%, transparent)',
+          // State borders. Same reasoning as `blue-faint`, and the same 40% the raw
+          // palette classes were reaching for: `border-green-500/40`,
+          // `border-red-500/40` and friends were the only verdict borders in the app, so
+          // every state colour was a hardcoded Tailwind value that no theme could reach.
+          // One weight for both, so a verdict border looks the same on the question card,
+          // the quiz host and the answer field.
+          'green-faint': 'color-mix(in srgb, var(--accent-green) 40%, transparent)',
+          'red-faint': 'color-mix(in srgb, var(--accent-red) 40%, transparent)',
+          teal: 'var(--accent-teal)',
+          green: 'var(--accent-green)',
+          red: 'var(--accent-red)',
+          border: 'var(--border)',
+          'border-strong': 'var(--border-strong)',
+          code: 'var(--code-bg)',
+          division: 'var(--division)',
+        },
+        sidebar: {
+          DEFAULT: 'var(--sidebar-background)',
+          foreground: 'var(--sidebar-foreground)',
+          primary: 'var(--sidebar-primary)',
+          'primary-foreground': 'var(--sidebar-primary-foreground)',
+          accent: 'var(--sidebar-accent)',
+          'accent-foreground': 'var(--sidebar-accent-foreground)',
+          border: 'var(--sidebar-border)',
+          ring: 'var(--sidebar-ring)',
+        },
+      },
+      fontFamily: {
+        serif: ['var(--font-space-grotesk)', 'Space Grotesk', 'sans-serif'],
+        sans: ['var(--font-space-grotesk)', 'Space Grotesk', 'sans-serif'],
+        mono: ['var(--font-jetbrains-mono)', 'JetBrains Mono', 'monospace'],
+      },
+      // One step above Tailwind's defaults (12px and 14px). Most of the interface is set in
+      // these two sizes, so this is where the type scale is raised; see DESIGN.md Typography.
+      fontSize: {
+        xs: ['0.8125rem', { lineHeight: '1.125rem' }],
+        sm: ['0.9375rem', { lineHeight: '1.375rem' }],
+      },
+      maxWidth: {
+        container: '1100px',
+      },
+      borderRadius: {
+        card: '2px',
+        pill: '3px',
+      },
+      keyframes: {
+        'ascii-reveal': {
+          '0%': { clipPath: 'inset(0 100% 0 0)' },
+          '100%': { clipPath: 'inset(0 0 0 0)' },
+        },
+        'ascii-pulse': {
+          '0%, 100%': { opacity: '0.4' },
+          '50%': { opacity: '1' },
+        },
+        'progress-fill': {
+          '0%': { width: '0%' },
+          '100%': { width: 'var(--progress-width)' },
+        },
+        'fadeIn': {
+          '0%': { opacity: '0', transform: 'translateY(4px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'ascii-reveal': 'ascii-reveal 1.5s steps(30) forwards',
+        'ascii-pulse': 'ascii-pulse 2s ease-in-out infinite',
+        'progress-fill': 'progress-fill 0.8s ease-out forwards',
+        'fadeIn': 'fadeIn 0.3s ease-out forwards',
+      },
+      boxShadow: {
+        'card': '0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06)',
+        'card-hover': '0 4px 12px 0 rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06)',
+        'card-elevated': '0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05)',
+      },
+      backgroundImage: {
+        'noise': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E\")",
+      },
+    },
+  },
+  plugins: [],
+}

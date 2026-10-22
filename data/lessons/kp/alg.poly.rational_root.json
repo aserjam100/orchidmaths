@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The candidates",
+    "section": "The candidates",
+    "subgoals": [
+      "List the divisors of the constant term",
+      "List the divisors of the leading coefficient",
+      "Form every fraction and both signs"
+    ]
+  },
+  {
+    "label": "Testing and reducing",
+    "section": "Testing and reducing",
+    "subgoals": [
+      "Substitute each candidate to test it",
+      "Divide out the first root found",
+      "Repeat on the quotient"
+    ]
+  },
+  {
+    "label": "Why the theorem works",
+    "section": "Why the theorem works",
+    "subgoals": [
+      "Put the root in lowest terms",
+      "Clear denominators to compare divisibility",
+      "Read the numerator and denominator constraints"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The basic identity",
+    "section": "The basic identity",
+    "subgoals": [
+      "Write both functions with exponentials",
+      "Expand the difference",
+      "Watch the cross terms cancel"
+    ]
+  },
+  {
+    "label": "The divided forms",
+    "section": "The divided forms",
+    "subgoals": [
+      "Divide by the hyperbolic cosine squared",
+      "Divide by the hyperbolic sine squared",
+      "Carry the minus sign through"
+    ]
+  },
+  {
+    "label": "Addition formulas",
+    "section": "Addition formulas",
+    "subgoals": [
+      "Add the sine products",
+      "Add the cosine products with a plus",
+      "Generate the multiple-angle forms"
+    ]
+  }
+]

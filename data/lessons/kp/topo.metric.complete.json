@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Cauchy sequences do not name their limit",
+    "section": "Cauchy sequences do not name their limit",
+    "subgoals": [
+      "Check pairs of terms beyond N",
+      "Separate Cauchyness from convergence",
+      "Use a gap in the space"
+    ]
+  },
+  {
+    "label": "Worked: the rationals are not complete",
+    "section": "Worked: the rationals are not complete",
+    "subgoals": [
+      "Approximate sqrt(2) by rationals",
+      "Check the sequence is Cauchy",
+      "Note the limit is irrational"
+    ]
+  },
+  {
+    "label": "Compact implies complete",
+    "section": "Compact implies complete",
+    "subgoals": [
+      "Extract a convergent subsequence",
+      "Compare the tail with that limit",
+      "Conclude the whole sequence converges"
+    ]
+  }
+]

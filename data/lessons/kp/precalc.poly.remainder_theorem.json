@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The remainder theorem",
+    "section": "The remainder theorem",
+    "subgoals": [
+      "State the remainder theorem",
+      "Evaluate a polynomial to get a remainder",
+      "Connect a zero to a factor"
+    ]
+  },
+  {
+    "label": "Why it works",
+    "section": "Why it works",
+    "subgoals": [
+      "Write the division identity",
+      "Substitute x = c",
+      "See why the remainder is constant"
+    ]
+  },
+  {
+    "label": "Finding zeros",
+    "section": "Finding zeros",
+    "subgoals": [
+      "Turn a factor question into an evaluation",
+      "Narrow candidates by substitution",
+      "Name what the theorem does not settle"
+    ]
+  }
+]

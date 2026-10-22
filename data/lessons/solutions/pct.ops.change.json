@@ -1,0 +1,15 @@
+{
+  "concept": "pct.ops.change",
+  "setup": "The quantity changes from [[old]] to [[new]].",
+  "steps": [
+    {
+      "fact": "change",
+      "say": "Subtract to find the amount of change: |[[new]] - [[old]]| = [[change]]."
+    },
+    {
+      "fact": "percent",
+      "say": "Divide the change by the original value and multiply by 100: [[change]] / [[old]] x 100 = [[percent]]%."
+    }
+  ],
+  "answer": "The percent [[direction]] is [[percent]]%."
+}

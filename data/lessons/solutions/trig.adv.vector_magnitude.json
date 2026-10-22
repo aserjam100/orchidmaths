@@ -1,0 +1,23 @@
+{
+  "concept": "trig.adv.vector_magnitude",
+  "setup": "The vector is $\\langle [[x]], [[y]] \\rangle$.",
+  "steps": [
+    {
+      "fact": "x",
+      "say": "The magnitude is the length of the arrow from the origin to its tip, which is the hypotenuse of a right triangle on the two components: $|\\langle x, y \\rangle| = \\sqrt{x^{2} + y^{2}}$."
+    },
+    {
+      "fact": "x2",
+      "say": "The components square to [[x2]] and [[y2]], and squaring is what makes their signs irrelevant."
+    },
+    {
+      "fact": "sum",
+      "say": "The squares add to [[sum]], which is a perfect square, so the root comes out exact."
+    },
+    {
+      "fact": "value",
+      "say": "The square root of [[sum]] is [[value]]."
+    }
+  ],
+  "answer": "So the magnitude is [[value]]."
+}

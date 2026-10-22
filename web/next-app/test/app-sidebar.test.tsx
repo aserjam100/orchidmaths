@@ -1,0 +1,234 @@
+import { describe, it, expect } from 'vitest'
+import { render, screen, within, fireEvent } from '@testing-library/react'
+import { AppSidebar } from '../components/app-sidebar'
+import { SidebarProvider } from '../components/ui/sidebar'
+
+function renderSidebar(extra = {}) {
+  return render(
+    <SidebarProvider>
+      <AppSidebar
+        name="Ada"
+        studentId="s1"
+        username="ada"
+        level="Scholar"
+        streak={5}
+        {...extra}
+      />
+    </SidebarProvider>
+  )
+}
+
+// next/navigation stub for tests without a router
+import { vi } from 'vitest'
+vi.mock('next/navigation', () => ({
+  usePathname: () => '/profile',
+  useRouter: () => ({ push: () => {} }),
+}))
+
+// /profile renders no Header, so this sidebar is the only light/dark control on that page. The
+// hook is mocked to keep the test independent of localStorage and matchMedia, and to make the
+// click observable.
+const { sidebarToggleThemeMock } = vi.hoisted(() => ({ sidebarToggleThemeMock: vi.fn() }))
+vi.mock('../hooks/useTheme', () => ({
+  useTheme: () => ({ theme: 'dark', mounted: true, toggleTheme: sidebarToggleThemeMock }),
+}))
+
+// The collapsed 44px rail is only even because every icon in it occupies the same box.
+//
+// That was asserted as a `size-4` class on a lucide <svg>. The animated set renders
+// `<div class="inline-flex" style="color:currentcolor"><svg width=16 height=16
+// stroke="currentColor">`, so the class sizes nothing and the guarantee is now carried by explicit
+// width/height on the svg. Asserting the class would have passed against an icon that no longer
+// sizes to anything, which is the failure this replaces.
+function expectFixedBox(link: Element) {
+  const svg = link.querySelector('svg')
+  expect(svg, 'nav link has no icon').not.toBeNull()
+  expect(svg?.getAttribute('width'), 'icon width must be fixed, not a class').toBe('16')
+  expect(svg?.getAttribute('height'), 'icon height must be fixed, not a class').toBe('16')
+  // Colour has to come from the theme, not from the library's default.
+  expect(svg?.getAttribute('stroke')).toBe('currentColor')
+}
+
+describe('AppSidebar', () => {
+  it('renders Navigate group without a Diagnostic entry (no CTA duplication)', () => {
+    renderSidebar()
+    expect(screen.getByText('Navigate')).toBeInTheDocument()
+    for (const label of ['Practice', 'Topics', 'History', 'Settings']) {
+      expect(screen.getByText(label)).toBeInTheDocument()
+    }
+    // Hidden until there are enough learners for a ranking to mean something.
+    expect(screen.queryByText('Leaderboard')).toBeNull()
+    expect(screen.queryByText('Diagnostic')).toBeNull()
+    expect(screen.queryByText('Take Test')).toBeNull()
+    expect(screen.queryByText('Review Now')).toBeNull()
+  })
+
+  it('offers no way into the closed reference library', () => {
+    // The sidebar keeps its own list rather than importing nav.ts, which makes it the one
+    // navigation surface a change to lib/nav.ts cannot reach. It held a Study entry for as long
+    // as the library existed, so this asserts the entry is gone rather than assuming it.
+    renderSidebar()
+    const sidebar = screen.getByTestId('profile-sidebar')
+    expect(sidebar.querySelector('a[href="/study"]')).toBeNull()
+    expect(within(sidebar).queryByText('Study')).toBeNull()
+  })
+
+  it('leads the rail with Practice, matching lib/nav.ts', () => {
+    // The rail keeps its own list because it is deliberately a subset (no Review, no Login).
+    // That also makes the order something that can silently drift, so it is asserted.
+    renderSidebar()
+    const sidebar = screen.getByTestId('profile-sidebar')
+    const navLinks = [...sidebar.querySelectorAll('a[href]')]
+    const learn = navLinks.findIndex((a) => a.textContent?.includes('Practice'))
+    const topics = navLinks.findIndex((a) => a.textContent?.includes('Topics'))
+    expect(learn).toBeGreaterThan(-1)
+    // Compare before Topics, the next entry in the list, rather than against an index: the brand
+    // mark and the collapse toggle are anchors too and their position is not the claim.
+    expect(learn).toBeLessThan(topics)
+  })
+
+  it('renders Resources group with How it works and About, and no project pages', () => {
+    // Docs, the glossary and Contribute left the student rail; the footer still links them.
+    renderSidebar()
+    expect(screen.getByText('Resources')).toBeInTheDocument()
+    for (const label of ['How it works', 'About']) {
+      expect(screen.getByText(label)).toBeInTheDocument()
+    }
+    const sidebar = screen.getByTestId('profile-sidebar')
+    for (const href of ['/docs', '/glossary', '/docs/contributing', '/graph']) {
+      expect(sidebar.querySelector(`a[href="${href}"]`)).toBeNull()
+    }
+    for (const href of ['/how-it-works', '/note']) {
+      const link = sidebar.querySelector(`a[href="${href}"]`)!
+      expect(link).not.toBeNull()
+      expectFixedBox(link)
+    }
+  })
+
+  it('renders slim sidebar without Next up / Goals / On-this-page duplication', () => {
+    renderSidebar({ dueReviews: 2 })
+    expect(screen.getByText('2')).toBeInTheDocument() // due-review badge
+    // Removed groups never render
+    expect(screen.queryByText('Goals')).toBeNull()
+    expect(screen.queryByText('Daily goal')).toBeNull()
+    expect(screen.queryByText('This week')).toBeNull()
+    expect(screen.queryByText('On this page')).toBeNull()
+    expect(screen.queryByText('Next up')).toBeNull()
+    expect(screen.queryByText('Activity')).toBeNull()
+  })
+
+  it('names the transcript History, and nothing in the rail claims to be Progress', () => {
+    // The entry was called Progress and resolved to a paginated list of past
+    // questions, opening filtered to the ones you got wrong — the single most
+    // misleading thing the navigation did. The transcript is now named for what
+    // it is, and the report lives on the learner's own page rather than behind
+    // a rail entry.
+    renderSidebar()
+    const sidebar = screen.getByTestId('profile-sidebar')
+    const history = within(sidebar).getByText('History', { exact: true })
+    expect(history.closest('a')?.getAttribute('href')).toBe('/history')
+    expect(screen.queryByText('Progress', { exact: true })).toBeNull()
+    expect(sidebar.querySelector('a[href="/progress-card"]')).toBeNull()
+  })
+
+  it('nav buttons render fixed-size Lucide icons (even collapsed rail)', () => {
+    renderSidebar()
+    const sidebar = screen.getByTestId('profile-sidebar')
+    const hrefs = ['/learn', '/levels', '/history', '/settings']
+    expect(hrefs).toHaveLength(4)
+    for (const href of hrefs) {
+      const link = sidebar.querySelector(`a[href="${href}"]`)!
+      expect(link).not.toBeNull()
+      expectFixedBox(link)
+    }
+  })
+
+  // The collapsed rail shows the brand mark as the expand toggle, so the identical glyph is a
+  // destination when expanded (a link to the hub) and an action when collapsed. `aria-label` and
+  // `title` were the only signals, and both need a hover — so the control's role was communicated
+  // to nobody until they pressed it. The chevron is what makes it visible first.
+  it('shows an expand affordance on the collapsed rail, not just a hover-only tooltip', () => {
+    const { container } = renderSidebar()
+    const toggle = container.querySelector('button[aria-label="Expand sidebar"]')
+    expect(toggle).not.toBeNull()
+
+    // A visible chevron inside the control, mirroring the collapse chevron in the expanded state.
+    const chevron = toggle!.querySelector('svg:not([data-testid="orchid-mark"])')
+    expect(chevron, 'the collapsed toggle needs a visible glyph, not only a title attribute').not.toBeNull()
+
+    // And the brand mark stays: dropping it would leave a rail with no identity at all.
+    expect(toggle!.querySelector('[data-testid="orchid-mark"]')).not.toBeNull()
+    // 44px, matching every other tap target in the app. It was size-11 already and stays so.
+    expect(toggle!.className).toMatch(/size-11/)
+  })
+
+  it('menu labels hide in icon-collapse mode (icons only, no text peek)', () => {
+    renderSidebar()
+    const sidebar = screen.getByTestId('profile-sidebar')
+    // Every text label next to an icon carries the collapse-hide class;
+    // tooltips (not visible text) carry the label when collapsed.
+    const labels = ['Orchid', 'Practice', 'Topics', 'History', 'Settings', 'How it works', 'About', 'Sign out']
+    for (const label of labels) {
+      const el = screen.getByText(label, { exact: true })
+      expect(sidebar.contains(el)).toBe(true)
+      expect(el.getAttribute('class') ?? '').toContain('group-data-[collapsible=icon]:hidden')
+    }
+  })
+
+  it('footer shows identity and sign-out, identity text hides when collapsed', () => {
+    renderSidebar()
+    expect(screen.getByText('Ada')).toBeInTheDocument()
+    expect(screen.getByText('Sign out')).toBeInTheDocument()
+    // Collapsed rail shows avatar only — text wrapper carries the icon-mode hide class
+    const ada = screen.getByText('Ada')
+    const textWrapper = ada.closest('span[class*="flex-1"]')
+    expect(textWrapper?.getAttribute('class') ?? '').toContain('group-data-[collapsible=icon]:hidden')
+  })
+
+  it('offers a theme control, because /profile renders no Header', () => {
+    // The regression this covers: fb5bde0a removed Header and BottomTabs from /profile and put
+    // back a shell that is desktop-only, so the page had no way to change light or dark on any
+    // viewport. Nothing failed when that happened.
+    renderSidebar()
+    const toggle = screen.getByRole('button', { name: 'Toggle theme' })
+    expect(toggle).toBeInTheDocument()
+    sidebarToggleThemeMock.mockClear()
+    fireEvent.click(toggle)
+    expect(sidebarToggleThemeMock).toHaveBeenCalledTimes(1)
+  })
+
+  it('keeps the theme control reachable when the rail is collapsed', () => {
+    // The label span is display:none in the collapsed rail, and shadcn's `tooltip` prop renders a
+    // TooltipContent — a description, not a name. Without an explicit aria-label the button's only
+    // child is an aria-hidden icon, so in the state most desktop users leave the sidebar in it has
+    // no accessible name at all.
+    renderSidebar()
+    const toggle = screen.getByRole('button', { name: 'Toggle theme' })
+    expect(toggle).toHaveAttribute('aria-label', 'Toggle theme')
+    expect(toggle.querySelector('svg')).not.toBeNull()
+  })
+
+  it('places the theme control above Sign out', () => {
+    // Footer order is the reading order for a keyboard user: preferences, then the destructive
+    // sign-out.
+    renderSidebar()
+    const labels = screen.getAllByRole('button').map(b => b.textContent?.trim() ?? '')
+    const themeIdx = labels.findIndex(l => l.includes('Toggle theme'))
+    const signOutIdx = labels.findIndex(l => l.includes('Sign out'))
+    expect(themeIdx).toBeGreaterThanOrEqual(0)
+    expect(signOutIdx).toBeGreaterThan(themeIdx)
+  })
+
+  it('offers the Admin entry to an administrator and to nobody else', () => {
+    // The component's half of the contract. The other half is that /profile passes `isAdmin` from
+    // the session role on *every* branch — the loading and error branches did, and the main one
+    // did not, so the entry appeared and then vanished once scores arrived. That wiring is what
+    // `e2e/admin.spec.ts` guards; this guards the prop.
+    const { unmount } = renderSidebar({ isAdmin: true })
+    expect(screen.getByRole('link', { name: /Admin/ })).toBeTruthy()
+    unmount()
+
+    renderSidebar()
+    expect(screen.queryByRole('link', { name: /Admin/ })).toBeNull()
+  })
+})

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The three axioms",
+    "section": "The three axioms",
+    "subgoals": [
+      "State nonnegativity",
+      "State normalisation",
+      "State countable additivity"
+    ]
+  },
+  {
+    "label": "Worked: the complement rule",
+    "section": "Worked: the complement rule",
+    "subgoals": [
+      "Split the space into A and its complement",
+      "Apply additivity to the two disjoint events",
+      "Rearrange to the complement rule"
+    ]
+  },
+  {
+    "label": "Consequences and independence",
+    "section": "Consequences and independence",
+    "subgoals": [
+      "Derive monotonicity from additivity",
+      "Separate independence from the axioms",
+      "Apply the union bound"
+    ]
+  }
+]

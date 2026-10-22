@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Introduction",
+    "section": "",
+    "subgoals": [
+      "State Vieta's formulas",
+      "Connect roots to coefficients",
+      "Prepare to apply"
+    ]
+  },
+  {
+    "label": "Quadratic case",
+    "section": "",
+    "subgoals": [
+      "Sum the roots",
+      "Multiply the roots",
+      "Use them to factor"
+    ]
+  },
+  {
+    "label": "General form",
+    "section": "",
+    "subgoals": [
+      "Write the general relations",
+      "Apply to higher degrees",
+      "Verify with examples"
+    ]
+  }
+]

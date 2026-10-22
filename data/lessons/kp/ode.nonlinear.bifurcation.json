@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: saddle-node creation",
+    "section": "Worked: saddle-node creation",
+    "subgoals": [
+      "Solve mu - x^2 = 0 for the equilibria",
+      "Read flow signs between and outside the roots",
+      "Drop mu below zero to see them vanish"
+    ]
+  },
+  {
+    "label": "Worked: pitchfork branches",
+    "section": "Worked: pitchfork branches",
+    "subgoals": [
+      "Factor mu x - x^3 to find three equilibria",
+      "Check the sign on each interval for stability",
+      "Drop mu below zero to see one stable point remain"
+    ]
+  },
+  {
+    "label": "When the portrait changes",
+    "section": "When the portrait changes",
+    "subgoals": [
+      "Name the four bifurcation types",
+      "Count equilibria on each side of the threshold",
+      "Match transcritical and Hopf to their signatures"
+    ]
+  }
+]

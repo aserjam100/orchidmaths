@@ -1,0 +1,1019 @@
+[
+  {
+    "id": "vector-notation",
+    "symbol": "v",
+    "latex": "\\mathbf{v}",
+    "name": "Vector (linear algebra)",
+    "aliases": [
+      "vector",
+      "column vector",
+      "bold v",
+      "n-tuple vector",
+      "state vector"
+    ],
+    "category": "linear-discrete",
+    "definition": "An ordered list of numbers treated as one object: a point, a direction, or data. Vectors add component-wise and scale by multiplying every component.",
+    "reading": "“vector v”.",
+    "examples": [
+      {
+        "tex": "\\mathbf{v} = (1, 2, 3)",
+        "explanation": "A three-component vector."
+      }
+    ],
+    "relatedSymbols": [
+      "vector-arrow",
+      "matrix-notation",
+      "inner-product"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "matrix-notation",
+    "symbol": "A",
+    "latex": "A",
+    "name": "Matrix",
+    "aliases": [
+      "matrix",
+      "matrices",
+      "capital A matrix",
+      "array matrix",
+      "linear map matrix"
+    ],
+    "category": "linear-discrete",
+    "definition": "A rectangular array of numbers that acts on vectors by matrix multiplication. Matrices compose linear transformations: applying B then A is the product AB.",
+    "reading": "“matrix A”.",
+    "examples": [
+      {
+        "tex": "A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}",
+        "explanation": "A two-by-two matrix with rows (1,2) and (3,4)."
+      }
+    ],
+    "relatedSymbols": [
+      "vector-notation",
+      "transpose",
+      "inverse-matrix",
+      "determinant"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "transpose",
+    "symbol": "Aᵀ",
+    "latex": "A^T",
+    "name": "Matrix transpose",
+    "aliases": [
+      "transpose",
+      "A transpose",
+      "flip matrix",
+      "rows columns swap"
+    ],
+    "category": "linear-discrete",
+    "definition": "Flips a matrix across its diagonal: rows become columns. The entry in row i, column j of Aᵀ is the entry in row j, column i of A.",
+    "reading": "“A transpose”.",
+    "examples": [
+      {
+        "tex": "\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}^T = \\begin{pmatrix} 1 & 3 \\\\ 2 & 4 \\end{pmatrix}",
+        "explanation": "Rows and columns exchange places."
+      }
+    ],
+    "relatedSymbols": [
+      "matrix-notation",
+      "inverse-matrix",
+      "inner-product"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "inverse-matrix",
+    "symbol": "A⁻¹",
+    "latex": "A^{-1}",
+    "name": "Matrix inverse",
+    "aliases": [
+      "inverse matrix",
+      "A inverse",
+      "invertible",
+      "nonsingular"
+    ],
+    "category": "linear-discrete",
+    "definition": "The matrix that undoes A: AA⁻¹ = A⁻¹A = I. Only square matrices with nonzero determinant have one; others are singular.",
+    "reading": "“A inverse”.",
+    "examples": [
+      {
+        "tex": "A\\mathbf{x} = \\mathbf{b} \\Rightarrow \\mathbf{x} = A^{-1}\\mathbf{b}",
+        "explanation": "Solving a linear system by inverting A."
+      }
+    ],
+    "relatedSymbols": [
+      "matrix-notation",
+      "transpose",
+      "determinant",
+      "identity-matrix",
+      "inverse-function"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "determinant",
+    "symbol": "det(A)",
+    "latex": "\\det(A)",
+    "name": "Determinant",
+    "aliases": [
+      "determinant",
+      "det",
+      "vertical bars matrix",
+      "volume scaling"
+    ],
+    "category": "linear-discrete",
+    "definition": "A single number measuring how a matrix scales volume: zero means the transformation flattens space (no inverse), and the sign records orientation flips.",
+    "reading": "“the determinant of A”.",
+    "examples": [
+      {
+        "tex": "\\det\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc",
+        "explanation": "The two-by-two determinant formula."
+      }
+    ],
+    "relatedSymbols": [
+      "matrix-notation",
+      "inverse-matrix",
+      "absolute-value",
+      "trace"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "trace",
+    "symbol": "tr(A)",
+    "latex": "\\operatorname{tr}(A)",
+    "name": "Matrix trace",
+    "aliases": [
+      "trace",
+      "tr",
+      "diagonal sum"
+    ],
+    "category": "linear-discrete",
+    "definition": "Sums the diagonal entries of a square matrix. The trace equals the sum of the eigenvalues and is unchanged by cyclic reorderings of products.",
+    "reading": "“the trace of A”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{tr}\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} = 5",
+        "explanation": "One plus four."
+      }
+    ],
+    "relatedSymbols": [
+      "matrix-notation",
+      "determinant",
+      "eigenvalue"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "rank",
+    "symbol": "rank(A)",
+    "latex": "\\operatorname{rank}(A)",
+    "name": "Matrix rank",
+    "aliases": [
+      "rank",
+      "rank of matrix",
+      "independent rows",
+      "column rank",
+      "full rank"
+    ],
+    "category": "linear-discrete",
+    "definition": "Counts the independent rows (equivalently, columns) of a matrix: the dimension of its image. Full rank means no redundancy; rank deficiency means some rows repeat information.",
+    "reading": "“the rank of A”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{rank}\\begin{pmatrix} 1 & 2 \\\\ 2 & 4 \\end{pmatrix} = 1",
+        "explanation": "The second row is twice the first, so one direction survives."
+      }
+    ],
+    "relatedSymbols": [
+      "matrix-notation",
+      "determinant",
+      "eigenvalue"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "eigenvalue",
+    "symbol": "λ",
+    "latex": "\\lambda",
+    "name": "Eigenvalue",
+    "aliases": [
+      "eigenvalue",
+      "lambda eigenvalue",
+      "characteristic value",
+      "spectrum",
+      "eig"
+    ],
+    "category": "linear-discrete",
+    "definition": "A scalar λ for which Av = λv for some nonzero vector v: the transformation stretches v by λ without changing its direction. Eigenvalues reveal stability, vibration modes and principal directions.",
+    "reading": "“eigenvalue lambda”.",
+    "examples": [
+      {
+        "tex": "\\det(A - \\lambda I) = 0",
+        "explanation": "The characteristic equation whose roots are the eigenvalues."
+      }
+    ],
+    "relatedSymbols": [
+      "eigenvector",
+      "lambda",
+      "determinant",
+      "trace"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "eigenvector",
+    "symbol": "v (Av = λv)",
+    "latex": "Av = \\lambda v",
+    "name": "Eigenvector",
+    "aliases": [
+      "eigenvector",
+      "characteristic vector",
+      "eigendirection",
+      "invariant direction"
+    ],
+    "category": "linear-discrete",
+    "definition": "A nonzero vector a transformation only stretches: Av = λv. The direction is preserved while the eigenvalue λ sets the scale (possibly flipping or collapsing it).",
+    "reading": "“eigenvector v for eigenvalue lambda”.",
+    "examples": [
+      {
+        "tex": "\\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix}\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = 2\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}",
+        "explanation": "(1,0) is stretched by 2 along the x-axis."
+      }
+    ],
+    "relatedSymbols": [
+      "eigenvalue",
+      "vector-notation",
+      "matrix-notation"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "inner-product",
+    "symbol": "⟨u, v⟩",
+    "latex": "\\langle u, v \\rangle",
+    "name": "Inner product",
+    "aliases": [
+      "inner product",
+      "angle brackets",
+      "dot product",
+      "scalar product",
+      "braket",
+      "u dot v"
+    ],
+    "category": "linear-discrete",
+    "definition": "Generalizes the dot product: a scalar measuring alignment of two vectors. Zero means orthogonal. Lengths, angles and projections all derive from it.",
+    "reading": "“the inner product of u and v”.",
+    "examples": [
+      {
+        "tex": "\\langle (1, 0), (0, 1) \\rangle = 0",
+        "explanation": "The axes are perpendicular."
+      }
+    ],
+    "contexts": [
+      {
+        "context": "Euclidean vectors",
+        "meaning": "The dot product: sum of component-wise products."
+      },
+      {
+        "context": "Functions",
+        "meaning": "Often an integral of the product over a domain."
+      }
+    ],
+    "relatedSymbols": [
+      "dot-product-note",
+      "perpendicular",
+      "vector-notation",
+      "transpose"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "dot-product-note",
+    "symbol": "u · v",
+    "latex": "u \\cdot v",
+    "name": "Dot product",
+    "aliases": [
+      "dot product",
+      "u dot v",
+      "scalar product vectors"
+    ],
+    "category": "linear-discrete",
+    "definition": "The Euclidean inner product: multiply matching components and add. It equals |u||v|cos θ, linking algebra to the angle between vectors.",
+    "reading": "“u dot v”.",
+    "examples": [
+      {
+        "tex": "(1, 2) \\cdot (3, 4) = 11",
+        "explanation": "One times three plus two times four."
+      }
+    ],
+    "relatedSymbols": [
+      "inner-product",
+      "cross-product",
+      "multiply"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "cross-product",
+    "symbol": "u × v",
+    "latex": "u \\times v",
+    "name": "Cross product",
+    "aliases": [
+      "cross product",
+      "u cross v",
+      "vector product",
+      "right hand rule"
+    ],
+    "category": "linear-discrete",
+    "relatedCategories": [
+      "geometry-trig"
+    ],
+    "definition": "Produces a vector perpendicular to two 3D vectors, with length equal to the parallelogram area they span. Direction follows the right-hand rule; order matters (u × v = −v × u).",
+    "reading": "“u cross v”.",
+    "examples": [
+      {
+        "tex": "(1, 0, 0) \\times (0, 1, 0) = (0, 0, 1)",
+        "explanation": "x cross y gives z."
+      }
+    ],
+    "commonMistakes": [
+      "Treating × as ordinary multiplication; the result is a vector, not a scalar."
+    ],
+    "relatedSymbols": [
+      "dot-product-note",
+      "determinant",
+      "curl",
+      "multiply"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "kronecker-delta",
+    "symbol": "δᵢⱼ",
+    "latex": "\\delta_{ij}",
+    "name": "Kronecker delta",
+    "aliases": [
+      "kronecker delta",
+      "delta ij",
+      "identity tensor",
+      "discrete delta"
+    ],
+    "category": "linear-discrete",
+    "definition": "Equals 1 when its indices match and 0 otherwise. It writes the identity matrix compactly and sifts sums to a single term.",
+    "reading": "“kronecker delta i j”.",
+    "examples": [
+      {
+        "tex": "\\sum_j \\delta_{ij} a_j = a_i",
+        "explanation": "Only the j = i term survives the sum."
+      }
+    ],
+    "relatedSymbols": [
+      "delta-letter",
+      "identity-matrix",
+      "summation-sigma"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "identity-matrix",
+    "symbol": "I",
+    "latex": "I",
+    "name": "Identity matrix",
+    "aliases": [
+      "identity matrix",
+      "I matrix",
+      "unit matrix",
+      "ones diagonal"
+    ],
+    "category": "linear-discrete",
+    "definition": "The matrix with ones on the diagonal and zeros elsewhere. Multiplying by I leaves any compatible matrix or vector unchanged.",
+    "reading": "“the identity matrix”.",
+    "examples": [
+      {
+        "tex": "I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}",
+        "explanation": "The two-by-two identity."
+      }
+    ],
+    "relatedSymbols": [
+      "matrix-notation",
+      "inverse-matrix",
+      "kronecker-delta"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "permutation",
+    "symbol": "P(n, k)",
+    "latex": "P(n, k)",
+    "name": "Permutation",
+    "aliases": [
+      "permutation",
+      "P n k",
+      "ordered selection",
+      "arrangements",
+      "nPk"
+    ],
+    "category": "linear-discrete",
+    "definition": "Counts ordered selections of k objects from n: n!/(n−k)!. Order matters here, which distinguishes permutations from combinations.",
+    "reading": "“P of n k” or “permutations of n taken k at a time”.",
+    "examples": [
+      {
+        "tex": "P(5, 2) = 5 \\cdot 4 = 20",
+        "explanation": "Twenty ordered pairs from five objects."
+      }
+    ],
+    "relatedSymbols": [
+      "combination",
+      "factorial",
+      "binomial-coefficient"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Precalculus 2e",
+        "url": "https://openstax.org/details/books/precalculus-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 26",
+        "url": "https://dlmf.nist.gov/26",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "combination",
+    "symbol": "C(n, k)",
+    "latex": "C(n, k)",
+    "name": "Combination",
+    "aliases": [
+      "combination",
+      "C n k",
+      "unordered selection",
+      "nCk",
+      "choose notation C"
+    ],
+    "category": "linear-discrete",
+    "relatedCategories": [
+      "probability"
+    ],
+    "definition": "Counts unordered selections of k objects from n, equal to the binomial coefficient. Same count as C(n,k); the C-notation is common in probability texts.",
+    "reading": "“C of n k” or “n choose k”.",
+    "examples": [
+      {
+        "tex": "C(5, 2) = 10",
+        "explanation": "Ten unordered pairs from five objects."
+      }
+    ],
+    "relatedSymbols": [
+      "permutation",
+      "binomial-coefficient",
+      "factorial"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Precalculus 2e",
+        "url": "https://openstax.org/details/books/precalculus-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "graph-notation",
+    "symbol": "G = (V, E)",
+    "latex": "G = (V, E)",
+    "name": "Graph (vertices and edges)",
+    "aliases": [
+      "graph",
+      "vertices edges",
+      "G V E",
+      "network graph",
+      "tree graph",
+      "path graph"
+    ],
+    "category": "linear-discrete",
+    "definition": "A graph G pairs a vertex set V with an edge set E of vertex pairs. Paths, cycles and trees are all special graphs; edges may carry direction or weights.",
+    "reading": "“G equals V E: vertices and edges”.",
+    "examples": [
+      {
+        "tex": "V = \\{a, b\\},\\; E = \\{\\{a, b\\}\\}",
+        "explanation": "Two vertices joined by one edge."
+      }
+    ],
+    "relatedSymbols": [
+      "set-builder",
+      "cardinality",
+      "combination"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "mod-arithmetic",
+    "symbol": "a mod n",
+    "latex": "a \\bmod n",
+    "name": "Modular arithmetic",
+    "aliases": [
+      "mod",
+      "modulo",
+      "modular arithmetic",
+      "clock arithmetic",
+      "remainder mod",
+      "Z n Z"
+    ],
+    "category": "linear-discrete",
+    "relatedCategories": [
+      "advanced"
+    ],
+    "definition": "Arithmetic on remainders after division by n: numbers differing by a multiple of n are treated as equal. Powers, sums and products all reduce mod n.",
+    "reading": "“a mod n”.",
+    "examples": [
+      {
+        "tex": "17 \\bmod 5 = 2",
+        "explanation": "Seventeen leaves remainder 2 on division by 5."
+      },
+      {
+        "tex": "(7 + 8) \\bmod 10 = 5",
+        "explanation": "Add, then keep the remainder."
+      }
+    ],
+    "relatedSymbols": [
+      "congruence-mod",
+      "divides",
+      "gcd",
+      "identical-to"
+    ],
+    "sources": [
+      {
+        "label": "NIST Digital Library of Mathematical Functions, ch. 27",
+        "url": "https://dlmf.nist.gov/27",
+        "license": "NIST DLMF; see site for citing guidance; consulted, original wording"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "floor-ceiling",
+    "symbol": "⌊x⌋ ⌈x⌉",
+    "latex": "\\lfloor x \\rfloor, \\lceil x \\rceil",
+    "name": "Floor and ceiling",
+    "aliases": [
+      "floor",
+      "ceiling",
+      "greatest integer",
+      "round down",
+      "round up"
+    ],
+    "category": "linear-discrete",
+    "relatedCategories": [
+      "arithmetic"
+    ],
+    "definition": "Floor rounds down to the nearest integer at or below x; ceiling rounds up to the nearest integer at or above x. Brackets point down for floor, up for ceiling.",
+    "reading": "“floor of x” and “ceiling of x”.",
+    "examples": [
+      {
+        "tex": "\\lfloor 3.7 \\rfloor = 3",
+        "explanation": "Round down to 3."
+      },
+      {
+        "tex": "\\lceil 3.2 \\rceil = 4",
+        "explanation": "Round up to 4."
+      }
+    ],
+    "relatedSymbols": [
+      "grouping",
+      "interval",
+      "divides"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "linear-span",
+    "symbol": "Span{…}",
+    "latex": "\\operatorname{Span}",
+    "name": "Linear span",
+    "aliases": [
+      "span",
+      "spanning set",
+      "linear combinations",
+      "generate a space",
+      "span vectors"
+    ],
+    "category": "linear-discrete",
+    "definition": "All vectors obtainable by combining the given ones with scalar weights. A set of vectors spans a space when every vector there is such a combination.",
+    "reading": "“the span of the vectors”.",
+    "examples": [
+      {
+        "tex": "\\operatorname{Span}\\{(1,0), (0,1)\\} = \\mathbb{R}^2",
+        "explanation": "Weighted combinations a·(1,0) + b·(0,1) reach every point (a, b)."
+      }
+    ],
+    "relatedSymbols": [
+      "vector-notation",
+      "matrix-notation",
+      "rank",
+      "eigenvector"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "null-space-kernel",
+    "symbol": "ker(T)",
+    "latex": "\\ker(T)",
+    "name": "Kernel (null space)",
+    "aliases": [
+      "kernel",
+      "null space",
+      "nullspace",
+      "ker",
+      "kernel of a matrix",
+      "nullity"
+    ],
+    "category": "linear-discrete",
+    "definition": "All inputs a linear map sends to zero. Its dimension (the nullity) plus the rank equals the number of columns: the rank–nullity theorem.",
+    "reading": "“the kernel of T”.",
+    "examples": [
+      {
+        "tex": "\\ker\\begin{pmatrix} 1 & 2 \\\\ 2 & 4 \\end{pmatrix} = \\operatorname{Span}\\{(-2, 1)\\}",
+        "explanation": "Both rows dot (−2, 1) to zero: −2 + 2 = 0."
+      }
+    ],
+    "relatedSymbols": [
+      "matrix-notation",
+      "rank",
+      "eigenvalue",
+      "linear-span"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "orthogonal-matrix",
+    "symbol": "QᵀQ = I",
+    "latex": "Q^TQ = I",
+    "name": "Orthogonal matrix",
+    "aliases": [
+      "orthogonal matrix",
+      "rotation matrix",
+      "orthonormal columns",
+      "Q transpose Q",
+      "isometry matrix"
+    ],
+    "category": "linear-discrete",
+    "relatedCategories": [
+      "geometry-trig"
+    ],
+    "definition": "A square matrix with orthonormal columns: QᵀQ = I, so Q⁻¹ = Qᵀ and lengths and angles are preserved. Rotations and reflections are the geometric examples.",
+    "reading": "“Q transpose Q equals I”.",
+    "examples": [
+      {
+        "tex": "\\begin{pmatrix} \\cos\\theta & -\\sin\\theta \\\\ \\sin\\theta & \\cos\\theta \\end{pmatrix}^T\\begin{pmatrix} \\cos\\theta & -\\sin\\theta \\\\ \\sin\\theta & \\cos\\theta \\end{pmatrix} = I",
+        "explanation": "The rotation columns are unit vectors at right angles, so the product is the identity."
+      }
+    ],
+    "relatedSymbols": [
+      "transpose",
+      "inverse-matrix",
+      "identity-matrix",
+      "sine",
+      "cosine"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "generating-function",
+    "symbol": "G(x)",
+    "latex": "G(x)",
+    "name": "Generating function",
+    "aliases": [
+      "generating function",
+      "ordinary generating function",
+      "EGF",
+      "power series combinatorics",
+      "sequence encoder"
+    ],
+    "category": "linear-discrete",
+    "definition": "Encodes a whole sequence as the coefficients of a power series: G(x) = a₀ + a₁x + a₂x² + …. Recurrences become algebra on G, and extracting coefficients solves counting problems.",
+    "reading": "“the generating function”.",
+    "examples": [
+      {
+        "tex": "F(x) = \\frac{x}{1 - x - x^2}",
+        "explanation": "For F₀ = 0, F₁ = 1: expanding gives x + x² + 2x³ + 3x⁴ + 5x⁵, the Fibonacci numbers."
+      }
+    ],
+    "relatedSymbols": [
+      "sequence-term",
+      "power",
+      "factorial",
+      "summation-sigma"
+    ],
+    "sources": [
+      {
+        "label": "UCSD Combinatorics text, ch.10 (Bender)",
+        "url": "https://mathweb.ucsd.edu/~ebender/CombText/ch-10.pdf",
+        "license": "Author/university course notes; consulted as reference, original wording, no text reused"
+      },
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "pigeonhole-principle",
+    "symbol": "m+1 → m",
+    "latex": "m+1 \\to m",
+    "name": "Pigeonhole principle",
+    "aliases": [
+      "pigeonhole principle",
+      "dirichlet principle",
+      "box principle",
+      "pigeons and holes"
+    ],
+    "category": "linear-discrete",
+    "definition": "Putting more items than containers forces sharing: with m+1 items in m boxes, some box holds at least two. Simple to state, surprisingly powerful for existence proofs.",
+    "reading": "“by pigeonhole”.",
+    "examples": [
+      {
+        "tex": "13 \\text{ people } \\Rightarrow \\text{ shared birth month}",
+        "explanation": "Thirteen people and twelve months force two into one month."
+      }
+    ],
+    "relatedSymbols": [
+      "cardinality",
+      "combination",
+      "exists",
+      "qed"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "binomial-theorem",
+    "symbol": "(a+b)ⁿ",
+    "latex": "(a + b)^n",
+    "name": "Binomial theorem",
+    "aliases": [
+      "binomial theorem",
+      "binomial expansion",
+      "a plus b to the n",
+      "pascal triangle"
+    ],
+    "category": "linear-discrete",
+    "relatedCategories": [
+      "algebra"
+    ],
+    "definition": "Expands powers of a sum with binomial coefficients: (a+b)ⁿ = Σ C(n,k) aⁿ⁻ᵏbᵏ. Each term chooses which factors contribute b.",
+    "reading": "“a plus b to the n”.",
+    "examples": [
+      {
+        "tex": "(x + 1)^2 = x^2 + 2x + 1",
+        "explanation": "Coefficients 1, 2, 1 count the ways to choose zero, one, or two ones."
+      }
+    ],
+    "relatedSymbols": [
+      "binomial-coefficient",
+      "power",
+      "summation-sigma",
+      "combination"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax Precalculus 2e",
+        "url": "https://openstax.org/details/books/precalculus-2e",
+        "license": "CC BY-NC-SA 4.0 (openstax.org footer); consulted as reference, original wording, no text reused"
+      }
+    ]
+  },
+  {
+    "id": "basis-dimension",
+    "symbol": "dim(V)",
+    "latex": "\\dim(V)",
+    "name": "Basis and dimension",
+    "aliases": [
+      "basis",
+      "dimension",
+      "dim V",
+      "standard basis",
+      "coordinates",
+      "finite dimensional"
+    ],
+    "category": "linear-discrete",
+    "definition": "A basis is a minimal spanning set: independent vectors from which every vector is uniquely combined. Its size is the dimension — an invariant of the space, not of the choice.",
+    "reading": "“the dimension of V”.",
+    "examples": [
+      {
+        "tex": "\\dim(\\mathbb{R}^3) = 3",
+        "explanation": "The three unit vectors e₁, e₂, e₃ form one basis; every basis has three vectors."
+      }
+    ],
+    "relatedSymbols": [
+      "linear-span",
+      "vector-notation",
+      "linear-independence",
+      "rank"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "linear-independence",
+    "symbol": "c₁v₁ + … = 0",
+    "latex": "c_1v_1 + \\cdots = 0",
+    "name": "Linear independence",
+    "aliases": [
+      "linearly independent",
+      "linear dependence",
+      "independent vectors",
+      "trivial combination",
+      "redundant vector"
+    ],
+    "category": "linear-discrete",
+    "definition": "Vectors are independent when only the all-zero combination gives zero: none is redundant. A dependent set contains a vector already spanned by the rest.",
+    "reading": "“linearly independent”.",
+    "examples": [
+      {
+        "tex": "c_1(1, 2) + c_2(2, 4) = 0 \\Rightarrow c_1 = -2c_2",
+        "explanation": "Nonzero solutions exist (e.g. c₁ = 2, c₂ = −1), so the pair is dependent."
+      }
+    ],
+    "relatedSymbols": [
+      "basis-dimension",
+      "vector-notation",
+      "linear-span",
+      "rank"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  },
+  {
+    "id": "diagonalization",
+    "symbol": "A = PDP⁻¹",
+    "latex": "A = PDP^{-1}",
+    "name": "Diagonalization",
+    "aliases": [
+      "diagonalization",
+      "diagonalizable",
+      "PDP inverse",
+      "eigenbasis",
+      "similar to diagonal"
+    ],
+    "category": "linear-discrete",
+    "definition": "Writing A = PDP⁻¹ with D diagonal: in the eigenvector basis, the map is pure scaling. Possible exactly when eigenvectors span the space; distinct eigenvalues always suffice.",
+    "reading": "“A equals P D P inverse”.",
+    "examples": [
+      {
+        "tex": "\\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix}",
+        "explanation": "Already diagonal: eigenvalues 2 and 3 act along the axes."
+      }
+    ],
+    "relatedSymbols": [
+      "eigenvalue",
+      "eigenvector",
+      "inverse-matrix",
+      "matrix-notation",
+      "basis-dimension"
+    ],
+    "sources": [
+      {
+        "label": "Wikibooks Subject:Mathematics",
+        "url": "https://en.wikibooks.org/wiki/Subject:Mathematics",
+        "license": "CC BY-SA (site footer); consulted, original wording"
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "concept": "arith.estimate.product",
+  "setup": "You are estimating [[a]] and [[b]] by rounding each factor to the nearest ten.",
+  "steps": [
+    {
+      "fact": "rounded_a",
+      "say": "[[a]] rounds to [[rounded_a]]."
+    },
+    {
+      "fact": "rounded_b",
+      "say": "[[b]] rounds to [[rounded_b]]."
+    },
+    {
+      "fact": "estimate",
+      "say": "Multiplying the rounded factors gives [[estimate]]."
+    }
+  ],
+  "answer": "The estimate is [[estimate]]."
+}

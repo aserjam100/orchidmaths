@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Find what you know",
+    "section": "Find what you know",
+    "subgoals": [
+      "Read the whole story",
+      "Find the two numbers",
+      "Find what the question asks"
+    ]
+  },
+  {
+    "label": "Decide to add",
+    "section": "Decide to add",
+    "subgoals": [
+      "Look for words like more or altogether",
+      "Draw the two parts",
+      "Add the parts to find the whole"
+    ]
+  },
+  {
+    "label": "Write the number sentence",
+    "section": "Write the number sentence",
+    "subgoals": [
+      "Write the number sentence",
+      "Work out the answer",
+      "Answer the question in words"
+    ]
+  }
+]

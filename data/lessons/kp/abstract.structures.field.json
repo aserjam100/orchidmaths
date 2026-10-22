@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Add and subtract inside (F,+)",
+      "Divide nonzero elements via a^-1",
+      "Distribute products over sums"
+    ]
+  },
+  {
+    "label": "Properties",
+    "section": "",
+    "subgoals": [
+      "Cancel nonzero factors from both sides",
+      "Multiply out (a+b)(c+d) term by term",
+      "Invert the product as (ab)^-1 = b^-1 a^-1"
+    ]
+  },
+  {
+    "label": "Algebraic hierarchy",
+    "section": "",
+    "subgoals": [
+      "Adjoin inverses to grow a ring into a field",
+      "Extend F by new roots for an extension",
+      "Read char(F) off repeated 1 + ... + 1"
+    ]
+  }
+]

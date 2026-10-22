@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Open covers",
+    "section": "Open covers",
+    "subgoals": [
+      "Take an arbitrary open cover",
+      "Look for finitely many sets already covering",
+      "Take that as the definition of compact"
+    ]
+  },
+  {
+    "label": "Heine-Borel",
+    "section": "Heine-Borel",
+    "subgoals": [
+      "Test closed and bounded",
+      "Equate it with compact in the reals",
+      "Apply the equivalence to intervals"
+    ]
+  },
+  {
+    "label": "Sequential compactness",
+    "section": "Sequential compactness",
+    "subgoals": [
+      "Draw a sequence from the set",
+      "Extract a convergent subsequence",
+      "Require the limit inside the set"
+    ]
+  }
+]

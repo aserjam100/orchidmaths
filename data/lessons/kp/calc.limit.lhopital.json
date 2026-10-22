@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Indeterminate forms",
+    "section": "",
+    "subgoals": [
+      "Confirm 0/0 or inf/inf shape first",
+      "Differentiate top and bottom separately",
+      "Retry or factor when still indeterminate"
+    ]
+  },
+  {
+    "label": "Statement",
+    "section": "",
+    "subgoals": [
+      "Check differentiability near a (not at a)",
+      "Compute lim f'/g' instead",
+      "Evaluate lim sin x/x = 1 via cos"
+    ]
+  },
+  {
+    "label": "Proof",
+    "section": "",
+    "subgoals": [
+      "Apply Cauchy MVT to f/g on [a,x]",
+      "Squeeze the intermediate c to a",
+      "Transfer the limit to f'/g'"
+    ]
+  }
+]

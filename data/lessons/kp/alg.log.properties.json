@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Definition",
+    "section": "",
+    "subgoals": [
+      "Recall the log definition",
+      "Identify the base",
+      "Prepare to transform"
+    ]
+  },
+  {
+    "label": "Basic identities",
+    "section": "",
+    "subgoals": [
+      "Apply the zero and one logs",
+      "Use the inverse property",
+      "Combine simple cases"
+    ]
+  },
+  {
+    "label": "Properties of logarithms",
+    "section": "",
+    "subgoals": [
+      "Expand a product log",
+      "Expand a quotient log",
+      "Bring exponents out"
+    ]
+  }
+]

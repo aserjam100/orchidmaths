@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Rewriting the equation",
+    "section": "Rewriting the equation",
+    "subgoals": [
+      "Read the equation as a logarithm statement",
+      "Rewrite it as the base raised to the value",
+      "Isolate the unknown as a power"
+    ]
+  },
+  {
+    "label": "Checking the domain",
+    "section": "Checking the domain",
+    "subgoals": [
+      "Require the unknown to be positive",
+      "Combine logarithms only within the domain",
+      "Test each candidate in the original equation"
+    ]
+  },
+  {
+    "label": "Applications",
+    "section": "Applications",
+    "subgoals": [
+      "Reduce the model to a rewritten logarithm",
+      "Divide by the rate or coefficient",
+      "Attach the units the model supplies"
+    ]
+  }
+]

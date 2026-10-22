@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Worked: a saddle from diag(2, -3)",
+    "section": "Worked: a saddle from diag(2, -3)",
+    "subgoals": [
+      "Read eigenvalues 2 and -3",
+      "Assign approach vs departure axes",
+      "Sketch the hyperbolic flow"
+    ]
+  },
+  {
+    "label": "Worked: a node and a spiral",
+    "section": "Worked: a node and a spiral",
+    "subgoals": [
+      "Sink all directions for -1, -2",
+      "Split 0.5 +- 2i into growth and rotation",
+      "Classify the unstable spiral"
+    ]
+  },
+  {
+    "label": "Eigenvalues decide the portrait",
+    "section": "Eigenvalues decide the portrait",
+    "subgoals": [
+      "Sort real pairs into node vs saddle",
+      "Read stability off the complex real part",
+      "Handle the zero-eigenvalue line case"
+    ]
+  }
+]

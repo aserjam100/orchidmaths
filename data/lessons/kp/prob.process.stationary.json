@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The balance equations",
+    "section": "The balance equations",
+    "subgoals": [
+      "Write the flow balance for each state",
+      "Solve the linear equations",
+      "Normalise the solution to a probability vector"
+    ]
+  },
+  {
+    "label": "Worked: a two-state chain",
+    "section": "Worked: a two-state chain",
+    "subgoals": [
+      "Read the upward and downward rates",
+      "Divide the upward rate by their sum",
+      "Report the stationary probability"
+    ]
+  },
+  {
+    "label": "Existence and uniqueness",
+    "section": "Existence and uniqueness",
+    "subgoals": [
+      "Require irreducibility",
+      "Require aperiodicity",
+      "Conclude uniqueness and convergence"
+    ]
+  }
+]

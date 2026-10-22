@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Raise numerator and denominator",
+    "section": "Raise numerator and denominator",
+    "subgoals": [
+      "Apply the exponent to the numerator",
+      "Apply the exponent to the denominator",
+      "Keep the fraction bar"
+    ]
+  },
+  {
+    "label": "Keep the fraction",
+    "section": "Keep the fraction",
+    "subgoals": [
+      "Evaluate the denominator power",
+      "Leave the numerator power in variable form",
+      "Do not move the denominator into the numerator"
+    ]
+  },
+  {
+    "label": "Check the denominator",
+    "section": "Check the denominator",
+    "subgoals": [
+      "Confirm the denominator is nonzero",
+      "Substitute a value for the variable",
+      "Compare the original and simplified values"
+    ]
+  }
+]

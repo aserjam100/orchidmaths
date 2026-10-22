@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Sine of three times an angle",
+    "section": "Sine of three times an angle",
+    "subgoals": [
+      "Split three times the angle into one plus two",
+      "Apply the sum formula",
+      "Replace the double angle and collect"
+    ]
+  },
+  {
+    "label": "Cosine and tangent",
+    "section": "Cosine and tangent",
+    "subgoals": [
+      "Cube the cosine with alternating signs",
+      "Divide sine by cosine for the tangent",
+      "Notice the polynomial pattern"
+    ]
+  },
+  {
+    "label": "Why the polynomials matter",
+    "section": "Why the polynomials matter",
+    "subgoals": [
+      "Set the triple angle to a known value",
+      "Read a cubic in the single angle",
+      "Identify the three solutions and the harmonic"
+    ]
+  }
+]

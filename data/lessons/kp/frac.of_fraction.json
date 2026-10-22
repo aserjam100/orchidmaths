@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Multiplying twice",
+    "section": "Multiplying twice",
+    "subgoals": [
+      "Read of as multiply",
+      "Compute a fraction of a fraction",
+      "Check the answer is smaller"
+    ]
+  },
+  {
+    "label": "Why the denominators multiply",
+    "section": "Why the denominators multiply",
+    "subgoals": [
+      "Split the parts in half",
+      "Explain both numerators and denominators multiply",
+      "Use the sharing model"
+    ]
+  },
+  {
+    "label": "Where it appears",
+    "section": "Where it appears",
+    "subgoals": [
+      "Scale a recipe twice",
+      "Give the probability reading",
+      "Apply a proportion to a proportion"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Measuring how mixed a node is",
+    "section": "Measuring how mixed a node is",
+    "subgoals": [
+      "Convert counts to proportions",
+      "Compute 1 minus the sum of squares",
+      "Read zero as a pure node"
+    ]
+  },
+  {
+    "label": "Worked: Gini for 3 and 1",
+    "section": "Worked: Gini for 3 and 1",
+    "subgoals": [
+      "Take proportions 3/4 and 1/4",
+      "Square and add to 10/16",
+      "Subtract from 1 for 0.375"
+    ]
+  },
+  {
+    "label": "Choosing the split that lowers impurity",
+    "section": "Choosing the split that lowers impurity",
+    "subgoals": [
+      "Compute each child impurity",
+      "Weight by the child share",
+      "Subtract from the parent impurity"
+    ]
+  }
+]

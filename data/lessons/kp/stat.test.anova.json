@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Comparing several means at once",
+    "section": "Comparing several means at once",
+    "subgoals": [
+      "Avoid many pairwise t tests",
+      "Split variation into between and within",
+      "Expect F near 1 under the null"
+    ]
+  },
+  {
+    "label": "Worked: three groups",
+    "section": "Worked: three groups",
+    "subgoals": [
+      "Find group means 2, 4, 6 and grand mean 4",
+      "Compute SSB = 16 on 2 degrees of freedom",
+      "Divide MSB by MSW for F = 4"
+    ]
+  },
+  {
+    "label": "The F ratio",
+    "section": "The F ratio",
+    "subgoals": [
+      "Read F as a signal-to-noise ratio",
+      "Use k - 1 and N - k degrees of freedom",
+      "Follow a significant F with comparisons"
+    ]
+  }
+]

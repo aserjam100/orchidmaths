@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Two halves",
+    "section": "Two halves",
+    "subgoals": [
+      "Form the integral with a variable limit",
+      "Differentiate it back to the integrand",
+      "Evaluate an antiderivative at the endpoints"
+    ]
+  },
+  {
+    "label": "Why it holds",
+    "section": "Why it holds",
+    "subgoals": [
+      "Estimate the change of the integral",
+      "Divide by the increment",
+      "Use the mean value theorem for the constant"
+    ]
+  },
+  {
+    "label": "Worked: a definite integral",
+    "section": "Worked: a definite integral",
+    "subgoals": [
+      "Find an antiderivative",
+      "Evaluate at both endpoints",
+      "Subtract to get the change"
+    ]
+  }
+]

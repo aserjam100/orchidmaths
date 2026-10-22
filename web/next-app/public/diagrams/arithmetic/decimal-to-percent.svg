@@ -1,0 +1,33 @@
+<svg width="250px" height="166px" viewBox="0 0 250 166" xmlns="http://www.w3.org/2000/svg">
+<rect width="250" height="166" fill="white"/>
+<rect x="10" y="10" width="230" height="156" fill="white" stroke="#333333" stroke-width="1"/>
+<rect x="10" y="10" width="230" height="26" fill="#E6E6E6" stroke="#333333" stroke-width="1"/>
+<line x1="125.0" y1="10" x2="125.0" y2="166" stroke="#BABABA" stroke-width="1"/>
+<line x1="10" y1="36" x2="240" y2="36" stroke="#BABABA" stroke-width="1"/>
+<line x1="10" y1="62" x2="240" y2="62" stroke="#BABABA" stroke-width="1"/>
+<line x1="10" y1="88" x2="240" y2="88" stroke="#BABABA" stroke-width="1"/>
+<line x1="10" y1="114" x2="240" y2="114" stroke="#BABABA" stroke-width="1"/>
+<line x1="10" y1="140" x2="240" y2="140" stroke="#BABABA" stroke-width="1"/>
+<text x="67.5" y="27" font-size="13" fill="#333333" text-anchor="middle">Decimal</text>
+<text x="182.5" y="27" font-size="13" fill="#333333" text-anchor="middle">Percent</text>
+<text x="67.5" y="53" font-size="13" fill="#333333" text-anchor="middle">0.05</text>
+<text x="182.5" y="53" font-size="13" fill="#333333" text-anchor="middle">5%</text>
+<path d="M 55.1,57 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+<path d="M 69.1,57 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+<text x="67.5" y="79" font-size="13" fill="#333333" text-anchor="middle">0.83</text>
+<text x="182.5" y="79" font-size="13" fill="#333333" text-anchor="middle">83%</text>
+<path d="M 55.1,83 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+<path d="M 69.1,83 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+<text x="67.5" y="105" font-size="13" fill="#333333" text-anchor="middle">1.05</text>
+<text x="182.5" y="105" font-size="13" fill="#333333" text-anchor="middle">105%</text>
+<path d="M 55.1,109 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+<path d="M 69.1,109 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+<text x="67.5" y="131" font-size="13" fill="#333333" text-anchor="middle">0.075</text>
+<text x="182.5" y="131" font-size="13" fill="#333333" text-anchor="middle">7.5%</text>
+<path d="M 59.0,135 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+<path d="M 73.0,135 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+<text x="67.5" y="157" font-size="13" fill="#333333" text-anchor="middle">0.3</text>
+<text x="182.5" y="157" font-size="13" fill="#333333" text-anchor="middle">30%</text>
+<path d="M 51.2,161 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+<path d="M 65.2,161 q 6.0,5 12,0" fill="none" stroke="#636363" stroke-width="1"/>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "concept": "alg.systems.three_var",
+  "setup": "The system is x + y + z = [[a]], x − y + z = [[b]] and x + y − z = [[d]].",
+  "steps": [
+    {
+      "fact": "y",
+      "say": "Subtracting the second equation from the first gives y = [[y]]."
+    },
+    {
+      "fact": "z",
+      "say": "Subtracting the third equation from the first gives z = [[z]]."
+    },
+    {
+      "fact": "answer",
+      "say": "Then x = [[a]] − [[y]] − [[z]] = [[answer]]."
+    }
+  ],
+  "answer": "So x = [[answer]]."
+}

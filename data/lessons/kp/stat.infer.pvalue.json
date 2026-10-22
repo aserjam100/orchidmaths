@@ -1,0 +1,29 @@
+[
+  {
+    "label": "The probability of data this extreme",
+    "section": "The probability of data this extreme",
+    "subgoals": [
+      "Assume the null is true",
+      "Measure the tail area at least as extreme",
+      "Double the tail for a two-sided test"
+    ]
+  },
+  {
+    "label": "Worked: comparing p with alpha",
+    "section": "Worked: comparing p with alpha",
+    "subgoals": [
+      "Compare 0.03 with 0.05",
+      "Reject the null",
+      "Contrast with p = 0.20"
+    ]
+  },
+  {
+    "label": "What a p-value does not say",
+    "section": "What a p-value does not say",
+    "subgoals": [
+      "Reject the probability-the-null reading",
+      "Separate significance from effect size",
+      "Report an interval alongside"
+    ]
+  }
+]
